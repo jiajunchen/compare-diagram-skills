@@ -1,0 +1,247 @@
+1
+00:00:00,000 --> 00:00:08,475
+Imagine recording a fencing bout in several short bursts. How does the app turn those separate recordings into an ordered, cross-device review?
+
+2
+00:00:08,475 --> 00:00:17,519
+We will follow the data, then the function calls. Every path comes from the current Swift implementation, including its failure and recovery behavior.
+
+3
+00:00:17,519 --> 00:00:24,737
+Start with a tournament. Each Bout belongs to that tournament, and each bout can contain many source recordings.
+
+4
+00:00:24,737 --> 00:00:32,818
+A SourceRecording describes an original video in Photos. Stopping and restarting the camera creates another source, not another bout.
+
+5
+00:00:32,818 --> 00:00:39,956
+Each ReviewClip selects a start and end within one source. Several clips can therefore point back to the same recording.
+
+6
+00:00:39,956 --> 00:00:48,791
+Continuous review does not merge those movie files. The repository sorts clips by source capture time, clip start time, and finally identifier.
+
+7
+00:00:48,791 --> 00:00:59,800
+One global setting stores the fencer's name. These relationships use explicit identifiers; the code does not rely on automatic SwiftData relationship cascades.
+
+8
+00:00:59,800 --> 00:01:09,549
+Think of SwiftUI as the controls. Screens collect choices and display results, while the app view model coordinates most user actions.
+
+9
+00:01:09,549 --> 00:01:20,566
+AppViewModel exposes operations such as saveTournament, confirmSchedule, createClip, and refreshCloud. Observable state connects the results back to the interface.
+
+10
+00:01:20,566 --> 00:01:32,367
+Coordinators handle focused workflows. BoutImportCoordinator manages sources; ClipWorkflow manages exports; separate upload and download coordinators move edited clips.
+
+11
+00:01:32,367 --> 00:01:42,740
+LocalRepository gives these components a shared persistence interface. SwiftData stores records locally, and explicit save calls can trigger cloud synchronization.
+
+12
+00:01:42,740 --> 00:01:53,247
+Framework adapters wrap Photos, AVFoundation, Vision, Foundation Models, and CloudKit. Dependency injection lets tests replace them with controlled fakes.
+
+13
+00:01:53,247 --> 00:02:03,441
+Launch begins with AppDependencies dot make. It creates the repository, chooses service implementations, and supplies the root view with dependencies.
+
+14
+00:02:03,441 --> 00:02:12,013
+The root creates Model state and calls load. Local settings and tournaments load first; available iCloud then permits a refresh.
+
+15
+00:02:12,013 --> 00:02:19,820
+With no saved fencer setting, the app shows setup. Continue calls saveFencerName; an empty name produces a validation error.
+
+16
+00:02:19,820 --> 00:02:30,947
+Tournament forms call saveTournament. Selecting a tournament calls selectTournament, which reads its ordered bouts. Bout edits call updateConfirmedBout and reject number collisions.
+
+17
+00:02:30,947 --> 00:02:42,812
+Each successful local save reaches Storage immediately. Cloud work follows asynchronously. Foreground activation and pull-to-refresh call refreshCloud to discover remote changes.
+
+18
+00:02:42,812 --> 00:02:53,041
+The screenshot picker supplies image data to ScheduleReviewViewModel. Its extract function starts Vision recognition on each selected screenshot.
+
+19
+00:02:53,041 --> 00:03:03,397
+Recognition collects tables, cells, text, and positions. The deterministic Parser matches the saved fencer and derives the opponent and full bout-order number.
+
+20
+00:03:03,397 --> 00:03:13,061
+Model assistance is optional. The on-device language model proposes typed candidates when available; failure leaves the deterministic results available.
+
+21
+00:03:13,061 --> 00:03:21,533
+The Validator checks source evidence before accepting suggestions. A model response cannot invent a valid row simply by sounding confident.
+
+22
+00:03:21,533 --> 00:03:33,665
+Editable drafts remain local and unconfirmed. Unsupported layouts can fall back to manual entry; screenshots and recognized text never enter the app's CloudKit records.
+
+23
+00:03:33,665 --> 00:03:43,713
+The parent edits opponent names and bout numbers before tapping Confirm Schedule. That action calls the app view model's confirmSchedule function.
+
+24
+00:03:43,713 --> 00:03:50,785
+Validation requires a known tournament, at least one draft, nonempty opponents, and positive unique bout numbers.
+
+25
+00:03:50,785 --> 00:03:59,115
+A number that conflicts with another saved opponent blocks confirmation. The app skips an identical number and opponent pair, avoiding a duplicate.
+
+26
+00:03:59,115 --> 00:04:08,573
+Confirmed bouts retain opponent and number from this screen. The phase becomes unknown; other extracted context does not become imported bout fields.
+
+27
+00:04:08,573 --> 00:04:19,732
+Only after saving can Cloud metadata synchronize these records. Discard writes nothing; a save failure removes inserted rows and restores prior tournament fields.
+
+28
+00:04:19,732 --> 00:04:30,485
+Import begins inside a selected bout. The parent chooses up to twenty videos, so the destination is explicit; no automatic bout matching occurs.
+
+29
+00:04:30,485 --> 00:04:40,085
+Preparation checks known Photos identifiers and rejects duplicates. Normal imports read metadata and retain a Photos link without copying the full original.
+
+30
+00:04:40,085 --> 00:04:51,412
+Photos can return usable selections alongside individual failures. Confirmation inserts source records; cancelling discards the prepared batch and any temporary working files.
+
+31
+00:04:51,412 --> 00:05:03,075
+linkPendingCloudPhotos maps device-local identifiers to portable cloud identifiers. Those portable links synchronize, while local identifiers and file paths stay on the device.
+
+32
+00:05:03,075 --> 00:05:13,791
+Opening a source calls sourceAsset, then PhotoKit's videoAsset path. Photos can download its original; a legacy app copy provides fallback when available.
+
+33
+00:05:13,791 --> 00:05:22,653
+In the source timeline, the parent marks start and end. Save Clip calls createClip with a trim range and progress callback.
+
+34
+00:05:22,653 --> 00:05:32,197
+Workflow validates finite times, increasing bounds, and source duration. It saves a ReviewClip record with exporting status before rendering starts.
+
+35
+00:05:32,197 --> 00:05:41,708
+The Exporter uses AVAssetExportSession with a passthrough preset. It writes the selected range as an independent movie in the PendingClips folder.
+
+36
+00:05:41,708 --> 00:05:51,716
+Successful export saves the local path and measured duration, then changes status to pendingUpload. AppViewModel starts an asynchronous upload task.
+
+37
+00:05:51,716 --> 00:06:03,009
+Cancel stops the export and removes partial output. Export failure leaves a retryable record; retryClip exports again using the same clip identifier.
+
+38
+00:06:03,009 --> 00:06:14,223
+pendingUpload and the local export path form a durable queue. resumePending retries queued or interrupted uploads when cloud refresh reaches that stage.
+
+39
+00:06:14,223 --> 00:06:22,512
+upload first synchronizes the Metadata record. That creates the destination record before the service tries to attach the edited movie.
+
+40
+00:06:22,512 --> 00:06:33,504
+CKAsset upload uses a direct CloudKit database save. The metadata engine and asset service therefore take separate paths, even though they share one record.
+
+41
+00:06:33,504 --> 00:06:42,726
+Success marks the clip available. Temporary account or network failures return it to the queue; other failures can require an explicit Retry Upload.
+
+42
+00:06:42,726 --> 00:06:51,939
+An in-flight set prevents duplicate uploads. Deletion waits for an active upload, and late callbacks check that they must not restore a deleted clip.
+
+43
+00:06:51,939 --> 00:07:02,632
+Play Bout builds an Ordered queue from the repository's sorted review clips. openCurrent then asks playableURL to resolve the selected file.
+
+44
+00:07:02,632 --> 00:07:10,250
+The resolver prefers a Local export. If that file is absent, it checks the managed download cache before contacting CloudKit.
+
+45
+00:07:10,250 --> 00:07:18,621
+A downloaded Cloud asset enters the cache and must contain a video track. Missing asset data can mean the other device is still uploading.
+
+46
+00:07:18,621 --> 00:07:28,402
+AVPlayer opens the resolved URL. At the end notification, continuous mode advances through the queue; focused mode pauses on the current clip.
+
+47
+00:07:28,402 --> 00:07:39,251
+Previous, Next, and clip selection use the same resolver. The selected playback speed survives automatic transitions, so reviewing slowly remains consistent across files.
+
+48
+00:07:39,251 --> 00:07:46,913
+Dragging the Slider calls scrub on the player model. It clamps the time and sends the newest position to the scrub coordinator.
+
+49
+00:07:46,913 --> 00:07:56,780
+The Scrub coordinator keeps at most one seek in flight. New drag positions replace obsolete pending positions instead of creating a decoding backlog.
+
+50
+00:07:56,780 --> 00:08:05,299
+Preview seeks allow a small tolerance. Releasing the slider calls finishScrub and requests an exact final seek at the selected time.
+
+51
+00:08:05,299 --> 00:08:14,112
+Player model ignores ordinary playhead updates during the drag. Generation checks stop an old completion from altering a newly opened recording.
+
+52
+00:08:14,112 --> 00:08:24,779
+Speed controls offer half, normal, and double speed. The model updates an active player's rate immediately; leaving the screen stops playback and cancels scrub work.
+
+53
+00:08:24,779 --> 00:08:36,563
+A Local save schedules metadata work through the repository callback. CKSyncEngine sends changes, fetches changes, and persists its recovery state locally.
+
+54
+00:08:36,563 --> 00:08:46,637
+Explicit refresh also scans the metadata zone to repair missed deliveries. Pending local saves and deletions receive protection during this reconciliation.
+
+55
+00:08:46,637 --> 00:08:55,530
+Conflict handling remembers the server record version. A newer remote value can win; otherwise the local change retries against the current version.
+
+56
+00:08:55,530 --> 00:09:05,786
+A Delete action removes cloud-backed clip assets before their local records. Removing a source requires no clips; deleting a bout requires no linked media.
+
+57
+00:09:05,786 --> 00:09:16,245
+Tournament deletion proceeds through clips, sources, bouts, and the tournament. It is not one transaction; failures can leave partial progress and queued cloud deletion.
+
+58
+00:09:16,245 --> 00:09:26,268
+A Clip star changes favorite metadata without exporting the movie again. The bout star derives from its clips, rather than a separate user toggle.
+
+59
+00:09:26,268 --> 00:09:35,824
+Offload checks distinguish deletion from storage cleanup. Bout unloading requires every local export in that bout to have a confirmed available cloud asset.
+
+60
+00:09:35,824 --> 00:09:46,579
+Global cleanup skips pending uploads, removes eligible uploaded copies, and clears downloaded clips. Managed-path checks protect files outside the app's workspace.
+
+61
+00:09:46,579 --> 00:09:57,387
+Cloud clips remain available for later download. Originals stay in Photos; screenshots stay local; the app's private cloud stores portable metadata and edited clips.
+
+62
+00:09:57,387 --> 00:10:12,064
+That separation makes the architecture work: local progress, explicit confirmation, independent media files, and recoverable transfer. Simulator fakes test logic; real cloud behavior still needs device checks.

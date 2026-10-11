@@ -1,0 +1,77 @@
+[
+  {
+    "title": "How the Fencing Review App Works",
+    "startSeconds": 0,
+    "endSeconds": 6.65
+  },
+  {
+    "title": "Why this app exists",
+    "startSeconds": 6.65,
+    "endSeconds": 45.432
+  },
+  {
+    "title": "Follow one bout through the app",
+    "startSeconds": 45.432,
+    "endSeconds": 81.202
+  },
+  {
+    "title": "How the app connects the records",
+    "startSeconds": 81.202,
+    "endSeconds": 118.346
+  },
+  {
+    "title": "Which part does each job",
+    "startSeconds": 118.346,
+    "endSeconds": 156.995
+  },
+  {
+    "title": "What happens when the app opens",
+    "startSeconds": 156.995,
+    "endSeconds": 194.7
+  },
+  {
+    "title": "How the app reads a schedule",
+    "startSeconds": 194.7,
+    "endSeconds": 233.146
+  },
+  {
+    "title": "Why the parent must confirm the schedule",
+    "startSeconds": 233.146,
+    "endSeconds": 271.258
+  },
+  {
+    "title": "How recordings enter a bout",
+    "startSeconds": 271.258,
+    "endSeconds": 310.478
+  },
+  {
+    "title": "How the app creates a review clip",
+    "startSeconds": 310.478,
+    "endSeconds": 349.55
+  },
+  {
+    "title": "How a review clip reaches iCloud",
+    "startSeconds": 349.55,
+    "endSeconds": 389.268
+  },
+  {
+    "title": "How the app plays the review clips",
+    "startSeconds": 389.268,
+    "endSeconds": 426.109
+  },
+  {
+    "title": "How the picture follows the slider",
+    "startSeconds": 426.109,
+    "endSeconds": 463.042
+  },
+  {
+    "title": "How the app handles changes and deletions",
+    "startSeconds": 463.042,
+    "endSeconds": 502.528
+  },
+  {
+    "title": "Favorites, storage, and the main idea",
+    "startSeconds": 502.528,
+    "endSeconds": 546.933
+  }
+]

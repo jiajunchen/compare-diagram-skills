@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1"><rect x="0" y="0" width="1920" height="1080" fill="white" /><g transform="translate(42.000 221.727) scale(0.981818)" aria-label="01_architecture alternative diagram"><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 450.15)">
+<title>01  Overall codebase architecture | one native iPhone / iPad app</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-450.15 1855.95,-450.15 1855.95,14.4 -14.4,14.4" />
+<text xml:space="preserve" text-anchor="middle" x="920.77" y="-5.65" font-family="Helvetica,sans-Serif" font-size="18.00" fill="#17324d">01  Overall codebase architecture | one native iPhone / iPad app</text>
+<g id="clust1" class="cluster">
+<title>cluster_Presentation</title>
+<path fill="#e5f5fd" stroke="#aeb6be" d="M234.41,-160.75C234.41,-160.75 997.73,-160.75 997.73,-160.75 1003.73,-160.75 1009.73,-166.75 1009.73,-172.75 1009.73,-172.75 1009.73,-340.75 1009.73,-340.75 1009.73,-346.75 1003.73,-352.75 997.73,-352.75 997.73,-352.75 234.41,-352.75 234.41,-352.75 228.41,-352.75 222.41,-346.75 222.41,-340.75 222.41,-340.75 222.41,-172.75 222.41,-172.75 222.41,-166.75 228.41,-160.75 234.41,-160.75" />
+<text xml:space="preserve" text-anchor="middle" x="264.16" y="-337.35" font-family="Sans-Serif" font-size="12.00" fill="#17324d">Presentation</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_On-device application services</title>
+<path fill="#e5f5fd" stroke="#aeb6be" d="M1188.23,-34.75C1188.23,-34.75 1414.14,-34.75 1414.14,-34.75 1420.14,-34.75 1426.14,-40.75 1426.14,-46.75 1426.14,-46.75 1426.14,-349.75 1426.14,-349.75 1426.14,-355.75 1420.14,-361.75 1414.14,-361.75 1414.14,-361.75 1188.23,-361.75 1188.23,-361.75 1182.23,-361.75 1176.23,-355.75 1176.23,-349.75 1176.23,-349.75 1176.23,-46.75 1176.23,-46.75 1176.23,-40.75 1182.23,-34.75 1188.23,-34.75" />
+<text xml:space="preserve" text-anchor="middle" x="1265.98" y="-346.35" font-family="Sans-Serif" font-size="12.00" fill="#17324d">On-device application services</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_Device-local state</title>
+<path fill="#e5f5fd" stroke="#aeb6be" d="M1585.14,-232.75C1585.14,-232.75 1821.55,-232.75 1821.55,-232.75 1827.55,-232.75 1833.55,-238.75 1833.55,-244.75 1833.55,-244.75 1833.55,-415.75 1833.55,-415.75 1833.55,-421.75 1827.55,-427.75 1821.55,-427.75 1821.55,-427.75 1585.14,-427.75 1585.14,-427.75 1579.14,-427.75 1573.14,-421.75 1573.14,-415.75 1573.14,-415.75 1573.14,-244.75 1573.14,-244.75 1573.14,-238.75 1579.14,-232.75 1585.14,-232.75" />
+<text xml:space="preserve" text-anchor="middle" x="1628.76" y="-412.35" font-family="Sans-Serif" font-size="12.00" fill="#17324d">Device-local state</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_Apple-managed services</title>
+<path fill="#e5f5fd" stroke="#aeb6be" d="M1594.14,-68.75C1594.14,-68.75 1812.55,-68.75 1812.55,-68.75 1818.55,-68.75 1824.55,-74.75 1824.55,-80.75 1824.55,-80.75 1824.55,-191.75 1824.55,-191.75 1824.55,-197.75 1818.55,-203.75 1812.55,-203.75 1812.55,-203.75 1594.14,-203.75 1594.14,-203.75 1588.14,-203.75 1582.14,-197.75 1582.14,-191.75 1582.14,-191.75 1582.14,-80.75 1582.14,-80.75 1582.14,-74.75 1588.14,-68.75 1594.14,-68.75" />
+<text xml:space="preserve" text-anchor="middle" x="1656.51" y="-188.35" font-family="Sans-Serif" font-size="12.00" fill="#17324d">Apple-managed services</text>
+</g>
+
+<g id="node1" class="node">
+<title>root</title>
+<path fill="#dceaf5" stroke="#17324d" d="M671.9,-206.95C671.9,-206.95 554.99,-206.95 554.99,-206.95 548.99,-206.95 542.99,-200.95 542.99,-194.95 542.99,-194.95 542.99,-180.55 542.99,-180.55 542.99,-174.55 548.99,-168.55 554.99,-168.55 554.99,-168.55 671.9,-168.55 671.9,-168.55 677.9,-168.55 683.9,-174.55 683.9,-180.55 683.9,-180.55 683.9,-194.95 683.9,-194.95 683.9,-200.95 677.9,-206.95 671.9,-206.95" />
+<text xml:space="preserve" text-anchor="middle" x="613.44" y="-189.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AppRootView</text>
+<text xml:space="preserve" text-anchor="middle" x="613.44" y="-177.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">launch + scene activation</text>
+</g>
+
+<g id="node3" class="node">
+<title>vm</title>
+<path fill="#ece4f5" stroke="#17324d" d="M989.73,-269.95C989.73,-269.95 835.32,-269.95 835.32,-269.95 829.32,-269.95 823.32,-263.95 823.32,-257.95 823.32,-257.95 823.32,-243.55 823.32,-243.55 823.32,-237.55 829.32,-231.55 835.32,-231.55 835.32,-231.55 989.73,-231.55 989.73,-231.55 995.73,-231.55 1001.73,-237.55 1001.73,-243.55 1001.73,-243.55 1001.73,-257.95 1001.73,-257.95 1001.73,-263.95 995.73,-269.95 989.73,-269.95" />
+<text xml:space="preserve" text-anchor="middle" x="912.52" y="-252.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AppViewModel</text>
+<text xml:space="preserve" text-anchor="middle" x="912.52" y="-240.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">UI state + workflow orchestration</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>root-&gt;vm</title>
+<path fill="none" stroke="#526779" d="M684.1,-202.52C722.12,-210.58 769.85,-220.71 811.76,-229.59" />
+<polygon fill="#526779" stroke="#526779" points="810.85,-232.98 821.36,-231.63 812.3,-226.13 810.85,-232.98" />
+<text xml:space="preserve" text-anchor="middle" x="759.44" y="-227.9" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">load, refresh</text>
+</g>
+
+<g id="node2" class="node">
+<title>views</title>
+<path fill="#dceaf5" stroke="#17324d" d="M382.57,-266.95C382.57,-266.95 242.41,-266.95 242.41,-266.95 236.41,-266.95 230.41,-260.95 230.41,-254.95 230.41,-254.95 230.41,-240.55 230.41,-240.55 230.41,-234.55 236.41,-228.55 242.41,-228.55 242.41,-228.55 382.57,-228.55 382.57,-228.55 388.57,-228.55 394.57,-234.55 394.57,-240.55 394.57,-240.55 394.57,-254.95 394.57,-254.95 394.57,-260.95 388.57,-266.95 382.57,-266.95" />
+<text xml:space="preserve" text-anchor="middle" x="312.49" y="-249.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Tournament, schedule, bout,</text>
+<text xml:space="preserve" text-anchor="middle" x="312.49" y="-237.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">timeline, player, settings views</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>views-&gt;vm</title>
+<path fill="none" stroke="#526779" d="M394.6,-263C406.35,-265.21 414.57,-266.75 414.57,-266.75 414.57,-266.75 531.32,-277.75 531.32,-277.75 531.32,-277.75 695.57,-277.75 695.57,-277.75 695.57,-277.75 803.32,-267.75 803.32,-267.75 803.32,-267.75 806.44,-267.26 811.61,-266.45" />
+<polygon fill="#526779" stroke="#526779" points="812.08,-269.92 821.42,-264.91 811,-263 812.08,-269.92" />
+<text xml:space="preserve" text-anchor="middle" x="613.44" y="-278.9" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">commands / observed state</text>
+</g>
+
+<g id="node4" class="node">
+<title>review</title>
+<path fill="#ece4f5" stroke="#17324d" d="M678.65,-266.95C678.65,-266.95 548.24,-266.95 548.24,-266.95 542.24,-266.95 536.24,-260.95 536.24,-254.95 536.24,-254.95 536.24,-240.55 536.24,-240.55 536.24,-234.55 542.24,-228.55 548.24,-228.55 548.24,-228.55 678.65,-228.55 678.65,-228.55 684.65,-228.55 690.65,-234.55 690.65,-240.55 690.65,-240.55 690.65,-254.95 690.65,-254.95 690.65,-260.95 684.65,-266.95 678.65,-266.95" />
+<text xml:space="preserve" text-anchor="middle" x="613.44" y="-249.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ScheduleReviewViewModel</text>
+<text xml:space="preserve" text-anchor="middle" x="613.44" y="-237.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">editable, unconfirmed drafts</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>views-&gt;review</title>
+<path fill="none" stroke="#526779" d="M394.79,-247.75C434.93,-247.75 483.42,-247.75 524.44,-247.75" />
+<polygon fill="#526779" stroke="#526779" points="524.28,-251.25 534.28,-247.75 524.28,-244.25 524.28,-251.25" />
+<text xml:space="preserve" text-anchor="middle" x="462.94" y="-248.9" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">schedule review</text>
+</g>
+
+<g id="node9" class="node">
+<title>play</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M1399.39,-152.95C1399.39,-152.95 1202.98,-152.95 1202.98,-152.95 1196.98,-152.95 1190.98,-146.95 1190.98,-140.95 1190.98,-140.95 1190.98,-126.55 1190.98,-126.55 1190.98,-120.55 1196.98,-114.55 1202.98,-114.55 1202.98,-114.55 1399.39,-114.55 1399.39,-114.55 1405.39,-114.55 1411.39,-120.55 1411.39,-126.55 1411.39,-126.55 1411.39,-140.95 1411.39,-140.95 1411.39,-146.95 1405.39,-152.95 1399.39,-152.95" />
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-135.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">BoutPlaybackQueue + MediaPlayerModel</text>
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-123.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ClipDownloadCoordinator + cache</text>
+</g>
+
+<g id="edge18" class="edge">
+<title>views-&gt;play</title>
+<path fill="none" stroke="#526779" d="M361.02,-228.11C425.12,-201.63 531.32,-157.75 531.32,-157.75 531.32,-157.75 962.99,-144.28 1179.43,-137.52" />
+<polygon fill="#526779" stroke="#526779" points="1179.44,-141.02 1189.33,-137.21 1179.22,-134.02 1179.44,-141.02" />
+<text xml:space="preserve" text-anchor="middle" x="759.44" y="-153" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">player controls</text>
+</g>
+
+<g id="node6" class="node">
+<title>import</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M1354.39,-272.95C1354.39,-272.95 1247.98,-272.95 1247.98,-272.95 1241.98,-272.95 1235.98,-266.95 1235.98,-260.95 1235.98,-260.95 1235.98,-246.55 1235.98,-246.55 1235.98,-240.55 1241.98,-234.55 1247.98,-234.55 1247.98,-234.55 1354.39,-234.55 1354.39,-234.55 1360.39,-234.55 1366.39,-240.55 1366.39,-246.55 1366.39,-246.55 1366.39,-260.95 1366.39,-260.95 1366.39,-266.95 1360.39,-272.95 1354.39,-272.95" />
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-255.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">BoutImportCoordinator</text>
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-243.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PhotoLibraryService</text>
+</g>
+
+<g id="edge9" class="edge">
+<title>vm-&gt;import</title>
+<path fill="none" stroke="#526779" d="M1001.75,-251.43C1068.93,-251.96 1160.43,-252.67 1224.34,-253.16" />
+<polygon fill="#526779" stroke="#526779" points="1224.01,-256.66 1234.03,-253.24 1224.06,-249.66 1224.01,-256.66" />
+<text xml:space="preserve" text-anchor="middle" x="1092.98" y="-253.84" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">prepare / confirm / open</text>
+</g>
+
+<g id="node7" class="node">
+<title>editing</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M1387.76,-332.95C1387.76,-332.95 1214.6,-332.95 1214.6,-332.95 1208.6,-332.95 1202.6,-326.95 1202.6,-320.95 1202.6,-320.95 1202.6,-306.55 1202.6,-306.55 1202.6,-300.55 1208.6,-294.55 1214.6,-294.55 1214.6,-294.55 1387.76,-294.55 1387.76,-294.55 1393.76,-294.55 1399.76,-300.55 1399.76,-306.55 1399.76,-306.55 1399.76,-320.95 1399.76,-320.95 1399.76,-326.95 1393.76,-332.95 1387.76,-332.95" />
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-315.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ClipWorkflow -&gt; VideoEditingService</text>
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-303.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AVFoundation export</text>
+</g>
+
+<g id="edge12" class="edge">
+<title>vm-&gt;editing</title>
+<path fill="none" stroke="#526779" d="M1002.13,-267.13C1013.75,-269.28 1021.73,-270.75 1021.73,-270.75 1021.73,-270.75 1113.35,-284.9 1191.48,-296.96" />
+<polygon fill="#526779" stroke="#526779" points="1190.49,-300.35 1200.91,-298.42 1191.56,-293.43 1190.49,-300.35" />
+<text xml:space="preserve" text-anchor="middle" x="1092.98" y="-293.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">trim / export</text>
+</g>
+
+<g id="node8" class="node">
+<title>upload</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M1406.14,-212.95C1406.14,-212.95 1196.23,-212.95 1196.23,-212.95 1190.23,-212.95 1184.23,-206.95 1184.23,-200.95 1184.23,-200.95 1184.23,-186.55 1184.23,-186.55 1184.23,-180.55 1190.23,-174.55 1196.23,-174.55 1196.23,-174.55 1406.14,-174.55 1406.14,-174.55 1412.14,-174.55 1418.14,-180.55 1418.14,-186.55 1418.14,-186.55 1418.14,-200.95 1418.14,-200.95 1418.14,-206.95 1412.14,-212.95 1406.14,-212.95" />
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-195.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ClipUploadQueue</text>
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-183.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">CloudMetadataService + CloudAssetService</text>
+</g>
+
+<g id="edge15" class="edge">
+<title>vm-&gt;upload</title>
+<path fill="none" stroke="#526779" d="M1002.13,-236.42C1013.75,-234.54 1021.73,-233.25 1021.73,-233.25 1021.73,-233.25 1099.52,-222.22 1172.86,-211.81" />
+<polygon fill="#526779" stroke="#526779" points="1173.2,-215.3 1182.61,-210.43 1172.22,-208.37 1173.2,-215.3" />
+<text xml:space="preserve" text-anchor="middle" x="1092.98" y="-234.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">sync / retry</text>
+</g>
+
+<g id="edge19" class="edge">
+<title>vm-&gt;play</title>
+<path fill="none" stroke="#526779" d="M951.67,-231.18C982.83,-215.2 1021.73,-195.25 1021.73,-195.25 1021.73,-195.25 1120.33,-173.47 1200.18,-155.84" />
+<polygon fill="#526779" stroke="#526779" points="1200.83,-159.28 1209.84,-153.7 1199.32,-152.44 1200.83,-159.28" />
+<text xml:space="preserve" text-anchor="middle" x="1092.98" y="-196.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">clip URL / unload</text>
+</g>
+
+<g id="node10" class="node">
+<title>repo</title>
+<path fill="#fff0d6" stroke="#17324d" d="M1813.55,-338.95C1813.55,-338.95 1593.14,-338.95 1593.14,-338.95 1587.14,-338.95 1581.14,-332.95 1581.14,-326.95 1581.14,-326.95 1581.14,-312.55 1581.14,-312.55 1581.14,-306.55 1587.14,-300.55 1593.14,-300.55 1593.14,-300.55 1813.55,-300.55 1813.55,-300.55 1819.55,-300.55 1825.55,-306.55 1825.55,-312.55 1825.55,-312.55 1825.55,-326.95 1825.55,-326.95 1825.55,-332.95 1819.55,-338.95 1813.55,-338.95" />
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-321.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">LocalRepository / SwiftData</text>
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-309.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">settings, tournaments, bouts, source links, clips</text>
+</g>
+
+<g id="edge8" class="edge">
+<title>vm-&gt;repo</title>
+<path fill="none" stroke="#526779" d="M948.96,-270.4C980.51,-287.89 1021.73,-310.75 1021.73,-310.75 1021.73,-310.75 1176.23,-365.75 1176.23,-365.75 1176.23,-365.75 1426.14,-365.75 1426.14,-365.75 1426.14,-365.75 1561.14,-353.75 1561.14,-353.75 1561.14,-353.75 1573.14,-349.75 1573.14,-349.75 1573.14,-349.75 1587.46,-346.43 1606.56,-341.99" />
+<polygon fill="#526779" stroke="#526779" points="1607.18,-345.44 1616.13,-339.77 1605.6,-338.62 1607.18,-345.44" />
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-366.9" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">CRUD</text>
+</g>
+
+<g id="edge7" class="edge">
+<title>review-&gt;vm</title>
+<path fill="none" stroke="#526779" d="M690.95,-248.52C727.64,-248.89 772.07,-249.34 811.42,-249.74" />
+<polygon fill="#526779" stroke="#526779" points="811.36,-253.24 821.39,-249.84 811.43,-246.24 811.36,-253.24" />
+<text xml:space="preserve" text-anchor="middle" x="759.44" y="-250.76" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">confirm drafts</text>
+</g>
+
+<g id="node5" class="node">
+<title>schedule</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M1404.26,-92.95C1404.26,-92.95 1198.1,-92.95 1198.1,-92.95 1192.1,-92.95 1186.1,-86.95 1186.1,-80.95 1186.1,-80.95 1186.1,-54.55 1186.1,-54.55 1186.1,-48.55 1192.1,-42.55 1198.1,-42.55 1198.1,-42.55 1404.26,-42.55 1404.26,-42.55 1410.26,-42.55 1416.26,-48.55 1416.26,-54.55 1416.26,-54.55 1416.26,-80.95 1416.26,-80.95 1416.26,-86.95 1410.26,-92.95 1404.26,-92.95" />
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-75.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Schedule source -&gt; Vision recognition</text>
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-63.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">-&gt; deterministic parser -&gt; Foundation Model</text>
+<text xml:space="preserve" text-anchor="middle" x="1301.18" y="-51.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">-&gt; proposal validator</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>review-&gt;schedule</title>
+<path fill="none" stroke="#526779" d="M667.65,-228.07C682.94,-222.42 695.57,-217.75 695.57,-217.75 695.57,-217.75 715.57,-106.75 715.57,-106.75 715.57,-106.75 1002.5,-87.61 1174.33,-76.15" />
+<polygon fill="#526779" stroke="#526779" points="1174.47,-79.64 1184.22,-75.49 1174.01,-72.66 1174.47,-79.64" />
+<text xml:space="preserve" text-anchor="middle" x="912.52" y="-100.54" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">extract</text>
+</g>
+
+<g id="node12" class="node">
+<title>drafts</title>
+<path fill="#fff0d6" stroke="#17324d" d="M1783.92,-398.95C1783.92,-398.95 1622.76,-398.95 1622.76,-398.95 1616.76,-398.95 1610.76,-392.95 1610.76,-386.95 1610.76,-386.95 1610.76,-372.55 1610.76,-372.55 1610.76,-366.55 1616.76,-360.55 1622.76,-360.55 1622.76,-360.55 1783.92,-360.55 1783.92,-360.55 1789.92,-360.55 1795.92,-366.55 1795.92,-372.55 1795.92,-372.55 1795.92,-386.95 1795.92,-386.95 1795.92,-392.95 1789.92,-398.95 1783.92,-398.95" />
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-381.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Screenshot bytes + OCR/proposal</text>
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-369.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">in memory until confirmation</text>
+</g>
+
+<g id="edge6" class="edge">
+<title>review-&gt;drafts</title>
+<path fill="none" stroke="#526779" d="M690.57,-267.38C808.46,-297.77 1021.73,-352.75 1021.73,-352.75 1021.73,-352.75 1176.23,-384.75 1176.23,-384.75 1176.23,-384.75 1426.14,-384.75 1426.14,-384.75 1426.14,-384.75 1520.51,-383.04 1598.93,-381.62" />
+<polygon fill="#526779" stroke="#526779" points="1598.92,-385.12 1608.86,-381.44 1598.8,-378.12 1598.92,-385.12" />
+<text xml:space="preserve" text-anchor="middle" x="1092.98" y="-383.25" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">temporary proposal</text>
+</g>
+
+<g id="edge11" class="edge">
+<title>import-&gt;repo</title>
+<path fill="none" stroke="#526779" d="M1366.7,-269.37C1396.82,-276.65 1426.14,-283.75 1426.14,-283.75 1426.14,-283.75 1438.14,-293.75 1438.14,-293.75 1438.14,-293.75 1503.55,-300.19 1569.28,-306.66" />
+<polygon fill="#526779" stroke="#526779" points="1568.88,-310.13 1579.18,-307.63 1569.57,-303.17 1568.88,-310.13" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-306.34" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">source links</text>
+</g>
+
+<g id="node13" class="node">
+<title>photos</title>
+<path fill="#eff2f4" stroke="#17324d" d="M1804.55,-174.95C1804.55,-174.95 1602.14,-174.95 1602.14,-174.95 1596.14,-174.95 1590.14,-168.95 1590.14,-162.95 1590.14,-162.95 1590.14,-148.55 1590.14,-148.55 1590.14,-142.55 1596.14,-136.55 1602.14,-136.55 1602.14,-136.55 1804.55,-136.55 1804.55,-136.55 1810.55,-136.55 1816.55,-142.55 1816.55,-148.55 1816.55,-148.55 1816.55,-162.95 1816.55,-162.95 1816.55,-168.95 1810.55,-174.95 1804.55,-174.95" />
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-157.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Photos / iCloud Photos</text>
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-145.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">original videos; read on explicit import/open</text>
+</g>
+
+<g id="edge10" class="edge">
+<title>import-&gt;photos</title>
+<path fill="none" stroke="#526779" d="M1366.7,-238.13C1396.82,-230.85 1426.14,-223.75 1426.14,-223.75 1426.14,-223.75 1438.14,-156.25 1438.14,-156.25 1438.14,-156.25 1509.8,-156.11 1578.49,-155.98" />
+<polygon fill="#526779" stroke="#526779" points="1578.41,-159.48 1588.4,-155.97 1578.4,-152.48 1578.41,-159.48" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-157.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">read video + IDs</text>
+</g>
+
+<g id="edge14" class="edge">
+<title>editing-&gt;repo</title>
+<path fill="none" stroke="#526779" d="M1399.91,-328.84C1421.52,-332.18 1438.14,-334.75 1438.14,-334.75 1438.14,-334.75 1561.14,-334.75 1561.14,-334.75 1561.14,-334.75 1564.17,-334.43 1569.34,-333.88" />
+<polygon fill="#526779" stroke="#526779" points="1569.69,-337.36 1579.27,-332.82 1568.96,-330.4 1569.69,-337.36" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-335.9" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">clip status</text>
+</g>
+
+<g id="node11" class="node">
+<title>files</title>
+<path fill="#fff0d6" stroke="#17324d" d="M1787.3,-278.95C1787.3,-278.95 1619.39,-278.95 1619.39,-278.95 1613.39,-278.95 1607.39,-272.95 1607.39,-266.95 1607.39,-266.95 1607.39,-252.55 1607.39,-252.55 1607.39,-246.55 1613.39,-240.55 1619.39,-240.55 1619.39,-240.55 1787.3,-240.55 1787.3,-240.55 1793.3,-240.55 1799.3,-246.55 1799.3,-252.55 1799.3,-252.55 1799.3,-266.95 1799.3,-266.95 1799.3,-272.95 1793.3,-278.95 1787.3,-278.95" />
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-261.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">App support files</text>
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-249.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">pending exports + downloaded clips</text>
+</g>
+
+<g id="edge13" class="edge">
+<title>editing-&gt;files</title>
+<path fill="none" stroke="#526779" d="M1383.48,-294.07C1406.85,-288.42 1426.14,-283.75 1426.14,-283.75 1426.14,-283.75 1438.14,-238.25 1438.14,-238.25 1438.14,-238.25 1561.14,-238.25 1561.14,-238.25 1561.14,-238.25 1575.86,-240.49 1595.79,-243.53" />
+<polygon fill="#526779" stroke="#526779" points="1595.08,-246.96 1605.49,-245 1596.13,-240.04 1595.08,-246.96" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-239.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">local clip</text>
+</g>
+
+<g id="edge17" class="edge">
+<title>upload-&gt;repo</title>
+<path fill="none" stroke="#526779" d="M1383.48,-213.43C1406.85,-219.08 1426.14,-223.75 1426.14,-223.75 1426.14,-223.75 1438.14,-252.75 1438.14,-252.75 1438.14,-252.75 1561.14,-275.25 1561.14,-275.25 1561.14,-275.25 1573.14,-289.75 1573.14,-289.75 1573.14,-289.75 1587.46,-293.07 1606.56,-297.51" />
+<polygon fill="#526779" stroke="#526779" points="1605.6,-300.88 1616.13,-299.73 1607.18,-294.06 1605.6,-300.88" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-276.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">sync state</text>
+</g>
+
+<g id="node14" class="node">
+<title>cloud</title>
+<path fill="#eff2f4" stroke="#17324d" d="M1795.55,-114.95C1795.55,-114.95 1611.14,-114.95 1611.14,-114.95 1605.14,-114.95 1599.14,-108.95 1599.14,-102.95 1599.14,-102.95 1599.14,-88.55 1599.14,-88.55 1599.14,-82.55 1605.14,-76.55 1611.14,-76.55 1611.14,-76.55 1795.55,-76.55 1795.55,-76.55 1801.55,-76.55 1807.55,-82.55 1807.55,-88.55 1807.55,-88.55 1807.55,-102.95 1807.55,-102.95 1807.55,-108.95 1801.55,-114.95 1795.55,-114.95" />
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-97.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Private CloudKit</text>
+<text xml:space="preserve" text-anchor="middle" x="1703.34" y="-85.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">confirmed metadata + edited CKAssets</text>
+</g>
+
+<g id="edge16" class="edge">
+<title>upload-&gt;cloud</title>
+<path fill="none" stroke="#526779" d="M1383.48,-174.07C1406.85,-168.42 1426.14,-163.75 1426.14,-163.75 1426.14,-163.75 1438.14,-137.25 1438.14,-137.25 1438.14,-137.25 1516.1,-125 1587.32,-113.82" />
+<polygon fill="#526779" stroke="#526779" points="1587.85,-117.28 1597.19,-112.27 1586.77,-110.36 1587.85,-117.28" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-138.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">metadata + CKAsset</text>
+</g>
+
+<g id="edge21" class="edge">
+<title>play-&gt;files</title>
+<path fill="none" stroke="#526779" d="M1383.48,-153.43C1406.85,-159.08 1426.14,-163.75 1426.14,-163.75 1426.14,-163.75 1438.14,-170.75 1438.14,-170.75 1438.14,-170.75 1554.98,-210.11 1633.26,-236.48" />
+<polygon fill="#526779" stroke="#526779" points="1632.01,-239.75 1642.6,-239.63 1634.24,-233.12 1632.01,-239.75" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-211.07" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">cache / replay</text>
+</g>
+
+<g id="edge20" class="edge">
+<title>play-&gt;cloud</title>
+<path fill="none" stroke="#526779" d="M1383.48,-114.07C1406.85,-108.42 1426.14,-103.75 1426.14,-103.75 1426.14,-103.75 1438.14,-74.25 1438.14,-74.25 1438.14,-74.25 1561.14,-74.25 1561.14,-74.25 1561.14,-74.25 1572.11,-75.92 1587.94,-78.33" />
+<polygon fill="#526779" stroke="#526779" points="1587.07,-81.74 1597.48,-79.78 1588.12,-74.82 1587.07,-81.74" />
+<text xml:space="preserve" text-anchor="middle" x="1499.64" y="-75.4" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">download clip</text>
+</g>
+
+<g id="node15" class="node">
+<title>user</title>
+<path fill="#eff2f4" stroke="#17324d" d="M80.16,-266.95C80.16,-266.95 12,-266.95 12,-266.95 6,-266.95 0,-260.95 0,-254.95 0,-254.95 0,-240.55 0,-240.55 0,-234.55 6,-228.55 12,-228.55 12,-228.55 80.16,-228.55 80.16,-228.55 86.16,-228.55 92.16,-234.55 92.16,-240.55 92.16,-240.55 92.16,-254.95 92.16,-254.95 92.16,-260.95 86.16,-266.95 80.16,-266.95" />
+<text xml:space="preserve" text-anchor="middle" x="46.08" y="-249.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Parent / fencer</text>
+<text xml:space="preserve" text-anchor="middle" x="46.08" y="-237.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">SwiftUI actions</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>user-&gt;views</title>
+<path fill="none" stroke="#526779" d="M92.53,-247.75C127.16,-247.75 176.01,-247.75 218.79,-247.75" />
+<polygon fill="#526779" stroke="#526779" points="218.58,-251.25 228.58,-247.75 218.58,-244.25 218.58,-251.25" />
+<text xml:space="preserve" text-anchor="middle" x="161.28" y="-248.9" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">tap / select / edit</text>
+</g>
+</g>
+</g><line x1="42" y1="900" x2="1878" y2="900" stroke="#8AA4B8" stroke-width="2" /><text x="52" y="935" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">Color legend</text><rect x="52.0" y="951" width="31" height="27" rx="5" fill="#DCEAF5" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="973" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">SwiftUI views</text><rect x="658.7" y="951" width="31" height="27" rx="5" fill="#ECE4F5" stroke="#17324D" stroke-width="1.5" /><text x="702.6666666666666" y="973" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">View models</text><rect x="1265.3" y="951" width="31" height="27" rx="5" fill="#DDF0E5" stroke="#17324D" stroke-width="1.5" /><text x="1309.3333333333333" y="973" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">On-device services</text><rect x="52.0" y="999" width="31" height="27" rx="5" fill="#FFF0D6" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="1021" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Device-local state</text><rect x="658.7" y="999" width="31" height="27" rx="5" fill="#EFF2F4" stroke="#17324D" stroke-width="1.5" /><text x="702.6666666666666" y="1021" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Person / Apple services</text></svg>

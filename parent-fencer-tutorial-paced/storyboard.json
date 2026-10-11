@@ -1,0 +1,77 @@
+{
+  "title": "Fencing Review \u2014 A guide for parents and fencers",
+  "voice": "JBFqnCBsd6RMkjVDRZzb",
+  "model": "eleven_multilingual_v2",
+  "chapters": [
+    {
+      "title": "Add a fencer and add a tournament",
+      "beats": [
+        {
+          "label": "title-1",
+          "text": "Number one. Add a fencer and add a tournament.",
+          "focus": null
+        }
+      ]
+    },
+    {
+      "title": "Add a schedule from a screenshot",
+      "beats": [
+        {
+          "label": "title-2",
+          "text": "Number two. Add a schedule from a screenshot.",
+          "focus": null
+        }
+      ]
+    },
+    {
+      "title": "Add a bout manually",
+      "beats": [
+        {
+          "label": "title-3",
+          "text": "Number three. Add a bout manually.",
+          "focus": null
+        }
+      ]
+    },
+    {
+      "title": "Import videos into a bout",
+      "beats": [
+        {
+          "label": "title-4",
+          "text": "Number four. Import videos into a bout.",
+          "focus": null
+        }
+      ]
+    },
+    {
+      "title": "Create review clips and mark favorites",
+      "beats": [
+        {
+          "label": "title-5",
+          "text": "Number five. Create review clips and mark favorites.",
+          "focus": null
+        }
+      ]
+    },
+    {
+      "title": "Delete review clips",
+      "beats": [
+        {
+          "label": "title-6",
+          "text": "Number six. Delete review clips.",
+          "focus": null
+        }
+      ]
+    },
+    {
+      "title": "Clear local clip copies",
+      "beats": [
+        {
+          "label": "title-7",
+          "text": "Number seven. Clear local clip copies.",
+          "focus": null
+        }
+      ]
+    }
+  ]
+}

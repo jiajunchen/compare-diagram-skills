@@ -1,0 +1,114 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #0a0e1a
+skinparam shadowing false
+skinparam defaultFontName Helvetica
+skinparam defaultFontColor #c8d8f0
+skinparam ArrowColor #2d7aff
+skinparam ArrowFontColor #c8d8f0
+skinparam TitleFontColor #c8d8f0
+skinparam packageBackgroundColor #0f1528
+skinparam packageBorderColor #1e2d4a
+skinparam packageFontColor #c8d8f0
+skinparam rectangleBackgroundColor #0f1528
+skinparam rectangleFontColor #c8d8f0
+skinparam classBackgroundColor #0f1528
+skinparam classFontColor #c8d8f0
+skinparam RoundCorner 12
+skinparam linetype polyline
+hide stereotype
+hide circle
+title 03B  User pathways | recording, clip, playback, and cleanup
+skinparam rectangle<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam class<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam class<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam class<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+skinparam class<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+rectangle "Open confirmed bout" as bout <<theme_dim>>
+rectangle "Import Recordings\nPhotosPicker: up to 20 videos" as pick <<theme_blue>>
+rectangle "BoutImportCoordinator.prepareSelections\nPhotoLibraryService reads metadata / Photos IDs\nshow batch, failures, cancellation" as prepare <<theme_green>>
+rectangle "Confirm batch\ninsert SourceRecording links in SwiftData\ntry linking iCloud Photos IDs" as confirm <<theme_green>>
+rectangle "Review and Trim Recordings\nload ordered sources + clips" as timeline <<theme_blue>>
+rectangle "Open source\nPhotoKit AVAsset; local fallback if needed" as asset <<theme_green>>
+rectangle "Select trim range\nClipWorkflow.createClip -> AVFoundation export\nReviewClip: exporting -> pendingUpload" as trim <<theme_green>>
+rectangle "ClipUploadQueue.upload\nsync metadata -> save CKAsset\nReviewClip: uploading -> available" as upload <<theme_cyan>>
+rectangle "Failure path\nexportFailed / pendingUpload / needsAttention\nretry export or upload" as fail <<theme_red>>
+rectangle "Play clip / Play Bout\nordered ReviewClips -> playableURL" as play <<theme_blue>>
+rectangle "Local export or managed cache?" as local <<theme_orange>>
+rectangle "ClipDownloadCoordinator.resolve\ncheck iCloud -> download CKAsset -> cache" as download <<theme_green>>
+rectangle "MediaPlayerModel + BoutPlaybackQueue\nseek, scrub, speed, next clip (continuous)" as player <<theme_green>>
+rectangle "Unload / Clear Local Copies\nonly confirmed available exports; clear cache\nretain CloudKit records/assets" as offload <<theme_orange>>
+rectangle "Delete clip/source/bout/tournament\nasset first, then local records, queue metadata deletion\nPhotos original stays intact" as delete <<theme_red>>
+bout --> pick
+pick --> prepare
+prepare --> confirm : Add to Bout
+confirm --> timeline
+timeline --> asset
+asset --> trim
+trim --> upload : export success
+trim --> fail : export failure
+upload --> fail : cloud failure
+upload --> play : available
+fail ..> upload : retry
+play --> local
+local --> player : yes
+local --> download : no
+download --> player
+player --> offload : optional
+timeline ..> delete : optional
+@enduml

@@ -1,0 +1,4 @@
+# Ignore runtime files; publish finished HTML and media.
+.venv/
+.cache/
+__pycache__/

@@ -1,0 +1,45 @@
+digraph entities {
+	bgcolor=white compound=true fontcolor="#17324D" fontname=Helvetica fontsize=18 labeljust=l labelloc=t nodesep=0.43 pad=0.28 rankdir=TB ranksep=0.74 splines=polyline
+	node [color="#17324D" fillcolor="#DCEAF5" fontcolor="#17324D" fontname=Helvetica fontsize=11 margin="0.15,0.11" penwidth=1.1 shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 color="#526779" fontcolor="#17324D" fontname=Helvetica fontsize=9 penwidth=1.2]
+	label="02A  Persisted entities | UUID references, not SwiftData @Relationship"
+	settings [label="AppSettings
+PK id (stable cloudID)
+fencerName, syncState" fillcolor="#ECE4F5" shape=box]
+	tournament [label="Tournament
+PK id
+name, venue, startDate, timezone
+scheduleImportStatus, syncState" fillcolor="#DCEAF5" shape=box]
+	bout [label="Bout
+PK id | FK tournamentID
+phase, opponent, sequenceNumber
+pool, strip, scheduledAt, syncState" fillcolor="#DCEAF5" shape=box]
+	source [label="SourceRecording
+PK id | FK tournamentID, boutID
+importBatchID, Photos IDs
+recordedAt, duration, localWorkingFilePath" fillcolor="#DDF0E5" shape=box]
+	clip [label="ReviewClip
+PK id | FK boutID, sourceRecordingID
+trim range, localExportPath
+cloudAssetRecordName, mediaSyncStatus
+isFavorite" fillcolor="#DDF0E5" shape=box]
+	run [label="ScheduleExtractionRun
+PK id | FK tournamentID
+status, warnings, modelAssistanceUsed
+(schema only; no production inserts)" fillcolor="#FFF0D6" shape=box]
+	photo [label="PHAsset (Photos)
+original recording" fillcolor="#EFF2F4" shape=box]
+	asset [label="CKRecord + CKAsset
+ReviewClip-{UUID}" fillcolor="#EFF2F4" shape=box]
+	settings -> tournament [label="one fencer name
+used by all tournaments" arrowhead=none style=dashed]
+	tournament -> bout [label="1 -> 0..*" arrowhead=crow]
+	tournament -> source [label="1 -> 0..* direct ID" style=dashed]
+	bout -> source [label="1 -> 0..*" arrowhead=crow]
+	bout -> clip [label="1 -> 0..* direct ID" style=dashed]
+	source -> clip [label="1 -> 0..*" arrowhead=crow]
+	tournament -> run [label="1 -> 0..* schema" style=dotted]
+	source -> photo [label="deviceLocalAssetID /
+cloudPhotoAssetID" dir=both style=dashed]
+	clip -> asset [label=cloudAssetRecordName dir=both style=dashed]
+}

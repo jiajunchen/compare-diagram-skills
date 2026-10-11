@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" font-family="JetBrains Mono, Menlo, monospace" aria-label="Organization pathways">
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+</defs>
+<rect x="0" y="0" width="1080" height="1920" fill="#020617"/>
+<rect x="0" y="0" width="1080" height="1920" fill="url(#grid)"/>
+<text x="50.00" y="40.00" fill="white" font-size="25.00" font-weight="700" text-anchor="start">Organization pathways</text>
+<path d="M 496.20 145.19 C 496.20 160.05 496.20 180.02 496.20 196.63" fill="none" data-edge="launch-&gt;boot" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 496.20 252.08 C 496.20 266.97 496.20 286.98 496.20 303.64" fill="none" data-edge="boot-&gt;load" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 496.20 359.39 C 496.20 373.85 496.20 393.24 496.20 410.47" fill="none" data-edge="load-&gt;settings" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 478.88 479.10 C 465.47 498.97 446.85 526.52 432.77 547.36" fill="none" data-edge="settings-&gt;first" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 429.72 601.12 C 441.99 616.72 458.66 637.92 472.10 655.01" fill="none" data-edge="first-&gt;nav" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 504.70 481.97 C 513.72 512.25 526.69 555.78 526.69 555.78 C 526.69 555.78 526.69 600.76 526.69 600.76 C 526.69 600.76 515.82 629.44 506.83 653.19" fill="none" data-edge="settings-&gt;nav" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 495.08 708.22 C 495.08 723.11 495.08 743.12 495.08 759.77" fill="none" data-edge="nav-&gt;new" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 495.08 815.10 C 495.08 829.72 495.08 849.45 495.08 866.73" fill="none" data-edge="new-&gt;save" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 495.08 936.19 C 495.08 951.92 495.08 971.43 495.08 987.56" fill="none" data-edge="save-&gt;detail" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 495.08 1043.04 C 495.08 1057.93 495.08 1077.94 495.08 1094.60" fill="none" data-edge="detail-&gt;import" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 473.87 1150.12 C 454.61 1169.87 426.03 1199.15 404.81 1220.90" fill="none" data-edge="import-&gt;manual" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 525.55 1150.12 C 551.03 1168.28 587.83 1194.50 617.31 1215.50" fill="none" data-edge="import-&gt;ocr" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 404.49 1273.94 C 427.30 1291.69 459.63 1316.85 484.28 1336.03" fill="none" data-edge="manual-&gt;review" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 628.06 1280.89 C 606.00 1297.81 578.21 1319.09 556.33 1335.86" fill="none" data-edge="ocr-&gt;review" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 519.92 1387.74 C 519.92 1404.87 519.92 1429.18 519.92 1449.50" fill="none" data-edge="review-&gt;confirm" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 519.92 1518.51 C 519.92 1534.24 519.92 1553.75 519.92 1569.88" fill="none" data-edge="confirm-&gt;bout" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 581.42 1346.67 C 669.30 1322.25 820.28 1280.29 820.28 1280.29 C 820.28 1280.29 820.28 1221.76 820.28 1221.76 C 820.28 1221.76 627.42 1102.89 538.74 1048.24" fill="none" data-edge="review-&gt;detail" stroke="#64748b" stroke-width="1.58" stroke-dasharray="6,5" marker-end="url(#arrowhead)"/>
+<g data-node="launch"><title>Open app</title>
+<rect x="441.23" y="100.17" width="109.94" height="44.46" rx="7" fill="#0f172a"/>
+<rect x="441.23" y="100.17" width="109.94" height="44.46" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="496.20" y="128.51" fill="white" font-size="18.00" font-weight="600" text-anchor="middle">Open app</text>
+</g>
+<g data-node="boot"><title>AppDependencies.make
+open SwiftData; wire live services</title>
+<rect x="392.97" y="206.72" width="206.47" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="392.97" y="206.72" width="206.47" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="496.20" y="226.68" fill="white" font-size="10.12" font-weight="600" text-anchor="middle">AppDependencies.make</text>
+<text x="496.20" y="238.63" fill="#cbd5e1" font-size="10.12" font-weight="400" text-anchor="middle" textLength="194.47" lengthAdjust="spacingAndGlyphs">open SwiftData; wire live services</text>
+</g>
+<g data-node="load"><title>AppViewModel.load
+check iCloud; fetch local settings/tournaments</title>
+<rect x="360.79" y="313.88" width="270.84" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="360.79" y="313.88" width="270.84" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="496.20" y="333.92" fill="white" font-size="9.81" font-weight="600" text-anchor="middle">AppViewModel.load</text>
+<text x="496.20" y="345.50" fill="#cbd5e1" font-size="9.81" font-weight="400" text-anchor="middle" textLength="258.84" lengthAdjust="spacingAndGlyphs">check iCloud; fetch local settings/tournaments</text>
+</g>
+<g data-node="settings"><title>Settings found?</title>
+<rect x="387.13" y="420.91" width="218.16" height="62.87" rx="7" fill="#0f172a"/>
+<rect x="387.13" y="420.91" width="218.16" height="62.87" rx="7" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="2"/>
+<text x="496.20" y="458.46" fill="white" font-size="18.00" font-weight="600" text-anchor="middle">Settings found?</text>
+</g>
+<g data-node="first"><title>FirstRunSetupView
+saveFencerName -&gt; SwiftData</title>
+<rect x="316.19" y="555.78" width="192.92" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="316.19" y="555.78" width="192.92" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="412.64" y="575.29" fill="white" font-size="11.91" font-weight="600" text-anchor="middle">FirstRunSetupView</text>
+<text x="412.64" y="589.34" fill="#cbd5e1" font-size="11.91" font-weight="400" text-anchor="middle" textLength="180.92" lengthAdjust="spacingAndGlyphs">saveFencerName -&gt; SwiftData</text>
+</g>
+<g data-node="nav"><title>TournamentNavigationView
+select / refreshCloud</title>
+<rect x="408.36" y="662.87" width="173.44" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="408.36" y="662.87" width="173.44" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="495.08" y="682.35" fill="white" font-size="12.04" font-weight="600" text-anchor="middle" textLength="161.44" lengthAdjust="spacingAndGlyphs">TournamentNavigationView</text>
+<text x="495.08" y="696.56" fill="#cbd5e1" font-size="12.04" font-weight="400" text-anchor="middle">select / refreshCloud</text>
+</g>
+<g data-node="new"><title>New Tournament
+TournamentFormView.save</title>
+<rect x="408.78" y="769.96" width="172.59" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="408.78" y="769.96" width="172.59" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="495.08" y="789.33" fill="white" font-size="12.51" font-weight="600" text-anchor="middle">New Tournament</text>
+<text x="495.08" y="804.08" fill="#cbd5e1" font-size="12.51" font-weight="400" text-anchor="middle" textLength="160.59" lengthAdjust="spacingAndGlyphs">TournamentFormView.save</text>
+</g>
+<g data-node="save"><title>AppViewModel.saveTournament
+validate name; insert/update Tournament
+SwiftData save -&gt; schedule CloudKit sync</title>
+<rect x="369.40" y="877.05" width="251.36" height="58.54" rx="7" fill="#0f172a"/>
+<rect x="369.40" y="877.05" width="251.36" height="58.54" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="495.08" y="897.52" fill="white" font-size="10.47" font-weight="600" text-anchor="middle">AppViewModel.saveTournament</text>
+<text x="495.08" y="909.88" fill="#cbd5e1" font-size="10.47" font-weight="400" text-anchor="middle" textLength="239.36" lengthAdjust="spacingAndGlyphs">validate name; insert/update Tournament</text>
+<text x="495.08" y="922.24" fill="#cbd5e1" font-size="10.47" font-weight="400" text-anchor="middle" textLength="239.36" lengthAdjust="spacingAndGlyphs">SwiftData save -&gt; schedule CloudKit sync</text>
+</g>
+<g data-node="detail"><title>TournamentDetailView
+show bouts / open selected bout</title>
+<rect x="395.65" y="997.69" width="198.85" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="395.65" y="997.69" width="198.85" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="495.08" y="1017.51" fill="white" font-size="10.69" font-weight="600" text-anchor="middle">TournamentDetailView</text>
+<text x="495.08" y="1030.13" fill="#cbd5e1" font-size="10.69" font-weight="400" text-anchor="middle" textLength="186.85" lengthAdjust="spacingAndGlyphs">show bouts / open selected bout</text>
+</g>
+<g data-node="import"><title>Import Schedule
+screenshot(s) or Manual Entry</title>
+<rect x="401.16" y="1104.78" width="187.84" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="401.16" y="1104.78" width="187.84" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="495.08" y="1124.58" fill="white" font-size="10.80" font-weight="600" text-anchor="middle">Import Schedule</text>
+<text x="495.08" y="1137.32" fill="#cbd5e1" font-size="10.80" font-weight="400" text-anchor="middle" textLength="175.84" lengthAdjust="spacingAndGlyphs">screenshot(s) or Manual Entry</text>
+</g>
+<g data-node="manual"><title>Manual drafts
+add opponent + full-order bout number</title>
+<rect x="259.73" y="1228.53" width="233.57" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="259.73" y="1228.53" width="233.57" height="44.99" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="376.51" y="1248.40" fill="white" font-size="10.52" font-weight="600" text-anchor="middle">Manual drafts</text>
+<text x="376.51" y="1260.81" fill="#cbd5e1" font-size="10.52" font-weight="400" text-anchor="middle" textLength="221.57" lengthAdjust="spacingAndGlyphs">add opponent + full-order bout number</text>
+</g>
+<g data-node="ocr"><title>Vision recognize each screenshot
+deterministic parse + optional on-device model
+validator reconciles source-backed proposal</title>
+<rect x="528.05" y="1221.76" width="275.07" height="58.54" rx="7" fill="#0f172a"/>
+<rect x="528.05" y="1221.76" width="275.07" height="58.54" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="665.58" y="1242.65" fill="white" font-size="9.97" font-weight="600" text-anchor="middle">Vision recognize each screenshot</text>
+<text x="665.58" y="1254.41" fill="#cbd5e1" font-size="9.97" font-weight="400" text-anchor="middle" textLength="263.07" lengthAdjust="spacingAndGlyphs">deterministic parse + optional on-device model</text>
+<text x="665.58" y="1266.17" fill="#cbd5e1" font-size="9.97" font-weight="400" text-anchor="middle" textLength="263.07" lengthAdjust="spacingAndGlyphs">validator reconciles source-backed proposal</text>
+</g>
+<g data-node="review"><title>Review/edit drafts
+confirm or discard</title>
+<rect x="459.03" y="1342.40" width="121.78" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="459.03" y="1342.40" width="121.78" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="519.92" y="1362.07" fill="white" font-size="11.28" font-weight="600" text-anchor="middle" textLength="109.78" lengthAdjust="spacingAndGlyphs">Review/edit drafts</text>
+<text x="519.92" y="1375.38" fill="#cbd5e1" font-size="11.28" font-weight="400" text-anchor="middle" textLength="109.78" lengthAdjust="spacingAndGlyphs">confirm or discard</text>
+</g>
+<g data-node="confirm"><title>AppViewModel.confirmSchedule
+validate nonempty, opponent, positive/unique number
+insert new Bouts; mark tournament confirmed</title>
+<rect x="363.75" y="1459.37" width="312.34" height="58.54" rx="7" fill="#0f172a"/>
+<rect x="363.75" y="1459.37" width="312.34" height="58.54" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="519.92" y="1480.07" fill="white" font-size="10.21" font-weight="600" text-anchor="middle">AppViewModel.confirmSchedule</text>
+<text x="519.92" y="1492.11" fill="#cbd5e1" font-size="10.21" font-weight="400" text-anchor="middle" textLength="300.34" lengthAdjust="spacingAndGlyphs">validate nonempty, opponent, positive/unique number</text>
+<text x="519.92" y="1504.15" fill="#cbd5e1" font-size="10.21" font-weight="400" text-anchor="middle">insert new Bouts; mark tournament confirmed</text>
+</g>
+<g data-node="bout"><title>BoutDetailView
+edit/delete confirmed bout; import recordings</title>
+<rect x="387.47" y="1580.01" width="264.90" height="44.99" rx="7" fill="#0f172a"/>
+<rect x="387.47" y="1580.01" width="264.90" height="44.99" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="519.92" y="1600.05" fill="white" font-size="9.81" font-weight="600" text-anchor="middle">BoutDetailView</text>
+<text x="519.92" y="1611.63" fill="#cbd5e1" font-size="9.81" font-weight="400" text-anchor="middle" textLength="252.90" lengthAdjust="spacingAndGlyphs">edit/delete confirmed bout; import recordings</text>
+</g>
+<rect x="448.25" y="509.79" width="24.20" height="15.00" rx="3" fill="#020617"/>
+<text x="460.35" y="519.79" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">no</text>
+<rect x="519.58" y="568.27" width="30.30" height="15.00" rx="3" fill="#020617"/>
+<text x="534.73" y="578.27" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">yes</text>
+<rect x="435.95" y="1175.76" width="48.60" height="15.00" rx="3" fill="#020617"/>
+<text x="460.25" y="1185.76" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">manual</text>
+<rect x="568.73" y="1175.76" width="79.10" height="15.00" rx="3" fill="#020617"/>
+<text x="608.28" y="1185.76" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">screenshots</text>
+<rect x="509.51" y="1413.37" width="54.70" height="15.00" rx="3" fill="#020617"/>
+<text x="536.86" y="1423.37" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">confirm</text>
+<rect x="759.05" y="1175.76" width="54.70" height="15.00" rx="3" fill="#020617"/>
+<text x="786.40" y="1185.76" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">discard</text>
+<line x1="42" y1="1680" x2="1038" y2="1680" stroke="#334155" stroke-width="2"/>
+<text x="52.00" y="1720.00" fill="white" font-size="23.00" font-weight="700" text-anchor="start">Color legend</text>
+<rect x="52.00" y="1745.00" width="30" height="27" rx="4" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="96.00" y="1766.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Person / Apple</text>
+<rect x="542.00" y="1745.00" width="30" height="27" rx="4" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="586.00" y="1766.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Frontend / UI</text>
+<rect x="52.00" y="1811.00" width="30" height="27" rx="4" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="96.00" y="1832.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Local state</text>
+<rect x="542.00" y="1811.00" width="30" height="27" rx="4" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+<text x="586.00" y="1832.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Models / services</text>
+</svg>

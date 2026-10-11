@@ -1,0 +1,370 @@
+{
+  "title": "Fencing Review \u2014 A guide for parents and fencers",
+  "duration": 24.919002267573696,
+  "chapters": [
+    {
+      "title": "Add a fencer and add a tournament",
+      "beats": [
+        {
+          "label": "title-1",
+          "text": "Number one. Add a fencer and add a tournament.",
+          "focus": null,
+          "start": 0,
+          "words": [
+            {
+              "word": "Number",
+              "start": 0.0,
+              "end": 0.302
+            },
+            {
+              "word": "one.",
+              "start": 0.383,
+              "end": 0.743
+            },
+            {
+              "word": "Add",
+              "start": 0.929,
+              "end": 1.138
+            },
+            {
+              "word": "a",
+              "start": 1.173,
+              "end": 1.196
+            },
+            {
+              "word": "fencer",
+              "start": 1.254,
+              "end": 1.625
+            },
+            {
+              "word": "and",
+              "start": 1.695,
+              "end": 1.811
+            },
+            {
+              "word": "add",
+              "start": 1.858,
+              "end": 1.974
+            },
+            {
+              "word": "a",
+              "start": 2.009,
+              "end": 2.032
+            },
+            {
+              "word": "tournament.",
+              "start": 2.078,
+              "end": 2.879
+            }
+          ],
+          "end": 3.6792743764172338
+        }
+      ],
+      "duration": 3.6792743764172338,
+      "start": 0,
+      "end": 3.6792743764172338
+    },
+    {
+      "title": "Add a schedule from a screenshot",
+      "beats": [
+        {
+          "label": "title-2",
+          "text": "Number two. Add a schedule from a screenshot.",
+          "focus": null,
+          "start": 3.6792743764172338,
+          "words": [
+            {
+              "word": "Number",
+              "start": 3.6792743764172338,
+              "end": 3.969274376417234
+            },
+            {
+              "word": "two.",
+              "start": 4.0162743764172335,
+              "end": 4.422274376417234
+            },
+            {
+              "word": "Add",
+              "start": 4.759274376417234,
+              "end": 4.944274376417233
+            },
+            {
+              "word": "a",
+              "start": 4.9682743764172335,
+              "end": 4.991274376417234
+            },
+            {
+              "word": "schedule",
+              "start": 5.037274376417233,
+              "end": 5.455274376417234
+            },
+            {
+              "word": "from",
+              "start": 5.479274376417234,
+              "end": 5.606274376417234
+            },
+            {
+              "word": "a",
+              "start": 5.653274376417234,
+              "end": 5.676274376417234
+            },
+            {
+              "word": "screenshot.",
+              "start": 5.722274376417234,
+              "end": 6.744274376417234
+            }
+          ],
+          "end": 7.544308390022676
+        }
+      ],
+      "duration": 3.865034013605442,
+      "start": 3.6792743764172338,
+      "end": 7.544308390022676
+    },
+    {
+      "title": "Add a bout manually",
+      "beats": [
+        {
+          "label": "title-3",
+          "text": "Number three. Add a bout manually.",
+          "focus": null,
+          "start": 7.544308390022676,
+          "words": [
+            {
+              "word": "Number",
+              "start": 7.544308390022676,
+              "end": 7.846308390022676
+            },
+            {
+              "word": "three.",
+              "start": 7.904308390022677,
+              "end": 8.345308390022677
+            },
+            {
+              "word": "Add",
+              "start": 8.566308390022677,
+              "end": 8.786308390022675
+            },
+            {
+              "word": "a",
+              "start": 8.821308390022676,
+              "end": 8.844308390022677
+            },
+            {
+              "word": "bout",
+              "start": 8.891308390022676,
+              "end": 9.111308390022677
+            },
+            {
+              "word": "manually.",
+              "start": 9.193308390022676,
+              "end": 10.052308390022677
+            }
+          ],
+          "end": 10.852063492063493
+        }
+      ],
+      "duration": 3.3077551020408165,
+      "start": 7.544308390022676,
+      "end": 10.852063492063493
+    },
+    {
+      "title": "Import videos into a bout",
+      "beats": [
+        {
+          "label": "title-4",
+          "text": "Number four. Import videos into a bout.",
+          "focus": null,
+          "start": 10.852063492063493,
+          "words": [
+            {
+              "word": "Number",
+              "start": 10.852063492063493,
+              "end": 11.154063492063493
+            },
+            {
+              "word": "four.",
+              "start": 11.212063492063493,
+              "end": 11.583063492063493
+            },
+            {
+              "word": "Import",
+              "start": 11.711063492063493,
+              "end": 12.117063492063494
+            },
+            {
+              "word": "videos",
+              "start": 12.164063492063493,
+              "end": 12.547063492063494
+            },
+            {
+              "word": "into",
+              "start": 12.605063492063493,
+              "end": 12.791063492063493
+            },
+            {
+              "word": "a",
+              "start": 12.861063492063494,
+              "end": 12.884063492063493
+            },
+            {
+              "word": "bout.",
+              "start": 12.942063492063493,
+              "end": 13.592063492063494
+            }
+          ],
+          "end": 14.39201814058957
+        }
+      ],
+      "duration": 3.539954648526077,
+      "start": 10.852063492063493,
+      "end": 14.39201814058957
+    },
+    {
+      "title": "Create review clips and mark favorites",
+      "beats": [
+        {
+          "label": "title-5",
+          "text": "Number five. Create review clips and mark favorites.",
+          "focus": null,
+          "start": 14.39201814058957,
+          "words": [
+            {
+              "word": "Number",
+              "start": 14.39201814058957,
+              "end": 14.68201814058957
+            },
+            {
+              "word": "five.",
+              "start": 14.740018140589571,
+              "end": 15.19301814058957
+            },
+            {
+              "word": "Create",
+              "start": 15.35601814058957,
+              "end": 15.692018140589571
+            },
+            {
+              "word": "review",
+              "start": 15.727018140589571,
+              "end": 15.98301814058957
+            },
+            {
+              "word": "clips",
+              "start": 16.04101814058957,
+              "end": 16.33101814058957
+            },
+            {
+              "word": "and",
+              "start": 16.36601814058957,
+              "end": 16.45901814058957
+            },
+            {
+              "word": "mark",
+              "start": 16.51701814058957,
+              "end": 16.71401814058957
+            },
+            {
+              "word": "favorites.",
+              "start": 16.78401814058957,
+              "end": 17.59601814058957
+            }
+          ],
+          "end": 18.396371882086168
+        }
+      ],
+      "duration": 4.004353741496598,
+      "start": 14.39201814058957,
+      "end": 18.396371882086168
+    },
+    {
+      "title": "Delete review clips",
+      "beats": [
+        {
+          "label": "title-6",
+          "text": "Number six. Delete review clips.",
+          "focus": null,
+          "start": 18.396371882086168,
+          "words": [
+            {
+              "word": "Number",
+              "start": 18.396371882086168,
+              "end": 18.686371882086167
+            },
+            {
+              "word": "six.",
+              "start": 18.744371882086167,
+              "end": 19.174371882086167
+            },
+            {
+              "word": "Delete",
+              "start": 19.302371882086167,
+              "end": 19.65037188208617
+            },
+            {
+              "word": "review",
+              "start": 19.68537188208617,
+              "end": 19.95237188208617
+            },
+            {
+              "word": "clips.",
+              "start": 19.99837188208617,
+              "end": 20.718371882086167
+            }
+          ],
+          "end": 21.518367346938774
+        }
+      ],
+      "duration": 3.1219954648526076,
+      "start": 18.396371882086168,
+      "end": 21.518367346938774
+    },
+    {
+      "title": "Clear local clip copies",
+      "beats": [
+        {
+          "label": "title-7",
+          "text": "Number seven. Clear local clip copies.",
+          "focus": null,
+          "start": 21.518367346938774,
+          "words": [
+            {
+              "word": "Number",
+              "start": 21.518367346938774,
+              "end": 21.820367346938774
+            },
+            {
+              "word": "seven.",
+              "start": 21.878367346938774,
+              "end": 22.261367346938773
+            },
+            {
+              "word": "Clear",
+              "start": 22.447367346938773,
+              "end": 22.702367346938775
+            },
+            {
+              "word": "local",
+              "start": 22.772367346938776,
+              "end": 23.027367346938775
+            },
+            {
+              "word": "clip",
+              "start": 23.085367346938774,
+              "end": 23.294367346938774
+            },
+            {
+              "word": "copies.",
+              "start": 23.352367346938774,
+              "end": 24.119367346938773
+            }
+          ],
+          "end": 24.919002267573696
+        }
+      ],
+      "duration": 3.4006349206349205,
+      "start": 21.518367346938774,
+      "end": 24.919002267573696
+    }
+  ]
+}

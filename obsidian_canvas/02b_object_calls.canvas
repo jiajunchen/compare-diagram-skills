@@ -1,0 +1,446 @@
+{
+  "nodes": [
+    {
+      "id": "f44e239e41cc2c69",
+      "type": "group",
+      "label": "02B  Object calls | production cross-component methods",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "color": "#4a6080"
+    },
+    {
+      "id": "6c1ced2156b57102",
+      "type": "text",
+      "text": "# 02B  Object calls — production cross-component methods",
+      "x": 44,
+      "y": 45,
+      "width": 1832,
+      "height": 65,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "05721d6d32f99196",
+      "type": "text",
+      "text": "**FencingVideoAnalysisApp**\nAppDependencies.make -> AppRootView",
+      "x": 639,
+      "y": 133,
+      "width": 216,
+      "height": 78,
+      "color": "#4a6080"
+    },
+    {
+      "id": "d7e1160e8a099502",
+      "type": "text",
+      "text": "**SwiftUI views**\nforms, schedule, bout, timeline, player, settings",
+      "x": 629,
+      "y": 218,
+      "width": 236,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "f6b9551c9d4feee5",
+      "type": "text",
+      "text": "**AppViewModel**\nload / refreshCloud\nsaveTournament / confirmSchedule / addBout*\nprepare/confirmRecordings / createClip\nplayableURL / delete / offload",
+      "x": 629,
+      "y": 419,
+      "width": 236,
+      "height": 82,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "96b5160df9a77a0c",
+      "type": "text",
+      "text": "**ScheduleReviewViewModel**\nextract / addDraft / removeDraft / moveDraft",
+      "x": 473,
+      "y": 311,
+      "width": 226,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "04c4ec300e7eacbe",
+      "type": "text",
+      "text": "**Schedule services**\nrecognize -> parse -> propose -> reconcile",
+      "x": 398,
+      "y": 421,
+      "width": 220,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "74baaf4479bac36b",
+      "type": "text",
+      "text": "**BoutImportCoordinator**\nprepareSelections / confirm / linkPendingCloudPhotos\nsourceAsset / move / remove",
+      "x": 731,
+      "y": 528,
+      "width": 267,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "093ccca9457aa17d",
+      "type": "text",
+      "text": "**ClipWorkflow**\ncreateClip / retry / delete / clips\nunloadUploadedClips / clearLocalClipCopies",
+      "x": 379,
+      "y": 528,
+      "width": 227,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "6b8e1d12996ca3ca",
+      "type": "text",
+      "text": "**ClipUploadQueue**\nresumePending / upload / retry / deleteCloudCopyIfNeeded",
+      "x": 1010,
+      "y": 528,
+      "width": 291,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "0473ce5d231e2be8",
+      "type": "text",
+      "text": "**CloudMetadataService**\nsynchronize / synchronizeDeletions / queueDeletion\nmapper pendingRecords / apply",
+      "x": 764,
+      "y": 624,
+      "width": 257,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "c1cef06a5cc40a10",
+      "type": "text",
+      "text": "**CloudAssetService**\nsaveExportedClip / downloadClip / deleteClip",
+      "x": 1280,
+      "y": 624,
+      "width": 230,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "0c5f2b1e44dcfc28",
+      "type": "text",
+      "text": "**ClipDownloadCoordinator**\nresolve / clearCache / removeCachedCopies",
+      "x": 1313,
+      "y": 528,
+      "width": 228,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "adfc9768b6f2dda4",
+      "type": "text",
+      "text": "**BoutPlaybackQueue + MediaPlayerModel**\nnext / previous / finish / play / seek / scrub",
+      "x": 807,
+      "y": 311,
+      "width": 216,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "2e40969e8b266bd6",
+      "type": "text",
+      "text": "**LocalRepository**\ninsert / fetch / delete / saveChanges\ntournaments / bouts / sourceRecordings / reviewClips",
+      "x": 552,
+      "y": 728,
+      "width": 265,
+      "height": 78,
+      "color": "#ff8c42"
+    },
+    {
+      "id": "3a619a48f1e5d067",
+      "type": "text",
+      "text": "**PhotoLibraryService**\nimportSelections / cloudIdentifiers / videoAsset",
+      "x": 1033,
+      "y": 624,
+      "width": 235,
+      "height": 78,
+      "color": "#4a6080"
+    },
+    {
+      "id": "f54365a2c097c32c",
+      "type": "text",
+      "text": "**VideoEditingService.export**",
+      "x": 453,
+      "y": 624,
+      "width": 152,
+      "height": 78,
+      "color": "#4a6080"
+    },
+    {
+      "id": "aa7a745ed9aa7d2c",
+      "type": "text",
+      "text": "**Private CloudKit + Photos**\nframework boundaries",
+      "x": 1077,
+      "y": 728,
+      "width": 147,
+      "height": 78,
+      "color": "#4a6080"
+    },
+    {
+      "id": "7ba04a3da56c04f6",
+      "type": "text",
+      "text": "**How to read**  Principal production cross-component calls. Private helpers and framework callbacks are indexed in figures/CALL_INDEX.md; addBout has no production view caller.",
+      "x": 52,
+      "y": 830,
+      "width": 1816,
+      "height": 60,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "af92ae211a5dd563",
+      "type": "text",
+      "text": "## Color legend",
+      "x": 52,
+      "y": 895,
+      "width": 1816,
+      "height": 45
+    },
+    {
+      "id": "6afc9fca31b3fb8f",
+      "type": "text",
+      "text": "Entry / Apple frameworks",
+      "x": 52,
+      "y": 950,
+      "width": 585,
+      "height": 50,
+      "color": "#4a6080"
+    },
+    {
+      "id": "56d8c0238ae7782a",
+      "type": "text",
+      "text": "UI and review state",
+      "x": 657,
+      "y": 950,
+      "width": 585,
+      "height": 50,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "712b0a5437c27f43",
+      "type": "text",
+      "text": "Workflow orchestration",
+      "x": 1263,
+      "y": 950,
+      "width": 585,
+      "height": 50,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "846323f921f65a70",
+      "type": "text",
+      "text": "Application services",
+      "x": 52,
+      "y": 1010,
+      "width": 585,
+      "height": 50,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "c648463dd8714fdf",
+      "type": "text",
+      "text": "Local repository",
+      "x": 657,
+      "y": 1010,
+      "width": 585,
+      "height": 50,
+      "color": "#ff8c42"
+    }
+  ],
+  "edges": [
+    {
+      "id": "46724262d3077e8f",
+      "fromNode": "05721d6d32f99196",
+      "fromSide": "bottom",
+      "toNode": "d7e1160e8a099502",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "ee4dcb97d5e78f75",
+      "fromNode": "d7e1160e8a099502",
+      "fromSide": "bottom",
+      "toNode": "f6b9551c9d4feee5",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "commands"
+    },
+    {
+      "id": "029c71d72b716c78",
+      "fromNode": "d7e1160e8a099502",
+      "fromSide": "left",
+      "toNode": "96b5160df9a77a0c",
+      "toSide": "right",
+      "color": "#2d7aff",
+      "label": "schedule"
+    },
+    {
+      "id": "b878c2452f002248",
+      "fromNode": "d7e1160e8a099502",
+      "fromSide": "right",
+      "toNode": "adfc9768b6f2dda4",
+      "toSide": "left",
+      "color": "#2d7aff",
+      "label": "playback controls"
+    },
+    {
+      "id": "e48b7f24c6b0880c",
+      "fromNode": "96b5160df9a77a0c",
+      "fromSide": "bottom",
+      "toNode": "04c4ec300e7eacbe",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "f886e152fd554444",
+      "fromNode": "96b5160df9a77a0c",
+      "fromSide": "right",
+      "toNode": "f6b9551c9d4feee5",
+      "toSide": "left",
+      "color": "#2d7aff",
+      "label": "confirmed drafts"
+    },
+    {
+      "id": "74a7b04f5eafb919",
+      "fromNode": "f6b9551c9d4feee5",
+      "fromSide": "bottom",
+      "toNode": "74baaf4479bac36b",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "3fc7149f7f8d54b3",
+      "fromNode": "f6b9551c9d4feee5",
+      "fromSide": "left",
+      "toNode": "093ccca9457aa17d",
+      "toSide": "right",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "d5a5cb0a8b5d5ca0",
+      "fromNode": "f6b9551c9d4feee5",
+      "fromSide": "right",
+      "toNode": "6b8e1d12996ca3ca",
+      "toSide": "left",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "750bf96d56ea96e4",
+      "fromNode": "f6b9551c9d4feee5",
+      "fromSide": "bottom",
+      "toNode": "0473ce5d231e2be8",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "ecc375d27b9bb2a6",
+      "fromNode": "f6b9551c9d4feee5",
+      "fromSide": "right",
+      "toNode": "0c5f2b1e44dcfc28",
+      "toSide": "left",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "c74bd7e857c021a3",
+      "fromNode": "f6b9551c9d4feee5",
+      "fromSide": "bottom",
+      "toNode": "2e40969e8b266bd6",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "c7850f091dd2ab2b",
+      "fromNode": "74baaf4479bac36b",
+      "fromSide": "right",
+      "toNode": "3a619a48f1e5d067",
+      "toSide": "left",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "002ec1c72cbfe023",
+      "fromNode": "74baaf4479bac36b",
+      "fromSide": "bottom",
+      "toNode": "2e40969e8b266bd6",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "7068fb1a69e71ab0",
+      "fromNode": "093ccca9457aa17d",
+      "fromSide": "bottom",
+      "toNode": "f54365a2c097c32c",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "1c4377b056c44ccf",
+      "fromNode": "093ccca9457aa17d",
+      "fromSide": "bottom",
+      "toNode": "2e40969e8b266bd6",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "d742b7d3d248e733",
+      "fromNode": "6b8e1d12996ca3ca",
+      "fromSide": "left",
+      "toNode": "0473ce5d231e2be8",
+      "toSide": "right",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "d8cf3ff7a25ed5a2",
+      "fromNode": "6b8e1d12996ca3ca",
+      "fromSide": "right",
+      "toNode": "c1cef06a5cc40a10",
+      "toSide": "left",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "684becd2723b69a5",
+      "fromNode": "0c5f2b1e44dcfc28",
+      "fromSide": "bottom",
+      "toNode": "c1cef06a5cc40a10",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "901da845bfad3d2b",
+      "fromNode": "0473ce5d231e2be8",
+      "fromSide": "left",
+      "toNode": "2e40969e8b266bd6",
+      "toSide": "right",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "d874884d9af9eeb8",
+      "fromNode": "3a619a48f1e5d067",
+      "fromSide": "bottom",
+      "toNode": "aa7a745ed9aa7d2c",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "Photos"
+    },
+    {
+      "id": "ae7dd2783aa29c0a",
+      "fromNode": "c1cef06a5cc40a10",
+      "fromSide": "left",
+      "toNode": "aa7a745ed9aa7d2c",
+      "toSide": "right",
+      "color": "#2d7aff",
+      "label": "CKAsset"
+    },
+    {
+      "id": "154e84c8a498765c",
+      "fromNode": "0473ce5d231e2be8",
+      "fromSide": "right",
+      "toNode": "aa7a745ed9aa7d2c",
+      "toSide": "left",
+      "color": "#2d7aff",
+      "label": "CKSyncEngine"
+    }
+  ]
+}

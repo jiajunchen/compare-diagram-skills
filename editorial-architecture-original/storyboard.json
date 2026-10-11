@@ -1,0 +1,732 @@
+{
+  "title": "From Fencing Footage to Review \u2014 original narration, editorial diagrams",
+  "chapters": [
+    {
+      "title": "From Fencing Footage to Review",
+      "diagram": "intro",
+      "start": 0,
+      "end": 17.519,
+      "beats": [
+        {
+          "text": "Imagine recording a fencing bout in several short bursts. How does the app turn those separate recordings into an ordered, cross-device review?",
+          "speechStart": 0.0,
+          "speechEnd": 8.125,
+          "exactSpeechStart": 0.0,
+          "exactSpeechEnd": 8.124943310657596,
+          "start": 0,
+          "end": 8.475,
+          "focus": null
+        },
+        {
+          "text": "We will follow the data, then the function calls. Every path comes from the current Swift implementation, including its failure and recovery behavior.",
+          "speechStart": 8.475,
+          "speechEnd": 17.169,
+          "exactSpeechStart": 8.47501133786848,
+          "exactSpeechEnd": 17.169160997732426,
+          "start": 8.475,
+          "end": 17.519,
+          "focus": null
+        }
+      ]
+    },
+    {
+      "title": "One bout, many recordings",
+      "diagram": "records-detail",
+      "start": 17.519,
+      "end": 59.8,
+      "beats": [
+        {
+          "text": "Start with a tournament. Each Bout belongs to that tournament, and each bout can contain many source recordings.",
+          "speechStart": 18.419,
+          "speechEnd": 24.387,
+          "exactSpeechStart": 18.419002267573696,
+          "exactSpeechEnd": 24.386439909297053,
+          "start": 17.519,
+          "end": 24.737,
+          "focus": 1
+        },
+        {
+          "text": "A SourceRecording describes an original video in Photos. Stopping and restarting the camera creates another source, not another bout.",
+          "speechStart": 24.737,
+          "speechEnd": 32.468,
+          "exactSpeechStart": 24.737006802721087,
+          "exactSpeechEnd": 32.468390022675734,
+          "start": 24.737,
+          "end": 32.818,
+          "focus": 2
+        },
+        {
+          "text": "Each ReviewClip selects a start and end within one source. Several clips can therefore point back to the same recording.",
+          "speechStart": 32.818,
+          "speechEnd": 39.606,
+          "exactSpeechStart": 32.818004535147395,
+          "exactSpeechEnd": 39.60634920634921,
+          "start": 32.818,
+          "end": 39.956,
+          "focus": 4
+        },
+        {
+          "text": "Continuous review does not merge those movie files. The repository sorts clips by source capture time, clip start time, and finally identifier.",
+          "speechStart": 39.956,
+          "speechEnd": 48.441,
+          "exactSpeechStart": 39.95600907029478,
+          "exactSpeechEnd": 48.44077097505669,
+          "start": 39.956,
+          "end": 48.791,
+          "focus": 5
+        },
+        {
+          "text": "One global setting stores the fencer's name. These relationships use explicit identifiers; the code does not rely on automatic SwiftData relationship cascades.",
+          "speechStart": 48.791,
+          "speechEnd": 59.0,
+          "exactSpeechStart": 48.79102040816326,
+          "exactSpeechEnd": 58.999591836734695,
+          "start": 48.791,
+          "end": 59.8,
+          "focus": 3
+        }
+      ]
+    },
+    {
+      "title": "Screens, state, and services",
+      "diagram": "overview",
+      "start": 59.8,
+      "end": 113.247,
+      "beats": [
+        {
+          "text": "Think of SwiftUI as the controls. Screens collect choices and display results, while the app view model coordinates most user actions.",
+          "speechStart": 60.7,
+          "speechEnd": 69.199,
+          "exactSpeechStart": 60.7,
+          "exactSpeechEnd": 69.19954648526077,
+          "start": 59.8,
+          "end": 69.549,
+          "focus": 0
+        },
+        {
+          "text": "AppViewModel exposes operations such as saveTournament, confirmSchedule, createClip, and refreshCloud. Observable state connects the results back to the interface.",
+          "speechStart": 69.549,
+          "speechEnd": 80.21600000000001,
+          "exactSpeechStart": 69.54897959183674,
+          "exactSpeechEnd": 80.21609977324263,
+          "start": 69.549,
+          "end": 80.566,
+          "focus": 1
+        },
+        {
+          "text": "Coordinators handle focused workflows. BoutImportCoordinator manages sources; ClipWorkflow manages exports; separate upload and download coordinators move edited clips.",
+          "speechStart": 80.566,
+          "speechEnd": 92.017,
+          "exactSpeechStart": 80.56598639455783,
+          "exactSpeechEnd": 92.01628117913832,
+          "start": 80.566,
+          "end": 92.36699999999999,
+          "focus": 4
+        },
+        {
+          "text": "LocalRepository gives these components a shared persistence interface. SwiftData stores records locally, and explicit save calls can trigger cloud synchronization.",
+          "speechStart": 92.36699999999999,
+          "speechEnd": 102.39,
+          "exactSpeechStart": 92.36698412698412,
+          "exactSpeechEnd": 102.39074829931972,
+          "start": 92.36699999999999,
+          "end": 102.74000000000001,
+          "focus": 2
+        },
+        {
+          "text": "Framework adapters wrap Photos, AVFoundation, Vision, Foundation Models, and CloudKit. Dependency injection lets tests replace them with controlled fakes.",
+          "speechStart": 102.74000000000001,
+          "speechEnd": 112.447,
+          "exactSpeechStart": 102.74,
+          "exactSpeechEnd": 112.44657596371881,
+          "start": 102.74000000000001,
+          "end": 113.247,
+          "focus": 5
+        }
+      ]
+    },
+    {
+      "title": "Launch and ordinary edits",
+      "diagram": "startup",
+      "start": 113.247,
+      "end": 162.812,
+      "beats": [
+        {
+          "text": "Launch begins with AppDependencies dot make. It creates the repository, chooses service implementations, and supplies the root view with dependencies.",
+          "speechStart": 114.14699999999999,
+          "speechEnd": 123.091,
+          "exactSpeechStart": 114.14698412698412,
+          "exactSpeechEnd": 123.09083900226757,
+          "start": 113.247,
+          "end": 123.441,
+          "focus": 1
+        },
+        {
+          "text": "The root creates Model state and calls load. Local settings and tournaments load first; available iCloud then permits a refresh.",
+          "speechStart": 123.441,
+          "speechEnd": 131.663,
+          "exactSpeechStart": 123.4409977324263,
+          "exactSpeechEnd": 131.6627664399093,
+          "start": 123.441,
+          "end": 132.013,
+          "focus": 2
+        },
+        {
+          "text": "With no saved fencer setting, the app shows setup. Continue calls saveFencerName; an empty name produces a validation error.",
+          "speechStart": 132.013,
+          "speechEnd": 139.47,
+          "exactSpeechStart": 132.01301587301586,
+          "exactSpeechEnd": 139.47034013605443,
+          "start": 132.013,
+          "end": 139.82,
+          "focus": 3
+        },
+        {
+          "text": "Tournament forms call saveTournament. Selecting a tournament calls selectTournament, which reads its ordered bouts. Bout edits call updateConfirmedBout and reject number collisions.",
+          "speechStart": 139.82,
+          "speechEnd": 150.597,
+          "exactSpeechStart": 139.82,
+          "exactSpeechEnd": 150.59732426303856,
+          "start": 139.82,
+          "end": 150.947,
+          "focus": 3
+        },
+        {
+          "text": "Each successful local save reaches Storage immediately. Cloud work follows asynchronously. Foreground activation and pull-to-refresh call refreshCloud to discover remote changes.",
+          "speechStart": 150.947,
+          "speechEnd": 162.012,
+          "exactSpeechStart": 150.94698412698412,
+          "exactSpeechEnd": 162.0114739229025,
+          "start": 150.947,
+          "end": 162.812,
+          "focus": 4
+        }
+      ]
+    },
+    {
+      "title": "Read the schedule on-device",
+      "diagram": "schedule",
+      "start": 162.812,
+      "end": 213.665,
+      "beats": [
+        {
+          "text": "The screenshot picker supplies image data to ScheduleReviewViewModel. Its extract function starts Vision recognition on each selected screenshot.",
+          "speechStart": 163.712,
+          "speechEnd": 172.691,
+          "exactSpeechStart": 163.71201814058958,
+          "exactSpeechEnd": 172.69174603174602,
+          "start": 162.812,
+          "end": 173.041,
+          "focus": 1
+        },
+        {
+          "text": "Recognition collects tables, cells, text, and positions. The deterministic Parser matches the saved fencer and derives the opponent and full bout-order number.",
+          "speechStart": 173.041,
+          "speechEnd": 183.047,
+          "exactSpeechStart": 173.0409977324263,
+          "exactSpeechEnd": 183.04621315192745,
+          "start": 173.041,
+          "end": 183.397,
+          "focus": 2
+        },
+        {
+          "text": "Model assistance is optional. The on-device language model proposes typed candidates when available; failure leaves the deterministic results available.",
+          "speechStart": 183.397,
+          "speechEnd": 192.711,
+          "exactSpeechStart": 183.39700680272108,
+          "exactSpeechEnd": 192.71138321995466,
+          "start": 183.397,
+          "end": 193.061,
+          "focus": 5
+        },
+        {
+          "text": "The Validator checks source evidence before accepting suggestions. A model response cannot invent a valid row simply by sounding confident.",
+          "speechStart": 193.061,
+          "speechEnd": 201.183,
+          "exactSpeechStart": 193.0609977324263,
+          "exactSpeechEnd": 201.18253968253967,
+          "start": 193.061,
+          "end": 201.53300000000002,
+          "focus": 4
+        },
+        {
+          "text": "Editable drafts remain local and unconfirmed. Unsupported layouts can fall back to manual entry; screenshots and recognized text never enter the app's CloudKit records.",
+          "speechStart": 201.53300000000002,
+          "speechEnd": 212.865,
+          "exactSpeechStart": 201.53301587301587,
+          "exactSpeechEnd": 212.8655328798186,
+          "start": 201.53300000000002,
+          "end": 213.665,
+          "focus": 3
+        }
+      ]
+    },
+    {
+      "title": "Human confirmation is the boundary",
+      "diagram": "schedule",
+      "start": 213.665,
+      "end": 259.732,
+      "beats": [
+        {
+          "text": "The parent edits opponent names and bout numbers before tapping Confirm Schedule. That action calls the app view model's confirmSchedule function.",
+          "speechStart": 214.565,
+          "speechEnd": 223.363,
+          "exactSpeechStart": 214.56498866213153,
+          "exactSpeechEnd": 223.36326530612246,
+          "start": 213.665,
+          "end": 223.713,
+          "focus": 3
+        },
+        {
+          "text": "Validation requires a known tournament, at least one draft, nonempty opponents, and positive unique bout numbers.",
+          "speechStart": 223.713,
+          "speechEnd": 230.435,
+          "exactSpeechStart": 223.71301587301588,
+          "exactSpeechEnd": 230.43451247165532,
+          "start": 223.713,
+          "end": 230.785,
+          "focus": 3
+        },
+        {
+          "text": "A number that conflicts with another saved opponent blocks confirmation. The app skips an identical number and opponent pair, avoiding a duplicate.",
+          "speechStart": 230.785,
+          "speechEnd": 238.765,
+          "exactSpeechStart": 230.78498866213152,
+          "exactSpeechEnd": 238.76544217687075,
+          "start": 230.785,
+          "end": 239.115,
+          "focus": 3
+        },
+        {
+          "text": "Confirmed bouts retain opponent and number from this screen. The phase becomes unknown; other extracted context does not become imported bout fields.",
+          "speechStart": 239.115,
+          "speechEnd": 248.223,
+          "exactSpeechStart": 239.11501133786848,
+          "exactSpeechEnd": 248.22285714285715,
+          "start": 239.115,
+          "end": 248.573,
+          "focus": 3
+        },
+        {
+          "text": "Only after saving can Cloud metadata synchronize these records. Discard writes nothing; a save failure removes inserted rows and restores prior tournament fields.",
+          "speechStart": 248.573,
+          "speechEnd": 258.932,
+          "exactSpeechStart": 248.57301587301586,
+          "exactSpeechEnd": 258.9320634920635,
+          "start": 248.573,
+          "end": 259.732,
+          "focus": 3
+        }
+      ]
+    },
+    {
+      "title": "Import links, not original uploads",
+      "diagram": "recordings",
+      "start": 259.732,
+      "end": 313.791,
+      "beats": [
+        {
+          "text": "Import begins inside a selected bout. The parent chooses up to twenty videos, so the destination is explicit; no automatic bout matching occurs.",
+          "speechStart": 260.632,
+          "speechEnd": 270.135,
+          "exactSpeechStart": 260.6320181405896,
+          "exactSpeechEnd": 270.1350113378685,
+          "start": 259.732,
+          "end": 270.485,
+          "focus": 0
+        },
+        {
+          "text": "Preparation checks known Photos identifiers and rejects duplicates. Normal imports read metadata and retain a Photos link without copying the full original.",
+          "speechStart": 270.485,
+          "speechEnd": 279.735,
+          "exactSpeechStart": 270.4849886621315,
+          "exactSpeechEnd": 279.7351927437642,
+          "start": 270.485,
+          "end": 280.085,
+          "focus": 1
+        },
+        {
+          "text": "Photos can return usable selections alongside individual failures. Confirmation inserts source records; cancelling discards the prepared batch and any temporary working files.",
+          "speechStart": 280.085,
+          "speechEnd": 291.062,
+          "exactSpeechStart": 280.08498866213154,
+          "exactSpeechEnd": 291.06181405895694,
+          "start": 280.085,
+          "end": 291.412,
+          "focus": 2
+        },
+        {
+          "text": "linkPendingCloudPhotos maps device-local identifiers to portable cloud identifiers. Those portable links synchronize, while local identifiers and file paths stay on the device.",
+          "speechStart": 291.412,
+          "speechEnd": 302.725,
+          "exactSpeechStart": 291.41201814058957,
+          "exactSpeechEnd": 302.72503401360547,
+          "start": 291.412,
+          "end": 303.075,
+          "focus": 4
+        },
+        {
+          "text": "Opening a source calls sourceAsset, then PhotoKit's videoAsset path. Photos can download its original; a legacy app copy provides fallback when available.",
+          "speechStart": 303.075,
+          "speechEnd": 312.991,
+          "exactSpeechStart": 303.0750113378685,
+          "exactSpeechEnd": 312.9906575963719,
+          "start": 303.075,
+          "end": 313.791,
+          "focus": 3
+        }
+      ]
+    },
+    {
+      "title": "Turn a time range into a clip",
+      "diagram": "clips",
+      "start": 313.791,
+      "end": 363.009,
+      "beats": [
+        {
+          "text": "In the source timeline, the parent marks start and end. Save Clip calls createClip with a trim range and progress callback.",
+          "speechStart": 314.691,
+          "speechEnd": 322.303,
+          "exactSpeechStart": 314.69102040816324,
+          "exactSpeechEnd": 322.3032199546485,
+          "start": 313.791,
+          "end": 322.653,
+          "focus": 0
+        },
+        {
+          "text": "Workflow validates finite times, increasing bounds, and source duration. It saves a ReviewClip record with exporting status before rendering starts.",
+          "speechStart": 322.653,
+          "speechEnd": 331.847,
+          "exactSpeechStart": 322.6530158730159,
+          "exactSpeechEnd": 331.84662131519275,
+          "start": 322.653,
+          "end": 332.197,
+          "focus": 1
+        },
+        {
+          "text": "The Exporter uses AVAssetExportSession with a passthrough preset. It writes the selected range as an independent movie in the PendingClips folder.",
+          "speechStart": 332.197,
+          "speechEnd": 341.358,
+          "exactSpeechStart": 332.1970068027211,
+          "exactSpeechEnd": 341.35850340136057,
+          "start": 332.197,
+          "end": 341.70799999999997,
+          "focus": 2
+        },
+        {
+          "text": "Successful export saves the local path and measured duration, then changes status to pendingUpload. AppViewModel starts an asynchronous upload task.",
+          "speechStart": 341.70799999999997,
+          "speechEnd": 351.366,
+          "exactSpeechStart": 341.70798185941044,
+          "exactSpeechEnd": 351.3654421768708,
+          "start": 341.70799999999997,
+          "end": 351.716,
+          "focus": 5
+        },
+        {
+          "text": "Cancel stops the export and removes partial output. Export failure leaves a retryable record; retryClip exports again using the same clip identifier.",
+          "speechStart": 351.716,
+          "speechEnd": 362.209,
+          "exactSpeechStart": 351.7160090702948,
+          "exactSpeechEnd": 362.20943310657594,
+          "start": 351.716,
+          "end": 363.009,
+          "focus": 1
+        }
+      ]
+    },
+    {
+      "title": "Metadata first, video second",
+      "diagram": "upload-detail",
+      "start": 363.009,
+      "end": 411.939,
+      "beats": [
+        {
+          "text": "pendingUpload and the local export path form a durable queue. resumePending retries queued or interrupted uploads when cloud refresh reaches that stage.",
+          "speechStart": 363.909,
+          "speechEnd": 373.873,
+          "exactSpeechStart": 363.9089795918367,
+          "exactSpeechEnd": 373.87278911564624,
+          "start": 363.009,
+          "end": 374.223,
+          "focus": 0
+        },
+        {
+          "text": "upload first synchronizes the Metadata record. That creates the destination record before the service tries to attach the edited movie.",
+          "speechStart": 374.223,
+          "speechEnd": 382.162,
+          "exactSpeechStart": 374.2229931972789,
+          "exactSpeechEnd": 382.16263038548755,
+          "start": 374.223,
+          "end": 382.512,
+          "focus": 2
+        },
+        {
+          "text": "CKAsset upload uses a direct CloudKit database save. The metadata engine and asset service therefore take separate paths, even though they share one record.",
+          "speechStart": 382.512,
+          "speechEnd": 393.154,
+          "exactSpeechStart": 382.5120181405896,
+          "exactSpeechEnd": 393.1532879818594,
+          "start": 382.512,
+          "end": 393.504,
+          "focus": 5
+        },
+        {
+          "text": "Success marks the clip available. Temporary account or network failures return it to the queue; other failures can require an explicit Retry Upload.",
+          "speechStart": 393.504,
+          "speechEnd": 402.376,
+          "exactSpeechStart": 393.5039909297052,
+          "exactSpeechEnd": 402.37655328798184,
+          "start": 393.504,
+          "end": 402.726,
+          "focus": 4
+        },
+        {
+          "text": "An in-flight set prevents duplicate uploads. Deletion waits for an active upload, and late callbacks check that they must not restore a deleted clip.",
+          "speechStart": 402.726,
+          "speechEnd": 411.139,
+          "exactSpeechStart": 402.7259863945578,
+          "exactSpeechEnd": 411.13913832199546,
+          "start": 402.726,
+          "end": 411.939,
+          "focus": 1
+        }
+      ]
+    },
+    {
+      "title": "Resolve once, play in order",
+      "diagram": "playback",
+      "start": 411.939,
+      "end": 459.251,
+      "beats": [
+        {
+          "text": "Play Bout builds an Ordered queue from the repository's sorted review clips. openCurrent then asks playableURL to resolve the selected file.",
+          "speechStart": 412.839,
+          "speechEnd": 422.282,
+          "exactSpeechStart": 412.8390022675737,
+          "exactSpeechEnd": 422.28190476190474,
+          "start": 411.939,
+          "end": 422.632,
+          "focus": 1
+        },
+        {
+          "text": "The resolver prefers a Local export. If that file is absent, it checks the managed download cache before contacting CloudKit.",
+          "speechStart": 422.632,
+          "speechEnd": 429.9,
+          "exactSpeechStart": 422.6320181405896,
+          "exactSpeechEnd": 429.89968253968254,
+          "start": 422.632,
+          "end": 430.25,
+          "focus": 2
+        },
+        {
+          "text": "A downloaded Cloud asset enters the cache and must contain a video track. Missing asset data can mean the other device is still uploading.",
+          "speechStart": 430.25,
+          "speechEnd": 438.271,
+          "exactSpeechStart": 430.25002267573694,
+          "exactSpeechEnd": 438.2707936507937,
+          "start": 430.25,
+          "end": 438.621,
+          "focus": 2
+        },
+        {
+          "text": "AVPlayer opens the resolved URL. At the end notification, continuous mode advances through the queue; focused mode pauses on the current clip.",
+          "speechStart": 438.621,
+          "speechEnd": 448.052,
+          "exactSpeechStart": 438.6209977324263,
+          "exactSpeechEnd": 448.0521541950113,
+          "start": 438.621,
+          "end": 448.402,
+          "focus": 5
+        },
+        {
+          "text": "Previous, Next, and clip selection use the same resolver. The selected playback speed survives automatic transitions, so reviewing slowly remains consistent across files.",
+          "speechStart": 448.402,
+          "speechEnd": 458.451,
+          "exactSpeechStart": 448.40199546485263,
+          "exactSpeechEnd": 458.45142857142855,
+          "start": 448.402,
+          "end": 459.251,
+          "focus": 4
+        }
+      ]
+    },
+    {
+      "title": "Scrubbing follows the newest intent",
+      "diagram": "scrub-detail",
+      "start": 459.251,
+      "end": 504.779,
+      "beats": [
+        {
+          "text": "Dragging the Slider calls scrub on the player model. It clamps the time and sends the newest position to the scrub coordinator.",
+          "speechStart": 460.151,
+          "speechEnd": 466.563,
+          "exactSpeechStart": 460.1510204081633,
+          "exactSpeechEnd": 466.5622222222222,
+          "start": 459.251,
+          "end": 466.913,
+          "focus": 0
+        },
+        {
+          "text": "The Scrub coordinator keeps at most one seek in flight. New drag positions replace obsolete pending positions instead of creating a decoding backlog.",
+          "speechStart": 466.913,
+          "speechEnd": 476.43,
+          "exactSpeechStart": 466.91301587301587,
+          "exactSpeechEnd": 476.4301587301587,
+          "start": 466.913,
+          "end": 476.78,
+          "focus": 2
+        },
+        {
+          "text": "Preview seeks allow a small tolerance. Releasing the slider calls finishScrub and requests an exact final seek at the selected time.",
+          "speechStart": 476.78,
+          "speechEnd": 484.949,
+          "exactSpeechStart": 476.78,
+          "exactSpeechEnd": 484.9492517006803,
+          "start": 476.78,
+          "end": 485.299,
+          "focus": 4
+        },
+        {
+          "text": "Player model ignores ordinary playhead updates during the drag. Generation checks stop an old completion from altering a newly opened recording.",
+          "speechStart": 485.299,
+          "speechEnd": 493.762,
+          "exactSpeechStart": 485.2990022675737,
+          "exactSpeechEnd": 493.761768707483,
+          "start": 485.299,
+          "end": 494.112,
+          "focus": 1
+        },
+        {
+          "text": "Speed controls offer half, normal, and double speed. The model updates an active player's rate immediately; leaving the screen stops playback and cancels scrub work.",
+          "speechStart": 494.112,
+          "speechEnd": 503.979,
+          "exactSpeechStart": 494.11201814058956,
+          "exactSpeechEnd": 503.9792290249433,
+          "start": 494.112,
+          "end": 504.779,
+          "focus": 1
+        }
+      ]
+    },
+    {
+      "title": "Cloud recovery and safe deletion",
+      "diagram": "sync",
+      "start": 504.779,
+      "end": 556.245,
+      "beats": [
+        {
+          "text": "A Local save schedules metadata work through the repository callback. CKSyncEngine sends changes, fetches changes, and persists its recovery state locally.",
+          "speechStart": 505.679,
+          "speechEnd": 516.213,
+          "exactSpeechStart": 505.6790022675737,
+          "exactSpeechEnd": 516.2131972789116,
+          "start": 504.779,
+          "end": 516.563,
+          "focus": 0
+        },
+        {
+          "text": "Explicit refresh also scans the metadata zone to repair missed deliveries. Pending local saves and deletions receive protection during this reconciliation.",
+          "speechStart": 516.563,
+          "speechEnd": 526.287,
+          "exactSpeechStart": 516.562993197279,
+          "exactSpeechEnd": 526.2863492063492,
+          "start": 516.563,
+          "end": 526.637,
+          "focus": 1
+        },
+        {
+          "text": "Conflict handling remembers the server record version. A newer remote value can win; otherwise the local change retries against the current version.",
+          "speechStart": 526.637,
+          "speechEnd": 535.18,
+          "exactSpeechStart": 526.6370068027211,
+          "exactSpeechEnd": 535.18,
+          "start": 526.637,
+          "end": 535.53,
+          "focus": 1
+        },
+        {
+          "text": "A Delete action removes cloud-backed clip assets before their local records. Removing a source requires no clips; deleting a bout requires no linked media.",
+          "speechStart": 535.53,
+          "speechEnd": 545.436,
+          "exactSpeechStart": 535.530022675737,
+          "exactSpeechEnd": 545.437006802721,
+          "start": 535.53,
+          "end": 545.786,
+          "focus": 3
+        },
+        {
+          "text": "Tournament deletion proceeds through clips, sources, bouts, and the tournament. It is not one transaction; failures can leave partial progress and queued cloud deletion.",
+          "speechStart": 545.786,
+          "speechEnd": 555.445,
+          "exactSpeechStart": 545.7859863945578,
+          "exactSpeechEnd": 555.4449886621315,
+          "start": 545.786,
+          "end": 556.245,
+          "focus": 4
+        }
+      ]
+    },
+    {
+      "title": "Keep meaning, release local bytes",
+      "diagram": "favorites-detail",
+      "start": 556.245,
+      "end": 612.064,
+      "beats": [
+        {
+          "text": "A Clip star changes favorite metadata without exporting the movie again. The bout star derives from its clips, rather than a separate user toggle.",
+          "speechStart": 557.145,
+          "speechEnd": 565.918,
+          "exactSpeechStart": 557.1449886621315,
+          "exactSpeechEnd": 565.9172335600907,
+          "start": 556.245,
+          "end": 566.268,
+          "focus": 0
+        },
+        {
+          "text": "Offload checks distinguish deletion from storage cleanup. Bout unloading requires every local export in that bout to have a confirmed available cloud asset.",
+          "speechStart": 566.268,
+          "speechEnd": 575.474,
+          "exactSpeechStart": 566.2679818594104,
+          "exactSpeechEnd": 575.4737868480726,
+          "start": 566.268,
+          "end": 575.824,
+          "focus": 4
+        },
+        {
+          "text": "Global cleanup skips pending uploads, removes eligible uploaded copies, and clears downloaded clips. Managed-path checks protect files outside the app's workspace.",
+          "speechStart": 575.824,
+          "speechEnd": 586.229,
+          "exactSpeechStart": 575.8239909297052,
+          "exactSpeechEnd": 586.2299319727891,
+          "start": 575.824,
+          "end": 586.579,
+          "focus": 5
+        },
+        {
+          "text": "Cloud clips remain available for later download. Originals stay in Photos; screenshots stay local; the app's private cloud stores portable metadata and edited clips.",
+          "speechStart": 586.579,
+          "speechEnd": 597.037,
+          "exactSpeechStart": 586.5790022675737,
+          "exactSpeechEnd": 597.0361451247165,
+          "start": 586.579,
+          "end": 597.387,
+          "focus": 3
+        },
+        {
+          "text": "That separation makes the architecture work: local progress, explicit confirmation, independent media files, and recoverable transfer. Simulator fakes test logic; real cloud behavior still needs device checks.",
+          "speechStart": 597.387,
+          "speechEnd": 611.264,
+          "exactSpeechStart": 597.3869841269841,
+          "exactSpeechEnd": 611.2639909297052,
+          "start": 597.387,
+          "end": 612.064,
+          "focus": 3
+        }
+      ]
+    }
+  ],
+  "sourceCommit": "7179657",
+  "narration": "Recovered original ElevenLabs audio; no new speech requests",
+  "duration": 613.5640362811791
+}

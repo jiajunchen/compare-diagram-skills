@@ -1,0 +1,260 @@
+[
+  {
+    "label": "enter-fencer",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "continue-setup",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "new-tournament",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "tournament-name",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "save-tournament",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "import-schedule",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "open-screenshot-photos",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "select-screenshot",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "add-screenshot",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "confirm-schedule",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "manual-open",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "manual-entry",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "add-manual-bout",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "manual-opponent",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "manual-number",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "confirm-manual",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "choose-bout",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "import-videos",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "select-recordings",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "select-video-one",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "select-video-two",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "add-selected-videos",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "allow-photos",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "confirm-video-import",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "open-editor",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "preview-original",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "pause-original",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "first-clip-start",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "first-clip-end",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "save-first-clip",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "second-clip-start",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "second-clip-end",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "save-second-clip",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "favorite-first-clip",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "close-editor",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "open-clips-for-delete",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "delete-first-clip",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "confirm-clip-delete",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "close-after-delete",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "close-bout",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "open-fencer-settings",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "clear-local-copies",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  },
+  {
+    "label": "confirm-clear-copies",
+    "identicalFrames": 30,
+    "freezeSeconds": 1,
+    "highlightEndsBeforeResume": true
+  }
+]

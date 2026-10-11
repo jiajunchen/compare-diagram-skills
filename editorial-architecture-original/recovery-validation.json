@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "7179657",
+  "chapters": 13,
+  "passages": 62,
+  "durationSeconds": 613.5640362811791,
+  "originalTextMatches": true,
+  "speechCacheMatches": 62,
+  "audioSHA256": "fe7fdadd37337fa28169848cf37bcfb3f6148dc154bb5fefb12efda75abdb6b2",
+  "newSpeechRequests": 0
+}

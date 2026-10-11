@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" font-family="JetBrains Mono, Menlo, monospace" aria-label="Object call map">
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+</defs>
+<rect x="0" y="0" width="1920" height="1080" fill="#020617"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#grid)"/>
+<text x="50.00" y="40.00" fill="white" font-size="25.00" font-weight="700" text-anchor="start">Object call map</text>
+<path d="M 712.59 139.75 C 712.59 153.50 712.59 171.97 712.59 187.34" fill="none" data-edge="entry-&gt;ui" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 712.59 238.80 C 712.59 275.22 712.59 352.72 712.59 403.35" fill="none" data-edge="ui-&gt;vm" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 677.05 238.72 C 646.41 256.11 602.07 281.27 569.35 299.85" fill="none" data-edge="ui-&gt;review" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 749.71 238.72 C 781.72 256.11 828.04 281.27 862.22 299.85" fill="none" data-edge="ui-&gt;player" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 511.42 346.56 C 496.15 367.55 472.06 400.67 455.08 424.01" fill="none" data-edge="review-&gt;schedule" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 555.97 346.56 C 580.48 362.94 616.04 386.69 647.07 407.43" fill="none" data-edge="review-&gt;vm" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 756.17 492.15 C 774.49 508.50 795.57 527.29 813.01 542.86" fill="none" data-edge="vm-&gt;bout" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 618.03 492.32 C 576.49 509.47 528.50 529.28 489.89 545.22" fill="none" data-edge="vm-&gt;clip" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 840.31 486.08 C 922.31 507.13 1026.66 533.93 1099.33 552.59" fill="none" data-edge="vm-&gt;queue" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 702.41 492.26 C 695.48 518.79 687.57 549.10 687.57 549.10 C 687.57 549.10 687.57 603.14 687.57 603.14 C 687.57 603.14 755.88 632.49 811.41 656.34" fill="none" data-edge="vm-&gt;cloud" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 840.50 472.16 C 1029.70 500.06 1362.00 549.10 1362.00 549.10 C 1362.00 549.10 1370.78 550.74 1383.94 553.18" fill="none" data-edge="vm-&gt;download" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 698.03 492.04 C 692.53 506.69 687.57 519.91 687.57 519.91 C 687.57 519.91 680.27 549.10 680.27 549.10 C 680.27 549.10 656.89 701.27 646.06 771.81" fill="none" data-edge="vm-&gt;repo" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 929.38 603.62 C 984.75 621.87 1057.62 645.90 1110.63 663.37" fill="none" data-edge="bout-&gt;photos" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 809.89 603.52 C 773.55 627.93 725.09 660.47 725.09 660.47 C 725.09 660.47 685.38 729.36 660.42 772.65" fill="none" data-edge="bout-&gt;repo" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 427.93 603.62 C 434.62 620.72 443.29 642.91 449.98 660.01" fill="none" data-edge="clip-&gt;editor" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 401.09 603.52 C 385.82 627.93 365.46 660.47 365.46 660.47 C 365.46 660.47 365.46 714.51 365.46 714.51 C 365.46 714.51 472.54 750.47 553.11 777.53" fill="none" data-edge="clip-&gt;repo" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 1130.51 597.33 C 1083.71 614.07 1016.52 638.12 963.72 657.01" fill="none" data-edge="queue-&gt;cloud" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 1238.06 597.33 C 1285.09 615.88 1354.84 643.36 1404.42 662.90" fill="none" data-edge="queue-&gt;assets" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 1494.81 597.21 C 1488.97 614.20 1480.52 638.78 1473.98 657.83" fill="none" data-edge="download-&gt;assets" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 827.72 714.96 C 790.70 733.16 741.43 757.39 702.73 776.42" fill="none" data-edge="cloud-&gt;repo" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 1180.62 708.62 C 1180.62 727.58 1180.62 756.25 1180.62 777.74" fill="none" data-edge="photos-&gt;ck" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 1415.74 708.75 C 1366.19 729.45 1289.27 761.56 1237.01 783.39" fill="none" data-edge="assets-&gt;ck" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 948.22 714.96 C 999.99 735.45 1071.08 763.58 1120.97 783.33" fill="none" data-edge="cloud-&gt;ck" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<g data-node="entry"><title>FencingVideoAnalysisApp
+AppDependencies.make -&gt; AppRootView</title>
+<rect x="596.96" y="97.88" width="231.25" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="596.96" y="97.88" width="231.25" height="41.53" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="712.59" y="115.90" fill="white" font-size="11.01" font-weight="600" text-anchor="middle">FencingVideoAnalysisApp</text>
+<text x="712.59" y="128.89" fill="#cbd5e1" font-size="11.01" font-weight="400" text-anchor="middle" textLength="219.25" lengthAdjust="spacingAndGlyphs">AppDependencies.make -&gt; AppRootView</text>
+</g>
+<g data-node="ui"><title>SwiftUI views
+forms, schedule, bout, timeline, player, settings</title>
+<rect x="585.23" y="196.75" width="254.71" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="585.23" y="196.75" width="254.71" height="41.53" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="712.59" y="215.34" fill="white" font-size="8.66" font-weight="600" text-anchor="middle">SwiftUI views</text>
+<text x="712.59" y="225.57" fill="#cbd5e1" font-size="8.66" font-weight="400" text-anchor="middle" textLength="242.71" lengthAdjust="spacingAndGlyphs">forms, schedule, bout, timeline, player, settings</text>
+</g>
+<g data-node="vm"><title>AppViewModel
+load / refreshCloud
+saveTournament / confirmSchedule / addBout*
+prepare/confirmRecordings / createClip
+playableURL / delete / offload</title>
+<rect x="585.23" y="412.71" width="254.71" height="79.05" rx="7" fill="#0f172a"/>
+<rect x="585.23" y="412.71" width="254.71" height="79.05" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="712.59" y="432.30" fill="white" font-size="9.87" font-weight="600" text-anchor="middle">AppViewModel</text>
+<text x="712.59" y="443.95" fill="#cbd5e1" font-size="9.87" font-weight="400" text-anchor="middle">load / refreshCloud</text>
+<text x="712.59" y="455.60" fill="#cbd5e1" font-size="9.87" font-weight="400" text-anchor="middle" textLength="242.71" lengthAdjust="spacingAndGlyphs">saveTournament / confirmSchedule / addBout*</text>
+<text x="712.59" y="467.25" fill="#cbd5e1" font-size="9.87" font-weight="400" text-anchor="middle">prepare/confirmRecordings / createClip</text>
+<text x="712.59" y="478.89" fill="#cbd5e1" font-size="9.87" font-weight="400" text-anchor="middle">playableURL / delete / offload</text>
+</g>
+<g data-node="review"><title>ScheduleReviewViewModel
+extract / addDraft / removeDraft / moveDraft</title>
+<rect x="404.50" y="304.73" width="242.98" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="404.50" y="304.73" width="242.98" height="41.53" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="525.99" y="323.19" fill="white" font-size="9.20" font-weight="600" text-anchor="middle">ScheduleReviewViewModel</text>
+<text x="525.99" y="334.05" fill="#cbd5e1" font-size="9.20" font-weight="400" text-anchor="middle" textLength="230.98" lengthAdjust="spacingAndGlyphs">extract / addDraft / removeDraft / moveDraft</text>
+</g>
+<g data-node="schedule"><title>Schedule services
+recognize -&gt; parse -&gt; propose -&gt; reconcile</title>
+<rect x="317.33" y="431.47" width="235.94" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="317.33" y="431.47" width="235.94" height="41.53" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="435.31" y="449.90" fill="white" font-size="9.36" font-weight="600" text-anchor="middle">Schedule services</text>
+<text x="435.31" y="460.95" fill="#cbd5e1" font-size="9.36" font-weight="400" text-anchor="middle" textLength="223.94" lengthAdjust="spacingAndGlyphs">recognize -&gt; parse -&gt; propose -&gt; reconcile</text>
+</g>
+<g data-node="bout"><title>BoutImportCoordinator
+prepareSelections / confirm / linkPendingCloudPhotos
+sourceAsset / move / remove</title>
+<rect x="703.41" y="549.10" width="291.45" height="54.04" rx="7" fill="#0f172a"/>
+<rect x="703.41" y="549.10" width="291.45" height="54.04" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="849.14" y="568.27" fill="white" font-size="9.34" font-weight="600" text-anchor="middle">BoutImportCoordinator</text>
+<text x="849.14" y="579.29" fill="#cbd5e1" font-size="9.34" font-weight="400" text-anchor="middle" textLength="279.45" lengthAdjust="spacingAndGlyphs">prepareSelections / confirm / linkPendingCloudPhotos</text>
+<text x="849.14" y="590.32" fill="#cbd5e1" font-size="9.34" font-weight="400" text-anchor="middle">sourceAsset / move / remove</text>
+</g>
+<g data-node="clip"><title>ClipWorkflow
+createClip / retry / delete / clips
+unloadUploadedClips / clearLocalClipCopies</title>
+<rect x="295.31" y="549.10" width="244.55" height="54.04" rx="7" fill="#0f172a"/>
+<rect x="295.31" y="549.10" width="244.55" height="54.04" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="417.58" y="567.97" fill="white" font-size="9.70" font-weight="600" text-anchor="middle">ClipWorkflow</text>
+<text x="417.58" y="579.42" fill="#cbd5e1" font-size="9.70" font-weight="400" text-anchor="middle">createClip / retry / delete / clips</text>
+<text x="417.58" y="590.87" fill="#cbd5e1" font-size="9.70" font-weight="400" text-anchor="middle" textLength="232.55" lengthAdjust="spacingAndGlyphs">unloadUploadedClips / clearLocalClipCopies</text>
+</g>
+<g data-node="queue"><title>ClipUploadQueue
+resumePending / upload / retry / deleteCloudCopyIfNeeded</title>
+<rect x="1027.47" y="555.35" width="318.82" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="1027.47" y="555.35" width="318.82" height="41.53" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="1186.88" y="573.75" fill="white" font-size="9.49" font-weight="600" text-anchor="middle">ClipUploadQueue</text>
+<text x="1186.88" y="584.94" fill="#cbd5e1" font-size="9.49" font-weight="400" text-anchor="middle" textLength="306.82" lengthAdjust="spacingAndGlyphs">resumePending / upload / retry / deleteCloudCopyIfNeeded</text>
+</g>
+<g data-node="cloud"><title>CloudMetadataService
+synchronize / synchronizeDeletions / queueDeletion
+mapper pendingRecords / apply</title>
+<rect x="741.59" y="660.47" width="279.73" height="54.04" rx="7" fill="#0f172a"/>
+<rect x="741.59" y="660.47" width="279.73" height="54.04" rx="7" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="2"/>
+<text x="881.45" y="679.66" fill="white" font-size="9.32" font-weight="600" text-anchor="middle">CloudMetadataService</text>
+<text x="881.45" y="690.66" fill="#cbd5e1" font-size="9.32" font-weight="400" text-anchor="middle" textLength="267.73" lengthAdjust="spacingAndGlyphs">synchronize / synchronizeDeletions / queueDeletion</text>
+<text x="881.45" y="701.66" fill="#cbd5e1" font-size="9.32" font-weight="400" text-anchor="middle">mapper pendingRecords / apply</text>
+</g>
+<g data-node="assets"><title>CloudAssetService
+saveExportedClip / downloadClip / deleteClip</title>
+<rect x="1340.32" y="666.72" width="247.68" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="1340.32" y="666.72" width="247.68" height="41.53" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="1464.16" y="685.14" fill="white" font-size="9.38" font-weight="600" text-anchor="middle">CloudAssetService</text>
+<text x="1464.16" y="696.21" fill="#cbd5e1" font-size="9.38" font-weight="400" text-anchor="middle" textLength="235.68" lengthAdjust="spacingAndGlyphs">saveExportedClip / downloadClip / deleteClip</text>
+</g>
+<g data-node="download"><title>ClipDownloadCoordinator
+resolve / clearCache / removeCachedCopies</title>
+<rect x="1378.63" y="555.35" width="246.11" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="1378.63" y="555.35" width="246.11" height="41.53" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="1501.69" y="573.62" fill="white" font-size="10.00" font-weight="600" text-anchor="middle">ClipDownloadCoordinator</text>
+<text x="1501.69" y="585.42" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle" textLength="234.11" lengthAdjust="spacingAndGlyphs">resolve / clearCache / removeCachedCopies</text>
+</g>
+<g data-node="player"><title>BoutPlaybackQueue + MediaPlayerModel
+next / previous / finish / play / seek / scrub</title>
+<rect x="791.89" y="304.73" width="231.25" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="791.89" y="304.73" width="231.25" height="41.53" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="907.51" y="323.40" fill="white" font-size="8.38" font-weight="600" text-anchor="middle">BoutPlaybackQueue + MediaPlayerModel</text>
+<text x="907.51" y="333.29" fill="#cbd5e1" font-size="8.38" font-weight="400" text-anchor="middle" textLength="219.25" lengthAdjust="spacingAndGlyphs">next / previous / finish / play / seek / scrub</text>
+</g>
+<g data-node="repo"><title>LocalRepository
+insert / fetch / delete / saveChanges
+tournaments / bouts / sourceRecordings / reviewClips</title>
+<rect x="496.10" y="780.96" width="289.11" height="54.04" rx="7" fill="#0f172a"/>
+<rect x="496.10" y="780.96" width="289.11" height="54.04" rx="7" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="2"/>
+<text x="640.66" y="800.20" fill="white" font-size="9.27" font-weight="600" text-anchor="middle">LocalRepository</text>
+<text x="640.66" y="811.13" fill="#cbd5e1" font-size="9.27" font-weight="400" text-anchor="middle">insert / fetch / delete / saveChanges</text>
+<text x="640.66" y="822.07" fill="#cbd5e1" font-size="9.27" font-weight="400" text-anchor="middle" textLength="277.11" lengthAdjust="spacingAndGlyphs">tournaments / bouts / sourceRecordings / reviewClips</text>
+</g>
+<g data-node="photos"><title>PhotoLibraryService
+importSelections / cloudIdentifiers / videoAsset</title>
+<rect x="1053.66" y="666.72" width="253.93" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="1053.66" y="666.72" width="253.93" height="41.53" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="1180.62" y="685.29" fill="white" font-size="8.82" font-weight="600" text-anchor="middle">PhotoLibraryService</text>
+<text x="1180.62" y="695.69" fill="#cbd5e1" font-size="8.82" font-weight="400" text-anchor="middle" textLength="241.93" lengthAdjust="spacingAndGlyphs">importSelections / cloudIdentifiers / videoAsset</text>
+</g>
+<g data-node="editor"><title>VideoEditingService.export</title>
+<rect x="381.44" y="668.73" width="157.77" height="37.53" rx="7" fill="#0f172a"/>
+<rect x="381.44" y="668.73" width="157.77" height="37.53" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="460.32" y="690.93" fill="white" font-size="10.11" font-weight="600" text-anchor="middle" textLength="145.77" lengthAdjust="spacingAndGlyphs">VideoEditingService.export</text>
+</g>
+<g data-node="ck"><title>Private CloudKit + Photos
+framework boundaries</title>
+<rect x="1104.48" y="787.22" width="152.30" height="41.53" rx="7" fill="#0f172a"/>
+<rect x="1104.48" y="787.22" width="152.30" height="41.53" rx="7" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="2"/>
+<text x="1180.62" y="805.44" fill="white" font-size="10.15" font-weight="600" text-anchor="middle" textLength="140.30" lengthAdjust="spacingAndGlyphs">Private CloudKit + Photos</text>
+<text x="1180.62" y="817.42" fill="#cbd5e1" font-size="10.15" font-weight="400" text-anchor="middle">framework boundaries</text>
+</g>
+<rect x="705.64" y="315.49" width="60.80" height="15.00" rx="3" fill="#020617"/>
+<text x="736.04" y="325.49" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">commands</text>
+<rect x="614.03" y="261.50" width="60.80" height="15.00" rx="3" fill="#020617"/>
+<text x="644.43" y="271.50" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">schedule</text>
+<rect x="795.18" y="261.50" width="115.70" height="15.00" rx="3" fill="#020617"/>
+<text x="853.03" y="271.50" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">playback controls</text>
+<rect x="587.33" y="369.48" width="109.60" height="15.00" rx="3" fill="#020617"/>
+<text x="642.13" y="379.48" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">confirmed drafts</text>
+<rect x="1171.18" y="737.74" width="48.60" height="15.00" rx="3" fill="#020617"/>
+<text x="1195.48" y="747.74" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">Photos</text>
+<rect x="1321.94" y="737.74" width="54.70" height="15.00" rx="3" fill="#020617"/>
+<text x="1349.29" y="747.74" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">CKAsset</text>
+<rect x="1029.85" y="737.74" width="85.20" height="15.00" rx="3" fill="#020617"/>
+<text x="1072.45" y="747.74" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">CKSyncEngine</text>
+<line x1="42" y1="890" x2="1878" y2="890" stroke="#334155" stroke-width="2"/>
+<text x="52.00" y="930.00" fill="white" font-size="23.00" font-weight="700" text-anchor="start">Color legend</text>
+<rect x="52.00" y="955.00" width="30" height="27" rx="4" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="96.00" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Person / Apple</text>
+<rect x="658.67" y="955.00" width="30" height="27" rx="4" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="702.67" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Frontend / UI</text>
+<rect x="1265.33" y="955.00" width="30" height="27" rx="4" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+<text x="1309.33" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Models / services</text>
+<rect x="52.00" y="1009.00" width="30" height="27" rx="4" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="96.00" y="1030.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Private cloud</text>
+<rect x="658.67" y="1009.00" width="30" height="27" rx="4" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="702.67" y="1030.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Local state</text>
+</svg>

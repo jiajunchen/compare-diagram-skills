@@ -1,0 +1,6 @@
+# Ignore runtime files; publish finished HTML and media.
+.cache/
+frames/
+recordings/
+media/
+__pycache__/

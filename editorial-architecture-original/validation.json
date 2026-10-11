@@ -1,0 +1,16 @@
+{
+  "durationSeconds": 613.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "chapters": 13,
+  "originalNarrationPassages": 62,
+  "originalAudioUnchanged": true,
+  "newSpeechRequests": 0,
+  "previousVideosUnchanged": 26,
+  "fullDecode": "passed",
+  "allFrameTextBounds": "passed",
+  "visualReview": "Intro, record relationships, upload state and scrub diagrams inspected.",
+  "sourceCommit": "7179657",
+  "sourceScope": "Restores the original technical explanation without rewriting it to STE."
+}

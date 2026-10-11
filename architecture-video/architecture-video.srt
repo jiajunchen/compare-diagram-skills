@@ -1,0 +1,283 @@
+1
+00:00:00,000 --> 00:00:06,300
+This video explains the app's purpose first. Then it follows a recording through the app, one step at a time.
+
+2
+00:00:07,550 --> 00:00:13,548
+This app helps a parent review fencing videos with one fencer. It runs on an iPhone and an iPad.
+
+3
+00:00:13,898 --> 00:00:21,623
+A Parent can stop the camera during a long pause. One fencing match, called a bout, can therefore have several recordings.
+
+4
+00:00:21,973 --> 00:00:29,078
+Those recordings stay in Photos. The app groups the recordings by tournament and bout, so the parent can find them later.
+
+5
+00:00:29,428 --> 00:00:36,071
+The parent saves useful sections as Review clips. Each review clip contains a short part of an original recording.
+
+6
+00:00:36,421 --> 00:00:44,632
+The parent and fencer can watch those clips together. The current app organizes video for review. It does not judge fencing technique.
+
+7
+00:00:46,332 --> 00:00:52,370
+First, the parent enters the fencer's name and creates a tournament. The app saves the name for later tournaments.
+
+8
+00:00:52,720 --> 00:00:59,709
+Next, the parent adds the bouts. The app can read a schedule screenshot. The parent checks the result before saving it.
+
+9
+00:01:00,059 --> 00:01:06,840
+The parent opens the correct bout and selects its recordings. For example, two recordings can belong to the same bout.
+
+10
+00:01:07,190 --> 00:01:13,371
+The parent selects a useful section from each recording. The app saves each section as a separate review clip.
+
+11
+00:01:13,721 --> 00:01:20,402
+The app sends the review clips to private iCloud storage. The parent can then watch them on an iPad with the same account.
+
+12
+00:01:22,102 --> 00:01:27,597
+Now look inside the app. A record is a saved set of details about an item, such as a tournament.
+
+13
+00:01:27,947 --> 00:01:36,610
+Each Bout belongs to one tournament. Each recording link belongs to one bout. Unique labels, called identifiers, connect these records.
+
+14
+00:01:36,960 --> 00:01:42,987
+A Recording link tells the app which original recording to open. The original video file stays in Photos.
+
+15
+00:01:43,337 --> 00:01:50,717
+A Review clip has a start time and an end time within that original recording. One recording can supply several review clips.
+
+16
+00:01:51,067 --> 00:01:57,546
+The app sorts review clips by recording time, then by start time. The app plays separate files in that order.
+
+17
+00:01:59,246 --> 00:02:05,189
+The Screen shows information and receives the parent's actions. For example, the parent can tap Save Clip.
+
+18
+00:02:05,539 --> 00:02:12,709
+The App controller decides what work must happen next. Its code name is AppViewModel. We will call it the app controller.
+
+19
+00:02:13,059 --> 00:02:21,406
+Services do specific jobs. One service opens recordings from Photos. Other services create review clips or transfer files.
+
+20
+00:02:21,756 --> 00:02:29,037
+The Local store holds records on the current device. The app uses Apple's SwiftData tool to read and save these records.
+
+21
+00:02:29,387 --> 00:02:36,195
+These parts have separate jobs. Tests can replace an Apple service with a test service, then check the app's response.
+
+22
+00:02:37,895 --> 00:02:45,501
+When the app opens, the Setup code connects the app controller, local store, and services. The make function starts this setup.
+
+23
+00:02:45,851 --> 00:02:52,329
+The app controller then runs its load function. It reads the fencer's name and tournament records from the local store.
+
+24
+00:02:52,679 --> 00:02:58,670
+If the app has no saved fencer name, the parent enters one. The app checks that the name is not empty.
+
+25
+00:02:59,020 --> 00:03:04,923
+When the parent saves a tournament, the app checks its name. Then the app saves the tournament in the local store.
+
+26
+00:03:05,273 --> 00:03:13,900
+The app also checks iCloud. If iCloud is available, the app gets remote changes. Local work can continue when iCloud is unavailable.
+
+27
+00:03:15,600 --> 00:03:23,399
+The parent selects a schedule screenshot. The Text reader finds the words and table cells. This reader uses Apple's Vision tool.
+
+28
+00:03:23,749 --> 00:03:30,615
+The Rule parser applies fixed rules to the table. It finds the saved fencer's name, the opponent, and the bout number.
+
+29
+00:03:30,965 --> 00:03:37,695
+The Optional model can suggest missing details. This language model runs on the device. The app can continue without it.
+
+30
+00:03:38,045 --> 00:03:45,295
+The Evidence check compares each suggestion with the screenshot data. It rejects values that the source data does not support.
+
+31
+00:03:45,645 --> 00:03:52,346
+The app shows Draft bouts for the parent to review. A draft is a proposed record. The app has not confirmed it yet.
+
+32
+00:03:54,046 --> 00:04:00,412
+The parent checks each opponent and bout number. The parent can correct a draft, remove it, or add a bout manually.
+
+33
+00:04:00,762 --> 00:04:08,083
+Confirm Schedule calls the confirmSchedule function. The app requires an opponent name and a positive bout number for each draft.
+
+34
+00:04:08,433 --> 00:04:14,849
+If two different opponents have the same bout number, the app asks for a correction. It does not save that draft set.
+
+35
+00:04:15,199 --> 00:04:21,170
+The app saves valid new bouts in the Local store. An identical saved bout does not need another record.
+
+36
+00:04:21,520 --> 00:04:30,458
+Only confirmed details enter the Cloud records. Screenshots and draft text stay on the device. Discard closes the review without saving bouts.
+
+37
+00:04:32,158 --> 00:04:39,940
+The parent opens a bout before selecting recordings. The Import service therefore knows which bout should receive each recording link.
+
+38
+00:04:40,290 --> 00:04:46,562
+The parent can select up to twenty recordings. The app checks for duplicate selections and recordings that it cannot open.
+
+39
+00:04:46,912 --> 00:04:53,404
+The Bout screen shows the results. If one selection fails, the parent can still confirm the other selections.
+
+40
+00:04:53,754 --> 00:05:02,344
+After confirmation, the app saves the recording links. Normal imports save Photos links and recording details, without another full video copy.
+
+41
+00:05:02,694 --> 00:05:09,678
+The app can share a Photos link with the other device. To open the original, that device also needs Photos access.
+
+42
+00:05:11,378 --> 00:05:18,207
+The parent opens an original recording. The parent marks the start and end of a useful section, then taps Save Clip.
+
+43
+00:05:18,557 --> 00:05:25,553
+Save Clip calls createClip. The Clip service checks that the start comes before the end and that both times fit the recording.
+
+44
+00:05:25,903 --> 00:05:34,247
+The Video tool copies that section into a separate movie file. The app calls this process an export. The original stays unchanged.
+
+45
+00:05:34,597 --> 00:05:40,713
+The app saves the file location and clip duration. It also records that the review clip still needs an upload.
+
+46
+00:05:41,063 --> 00:05:48,750
+Cancel stops the export and removes the unfinished file. If export fails, Retry uses the saved start and end times.
+
+47
+00:05:50,450 --> 00:05:57,107
+The Upload service sends saved review clips to iCloud. The local store keeps a list of clips that still need an upload.
+
+48
+00:05:57,457 --> 00:06:05,960
+First, the service saves the clip's Cloud record. This record contains details such as the bout, original recording, and selected times.
+
+49
+00:06:06,310 --> 00:06:13,930
+Next, the service attaches the Video file to that record. The file upload uses a separate CloudKit call from the record update.
+
+50
+00:06:14,280 --> 00:06:21,012
+After the upload succeeds, the app marks the clip Available. The other device can request the review clip when the parent opens it.
+
+51
+00:06:21,362 --> 00:06:28,468
+If the network fails, the app keeps the local file for another attempt. Other errors can require the Retry Upload button.
+
+52
+00:06:30,168 --> 00:06:36,061
+Play Bout gets the review clips in time order. The player starts with the selected clip in this list.
+
+53
+00:06:36,411 --> 00:06:43,645
+For each clip, the app first looks for a Local file. If no export file exists, the app checks downloaded copies.
+
+54
+00:06:43,995 --> 00:06:50,236
+A Downloaded copy is a temporary local copy of a cloud file. The app downloads the clip only when necessary.
+
+55
+00:06:50,586 --> 00:06:57,369
+Continuous mode starts the next clip when the current clip ends. Single-clip mode stops at the end of the current clip.
+
+56
+00:06:57,719 --> 00:07:05,309
+The parent can also select Previous or Next. Half speed, normal speed, and double speed remain available during review.
+
+57
+00:07:07,009 --> 00:07:13,584
+The parent drags the Slider to move through a clip. The picture changes during the drag, so the parent can find an action.
+
+58
+00:07:13,934 --> 00:07:20,201
+The Seek service asks the video tool to move to a time. A seek is a request to change the playback position.
+
+59
+00:07:20,551 --> 00:07:26,897
+The service handles one seek at a time. If the parent drags again, the service keeps the newest position.
+
+60
+00:07:27,247 --> 00:07:34,046
+During a drag, the video tool can show a nearby frame. After release, the service requests the exact selected time.
+
+61
+00:07:34,396 --> 00:07:42,242
+This method avoids a long list of old requests. When the parent closes the player, the app stops playback and cancels pending requests.
+
+62
+00:07:43,942 --> 00:07:50,523
+A local save asks the Cloud service to send changed records. The service also gets changes from the other device.
+
+63
+00:07:50,873 --> 00:07:58,241
+The app saves transfer progress on the device. After a restart, the cloud service can continue work that remains unfinished.
+
+64
+00:07:58,591 --> 00:08:05,898
+Refresh also checks for records that the device missed. If both devices changed a record, the newer remote update can replace it.
+
+65
+00:08:06,248 --> 00:08:13,333
+A Delete action differs from removal of a downloaded copy. Delete removes the app record and its cloud file where applicable.
+
+66
+00:08:13,683 --> 00:08:21,728
+The app blocks removal of a recording link while review clips still use it. Tournament deletion removes clips before their parent records.
+
+67
+00:08:23,428 --> 00:08:30,184
+When the parent stars a review clip, the app saves a favorite flag. A bout is a favorite if any clip has that flag.
+
+68
+00:08:30,534 --> 00:08:38,664
+Clear Local Clip Copies removes local files that the app can get from iCloud again. The app keeps files that still need an upload.
+
+69
+00:08:39,014 --> 00:08:46,386
+Unload Bout Clips applies to one bout. It first checks that every local export in that bout has an available cloud copy.
+
+70
+00:08:46,736 --> 00:08:57,042
+Remember the three storage locations. Photos holds original recordings. The device holds local work. Private iCloud storage holds confirmed records and review clips.
+
+71
+00:08:57,392 --> 00:09:06,133
+These parts support one task: find a bout, save useful review clips, and watch them together. The parent remains in control of each choice.

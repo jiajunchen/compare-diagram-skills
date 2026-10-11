@@ -1,0 +1,12 @@
+{
+  "file": "sample-ryan.wav",
+  "text": "Number one. Add a fencer and add a tournament. First, enter the fencer's name. Here, we use Alex Rivera.",
+  "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+  "voice": "Ryan",
+  "generationSeconds": 66.43306683283299,
+  "audioSeconds": 11.76,
+  "realTimeFactor": 5.649070308914371,
+  "sampleRate": 24000,
+  "peakProcessRSSBytes": 1384349696,
+  "hash": "1bd594f3b687f4b6e48b83c518bd983f873f761d0537df84d087c8484972b666"
+}

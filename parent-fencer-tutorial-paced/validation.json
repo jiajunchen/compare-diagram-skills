@@ -1,0 +1,53 @@
+{
+  "videos": [
+    {
+      "file": "parent-fencer-guide.mp4",
+      "duration": 465.366667,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-01.mp4",
+      "duration": 49.133333,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-02.mp4",
+      "duration": 57.0,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-03.mp4",
+      "duration": 46.233333,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-04.mp4",
+      "duration": 75.566667,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-05.mp4",
+      "duration": 101.233333,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-06.mp4",
+      "duration": 68.5,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-07.mp4",
+      "duration": 64.7,
+      "decode": "passed"
+    }
+  ],
+  "titlePages": 7,
+  "slideTransitions": 13,
+  "readingPauses": 63,
+  "verifiedOneSecondHolds": 43,
+  "firstEditionUnchanged": true,
+  "wordAlignment": "passed",
+  "chapterPlayer": "passed",
+  "visualReview": "Title page, slide transition, and tap / highlight end / UI resume samples inspected.",
+  "highlightDurationNotShortened": true
+}

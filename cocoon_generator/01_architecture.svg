@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" font-family="JetBrains Mono, Menlo, monospace" aria-label="Overall codebase architecture">
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+</defs>
+<rect x="0" y="0" width="1920" height="1080" fill="#020617"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#grid)"/>
+<text x="50.00" y="40.00" fill="white" font-size="25.00" font-weight="700" text-anchor="start">Overall codebase architecture</text>
+<rect x="578.09" y="195.99" width="605.40" height="340.07" data-cluster="cluster_ui" rx="12" fill="rgba(30, 41, 59, 0.25)" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8,4"/>
+<text x="591.09" y="218.99" fill="#cbd5e1" font-size="15.00" font-weight="600" text-anchor="start">Presentation</text>
+<rect x="458.14" y="568.59" width="1330.75" height="119.20" data-cluster="cluster_services" rx="12" fill="rgba(30, 41, 59, 0.25)" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8,4"/>
+<text x="471.14" y="591.59" fill="#cbd5e1" font-size="15.00" font-weight="600" text-anchor="start">On-device application services</text>
+<rect x="131.11" y="720.32" width="814.74" height="105.62" data-cluster="cluster_local" rx="12" fill="rgba(30, 41, 59, 0.25)" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8,4"/>
+<text x="144.11" y="743.32" fill="#cbd5e1" font-size="15.00" font-weight="600" text-anchor="start">Device-local state</text>
+<rect x="954.91" y="720.32" width="566.93" height="105.62" data-cluster="cluster_external" rx="12" fill="rgba(30, 41, 59, 0.25)" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8,4"/>
+<text x="967.91" y="743.32" fill="#cbd5e1" font-size="15.00" font-weight="600" text-anchor="start">Apple-managed services</text>
+<path d="M 1038.65 145.77 C 1038.65 168.06 1038.65 202.88 1038.65 228.20" fill="none" data-edge="user-&gt;views" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 710.59 401.22 C 739.70 419.93 781.72 446.94 813.00 467.05" fill="none" data-edge="root-&gt;vm" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 1036.70 283.78 C 1035.06 302.00 1032.99 325.09 1032.99 325.09 C 1032.99 325.09 985.46 400.73 985.46 400.73 C 985.46 400.73 937.93 442.32 937.93 442.32 C 937.93 442.32 918.13 454.77 897.91 467.49" fill="none" data-edge="views-&gt;vm" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 1003.26 283.84 C 980.09 298.07 954.06 314.06 954.06 314.06 C 954.06 314.06 932.59 332.38 912.80 349.27" fill="none" data-edge="views-&gt;review" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 968.91 398.83 C 974.26 400.01 977.54 400.73 977.54 400.73 C 977.54 400.73 1339.65 431.28 1339.65 431.28 C 1339.65 431.28 1505.03 545.97 1590.16 604.99" fill="none" data-edge="review-&gt;schedule" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 814.99 401.26 C 678.88 447.05 377.23 548.50 377.23 548.50 C 377.23 548.50 303.60 689.84 270.38 753.60" fill="none" data-edge="review-&gt;drafts" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 875.54 400.94 C 871.77 418.34 866.43 443.02 862.19 462.63" fill="none" data-edge="review-&gt;vm" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 753.18 513.44 C 624.42 534.73 419.67 568.59 419.67 568.59 C 419.67 568.59 419.67 687.79 419.67 687.79 C 419.67 687.79 466.89 727.61 500.62 756.06" fill="none" data-edge="vm-&gt;repo" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 848.36 518.53 C 840.75 542.47 828.54 580.98 819.95 608.05" fill="none" data-edge="vm-&gt;import" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 853.74 663.28 C 877.81 675.30 902.85 687.79 902.85 687.79 C 902.85 687.79 1035.25 700.24 1035.25 700.24 C 1035.25 700.24 1059.50 730.74 1078.77 754.95" fill="none" data-edge="import-&gt;photos" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 766.92 663.28 C 743.14 675.30 718.41 687.79 718.41 687.79 C 718.41 687.79 630.42 700.24 630.42 700.24 C 630.42 700.24 594.16 731.80 566.09 756.21" fill="none" data-edge="import-&gt;repo" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 813.50 518.55 C 773.23 539.73 718.41 568.59 718.41 568.59 C 718.41 568.59 674.30 592.53 637.43 612.54" fill="none" data-edge="vm-&gt;editing" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 649.91 663.42 C 683.54 675.39 718.41 687.79 718.41 687.79 C 718.41 687.79 777.25 700.24 777.25 700.24 C 777.25 700.24 791.54 729.68 803.20 753.70" fill="none" data-edge="editing-&gt;files" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 570.36 663.36 C 556.69 680.06 540.18 700.24 540.18 700.24 C 540.18 700.24 538.05 728.91 536.29 752.73" fill="none" data-edge="editing-&gt;repo" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 897.75 518.43 C 925.27 532.63 956.04 548.50 956.04 548.50 C 956.04 548.50 994.24 584.13 1022.78 610.72" fill="none" data-edge="vm-&gt;upload" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 1116.52 667.07 C 1173.36 690.10 1247.99 720.32 1247.99 720.32 C 1247.99 720.32 1291.01 740.39 1328.82 758.02" fill="none" data-edge="upload-&gt;cloud" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+<path d="M 972.35 666.22 C 936.25 677.25 901.72 687.79 901.72 687.79 C 901.72 687.79 723.50 700.24 723.50 700.24 C 723.50 700.24 648.05 733.64 592.36 758.30" fill="none" data-edge="upload-&gt;repo" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+<path d="M 1063.85 283.79 C 1095.93 311.44 1147.28 355.65 1147.28 355.65 C 1147.28 355.65 1275.23 536.80 1326.60 609.53" fill="none" data-edge="views-&gt;play" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 957.67 517.78 C 1045.80 536.07 1158.88 559.54 1158.88 559.54 C 1158.88 559.54 1203.86 568.59 1203.86 568.59 C 1203.86 568.59 1253.40 592.94 1294.31 613.05" fill="none" data-edge="vm-&gt;play" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 1353.32 663.47 C 1359.59 687.42 1369.67 725.93 1376.75 752.99" fill="none" data-edge="play-&gt;cloud" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)"/>
+<path d="M 1270.35 666.37 C 1236.30 677.34 1203.86 687.79 1203.86 687.79 C 1203.86 687.79 962.83 700.24 962.83 700.24 C 962.83 700.24 906.36 732.96 863.94 757.54" fill="none" data-edge="play-&gt;files" stroke="#64748b" stroke-width="1.58" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+<g data-node="user"><title>Parent / fencer
+SwiftUI actions</title>
+<rect x="985.69" y="100.27" width="105.92" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="985.69" y="100.27" width="105.92" height="45.08" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="1038.65" y="119.87" fill="white" font-size="11.77" font-weight="600" text-anchor="middle" textLength="93.92" lengthAdjust="spacingAndGlyphs">Parent / fencer</text>
+<text x="1038.65" y="133.76" fill="#cbd5e1" font-size="11.77" font-weight="400" text-anchor="middle" textLength="93.92" lengthAdjust="spacingAndGlyphs">SwiftUI actions</text>
+</g>
+<g data-node="root"><title>AppRootView
+launch + scene activation</title>
+<rect x="596.00" y="355.65" width="161.08" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="596.00" y="355.65" width="161.08" height="45.08" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="676.54" y="375.50" fill="white" font-size="10.74" font-weight="600" text-anchor="middle">AppRootView</text>
+<text x="676.54" y="388.18" fill="#cbd5e1" font-size="10.74" font-weight="400" text-anchor="middle" textLength="149.08" lengthAdjust="spacingAndGlyphs">launch + scene activation</text>
+</g>
+<g data-node="views"><title>Tournament, schedule, bout,
+timeline, player, settings views</title>
+<rect x="944.95" y="238.43" width="187.39" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="944.95" y="238.43" width="187.39" height="45.08" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="1038.65" y="258.53" fill="white" font-size="9.76" font-weight="600" text-anchor="middle">Tournament, schedule, bout,</text>
+<text x="1038.65" y="270.04" fill="#cbd5e1" font-size="9.76" font-weight="400" text-anchor="middle" textLength="175.39" lengthAdjust="spacingAndGlyphs">timeline, player, settings views</text>
+</g>
+<g data-node="vm"><title>AppViewModel
+UI state + workflow orchestration</title>
+<rect x="753.57" y="472.87" width="203.52" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="753.57" y="472.87" width="203.52" height="45.08" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="855.33" y="492.84" fill="white" font-size="10.28" font-weight="600" text-anchor="middle">AppViewModel</text>
+<text x="855.33" y="504.97" fill="#cbd5e1" font-size="10.28" font-weight="400" text-anchor="middle" textLength="191.52" lengthAdjust="spacingAndGlyphs">UI state + workflow orchestration</text>
+</g>
+<g data-node="review"><title>ScheduleReviewViewModel
+editable, unconfirmed drafts</title>
+<rect x="792.04" y="355.65" width="176.36" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="792.04" y="355.65" width="176.36" height="45.08" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="880.22" y="375.56" fill="white" font-size="10.50" font-weight="600" text-anchor="middle">ScheduleReviewViewModel</text>
+<text x="880.22" y="387.95" fill="#cbd5e1" font-size="10.50" font-weight="400" text-anchor="middle" textLength="164.36" lengthAdjust="spacingAndGlyphs">editable, unconfirmed drafts</text>
+</g>
+<g data-node="schedule"><title>Schedule source -&gt; Vision recognition
+-&gt; deterministic parser -&gt; Foundation Model
+-&gt; proposal validator</title>
+<rect x="1508.48" y="611.02" width="262.08" height="58.66" rx="7" fill="#0f172a"/>
+<rect x="1508.48" y="611.02" width="262.08" height="58.66" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="1639.52" y="631.82" fill="white" font-size="10.16" font-weight="600" text-anchor="middle">Schedule source -&gt; Vision recognition</text>
+<text x="1639.52" y="643.81" fill="#cbd5e1" font-size="10.16" font-weight="400" text-anchor="middle" textLength="250.08" lengthAdjust="spacingAndGlyphs">-&gt; deterministic parser -&gt; Foundation Model</text>
+<text x="1639.52" y="655.80" fill="#cbd5e1" font-size="10.16" font-weight="400" text-anchor="middle">-&gt; proposal validator</text>
+</g>
+<g data-node="import"><title>BoutImportCoordinator
+PhotoLibraryService</title>
+<rect x="735.47" y="617.81" width="149.20" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="735.47" y="617.81" width="149.20" height="45.08" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="810.06" y="637.39" fill="white" font-size="11.84" font-weight="600" text-anchor="middle" textLength="137.20" lengthAdjust="spacingAndGlyphs">BoutImportCoordinator</text>
+<text x="810.06" y="651.37" fill="#cbd5e1" font-size="11.84" font-weight="400" text-anchor="middle" textLength="137.20" lengthAdjust="spacingAndGlyphs">PhotoLibraryService</text>
+</g>
+<g data-node="editing"><title>ClipWorkflow -&gt; VideoEditingService
+AVFoundation export</title>
+<rect x="475.91" y="617.81" width="224.73" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="475.91" y="617.81" width="224.73" height="45.08" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="588.27" y="637.68" fill="white" font-size="10.70" font-weight="600" text-anchor="middle" textLength="212.73" lengthAdjust="spacingAndGlyphs">ClipWorkflow -&gt; VideoEditingService</text>
+<text x="588.27" y="650.31" fill="#cbd5e1" font-size="10.70" font-weight="400" text-anchor="middle">AVFoundation export</text>
+</g>
+<g data-node="upload"><title>ClipUploadQueue
+CloudMetadataService + CloudAssetService</title>
+<rect x="920.20" y="617.81" width="266.32" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="920.20" y="617.81" width="266.32" height="45.08" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="1053.36" y="637.58" fill="white" font-size="11.10" font-weight="600" text-anchor="middle">ClipUploadQueue</text>
+<text x="1053.36" y="650.67" fill="#cbd5e1" font-size="11.10" font-weight="400" text-anchor="middle" textLength="254.32" lengthAdjust="spacingAndGlyphs">CloudMetadataService + CloudAssetService</text>
+</g>
+<g data-node="play"><title>BoutPlaybackQueue + MediaPlayerModel
+ClipDownloadCoordinator + cache</title>
+<rect x="1222.05" y="617.81" width="251.04" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="1222.05" y="617.81" width="251.04" height="45.08" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="1347.57" y="637.45" fill="white" font-size="11.62" font-weight="600" text-anchor="middle" textLength="239.04" lengthAdjust="spacingAndGlyphs">BoutPlaybackQueue + MediaPlayerModel</text>
+<text x="1347.57" y="651.16" fill="#cbd5e1" font-size="11.62" font-weight="400" text-anchor="middle">ClipDownloadCoordinator + cache</text>
+</g>
+<g data-node="repo"><title>LocalRepository / SwiftData
+settings, tournaments, bouts, source links, clips</title>
+<rect x="394.86" y="762.76" width="278.20" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="394.86" y="762.76" width="278.20" height="45.08" rx="7" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="2"/>
+<text x="533.96" y="782.93" fill="white" font-size="9.46" font-weight="600" text-anchor="middle">LocalRepository / SwiftData</text>
+<text x="533.96" y="794.10" fill="#cbd5e1" font-size="9.46" font-weight="400" text-anchor="middle" textLength="266.20" lengthAdjust="spacingAndGlyphs">settings, tournaments, bouts, source links, clips</text>
+</g>
+<g data-node="files"><title>App support files
+pending exports + downloaded clips</title>
+<rect x="708.59" y="762.76" width="218.79" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="708.59" y="762.76" width="218.79" height="45.08" rx="7" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="2"/>
+<text x="817.99" y="782.62" fill="white" font-size="10.73" font-weight="600" text-anchor="middle">App support files</text>
+<text x="817.99" y="795.27" fill="#cbd5e1" font-size="10.73" font-weight="400" text-anchor="middle" textLength="206.79" lengthAdjust="spacingAndGlyphs">pending exports + downloaded clips</text>
+</g>
+<g data-node="drafts"><title>Screenshot bytes + OCR/proposal
+in memory until confirmation</title>
+<rect x="148.88" y="762.76" width="211.16" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="148.88" y="762.76" width="211.16" height="45.08" rx="7" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="2"/>
+<text x="254.45" y="782.46" fill="white" font-size="11.35" font-weight="600" text-anchor="middle" textLength="199.16" lengthAdjust="spacingAndGlyphs">Screenshot bytes + OCR/proposal</text>
+<text x="254.45" y="795.86" fill="#cbd5e1" font-size="11.35" font-weight="400" text-anchor="middle">in memory until confirmation</text>
+</g>
+<g data-node="photos"><title>Photos / iCloud Photos
+original videos; read on explicit import/open</title>
+<rect x="973.10" y="762.76" width="257.83" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="973.10" y="762.76" width="257.83" height="45.08" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="1102.01" y="782.91" fill="white" font-size="9.55" font-weight="600" text-anchor="middle">Photos / iCloud Photos</text>
+<text x="1102.01" y="794.18" fill="#cbd5e1" font-size="9.55" font-weight="400" text-anchor="middle" textLength="245.83" lengthAdjust="spacingAndGlyphs">original videos; read on explicit import/open</text>
+</g>
+<g data-node="cloud"><title>Private CloudKit
+confirmed metadata + edited CKAssets</title>
+<rect x="1266.18" y="762.76" width="237.47" height="45.08" rx="7" fill="#0f172a"/>
+<rect x="1266.18" y="762.76" width="237.47" height="45.08" rx="7" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="2"/>
+<text x="1384.91" y="782.55" fill="white" font-size="10.99" font-weight="600" text-anchor="middle">Private CloudKit</text>
+<text x="1384.91" y="795.52" fill="#cbd5e1" font-size="10.99" font-weight="400" text-anchor="middle" textLength="225.47" lengthAdjust="spacingAndGlyphs">confirmed metadata + edited CKAssets</text>
+</g>
+<rect x="1011.61" y="171.42" width="127.90" height="15.00" rx="3" fill="#020617"/>
+<text x="1075.56" y="181.42" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">tap / select / edit</text>
+<rect x="754.50" y="426.79" width="91.30" height="15.00" rx="3" fill="#020617"/>
+<text x="800.15" y="436.79" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">load, refresh</text>
+<rect x="994.15" y="368.19" width="164.50" height="15.00" rx="3" fill="#020617"/>
+<text x="1076.40" y="378.19" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">commands / observed state</text>
+<rect x="940.07" y="309.57" width="103.50" height="15.00" rx="3" fill="#020617"/>
+<text x="991.82" y="319.57" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">schedule review</text>
+<rect x="1477.51" y="485.41" width="54.70" height="15.00" rx="3" fill="#020617"/>
+<text x="1504.86" y="495.41" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">extract</text>
+<rect x="361.31" y="544.01" width="121.80" height="15.00" rx="3" fill="#020617"/>
+<text x="422.21" y="554.01" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">temporary proposal</text>
+<rect x="850.79" y="426.79" width="97.40" height="15.00" rx="3" fill="#020617"/>
+<text x="899.49" y="436.79" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">confirm drafts</text>
+<rect x="416.74" y="630.36" width="36.40" height="15.00" rx="3" fill="#020617"/>
+<text x="434.94" y="640.36" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">CRUD</text>
+<rect x="813.62" y="544.01" width="158.40" height="15.00" rx="3" fill="#020617"/>
+<text x="892.82" y="554.01" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">prepare / confirm / open</text>
+<rect x="1026.50" y="695.75" width="109.60" height="15.00" rx="3" fill="#020617"/>
+<text x="1081.30" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">read video + IDs</text>
+<rect x="615.40" y="695.75" width="85.20" height="15.00" rx="3" fill="#020617"/>
+<text x="658.00" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">source links</text>
+<rect x="736.22" y="544.01" width="91.30" height="15.00" rx="3" fill="#020617"/>
+<text x="781.87" y="554.01" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">trim / export</text>
+<rect x="766.16" y="695.75" width="73.00" height="15.00" rx="3" fill="#020617"/>
+<text x="802.66" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">local clip</text>
+<rect x="523.54" y="695.75" width="79.10" height="15.00" rx="3" fill="#020617"/>
+<text x="563.09" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">clip status</text>
+<rect x="948.17" y="544.01" width="85.20" height="15.00" rx="3" fill="#020617"/>
+<text x="990.77" y="554.01" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">sync / retry</text>
+<rect x="1210.06" y="695.75" width="121.80" height="15.00" rx="3" fill="#020617"/>
+<text x="1270.96" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">metadata + CKAsset</text>
+<rect x="709.91" y="695.75" width="73.00" height="15.00" rx="3" fill="#020617"/>
+<text x="746.41" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">sync state</text>
+<rect x="1189.09" y="426.79" width="103.50" height="15.00" rx="3" fill="#020617"/>
+<text x="1240.84" y="436.79" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">player controls</text>
+<rect x="1140.49" y="544.01" width="115.70" height="15.00" rx="3" fill="#020617"/>
+<text x="1198.34" y="554.01" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">clip URL / unload</text>
+<rect x="1351.71" y="695.75" width="91.30" height="15.00" rx="3" fill="#020617"/>
+<text x="1397.36" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">download clip</text>
+<rect x="946.38" y="695.75" width="97.40" height="15.00" rx="3" fill="#020617"/>
+<text x="995.08" y="705.75" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">cache / replay</text>
+<line x1="42" y1="890" x2="1878" y2="890" stroke="#334155" stroke-width="2"/>
+<text x="52.00" y="930.00" fill="white" font-size="23.00" font-weight="700" text-anchor="start">Color legend</text>
+<rect x="52.00" y="955.00" width="30" height="27" rx="4" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="96.00" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Person / Apple</text>
+<rect x="658.67" y="955.00" width="30" height="27" rx="4" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="702.67" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Frontend / UI</text>
+<rect x="1265.33" y="955.00" width="30" height="27" rx="4" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+<text x="1309.33" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Models / services</text>
+<rect x="52.00" y="1009.00" width="30" height="27" rx="4" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="96.00" y="1030.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Local state</text>
+<rect x="658.67" y="1009.00" width="30" height="27" rx="4" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="702.67" y="1030.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Private cloud</text>
+</svg>

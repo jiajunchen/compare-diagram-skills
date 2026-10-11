@@ -1,0 +1,357 @@
+{
+  "title": "Fencing Review \u2014 A guide for parents and fencers",
+  "voice": "JBFqnCBsd6RMkjVDRZzb",
+  "model": "eleven_multilingual_v2",
+  "chapters": [
+    {
+      "title": "Add a fencer and tournament",
+      "beats": [
+        {
+          "label": "welcome",
+          "focus": null,
+          "text": "This guide follows seven tasks for a parent and fencer. We use fictional names and demo recordings."
+        },
+        {
+          "label": "enter-fencer",
+          "focus": null,
+          "text": "First, enter the fencer's name. Here, we use Alex Rivera."
+        },
+        {
+          "label": "continue-setup",
+          "focus": null,
+          "text": "Tap Continue to save the name. The app uses one fencer profile."
+        },
+        {
+          "label": "new-tournament",
+          "focus": null,
+          "text": "Tap the plus button to add a tournament."
+        },
+        {
+          "label": "tournament-name",
+          "focus": null,
+          "text": "Enter a tournament name. You can also set its date, location, and time zone."
+        },
+        {
+          "label": "save-tournament",
+          "focus": null,
+          "text": "Tap Save to create the tournament."
+        },
+        {
+          "label": "tournament-ready",
+          "focus": null,
+          "text": "The tournament is ready. Next, add its schedule or enter bouts yourself."
+        }
+      ]
+    },
+    {
+      "title": "Import a schedule screenshot",
+      "beats": [
+        {
+          "label": "import-schedule",
+          "focus": null,
+          "text": "To use a schedule screenshot, tap Import Schedule."
+        },
+        {
+          "label": "open-screenshot-photos",
+          "focus": null,
+          "text": "Tap Select schedule screenshots. The app opens the Photos picker."
+        },
+        {
+          "label": "select-screenshot",
+          "focus": null,
+          "text": "Select the schedule screenshot. Make sure the names and table are clear."
+        },
+        {
+          "label": "add-screenshot",
+          "focus": null,
+          "text": "Tap Add to read the selected screenshot."
+        },
+        {
+          "label": "review-schedule",
+          "focus": null,
+          "text": "Scroll to the proposed bouts. Check opponents and bout numbers. Correct any mistakes before saving."
+        },
+        {
+          "label": "confirm-schedule",
+          "focus": null,
+          "text": "Tap Confirm Schedule when the details are correct. The app saves the confirmed bouts."
+        },
+        {
+          "label": "schedule-ready",
+          "focus": null,
+          "text": "The bout list now shows the imported schedule. The screenshot and proposed text stay on this device."
+        }
+      ]
+    },
+    {
+      "title": "Add a bout manually",
+      "beats": [
+        {
+          "label": "manual-open",
+          "focus": null,
+          "text": "You can also add a bout without a screenshot. Open Import Schedule again."
+        },
+        {
+          "label": "manual-entry",
+          "focus": null,
+          "text": "Tap Manual Entry."
+        },
+        {
+          "label": "add-manual-bout",
+          "focus": null,
+          "text": "Tap Add proposed bout to create an empty row."
+        },
+        {
+          "label": "manual-opponent",
+          "focus": null,
+          "text": "Enter the opponent's name. We will use Casey Jordan."
+        },
+        {
+          "label": "manual-number",
+          "focus": null,
+          "text": "Enter the bout number from the full bout order. Use a positive number that does not conflict with another bout."
+        },
+        {
+          "label": "confirm-manual",
+          "focus": null,
+          "text": "Check the new row, then tap Confirm Schedule."
+        },
+        {
+          "label": "manual-ready",
+          "focus": null,
+          "text": "The manual bout now appears beside the imported bouts."
+        }
+      ]
+    },
+    {
+      "title": "Import recordings into a bout",
+      "beats": [
+        {
+          "label": "choose-bout",
+          "focus": null,
+          "text": "Before importing videos, open the correct bout. Every selected recording will go into this bout."
+        },
+        {
+          "label": "import-videos",
+          "focus": null,
+          "text": "Tap Import Recordings to open the recording review screen."
+        },
+        {
+          "label": "select-recordings",
+          "focus": null,
+          "text": "Tap Select Recordings to open the Photos picker."
+        },
+        {
+          "label": "select-video-one",
+          "focus": null,
+          "text": "Select the first recording from this bout."
+        },
+        {
+          "label": "select-video-two",
+          "focus": null,
+          "text": "Select any other recordings from the same bout. Several recordings can belong to one bout."
+        },
+        {
+          "label": "add-selected-videos",
+          "focus": null,
+          "text": "Tap Add to load the selected recordings."
+        },
+        {
+          "label": "allow-photos",
+          "focus": null,
+          "text": "If your device asks, tap Allow Full Access so the app can read the selected recordings."
+        },
+        {
+          "label": "review-video-import",
+          "focus": null,
+          "text": "Check the import results. If one recording fails, you can still confirm the successful recordings."
+        },
+        {
+          "label": "confirm-video-import",
+          "focus": null,
+          "text": "Confirm the import to attach these recordings to the bout. The original videos stay unchanged in Photos."
+        },
+        {
+          "label": "recordings-ready",
+          "focus": null,
+          "text": "The recordings are now linked to this bout. The app orders them by recording time."
+        }
+      ]
+    },
+    {
+      "title": "Create clips and mark favorites",
+      "beats": [
+        {
+          "label": "open-editor",
+          "focus": null,
+          "text": "Tap Review and Trim Recordings to open the editor."
+        },
+        {
+          "label": "preview-original",
+          "focus": null,
+          "text": "Tap Play to preview the selected original recording."
+        },
+        {
+          "label": "pause-original",
+          "focus": null,
+          "text": "Pause near a moment that you want to keep."
+        },
+        {
+          "label": "show-trim-controls",
+          "focus": null,
+          "text": "Scroll to Trim a review clip. These controls set the section that you will save."
+        },
+        {
+          "label": "first-clip-start",
+          "focus": null,
+          "text": "Move the Start slider to the beginning of the useful action."
+        },
+        {
+          "label": "first-clip-end",
+          "focus": null,
+          "text": "Move the End slider to the end of that action. Check the selected duration."
+        },
+        {
+          "label": "save-first-clip",
+          "focus": null,
+          "text": "Tap Save Clip. The app creates a separate edited movie and queues its upload."
+        },
+        {
+          "label": "second-clip-start",
+          "focus": null,
+          "text": "To save another moment from the same recording, move Start to the next useful action."
+        },
+        {
+          "label": "second-clip-end",
+          "focus": null,
+          "text": "Move End to finish the second selection."
+        },
+        {
+          "label": "save-second-clip",
+          "focus": null,
+          "text": "Tap Save Clip again. One original recording can produce several independent review clips."
+        },
+        {
+          "label": "show-review-clips",
+          "focus": null,
+          "text": "Scroll to Review Clips. Wait for Available before clearing an uploaded clip's local copy."
+        },
+        {
+          "label": "favorite-first-clip",
+          "focus": null,
+          "text": "Tap the star beside a clip to mark that clip as a favorite."
+        },
+        {
+          "label": "clip-star-meaning",
+          "focus": null,
+          "text": "A filled star means this clip is a favorite. Tap it again to remove the favorite mark."
+        },
+        {
+          "label": "close-editor",
+          "focus": null,
+          "text": "Tap Done to return to the bout details."
+        },
+        {
+          "label": "bout-star-meaning",
+          "focus": null,
+          "text": "The bout's star is an indicator. It fills when at least one clip in that bout is a favorite."
+        }
+      ]
+    },
+    {
+      "title": "Delete review clips",
+      "beats": [
+        {
+          "label": "open-clips-for-delete",
+          "focus": null,
+          "text": "To delete a review clip, open Review and Trim Recordings again."
+        },
+        {
+          "label": "find-clips-for-delete",
+          "focus": null,
+          "text": "Scroll toward the review clip list."
+        },
+        {
+          "label": "show-clips-for-delete",
+          "focus": null,
+          "text": "Find the edited clip that you want to remove. Check its start and end times."
+        },
+        {
+          "label": "delete-first-clip",
+          "focus": null,
+          "text": "Tap Delete beside that clip."
+        },
+        {
+          "label": "delete-warning",
+          "focus": null,
+          "text": "Read the confirmation. Deleting removes the edited clip. It does not delete the original recording in Photos."
+        },
+        {
+          "label": "confirm-clip-delete",
+          "focus": null,
+          "text": "Tap Delete Clip to confirm. The app also removes the clip's cloud copy where applicable."
+        },
+        {
+          "label": "one-clip-remains",
+          "focus": null,
+          "text": "The other review clip remains. A cloud deletion that cannot finish immediately waits for recovery."
+        },
+        {
+          "label": "close-after-delete",
+          "focus": null,
+          "text": "Tap Done to return to the bout."
+        },
+        {
+          "label": "bout-no-favorite",
+          "focus": null,
+          "text": "We deleted the only favorite clip. The bout's star is now empty because no remaining clip is a favorite."
+        },
+        {
+          "label": "close-bout",
+          "focus": null,
+          "text": "Close the bout details to return to the tournament."
+        }
+      ]
+    },
+    {
+      "title": "Free local clip storage",
+      "beats": [
+        {
+          "label": "open-fencer-settings",
+          "focus": null,
+          "text": "Open Fencer to manage the profile and local clip storage."
+        },
+        {
+          "label": "storage-counters",
+          "focus": null,
+          "text": "Clip storage shows local exports and downloaded copies. These values describe device storage, not working memory."
+        },
+        {
+          "label": "clear-local-copies",
+          "focus": null,
+          "text": "Tap Clear Local Clip Copies to free storage on this device."
+        },
+        {
+          "label": "storage-warning",
+          "focus": null,
+          "text": "This clears uploaded local exports and downloaded copies across bouts. It keeps clips in iCloud and protects pending uploads."
+        },
+        {
+          "label": "confirm-clear-copies",
+          "focus": null,
+          "text": "Tap Clear Local Copies to confirm. The app reports how many files it removed."
+        },
+        {
+          "label": "storage-result",
+          "focus": null,
+          "text": "The local storage counts decrease. Saved cloud clips can download again when you play them with an available connection."
+        },
+        {
+          "label": "finish",
+          "focus": null,
+          "text": "Your original recordings remain in Photos. You can now organize bouts, save useful clips, and review them together."
+        }
+      ]
+    }
+  ]
+}

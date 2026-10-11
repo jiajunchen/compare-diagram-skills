@@ -1,0 +1,377 @@
+{
+  "nodes": [
+    {
+      "id": "c9767e399fcdb845",
+      "type": "group",
+      "label": "03A  User pathways | launch, tournament, and schedule",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "color": "#4a6080"
+    },
+    {
+      "id": "e709026842b89bbb",
+      "type": "text",
+      "text": "# 03A  User pathways — launch, tournament, and schedule",
+      "x": 44,
+      "y": 45,
+      "width": 992,
+      "height": 65,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "1c31875612ee1702",
+      "type": "text",
+      "text": "**Open app**",
+      "x": 430,
+      "y": 149,
+      "width": 140,
+      "height": 78,
+      "color": "#4a6080"
+    },
+    {
+      "id": "4b8b7e6271197a03",
+      "type": "text",
+      "text": "**AppDependencies.make**\nopen SwiftData; wire live services",
+      "x": 399,
+      "y": 245,
+      "width": 203,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "d84f5f71864f09d3",
+      "type": "text",
+      "text": "**AppViewModel.load**\ncheck iCloud; fetch local settings/tournaments",
+      "x": 369,
+      "y": 343,
+      "width": 262,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "07bf03f9037e410e",
+      "type": "text",
+      "text": "**Settings found?**",
+      "x": 393,
+      "y": 448,
+      "width": 214,
+      "height": 78,
+      "color": "#ff8c42"
+    },
+    {
+      "id": "28e5a65e5bf863f1",
+      "type": "text",
+      "text": "**FirstRunSetupView**\nsaveFencerName -> SwiftData",
+      "x": 329,
+      "y": 562,
+      "width": 191,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "81b435c6f3e8760b",
+      "type": "text",
+      "text": "**TournamentNavigationView**\nselect / refreshCloud",
+      "x": 413,
+      "y": 659,
+      "width": 173,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "e8c0aa24d74c3395",
+      "type": "text",
+      "text": "**New Tournament**\nTournamentFormView.save",
+      "x": 413,
+      "y": 756,
+      "width": 173,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "de067e9fe3cb33e6",
+      "type": "text",
+      "text": "**AppViewModel.saveTournament**\nvalidate name; insert/update Tournament\nSwiftData save -> schedule CloudKit sync",
+      "x": 377,
+      "y": 859,
+      "width": 244,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "d48df7182c8a5d28",
+      "type": "text",
+      "text": "**TournamentDetailView**\nshow bouts / open selected bout",
+      "x": 401,
+      "y": 963,
+      "width": 196,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "8c49867ad75650dc",
+      "type": "text",
+      "text": "**Import Schedule**\nscreenshot(s) or Manual Entry",
+      "x": 406,
+      "y": 1060,
+      "width": 186,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "b340e4e8f0187661",
+      "type": "text",
+      "text": "**Manual drafts**\nadd opponent + full-order bout number",
+      "x": 278,
+      "y": 1172,
+      "width": 228,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "e63cff0c289d9f43",
+      "type": "text",
+      "text": "**Vision recognize each screenshot**\ndeterministic parse + optional on-device model\nvalidator reconciles source-backed proposal",
+      "x": 521,
+      "y": 1172,
+      "width": 265,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "6d16830d09d3d77f",
+      "type": "text",
+      "text": "**Review/edit drafts**\nconfirm or discard",
+      "x": 452,
+      "y": 1275,
+      "width": 140,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "687b3d47f98f1b21",
+      "type": "text",
+      "text": "**AppViewModel.confirmSchedule**\nvalidate nonempty, opponent, positive/unique number\ninsert new Bouts; mark tournament confirmed",
+      "x": 372,
+      "y": 1387,
+      "width": 299,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "7978feb45ad72669",
+      "type": "text",
+      "text": "**BoutDetailView**\nedit/delete confirmed bout; import recordings",
+      "x": 394,
+      "y": 1491,
+      "width": 256,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "95023dd401d5bf58",
+      "type": "text",
+      "text": "**How to read**  Manual and screenshot paths meet at editable drafts. Confirmation inserts bouts; discarding drafts does not. Cloud refresh can continue after the local screen appears.",
+      "x": 52,
+      "y": 1585,
+      "width": 976,
+      "height": 75,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "37156f183b62c2fa",
+      "type": "text",
+      "text": "## Color legend",
+      "x": 52,
+      "y": 1670,
+      "width": 976,
+      "height": 45
+    },
+    {
+      "id": "f517567589291691",
+      "type": "text",
+      "text": "User entry",
+      "x": 52,
+      "y": 1725,
+      "width": 468,
+      "height": 50,
+      "color": "#4a6080"
+    },
+    {
+      "id": "987346d2db019bd3",
+      "type": "text",
+      "text": "UI action / screen",
+      "x": 540,
+      "y": 1725,
+      "width": 468,
+      "height": 50,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "5854df6b5af24d4d",
+      "type": "text",
+      "text": "On-device processing",
+      "x": 52,
+      "y": 1790,
+      "width": 468,
+      "height": 50,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "4496d3be0c634889",
+      "type": "text",
+      "text": "Decision",
+      "x": 540,
+      "y": 1790,
+      "width": 468,
+      "height": 50,
+      "color": "#ff8c42"
+    }
+  ],
+  "edges": [
+    {
+      "id": "481bf8c807896bc8",
+      "fromNode": "1c31875612ee1702",
+      "fromSide": "bottom",
+      "toNode": "4b8b7e6271197a03",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "cce0c8cbdcb36c9d",
+      "fromNode": "4b8b7e6271197a03",
+      "fromSide": "bottom",
+      "toNode": "d84f5f71864f09d3",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "29524bf4ddd56bd0",
+      "fromNode": "d84f5f71864f09d3",
+      "fromSide": "bottom",
+      "toNode": "07bf03f9037e410e",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "41fb4bbf46345970",
+      "fromNode": "07bf03f9037e410e",
+      "fromSide": "bottom",
+      "toNode": "28e5a65e5bf863f1",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "no"
+    },
+    {
+      "id": "4c39c81956e0aecf",
+      "fromNode": "28e5a65e5bf863f1",
+      "fromSide": "bottom",
+      "toNode": "81b435c6f3e8760b",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "c813377771c514e4",
+      "fromNode": "07bf03f9037e410e",
+      "fromSide": "bottom",
+      "toNode": "81b435c6f3e8760b",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "yes"
+    },
+    {
+      "id": "6101b3b4d6beb8de",
+      "fromNode": "81b435c6f3e8760b",
+      "fromSide": "bottom",
+      "toNode": "e8c0aa24d74c3395",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "29f4111eafd1f98c",
+      "fromNode": "e8c0aa24d74c3395",
+      "fromSide": "bottom",
+      "toNode": "de067e9fe3cb33e6",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "c456a318a5bfb537",
+      "fromNode": "de067e9fe3cb33e6",
+      "fromSide": "bottom",
+      "toNode": "d48df7182c8a5d28",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "ca6baf5a55fd27c0",
+      "fromNode": "d48df7182c8a5d28",
+      "fromSide": "bottom",
+      "toNode": "8c49867ad75650dc",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "ed4b4c4755f38764",
+      "fromNode": "8c49867ad75650dc",
+      "fromSide": "bottom",
+      "toNode": "b340e4e8f0187661",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "manual"
+    },
+    {
+      "id": "3bf7744c4101bb56",
+      "fromNode": "8c49867ad75650dc",
+      "fromSide": "bottom",
+      "toNode": "e63cff0c289d9f43",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "screenshots"
+    },
+    {
+      "id": "bb7bbe79b1bef219",
+      "fromNode": "b340e4e8f0187661",
+      "fromSide": "bottom",
+      "toNode": "6d16830d09d3d77f",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "4feedd3a7b01d7df",
+      "fromNode": "e63cff0c289d9f43",
+      "fromSide": "bottom",
+      "toNode": "6d16830d09d3d77f",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "5b0b31875e919f45",
+      "fromNode": "6d16830d09d3d77f",
+      "fromSide": "bottom",
+      "toNode": "687b3d47f98f1b21",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "confirm"
+    },
+    {
+      "id": "9b6a483bf48c90a6",
+      "fromNode": "687b3d47f98f1b21",
+      "fromSide": "bottom",
+      "toNode": "7978feb45ad72669",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "113cc28cfa69f278",
+      "fromNode": "6d16830d09d3d77f",
+      "fromSide": "top",
+      "toNode": "d48df7182c8a5d28",
+      "toSide": "bottom",
+      "color": "#2d7aff",
+      "label": "reference / optional: discard"
+    }
+  ]
+}

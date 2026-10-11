@@ -1,0 +1,27 @@
+{
+  "chapters": 14,
+  "narrationBeats": 71,
+  "durationSeconds": 548.433,
+  "audio": {
+    "channels": 1,
+    "sampleRate": 22050,
+    "duration": 548.4330158730158,
+    "bytes": 24185940
+  },
+  "browserErrors": [],
+  "captionCollisions": [],
+  "externalRequests": [],
+  "outOfFrameLabels": [],
+  "staticHoldsVerified": 71,
+  "mp4": {
+    "width": 1920,
+    "height": 1080,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "frameRate": "30/1",
+    "durationSeconds": 548.433016,
+    "chaptersIncludingIntro": 15,
+    "bytes": 20742936,
+    "fullDecode": "passed"
+  }
+}

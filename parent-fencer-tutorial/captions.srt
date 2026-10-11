@@ -1,0 +1,251 @@
+1
+00:00:00,000 --> 00:00:06,861
+This guide follows seven tasks for a parent and fencer. We use fictional names and demo recordings.
+
+2
+00:00:06,861 --> 00:00:10,948
+First, enter the fencer's name. Here, we use Alex Rivera.
+
+3
+00:00:10,948 --> 00:00:15,523
+Tap Continue to save the name. The app uses one fencer profile.
+
+4
+00:00:15,523 --> 00:00:17,752
+Tap the plus button to add a tournament.
+
+5
+00:00:17,752 --> 00:00:23,278
+Enter a tournament name. You can also set its date, location, and time zone.
+
+6
+00:00:23,278 --> 00:00:25,298
+Tap Save to create the tournament.
+
+7
+00:00:25,298 --> 00:00:30,661
+The tournament is ready. Next, add its schedule or enter bouts yourself.
+
+8
+00:00:30,661 --> 00:00:34,341
+To use a schedule screenshot, tap Import Schedule.
+
+9
+00:00:34,341 --> 00:00:39,148
+Tap Select schedule screenshots. The app opens the Photos picker.
+
+10
+00:00:39,148 --> 00:00:43,873
+Select the schedule screenshot. Make sure the names and table are clear.
+
+11
+00:00:43,873 --> 00:00:46,822
+Tap Add to read the selected screenshot.
+
+12
+00:00:46,822 --> 00:00:54,438
+Scroll to the proposed bouts. Check opponents and bout numbers. Correct any mistakes before saving.
+
+13
+00:00:54,438 --> 00:01:00,429
+Tap Confirm Schedule when the details are correct. The app saves the confirmed bouts.
+
+14
+00:01:00,429 --> 00:01:07,963
+The bout list now shows the imported schedule. The screenshot and proposed text stay on this device.
+
+15
+00:01:07,963 --> 00:01:13,257
+You can also add a bout without a screenshot. Open Import Schedule again.
+
+16
+00:01:13,257 --> 00:01:15,092
+Tap Manual Entry.
+
+17
+00:01:15,092 --> 00:01:18,099
+Tap Add proposed bout to create an empty row.
+
+18
+00:01:18,099 --> 00:01:21,431
+Enter the opponent's name. We will use Casey Jordan.
+
+19
+00:01:21,431 --> 00:01:27,677
+Enter the bout number from the full bout order. Use a positive number that does not conflict with another bout.
+
+20
+00:01:27,677 --> 00:01:30,940
+Check the new row, then tap Confirm Schedule.
+
+21
+00:01:30,940 --> 00:01:35,048
+The manual bout now appears beside the imported bouts.
+
+22
+00:01:35,048 --> 00:01:41,480
+Before importing videos, open the correct bout. Every selected recording will go into this bout.
+
+23
+00:01:41,480 --> 00:01:45,451
+Tap Import Recordings to open the recording review screen.
+
+24
+00:01:45,451 --> 00:01:48,504
+Tap Select Recordings to open the Photos picker.
+
+25
+00:01:48,504 --> 00:01:51,220
+Select the first recording from this bout.
+
+26
+00:01:51,220 --> 00:01:57,350
+Select any other recordings from the same bout. Several recordings can belong to one bout.
+
+27
+00:01:57,350 --> 00:02:00,241
+Tap Add to load the selected recordings.
+
+28
+00:02:00,241 --> 00:02:06,290
+If your device asks, tap Allow Full Access so the app can read the selected recordings.
+
+29
+00:02:06,290 --> 00:02:12,409
+Check the import results. If one recording fails, you can still confirm the successful recordings.
+
+30
+00:02:12,409 --> 00:02:19,375
+Confirm the import to attach these recordings to the bout. The original videos stay unchanged in Photos.
+
+31
+00:02:19,375 --> 00:02:25,213
+The recordings are now linked to this bout. The app orders them by recording time.
+
+32
+00:02:25,213 --> 00:02:28,592
+Tap Review and Trim Recordings to open the editor.
+
+33
+00:02:28,592 --> 00:02:32,388
+Tap Play to preview the selected original recording.
+
+34
+00:02:32,388 --> 00:02:34,942
+Pause near a moment that you want to keep.
+
+35
+00:02:34,942 --> 00:02:40,387
+Scroll to Trim a review clip. These controls set the section that you will save.
+
+36
+00:02:40,387 --> 00:02:43,963
+Move the Start slider to the beginning of the useful action.
+
+37
+00:02:43,963 --> 00:02:49,152
+Move the End slider to the end of that action. Check the selected duration.
+
+38
+00:02:49,152 --> 00:02:54,574
+Tap Save Clip. The app creates a separate edited movie and queues its upload.
+
+39
+00:02:54,574 --> 00:02:59,776
+To save another moment from the same recording, move Start to the next useful action.
+
+40
+00:02:59,776 --> 00:03:02,539
+Move End to finish the second selection.
+
+41
+00:03:02,539 --> 00:03:08,228
+Tap Save Clip again. One original recording can produce several independent review clips.
+
+42
+00:03:08,228 --> 00:03:13,894
+Scroll to Review Clips. Wait for Available before clearing an uploaded clip's local copy.
+
+43
+00:03:13,894 --> 00:03:17,713
+Tap the star beside a clip to mark that clip as a favorite.
+
+44
+00:03:17,713 --> 00:03:23,565
+A filled star means this clip is a favorite. Tap it again to remove the favorite mark.
+
+45
+00:03:23,565 --> 00:03:26,432
+Tap Done to return to the bout details.
+
+46
+00:03:26,432 --> 00:03:32,469
+The bout's star is an indicator. It fills when at least one clip in that bout is a favorite.
+
+47
+00:03:32,469 --> 00:03:36,753
+To delete a review clip, open Review and Trim Recordings again.
+
+48
+00:03:36,753 --> 00:03:39,180
+Scroll toward the review clip list.
+
+49
+00:03:39,180 --> 00:03:43,974
+Find the edited clip that you want to remove. Check its start and end times.
+
+50
+00:03:43,974 --> 00:03:45,867
+Tap Delete beside that clip.
+
+51
+00:03:45,867 --> 00:03:53,053
+Read the confirmation. Deleting removes the edited clip. It does not delete the original recording in Photos.
+
+52
+00:03:53,053 --> 00:03:59,334
+Tap Delete Clip to confirm. The app also removes the clip's cloud copy where applicable.
+
+53
+00:03:59,334 --> 00:04:05,720
+The other review clip remains. A cloud deletion that cannot finish immediately waits for recovery.
+
+54
+00:04:05,720 --> 00:04:07,786
+Tap Done to return to the bout.
+
+55
+00:04:07,786 --> 00:04:14,439
+We deleted the only favorite clip. The bout's star is now empty because no remaining clip is a favorite.
+
+56
+00:04:14,439 --> 00:04:18,037
+Close the bout details to return to the tournament.
+
+57
+00:04:18,037 --> 00:04:21,961
+Open Fencer to manage the profile and local clip storage.
+
+58
+00:04:21,961 --> 00:04:29,937
+Clip storage shows local exports and downloaded copies. These values describe device storage, not working memory.
+
+59
+00:04:29,937 --> 00:04:34,140
+Tap Clear Local Clip Copies to free storage on this device.
+
+60
+00:04:34,140 --> 00:04:42,592
+This clears uploaded local exports and downloaded copies across bouts. It keeps clips in iCloud and protects pending uploads.
+
+61
+00:04:42,592 --> 00:04:47,921
+Tap Clear Local Copies to confirm. The app reports how many files it removed.
+
+62
+00:04:47,921 --> 00:04:55,154
+The local storage counts decrease. Saved cloud clips can download again when you play them with an available connection.
+
+63
+00:04:55,154 --> 00:05:03,512
+Your original recordings remain in Photos. You can now organize bouts, save useful clips, and review them together.

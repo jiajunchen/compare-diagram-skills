@@ -1,0 +1,111 @@
+{
+  "audio": [
+    {
+      "file": "lesson-01.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 49.44,
+      "peakAmplitude": 0.37005615234375,
+      "rmsAmplitude": 0.04283584490076091,
+      "clippedSamples": 0
+    },
+    {
+      "file": "lesson-02.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 43.84,
+      "peakAmplitude": 0.775726318359375,
+      "rmsAmplitude": 0.07426906677573512,
+      "clippedSamples": 0
+    },
+    {
+      "file": "lesson-03.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 39.28,
+      "peakAmplitude": 0.743682861328125,
+      "rmsAmplitude": 0.06161919215716294,
+      "clippedSamples": 0
+    },
+    {
+      "file": "lesson-04.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 59.12,
+      "peakAmplitude": 0.46429443359375,
+      "rmsAmplitude": 0.05510537163997127,
+      "clippedSamples": 0
+    },
+    {
+      "file": "lesson-05.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 84.24,
+      "peakAmplitude": 0.632354736328125,
+      "rmsAmplitude": 0.0677992129073759,
+      "clippedSamples": 0
+    },
+    {
+      "file": "lesson-06.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 54.8,
+      "peakAmplitude": 0.522918701171875,
+      "rmsAmplitude": 0.054351848170997995,
+      "clippedSamples": 0
+    },
+    {
+      "file": "lesson-07.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 66.0,
+      "peakAmplitude": 0.50604248046875,
+      "rmsAmplitude": 0.034069601182728164,
+      "clippedSamples": 0
+    },
+    {
+      "file": "qwen-narration.wav",
+      "longSilenceEvents": [
+        "silence_start: 48.76475",
+        "silence_end: 51.872958 | silence_duration: 3.108208",
+        "silence_start: 94.774542",
+        "silence_end: 97.712917 | silence_duration: 2.938375",
+        "silence_start: 136.046542",
+        "silence_end: 138.996417 | silence_duration: 2.949875",
+        "silence_start: 197.179375",
+        "silence_end: 200.113167 | silence_duration: 2.933792",
+        "silence_start: 283.422",
+        "silence_end: 286.348917 | silence_duration: 2.926917",
+        "silence_start: 340.221167",
+        "silence_end: 343.15775 | silence_duration: 2.936583",
+        "silence_start: 408.242167",
+        "silence_end: 410.72 | silence_duration: 2.477833"
+      ],
+      "durationSeconds": 410.72,
+      "peakAmplitude": 0.775726318359375,
+      "rmsAmplitude": 0.05597624303464997,
+      "clippedSamples": 0
+    },
+    {
+      "file": "sample-ryan.wav",
+      "longSilenceEvents": [],
+      "durationSeconds": 11.76,
+      "peakAmplitude": 0.535736083984375,
+      "rmsAmplitude": 0.06810499949829185,
+      "clippedSamples": 0
+    }
+  ],
+  "videosUnchanged": true,
+  "serverModels": {
+    "object": "list",
+    "data": [
+      {
+        "id": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+        "object": "model",
+        "created": 1791593949,
+        "owned_by": "system"
+      }
+    ]
+  },
+  "memoryFootprint": [
+    "Physical footprint:         3.2G",
+    "Physical footprint (peak):  17.2G"
+  ],
+  "limitations": [
+    "Signal and decode checks do not establish pronunciation quality.",
+    "Process RSS omits much of the Metal memory; use macOS physical footprint for memory assessment."
+  ]
+}

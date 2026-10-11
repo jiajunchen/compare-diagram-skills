@@ -1,0 +1,20 @@
+{
+  "profile": "Practical STE-inspired 80% target; no formal conformity percentage",
+  "narrationBeats": 71,
+  "sentences": 155,
+  "words": 1478,
+  "averageWordsPerSentence": 9.5,
+  "maximumWordsPerSentence": 18,
+  "sentencesOver20Words": 0,
+  "formalDictionaryAudit": false,
+  "editorialChecks": [
+    "App purpose and audience before code",
+    "One main idea per sentence",
+    "Active voice",
+    "Roles before code names",
+    "Stable terms for original recording, recording link, and review clip",
+    "Define record, identifier, draft, export, downloaded copy, and seek",
+    "Use action order and clear conditions",
+    "Keep most function names in the diagrams"
+  ]
+}

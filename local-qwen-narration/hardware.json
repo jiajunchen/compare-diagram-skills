@@ -1,0 +1,10 @@
+{
+  "computer": "Mac mini",
+  "chip": "Apple M4",
+  "cpuCores": 10,
+  "gpuCores": 10,
+  "unifiedMemoryGB": 24,
+  "runtime": "MLX Audio 0.5.8 / Apple Metal",
+  "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+  "modelRevision": "049ef77fe8816b536193c0c25f9a214d17921282"
+}

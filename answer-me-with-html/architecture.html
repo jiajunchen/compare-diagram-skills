@@ -1,0 +1,3627 @@
+<!doctype html>
+<html lang="en" data-theme="blueprint" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Answer me with HTML 0.3.0">
+<title>Inside Fencing Video Analysis</title>
+<style>
+html[data-theme="blueprint"], html[data-theme="blueprint"][data-mode="light"] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 0px;
+  --shadow: none;
+  --bw: 1.5px;
+  --head-font: var(--font-sans);
+  --bg: #f6f6f3;
+  --paper: #ffffff;
+  --ink: #16181d;
+  --ink-2: #4b5260;
+  --ink-3: #8b929e;
+  --line: #1d2026;
+  --line-2: #d6dae1;
+  --fill: #f3f5f8;
+  --accent: #1d5fbf;
+  --accent-bg: #e4ecf8;
+  --ok: #1d5fbf;
+  --ok-bg: #e4ecf8;
+  --err: #c62828;
+  --err-bg: #fbeaea;
+  --warn: #a8620a;
+  --warn-bg: #fdf3e2;
+  --head-bg: #16181d;
+  --head-fg: #ffffff;
+}
+html[data-theme="blueprint"][data-mode="dark"] {
+  --bg: #081322;
+  --paper: #0d1c31;
+  --ink: #e6edf7;
+  --ink-2: #a9b8cc;
+  --ink-3: #6b7f99;
+  --line: #c9d6e8;
+  --line-2: #23385a;
+  --fill: #12253f;
+  --accent: #6ea8ff;
+  --accent-bg: #16305a;
+  --ok: #6ea8ff;
+  --ok-bg: #16305a;
+  --err: #ff7070;
+  --err-bg: #3b1620;
+  --warn: #f0b14a;
+  --warn-bg: #3a2a10;
+  --head-bg: #e6edf7;
+  --head-fg: #081322;
+}
+@media (prefers-color-scheme: dark) {
+html[data-theme="blueprint"][data-mode="auto"] {
+  --bg: #081322;
+  --paper: #0d1c31;
+  --ink: #e6edf7;
+  --ink-2: #a9b8cc;
+  --ink-3: #6b7f99;
+  --line: #c9d6e8;
+  --line-2: #23385a;
+  --fill: #12253f;
+  --accent: #6ea8ff;
+  --accent-bg: #16305a;
+  --ok: #6ea8ff;
+  --ok-bg: #16305a;
+  --err: #ff7070;
+  --err-bg: #3b1620;
+  --warn: #f0b14a;
+  --warn-bg: #3a2a10;
+  --head-bg: #e6edf7;
+  --head-fg: #081322;
+}
+}
+
+html[data-theme="shadcn"], html[data-theme="shadcn"][data-mode="light"] {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 8px;
+  --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --bw: 1px;
+  --head-font: var(--font-sans);
+  --bg: #fafafa;
+  --paper: #ffffff;
+  --ink: #09090b;
+  --ink-2: #71717a;
+  --ink-3: #a1a1aa;
+  --line: #e4e4e7;
+  --line-2: #f0f0f2;
+  --fill: #f4f4f5;
+  --accent: #2563eb;
+  --accent-bg: #eff6ff;
+  --ok: #16a34a;
+  --ok-bg: #f0fdf4;
+  --err: #dc2626;
+  --err-bg: #fef2f2;
+  --warn: #d97706;
+  --warn-bg: #fffbeb;
+  --head-bg: #18181b;
+  --head-fg: #fafafa;
+}
+html[data-theme="shadcn"][data-mode="dark"] {
+  --bg: #09090b;
+  --paper: #121215;
+  --ink: #fafafa;
+  --ink-2: #a1a1aa;
+  --ink-3: #71717a;
+  --line: #27272a;
+  --line-2: #1c1c1f;
+  --fill: #18181b;
+  --accent: #60a5fa;
+  --accent-bg: #172554;
+  --ok: #4ade80;
+  --ok-bg: #052e16;
+  --err: #f87171;
+  --err-bg: #450a0a;
+  --warn: #fbbf24;
+  --warn-bg: #451a03;
+  --head-bg: #fafafa;
+  --head-fg: #18181b;
+}
+@media (prefers-color-scheme: dark) {
+html[data-theme="shadcn"][data-mode="auto"] {
+  --bg: #09090b;
+  --paper: #121215;
+  --ink: #fafafa;
+  --ink-2: #a1a1aa;
+  --ink-3: #71717a;
+  --line: #27272a;
+  --line-2: #1c1c1f;
+  --fill: #18181b;
+  --accent: #60a5fa;
+  --accent-bg: #172554;
+  --ok: #4ade80;
+  --ok-bg: #052e16;
+  --err: #f87171;
+  --err-bg: #450a0a;
+  --warn: #fbbf24;
+  --warn-bg: #451a03;
+  --head-bg: #fafafa;
+  --head-fg: #18181b;
+}
+}
+
+/* Answer me with HTML base — 只引用主题变量，禁止写死颜色（主题 token 见 themes/index.js） */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 14px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+code, pre, kbd { font-family: var(--font-mono); }
+
+/* ── 工具栏 ─────────────────────────────── */
+.am-toolbar {
+  position: fixed; top: 12px; right: 12px; z-index: 10; display: flex; gap: 6px;
+}
+.am-btn {
+  font: 12px/1 var(--font-sans); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line-2); border-radius: var(--radius); padding: 7px 10px; cursor: pointer;
+}
+.am-btn:hover { border-color: var(--ink-3); }
+.am-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ── 页头 ───────────────────────────────── */
+.am-head { margin: 0 0 20px; padding-right: 260px; }
+.am-head h1 { margin: 0; font-size: 24px; line-height: 1.25; letter-spacing: -0.01em; }
+.am-sub { margin: 4px 0 0; color: var(--ink-2); }
+.am-head-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: 12px; color: var(--ink-2); }
+.am-head-meta b { font-family: var(--font-mono); font-weight: 400; color: var(--ink-3); margin-right: 6px; }
+.am-intro { margin-top: 12px; max-width: 80ch; }
+
+/* ── sheet 图纸板 ────────────────────────── */
+.am-sheet { max-width: 1680px; margin: 0 auto; padding: 32px 28px 40px; }
+.am-frame { position: relative; }
+.am-grid {
+  display: grid; grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr));
+  gap: 20px; align-items: start;
+}
+.am-ruler { display: none; }
+html[data-theme="blueprint"] .am-frame { border: 1px solid var(--line); padding: 30px; }
+html[data-theme="blueprint"] .am-frame::before {
+  content: ""; position: absolute; inset: 18px; border: 1px solid var(--line); pointer-events: none;
+}
+html[data-theme="blueprint"] .am-ruler {
+  display: flex; position: absolute; font: 10px/1 var(--font-mono); color: var(--ink-3);
+}
+.am-ruler span { flex: 1; display: flex; align-items: center; justify-content: center; }
+.am-ruler--top, .am-ruler--bottom { left: 18px; right: 18px; height: 18px; }
+.am-ruler--top { top: 0; }
+.am-ruler--bottom { bottom: 0; }
+.am-ruler--left, .am-ruler--right { top: 18px; bottom: 18px; width: 18px; flex-direction: column; }
+.am-ruler--left { left: 0; }
+.am-ruler--right { right: 0; }
+.am-ruler--top span + span, .am-ruler--bottom span + span { border-left: 1px solid var(--line); }
+.am-ruler--left span + span, .am-ruler--right span + span { border-top: 1px solid var(--line); }
+
+/* ── 面板 ───────────────────────────────── */
+.am-panel {
+  background: var(--paper); border: var(--bw) solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); min-width: 0; overflow: hidden;
+}
+.am-panel-head {
+  display: flex; align-items: stretch; gap: 0; border-bottom: var(--bw) solid var(--line); min-height: 34px;
+}
+.am-panel-id {
+  display: flex; align-items: center; justify-content: center; min-width: 34px; padding: 0 8px;
+  background: var(--head-bg); color: var(--head-fg); font-weight: 600; font-size: 14px;
+}
+html[data-theme="shadcn"] .am-panel-id { border-radius: 6px; min-width: 24px; height: 24px; margin: 9px 0 9px 14px; font-size: 12px; }
+html[data-theme="shadcn"] .am-panel-head { border-bottom-width: 1px; }
+.am-panel-head h2 { margin: 0; padding: 7px 12px; font-size: 15px; font-weight: 600; flex: 1; display: flex; align-items: center; }
+.am-panel-meta { align-self: center; padding: 0 12px; font: 11px/1.3 var(--font-mono); color: var(--ink-2); text-align: right; }
+.am-panel-body { padding: 14px 16px 16px; }
+.am-panel-body > * + * { margin-top: 12px; }
+
+/* ── Markdown 正文 ───────────────────────── */
+.am-md > :first-child { margin-top: 0; }
+.am-md > :last-child { margin-bottom: 0; }
+.am-md p { margin: 0 0 8px; }
+.am-md ul, .am-md ol { margin: 0 0 8px; padding-left: 20px; }
+.am-md li + li { margin-top: 3px; }
+.am-md h3, .am-md h4 { margin: 14px 0 6px; font-size: 13px; }
+.am-md a { color: var(--accent); }
+.am-md blockquote { margin: 0 0 8px; padding: 2px 12px; border-left: 3px solid var(--line-2); color: var(--ink-2); }
+.am-md :not(pre) > code { font-size: 0.9em; background: var(--fill); padding: 1px 5px; border-radius: 4px; }
+.am-md hr { border: 0; border-top: 1px solid var(--line-2); margin: 12px 0; }
+.am-md table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.am-md th {
+  text-align: left; font: 11px/1.3 var(--font-mono); color: var(--ink-2); font-weight: 400;
+  padding: 6px 10px; border-bottom: 1px solid var(--line-2);
+}
+.am-md td { padding: 7px 10px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+.am-md tbody tr:nth-child(even) td { background: var(--fill); }
+.am-table-wrap { overflow-x: auto; }
+.am-code {
+  margin: 0; padding: 12px 14px; background: var(--fill); border: 1px solid var(--line-2);
+  border-radius: var(--radius); overflow-x: auto; font-size: 12.5px; line-height: 1.5;
+}
+
+/* ── 状态徽章 ok / no / warn ──────────────── */
+.am-status { white-space: nowrap; font-weight: 500; }
+.am-status--ok { color: var(--ok); }
+.am-status--no { color: var(--err); }
+.am-status--warn { color: var(--warn); }
+.am-status-icon { display: inline-block; width: 1.1em; font-weight: 700; }
+
+/* ── callout ─────────────────────────────── */
+.am-callout {
+  border: 1px solid var(--line-2); border-left: 3px solid var(--accent); background: var(--accent-bg);
+  padding: 10px 14px; border-radius: var(--radius);
+}
+.am-callout--ok { border-left-color: var(--ok); background: var(--ok-bg); }
+.am-callout--warn { border-left-color: var(--warn); background: var(--warn-bg); }
+.am-callout--err { border-left-color: var(--err); background: var(--err-bg); }
+.am-callout-title { font-weight: 600; margin-bottom: 4px; }
+
+/* ── kv 标题栏格 ─────────────────────────── */
+.am-kv {
+  display: grid; grid-template-columns: repeat(var(--kv-cols, 2), minmax(0, 1fr)); margin: 0;
+  border-top: var(--bw) solid var(--line); border-left: var(--bw) solid var(--line);
+}
+.am-kv-cell { border-right: var(--bw) solid var(--line); border-bottom: var(--bw) solid var(--line); padding: 6px 10px 8px; min-width: 0; }
+.am-kv-cell--wide { grid-column: 1 / -1; }
+.am-kv dt { font: 11px/1.4 var(--font-mono); color: var(--ink-2); }
+.am-kv dd { margin: 2px 0 0; font-size: 14px; font-weight: 500; overflow-wrap: anywhere; }
+.am-kv-cell--wide dd { font-size: 17px; font-weight: 600; }
+html[data-theme="shadcn"] .am-kv { border-color: var(--line); border-radius: var(--radius); overflow: hidden; }
+
+/* ── timeline ────────────────────────────── */
+.am-timeline { list-style: none; margin: 0; padding: 0; }
+.am-timeline--h { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); padding-top: 4px; }
+.am-timeline--h li { position: relative; text-align: center; padding: 0 6px; }
+.am-timeline--h li::before {
+  content: ""; position: absolute; top: 31px; left: 0; right: 0; border-top: var(--bw) solid var(--line);
+}
+.am-timeline--h li:first-child::before { left: 50%; }
+.am-timeline--h li:last-child::before { right: 50%; }
+.am-tl-when { display: block; font-size: 15px; font-weight: 500; height: 24px; }
+.am-tl-dot {
+  position: relative; display: block; width: 11px; height: 11px; margin: 2px auto 8px;
+  border: var(--bw) solid var(--line); border-radius: 50%; background: var(--paper);
+}
+.am-tl-item--hi .am-tl-dot { background: var(--accent); border-color: var(--accent); }
+.am-tl-title { display: block; font-size: 12.5px; font-weight: 500; }
+.am-tl-text { display: block; font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+.am-timeline--v li { position: relative; padding: 0 0 14px 22px; }
+.am-timeline--v li::before { content: ""; position: absolute; left: 5px; top: 6px; bottom: -6px; border-left: var(--bw) solid var(--line-2); }
+.am-timeline--v li:last-child::before { display: none; }
+.am-timeline--v .am-tl-dot { position: absolute; left: 0; top: 4px; margin: 0; }
+.am-timeline--v .am-tl-when { display: inline; height: auto; font: 12px var(--font-mono); color: var(--ink-2); margin-right: 8px; }
+.am-timeline--v .am-tl-title { display: inline; font-size: 14px; }
+.am-timeline--v .am-tl-text { margin-top: 2px; }
+
+/* ── annot 句子标注 ──────────────────────── */
+.am-annot + .am-annot { border-top: 1px solid var(--line-2); padding-top: 12px; }
+.am-annot-head { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.am-annot-meta { font: 11px var(--font-mono); font-weight: 400; color: var(--ink-2); }
+.am-annot-scroll { overflow-x: auto; }
+.am-annot-line {
+  position: relative; display: inline-block; white-space: pre; font: 14px/1.6 var(--font-mono);
+  padding-bottom: calc(var(--rows, 0) * 17px + 14px);
+}
+.am-annot-line--wrap { display: block; white-space: normal; padding-bottom: 10px; }
+.am-annot-line--wrap .am-seg { white-space: nowrap; }
+.am-seg { position: relative; }
+.am-seg::after {
+  content: ""; position: absolute; left: 1px; right: 1px; top: calc(100% + 1px); height: 5px;
+  border: 1px solid var(--accent); border-top: 0;
+}
+.am-seg-n {
+  position: absolute; left: 0; top: calc(100% + 8px + var(--row, 0) * 17px);
+  font: 11px/16px var(--font-sans); color: var(--accent); white-space: nowrap;
+}
+.am-seg--err { color: var(--err); }
+.am-seg--err::after { border-color: var(--err); }
+.am-seg--err .am-seg-n { color: var(--err); }
+.am-annot-caption { font-size: 12px; color: var(--ink-2); }
+
+/* ── limits 限值条 ───────────────────────── */
+.am-lim + .am-lim { margin-top: 14px; }
+.am-lim-head { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; margin-bottom: 4px; }
+.am-lim-val { font: 12px var(--font-mono); color: var(--accent); white-space: nowrap; }
+.am-lim-track { position: relative; height: 12px; border: 1px solid var(--line-2); background: var(--fill); border-radius: calc(var(--radius) / 2); }
+.am-lim-fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent-bg); border-right: 1px solid var(--accent); }
+.am-lim-mark { position: absolute; top: -4px; bottom: -4px; border-left: 2px solid var(--accent); }
+.am-lim.is-over .am-lim-fill { background: var(--err-bg); border-right-color: var(--err); }
+.am-lim.is-over .am-lim-val { color: var(--err); }
+.am-lim-ticks { position: relative; height: 16px; font: 10px/16px var(--font-mono); color: var(--ink-3); }
+.am-lim-ticks span { position: absolute; transform: translateX(-50%); }
+.am-lim-ticks span:first-child { transform: none; }
+.am-lim-note { font-size: 11px; color: var(--ink-2); margin-left: 6px; }
+
+/* ── tree 结构树 ─────────────────────────── */
+.am-tree { font-size: 13px; }
+.am-tree-root { display: flex; justify-content: center; position: relative; padding-bottom: 18px; }
+.am-tree-root::after { content: ""; position: absolute; bottom: 0; left: 50%; height: 18px; border-left: var(--bw) solid var(--line); }
+.am-tree-root--solo { padding-bottom: 12px; }
+.am-tree-root--solo::after { display: none; }
+.am-tree-box {
+  border: var(--bw) solid var(--line); background: var(--paper); padding: 6px 14px; text-align: center;
+  border-radius: var(--radius); font-weight: 600;
+}
+.am-tree-box small { display: block; font-weight: 400; color: var(--ink-2); font-size: 12px; }
+.am-tree-box--root { background: var(--accent-bg); font-size: 15px; padding: 8px 28px; }
+.am-tree-cols { display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); }
+.am-tree-col { position: relative; padding: 18px 8px 0; min-width: 0; }
+.am-tree-col::before { content: ""; position: absolute; top: 0; left: 0; right: 0; border-top: var(--bw) solid var(--line); }
+.am-tree-col:first-child::before { left: 50%; }
+.am-tree-col:last-child::before { right: 50%; }
+.am-tree-col::after { content: ""; position: absolute; top: 0; left: 50%; height: 18px; border-left: var(--bw) solid var(--line); }
+.am-tree-list, .am-tree-list ul { list-style: none; margin: 0; padding: 0; }
+.am-tree-col > .am-tree-list { margin: 8px 0 0 14px; }
+.am-tree-list ul { margin-left: 16px; }
+.am-tree-list li { position: relative; padding: 3px 0 3px 18px; }
+.am-tree-list li::before { content: ""; position: absolute; left: 0; top: 0.95em; width: 12px; border-top: 1px solid var(--ink-3); }
+.am-tree-list li::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; border-left: 1px solid var(--ink-3); }
+.am-tree-list li:last-child::after { bottom: auto; height: 0.95em; }
+.am-tree-tag { font: 11px var(--font-mono); color: var(--ink-3); margin-right: 4px; }
+.am-tree code { font: 12px var(--font-mono); }
+.am-tree-sub { display: block; font-size: 11.5px; color: var(--ink-2); }
+.am-tree-hi > .am-tree-label { color: var(--accent); font-weight: 600; }
+
+/* ── 图（flow / sequence）───────────────── */
+.am-diagram { margin: 0; overflow-x: auto; text-align: center; }
+.am-diagram svg { max-width: 100%; height: auto; font-family: var(--font-sans); }
+.am-diagram text { fill: var(--ink); font-size: 13px; }
+.am-node-shape { fill: var(--paper); stroke: var(--line); stroke-width: var(--bw); }
+.am-node--hi .am-node-shape { fill: var(--accent-bg); stroke: var(--accent); }
+.am-node--hi text { fill: var(--accent); font-weight: 600; }
+.am-edge { fill: none; stroke: var(--ink-2); stroke-width: 1.3; }
+.am-edge--dashed { stroke-dasharray: 5 4; }
+.am-arrow { fill: var(--ink-2); }
+.am-edge-label rect { fill: var(--paper); }
+.am-diagram .am-edge-label text { fill: var(--accent); font-size: 11.5px; }
+.am-cluster { fill: var(--fill); stroke: var(--line-2); stroke-width: 1; stroke-dasharray: 4 3; }
+.am-diagram .am-cluster-label { fill: var(--ink-2); font: 11px var(--font-mono); }
+.am-lifeline { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 4 4; }
+.am-actor { fill: var(--paper); stroke: var(--line); stroke-width: var(--bw); }
+.am-note { fill: var(--warn-bg); stroke: var(--warn); stroke-width: 1; }
+.am-diagram .am-step { fill: var(--ink-3); font: 10px var(--font-mono); }
+
+/* ── doc 线性讲解 ────────────────────────── */
+.am-doc { max-width: 1120px; margin: 0 auto; padding: 40px 28px 64px; }
+.am-doc-layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 32px; align-items: start; }
+.am-doc-layout--notoc { grid-template-columns: minmax(0, 1fr); max-width: 860px; }
+.am-toc { position: sticky; top: 24px; font-size: 13px; }
+.am-toc a { display: block; color: var(--ink-2); text-decoration: none; padding: 4px 0 4px 10px; border-left: 2px solid var(--line-2); }
+.am-toc a:hover { color: var(--ink); border-left-color: var(--accent); }
+.am-doc-body > .am-panel + .am-panel { margin-top: 20px; }
+
+/* ── 响应式与打印 ─────────────────────────── */
+@media (max-width: 1100px) {
+  .am-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .am-grid > .am-panel { grid-column: auto !important; }
+  .am-grid > .am-panel.am-span-wide { grid-column: 1 / -1 !important; }
+}
+@media (max-width: 760px) {
+  .am-sheet, .am-doc { padding: 56px 12px 24px; }
+  .am-head { padding-right: 0; }
+  .am-grid { grid-template-columns: minmax(0, 1fr); }
+  .am-grid > .am-panel.am-span-wide { grid-column: auto !important; }
+  html[data-theme="blueprint"] .am-frame { padding: 0; border: 0; }
+  html[data-theme="blueprint"] .am-frame::before, html[data-theme="blueprint"] .am-ruler { display: none; }
+  .am-doc-layout { grid-template-columns: minmax(0, 1fr); }
+  .am-toc { position: static; }
+  .am-timeline--h { grid-template-columns: minmax(0, 1fr); }
+  .am-tree-cols { grid-template-columns: minmax(0, 1fr); }
+}
+.am-colophon { text-align: center; padding: 0 0 28px; font: 11px var(--font-mono); color: var(--ink-3); }
+
+@media print {
+  .am-toolbar { display: none; }
+  body { background: var(--paper); }
+  .am-panel { break-inside: avoid; box-shadow: none; }
+}
+.am-panel--bare { border: 0; background: transparent; box-shadow: none; }
+.am-panel--bare > .am-panel-body { padding: 0; }
+.am-panel--bare .am-kv { background: var(--paper); }
+
+</style>
+</head>
+<body>
+<div class="am-toolbar">
+<button class="am-btn" type="button" data-am="theme" data-labels="{&quot;blueprint&quot;:&quot;Theme: Blueprint&quot;,&quot;shadcn&quot;:&quot;Theme: Cards&quot;}">Theme: Blueprint</button>
+<button class="am-btn" type="button" data-am="mode" data-labels="{&quot;auto&quot;:&quot;Mode: Auto&quot;,&quot;light&quot;:&quot;Mode: Light&quot;,&quot;dark&quot;:&quot;Mode: Dark&quot;}">Mode: Light</button>
+<button class="am-btn" type="button" data-am="copy" data-done="Copied ✓">Copy source</button>
+</div>
+<main class="am-doc">
+<header class="am-head"><h1>Inside Fencing Video Analysis</h1><p class="am-sub">A source-grounded guide to the screens, functions, data, and recovery paths</p><div class="am-head-meta"><span><b>source</b>Swift source at 8a8c101</span><span><b>reviewed</b>2026-10-03</span></div><div class="am-intro am-md"><div class="am-md"><p>The app connects one fencer, tournaments, bouts, source recordings, and edited review clips. SwiftUI handles interaction; local workflows save progress; Apple frameworks handle recognition, media, and cloud storage.</p>
+<p>Read chapters A–G for the operation paths. Chapter H maps every Swift file and named function declaration. Use the page contents to jump between chapters.</p>
+</div></div></header>
+<div class="am-doc-layout">
+<nav class="am-toc" aria-label="目录"><a href="#panel-A">A · Structure and storage boundaries</a><a href="#panel-B">B · Launch, navigation, and organization</a><a href="#panel-C">C · Schedule screenshots to confirmed bouts</a><a href="#panel-D">D · Import and reopen source recordings</a><a href="#panel-E">E · Trim, export, upload, and retry</a><a href="#panel-F">F · Playback, seeking, favorites, and local storage</a><a href="#panel-G">G · Synchronization, remote changes, and deletion</a><a href="#panel-H">H · Source map, tests, and implementation limits</a></nav><div class="am-doc-body">
+<section class="am-panel" id="panel-A">
+<header class="am-panel-head"><span class="am-panel-id">A</span><h2>Structure and storage boundaries</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>The architecture in one picture</h3>
+</div>
+<figure class="am-diagram am-flow"><svg viewBox="0 0 748 360" width="748" height="360" role="img" aria-label="流程图：SwiftUI screens、AppViewModel、Feature models、Workflow coordinators、LocalRepository、Apple services、SwiftData、CloudKit metadata" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am1-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><g></g><g><g data-step="0"><path class="am-edge" d="M426.1,49 L461.6,65 Q497.1,81 497.1,97 L497.1,113" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="407.9" y="72" width="178.4" height="18" rx="3"/><text x="497.1" y="81" text-anchor="middle" dominant-baseline="central">organization and media actions</text></g></g><g data-step="1"><path class="am-edge" d="M324.6,43.1 L222.8,62.1 Q121,81 121,105.8 Q121,130.5 121,155.3 Q121,180 121,196 L121,212" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="51.8" y="121.5" width="138.3" height="18" rx="3"/><text x="121" y="130.5" text-anchor="middle" dominant-baseline="central">extraction and playback</text></g></g><g data-step="2"><path class="am-edge" d="M441.8,148 L391.2,164 Q340.7,180 340.7,196 L340.7,212" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="253.5" y="171" width="174.2" height="18" rx="3"/><text x="340.7" y="180" text-anchor="middle" dominant-baseline="central">import, trim, upload, download</text></g></g><g data-step="3"><path class="am-edge" d="M529.2,148 L558.5,164 Q587.9,180 587.9,196 L587.9,212" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="528.4" y="171" width="119" height="18" rx="3"/><text x="587.9" y="180" text-anchor="middle" dominant-baseline="central">records and ordering</text></g></g><g data-step="4"><path class="am-edge" d="M340.7,247 L340.7,263 Q340.7,279 305.1,295 L269.6,311" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="248.9" y="270" width="183.4" height="18" rx="3"/><text x="340.7" y="279" text-anchor="middle" dominant-baseline="central">Photos, AVFoundation, CloudKit</text></g></g><g data-step="5"><path class="am-edge" d="M121,247 L121,263 Q121,279 156.5,295 L192,311" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="15" y="270" width="211.9" height="18" rx="3"/><text x="121" y="279" text-anchor="middle" dominant-baseline="central">Vision, Foundation Models, AVPlayer</text></g></g><g data-step="6"><path class="am-edge" d="M561.2,247 L536.8,263 Q512.3,279 512.3,295 L512.3,311" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="464.3" y="270" width="96" height="18" rx="3"/><text x="512.3" y="279" text-anchor="middle" dominant-baseline="central">save local state</text></g></g><g data-step="7"><path class="am-edge" d="M614.6,247 L639,263 Q663.4,279 663.4,295 L663.4,311" marker-end="url(#am1-arrow)"/><g class="am-edge-label"><rect x="597.5" y="270" width="131.9" height="18" rx="3"/><text x="663.4" y="279" text-anchor="middle" dominant-baseline="central">schedule explicit sync</text></g></g></g><g><g class="am-node am-node--rect" data-key="SwiftUI screens" data-step="0"><rect class="am-node-shape" x="324.6" y="14" width="125.2" height="35" rx="3"/><text x="387.2" y="31.5" text-anchor="middle" dominant-baseline="central">SwiftUI screens</text></g><g class="am-node am-node--rect" data-key="AppViewModel" data-step="0"><rect class="am-node-shape" x="437" y="113" width="120" height="35" rx="3"/><text x="497.1" y="130.5" text-anchor="middle" dominant-baseline="central">AppViewModel</text></g><g class="am-node am-node--rect" data-key="Feature models" data-step="1"><rect class="am-node-shape" x="59.7" y="212" width="122.6" height="35" rx="3"/><text x="121" y="229.5" text-anchor="middle" dominant-baseline="central">Feature models</text></g><g class="am-node am-node--rect" data-key="Workflow coordinators" data-step="2"><rect class="am-node-shape" x="258.9" y="212" width="163.5" height="35" rx="3"/><text x="340.7" y="229.5" text-anchor="middle" dominant-baseline="central">Workflow coordinators</text></g><g class="am-node am-node--rect" data-key="LocalRepository" data-step="3"><rect class="am-node-shape" x="524" y="212" width="127.8" height="35" rx="3"/><text x="587.9" y="229.5" text-anchor="middle" dominant-baseline="central">LocalRepository</text></g><g class="am-node am-node--rect" data-key="Apple services" data-step="4"><rect class="am-node-shape" x="171.4" y="311" width="118.7" height="35" rx="3"/><text x="230.8" y="328.5" text-anchor="middle" dominant-baseline="central">Apple services</text></g><g class="am-node am-node--rect" data-key="SwiftData" data-step="6"><rect class="am-node-shape" x="467.1" y="311" width="90.4" height="35" rx="3"/><text x="512.3" y="328.5" text-anchor="middle" dominant-baseline="central">SwiftData</text></g><g class="am-node am-node--rect" data-key="CloudKit metadata" data-step="7"><rect class="am-node-shape" x="593.5" y="311" width="139.8" height="35" rx="3"/><text x="663.4" y="328.5" text-anchor="middle" dominant-baseline="central">CloudKit metadata</text></g></g></svg></figure>
+<div class="am-md"><p>The arrows group dependencies, not a single ordered execution. Feature models are ScheduleReviewViewModel and MediaPlayerModel.</p>
+<p>AppViewModel exposes services used to construct ScheduleReviewViewModel; extraction runs in that feature model. Workflow coordinators are BoutImportCoordinator, ClipWorkflow, ClipUploadQueue, and ClipDownloadCoordinator.</p>
+<h3>Repository layout</h3>
+</div>
+<div class="am-tree"><ul class="am-tree-list"><li data-key="FencingVideoAnalysis/" data-step="0"><span class="am-tree-label">FencingVideoAnalysis/</span><ul><li data-key="App/" data-step="1"><span class="am-tree-label">App/</span><ul><li data-key="AppEntry/" data-step="2"><span class="am-tree-label">AppEntry/</span><span class="am-tree-sub">app bootstrap, dependency wiring, shared AppViewModel</span></li><li data-key="Navigation/" data-step="3"><span class="am-tree-label">Navigation/</span><span class="am-tree-sub">adaptive tournament navigation</span></li></ul></li><li data-key="Features/" data-step="4"><span class="am-tree-label">Features/</span><ul><li data-key="FirstRunSetup/" data-step="5"><span class="am-tree-label">FirstRunSetup/</span><span class="am-tree-sub">save the single fencer name</span></li><li data-key="Tournaments/" data-step="6"><span class="am-tree-label">Tournaments/</span><span class="am-tree-sub">create, edit, select, and delete tournaments</span></li><li data-key="ScheduleImport/" data-step="7"><span class="am-tree-label">ScheduleImport/</span><span class="am-tree-sub">screenshots, extraction, review, confirmation</span></li><li data-key="Bouts/" data-step="8"><span class="am-tree-label">Bouts/</span><span class="am-tree-sub">import, source trimming, clip replay, shared player controls</span></li><li data-key="Settings/" data-step="9"><span class="am-tree-label">Settings/</span><span class="am-tree-sub">fencer name, Photos permission, local clip storage</span></li></ul></li><li data-key="Models/" data-step="10"><span class="am-tree-label">Models/</span><ul><li data-key="DomainModels/" data-step="11"><span class="am-tree-label">DomainModels/</span><span class="am-tree-sub">six SwiftData entities and SyncState</span></li><li data-key="LocalModels/" data-step="12"><span class="am-tree-label">LocalModels/</span><span class="am-tree-sub">repository, schema, ordering, local deletion</span></li></ul></li><li data-key="Services/" data-step="13"><span class="am-tree-label">Services/</span><span class="am-tree-sub">framework adapters, coordinators, parsers, sync, cache</span></li></ul></li><li data-key="FencingVideoAnalysisTests/" data-step="14"><span class="am-tree-label">FencingVideoAnalysisTests/</span><span class="am-tree-sub">unit, integration, and physical-device probes</span></li><li data-key="FencingVideoAnalysisUITests/" data-step="15"><span class="am-tree-label">FencingVideoAnalysisUITests/</span><span class="am-tree-sub">end-to-end UI journeys</span></li><li data-key="scripts/" data-step="16"><span class="am-tree-label">scripts/</span><span class="am-tree-sub">simulator test entry points and schedule evaluation</span></li><li data-key="figures/" data-step="17"><span class="am-tree-label">figures/</span><span class="am-tree-sub">architecture artifacts and their generators</span></li></ul></div>
+<div class="am-md"><p>The current executable tree has 35 Swift files and targets iOS 26.0. The folder list in ARCHITECTURE.md also contains proposed feature folders; use this map for the implemented layout.</p>
+<h3>Ownership and relationships</h3>
+</div>
+<figure class="am-diagram am-flow"><svg viewBox="0 0 236 459" width="236" height="459" role="img" aria-label="流程图：AppSettings、Tournament、Bout、SourceRecording、ReviewClip" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am2-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><g></g><g><g data-step="0"><path class="am-edge" d="M97.2,49 L97.2,65 Q97.2,81 97.2,97 L97.2,113" marker-end="url(#am2-arrow)"/><g class="am-edge-label"><rect x="34.4" y="72" width="125.5" height="18" rx="3"/><text x="97.2" y="81" text-anchor="middle" dominant-baseline="central">shared fencer context</text></g></g><g data-step="1"><path class="am-edge" d="M97.2,148 L97.2,164 Q97.2,180 97.2,196 L97.2,212" marker-end="url(#am2-arrow)"/><g class="am-edge-label"><rect x="55.6" y="171" width="83.1" height="18" rx="3"/><text x="97.2" y="180" text-anchor="middle" dominant-baseline="central">tournamentID</text></g></g><g data-step="2"><path class="am-edge" d="M118,247 L137,263 Q156,279 156,295 L156,311" marker-end="url(#am2-arrow)"/><g class="am-edge-label"><rect x="132.8" y="270" width="46.6" height="18" rx="3"/><text x="156" y="279" text-anchor="middle" dominant-baseline="central">boutID</text></g></g><g data-step="3"><path class="am-edge" d="M156,346 L156,362 Q156,378 137,394 L118,410" marker-end="url(#am2-arrow)"/><g class="am-edge-label"><rect x="99.4" y="369" width="113.3" height="18" rx="3"/><text x="156" y="378" text-anchor="middle" dominant-baseline="central">sourceRecordingID</text></g></g><g data-step="4"><path class="am-edge" d="M76.4,247 L57.3,263 Q38.3,279 38.3,303.8 Q38.3,328.5 38.3,353.3 Q38.3,378 57.3,394 L76.4,410" marker-end="url(#am2-arrow)"/><g class="am-edge-label"><rect x="15" y="319.5" width="46.6" height="18" rx="3"/><text x="38.3" y="328.5" text-anchor="middle" dominant-baseline="central">boutID</text></g></g></g><g><g class="am-node am-node--rect" data-key="AppSettings" data-step="0"><rect class="am-node-shape" x="46.2" y="14" width="101.8" height="35" rx="3"/><text x="97.2" y="31.5" text-anchor="middle" dominant-baseline="central">AppSettings</text></g><g class="am-node am-node--rect" data-key="Tournament" data-step="0"><rect class="am-node-shape" x="47.2" y="113" width="100" height="35" rx="3"/><text x="97.2" y="130.5" text-anchor="middle" dominant-baseline="central">Tournament</text></g><g class="am-node am-node--rect" data-key="Bout" data-step="1"><rect class="am-node-shape" x="65.2" y="212" width="64" height="35" rx="3"/><text x="97.2" y="229.5" text-anchor="middle" dominant-baseline="central">Bout</text></g><g class="am-node am-node--rect" data-key="SourceRecording" data-step="2"><rect class="am-node-shape" x="90.6" y="311" width="131" height="35" rx="3"/><text x="156" y="328.5" text-anchor="middle" dominant-baseline="central">SourceRecording</text></g><g class="am-node am-node--rect" data-key="ReviewClip" data-step="3"><rect class="am-node-shape" x="47.9" y="410" width="98.5" height="35" rx="3"/><text x="97.2" y="427.5" text-anchor="middle" dominant-baseline="central">ReviewClip</text></g></g></svg></figure>
+<div class="am-md"><p>AppSettings is a single global setting, not a foreign-key parent of Tournament. The other links use UUID fields, not SwiftData relationship properties.</p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Purpose and key fields</th>
+<th>Persistence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AppSettings</td>
+<td>Stable cloud ID, fencerName, timestamps, syncState</td>
+<td>Local and private CloudKit</td>
+</tr>
+<tr>
+<td>Tournament</td>
+<td>Name, venue, date, timezone, import status</td>
+<td>Local and private CloudKit</td>
+</tr>
+<tr>
+<td>Bout</td>
+<td>Tournament ID, opponent, sequence number, status; optional context fields</td>
+<td>Confirmed records sync</td>
+</tr>
+<tr>
+<td>SourceRecording</td>
+<td>Bout ID, capture time, duration, filename, import batch, Photos IDs</td>
+<td>Portable metadata syncs</td>
+</tr>
+<tr>
+<td>ReviewClip</td>
+<td>Source ID, bout ID, start/end, duration, favorite, asset reference, media state</td>
+<td>Metadata and edited movie sync</td>
+</tr>
+<tr>
+<td>ScheduleExtractionRun</td>
+<td>Diagnostic schema for extraction status and warnings</td>
+<td>Defined locally; current extraction UI does not create these records</td>
+</tr>
+</tbody></table></div>
+<h3>Where the bytes live</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Location</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Original videos</td>
+<td>Photos; optional Apple-managed iCloud Photos storage</td>
+<td>The app never uploads originals to its CloudKit container</td>
+</tr>
+<tr>
+<td>Source link</td>
+<td>Local Photos ID plus portable cloudPhotoAssetID</td>
+<td>Only the portable ID crosses devices</td>
+</tr>
+<tr>
+<td>Legacy source copies</td>
+<td>Application Support/SourceRecordings</td>
+<td>Local only; successful Photos-backed open can remove the old copy</td>
+</tr>
+<tr>
+<td>Exported review clips</td>
+<td>Application Support/PendingClips</td>
+<td>Durable file while upload is pending; may remain after upload</td>
+</tr>
+<tr>
+<td>Downloaded review clips</td>
+<td>Application Support/DownloadedClips</td>
+<td>Managed cache with index.json; default limit 2,000,000,000 bytes</td>
+</tr>
+<tr>
+<td>Schedule screenshots, OCR, drafts</td>
+<td>Feature memory during review</td>
+<td>No cloud serialization</td>
+</tr>
+<tr>
+<td>App metadata</td>
+<td>SwiftData plus private CloudKit</td>
+<td>The repository disables automatic SwiftData CloudKit integration</td>
+</tr>
+<tr>
+<td>Sync recovery state</td>
+<td>CloudMetadataSyncState.json and CloudRecordSystemFields.json</td>
+<td>Engine state and record versions stay on the device</td>
+</tr>
+</tbody></table></div>
+<p><code>SwiftDataRepository.makeContainer()</code> selects <code>cloudKitDatabase: .none</code>. Explicit CloudKit services control the cloud boundary.</p>
+</div></div>
+</section>
+<section class="am-panel" id="panel-B">
+<header class="am-panel-head"><span class="am-panel-id">B</span><h2>Launch, navigation, and organization</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>Launch and foreground refresh</h3>
+</div>
+<figure class="am-diagram am-seq"><svg viewBox="0 0 669 350" width="669" height="350" role="img" aria-label="时序图：App、Dependencies、Services、AppViewModel" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am3-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><line class="am-lifeline" x1="54" y1="42" x2="54" y2="346"/><g data-key="App"><rect class="am-actor" x="12" y="8" width="84" height="34" rx="2"/><text x="54" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">App</text></g><line class="am-lifeline" x1="182.1" y1="42" x2="182.1" y2="346"/><g data-key="Dependencies"><rect class="am-actor" x="124" y="8" width="116.1" height="34" rx="2"/><text x="182.1" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Dependencies</text></g><line class="am-lifeline" x1="392.1" y1="42" x2="392.1" y2="346"/><g data-key="Services"><rect class="am-actor" x="350.1" y="8" width="84" height="34" rx="2"/><text x="392.1" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Services</text></g><line class="am-lifeline" x1="596.7" y1="42" x2="596.7" y2="346"/><g data-key="AppViewModel"><rect class="am-actor" x="536.6" y="8" width="120" height="34" rx="2"/><text x="596.7" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">AppViewModel</text></g><g data-step="0"><text x="118" y="70" text-anchor="middle">make()</text><path class="am-edge" d="M54,80 L180.1,80" marker-end="url(#am3-arrow)"/><text class="am-step" x="60" y="74" text-anchor="start">1</text></g><g data-step="1"><text x="287.1" y="110" text-anchor="middle">build repository and adapters</text><path class="am-edge" d="M182.1,120 L390.1,120" marker-end="url(#am3-arrow)"/><text class="am-step" x="188.1" y="114" text-anchor="start">2</text></g><g data-step="2"><text x="325.3" y="150" text-anchor="middle">AppRootView creates model</text><path class="am-edge" d="M54,160 L594.7,160" marker-end="url(#am3-arrow)"/><text class="am-step" x="60" y="154" text-anchor="start">3</text></g><g data-step="3"><text x="325.3" y="190" text-anchor="middle">.task → load()</text><path class="am-edge" d="M54,200 L594.7,200" marker-end="url(#am3-arrow)"/><text class="am-step" x="60" y="194" text-anchor="start">4</text></g><g data-step="4"><text x="494.4" y="230" text-anchor="middle">accountStatus(); local reads</text><path class="am-edge" d="M596.7,240 L394.1,240" marker-end="url(#am3-arrow)"/><text class="am-step" x="590.7" y="234" text-anchor="end">5</text></g><g data-step="5"><text x="494.4" y="270" text-anchor="middle">refreshCloud() if available</text><path class="am-edge" d="M596.7,280 L394.1,280" marker-end="url(#am3-arrow)"/><text class="am-step" x="590.7" y="274" text-anchor="end">6</text></g><g data-step="6"><text x="325.3" y="310" text-anchor="middle">setup or tournament navigation</text><path class="am-edge am-edge--dashed" d="M596.7,320 L56,320" marker-end="url(#am3-arrow)"/><text class="am-step" x="590.7" y="314" text-anchor="end">7</text></g></svg></figure>
+<div class="am-md"><p><code>FencingVideoAnalysisApp</code> stores bootstrap as a Result. A bootstrap failure shows local-data failure. A later load failure offers <code>load()</code> again.</p>
+<p><code>load()</code> migrates an older settings ID to <code>AppSettings.cloudID</code>. It reads local data before cloud refresh, so unavailable iCloud does not block local organization.</p>
+<p>After loading, <code>load()</code> calls <code>ClipWorkflow.removeAbandonedFiles()</code> for old, unreferenced source and export files. The cutoff is 24 hours. Test stores disable this cleanup.</p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Trigger</th>
+<th>Function path</th>
+<th>Result or guard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>App becomes active</td>
+<td>AppRootView.onChange(scenePhase) → AppViewModel.refreshCloud()</td>
+<td>Runs only after local load</td>
+</tr>
+<tr>
+<td>Pull tournament or bout list</td>
+<td>.refreshable → refreshCloud()</td>
+<td>Discovers new remote records and resumes pending uploads</td>
+</tr>
+<tr>
+<td>Enter fencer; Continue</td>
+<td>FirstRunSetupView button → saveFencerName() → insert or update AppSettings → saveChanges()</td>
+<td>Rejects an empty trimmed name</td>
+</tr>
+<tr>
+<td>Fencer settings; Save</td>
+<td>FencerSettingsView button → saveFencerName()</td>
+<td>Same validation; marks settings pending</td>
+</tr>
+<tr>
+<td>New Tournament</td>
+<td>TournamentNavigationView state → TournamentFormView</td>
+<td>Opens an unsaved form</td>
+</tr>
+<tr>
+<td>Save tournament</td>
+<td>TournamentFormView button → saveTournament() → insert/update → saveChanges() → tournaments()</td>
+<td>Rejects an empty name; selects the saved tournament</td>
+</tr>
+<tr>
+<td>Select tournament</td>
+<td>List selection binding → selectTournament(id) → repository.bouts(in:)</td>
+<td>Loads that tournament&#39;s ordered bouts</td>
+</tr>
+<tr>
+<td>Edit tournament</td>
+<td>TournamentDetailView state → TournamentFormView(existing:) → saveTournament(existing:)</td>
+<td>Updates timestamps and pending state</td>
+</tr>
+<tr>
+<td>Open bout</td>
+<td>TournamentDetailView button → selectedBout + showingBoutDetail</td>
+<td>Presents BoutDetailView; .task calls refreshRecordings()</td>
+</tr>
+<tr>
+<td>Save bout edits</td>
+<td>BoutDetailView.save() → updateConfirmedBout() → saveChanges()</td>
+<td>Requires opponent, positive number, and no number collision</td>
+</tr>
+<tr>
+<td>Cancel form</td>
+<td>SwiftUI dismiss()</td>
+<td>Discards unsaved form state</td>
+</tr>
+</tbody></table></div>
+<p><code>updateConfirmedBout()</code> restores previous values if persistence fails. The public <code>addBout()</code> helper exists, but the current manual-entry screen uses schedule drafts and <code>confirmSchedule()</code>.</p>
+<h3>How local changes reach the cloud</h3>
+<p><code>saveChanges()</code> calls <code>ModelContext.save()</code>, then <code>didSave</code>. On a physical device with live metadata, dependency wiring connects <code>didSave</code> to <code>LiveCloudMetadataService.scheduleSync()</code>.</p>
+<p>This is asynchronous cloud scheduling. A successful local save does not mean the other device has already received the change.</p>
+<h3>Screen presentation</h3>
+<p>NavigationSplitView adapts the tournament list and detail. Bout import and schedule review use sheets. PlaybackPresentation uses a sheet on iPhone and a 90%-sized overlay within a full-screen cover on iPad.</p>
+</div></div>
+</section>
+<section class="am-panel" id="panel-C">
+<header class="am-panel-head"><span class="am-panel-id">C</span><h2>Schedule screenshots to confirmed bouts</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>Extraction path</h3>
+</div>
+<figure class="am-diagram am-seq"><svg viewBox="0 0 756 390" width="756" height="390" role="img" aria-label="时序图：Screen、ReviewModel、Extractors、Validator、Persistence" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am4-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><line class="am-lifeline" x1="54" y1="42" x2="54" y2="386"/><g data-key="Screen"><rect class="am-actor" x="12" y="8" width="84" height="34" rx="2"/><text x="54" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Screen</text></g><line class="am-lifeline" x1="262.7" y1="42" x2="262.7" y2="386"/><g data-key="ReviewModel"><rect class="am-actor" x="207.1" y="8" width="111.2" height="34" rx="2"/><text x="262.7" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">ReviewModel</text></g><line class="am-lifeline" x1="457.9" y1="42" x2="457.9" y2="386"/><g data-key="Extractors"><rect class="am-actor" x="413" y="8" width="89.9" height="34" rx="2"/><text x="457.9" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Extractors</text></g><line class="am-lifeline" x1="572.9" y1="42" x2="572.9" y2="386"/><g data-key="Validator"><rect class="am-actor" x="530.9" y="8" width="84" height="34" rx="2"/><text x="572.9" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Validator</text></g><line class="am-lifeline" x1="693" y1="42" x2="693" y2="386"/><g data-key="Persistence"><rect class="am-actor" x="642.9" y="8" width="100.3" height="34" rx="2"/><text x="693" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Persistence</text></g><g data-step="0"><text x="158.4" y="70" text-anchor="middle">loadScreenshots() → extract()</text><path class="am-edge" d="M54,80 L260.7,80" marker-end="url(#am4-arrow)"/><text class="am-step" x="60" y="74" text-anchor="start">1</text></g><g data-step="1"><text x="360.3" y="110" text-anchor="middle">recognize() for each image</text><path class="am-edge" d="M262.7,120 L455.9,120" marker-end="url(#am4-arrow)"/><text class="am-step" x="268.7" y="114" text-anchor="start">2</text></g><g data-step="2"><text x="360.3" y="150" text-anchor="middle">parse(); propose()</text><path class="am-edge" d="M262.7,160 L455.9,160" marker-end="url(#am4-arrow)"/><text class="am-step" x="268.7" y="154" text-anchor="start">3</text></g><g data-step="3"><text x="417.8" y="190" text-anchor="middle">reconcile()</text><path class="am-edge" d="M262.7,200 L570.9,200" marker-end="url(#am4-arrow)"/><text class="am-step" x="268.7" y="194" text-anchor="start">4</text></g><g data-step="4"><text x="417.8" y="230" text-anchor="middle">drafts and warnings</text><path class="am-edge am-edge--dashed" d="M572.9,240 L264.7,240" marker-end="url(#am4-arrow)"/><text class="am-step" x="566.9" y="234" text-anchor="end">5</text></g><g data-step="5"><text x="158.4" y="270" text-anchor="middle">state = ready</text><path class="am-edge am-edge--dashed" d="M262.7,280 L56,280" marker-end="url(#am4-arrow)"/><text class="am-step" x="256.7" y="274" text-anchor="end">6</text></g><g data-step="6"><text x="373.5" y="310" text-anchor="middle">confirm() → confirmSchedule()</text><path class="am-edge" d="M54,320 L691,320" marker-end="url(#am4-arrow)"/><text class="am-step" x="60" y="314" text-anchor="start">7</text></g><g data-step="7"><text x="373.5" y="350" text-anchor="middle">saved bouts or validation error</text><path class="am-edge am-edge--dashed" d="M693,360 L56,360" marker-end="url(#am4-arrow)"/><text class="am-step" x="687" y="354" text-anchor="end">8</text></g></svg></figure>
+<div class="am-md"><p>The screenshot picker allows up to 10 images. <code>loadScreenshots()</code> reads Data through PhotosPickerItem.loadTransferable, then <code>LiveScheduleSourceService.screenshots()</code> creates the source.</p>
+<p>Diagram lanes group the screen, ReviewModel, extractor services, validator, and persistence. The following table names each concrete implementation.</p>
+<h3>What each stage actually does</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Functions</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Recognition</td>
+<td>LiveDocumentRecognitionService.recognize()</td>
+<td>Validates image data and orientation; attempts RecognizeDocumentsRequest for tables</td>
+</tr>
+<tr>
+<td>Text recognition</td>
+<td>RecognizeTextRequest.perform()</td>
+<td>Runs accurate OCR as well; falls back to document text lines if needed</td>
+</tr>
+<tr>
+<td>Quality checks</td>
+<td>RecognizedScheduleDocument.addingQualityWarnings()</td>
+<td>Adds recognition warnings; no readable transcript throws</td>
+</tr>
+<tr>
+<td>Deterministic parsing</td>
+<td>DeterministicScheduleParser.parse(), mapping(), normalizedName(), numericValue(), context()</td>
+<td>Maps table columns, matches the saved fencer on either side, extracts the opponent and full bout-order position</td>
+</tr>
+<tr>
+<td>Model assistance</td>
+<td>LiveOnDeviceModelService.propose(), promptData()</td>
+<td>Uses SystemLanguageModel when available; guided generation returns typed candidates</td>
+</tr>
+<tr>
+<td>Evidence validation</td>
+<td>ScheduleProposalValidator.reconcile(), mergeString(), mergeInt(), trace(), sourceRow()</td>
+<td>Requires source evidence; rejects unsupported rows and values; retains deterministic findings on conflicts</td>
+</tr>
+<tr>
+<td>Editable review</td>
+<td>ScheduleReviewViewModel.extract() → EditableBoutDraft.init</td>
+<td>Exposes opponent and bout number; filters and deduplicates visible warnings</td>
+</tr>
+<tr>
+<td>Confirmation</td>
+<td>AppViewModel.confirmSchedule()</td>
+<td>Validates the whole draft set before inserting bouts</td>
+</tr>
+</tbody></table></div>
+<p>The current deterministic parser processes recognized tables. Text recognition does not itself guarantee a supported table layout. Unsupported layouts need review or manual entry.</p>
+<p>The model receives bounded OCR/table text. <code>promptData()</code> limits the final input to 18,000 characters. Model unavailability or generation failure retains deterministic results.</p>
+<h3>Review actions and branches</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Triggered function or state</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Manual Entry</td>
+<td>startManual() → scheduleSourceService.manual() → extract()</td>
+<td>Review state becomes ready without OCR or model calls</td>
+</tr>
+<tr>
+<td>Add bout draft</td>
+<td>ScheduleReviewViewModel.addDraft()</td>
+<td>Uses the next draft number; still unconfirmed</td>
+</tr>
+<tr>
+<td>Edit opponent or number</td>
+<td>SwiftUI bindings into review.drafts</td>
+<td>Changes memory only</td>
+</tr>
+<tr>
+<td>Remove draft</td>
+<td>removeDraft(at:)</td>
+<td>Removes one proposed bout</td>
+</tr>
+<tr>
+<td>Reorder drafts</td>
+<td>moveDraft(from:to:) or moveDrafts(from:to:)</td>
+<td>Changes draft display order; saved bout order uses the explicit number</td>
+</tr>
+<tr>
+<td>Enlarge screenshot</td>
+<td>enlargedImageIndex → ScheduleImageViewer</td>
+<td>Inspects selected screenshot without changing extraction</td>
+</tr>
+<tr>
+<td>Zoom or pan</td>
+<td>magnify(), pan(), setZoom(), resetZoom(), bounded()</td>
+<td>Changes viewer scale and offset</td>
+</tr>
+<tr>
+<td>Retry extraction</td>
+<td>ScheduleImportView.extract(source)</td>
+<td>Re-runs recognition, parsing, model assistance, and validation</td>
+</tr>
+<tr>
+<td>New Source</td>
+<td>clear source and picker state → review.reset()</td>
+<td>Discards the current proposal in memory</td>
+</tr>
+<tr>
+<td>Discard Schedule</td>
+<td>confirmation dialog → dismiss()</td>
+<td>The app writes no confirmed records</td>
+</tr>
+<tr>
+<td>Confirm Schedule</td>
+<td>ScheduleImportView.confirm() → AppViewModel.confirmSchedule()</td>
+<td>Saves normalized confirmed bouts</td>
+</tr>
+</tbody></table></div>
+<h3>Confirmation contract</h3>
+<p><code>confirmSchedule()</code> requires at least one draft, a known tournament, nonempty opponents, and positive unique bout numbers. It rejects conflicts with an existing number and different opponent.</p>
+<p>The app skips an identical existing number/opponent pair. New bouts use phase <code>unknown</code>; imported pool, strip, and schedule-time context are not persisted by this screen.</p>
+<p>The app sets <code>scheduleImportStatus = confirmed</code> and clears <code>scheduleSourceURL</code> on the tournament. Save failure removes inserted bouts and restores the tournament&#39;s prior fields.</p>
+</div></div>
+</section>
+<section class="am-panel" id="panel-D">
+<header class="am-panel-head"><span class="am-panel-id">D</span><h2>Import and reopen source recordings</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>Import starts in a known bout</h3>
+</div>
+<figure class="am-diagram am-seq"><svg viewBox="0 0 711 390" width="711" height="390" role="img" aria-label="时序图：Review screen、AppViewModel、Import coordinator、Photos" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am5-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><line class="am-lifeline" x1="71.2" y1="42" x2="71.2" y2="386"/><g data-key="Review screen"><rect class="am-actor" x="12" y="8" width="118.5" height="34" rx="2"/><text x="71.2" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Review screen</text></g><line class="am-lifeline" x1="257.1" y1="42" x2="257.1" y2="386"/><g data-key="AppViewModel"><rect class="am-actor" x="197.1" y="8" width="120" height="34" rx="2"/><text x="257.1" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">AppViewModel</text></g><line class="am-lifeline" x1="510.5" y1="42" x2="510.5" y2="386"/><g data-key="Import coordinator"><rect class="am-actor" x="441.7" y="8" width="137.7" height="34" rx="2"/><text x="510.5" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Import coordinator</text></g><line class="am-lifeline" x1="656.1" y1="42" x2="656.1" y2="386"/><g data-key="Photos"><rect class="am-actor" x="614.1" y="8" width="84" height="34" rx="2"/><text x="656.1" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Photos</text></g><g data-step="0"><text x="164.2" y="70" text-anchor="middle">prepareRecordings()</text><path class="am-edge" d="M71.2,80 L255.1,80" marker-end="url(#am5-arrow)"/><text class="am-step" x="77.2" y="74" text-anchor="start">1</text></g><g data-step="1"><text x="383.8" y="110" text-anchor="middle">prepareSelections()</text><path class="am-edge" d="M257.1,120 L508.5,120" marker-end="url(#am5-arrow)"/><text class="am-step" x="263.1" y="114" text-anchor="start">2</text></g><g data-step="2"><text x="583.3" y="150" text-anchor="middle">importSelections()</text><path class="am-edge" d="M510.5,160 L654.1,160" marker-end="url(#am5-arrow)"/><text class="am-step" x="516.5" y="154" text-anchor="start">3</text></g><g data-step="3"><text x="363.7" y="190" text-anchor="middle">batch and per-item failures</text><path class="am-edge am-edge--dashed" d="M656.1,200 L73.2,200" marker-end="url(#am5-arrow)"/><text class="am-step" x="650.1" y="194" text-anchor="end">4</text></g><g data-step="4"><text x="164.2" y="230" text-anchor="middle">confirmRecordings()</text><path class="am-edge" d="M71.2,240 L255.1,240" marker-end="url(#am5-arrow)"/><text class="am-step" x="77.2" y="234" text-anchor="start">5</text></g><g data-step="5"><text x="383.8" y="270" text-anchor="middle">confirm(); linkPendingCloudPhotos()</text><path class="am-edge" d="M257.1,280 L508.5,280" marker-end="url(#am5-arrow)"/><text class="am-step" x="263.1" y="274" text-anchor="start">6</text></g><g data-step="6"><text x="583.3" y="310" text-anchor="middle">cloudIdentifiers()</text><path class="am-edge" d="M510.5,320 L654.1,320" marker-end="url(#am5-arrow)"/><text class="am-step" x="516.5" y="314" text-anchor="start">7</text></g><g data-step="7"><text x="164.2" y="350" text-anchor="middle">onSaved(result); dismiss</text><path class="am-edge am-edge--dashed" d="M257.1,360 L73.2,360" marker-end="url(#am5-arrow)"/><text class="am-step" x="251.1" y="354" text-anchor="end">8</text></g></svg></figure>
+<div class="am-md"><p>There is no automatic bout matching. The selected bout provides the destination. Duplicate detection checks known device-local asset IDs across that tournament and within the batch.</p>
+<p><code>PhotoSelection.init(item:)</code> supplies a metadata loader for normal picker selections. New imports retain Photos identifiers and metadata without creating a full-size working copy. The service also supports a file-copy path for selections without that loader.</p>
+<p><code>LivePhotoLibraryService.importSelections()</code> rejects missing Photos identifiers and invalid durations. It reports individual failures without discarding usable selections.</p>
+<h3>Confirmation, cancel, and repair</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Trigger</th>
+<th>Function path</th>
+<th>State change</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Add to Bout</td>
+<td>RecordingImportReviewView.confirm() → confirmRecordings() → BoutImportCoordinator.confirm()</td>
+<td>Creates one SourceRecording per usable item with a shared importBatchID</td>
+</tr>
+<tr>
+<td>Persistence failure</td>
+<td>BoutImportCoordinator.confirm() catch</td>
+<td>Removes inserted records and attempts working-file cleanup</td>
+</tr>
+<tr>
+<td>Cancel before confirmation</td>
+<td>cancel() → discardRecordings() → discard() → removeWorkingFiles()</td>
+<td>Drops prepared working copies</td>
+</tr>
+<tr>
+<td>Cancel during preparation</td>
+<td>cancel() → loadTask.cancel(); prepare() checks cancelRequested</td>
+<td>Cleans completed results before dismissal</td>
+</tr>
+<tr>
+<td>Select another batch</td>
+<td>prepare() → discardRecordings(previousBatch)</td>
+<td>Removes the prior unsaved batch</td>
+</tr>
+<tr>
+<td>Link source across devices</td>
+<td>linkPendingCloudPhotos() → cloudIdentifiers(for:) → saveChanges()</td>
+<td>Saves cloudPhotoAssetID; marks source metadata pending</td>
+</tr>
+<tr>
+<td>Repair older imports</td>
+<td>localIdentifierForExistingRecording()</td>
+<td>Matches filename and duration; uses capture time to resolve ambiguity</td>
+</tr>
+<tr>
+<td>Allow Photos Access</td>
+<td>FencerSettingsView → AppViewModel.connectPhotos()</td>
+<td>Requests permission, links pending sources, then refreshes cloud</td>
+</tr>
+<tr>
+<td>Permission denied</td>
+<td>connectPhotos() → needsDeviceSettings</td>
+<td>UI offers UIApplication.openSettingsURLString</td>
+</tr>
+</tbody></table></div>
+<p>A cloud-link failure can leave the recording saved locally. <code>confirmRecordings()</code> reports that linking failed instead of undoing a successful import.</p>
+<h3>Open a source for playback or trimming</h3>
+</div>
+<figure class="am-diagram am-flow"><svg viewBox="0 0 438 558" width="438" height="558" role="img" aria-label="流程图：Select source、AppViewModel.sourceAsset、BoutImportCoordinator.sourceAsset、PhotoLibrary.videoAsset、PhotoKit AVAsset、Legacy AVURLAsset、MediaPlayerModel.open" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am6-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><g></g><g><g data-step="0"><path class="am-edge" d="M219.1,49 L219.1,65 Q219.1,81 219.1,97 L219.1,113" marker-end="url(#am6-arrow)"/><g class="am-edge-label"><rect x="139.1" y="72" width="160" height="18" rx="3"/><text x="219.1" y="81" text-anchor="middle" dominant-baseline="central">SourceTimelineView.select</text></g></g><g data-step="1"><path class="am-edge" d="M219.1,148 L219.1,164 Q219.1,180 219.1,196 L219.1,212" marker-end="url(#am6-arrow)"/><g class="am-edge-label"><rect x="167.7" y="171" width="102.7" height="18" rx="3"/><text x="219.1" y="180" text-anchor="middle" dominant-baseline="central">resolve recording</text></g></g><g data-step="2"><path class="am-edge" d="M257,247 L291.7,263 Q326.5,279 326.5,295 L326.5,311" marker-end="url(#am6-arrow)"/><g class="am-edge-label"><rect x="237.7" y="270" width="177.4" height="18" rx="3"/><text x="326.5" y="279" text-anchor="middle" dominant-baseline="central">local or cloud Photos ID exists</text></g></g><g data-step="3"><path class="am-edge" d="M326.5,346 L326.5,362 Q326.5,378 326.5,394 L326.5,410" marker-end="url(#am6-arrow)"/><g class="am-edge-label"><rect x="230" y="369" width="192.9" height="18" rx="3"/><text x="326.5" y="378" text-anchor="middle" dominant-baseline="central">permission and identifier mapping</text></g></g><g data-step="4"><path class="am-edge" d="M181.1,247 L146.4,263 Q111.7,279 111.7,303.8 Q111.7,328.5 111.7,353.3 Q111.7,378 111.7,394 L111.7,410" marker-end="url(#am6-arrow)"/><g class="am-edge-label"><rect x="15" y="319.5" width="193.3" height="18" rx="3"/><text x="111.7" y="328.5" text-anchor="middle" dominant-baseline="central">Photos fails and local copy exists</text></g></g><g data-step="5"><path class="am-edge" d="M326.5,445 L326.5,461 Q326.5,477 291.7,493 L257,509" marker-end="url(#am6-arrow)"/><g class="am-edge-label"><rect x="280.6" y="468" width="91.7" height="18" rx="3"/><text x="326.5" y="477" text-anchor="middle" dominant-baseline="central">playback asset</text></g></g><g data-step="6"><path class="am-edge" d="M111.7,445 L111.7,461 Q111.7,477 146.4,493 L181.1,509" marker-end="url(#am6-arrow)"/><g class="am-edge-label"><rect x="68.6" y="468" width="86.1" height="18" rx="3"/><text x="111.7" y="477" text-anchor="middle" dominant-baseline="central">fallback asset</text></g></g></g><g><g class="am-node am-node--rect" data-key="Select source" data-step="0"><rect class="am-node-shape" x="163.3" y="14" width="111.5" height="35" rx="3"/><text x="219.1" y="31.5" text-anchor="middle" dominant-baseline="central">Select source</text></g><g class="am-node am-node--rect" data-key="AppViewModel.sourceAsset" data-step="0"><rect class="am-node-shape" x="119.3" y="113" width="199.6" height="35" rx="3"/><text x="219.1" y="130.5" text-anchor="middle" dominant-baseline="central">AppViewModel.sourceAsset</text></g><g class="am-node am-node--rect" data-key="BoutImportCoordinator.sourceAsset" data-step="1"><rect class="am-node-shape" x="97.8" y="212" width="242.5" height="35" rx="3"/><text x="219.1" y="229.5" text-anchor="middle" dominant-baseline="central">BoutImportCoordinator.sourceAsset</text></g><g class="am-node am-node--rect" data-key="PhotoLibrary.videoAsset" data-step="2"><rect class="am-node-shape" x="237.3" y="311" width="178.3" height="35" rx="3"/><text x="326.5" y="328.5" text-anchor="middle" dominant-baseline="central">PhotoLibrary.videoAsset</text></g><g class="am-node am-node--rect" data-key="PhotoKit AVAsset" data-step="3"><rect class="am-node-shape" x="258.2" y="410" width="136.4" height="35" rx="3"/><text x="326.5" y="427.5" text-anchor="middle" dominant-baseline="central">PhotoKit AVAsset</text></g><g class="am-node am-node--rect" data-key="Legacy AVURLAsset" data-step="4"><rect class="am-node-shape" x="33.6" y="410" width="156.2" height="35" rx="3"/><text x="111.7" y="427.5" text-anchor="middle" dominant-baseline="central">Legacy AVURLAsset</text></g><g class="am-node am-node--rect" data-key="MediaPlayerModel.open" data-step="5"><rect class="am-node-shape" x="131.7" y="509" width="174.6" height="35" rx="3"/><text x="219.1" y="526.5" text-anchor="middle" dominant-baseline="central">MediaPlayerModel.open</text></g></g></svg></figure>
+<div class="am-md"><p><code>videoAsset()</code> first tries the local Photos ID, then maps the portable cloud ID to this device&#39;s ID. <code>PHImageManager.requestAVAsset</code> allows network access, so Photos may download the original.</p>
+<p>After a successful Photos-backed open, <code>sourceAsset()</code> attempts to remove the older app working file. If neither Photos nor a legacy file is usable, the screen shows an error.</p>
+<p><code>localSourceURL()</code> → <code>localCopy()</code> → <code>copyFromICloudPhotos()</code> also exists for callers needing a local URL. The current SourceTimelineView uses <code>sourceAsset()</code>, not this copy path.</p>
+<h3>Move and remove</h3>
+<p><code>BoutDetailView.move()</code> → <code>AppViewModel.moveRecording()</code> → <code>BoutImportCoordinator.move()</code> changes boutID. It requires a destination in the same tournament and no saved review clips for that source.</p>
+<p><code>BoutDetailView.remove()</code> → <code>AppViewModel.removeRecording()</code> → <code>BoutImportCoordinator.remove()</code> deletes the link and managed working file. It blocks sources with clips, then queues a cloud source deletion.</p>
+<p><code>LocalRepository.sourceRecordings(in:)</code> orders by capture time, then UUID. Original Photos assets remain unchanged.</p>
+</div></div>
+</section>
+<section class="am-panel" id="panel-E">
+<header class="am-panel-head"><span class="am-panel-id">E</span><h2>Trim, export, upload, and retry</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>Save Clip pathway</h3>
+</div>
+<figure class="am-diagram am-flow"><svg viewBox="0 0 271 1053" width="271" height="1053" role="img" aria-label="流程图：Save Clip、AppViewModel.createClip、BoutImportCoordinator.sourceAsset、ClipWorkflow.createClip、Save exporting record、VideoEditingService.export、Save pendingUpload、ClipUploadQueue.upload" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am7-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><g></g><g><g data-step="0"><path class="am-edge" d="M135.3,49 L135.3,65 Q135.3,81 135.3,97 L135.3,113" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="48.1" y="72" width="174.2" height="18" rx="3"/><text x="135.3" y="81" text-anchor="middle" dominant-baseline="central">SourceTimelineView.saveClip</text></g></g><g data-step="1"><path class="am-edge" d="M135.3,148 L135.3,164 Q135.3,180 135.3,196 L135.3,212" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="94" y="171" width="82.5" height="18" rx="3"/><text x="135.3" y="180" text-anchor="middle" dominant-baseline="central">obtain source</text></g></g><g data-step="2"><path class="am-edge" d="M135.3,247 L135.3,263 Q135.3,279 135.3,295 L135.3,311" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="75.5" y="270" width="119.5" height="18" rx="3"/><text x="135.3" y="279" text-anchor="middle" dominant-baseline="central">asset and trim range</text></g></g><g data-step="3"><path class="am-edge" d="M135.3,346 L135.3,362 Q135.3,378 135.3,394 L135.3,410" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="92.2" y="369" width="86.1" height="18" rx="3"/><text x="135.3" y="378" text-anchor="middle" dominant-baseline="central">validate range</text></g></g><g data-step="4"><path class="am-edge" d="M135.3,445 L135.3,461 Q135.3,477 135.3,493 L135.3,509" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="67.9" y="468" width="134.7" height="18" rx="3"/><text x="135.3" y="477" text-anchor="middle" dominant-baseline="central">AVAssetExportSession</text></g></g><g data-step="5"><path class="am-edge" d="M135.3,544 L135.3,560 Q135.3,576 135.3,592 L135.3,608" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="57" y="567" width="156.5" height="18" rx="3"/><text x="135.3" y="576" text-anchor="middle" dominant-baseline="central">exported MOV and duration</text></g></g><g data-step="6"><path class="am-edge" d="M135.3,643 L135.3,659 Q135.3,675 135.3,691 L135.3,707" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="77.7" y="666" width="115.1" height="18" rx="3"/><text x="135.3" y="675" text-anchor="middle" dominant-baseline="central">asynchronous Task</text></g></g><g data-step="7"><path class="am-edge" d="M135.3,742 L135.3,758 Q135.3,774 135.3,790 L135.3,806" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="79" y="765" width="112.6" height="18" rx="3"/><text x="135.3" y="774" text-anchor="middle" dominant-baseline="central">create cloud record</text></g></g><g data-step="8"><path class="am-edge" d="M135.3,841 L135.3,857 Q135.3,873 135.3,889 L135.3,905" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="88.7" y="864" width="93" height="18" rx="3"/><text x="135.3" y="873" text-anchor="middle" dominant-baseline="central">attach CKAsset</text></g></g><g data-step="9"><path class="am-edge" d="M135.3,940 L135.3,956 Q135.3,972 135.3,988 L135.3,1004" marker-end="url(#am7-arrow)"/><g class="am-edge-label"><rect x="66.2" y="963" width="138.1" height="18" rx="3"/><text x="135.3" y="972" text-anchor="middle" dominant-baseline="central">cloudAssetRecordName</text></g></g></g><g><g class="am-node am-node--rect" data-key="Save Clip" data-step="0"><rect class="am-node-shape" x="91.7" y="14" width="87" height="35" rx="3"/><text x="135.3" y="31.5" text-anchor="middle" dominant-baseline="central">Save Clip</text></g><g class="am-node am-node--rect" data-key="AppViewModel.createClip" data-step="0"><rect class="am-node-shape" x="42.2" y="113" width="186.1" height="35" rx="3"/><text x="135.3" y="130.5" text-anchor="middle" dominant-baseline="central">AppViewModel.createClip</text></g><g class="am-node am-node--rect" data-key="BoutImportCoordinator.sourceAsset" data-step="1"><rect class="am-node-shape" x="14" y="212" width="242.5" height="35" rx="3"/><text x="135.3" y="229.5" text-anchor="middle" dominant-baseline="central">BoutImportCoordinator.sourceAsset</text></g><g class="am-node am-node--rect" data-key="ClipWorkflow.createClip" data-step="2"><rect class="am-node-shape" x="47.7" y="311" width="175.2" height="35" rx="3"/><text x="135.3" y="328.5" text-anchor="middle" dominant-baseline="central">ClipWorkflow.createClip</text></g><g class="am-node am-node--rect" data-key="Save exporting record" data-step="3"><rect class="am-node-shape" x="55.2" y="410" width="160.1" height="35" rx="3"/><text x="135.3" y="427.5" text-anchor="middle" dominant-baseline="central">Save exporting record</text></g><g class="am-node am-node--rect" data-key="VideoEditingService.export" data-step="4"><rect class="am-node-shape" x="38.3" y="509" width="193.9" height="35" rx="3"/><text x="135.3" y="526.5" text-anchor="middle" dominant-baseline="central">VideoEditingService.export</text></g><g class="am-node am-node--rect" data-key="Save pendingUpload" data-step="5"><rect class="am-node-shape" x="59" y="608" width="152.5" height="35" rx="3"/><text x="135.3" y="625.5" text-anchor="middle" dominant-baseline="central">Save pendingUpload</text></g><g class="am-node am-node--rect" data-key="ClipUploadQueue.upload" data-step="6"><rect class="am-node-shape" x="45.5" y="707" width="179.6" height="35" rx="3"/><text x="135.3" y="724.5" text-anchor="middle" dominant-baseline="central">ClipUploadQueue.upload</text></g><g class="am-node am-node--rect" data-key="Metadata.synchronize" data-step="7"><rect class="am-node-shape" x="54.3" y="806" width="161.9" height="35" rx="3"/><text x="135.3" y="823.5" text-anchor="middle" dominant-baseline="central">Metadata.synchronize</text></g><g class="am-node am-node--rect" data-key="Assets.saveExportedClip" data-step="8"><rect class="am-node-shape" x="44.6" y="905" width="181.4" height="35" rx="3"/><text x="135.3" y="922.5" text-anchor="middle" dominant-baseline="central">Assets.saveExportedClip</text></g><g class="am-node am-node--rect" data-key="Save available" data-step="9"><rect class="am-node-shape" x="75.9" y="1004" width="118.7" height="35" rx="3"/><text x="135.3" y="1021.5" text-anchor="middle" dominant-baseline="central">Save available</text></g></g></svg></figure>
+<div class="am-md"><p>Setting a start or end marker copies the current playhead into view state. Range sliders edit those values directly. The Save button disables obvious invalid ranges.</p>
+<p><code>TrimRange.validate()</code> also checks finite values, nonnegative start, increasing end, and source duration. Both ClipWorkflow and the export service validate the range.</p>
+<p><code>LiveVideoEditingService.export()</code> uses the passthrough preset and a CMTimeRange. It writes a separate UUID-named MOV into PendingClips and reports progress every 100 ms.</p>
+<h3>Media state transitions</h3>
+</div>
+<figure class="am-diagram am-flow"><svg viewBox="0 0 347 459" width="347" height="459" role="img" aria-label="流程图：exporting、pendingUpload、exportFailed、uploading、available、needsAttention" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am8-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><g></g><g><g data-step="0"><path class="am-edge" d="M173.2,49 L196.5,65 Q219.9,81 219.9,105.8 Q219.9,130.5 219.9,155.3 Q219.9,180 196.5,196 L173.2,212" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="170.8" y="121.5" width="98.1" height="18" rx="3"/><text x="219.9" y="130.5" text-anchor="middle" dominant-baseline="central">export succeeds</text></g></g><g data-step="1"><path class="am-edge" d="M127.1,49 L108.4,65 Q89.6,81 89.6,97 L89.6,113" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="48" y="72" width="83.1" height="18" rx="3"/><text x="89.6" y="81" text-anchor="middle" dominant-baseline="central">export throws</text></g></g><g data-step="2"><path class="am-edge" d="M89.6,148 L89.6,164 Q89.6,180 108.4,196 L127.1,212" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="26.9" y="171" width="125.5" height="18" rx="3"/><text x="89.6" y="180" text-anchor="middle" dominant-baseline="central">retry export succeeds</text></g></g><g data-step="3"><path class="am-edge" d="M191.3,247 L231.2,263 Q271.1,279 251.2,295 L231.2,311" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="231.3" y="270" width="79.7" height="18" rx="3"/><text x="271.1" y="279" text-anchor="middle" dominant-baseline="central">upload starts</text></g></g><g data-step="4"><path class="am-edge" d="M230.7,346 L250.3,362 Q269.8,378 269.8,394 L269.8,410" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="208" y="369" width="123.6" height="18" rx="3"/><text x="269.8" y="378" text-anchor="middle" dominant-baseline="central">asset save succeeds</text></g></g><g data-step="5"><path class="am-edge" d="M187.5,311 L167.6,295 Q147.6,279 147.6,263 L147.6,247" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="85.9" y="270" width="123.4" height="18" rx="3"/><text x="147.6" y="279" text-anchor="middle" dominant-baseline="central">temporary cloud error</text></g></g><g data-step="6"><path class="am-edge" d="M183.2,346 L159.2,362 Q135.3,378 117.6,394 L100,410" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="98.2" y="369" width="74.2" height="18" rx="3"/><text x="135.3" y="378" text-anchor="middle" dominant-baseline="central">other failure</text></g></g><g data-step="7"><path class="am-edge" d="M70.4,410 L61,394 Q51.6,378 51.6,353.3 Q51.6,328.5 51.6,303.8 Q51.6,279 82.6,263 L113.7,247" marker-end="url(#am8-arrow)"/><g class="am-edge-label"><rect x="15" y="319.5" width="73.3" height="18" rx="3"/><text x="51.6" y="328.5" text-anchor="middle" dominant-baseline="central">retry upload</text></g></g></g><g><g class="am-node am-node--rect" data-key="exporting" data-step="0"><rect class="am-node-shape" x="105.5" y="14" width="84.2" height="35" rx="3"/><text x="147.6" y="31.5" text-anchor="middle" dominant-baseline="central">exporting</text></g><g class="am-node am-node--rect" data-key="pendingUpload" data-step="0"><rect class="am-node-shape" x="88.6" y="212" width="118" height="35" rx="3"/><text x="147.6" y="229.5" text-anchor="middle" dominant-baseline="central">pendingUpload</text></g><g class="am-node am-node--rect" data-key="exportFailed" data-step="1"><rect class="am-node-shape" x="37.4" y="113" width="104.4" height="35" rx="3"/><text x="89.6" y="130.5" text-anchor="middle" dominant-baseline="central">exportFailed</text></g><g class="am-node am-node--rect" data-key="uploading" data-step="3"><rect class="am-node-shape" x="165.7" y="311" width="87.3" height="35" rx="3"/><text x="209.4" y="328.5" text-anchor="middle" dominant-baseline="central">uploading</text></g><g class="am-node am-node--rect" data-key="available" data-step="4"><rect class="am-node-shape" x="227.7" y="410" width="84.2" height="35" rx="3"/><text x="269.8" y="427.5" text-anchor="middle" dominant-baseline="central">available</text></g><g class="am-node am-node--rect" data-key="needsAttention" data-step="6"><rect class="am-node-shape" x="21.2" y="410" width="119" height="35" rx="3"/><text x="80.7" y="427.5" text-anchor="middle" dominant-baseline="central">needsAttention</text></g></g></svg></figure>
+<div class="am-md"><p><code>ReviewClip.mediaSyncStatus</code> and <code>localExportPath</code> form the durable upload queue. <code>ClipUploadQueue.resumePending()</code> retries <code>pendingUpload</code> and <code>uploading</code> records after cloud refresh.</p>
+<h3>Failure and retry actions</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Trigger or condition</th>
+<th>Function path</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cancel Export</td>
+<td>exportTask.cancel() → cancellation handler → ExportCancellation.cancel() → session.cancelExport()</td>
+<td>Export service removes partial output; initial create records exportFailed on error</td>
+</tr>
+<tr>
+<td>Retry failed export</td>
+<td>SourceTimelineView.retry() → AppViewModel.retryClip() → ClipWorkflow.retry()</td>
+<td>Reuses the clip ID; exports again, then schedules upload</td>
+</tr>
+<tr>
+<td>Retry Upload</td>
+<td>AppViewModel.retryUpload() → ClipUploadQueue.retry() → upload()</td>
+<td>Requires an existing export file</td>
+</tr>
+<tr>
+<td>Missing export during upload</td>
+<td>ClipUploadQueue.upload() → setStatus()</td>
+<td>Marks needsAttention</td>
+</tr>
+<tr>
+<td>Account/network/service failure</td>
+<td>isTemporaryCloudFailure()</td>
+<td>Returns clip to pendingUpload</td>
+</tr>
+<tr>
+<td>Repeated upload request</td>
+<td>inFlight ID set</td>
+<td>Prevents a duplicate in-flight upload</td>
+</tr>
+<tr>
+<td>Delete during upload</td>
+<td>deleteCloudCopyIfNeeded() waits for upload completion</td>
+<td>The deleting set prevents late callbacks from reviving the clip</td>
+</tr>
+</tbody></table></div>
+<p>The workflow saves the initial clip record before rendering starts. If the app terminates during export, that record can remain <code>exporting</code>; automatic upload resumption does not re-export it.</p>
+<h3>Actual cloud asset implementation</h3>
+<p>Metadata uses CKSyncEngine. The asset service separately fetches the existing ReviewClip record, adds <code>videoAsset = CKAsset(fileURL:)</code>, and calls <code>CKDatabase.save()</code>.</p>
+<p>This direct asset save is the implemented path. Do not infer that CKSyncEngine itself uploads the movie from the broader architecture description.</p>
+</div></div>
+</section>
+<section class="am-panel" id="panel-F">
+<header class="am-panel-head"><span class="am-panel-id">F</span><h2>Playback, seeking, favorites, and local storage</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>Open and replay clips</h3>
+</div>
+<figure class="am-diagram am-seq"><svg viewBox="0 0 777 390" width="777" height="390" role="img" aria-label="时序图：Player view、AppViewModel、Downloads、Cache or CloudKit" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am9-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><line class="am-lifeline" x1="62.4" y1="42" x2="62.4" y2="386"/><g data-key="Player view"><rect class="am-actor" x="12" y="8" width="100.8" height="34" rx="2"/><text x="62.4" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Player view</text></g><line class="am-lifeline" x1="278.9" y1="42" x2="278.9" y2="386"/><g data-key="AppViewModel"><rect class="am-actor" x="218.9" y="8" width="120" height="34" rx="2"/><text x="278.9" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">AppViewModel</text></g><line class="am-lifeline" x1="472" y1="42" x2="472" y2="386"/><g data-key="Downloads"><rect class="am-actor" x="422.9" y="8" width="98.2" height="34" rx="2"/><text x="472" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Downloads</text></g><line class="am-lifeline" x1="695.6" y1="42" x2="695.6" y2="386"/><g data-key="Cache or CloudKit"><rect class="am-actor" x="627" y="8" width="137.2" height="34" rx="2"/><text x="695.6" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Cache or CloudKit</text></g><g data-step="0"><text x="170.7" y="70" text-anchor="middle">load() → reviewClips()</text><path class="am-edge" d="M62.4,80 L276.9,80" marker-end="url(#am9-arrow)"/><text class="am-step" x="68.4" y="74" text-anchor="start">1</text></g><g data-step="1"><text x="170.7" y="110" text-anchor="middle">ordered queue</text><path class="am-edge am-edge--dashed" d="M278.9,120 L64.4,120" marker-end="url(#am9-arrow)"/><text class="am-step" x="272.9" y="114" text-anchor="end">2</text></g><g data-step="2"><text x="170.7" y="150" text-anchor="middle">openCurrent() → playableURL()</text><path class="am-edge" d="M62.4,160 L276.9,160" marker-end="url(#am9-arrow)"/><text class="am-step" x="68.4" y="154" text-anchor="start">3</text></g><g data-step="3"><text x="375.5" y="190" text-anchor="middle">resolve() if no local export</text><path class="am-edge" d="M278.9,200 L470,200" marker-end="url(#am9-arrow)"/><text class="am-step" x="284.9" y="194" text-anchor="start">4</text></g><g data-step="4"><text x="583.8" y="230" text-anchor="middle">cachedURL() or downloadClip()</text><path class="am-edge" d="M472,240 L693.6,240" marker-end="url(#am9-arrow)"/><text class="am-step" x="478" y="234" text-anchor="start">5</text></g><g data-step="5"><text x="583.8" y="270" text-anchor="middle">local file; store and validate</text><path class="am-edge am-edge--dashed" d="M695.6,280 L474,280" marker-end="url(#am9-arrow)"/><text class="am-step" x="689.6" y="274" text-anchor="end">6</text></g><g data-step="6"><text x="375.5" y="310" text-anchor="middle">playable URL</text><path class="am-edge am-edge--dashed" d="M472,320 L280.9,320" marker-end="url(#am9-arrow)"/><text class="am-step" x="466" y="314" text-anchor="end">7</text></g><g data-step="7"><text x="170.7" y="350" text-anchor="middle">open(); setSpeed()</text><path class="am-edge am-edge--dashed" d="M278.9,360 L64.4,360" marker-end="url(#am9-arrow)"/><text class="am-step" x="272.9" y="354" text-anchor="end">8</text></g></svg></figure>
+<div class="am-md"><p><code>LocalRepository.reviewClips(in:)</code> orders by source capture time, then clip start, then UUID. Missing source metadata sorts last. A bout is a logical queue of independent files.</p>
+<h3>Playback actions</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Function path</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Play or Pause</td>
+<td>MediaPlayerModel.play() / pause()</td>
+<td>Updates AVPlayer and PlaybackState</td>
+</tr>
+<tr>
+<td>Select a clip row</td>
+<td>BoutPlaybackQueue.select() → openCurrent(autoplay: false)</td>
+<td>Resolves that clip without starting playback</td>
+</tr>
+<tr>
+<td>Previous or Next</td>
+<td>movePrevious()/moveNext() → queue.previous()/next() → openCurrent(autoplay: true)</td>
+<td>Advances manually and starts playback</td>
+</tr>
+<tr>
+<td>Clip finishes</td>
+<td>AVPlayerItem.didPlayToEndTimeNotification → finishCurrentClip() → queue.didFinishCurrentClip()</td>
+<td>Advances only in continuous mode; otherwise pauses</td>
+</tr>
+<tr>
+<td>Change playback mode</td>
+<td>Binding to queue.mode</td>
+<td>Chooses continuous or focused single-clip mode</td>
+</tr>
+<tr>
+<td>Change speed</td>
+<td>PlaybackSpeedControl → MediaPlayerModel.setSpeed() → PlaybackState.setSpeed()</td>
+<td>UI offers 0.5×, 1×, 2×; active AVPlayer rate updates immediately</td>
+</tr>
+<tr>
+<td>Leave player</td>
+<td>.onDisappear → MediaPlayerModel.stop()</td>
+<td>Cancels scrub work, pauses, releases item, resets state</td>
+</tr>
+<tr>
+<td>Play clip from editor</td>
+<td>SourceTimelineView.play() → playableURL() → LocalClipPlayerView</td>
+<td>Uses the same playback model and controls</td>
+</tr>
+<tr>
+<td>Retry download or open</td>
+<td>play(clip) or openCurrent(autoplay: false)</td>
+<td>Repeats the resolution path</td>
+</tr>
+</tbody></table></div>
+<p>PlaybackState supports extra 0.25× and 1.5× values internally. The visible speed buttons expose only the three values above.</p>
+<h3>Dragging the timeline</h3>
+</div>
+<figure class="am-diagram am-seq"><svg viewBox="0 0 826 350" width="826" height="350" role="img" aria-label="时序图：Slider、MediaPlayerModel、PlaybackState、ScrubCoordinator、AVPlayerSeekTarget" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am10-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><line class="am-lifeline" x1="54" y1="42" x2="54" y2="346"/><g data-key="Slider"><rect class="am-actor" x="12" y="8" width="84" height="34" rx="2"/><text x="54" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Slider</text></g><line class="am-lifeline" x1="232.6" y1="42" x2="232.6" y2="346"/><g data-key="MediaPlayerModel"><rect class="am-actor" x="161.9" y="8" width="141.4" height="34" rx="2"/><text x="232.6" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">MediaPlayerModel</text></g><line class="am-lifeline" x1="398.6" y1="42" x2="398.6" y2="346"/><g data-key="PlaybackState"><rect class="am-actor" x="340.4" y="8" width="116.4" height="34" rx="2"/><text x="398.6" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">PlaybackState</text></g><line class="am-lifeline" x1="550.8" y1="42" x2="550.8" y2="346"/><g data-key="ScrubCoordinator"><rect class="am-actor" x="484.8" y="8" width="132" height="34" rx="2"/><text x="550.8" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">ScrubCoordinator</text></g><line class="am-lifeline" x1="736.2" y1="42" x2="736.2" y2="346"/><g data-key="AVPlayerSeekTarget"><rect class="am-actor" x="659" y="8" width="154.4" height="34" rx="2"/><text x="736.2" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">AVPlayerSeekTarget</text></g><g data-step="0"><text x="143.3" y="70" text-anchor="middle">scrub(to:)</text><path class="am-edge" d="M54,80 L230.6,80" marker-end="url(#am10-arrow)"/><text class="am-step" x="60" y="74" text-anchor="start">1</text></g><g data-step="1"><text x="315.6" y="110" text-anchor="middle">seek(to:) clamps time</text><path class="am-edge" d="M232.6,120 L396.6,120" marker-end="url(#am10-arrow)"/><text class="am-step" x="238.6" y="114" text-anchor="start">2</text></g><g data-step="2"><text x="391.7" y="150" text-anchor="middle">drag(to:)</text><path class="am-edge" d="M232.6,160 L548.8,160" marker-end="url(#am10-arrow)"/><text class="am-step" x="238.6" y="154" text-anchor="start">3</text></g><g data-step="3"><text x="643.5" y="190" text-anchor="middle">seek(to:, tolerance: 0.15)</text><path class="am-edge" d="M550.8,200 L734.2,200" marker-end="url(#am10-arrow)"/><text class="am-step" x="556.8" y="194" text-anchor="start">4</text></g><g data-step="4"><text x="143.3" y="230" text-anchor="middle">finishScrub() on release</text><path class="am-edge" d="M54,240 L230.6,240" marker-end="url(#am10-arrow)"/><text class="am-step" x="60" y="234" text-anchor="start">5</text></g><g data-step="5"><text x="391.7" y="270" text-anchor="middle">finish(at:)</text><path class="am-edge" d="M232.6,280 L548.8,280" marker-end="url(#am10-arrow)"/><text class="am-step" x="238.6" y="274" text-anchor="start">6</text></g><g data-step="6"><text x="643.5" y="310" text-anchor="middle">seek(to:, tolerance: 0)</text><path class="am-edge" d="M550.8,320 L734.2,320" marker-end="url(#am10-arrow)"/><text class="am-step" x="556.8" y="314" text-anchor="start">7</text></g></svg></figure>
+<div class="am-md"><p><code>VisualScrubCoordinator.startWorkerIfNeeded()</code> allows one seek at a time. New drag positions replace obsolete pending positions. Final release requests an exact seek.</p>
+<p><code>MediaPlayerModel.playerTimeDidChange()</code> updates the playhead every 0.1 seconds, except during a drag. Generation checks prevent a stale completion from changing a newly opened player&#39;s scrub state.</p>
+<h3>Download and cache decisions</h3>
+<p><code>playableURL()</code> uses an existing local export first. <code>ClipDownloadCoordinator.resolve()</code> then tries the managed cache before checking iCloud and downloading.</p>
+<p><code>ManagedClipCache.store()</code> checks the 2 GB limit and keeps a 10 MB free-space margin. It evicts least-recently-used entries, copies through a partial file, and updates index.json.</p>
+<p>The coordinator verifies a video track after download. Invalid video removes the cache entry. Missing asset data produces <code>waitingForAsset</code>; other errors distinguish account, network, missing record, storage, and format failures.</p>
+<h3>Favorites and offloading</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Function path</th>
+<th>Guard or result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Star any clip</td>
+<td>FavoriteStarButton → toggleClipFavorite() → saveChanges() → refreshFavoriteBoutIDs() → Task refreshCloud()</td>
+<td>Marks favoriteSyncState pending; no new video export</td>
+</tr>
+<tr>
+<td>Display bout star</td>
+<td>isBoutFavorite() reads favoriteBoutIDs</td>
+<td>Derived from any starred clip; old Bout.isFavorite is compatibility data</td>
+</tr>
+<tr>
+<td>Unload Bout Clips</td>
+<td>BoutPlayerView.unloadClips() → playback.stop() → unloadBoutClips() → ClipWorkflow.unloadUploadedClips()</td>
+<td>Requires all local exports in that bout to have an available cloud asset</td>
+</tr>
+<tr>
+<td>Play an unloaded clip</td>
+<td>openCurrent() → playableURL()</td>
+<td>Downloads the cloud asset again</td>
+</tr>
+<tr>
+<td>Clear Local Clip Copies</td>
+<td>FencerSettingsView.clearLocalCopies() → clearLocalClipCopies()</td>
+<td>Removes eligible uploaded exports across bouts and clears download cache</td>
+</tr>
+<tr>
+<td>Inspect storage</td>
+<td>refreshLocalStorage() → localUploadedClipBytes() → localExportBytes()</td>
+<td>Counts actual managed export files; downloadedClipCacheBytes reads the cache</td>
+</tr>
+</tbody></table></div>
+<p>Bout offload checks all local exports before removing any; one pending upload blocks that operation. Global cleanup instead skips pending uploads and reports the skipped count.</p>
+<p>Global cleanup can remove unreferenced exports older than two hours when no active unlinked export exists. Startup cleanup uses the separate 24-hour cutoff.</p>
+<p>Both paths keep CloudKit records and assets. Managed-path checks prevent deletion of files outside the export workspace.</p>
+</div></div>
+</section>
+<section class="am-panel" id="panel-G">
+<header class="am-panel-head"><span class="am-panel-id">G</span><h2>Synchronization, remote changes, and deletion</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>RefreshCloud is the recovery hub</h3>
+</div>
+<figure class="am-diagram am-seq"><svg viewBox="0 0 918 366" width="918" height="366" role="img" aria-label="时序图：AppViewModel、Metadata、CloudKit、Media services、LocalRepository" xmlns="http://www.w3.org/2000/svg"><defs><marker id="am11-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="am-arrow" d="M0,0 L10,5 L0,10 z"/></marker></defs><line class="am-lifeline" x1="72" y1="42" x2="72" y2="362"/><g data-key="AppViewModel"><rect class="am-actor" x="12" y="8" width="120" height="34" rx="2"/><text x="72" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">AppViewModel</text></g><line class="am-lifeline" x1="316.9" y1="42" x2="316.9" y2="362"/><g data-key="Metadata"><rect class="am-actor" x="274.9" y="8" width="84" height="34" rx="2"/><text x="316.9" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Metadata</text></g><line class="am-lifeline" x1="558.6" y1="42" x2="558.6" y2="362"/><g data-key="CloudKit"><rect class="am-actor" x="516.6" y="8" width="84" height="34" rx="2"/><text x="558.6" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">CloudKit</text></g><line class="am-lifeline" x1="689.2" y1="42" x2="689.2" y2="362"/><g data-key="Media services"><rect class="am-actor" x="628.6" y="8" width="121.1" height="34" rx="2"/><text x="689.2" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">Media services</text></g><line class="am-lifeline" x1="841.6" y1="42" x2="841.6" y2="362"/><g data-key="LocalRepository"><rect class="am-actor" x="777.7" y="8" width="127.8" height="34" rx="2"/><text x="841.6" y="25" text-anchor="middle" dominant-baseline="central" font-weight="600">LocalRepository</text></g><g data-step="0"><text x="194.5" y="70" text-anchor="middle">synchronize(discoverNewRecords:</text><text x="194.5" y="86" text-anchor="middle">true)</text><path class="am-edge" d="M72,96 L314.9,96" marker-end="url(#am11-arrow)"/><text class="am-step" x="78" y="90" text-anchor="start">1</text></g><g data-step="1"><text x="437.8" y="126" text-anchor="middle">sendChanges(); fetchChanges()</text><path class="am-edge" d="M316.9,136 L556.6,136" marker-end="url(#am11-arrow)"/><text class="am-step" x="322.9" y="130" text-anchor="start">2</text></g><g data-step="2"><text x="437.8" y="166" text-anchor="middle">reconcile known records and zone</text><path class="am-edge" d="M316.9,176 L556.6,176" marker-end="url(#am11-arrow)"/><text class="am-step" x="322.9" y="170" text-anchor="start">3</text></g><g data-step="3"><text x="380.6" y="206" text-anchor="middle">linkPendingCloudPhotos()</text><path class="am-edge" d="M72,216 L687.2,216" marker-end="url(#am11-arrow)"/><text class="am-step" x="78" y="210" text-anchor="start">4</text></g><g data-step="4"><text x="194.5" y="246" text-anchor="middle">sync again if links changed</text><path class="am-edge" d="M72,256 L314.9,256" marker-end="url(#am11-arrow)"/><text class="am-step" x="78" y="250" text-anchor="start">5</text></g><g data-step="5"><text x="380.6" y="286" text-anchor="middle">resumePending()</text><path class="am-edge" d="M72,296 L687.2,296" marker-end="url(#am11-arrow)"/><text class="am-step" x="78" y="290" text-anchor="start">6</text></g><g data-step="6"><text x="456.8" y="326" text-anchor="middle">reload lists and favorite IDs</text><path class="am-edge" d="M72,336 L839.6,336" marker-end="url(#am11-arrow)"/><text class="am-step" x="78" y="330" text-anchor="start">7</text></g></svg></figure>
+<div class="am-md"><p>Cloud unavailability sets a visible error and leaves local changes pending. Metadata failure stops the refresh before upload resumption. Successful refresh clears the shared error message.</p>
+<h3>Metadata functions and event paths</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Trigger</th>
+<th>Function path</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Local save</td>
+<td>SwiftDataRepository.saveChanges() → didSave → scheduleSync()</td>
+<td>Coalesces work with a 300 ms delay</td>
+</tr>
+<tr>
+<td>Sync pass</td>
+<td>synchronize() → CloudMetadataMapper.pendingRecords()</td>
+<td>Builds only eligible portable records</td>
+</tr>
+<tr>
+<td>Engine asks for a batch</td>
+<td>nextRecordZoneChangeBatch() → CloudMetadataCKRecord.make()</td>
+<td>Combines payload with remembered system fields</td>
+</tr>
+<tr>
+<td>Engine state changes</td>
+<td>handleEvent(.stateUpdate)</td>
+<td>Writes serialized tokens and pending engine work</td>
+</tr>
+<tr>
+<td>Records arrive</td>
+<td>handleEvent(.fetchedRecordZoneChanges) → decode() → CloudMetadataMapper.apply()</td>
+<td>Applies remote data to SwiftData</td>
+</tr>
+<tr>
+<td>Saves succeed</td>
+<td>handleEvent(.sentRecordZoneChanges) → markSynchronized()</td>
+<td>Clears eligible pending metadata flags</td>
+</tr>
+<tr>
+<td>Change-tag conflict</td>
+<td>handleEvent() → systemFields.remember(server)</td>
+<td>Applies a newer remote value or requeues local data with current server fields</td>
+</tr>
+<tr>
+<td>Missing zone or record</td>
+<td>handleEvent()</td>
+<td>Recreates zone or clears stale system fields and requeues save</td>
+</tr>
+<tr>
+<td>Explicit discovery</td>
+<td>reconcileEntireZone()</td>
+<td>Walks metadata-only pages from the start; repairs missed deliveries</td>
+</tr>
+<tr>
+<td>Known-record repair</td>
+<td>reconcileKnownRecords()</td>
+<td>Fetches known IDs in batches of 100; throttles to one minute</td>
+</tr>
+<tr>
+<td>Remote deletion</td>
+<td>removeLocalRecord() → CloudLocalDeletion.remove() → deleteLocalRecord()</td>
+<td>Removes local descendants and managed media</td>
+</tr>
+</tbody></table></div>
+<p><code>reconcileEntireZone()</code> requests payload and updatedAt fields, not video assets. It reconstructs remote names and removes stale local records while protecting pending local saves and deletes.</p>
+<p>The mapper excludes local paths, device-local Photos IDs, screenshots, OCR, and drafts. Favorite updates reuse the existing ReviewClip record and preserve its video asset through remembered record fields.</p>
+<h3>Metadata-before-media on the receiving device</h3>
+<p>A new remote ReviewClip can exist before its movie arrives. Mapper application creates it with <code>pendingDownload</code>. Opening it may yield <code>waitingForAsset</code>.</p>
+<p>After a successful download, <code>AppViewModel.playableURL()</code> changes these states to <code>available</code>. The user can retry an incomplete download later.</p>
+<h3>Explicit deletion pathways</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Ordered function path</th>
+<th>Protection and failure behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Delete clip</td>
+<td>SourceTimelineView.delete() → AppViewModel.deleteClip() → uploadQueue.deleteCloudCopyIfNeeded() → ClipWorkflow.delete() → queueDeletion(.clip) → removeCachedCopies() → synchronizeDeletion()</td>
+<td>Cloud asset deletion runs before local record removal when a cloud asset reference exists</td>
+</tr>
+<tr>
+<td>Remove recording</td>
+<td>BoutDetailView.remove() → removeRecording() → BoutImportCoordinator.remove() → queueDeletion(.source) → synchronizeDeletion()</td>
+<td>Requires no clips; removes only app-owned working copies</td>
+</tr>
+<tr>
+<td>Delete empty bout</td>
+<td>BoutDetailView.delete() → deleteConfirmedBout() → repository.deleteBout() → queueDeletion(.bout)</td>
+<td>Blocks if sources or clips remain</td>
+</tr>
+<tr>
+<td>Delete tournament</td>
+<td>deleteTournament() → deleteClip() for each clip → boutImport.remove() for each source → repository.deleteTournament()</td>
+<td>Deletes edited cloud assets before parent metadata; then queues source, bout, and tournament deletions</td>
+</tr>
+<tr>
+<td>Receive parent deletion</td>
+<td>CloudLocalDeletion.deleteLocalRecord() recursively handles descendants</td>
+<td>Clears local clip cache, managed exports, source copies, and records</td>
+</tr>
+</tbody></table></div>
+<p><code>synchronizeDeletion()</code> calls <code>synchronizeDeletions()</code>. If deletes remain pending or sync fails, it reports that cloud deletion is waiting.</p>
+<p>Deleting a cloud-backed clip can fail before local deletion if the cloud is unavailable. Tournament deletion consists of ordered steps, not one transaction; a failure can leave a partially completed deletion.</p>
+<p>A pending delete takes precedence over fetched cloud records. This prevents a refresh from immediately restoring a record awaiting server deletion.</p>
+</div></div>
+</section>
+<section class="am-panel" id="panel-H">
+<header class="am-panel-head"><span class="am-panel-id">H</span><h2>Source map, tests, and implementation limits</h2></header>
+<div class="am-panel-body"><div class="am-md"><h3>How to verify this guide</h3>
+<p>This is a static source walkthrough at revision <code>8a8c101</code>, not a recorded runtime trace. Arrows with Task, callbacks, or notifications describe asynchronous triggers.</p>
+<p>The linked source files provide exact declarations and call sites. File links need this repository beside the HTML; the explanation and diagrams work offline by themselves.</p>
+<h3>Existing automated coverage</h3>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Concern</th>
+<th>Test files to inspect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bootstrap and organization</td>
+<td>AppDependenciesTests.swift, AppViewModelTests.swift, LocalRepositoryTests.swift</td>
+</tr>
+<tr>
+<td>Schedule pipeline</td>
+<td>ScheduleSourceServiceTests.swift, DocumentRecognitionServiceTests.swift, ScheduleParsingServiceTests.swift, OnDeviceModelServiceTests.swift, ScheduleProposalValidatorTests.swift</td>
+</tr>
+<tr>
+<td>Review and confirmation</td>
+<td>ScheduleReviewViewModelTests.swift, ScheduleConfirmationTests.swift, ScheduleEvaluationTests.swift</td>
+</tr>
+<tr>
+<td>Photos import and source linking</td>
+<td>PhotoLibraryServiceTests.swift, BoutImportCoordinatorTests.swift</td>
+</tr>
+<tr>
+<td>Editing and upload</td>
+<td>VideoEditingServiceTests.swift, ClipWorkflowTests.swift, ClipUploadQueueTests.swift</td>
+</tr>
+<tr>
+<td>Playback and seeking</td>
+<td>PlaybackStateTests.swift, VisualScrubCoordinatorTests.swift, BoutPlaybackQueueTests.swift</td>
+</tr>
+<tr>
+<td>Cloud and downloads</td>
+<td>CloudMetadataServiceTests.swift, CloudAssetServiceTests.swift, ClipDownloadCoordinatorTests.swift</td>
+</tr>
+<tr>
+<td>Framework and device probes</td>
+<td>FrameworkSpikeTests.swift, PhysicalCloudKitSpikeTests.swift, PhysicalScrubPerformanceTests.swift</td>
+</tr>
+<tr>
+<td>End-to-end UI</td>
+<td>LaunchTests.swift: setup, import, review, trim, replay, favorites, deletion, rotation, accessibility, remote Photos source</td>
+</tr>
+</tbody></table></div>
+<p>Test scripts select simulators and run the Xcode Test configuration. <code>scripts/test-unit.sh</code>, <code>scripts/test-iphone.sh</code>, <code>scripts/test-ipad.sh</code>, and <code>scripts/test-all.sh</code> are the repository entry points.</p>
+<p>This documentation task validates the HTML and references. It does not claim a new run of the app&#39;s simulator or physical-device test suites.</p>
+<h3>Details that change how to read the architecture</h3>
+<ul>
+<li>Simulator dependency wiring always uses fake metadata and asset services. Simulator success does not show live CloudKit synchronization.</li>
+<li>Test arguments can select in-memory stores, fake Photos, deterministic schedule fixtures, and isolated persistent stores.</li>
+<li>AppViewModel coordinates most actions; ScheduleReviewViewModel and MediaPlayerModel own distinct feature state.</li>
+<li>CloudAssetService performs direct database asset operations; CKSyncEngine handles metadata and deletion queues.</li>
+<li>The schema includes ScheduleExtractionRun, but the current schedule-review path does not write it.</li>
+<li><code>addBout()</code> and the local source-copy API exist without a current screen calling them.</li>
+<li>CloudKitAssetSpikeService is a probe helper; normal uploads use LiveCloudAssetService.</li>
+<li>Scores, notes, automatic touch detection, and coaching summaries remain outside the current UI.</li>
+<li>Some documents describe broader or older paths. Function-level behavior in this guide follows the checked-in Swift implementation.</li>
+</ul>
+<h3>Reading sources</h3>
+<p>The accepted release and operating instructions are in <a href="../../FINAL_BUILD_OPERATIONS.md">FINAL_BUILD_OPERATIONS.md</a>. Product intent comes from <a href="../../ARCHITECTURE.md">ARCHITECTURE.md</a>, <a href="../../PRODUCT_REQUIREMENTS.md">PRODUCT_REQUIREMENTS.md</a>, and <a href="../../USER_JOURNEY.md">USER_JOURNEY.md</a>.</p>
+<p>The page uses the <a href="https://github.com/QingYunA/answer-me-with-html/blob/main/skills/answer-me-with-html/SKILL.md">answer-me-with-html skill</a> and its bundled renderer. The authoring source is <a href="architecture.md">architecture.md</a>.</p>
+<h3>Complete Swift declaration index</h3>
+<p>This index lists every named <code>func</code> declaration in the app source, including private helpers, protocol requirements, and fakes. Initializers, properties, and anonymous SwiftUI action closures are not counted as named functions. The action chapters above explain those UI triggers.</p>
+<h4>AppDependencies</h4>
+<p><a href="../../FencingVideoAnalysis/App/AppEntry/AppDependencies.swift">FencingVideoAnalysis/App/AppEntry/AppDependencies.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>make()</code></td>
+<td>48</td>
+</tr>
+<tr>
+<td><code>syntheticDocument()</code></td>
+<td>134</td>
+</tr>
+</tbody></table></div>
+<h4>AppRootView</h4>
+<p><a href="../../FencingVideoAnalysis/App/AppEntry/AppRootView.swift">FencingVideoAnalysis/App/AppEntry/AppRootView.swift</a></p>
+<p>This file declares types, initializers, or view properties; it has no named function declaration.</p>
+<h4>AppViewModel</h4>
+<p><a href="../../FencingVideoAnalysis/App/AppEntry/AppViewModel.swift">FencingVideoAnalysis/App/AppEntry/AppViewModel.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>load()</code></td>
+<td>126</td>
+</tr>
+<tr>
+<td><code>refreshCloud()</code></td>
+<td>161</td>
+</tr>
+<tr>
+<td><code>saveFencerName()</code></td>
+<td>184</td>
+</tr>
+<tr>
+<td><code>saveTournament()</code></td>
+<td>200</td>
+</tr>
+<tr>
+<td><code>selectTournament()</code></td>
+<td>229</td>
+</tr>
+<tr>
+<td><code>deleteTournament()</code></td>
+<td>234</td>
+</tr>
+<tr>
+<td><code>addBout()</code></td>
+<td>267</td>
+</tr>
+<tr>
+<td><code>updateConfirmedBout()</code></td>
+<td>285</td>
+</tr>
+<tr>
+<td><code>isBoutFavorite()</code></td>
+<td>320</td>
+</tr>
+<tr>
+<td><code>refreshFavoriteBoutIDs()</code></td>
+<td>322</td>
+</tr>
+<tr>
+<td><code>deleteConfirmedBout()</code></td>
+<td>327</td>
+</tr>
+<tr>
+<td><code>confirmSchedule()</code></td>
+<td>346</td>
+</tr>
+<tr>
+<td><code>prepareRecordings()</code></td>
+<td>409</td>
+</tr>
+<tr>
+<td><code>confirmRecordings()</code></td>
+<td>413</td>
+</tr>
+<tr>
+<td><code>discardRecordings()</code></td>
+<td>420</td>
+</tr>
+<tr>
+<td><code>sourceRecordings()</code></td>
+<td>424</td>
+</tr>
+<tr>
+<td><code>localSourceURL()</code></td>
+<td>428</td>
+</tr>
+<tr>
+<td><code>sourceAsset()</code></td>
+<td>432</td>
+</tr>
+<tr>
+<td><code>connectPhotos()</code></td>
+<td>436</td>
+</tr>
+<tr>
+<td><code>moveRecording()</code></td>
+<td>468</td>
+</tr>
+<tr>
+<td><code>removeRecording()</code></td>
+<td>472</td>
+</tr>
+<tr>
+<td><code>mediaStatus()</code></td>
+<td>480</td>
+</tr>
+<tr>
+<td><code>createClip()</code></td>
+<td>484</td>
+</tr>
+<tr>
+<td><code>retryClip()</code></td>
+<td>493</td>
+</tr>
+<tr>
+<td><code>retryUpload()</code></td>
+<td>503</td>
+</tr>
+<tr>
+<td><code>deleteClip()</code></td>
+<td>505</td>
+</tr>
+<tr>
+<td><code>synchronizeDeletion()</code></td>
+<td>516</td>
+</tr>
+<tr>
+<td><code>reviewClips()</code></td>
+<td>525</td>
+</tr>
+<tr>
+<td><code>unloadBoutClips()</code></td>
+<td>529</td>
+</tr>
+<tr>
+<td><code>localUploadedClipBytes()</code></td>
+<td>533</td>
+</tr>
+<tr>
+<td><code>clearLocalClipCopies()</code></td>
+<td>537</td>
+</tr>
+<tr>
+<td><code>toggleClipFavorite()</code></td>
+<td>541</td>
+</tr>
+<tr>
+<td><code>playableURL()</code></td>
+<td>563</td>
+</tr>
+</tbody></table></div>
+<h4>FencingVideoAnalysisApp</h4>
+<p><a href="../../FencingVideoAnalysis/App/AppEntry/FencingVideoAnalysisApp.swift">FencingVideoAnalysis/App/AppEntry/FencingVideoAnalysisApp.swift</a></p>
+<p>This file declares types, initializers, or view properties; it has no named function declaration.</p>
+<h4>TournamentNavigationView</h4>
+<p><a href="../../FencingVideoAnalysis/App/Navigation/TournamentNavigationView.swift">FencingVideoAnalysis/App/Navigation/TournamentNavigationView.swift</a></p>
+<p>This file declares types, initializers, or view properties; it has no named function declaration.</p>
+<h4>BoutDetailView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/Bouts/BoutDetailView.swift">FencingVideoAnalysis/Features/Bouts/BoutDetailView.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>move()</code></td>
+<td>156</td>
+</tr>
+<tr>
+<td><code>remove()</code></td>
+<td>166</td>
+</tr>
+<tr>
+<td><code>refreshRecordings()</code></td>
+<td>179</td>
+</tr>
+<tr>
+<td><code>save()</code></td>
+<td>187</td>
+</tr>
+<tr>
+<td><code>delete()</code></td>
+<td>200</td>
+</tr>
+<tr>
+<td><code>body()</code></td>
+<td>247</td>
+</tr>
+</tbody></table></div>
+<h4>BoutPlayerView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/Bouts/BoutPlayerView.swift">FencingVideoAnalysis/Features/Bouts/BoutPlayerView.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>load()</code></td>
+<td>158</td>
+</tr>
+<tr>
+<td><code>openCurrent()</code></td>
+<td>165</td>
+</tr>
+<tr>
+<td><code>movePrevious()</code></td>
+<td>184</td>
+</tr>
+<tr>
+<td><code>moveNext()</code></td>
+<td>189</td>
+</tr>
+<tr>
+<td><code>finishCurrentClip()</code></td>
+<td>194</td>
+</tr>
+<tr>
+<td><code>unloadClips()</code></td>
+<td>202</td>
+</tr>
+<tr>
+<td><code>timeLabel()</code></td>
+<td>219</td>
+</tr>
+</tbody></table></div>
+<h4>RecordingImportReviewView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/Bouts/RecordingImportReviewView.swift">FencingVideoAnalysis/Features/Bouts/RecordingImportReviewView.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prepare()</code></td>
+<td>101</td>
+</tr>
+<tr>
+<td><code>confirm()</code></td>
+<td>127</td>
+</tr>
+<tr>
+<td><code>cancel()</code></td>
+<td>142</td>
+</tr>
+</tbody></table></div>
+<h4>SourceTimelineView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/Bouts/SourceTimelineView.swift">FencingVideoAnalysis/Features/Bouts/SourceTimelineView.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>load()</code></td>
+<td>211</td>
+</tr>
+<tr>
+<td><code>toggleFavorite()</code></td>
+<td>222</td>
+</tr>
+<tr>
+<td><code>select()</code></td>
+<td>227</td>
+</tr>
+<tr>
+<td><code>saveClip()</code></td>
+<td>242</td>
+</tr>
+<tr>
+<td><code>retry()</code></td>
+<td>261</td>
+</tr>
+<tr>
+<td><code>delete()</code></td>
+<td>274</td>
+</tr>
+<tr>
+<td><code>play()</code></td>
+<td>283</td>
+</tr>
+<tr>
+<td><code>timeLabel()</code></td>
+<td>297</td>
+</tr>
+</tbody></table></div>
+<h4>FirstRunSetupView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/FirstRunSetup/FirstRunSetupView.swift">FencingVideoAnalysis/Features/FirstRunSetup/FirstRunSetupView.swift</a></p>
+<p>This file declares types, initializers, or view properties; it has no named function declaration.</p>
+<h4>ScheduleImportView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/ScheduleImport/ScheduleImportView.swift">FencingVideoAnalysis/Features/ScheduleImport/ScheduleImportView.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>loadScreenshots()</code></td>
+<td>156</td>
+</tr>
+<tr>
+<td><code>startManual()</code></td>
+<td>175</td>
+</tr>
+<tr>
+<td><code>extract()</code></td>
+<td>180</td>
+</tr>
+<tr>
+<td><code>confirm()</code></td>
+<td>186</td>
+</tr>
+<tr>
+<td><code>sampleScreenshotData()</code></td>
+<td>196</td>
+</tr>
+<tr>
+<td><code>controls()</code></td>
+<td>381</td>
+</tr>
+<tr>
+<td><code>magnify()</code></td>
+<td>423</td>
+</tr>
+<tr>
+<td><code>pan()</code></td>
+<td>433</td>
+</tr>
+<tr>
+<td><code>setZoom()</code></td>
+<td>447</td>
+</tr>
+<tr>
+<td><code>resetZoom()</code></td>
+<td>452</td>
+</tr>
+<tr>
+<td><code>bounded()</code></td>
+<td>459</td>
+</tr>
+</tbody></table></div>
+<h4>ScheduleReviewViewModel</h4>
+<p><a href="../../FencingVideoAnalysis/Features/ScheduleImport/ScheduleReviewViewModel.swift">FencingVideoAnalysis/Features/ScheduleImport/ScheduleReviewViewModel.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>isRelevant()</code></td>
+<td>42</td>
+</tr>
+<tr>
+<td><code>reset()</code></td>
+<td>69</td>
+</tr>
+<tr>
+<td><code>extract()</code></td>
+<td>76</td>
+</tr>
+<tr>
+<td><code>addDraft()</code></td>
+<td>116</td>
+</tr>
+<tr>
+<td><code>removeDraft()</code></td>
+<td>121</td>
+</tr>
+<tr>
+<td><code>moveDraft()</code></td>
+<td>126</td>
+</tr>
+<tr>
+<td><code>moveDrafts()</code></td>
+<td>132</td>
+</tr>
+<tr>
+<td><code>message()</code></td>
+<td>136</td>
+</tr>
+<tr>
+<td><code>message()</code></td>
+<td>150</td>
+</tr>
+</tbody></table></div>
+<h4>FencerSettingsView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/Settings/FencerSettingsView.swift">FencingVideoAnalysis/Features/Settings/FencerSettingsView.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>clearLocalCopies()</code></td>
+<td>81</td>
+</tr>
+<tr>
+<td><code>refreshLocalStorage()</code></td>
+<td>92</td>
+</tr>
+</tbody></table></div>
+<h4>TournamentDetailView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/Tournaments/TournamentDetailView.swift">FencingVideoAnalysis/Features/Tournaments/TournamentDetailView.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>mediaSummary()</code></td>
+<td>104</td>
+</tr>
+</tbody></table></div>
+<h4>TournamentFormView</h4>
+<p><a href="../../FencingVideoAnalysis/Features/Tournaments/TournamentFormView.swift">FencingVideoAnalysis/Features/Tournaments/TournamentFormView.swift</a></p>
+<p>This file declares types, initializers, or view properties; it has no named function declaration.</p>
+<h4>DomainModels</h4>
+<p><a href="../../FencingVideoAnalysis/Models/DomainModels/DomainModels.swift">FencingVideoAnalysis/Models/DomainModels/DomainModels.swift</a></p>
+<p>This file declares types, initializers, or view properties; it has no named function declaration.</p>
+<h4>LocalRepository</h4>
+<p><a href="../../FencingVideoAnalysis/Models/LocalModels/LocalRepository.swift">FencingVideoAnalysis/Models/LocalModels/LocalRepository.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>insert()</code></td>
+<td>25</td>
+</tr>
+<tr>
+<td><code>fetch()</code></td>
+<td>26</td>
+</tr>
+<tr>
+<td><code>delete()</code></td>
+<td>27</td>
+</tr>
+<tr>
+<td><code>saveChanges()</code></td>
+<td>28</td>
+</tr>
+<tr>
+<td><code>insert()</code></td>
+<td>40</td>
+</tr>
+<tr>
+<td><code>fetch()</code></td>
+<td>47</td>
+</tr>
+<tr>
+<td><code>delete()</code></td>
+<td>51</td>
+</tr>
+<tr>
+<td><code>saveChanges()</code></td>
+<td>55</td>
+</tr>
+<tr>
+<td><code>makeContainer()</code></td>
+<td>60</td>
+</tr>
+<tr>
+<td><code>insert()</code></td>
+<td>81</td>
+</tr>
+<tr>
+<td><code>fetch()</code></td>
+<td>88</td>
+</tr>
+<tr>
+<td><code>delete()</code></td>
+<td>92</td>
+</tr>
+<tr>
+<td><code>saveChanges()</code></td>
+<td>96</td>
+</tr>
+<tr>
+<td><code>tournaments()</code></td>
+<td>100</td>
+</tr>
+<tr>
+<td><code>bouts()</code></td>
+<td>107</td>
+</tr>
+<tr>
+<td><code>sourceRecordings()</code></td>
+<td>116</td>
+</tr>
+<tr>
+<td><code>reviewClips()</code></td>
+<td>123</td>
+</tr>
+<tr>
+<td><code>deleteTournament()</code></td>
+<td>136</td>
+</tr>
+<tr>
+<td><code>deleteBout()</code></td>
+<td>146</td>
+</tr>
+</tbody></table></div>
+<h4>BoutImportCoordinator</h4>
+<p><a href="../../FencingVideoAnalysis/Services/BoutImportCoordinator.swift">FencingVideoAnalysis/Services/BoutImportCoordinator.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prepareSelections()</code></td>
+<td>45</td>
+</tr>
+<tr>
+<td><code>confirm()</code></td>
+<td>55</td>
+</tr>
+<tr>
+<td><code>discard()</code></td>
+<td>85</td>
+</tr>
+<tr>
+<td><code>requestPhotoAccess()</code></td>
+<td>89</td>
+</tr>
+<tr>
+<td><code>linkPendingCloudPhotos()</code></td>
+<td>92</td>
+</tr>
+<tr>
+<td><code>localCopy()</code></td>
+<td>120</td>
+</tr>
+<tr>
+<td><code>sourceAsset()</code></td>
+<td>133</td>
+</tr>
+<tr>
+<td><code>move()</code></td>
+<td>164</td>
+</tr>
+<tr>
+<td><code>remove()</code></td>
+<td>187</td>
+</tr>
+<tr>
+<td><code>status()</code></td>
+<td>201</td>
+</tr>
+</tbody></table></div>
+<h4>BoutPlaybackQueue</h4>
+<p><a href="../../FencingVideoAnalysis/Services/BoutPlaybackQueue.swift">FencingVideoAnalysis/Services/BoutPlaybackQueue.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>select()</code></td>
+<td>23</td>
+</tr>
+<tr>
+<td><code>previous()</code></td>
+<td>28</td>
+</tr>
+<tr>
+<td><code>next()</code></td>
+<td>35</td>
+</tr>
+<tr>
+<td><code>didFinishCurrentClip()</code></td>
+<td>42</td>
+</tr>
+</tbody></table></div>
+<h4>ClipDownloadCoordinator</h4>
+<p><a href="../../FencingVideoAnalysis/Services/ClipDownloadCoordinator.swift">FencingVideoAnalysis/Services/ClipDownloadCoordinator.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>cachedURL()</code></td>
+<td>63</td>
+</tr>
+<tr>
+<td><code>store()</code></td>
+<td>75</td>
+</tr>
+<tr>
+<td><code>clear()</code></td>
+<td>104</td>
+</tr>
+<tr>
+<td><code>remove()</code></td>
+<td>113</td>
+</tr>
+<tr>
+<td><code>fileURL()</code></td>
+<td>122</td>
+</tr>
+<tr>
+<td><code>persist()</code></td>
+<td>124</td>
+</tr>
+<tr>
+<td><code>resolve()</code></td>
+<td>142</td>
+</tr>
+<tr>
+<td><code>clearCache()</code></td>
+<td>176</td>
+</tr>
+<tr>
+<td><code>removeCachedCopies()</code></td>
+<td>178</td>
+</tr>
+</tbody></table></div>
+<h4>ClipUploadQueue</h4>
+<p><a href="../../FencingVideoAnalysis/Services/ClipUploadQueue.swift">FencingVideoAnalysis/Services/ClipUploadQueue.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>resumePending()</code></td>
+<td>21</td>
+</tr>
+<tr>
+<td><code>upload()</code></td>
+<td>28</td>
+</tr>
+<tr>
+<td><code>retry()</code></td>
+<td>60</td>
+</tr>
+<tr>
+<td><code>deleteCloudCopyIfNeeded()</code></td>
+<td>72</td>
+</tr>
+<tr>
+<td><code>setStatus()</code></td>
+<td>88</td>
+</tr>
+<tr>
+<td><code>isTemporaryCloudFailure()</code></td>
+<td>94</td>
+</tr>
+</tbody></table></div>
+<h4>ClipWorkflow</h4>
+<p><a href="../../FencingVideoAnalysis/Services/ClipWorkflow.swift">FencingVideoAnalysis/Services/ClipWorkflow.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>createClip()</code></td>
+<td>55</td>
+</tr>
+<tr>
+<td><code>retry()</code></td>
+<td>81</td>
+</tr>
+<tr>
+<td><code>delete()</code></td>
+<td>100</td>
+</tr>
+<tr>
+<td><code>clips()</code></td>
+<td>117</td>
+</tr>
+<tr>
+<td><code>unloadUploadedClips()</code></td>
+<td>121</td>
+</tr>
+<tr>
+<td><code>localExportBytes()</code></td>
+<td>152</td>
+</tr>
+<tr>
+<td><code>clearLocalClipCopies()</code></td>
+<td>159</td>
+</tr>
+<tr>
+<td><code>managedExportFiles()</code></td>
+<td>205</td>
+</tr>
+<tr>
+<td><code>isManagedExportPath()</code></td>
+<td>216</td>
+</tr>
+<tr>
+<td><code>removeAbandonedFiles()</code></td>
+<td>225</td>
+</tr>
+</tbody></table></div>
+<h4>CloudAssetService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/CloudAssetService.swift">FencingVideoAnalysis/Services/CloudAssetService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>saveExportedClip()</code></td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>downloadClip()</code></td>
+<td>11</td>
+</tr>
+<tr>
+<td><code>deleteClip()</code></td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>failNextSave()</code></td>
+<td>19</td>
+</tr>
+<tr>
+<td><code>saveExportedClip()</code></td>
+<td>21</td>
+</tr>
+<tr>
+<td><code>downloadClip()</code></td>
+<td>29</td>
+</tr>
+<tr>
+<td><code>deleteClip()</code></td>
+<td>38</td>
+</tr>
+<tr>
+<td><code>saveExportedClip()</code></td>
+<td>50</td>
+</tr>
+<tr>
+<td><code>downloadClip()</code></td>
+<td>59</td>
+</tr>
+<tr>
+<td><code>deleteClip()</code></td>
+<td>68</td>
+</tr>
+</tbody></table></div>
+<h4>CloudKitAssetSpikeService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/CloudKitAssetSpikeService.swift">FencingVideoAnalysis/Services/CloudKitAssetSpikeService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>roundTrip()</code></td>
+<td>12</td>
+</tr>
+</tbody></table></div>
+<h4>CloudMetadataService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/CloudMetadataService.swift">FencingVideoAnalysis/Services/CloudMetadataService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>message()</code></td>
+<td>37</td>
+</tr>
+<tr>
+<td><code>synchronize()</code></td>
+<td>47</td>
+</tr>
+<tr>
+<td><code>synchronizeDeletions()</code></td>
+<td>48</td>
+</tr>
+<tr>
+<td><code>queueDeletion()</code></td>
+<td>49</td>
+</tr>
+<tr>
+<td><code>synchronize()</code></td>
+<td>53</td>
+</tr>
+<tr>
+<td><code>synchronizeDeletions()</code></td>
+<td>54</td>
+</tr>
+<tr>
+<td><code>synchronize()</code></td>
+<td>68</td>
+</tr>
+<tr>
+<td><code>queueDeletion()</code></td>
+<td>83</td>
+</tr>
+<tr>
+<td><code>staleRecordNames()</code></td>
+<td>92</td>
+</tr>
+<tr>
+<td><code>knownRecordIDs()</code></td>
+<td>98</td>
+</tr>
+<tr>
+<td><code>append()</code></td>
+<td>100</td>
+</tr>
+<tr>
+<td><code>pendingRecords()</code></td>
+<td>114</td>
+</tr>
+<tr>
+<td><code>markSynchronized()</code></td>
+<td>167</td>
+</tr>
+<tr>
+<td><code>apply()</code></td>
+<td>188</td>
+</tr>
+<tr>
+<td><code>shouldApply()</code></td>
+<td>306</td>
+</tr>
+<tr>
+<td><code>encode()</code></td>
+<td>312</td>
+</tr>
+<tr>
+<td><code>decode()</code></td>
+<td>313</td>
+</tr>
+<tr>
+<td><code>make()</code></td>
+<td>323</td>
+</tr>
+<tr>
+<td><code>decode()</code></td>
+<td>334</td>
+</tr>
+<tr>
+<td><code>record()</code></td>
+<td>356</td>
+</tr>
+<tr>
+<td><code>remember()</code></td>
+<td>367</td>
+</tr>
+<tr>
+<td><code>forget()</code></td>
+<td>377</td>
+</tr>
+<tr>
+<td><code>persist()</code></td>
+<td>384</td>
+</tr>
+<tr>
+<td><code>useDownloadCoordinator()</code></td>
+<td>425</td>
+</tr>
+<tr>
+<td><code>synchronize()</code></td>
+<td>430</td>
+</tr>
+<tr>
+<td><code>synchronizeDeletions()</code></td>
+<td>453</td>
+</tr>
+<tr>
+<td><code>reconcileEntireZone()</code></td>
+<td>466</td>
+</tr>
+<tr>
+<td><code>reconcileKnownRecords()</code></td>
+<td>506</td>
+</tr>
+<tr>
+<td><code>queueDeletion()</code></td>
+<td>530</td>
+</tr>
+<tr>
+<td><code>scheduleSync()</code></td>
+<td>539</td>
+</tr>
+<tr>
+<td><code>nextRecordZoneChangeBatch()</code></td>
+<td>554</td>
+</tr>
+<tr>
+<td><code>handleEvent()</code></td>
+<td>573</td>
+</tr>
+<tr>
+<td><code>removeLocalRecord()</code></td>
+<td>660</td>
+</tr>
+<tr>
+<td><code>remove()</code></td>
+<td>671</td>
+</tr>
+<tr>
+<td><code>deleteLocalRecord()</code></td>
+<td>680</td>
+</tr>
+</tbody></table></div>
+<h4>DocumentRecognitionService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/DocumentRecognitionService.swift">FencingVideoAnalysis/Services/DocumentRecognitionService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>addingQualityWarnings()</code></td>
+<td>62</td>
+</tr>
+<tr>
+<td><code>recognize()</code></td>
+<td>86</td>
+</tr>
+<tr>
+<td><code>recognize()</code></td>
+<td>90</td>
+</tr>
+<tr>
+<td><code>recognize()</code></td>
+<td>178</td>
+</tr>
+</tbody></table></div>
+<h4>ICloudSyncStatusService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/ICloudSyncStatusService.swift">FencingVideoAnalysis/Services/ICloudSyncStatusService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>accountStatus()</code></td>
+<td>9</td>
+</tr>
+<tr>
+<td><code>accountStatus()</code></td>
+<td>18</td>
+</tr>
+<tr>
+<td><code>accountStatus()</code></td>
+<td>38</td>
+</tr>
+</tbody></table></div>
+<h4>OnDeviceModelService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/OnDeviceModelService.swift">FencingVideoAnalysis/Services/OnDeviceModelService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>propose()</code></td>
+<td>88</td>
+</tr>
+<tr>
+<td><code>propose()</code></td>
+<td>93</td>
+</tr>
+<tr>
+<td><code>promptData()</code></td>
+<td>124</td>
+</tr>
+<tr>
+<td><code>propose()</code></td>
+<td>157</td>
+</tr>
+</tbody></table></div>
+<h4>PhotoLibraryService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/PhotoLibraryService.swift">FencingVideoAnalysis/Services/PhotoLibraryService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>importSelections()</code></td>
+<td>129</td>
+</tr>
+<tr>
+<td><code>requestPhotoAccess()</code></td>
+<td>130</td>
+</tr>
+<tr>
+<td><code>localIdentifierForExistingRecording()</code></td>
+<td>131</td>
+</tr>
+<tr>
+<td><code>cloudIdentifiers()</code></td>
+<td>133</td>
+</tr>
+<tr>
+<td><code>copyFromICloudPhotos()</code></td>
+<td>134</td>
+</tr>
+<tr>
+<td><code>videoAsset()</code></td>
+<td>135</td>
+</tr>
+<tr>
+<td><code>removeWorkingFiles()</code></td>
+<td>136</td>
+</tr>
+<tr>
+<td><code>removeWorkingFile()</code></td>
+<td>137</td>
+</tr>
+<tr>
+<td><code>importSelections()</code></td>
+<td>152</td>
+</tr>
+<tr>
+<td><code>cloudIdentifiers()</code></td>
+<td>225</td>
+</tr>
+<tr>
+<td><code>localIdentifierForExistingRecording()</code></td>
+<td>237</td>
+</tr>
+<tr>
+<td><code>copyFromICloudPhotos()</code></td>
+<td>260</td>
+</tr>
+<tr>
+<td><code>videoAsset()</code></td>
+<td>299</td>
+</tr>
+<tr>
+<td><code>requestPhotoAccessFromSystem()</code></td>
+<td>324</td>
+</tr>
+<tr>
+<td><code>requestPhotoAccess()</code></td>
+<td>331</td>
+</tr>
+<tr>
+<td><code>removeWorkingFiles()</code></td>
+<td>335</td>
+</tr>
+<tr>
+<td><code>removeWorkingFile()</code></td>
+<td>341</td>
+</tr>
+<tr>
+<td><code>importSelections()</code></td>
+<td>363</td>
+</tr>
+<tr>
+<td><code>removeWorkingFiles()</code></td>
+<td>394</td>
+</tr>
+<tr>
+<td><code>cloudIdentifiers()</code></td>
+<td>403</td>
+</tr>
+<tr>
+<td><code>requestPhotoAccess()</code></td>
+<td>408</td>
+</tr>
+<tr>
+<td><code>localIdentifierForExistingRecording()</code></td>
+<td>410</td>
+</tr>
+<tr>
+<td><code>copyFromICloudPhotos()</code></td>
+<td>416</td>
+</tr>
+<tr>
+<td><code>videoAsset()</code></td>
+<td>429</td>
+</tr>
+<tr>
+<td><code>removeWorkingFile()</code></td>
+<td>436</td>
+</tr>
+</tbody></table></div>
+<h4>PlaybackState</h4>
+<p><a href="../../FencingVideoAnalysis/Services/PlaybackState.swift">FencingVideoAnalysis/Services/PlaybackState.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>open()</code></td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>seek()</code></td>
+<td>18</td>
+</tr>
+<tr>
+<td><code>setPlaying()</code></td>
+<td>22</td>
+</tr>
+<tr>
+<td><code>setSpeed()</code></td>
+<td>24</td>
+</tr>
+<tr>
+<td><code>open()</code></td>
+<td>48</td>
+</tr>
+<tr>
+<td><code>open()</code></td>
+<td>52</td>
+</tr>
+<tr>
+<td><code>play()</code></td>
+<td>61</td>
+</tr>
+<tr>
+<td><code>pause()</code></td>
+<td>66</td>
+</tr>
+<tr>
+<td><code>seek()</code></td>
+<td>71</td>
+</tr>
+<tr>
+<td><code>scrub()</code></td>
+<td>77</td>
+</tr>
+<tr>
+<td><code>finishScrub()</code></td>
+<td>84</td>
+</tr>
+<tr>
+<td><code>playerTimeDidChange()</code></td>
+<td>94</td>
+</tr>
+<tr>
+<td><code>setSpeed()</code></td>
+<td>98</td>
+</tr>
+<tr>
+<td><code>stop()</code></td>
+<td>103</td>
+</tr>
+</tbody></table></div>
+<h4>ScheduleParsingService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/ScheduleParsingService.swift">FencingVideoAnalysis/Services/ScheduleParsingService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>parse()</code></td>
+<td>63</td>
+</tr>
+<tr>
+<td><code>parse()</code></td>
+<td>67</td>
+</tr>
+<tr>
+<td><code>mapping()</code></td>
+<td>237</td>
+</tr>
+<tr>
+<td><code>cell()</code></td>
+<td>278</td>
+</tr>
+<tr>
+<td><code>context()</code></td>
+<td>282</td>
+</tr>
+<tr>
+<td><code>capture()</code></td>
+<td>305</td>
+</tr>
+<tr>
+<td><code>normalizedHeader()</code></td>
+<td>314</td>
+</tr>
+<tr>
+<td><code>normalizedName()</code></td>
+<td>318</td>
+</tr>
+<tr>
+<td><code>numericValue()</code></td>
+<td>326</td>
+</tr>
+<tr>
+<td><code>normalizedStrip()</code></td>
+<td>334</td>
+</tr>
+<tr>
+<td><code>normalizedTime()</code></td>
+<td>338</td>
+</tr>
+<tr>
+<td><code>normalizedPhase()</code></td>
+<td>347</td>
+</tr>
+</tbody></table></div>
+<h4>ScheduleProposalValidator</h4>
+<p><a href="../../FencingVideoAnalysis/Services/ScheduleProposalValidator.swift">FencingVideoAnalysis/Services/ScheduleProposalValidator.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>reconcile()</code></td>
+<td>26</td>
+</tr>
+<tr>
+<td><code>mergeString()</code></td>
+<td>126</td>
+</tr>
+<tr>
+<td><code>mergeInt()</code></td>
+<td>160</td>
+</tr>
+<tr>
+<td><code>trace()</code></td>
+<td>187</td>
+</tr>
+<tr>
+<td><code>headerAllows()</code></td>
+<td>246</td>
+</tr>
+<tr>
+<td><code>sourceRow()</code></td>
+<td>268</td>
+</tr>
+<tr>
+<td><code>sameBout()</code></td>
+<td>281</td>
+</tr>
+<tr>
+<td><code>warning()</code></td>
+<td>298</td>
+</tr>
+<tr>
+<td><code>normalized()</code></td>
+<td>304</td>
+</tr>
+<tr>
+<td><code>normalizedDigits()</code></td>
+<td>311</td>
+</tr>
+<tr>
+<td><code>validTime()</code></td>
+<td>317</td>
+</tr>
+</tbody></table></div>
+<h4>ScheduleSourceService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/ScheduleSourceService.swift">FencingVideoAnalysis/Services/ScheduleSourceService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>screenshots()</code></td>
+<td>22</td>
+</tr>
+<tr>
+<td><code>manual()</code></td>
+<td>23</td>
+</tr>
+<tr>
+<td><code>screenshots()</code></td>
+<td>28</td>
+</tr>
+<tr>
+<td><code>manual()</code></td>
+<td>33</td>
+</tr>
+<tr>
+<td><code>screenshots()</code></td>
+<td>38</td>
+</tr>
+<tr>
+<td><code>manual()</code></td>
+<td>43</td>
+</tr>
+</tbody></table></div>
+<h4>VideoEditingService</h4>
+<p><a href="../../FencingVideoAnalysis/Services/VideoEditingService.swift">FencingVideoAnalysis/Services/VideoEditingService.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>validate()</code></td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>cancel()</code></td>
+<td>45</td>
+</tr>
+<tr>
+<td><code>export()</code></td>
+<td>50</td>
+</tr>
+<tr>
+<td><code>export()</code></td>
+<td>66</td>
+</tr>
+<tr>
+<td><code>export()</code></td>
+<td>110</td>
+</tr>
+</tbody></table></div>
+<h4>VisualScrubCoordinator</h4>
+<p><a href="../../FencingVideoAnalysis/Services/VisualScrubCoordinator.swift">FencingVideoAnalysis/Services/VisualScrubCoordinator.swift</a></p>
+<div class="am-table-wrap"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Declaration line</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>seek()</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>seek()</code></td>
+<td>13</td>
+</tr>
+<tr>
+<td><code>drag()</code></td>
+<td>35</td>
+</tr>
+<tr>
+<td><code>finish()</code></td>
+<td>41</td>
+</tr>
+<tr>
+<td><code>cancel()</code></td>
+<td>48</td>
+</tr>
+<tr>
+<td><code>startWorkerIfNeeded()</code></td>
+<td>56</td>
+</tr>
+</tbody></table></div>
+<p>Index totals: <strong>35 Swift files; 276 named function declarations</strong>. Overloads and protocol declarations count separately.</p>
+</div></div>
+</section>
+</div>
+</div>
+</main>
+<footer class="am-colophon">Generated by Answer me with HTML 0.3.0 · 2026-10-03 11:58</footer>
+<textarea id="am-source" hidden readonly aria-hidden="true">---
+template: doc
+theme: blueprint
+mode: light
+lang: en
+title: Inside Fencing Video Analysis
+subtitle: A source-grounded guide to the screens, functions, data, and recovery paths
+source: Swift source at 8a8c101
+reviewed: 2026-10-03
+---
+The app connects one fencer, tournaments, bouts, source recordings, and edited review clips. SwiftUI handles interaction; local workflows save progress; Apple frameworks handle recognition, media, and cloud storage.
+
+Read chapters A–G for the operation paths. Chapter H maps every Swift file and named function declaration. Use the page contents to jump between chapters.
+
+## A Structure and storage boundaries
+
+### The architecture in one picture
+```flow
+SwiftUI screens -&gt; AppViewModel: organization and media actions
+SwiftUI screens -&gt; Feature models: extraction and playback
+AppViewModel -&gt; Workflow coordinators: import, trim, upload, download
+AppViewModel -&gt; LocalRepository: records and ordering
+Workflow coordinators -&gt; Apple services: Photos, AVFoundation, CloudKit
+Feature models -&gt; Apple services: Vision, Foundation Models, AVPlayer
+LocalRepository -&gt; SwiftData: save local state
+LocalRepository -&gt; CloudKit metadata: schedule explicit sync
+```
+The arrows group dependencies, not a single ordered execution. Feature models are ScheduleReviewViewModel and MediaPlayerModel.
+
+AppViewModel exposes services used to construct ScheduleReviewViewModel; extraction runs in that feature model. Workflow coordinators are BoutImportCoordinator, ClipWorkflow, ClipUploadQueue, and ClipDownloadCoordinator.
+
+### Repository layout
+```tree list
+FencingVideoAnalysis/
+  App/
+    AppEntry/ | app bootstrap, dependency wiring, shared AppViewModel
+    Navigation/ | adaptive tournament navigation
+  Features/
+    FirstRunSetup/ | save the single fencer name
+    Tournaments/ | create, edit, select, and delete tournaments
+    ScheduleImport/ | screenshots, extraction, review, confirmation
+    Bouts/ | import, source trimming, clip replay, shared player controls
+    Settings/ | fencer name, Photos permission, local clip storage
+  Models/
+    DomainModels/ | six SwiftData entities and SyncState
+    LocalModels/ | repository, schema, ordering, local deletion
+  Services/ | framework adapters, coordinators, parsers, sync, cache
+FencingVideoAnalysisTests/ | unit, integration, and physical-device probes
+FencingVideoAnalysisUITests/ | end-to-end UI journeys
+scripts/ | simulator test entry points and schedule evaluation
+figures/ | architecture artifacts and their generators
+```
+The current executable tree has 35 Swift files and targets iOS 26.0. The folder list in ARCHITECTURE.md also contains proposed feature folders; use this map for the implemented layout.
+
+### Ownership and relationships
+```flow
+AppSettings -&gt; Tournament: shared fencer context
+Tournament -&gt; Bout: tournamentID
+Bout -&gt; SourceRecording: boutID
+SourceRecording -&gt; ReviewClip: sourceRecordingID
+Bout -&gt; ReviewClip: boutID
+```
+AppSettings is a single global setting, not a foreign-key parent of Tournament. The other links use UUID fields, not SwiftData relationship properties.
+
+| Entity | Purpose and key fields | Persistence |
+| --- | --- | --- |
+| AppSettings | Stable cloud ID, fencerName, timestamps, syncState | Local and private CloudKit |
+| Tournament | Name, venue, date, timezone, import status | Local and private CloudKit |
+| Bout | Tournament ID, opponent, sequence number, status; optional context fields | Confirmed records sync |
+| SourceRecording | Bout ID, capture time, duration, filename, import batch, Photos IDs | Portable metadata syncs |
+| ReviewClip | Source ID, bout ID, start/end, duration, favorite, asset reference, media state | Metadata and edited movie sync |
+| ScheduleExtractionRun | Diagnostic schema for extraction status and warnings | Defined locally; current extraction UI does not create these records |
+
+### Where the bytes live
+| Data | Location | Boundary |
+| --- | --- | --- |
+| Original videos | Photos; optional Apple-managed iCloud Photos storage | The app never uploads originals to its CloudKit container |
+| Source link | Local Photos ID plus portable cloudPhotoAssetID | Only the portable ID crosses devices |
+| Legacy source copies | Application Support/SourceRecordings | Local only; successful Photos-backed open can remove the old copy |
+| Exported review clips | Application Support/PendingClips | Durable file while upload is pending; may remain after upload |
+| Downloaded review clips | Application Support/DownloadedClips | Managed cache with index.json; default limit 2,000,000,000 bytes |
+| Schedule screenshots, OCR, drafts | Feature memory during review | No cloud serialization |
+| App metadata | SwiftData plus private CloudKit | The repository disables automatic SwiftData CloudKit integration |
+| Sync recovery state | CloudMetadataSyncState.json and CloudRecordSystemFields.json | Engine state and record versions stay on the device |
+
+`SwiftDataRepository.makeContainer()` selects `cloudKitDatabase: .none`. Explicit CloudKit services control the cloud boundary.
+
+## B Launch, navigation, and organization
+
+### Launch and foreground refresh
+```sequence num
+App -&gt; Dependencies: make()
+Dependencies -&gt; Services: build repository and adapters
+App -&gt; AppViewModel: AppRootView creates model
+App -&gt; AppViewModel: .task → load()
+AppViewModel -&gt; Services: accountStatus(); local reads
+AppViewModel -&gt; Services: refreshCloud() if available
+AppViewModel --&gt; App: setup or tournament navigation
+```
+`FencingVideoAnalysisApp` stores bootstrap as a Result. A bootstrap failure shows local-data failure. A later load failure offers `load()` again.
+
+`load()` migrates an older settings ID to `AppSettings.cloudID`. It reads local data before cloud refresh, so unavailable iCloud does not block local organization.
+
+After loading, `load()` calls `ClipWorkflow.removeAbandonedFiles()` for old, unreferenced source and export files. The cutoff is 24 hours. Test stores disable this cleanup.
+
+| Trigger | Function path | Result or guard |
+| --- | --- | --- |
+| App becomes active | AppRootView.onChange(scenePhase) → AppViewModel.refreshCloud() | Runs only after local load |
+| Pull tournament or bout list | .refreshable → refreshCloud() | Discovers new remote records and resumes pending uploads |
+| Enter fencer; Continue | FirstRunSetupView button → saveFencerName() → insert or update AppSettings → saveChanges() | Rejects an empty trimmed name |
+| Fencer settings; Save | FencerSettingsView button → saveFencerName() | Same validation; marks settings pending |
+| New Tournament | TournamentNavigationView state → TournamentFormView | Opens an unsaved form |
+| Save tournament | TournamentFormView button → saveTournament() → insert/update → saveChanges() → tournaments() | Rejects an empty name; selects the saved tournament |
+| Select tournament | List selection binding → selectTournament(id) → repository.bouts(in:) | Loads that tournament&#39;s ordered bouts |
+| Edit tournament | TournamentDetailView state → TournamentFormView(existing:) → saveTournament(existing:) | Updates timestamps and pending state |
+| Open bout | TournamentDetailView button → selectedBout + showingBoutDetail | Presents BoutDetailView; .task calls refreshRecordings() |
+| Save bout edits | BoutDetailView.save() → updateConfirmedBout() → saveChanges() | Requires opponent, positive number, and no number collision |
+| Cancel form | SwiftUI dismiss() | Discards unsaved form state |
+
+`updateConfirmedBout()` restores previous values if persistence fails. The public `addBout()` helper exists, but the current manual-entry screen uses schedule drafts and `confirmSchedule()`.
+
+### How local changes reach the cloud
+`saveChanges()` calls `ModelContext.save()`, then `didSave`. On a physical device with live metadata, dependency wiring connects `didSave` to `LiveCloudMetadataService.scheduleSync()`.
+
+This is asynchronous cloud scheduling. A successful local save does not mean the other device has already received the change.
+
+### Screen presentation
+NavigationSplitView adapts the tournament list and detail. Bout import and schedule review use sheets. PlaybackPresentation uses a sheet on iPhone and a 90%-sized overlay within a full-screen cover on iPad.
+
+## C Schedule screenshots to confirmed bouts
+
+### Extraction path
+```sequence num
+Screen -&gt; ReviewModel: loadScreenshots() → extract()
+ReviewModel -&gt; Extractors: recognize() for each image
+ReviewModel -&gt; Extractors: parse(); propose()
+ReviewModel -&gt; Validator: reconcile()
+Validator --&gt; ReviewModel: drafts and warnings
+ReviewModel --&gt; Screen: state = ready
+Screen -&gt; Persistence: confirm() → confirmSchedule()
+Persistence --&gt; Screen: saved bouts or validation error
+```
+The screenshot picker allows up to 10 images. `loadScreenshots()` reads Data through PhotosPickerItem.loadTransferable, then `LiveScheduleSourceService.screenshots()` creates the source.
+
+Diagram lanes group the screen, ReviewModel, extractor services, validator, and persistence. The following table names each concrete implementation.
+
+### What each stage actually does
+| Stage | Functions | Behavior |
+| --- | --- | --- |
+| Recognition | LiveDocumentRecognitionService.recognize() | Validates image data and orientation; attempts RecognizeDocumentsRequest for tables |
+| Text recognition | RecognizeTextRequest.perform() | Runs accurate OCR as well; falls back to document text lines if needed |
+| Quality checks | RecognizedScheduleDocument.addingQualityWarnings() | Adds recognition warnings; no readable transcript throws |
+| Deterministic parsing | DeterministicScheduleParser.parse(), mapping(), normalizedName(), numericValue(), context() | Maps table columns, matches the saved fencer on either side, extracts the opponent and full bout-order position |
+| Model assistance | LiveOnDeviceModelService.propose(), promptData() | Uses SystemLanguageModel when available; guided generation returns typed candidates |
+| Evidence validation | ScheduleProposalValidator.reconcile(), mergeString(), mergeInt(), trace(), sourceRow() | Requires source evidence; rejects unsupported rows and values; retains deterministic findings on conflicts |
+| Editable review | ScheduleReviewViewModel.extract() → EditableBoutDraft.init | Exposes opponent and bout number; filters and deduplicates visible warnings |
+| Confirmation | AppViewModel.confirmSchedule() | Validates the whole draft set before inserting bouts |
+
+The current deterministic parser processes recognized tables. Text recognition does not itself guarantee a supported table layout. Unsupported layouts need review or manual entry.
+
+The model receives bounded OCR/table text. `promptData()` limits the final input to 18,000 characters. Model unavailability or generation failure retains deterministic results.
+
+### Review actions and branches
+| Action | Triggered function or state | Effect |
+| --- | --- | --- |
+| Manual Entry | startManual() → scheduleSourceService.manual() → extract() | Review state becomes ready without OCR or model calls |
+| Add bout draft | ScheduleReviewViewModel.addDraft() | Uses the next draft number; still unconfirmed |
+| Edit opponent or number | SwiftUI bindings into review.drafts | Changes memory only |
+| Remove draft | removeDraft(at:) | Removes one proposed bout |
+| Reorder drafts | moveDraft(from:to:) or moveDrafts(from:to:) | Changes draft display order; saved bout order uses the explicit number |
+| Enlarge screenshot | enlargedImageIndex → ScheduleImageViewer | Inspects selected screenshot without changing extraction |
+| Zoom or pan | magnify(), pan(), setZoom(), resetZoom(), bounded() | Changes viewer scale and offset |
+| Retry extraction | ScheduleImportView.extract(source) | Re-runs recognition, parsing, model assistance, and validation |
+| New Source | clear source and picker state → review.reset() | Discards the current proposal in memory |
+| Discard Schedule | confirmation dialog → dismiss() | The app writes no confirmed records |
+| Confirm Schedule | ScheduleImportView.confirm() → AppViewModel.confirmSchedule() | Saves normalized confirmed bouts |
+
+### Confirmation contract
+`confirmSchedule()` requires at least one draft, a known tournament, nonempty opponents, and positive unique bout numbers. It rejects conflicts with an existing number and different opponent.
+
+The app skips an identical existing number/opponent pair. New bouts use phase `unknown`; imported pool, strip, and schedule-time context are not persisted by this screen.
+
+The app sets `scheduleImportStatus = confirmed` and clears `scheduleSourceURL` on the tournament. Save failure removes inserted bouts and restores the tournament&#39;s prior fields.
+
+## D Import and reopen source recordings
+
+### Import starts in a known bout
+```sequence num
+Review screen -&gt; AppViewModel: prepareRecordings()
+AppViewModel -&gt; Import coordinator: prepareSelections()
+Import coordinator -&gt; Photos: importSelections()
+Photos --&gt; Review screen: batch and per-item failures
+Review screen -&gt; AppViewModel: confirmRecordings()
+AppViewModel -&gt; Import coordinator: confirm(); linkPendingCloudPhotos()
+Import coordinator -&gt; Photos: cloudIdentifiers()
+AppViewModel --&gt; Review screen: onSaved(result); dismiss
+```
+There is no automatic bout matching. The selected bout provides the destination. Duplicate detection checks known device-local asset IDs across that tournament and within the batch.
+
+`PhotoSelection.init(item:)` supplies a metadata loader for normal picker selections. New imports retain Photos identifiers and metadata without creating a full-size working copy. The service also supports a file-copy path for selections without that loader.
+
+`LivePhotoLibraryService.importSelections()` rejects missing Photos identifiers and invalid durations. It reports individual failures without discarding usable selections.
+
+### Confirmation, cancel, and repair
+| Trigger | Function path | State change |
+| --- | --- | --- |
+| Add to Bout | RecordingImportReviewView.confirm() → confirmRecordings() → BoutImportCoordinator.confirm() | Creates one SourceRecording per usable item with a shared importBatchID |
+| Persistence failure | BoutImportCoordinator.confirm() catch | Removes inserted records and attempts working-file cleanup |
+| Cancel before confirmation | cancel() → discardRecordings() → discard() → removeWorkingFiles() | Drops prepared working copies |
+| Cancel during preparation | cancel() → loadTask.cancel(); prepare() checks cancelRequested | Cleans completed results before dismissal |
+| Select another batch | prepare() → discardRecordings(previousBatch) | Removes the prior unsaved batch |
+| Link source across devices | linkPendingCloudPhotos() → cloudIdentifiers(for:) → saveChanges() | Saves cloudPhotoAssetID; marks source metadata pending |
+| Repair older imports | localIdentifierForExistingRecording() | Matches filename and duration; uses capture time to resolve ambiguity |
+| Allow Photos Access | FencerSettingsView → AppViewModel.connectPhotos() | Requests permission, links pending sources, then refreshes cloud |
+| Permission denied | connectPhotos() → needsDeviceSettings | UI offers UIApplication.openSettingsURLString |
+
+A cloud-link failure can leave the recording saved locally. `confirmRecordings()` reports that linking failed instead of undoing a successful import.
+
+### Open a source for playback or trimming
+```flow
+Select source -&gt; AppViewModel.sourceAsset: SourceTimelineView.select
+AppViewModel.sourceAsset -&gt; BoutImportCoordinator.sourceAsset: resolve recording
+BoutImportCoordinator.sourceAsset -&gt; PhotoLibrary.videoAsset: local or cloud Photos ID exists
+PhotoLibrary.videoAsset -&gt; PhotoKit AVAsset: permission and identifier mapping
+BoutImportCoordinator.sourceAsset -&gt; Legacy AVURLAsset: Photos fails and local copy exists
+PhotoKit AVAsset -&gt; MediaPlayerModel.open: playback asset
+Legacy AVURLAsset -&gt; MediaPlayerModel.open: fallback asset
+```
+`videoAsset()` first tries the local Photos ID, then maps the portable cloud ID to this device&#39;s ID. `PHImageManager.requestAVAsset` allows network access, so Photos may download the original.
+
+After a successful Photos-backed open, `sourceAsset()` attempts to remove the older app working file. If neither Photos nor a legacy file is usable, the screen shows an error.
+
+`localSourceURL()` → `localCopy()` → `copyFromICloudPhotos()` also exists for callers needing a local URL. The current SourceTimelineView uses `sourceAsset()`, not this copy path.
+
+### Move and remove
+`BoutDetailView.move()` → `AppViewModel.moveRecording()` → `BoutImportCoordinator.move()` changes boutID. It requires a destination in the same tournament and no saved review clips for that source.
+
+`BoutDetailView.remove()` → `AppViewModel.removeRecording()` → `BoutImportCoordinator.remove()` deletes the link and managed working file. It blocks sources with clips, then queues a cloud source deletion.
+
+`LocalRepository.sourceRecordings(in:)` orders by capture time, then UUID. Original Photos assets remain unchanged.
+
+## E Trim, export, upload, and retry
+
+### Save Clip pathway
+```flow
+Save Clip -&gt; AppViewModel.createClip: SourceTimelineView.saveClip
+AppViewModel.createClip -&gt; BoutImportCoordinator.sourceAsset: obtain source
+BoutImportCoordinator.sourceAsset -&gt; ClipWorkflow.createClip: asset and trim range
+ClipWorkflow.createClip -&gt; Save exporting record: validate range
+Save exporting record -&gt; VideoEditingService.export: AVAssetExportSession
+VideoEditingService.export -&gt; Save pendingUpload: exported MOV and duration
+Save pendingUpload -&gt; ClipUploadQueue.upload: asynchronous Task
+ClipUploadQueue.upload -&gt; Metadata.synchronize: create cloud record
+Metadata.synchronize -&gt; Assets.saveExportedClip: attach CKAsset
+Assets.saveExportedClip -&gt; Save available: cloudAssetRecordName
+```
+Setting a start or end marker copies the current playhead into view state. Range sliders edit those values directly. The Save button disables obvious invalid ranges.
+
+`TrimRange.validate()` also checks finite values, nonnegative start, increasing end, and source duration. Both ClipWorkflow and the export service validate the range.
+
+`LiveVideoEditingService.export()` uses the passthrough preset and a CMTimeRange. It writes a separate UUID-named MOV into PendingClips and reports progress every 100 ms.
+
+### Media state transitions
+```flow
+exporting -&gt; pendingUpload: export succeeds
+exporting -&gt; exportFailed: export throws
+exportFailed -&gt; pendingUpload: retry export succeeds
+pendingUpload -&gt; uploading: upload starts
+uploading -&gt; available: asset save succeeds
+uploading -&gt; pendingUpload: temporary cloud error
+uploading -&gt; needsAttention: other failure
+needsAttention -&gt; pendingUpload: retry upload
+```
+`ReviewClip.mediaSyncStatus` and `localExportPath` form the durable upload queue. `ClipUploadQueue.resumePending()` retries `pendingUpload` and `uploading` records after cloud refresh.
+
+### Failure and retry actions
+| Trigger or condition | Function path | Result |
+| --- | --- | --- |
+| Cancel Export | exportTask.cancel() → cancellation handler → ExportCancellation.cancel() → session.cancelExport() | Export service removes partial output; initial create records exportFailed on error |
+| Retry failed export | SourceTimelineView.retry() → AppViewModel.retryClip() → ClipWorkflow.retry() | Reuses the clip ID; exports again, then schedules upload |
+| Retry Upload | AppViewModel.retryUpload() → ClipUploadQueue.retry() → upload() | Requires an existing export file |
+| Missing export during upload | ClipUploadQueue.upload() → setStatus() | Marks needsAttention |
+| Account/network/service failure | isTemporaryCloudFailure() | Returns clip to pendingUpload |
+| Repeated upload request | inFlight ID set | Prevents a duplicate in-flight upload |
+| Delete during upload | deleteCloudCopyIfNeeded() waits for upload completion | The deleting set prevents late callbacks from reviving the clip |
+
+The workflow saves the initial clip record before rendering starts. If the app terminates during export, that record can remain `exporting`; automatic upload resumption does not re-export it.
+
+### Actual cloud asset implementation
+Metadata uses CKSyncEngine. The asset service separately fetches the existing ReviewClip record, adds `videoAsset = CKAsset(fileURL:)`, and calls `CKDatabase.save()`.
+
+This direct asset save is the implemented path. Do not infer that CKSyncEngine itself uploads the movie from the broader architecture description.
+
+## F Playback, seeking, favorites, and local storage
+
+### Open and replay clips
+```sequence num
+Player view -&gt; AppViewModel: load() → reviewClips()
+AppViewModel --&gt; Player view: ordered queue
+Player view -&gt; AppViewModel: openCurrent() → playableURL()
+AppViewModel -&gt; Downloads: resolve() if no local export
+Downloads -&gt; Cache or CloudKit: cachedURL() or downloadClip()
+Cache or CloudKit --&gt; Downloads: local file; store and validate
+Downloads --&gt; AppViewModel: playable URL
+AppViewModel --&gt; Player view: open(); setSpeed()
+```
+`LocalRepository.reviewClips(in:)` orders by source capture time, then clip start, then UUID. Missing source metadata sorts last. A bout is a logical queue of independent files.
+
+### Playback actions
+| Action | Function path | Behavior |
+| --- | --- | --- |
+| Play or Pause | MediaPlayerModel.play() / pause() | Updates AVPlayer and PlaybackState |
+| Select a clip row | BoutPlaybackQueue.select() → openCurrent(autoplay: false) | Resolves that clip without starting playback |
+| Previous or Next | movePrevious()/moveNext() → queue.previous()/next() → openCurrent(autoplay: true) | Advances manually and starts playback |
+| Clip finishes | AVPlayerItem.didPlayToEndTimeNotification → finishCurrentClip() → queue.didFinishCurrentClip() | Advances only in continuous mode; otherwise pauses |
+| Change playback mode | Binding to queue.mode | Chooses continuous or focused single-clip mode |
+| Change speed | PlaybackSpeedControl → MediaPlayerModel.setSpeed() → PlaybackState.setSpeed() | UI offers 0.5×, 1×, 2×; active AVPlayer rate updates immediately |
+| Leave player | .onDisappear → MediaPlayerModel.stop() | Cancels scrub work, pauses, releases item, resets state |
+| Play clip from editor | SourceTimelineView.play() → playableURL() → LocalClipPlayerView | Uses the same playback model and controls |
+| Retry download or open | play(clip) or openCurrent(autoplay: false) | Repeats the resolution path |
+
+PlaybackState supports extra 0.25× and 1.5× values internally. The visible speed buttons expose only the three values above.
+
+### Dragging the timeline
+```sequence num
+Slider -&gt; MediaPlayerModel: scrub(to:)
+MediaPlayerModel -&gt; PlaybackState: seek(to:) clamps time
+MediaPlayerModel -&gt; ScrubCoordinator: drag(to:)
+ScrubCoordinator -&gt; AVPlayerSeekTarget: seek(to:, tolerance: 0.15)
+Slider -&gt; MediaPlayerModel: finishScrub() on release
+MediaPlayerModel -&gt; ScrubCoordinator: finish(at:)
+ScrubCoordinator -&gt; AVPlayerSeekTarget: seek(to:, tolerance: 0)
+```
+`VisualScrubCoordinator.startWorkerIfNeeded()` allows one seek at a time. New drag positions replace obsolete pending positions. Final release requests an exact seek.
+
+`MediaPlayerModel.playerTimeDidChange()` updates the playhead every 0.1 seconds, except during a drag. Generation checks prevent a stale completion from changing a newly opened player&#39;s scrub state.
+
+### Download and cache decisions
+`playableURL()` uses an existing local export first. `ClipDownloadCoordinator.resolve()` then tries the managed cache before checking iCloud and downloading.
+
+`ManagedClipCache.store()` checks the 2 GB limit and keeps a 10 MB free-space margin. It evicts least-recently-used entries, copies through a partial file, and updates index.json.
+
+The coordinator verifies a video track after download. Invalid video removes the cache entry. Missing asset data produces `waitingForAsset`; other errors distinguish account, network, missing record, storage, and format failures.
+
+### Favorites and offloading
+| Action | Function path | Guard or result |
+| --- | --- | --- |
+| Star any clip | FavoriteStarButton → toggleClipFavorite() → saveChanges() → refreshFavoriteBoutIDs() → Task refreshCloud() | Marks favoriteSyncState pending; no new video export |
+| Display bout star | isBoutFavorite() reads favoriteBoutIDs | Derived from any starred clip; old Bout.isFavorite is compatibility data |
+| Unload Bout Clips | BoutPlayerView.unloadClips() → playback.stop() → unloadBoutClips() → ClipWorkflow.unloadUploadedClips() | Requires all local exports in that bout to have an available cloud asset |
+| Play an unloaded clip | openCurrent() → playableURL() | Downloads the cloud asset again |
+| Clear Local Clip Copies | FencerSettingsView.clearLocalCopies() → clearLocalClipCopies() | Removes eligible uploaded exports across bouts and clears download cache |
+| Inspect storage | refreshLocalStorage() → localUploadedClipBytes() → localExportBytes() | Counts actual managed export files; downloadedClipCacheBytes reads the cache |
+
+Bout offload checks all local exports before removing any; one pending upload blocks that operation. Global cleanup instead skips pending uploads and reports the skipped count.
+
+Global cleanup can remove unreferenced exports older than two hours when no active unlinked export exists. Startup cleanup uses the separate 24-hour cutoff.
+
+Both paths keep CloudKit records and assets. Managed-path checks prevent deletion of files outside the export workspace.
+
+## G Synchronization, remote changes, and deletion
+
+### RefreshCloud is the recovery hub
+```sequence num
+AppViewModel -&gt; Metadata: synchronize(discoverNewRecords: true)
+Metadata -&gt; CloudKit: sendChanges(); fetchChanges()
+Metadata -&gt; CloudKit: reconcile known records and zone
+AppViewModel -&gt; Media services: linkPendingCloudPhotos()
+AppViewModel -&gt; Metadata: sync again if links changed
+AppViewModel -&gt; Media services: resumePending()
+AppViewModel -&gt; LocalRepository: reload lists and favorite IDs
+```
+Cloud unavailability sets a visible error and leaves local changes pending. Metadata failure stops the refresh before upload resumption. Successful refresh clears the shared error message.
+
+### Metadata functions and event paths
+| Trigger | Function path | Purpose |
+| --- | --- | --- |
+| Local save | SwiftDataRepository.saveChanges() → didSave → scheduleSync() | Coalesces work with a 300 ms delay |
+| Sync pass | synchronize() → CloudMetadataMapper.pendingRecords() | Builds only eligible portable records |
+| Engine asks for a batch | nextRecordZoneChangeBatch() → CloudMetadataCKRecord.make() | Combines payload with remembered system fields |
+| Engine state changes | handleEvent(.stateUpdate) | Writes serialized tokens and pending engine work |
+| Records arrive | handleEvent(.fetchedRecordZoneChanges) → decode() → CloudMetadataMapper.apply() | Applies remote data to SwiftData |
+| Saves succeed | handleEvent(.sentRecordZoneChanges) → markSynchronized() | Clears eligible pending metadata flags |
+| Change-tag conflict | handleEvent() → systemFields.remember(server) | Applies a newer remote value or requeues local data with current server fields |
+| Missing zone or record | handleEvent() | Recreates zone or clears stale system fields and requeues save |
+| Explicit discovery | reconcileEntireZone() | Walks metadata-only pages from the start; repairs missed deliveries |
+| Known-record repair | reconcileKnownRecords() | Fetches known IDs in batches of 100; throttles to one minute |
+| Remote deletion | removeLocalRecord() → CloudLocalDeletion.remove() → deleteLocalRecord() | Removes local descendants and managed media |
+
+`reconcileEntireZone()` requests payload and updatedAt fields, not video assets. It reconstructs remote names and removes stale local records while protecting pending local saves and deletes.
+
+The mapper excludes local paths, device-local Photos IDs, screenshots, OCR, and drafts. Favorite updates reuse the existing ReviewClip record and preserve its video asset through remembered record fields.
+
+### Metadata-before-media on the receiving device
+A new remote ReviewClip can exist before its movie arrives. Mapper application creates it with `pendingDownload`. Opening it may yield `waitingForAsset`.
+
+After a successful download, `AppViewModel.playableURL()` changes these states to `available`. The user can retry an incomplete download later.
+
+### Explicit deletion pathways
+| Action | Ordered function path | Protection and failure behavior |
+| --- | --- | --- |
+| Delete clip | SourceTimelineView.delete() → AppViewModel.deleteClip() → uploadQueue.deleteCloudCopyIfNeeded() → ClipWorkflow.delete() → queueDeletion(.clip) → removeCachedCopies() → synchronizeDeletion() | Cloud asset deletion runs before local record removal when a cloud asset reference exists |
+| Remove recording | BoutDetailView.remove() → removeRecording() → BoutImportCoordinator.remove() → queueDeletion(.source) → synchronizeDeletion() | Requires no clips; removes only app-owned working copies |
+| Delete empty bout | BoutDetailView.delete() → deleteConfirmedBout() → repository.deleteBout() → queueDeletion(.bout) | Blocks if sources or clips remain |
+| Delete tournament | deleteTournament() → deleteClip() for each clip → boutImport.remove() for each source → repository.deleteTournament() | Deletes edited cloud assets before parent metadata; then queues source, bout, and tournament deletions |
+| Receive parent deletion | CloudLocalDeletion.deleteLocalRecord() recursively handles descendants | Clears local clip cache, managed exports, source copies, and records |
+
+`synchronizeDeletion()` calls `synchronizeDeletions()`. If deletes remain pending or sync fails, it reports that cloud deletion is waiting.
+
+Deleting a cloud-backed clip can fail before local deletion if the cloud is unavailable. Tournament deletion consists of ordered steps, not one transaction; a failure can leave a partially completed deletion.
+
+A pending delete takes precedence over fetched cloud records. This prevents a refresh from immediately restoring a record awaiting server deletion.
+
+## H Source map, tests, and implementation limits
+
+### How to verify this guide
+This is a static source walkthrough at revision `8a8c101`, not a recorded runtime trace. Arrows with Task, callbacks, or notifications describe asynchronous triggers.
+
+The linked source files provide exact declarations and call sites. File links need this repository beside the HTML; the explanation and diagrams work offline by themselves.
+
+### Existing automated coverage
+| Concern | Test files to inspect |
+| --- | --- |
+| Bootstrap and organization | AppDependenciesTests.swift, AppViewModelTests.swift, LocalRepositoryTests.swift |
+| Schedule pipeline | ScheduleSourceServiceTests.swift, DocumentRecognitionServiceTests.swift, ScheduleParsingServiceTests.swift, OnDeviceModelServiceTests.swift, ScheduleProposalValidatorTests.swift |
+| Review and confirmation | ScheduleReviewViewModelTests.swift, ScheduleConfirmationTests.swift, ScheduleEvaluationTests.swift |
+| Photos import and source linking | PhotoLibraryServiceTests.swift, BoutImportCoordinatorTests.swift |
+| Editing and upload | VideoEditingServiceTests.swift, ClipWorkflowTests.swift, ClipUploadQueueTests.swift |
+| Playback and seeking | PlaybackStateTests.swift, VisualScrubCoordinatorTests.swift, BoutPlaybackQueueTests.swift |
+| Cloud and downloads | CloudMetadataServiceTests.swift, CloudAssetServiceTests.swift, ClipDownloadCoordinatorTests.swift |
+| Framework and device probes | FrameworkSpikeTests.swift, PhysicalCloudKitSpikeTests.swift, PhysicalScrubPerformanceTests.swift |
+| End-to-end UI | LaunchTests.swift: setup, import, review, trim, replay, favorites, deletion, rotation, accessibility, remote Photos source |
+
+Test scripts select simulators and run the Xcode Test configuration. `scripts/test-unit.sh`, `scripts/test-iphone.sh`, `scripts/test-ipad.sh`, and `scripts/test-all.sh` are the repository entry points.
+
+This documentation task validates the HTML and references. It does not claim a new run of the app&#39;s simulator or physical-device test suites.
+
+### Details that change how to read the architecture
+- Simulator dependency wiring always uses fake metadata and asset services. Simulator success does not show live CloudKit synchronization.
+- Test arguments can select in-memory stores, fake Photos, deterministic schedule fixtures, and isolated persistent stores.
+- AppViewModel coordinates most actions; ScheduleReviewViewModel and MediaPlayerModel own distinct feature state.
+- CloudAssetService performs direct database asset operations; CKSyncEngine handles metadata and deletion queues.
+- The schema includes ScheduleExtractionRun, but the current schedule-review path does not write it.
+- `addBout()` and the local source-copy API exist without a current screen calling them.
+- CloudKitAssetSpikeService is a probe helper; normal uploads use LiveCloudAssetService.
+- Scores, notes, automatic touch detection, and coaching summaries remain outside the current UI.
+- Some documents describe broader or older paths. Function-level behavior in this guide follows the checked-in Swift implementation.
+
+### Reading sources
+The accepted release and operating instructions are in [FINAL_BUILD_OPERATIONS.md](../../FINAL_BUILD_OPERATIONS.md). Product intent comes from [ARCHITECTURE.md](../../ARCHITECTURE.md), [PRODUCT_REQUIREMENTS.md](../../PRODUCT_REQUIREMENTS.md), and [USER_JOURNEY.md](../../USER_JOURNEY.md).
+
+The page uses the [answer-me-with-html skill](https://github.com/QingYunA/answer-me-with-html/blob/main/skills/answer-me-with-html/SKILL.md) and its bundled renderer. The authoring source is [architecture.md](architecture.md).
+
+### Complete Swift declaration index
+This index lists every named `func` declaration in the app source, including private helpers, protocol requirements, and fakes. Initializers, properties, and anonymous SwiftUI action closures are not counted as named functions. The action chapters above explain those UI triggers.
+
+#### AppDependencies
+
+[FencingVideoAnalysis/App/AppEntry/AppDependencies.swift](../../FencingVideoAnalysis/App/AppEntry/AppDependencies.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `make()` | 48 |
+| `syntheticDocument()` | 134 |
+
+#### AppRootView
+
+[FencingVideoAnalysis/App/AppEntry/AppRootView.swift](../../FencingVideoAnalysis/App/AppEntry/AppRootView.swift)
+
+This file declares types, initializers, or view properties; it has no named function declaration.
+
+#### AppViewModel
+
+[FencingVideoAnalysis/App/AppEntry/AppViewModel.swift](../../FencingVideoAnalysis/App/AppEntry/AppViewModel.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `load()` | 126 |
+| `refreshCloud()` | 161 |
+| `saveFencerName()` | 184 |
+| `saveTournament()` | 200 |
+| `selectTournament()` | 229 |
+| `deleteTournament()` | 234 |
+| `addBout()` | 267 |
+| `updateConfirmedBout()` | 285 |
+| `isBoutFavorite()` | 320 |
+| `refreshFavoriteBoutIDs()` | 322 |
+| `deleteConfirmedBout()` | 327 |
+| `confirmSchedule()` | 346 |
+| `prepareRecordings()` | 409 |
+| `confirmRecordings()` | 413 |
+| `discardRecordings()` | 420 |
+| `sourceRecordings()` | 424 |
+| `localSourceURL()` | 428 |
+| `sourceAsset()` | 432 |
+| `connectPhotos()` | 436 |
+| `moveRecording()` | 468 |
+| `removeRecording()` | 472 |
+| `mediaStatus()` | 480 |
+| `createClip()` | 484 |
+| `retryClip()` | 493 |
+| `retryUpload()` | 503 |
+| `deleteClip()` | 505 |
+| `synchronizeDeletion()` | 516 |
+| `reviewClips()` | 525 |
+| `unloadBoutClips()` | 529 |
+| `localUploadedClipBytes()` | 533 |
+| `clearLocalClipCopies()` | 537 |
+| `toggleClipFavorite()` | 541 |
+| `playableURL()` | 563 |
+
+#### FencingVideoAnalysisApp
+
+[FencingVideoAnalysis/App/AppEntry/FencingVideoAnalysisApp.swift](../../FencingVideoAnalysis/App/AppEntry/FencingVideoAnalysisApp.swift)
+
+This file declares types, initializers, or view properties; it has no named function declaration.
+
+#### TournamentNavigationView
+
+[FencingVideoAnalysis/App/Navigation/TournamentNavigationView.swift](../../FencingVideoAnalysis/App/Navigation/TournamentNavigationView.swift)
+
+This file declares types, initializers, or view properties; it has no named function declaration.
+
+#### BoutDetailView
+
+[FencingVideoAnalysis/Features/Bouts/BoutDetailView.swift](../../FencingVideoAnalysis/Features/Bouts/BoutDetailView.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `move()` | 156 |
+| `remove()` | 166 |
+| `refreshRecordings()` | 179 |
+| `save()` | 187 |
+| `delete()` | 200 |
+| `body()` | 247 |
+
+#### BoutPlayerView
+
+[FencingVideoAnalysis/Features/Bouts/BoutPlayerView.swift](../../FencingVideoAnalysis/Features/Bouts/BoutPlayerView.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `load()` | 158 |
+| `openCurrent()` | 165 |
+| `movePrevious()` | 184 |
+| `moveNext()` | 189 |
+| `finishCurrentClip()` | 194 |
+| `unloadClips()` | 202 |
+| `timeLabel()` | 219 |
+
+#### RecordingImportReviewView
+
+[FencingVideoAnalysis/Features/Bouts/RecordingImportReviewView.swift](../../FencingVideoAnalysis/Features/Bouts/RecordingImportReviewView.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `prepare()` | 101 |
+| `confirm()` | 127 |
+| `cancel()` | 142 |
+
+#### SourceTimelineView
+
+[FencingVideoAnalysis/Features/Bouts/SourceTimelineView.swift](../../FencingVideoAnalysis/Features/Bouts/SourceTimelineView.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `load()` | 211 |
+| `toggleFavorite()` | 222 |
+| `select()` | 227 |
+| `saveClip()` | 242 |
+| `retry()` | 261 |
+| `delete()` | 274 |
+| `play()` | 283 |
+| `timeLabel()` | 297 |
+
+#### FirstRunSetupView
+
+[FencingVideoAnalysis/Features/FirstRunSetup/FirstRunSetupView.swift](../../FencingVideoAnalysis/Features/FirstRunSetup/FirstRunSetupView.swift)
+
+This file declares types, initializers, or view properties; it has no named function declaration.
+
+#### ScheduleImportView
+
+[FencingVideoAnalysis/Features/ScheduleImport/ScheduleImportView.swift](../../FencingVideoAnalysis/Features/ScheduleImport/ScheduleImportView.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `loadScreenshots()` | 156 |
+| `startManual()` | 175 |
+| `extract()` | 180 |
+| `confirm()` | 186 |
+| `sampleScreenshotData()` | 196 |
+| `controls()` | 381 |
+| `magnify()` | 423 |
+| `pan()` | 433 |
+| `setZoom()` | 447 |
+| `resetZoom()` | 452 |
+| `bounded()` | 459 |
+
+#### ScheduleReviewViewModel
+
+[FencingVideoAnalysis/Features/ScheduleImport/ScheduleReviewViewModel.swift](../../FencingVideoAnalysis/Features/ScheduleImport/ScheduleReviewViewModel.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `isRelevant()` | 42 |
+| `reset()` | 69 |
+| `extract()` | 76 |
+| `addDraft()` | 116 |
+| `removeDraft()` | 121 |
+| `moveDraft()` | 126 |
+| `moveDrafts()` | 132 |
+| `message()` | 136 |
+| `message()` | 150 |
+
+#### FencerSettingsView
+
+[FencingVideoAnalysis/Features/Settings/FencerSettingsView.swift](../../FencingVideoAnalysis/Features/Settings/FencerSettingsView.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `clearLocalCopies()` | 81 |
+| `refreshLocalStorage()` | 92 |
+
+#### TournamentDetailView
+
+[FencingVideoAnalysis/Features/Tournaments/TournamentDetailView.swift](../../FencingVideoAnalysis/Features/Tournaments/TournamentDetailView.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `mediaSummary()` | 104 |
+
+#### TournamentFormView
+
+[FencingVideoAnalysis/Features/Tournaments/TournamentFormView.swift](../../FencingVideoAnalysis/Features/Tournaments/TournamentFormView.swift)
+
+This file declares types, initializers, or view properties; it has no named function declaration.
+
+#### DomainModels
+
+[FencingVideoAnalysis/Models/DomainModels/DomainModels.swift](../../FencingVideoAnalysis/Models/DomainModels/DomainModels.swift)
+
+This file declares types, initializers, or view properties; it has no named function declaration.
+
+#### LocalRepository
+
+[FencingVideoAnalysis/Models/LocalModels/LocalRepository.swift](../../FencingVideoAnalysis/Models/LocalModels/LocalRepository.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `insert()` | 25 |
+| `fetch()` | 26 |
+| `delete()` | 27 |
+| `saveChanges()` | 28 |
+| `insert()` | 40 |
+| `fetch()` | 47 |
+| `delete()` | 51 |
+| `saveChanges()` | 55 |
+| `makeContainer()` | 60 |
+| `insert()` | 81 |
+| `fetch()` | 88 |
+| `delete()` | 92 |
+| `saveChanges()` | 96 |
+| `tournaments()` | 100 |
+| `bouts()` | 107 |
+| `sourceRecordings()` | 116 |
+| `reviewClips()` | 123 |
+| `deleteTournament()` | 136 |
+| `deleteBout()` | 146 |
+
+#### BoutImportCoordinator
+
+[FencingVideoAnalysis/Services/BoutImportCoordinator.swift](../../FencingVideoAnalysis/Services/BoutImportCoordinator.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `prepareSelections()` | 45 |
+| `confirm()` | 55 |
+| `discard()` | 85 |
+| `requestPhotoAccess()` | 89 |
+| `linkPendingCloudPhotos()` | 92 |
+| `localCopy()` | 120 |
+| `sourceAsset()` | 133 |
+| `move()` | 164 |
+| `remove()` | 187 |
+| `status()` | 201 |
+
+#### BoutPlaybackQueue
+
+[FencingVideoAnalysis/Services/BoutPlaybackQueue.swift](../../FencingVideoAnalysis/Services/BoutPlaybackQueue.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `select()` | 23 |
+| `previous()` | 28 |
+| `next()` | 35 |
+| `didFinishCurrentClip()` | 42 |
+
+#### ClipDownloadCoordinator
+
+[FencingVideoAnalysis/Services/ClipDownloadCoordinator.swift](../../FencingVideoAnalysis/Services/ClipDownloadCoordinator.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `cachedURL()` | 63 |
+| `store()` | 75 |
+| `clear()` | 104 |
+| `remove()` | 113 |
+| `fileURL()` | 122 |
+| `persist()` | 124 |
+| `resolve()` | 142 |
+| `clearCache()` | 176 |
+| `removeCachedCopies()` | 178 |
+
+#### ClipUploadQueue
+
+[FencingVideoAnalysis/Services/ClipUploadQueue.swift](../../FencingVideoAnalysis/Services/ClipUploadQueue.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `resumePending()` | 21 |
+| `upload()` | 28 |
+| `retry()` | 60 |
+| `deleteCloudCopyIfNeeded()` | 72 |
+| `setStatus()` | 88 |
+| `isTemporaryCloudFailure()` | 94 |
+
+#### ClipWorkflow
+
+[FencingVideoAnalysis/Services/ClipWorkflow.swift](../../FencingVideoAnalysis/Services/ClipWorkflow.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `createClip()` | 55 |
+| `retry()` | 81 |
+| `delete()` | 100 |
+| `clips()` | 117 |
+| `unloadUploadedClips()` | 121 |
+| `localExportBytes()` | 152 |
+| `clearLocalClipCopies()` | 159 |
+| `managedExportFiles()` | 205 |
+| `isManagedExportPath()` | 216 |
+| `removeAbandonedFiles()` | 225 |
+
+#### CloudAssetService
+
+[FencingVideoAnalysis/Services/CloudAssetService.swift](../../FencingVideoAnalysis/Services/CloudAssetService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `saveExportedClip()` | 10 |
+| `downloadClip()` | 11 |
+| `deleteClip()` | 12 |
+| `failNextSave()` | 19 |
+| `saveExportedClip()` | 21 |
+| `downloadClip()` | 29 |
+| `deleteClip()` | 38 |
+| `saveExportedClip()` | 50 |
+| `downloadClip()` | 59 |
+| `deleteClip()` | 68 |
+
+#### CloudKitAssetSpikeService
+
+[FencingVideoAnalysis/Services/CloudKitAssetSpikeService.swift](../../FencingVideoAnalysis/Services/CloudKitAssetSpikeService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `roundTrip()` | 12 |
+
+#### CloudMetadataService
+
+[FencingVideoAnalysis/Services/CloudMetadataService.swift](../../FencingVideoAnalysis/Services/CloudMetadataService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `message()` | 37 |
+| `synchronize()` | 47 |
+| `synchronizeDeletions()` | 48 |
+| `queueDeletion()` | 49 |
+| `synchronize()` | 53 |
+| `synchronizeDeletions()` | 54 |
+| `synchronize()` | 68 |
+| `queueDeletion()` | 83 |
+| `staleRecordNames()` | 92 |
+| `knownRecordIDs()` | 98 |
+| `append()` | 100 |
+| `pendingRecords()` | 114 |
+| `markSynchronized()` | 167 |
+| `apply()` | 188 |
+| `shouldApply()` | 306 |
+| `encode()` | 312 |
+| `decode()` | 313 |
+| `make()` | 323 |
+| `decode()` | 334 |
+| `record()` | 356 |
+| `remember()` | 367 |
+| `forget()` | 377 |
+| `persist()` | 384 |
+| `useDownloadCoordinator()` | 425 |
+| `synchronize()` | 430 |
+| `synchronizeDeletions()` | 453 |
+| `reconcileEntireZone()` | 466 |
+| `reconcileKnownRecords()` | 506 |
+| `queueDeletion()` | 530 |
+| `scheduleSync()` | 539 |
+| `nextRecordZoneChangeBatch()` | 554 |
+| `handleEvent()` | 573 |
+| `removeLocalRecord()` | 660 |
+| `remove()` | 671 |
+| `deleteLocalRecord()` | 680 |
+
+#### DocumentRecognitionService
+
+[FencingVideoAnalysis/Services/DocumentRecognitionService.swift](../../FencingVideoAnalysis/Services/DocumentRecognitionService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `addingQualityWarnings()` | 62 |
+| `recognize()` | 86 |
+| `recognize()` | 90 |
+| `recognize()` | 178 |
+
+#### ICloudSyncStatusService
+
+[FencingVideoAnalysis/Services/ICloudSyncStatusService.swift](../../FencingVideoAnalysis/Services/ICloudSyncStatusService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `accountStatus()` | 9 |
+| `accountStatus()` | 18 |
+| `accountStatus()` | 38 |
+
+#### OnDeviceModelService
+
+[FencingVideoAnalysis/Services/OnDeviceModelService.swift](../../FencingVideoAnalysis/Services/OnDeviceModelService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `propose()` | 88 |
+| `propose()` | 93 |
+| `promptData()` | 124 |
+| `propose()` | 157 |
+
+#### PhotoLibraryService
+
+[FencingVideoAnalysis/Services/PhotoLibraryService.swift](../../FencingVideoAnalysis/Services/PhotoLibraryService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `importSelections()` | 129 |
+| `requestPhotoAccess()` | 130 |
+| `localIdentifierForExistingRecording()` | 131 |
+| `cloudIdentifiers()` | 133 |
+| `copyFromICloudPhotos()` | 134 |
+| `videoAsset()` | 135 |
+| `removeWorkingFiles()` | 136 |
+| `removeWorkingFile()` | 137 |
+| `importSelections()` | 152 |
+| `cloudIdentifiers()` | 225 |
+| `localIdentifierForExistingRecording()` | 237 |
+| `copyFromICloudPhotos()` | 260 |
+| `videoAsset()` | 299 |
+| `requestPhotoAccessFromSystem()` | 324 |
+| `requestPhotoAccess()` | 331 |
+| `removeWorkingFiles()` | 335 |
+| `removeWorkingFile()` | 341 |
+| `importSelections()` | 363 |
+| `removeWorkingFiles()` | 394 |
+| `cloudIdentifiers()` | 403 |
+| `requestPhotoAccess()` | 408 |
+| `localIdentifierForExistingRecording()` | 410 |
+| `copyFromICloudPhotos()` | 416 |
+| `videoAsset()` | 429 |
+| `removeWorkingFile()` | 436 |
+
+#### PlaybackState
+
+[FencingVideoAnalysis/Services/PlaybackState.swift](../../FencingVideoAnalysis/Services/PlaybackState.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `open()` | 10 |
+| `seek()` | 18 |
+| `setPlaying()` | 22 |
+| `setSpeed()` | 24 |
+| `open()` | 48 |
+| `open()` | 52 |
+| `play()` | 61 |
+| `pause()` | 66 |
+| `seek()` | 71 |
+| `scrub()` | 77 |
+| `finishScrub()` | 84 |
+| `playerTimeDidChange()` | 94 |
+| `setSpeed()` | 98 |
+| `stop()` | 103 |
+
+#### ScheduleParsingService
+
+[FencingVideoAnalysis/Services/ScheduleParsingService.swift](../../FencingVideoAnalysis/Services/ScheduleParsingService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `parse()` | 63 |
+| `parse()` | 67 |
+| `mapping()` | 237 |
+| `cell()` | 278 |
+| `context()` | 282 |
+| `capture()` | 305 |
+| `normalizedHeader()` | 314 |
+| `normalizedName()` | 318 |
+| `numericValue()` | 326 |
+| `normalizedStrip()` | 334 |
+| `normalizedTime()` | 338 |
+| `normalizedPhase()` | 347 |
+
+#### ScheduleProposalValidator
+
+[FencingVideoAnalysis/Services/ScheduleProposalValidator.swift](../../FencingVideoAnalysis/Services/ScheduleProposalValidator.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `reconcile()` | 26 |
+| `mergeString()` | 126 |
+| `mergeInt()` | 160 |
+| `trace()` | 187 |
+| `headerAllows()` | 246 |
+| `sourceRow()` | 268 |
+| `sameBout()` | 281 |
+| `warning()` | 298 |
+| `normalized()` | 304 |
+| `normalizedDigits()` | 311 |
+| `validTime()` | 317 |
+
+#### ScheduleSourceService
+
+[FencingVideoAnalysis/Services/ScheduleSourceService.swift](../../FencingVideoAnalysis/Services/ScheduleSourceService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `screenshots()` | 22 |
+| `manual()` | 23 |
+| `screenshots()` | 28 |
+| `manual()` | 33 |
+| `screenshots()` | 38 |
+| `manual()` | 43 |
+
+#### VideoEditingService
+
+[FencingVideoAnalysis/Services/VideoEditingService.swift](../../FencingVideoAnalysis/Services/VideoEditingService.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `validate()` | 10 |
+| `cancel()` | 45 |
+| `export()` | 50 |
+| `export()` | 66 |
+| `export()` | 110 |
+
+#### VisualScrubCoordinator
+
+[FencingVideoAnalysis/Services/VisualScrubCoordinator.swift](../../FencingVideoAnalysis/Services/VisualScrubCoordinator.swift)
+
+| Function | Declaration line |
+| --- | --- |
+| `seek()` | 6 |
+| `seek()` | 13 |
+| `drag()` | 35 |
+| `finish()` | 41 |
+| `cancel()` | 48 |
+| `startWorkerIfNeeded()` | 56 |
+
+Index totals: **35 Swift files; 276 named function declarations**. Overloads and protocol declarations count separately.
+</textarea>
+<script>
+(() => {
+  const root = document.documentElement;
+  const cycle = (list, cur) => list[(list.indexOf(cur) + 1) % list.length];
+  const label = (btn, value) => {
+    const map = JSON.parse(btn.dataset.labels || '{}');
+    btn.textContent = map[value] || value;
+  };
+  const bind = (name, attr, values) => {
+    const btn = document.querySelector(`[data-am="${name}"]`);
+    if (!btn) return;
+    label(btn, root.getAttribute(attr));
+    btn.addEventListener('click', () => {
+      const next = cycle(values, root.getAttribute(attr));
+      root.setAttribute(attr, next);
+      label(btn, next);
+    });
+  };
+  bind('theme', 'data-theme', ['blueprint', 'shadcn']);
+  bind('mode', 'data-mode', ['auto', 'light', 'dark']);
+
+  const copyBtn = document.querySelector('[data-am="copy"]');
+  copyBtn?.addEventListener('click', async () => {
+    const text = document.getElementById('am-source').value;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const ta = Object.assign(document.createElement('textarea'), { value: text });
+      document.body.append(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+    const original = copyBtn.textContent;
+    copyBtn.textContent = copyBtn.dataset.done;
+    setTimeout(() => { copyBtn.textContent = original; }, 1400);
+  });
+})();
+</script>
+</body>
+</html>

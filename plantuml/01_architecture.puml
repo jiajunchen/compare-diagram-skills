@@ -1,0 +1,126 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #0a0e1a
+skinparam shadowing false
+skinparam defaultFontName Helvetica
+skinparam defaultFontColor #c8d8f0
+skinparam ArrowColor #2d7aff
+skinparam ArrowFontColor #c8d8f0
+skinparam TitleFontColor #c8d8f0
+skinparam packageBackgroundColor #0f1528
+skinparam packageBorderColor #1e2d4a
+skinparam packageFontColor #c8d8f0
+skinparam rectangleBackgroundColor #0f1528
+skinparam rectangleFontColor #c8d8f0
+skinparam classBackgroundColor #0f1528
+skinparam classFontColor #c8d8f0
+skinparam RoundCorner 12
+skinparam linetype polyline
+hide stereotype
+hide circle
+title 01  Overall codebase architecture | one native iPhone / iPad app
+skinparam rectangle<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam class<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam class<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam class<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+skinparam class<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+package "Presentation" {
+rectangle "AppRootView\nlaunch + scene activation" as root <<theme_blue>>
+rectangle "Tournament, schedule, bout,\ntimeline, player, settings views" as views <<theme_blue>>
+rectangle "AppViewModel\nUI state + workflow orchestration" as vm <<theme_cyan>>
+rectangle "ScheduleReviewViewModel\neditable, unconfirmed drafts" as review <<theme_cyan>>
+}
+package "On-device application services" {
+rectangle "Schedule source -> Vision recognition\n-> deterministic parser -> Foundation Model\n-> proposal validator" as schedule <<theme_green>>
+rectangle "BoutImportCoordinator\nPhotoLibraryService" as import <<theme_green>>
+rectangle "ClipWorkflow -> VideoEditingService\nAVFoundation export" as editing <<theme_green>>
+rectangle "ClipUploadQueue\nCloudMetadataService + CloudAssetService" as upload <<theme_green>>
+rectangle "BoutPlaybackQueue + MediaPlayerModel\nClipDownloadCoordinator + cache" as play <<theme_green>>
+}
+package "Device-local state" {
+rectangle "LocalRepository / SwiftData\nsettings, tournaments, bouts, source links, clips" as repo <<theme_orange>>
+rectangle "App support files\npending exports + downloaded clips" as files <<theme_orange>>
+rectangle "Screenshot bytes + OCR/proposal\nin memory until confirmation" as drafts <<theme_orange>>
+}
+package "Apple-managed services" {
+rectangle "Photos / iCloud Photos\noriginal videos; read on explicit import/open" as photos <<theme_dim>>
+rectangle "Private CloudKit\nconfirmed metadata + edited CKAssets" as cloud <<theme_dim>>
+}
+rectangle "Parent / fencer\nSwiftUI actions" as user <<theme_dim>>
+user --> views : tap / select / edit
+root --> vm : load, refresh
+views --> vm : commands / observed state
+views --> review : schedule review
+review --> schedule : extract
+review --> drafts : temporary proposal
+review --> vm : confirm drafts
+vm --> repo : CRUD
+vm --> import : prepare / confirm / open
+import --> photos : read video + IDs
+import --> repo : source links
+vm --> editing : trim / export
+editing --> files : local clip
+editing --> repo : clip status
+vm --> upload : sync / retry
+upload --> cloud : metadata + CKAsset
+upload --> repo : sync state
+views --> play : player controls
+vm --> play : clip URL / unload
+play --> cloud : download clip
+play --> files : cache / replay
+@enduml

@@ -1,0 +1,293 @@
+{
+  "title": "From the piste to the replay",
+  "voice": "JBFqnCBsd6RMkjVDRZzb",
+  "model": "eleven_multilingual_v2",
+  "chapters": [
+    {
+      "title": "A simpler way to review a bout",
+      "diagram": "intro",
+      "beats": [
+        {
+          "focus": null,
+          "text": "This app helps a parent review fencing videos with one fencer. It runs on an iPhone and an iPad."
+        },
+        {
+          "focus": null,
+          "text": "A fencing match is called a bout. The parent can stop and restart the camera during that bout."
+        },
+        {
+          "focus": null,
+          "text": "One bout can therefore have several recordings. The app groups them so the parent can find the right moments later."
+        },
+        {
+          "focus": null,
+          "text": "The parent saves useful sections as review clips. A review clip is a separate, shorter movie from an original recording."
+        },
+        {
+          "focus": null,
+          "text": "Both devices use the same private iCloud account. The parent can save a clip on the phone and review it on the tablet."
+        },
+        {
+          "focus": null,
+          "text": "We will follow that work through the app. The app organizes video for review. It does not judge fencing technique."
+        }
+      ]
+    },
+    {
+      "title": "One app. Three storage boundaries.",
+      "diagram": "overview",
+      "beats": [
+        {
+          "focus": 0,
+          "text": "Start with the screens on the left. They show tournaments, bouts, and clips. They also receive the parent's actions."
+        },
+        {
+          "focus": 1,
+          "text": "The app controller decides which work follows each action. Its code name is App View Model. Services perform the individual jobs."
+        },
+        {
+          "focus": 2,
+          "text": "The local store saves records on the current device. A record contains details about an item, such as a bout."
+        },
+        {
+          "focus": 3,
+          "text": "The schedule services turn screenshots into proposed bouts. This work stays on the device. The parent must confirm the result."
+        },
+        {
+          "focus": 4,
+          "text": "The media services open original recordings, export review clips, and control playback. The original recordings remain in Photos."
+        },
+        {
+          "focus": 5,
+          "text": "Private iCloud storage holds confirmed records and edited clips. Photos, the local device, and private CloudKit each have a different job."
+        }
+      ]
+    },
+    {
+      "title": "Open locally. Then refresh.",
+      "diagram": "startup",
+      "beats": [
+        {
+          "focus": 0,
+          "text": "When the app starts, the entry code creates its dependencies. These are the services that the app needs to work."
+        },
+        {
+          "focus": 1,
+          "text": "The setup function connects the controller, local store, and media services. Tests can replace these services with controlled test versions."
+        },
+        {
+          "focus": 2,
+          "text": "The controller runs its load function. It reads the saved fencer name and tournament records from the local store."
+        },
+        {
+          "focus": 3,
+          "text": "If no fencer name exists, the app shows setup. After setup, the parent can create a tournament and add bouts."
+        },
+        {
+          "focus": 4,
+          "text": "When iCloud is available, refresh gets remote changes. It also connects pending Photos links and resumes unfinished clip uploads."
+        },
+        {
+          "focus": 5,
+          "text": "The app also removes old, abandoned working files from its managed folders. Original recordings in Photos remain unchanged."
+        }
+      ]
+    },
+    {
+      "title": "Read the schedule. Keep the parent in control.",
+      "diagram": "schedule",
+      "beats": [
+        {
+          "focus": 0,
+          "text": "The parent selects one or more schedule screenshots. The parent can also choose manual entry and type the bouts."
+        },
+        {
+          "focus": 1,
+          "text": "Vision reads words and table cells from each screenshot. The result includes their positions and warnings about uncertain text."
+        },
+        {
+          "focus": 2,
+          "text": "The rule parser finds the saved fencer in the table. It extracts the opponent and position in the full bout order."
+        },
+        {
+          "focus": 5,
+          "text": "The optional language model can help interpret the result. It runs on the device. The fixed rules remain available without it."
+        },
+        {
+          "focus": 4,
+          "text": "The evidence check compares proposed details with the recognized text. It rejects values that the screenshot data does not support."
+        },
+        {
+          "focus": 3,
+          "text": "The parent checks the proposed bouts and corrects mistakes. Confirm requires an opponent name and a positive, unique bout number."
+        },
+        {
+          "focus": 3,
+          "text": "The app saves valid new bouts. An identical saved bout does not need another record. Only confirmed details can reach iCloud."
+        }
+      ]
+    },
+    {
+      "title": "Choose the bout. Then choose the recordings.",
+      "diagram": "recordings",
+      "beats": [
+        {
+          "focus": 0,
+          "text": "The parent opens a known bout before selecting recordings. The app therefore knows where every selected recording should belong."
+        },
+        {
+          "focus": 1,
+          "text": "The import service prepares the selection. It checks for known recordings and records any files that it cannot open."
+        },
+        {
+          "focus": 2,
+          "text": "The parent reviews the results before confirmation. If one file fails, the parent can still confirm the other successful selections."
+        },
+        {
+          "focus": 5,
+          "text": "Confirmation creates a recording record for each successful selection. Each record links the recording to the chosen bout."
+        },
+        {
+          "focus": 4,
+          "text": "The app saves capture time, duration, and available Photos identifiers. An identifier is a stable label used to connect records."
+        },
+        {
+          "focus": 3,
+          "text": "The original stays in Photos. A shared Photos identifier can help the other device find the same recording."
+        },
+        {
+          "focus": 4,
+          "text": "The app orders recordings by capture time. It does not guess their bouts. An eligible recording link can move to another bout."
+        }
+      ]
+    },
+    {
+      "title": "Save a clip locally. Then upload it.",
+      "diagram": "clips",
+      "beats": [
+        {
+          "focus": 0,
+          "text": "The parent opens an original recording and selects a start and end time. Save Clip starts the clip workflow."
+        },
+        {
+          "focus": 1,
+          "text": "The workflow checks the selected times. The start must come before the end, and both must fit inside the recording."
+        },
+        {
+          "focus": 2,
+          "text": "The video service exports that section into a separate movie. Export means creating this new file. The original remains unchanged."
+        },
+        {
+          "focus": 5,
+          "text": "The app saves the file location and clip duration. The clip record now says that an upload is pending."
+        },
+        {
+          "focus": 4,
+          "text": "The upload queue first saves the clip's metadata. Metadata means details such as its bout, source recording, and selected times."
+        },
+        {
+          "focus": 3,
+          "text": "Next, the asset service attaches the movie file to the cloud record. The app marks the clip available after upload succeeds."
+        },
+        {
+          "focus": 5,
+          "text": "A temporary network failure keeps the file for another attempt. Other errors can require Retry Upload. Failed exports can be exported again."
+        }
+      ]
+    },
+    {
+      "title": "Play separate clips as one bout.",
+      "diagram": "playback",
+      "beats": [
+        {
+          "focus": 0,
+          "text": "The saved-bout player gets the review clips in time order. It sorts by original recording time, then by clip start time."
+        },
+        {
+          "focus": 1,
+          "text": "The playback queue tracks the current clip. Previous and Next change that selection. The app does not merge the movie files."
+        },
+        {
+          "focus": 2,
+          "text": "For each clip, the app first checks its local export. It then checks downloaded copies before requesting the file from iCloud."
+        },
+        {
+          "focus": 5,
+          "text": "The video player opens the resolved file. Continuous mode moves to the next clip when playback ends. Focused mode stops instead."
+        },
+        {
+          "focus": 4,
+          "text": "The transport controls set speed, time, and play or pause. The chosen speed remains active when the player changes clips."
+        },
+        {
+          "focus": 3,
+          "text": "Dragging the timeline asks the player to move to a time. This request is called a seek. The picture follows the drag."
+        },
+        {
+          "focus": 3,
+          "text": "The seek coordinator keeps the newest requested position. It avoids a queue of old positions. Release requests the final selected time."
+        }
+      ]
+    },
+    {
+      "title": "Recover changes without losing the distinction.",
+      "diagram": "sync",
+      "beats": [
+        {
+          "focus": 0,
+          "text": "A local save marks work for synchronization. Stable record identifiers let the app update existing records instead of creating copies."
+        },
+        {
+          "focus": 1,
+          "text": "The metadata service sends pending changes and receives remote updates. It saves synchronization state so unfinished work can continue later."
+        },
+        {
+          "focus": 2,
+          "text": "Explicit refresh also checks the full metadata zone for missed records. The zone groups this app's records in private CloudKit storage."
+        },
+        {
+          "focus": 5,
+          "text": "Incoming changes update the local records. A clip record can arrive before its movie file. The player can show Waiting for upload."
+        },
+        {
+          "focus": 3,
+          "text": "Deleting a clip starts a coordinated removal. The app handles active uploads and a known cloud asset before removing the local clip."
+        },
+        {
+          "focus": 4,
+          "text": "The app queues the record deletion and clears downloaded copies. If cloud deletion cannot finish, the pending work remains for recovery."
+        },
+        {
+          "focus": 0,
+          "text": "Clear Local Clip Copies is different. It removes files that can be downloaded again. It keeps cloud records and protects pending uploads."
+        }
+      ]
+    },
+    {
+      "title": "The records connect the whole journey.",
+      "diagram": "overview",
+      "beats": [
+        {
+          "focus": 2,
+          "text": "A tournament contains bouts. Each bout connects its original recordings and review clips. Stable identifiers keep these relationships clear."
+        },
+        {
+          "focus": 4,
+          "text": "Each review clip stores its source recording and selected time range. That link explains where the clip came from."
+        },
+        {
+          "focus": 5,
+          "text": "A favorite flag belongs to a review clip. The app treats a bout as a favorite when any clip has that flag."
+        },
+        {
+          "focus": null,
+          "text": "Remember the three storage locations. Photos holds originals. The device holds local work. Private CloudKit holds confirmed records and edited clips."
+        },
+        {
+          "focus": null,
+          "text": "The complete path is simple: choose a bout, select recordings, save useful clips, and review them together. The parent controls each choice."
+        }
+      ]
+    }
+  ]
+}

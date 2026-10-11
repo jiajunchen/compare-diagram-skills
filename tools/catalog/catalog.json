@@ -1,0 +1,1121 @@
+{
+  "title": "Fencing Review — Result library",
+  "sections": [
+    {
+      "id": "architecture-videos",
+      "title": "Explore the architecture.",
+      "intro": "Choose the original technical script, simpler narration, or the dark presentation.",
+      "cards": [
+        {
+          "id": "editorial-architecture-original",
+          "title": "Original technical explanation",
+          "description": "The pre-STE script, rebuilt with editorial diagrams.",
+          "primary": {
+            "label": "Watch presentation",
+            "href": "editorial-architecture-original/index.html"
+          },
+          "preview": {
+            "kind": "video",
+            "source": "editorial-architecture-original/architecture-video.mp4",
+            "time": 66,
+            "caption": "Frame from the finished architecture video.",
+            "image": "previews/editorial-architecture-original.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagram Design",
+              "href": "https://github.com/cathrynlavery/diagram-design",
+              "role": "Diagram style"
+            },
+            {
+              "label": "Playwright",
+              "href": "https://github.com/microsoft/playwright-python",
+              "role": "Slide capture"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "MP4 video",
+              "href": "editorial-architecture-original/architecture-video.mp4"
+            },
+            {
+              "label": "Read script",
+              "href": "editorial-architecture-original/narration.md"
+            },
+            {
+              "label": "Captions",
+              "href": "editorial-architecture-original/architecture-video.srt"
+            },
+            {
+              "label": "Production notes",
+              "href": "editorial-architecture-original/README.md"
+            },
+            {
+              "label": "Presentation",
+              "href": "editorial-architecture-original/presentation.html"
+            },
+            {
+              "label": "Narration WAV",
+              "href": "editorial-architecture-original/narration.wav"
+            }
+          ],
+          "details": "",
+          "badge": "10:14 · Original script",
+          "imageCaption": "Frame from the finished architecture video."
+        },
+        {
+          "id": "editorial-architecture-video",
+          "title": "Simplified architecture explanation",
+          "description": "Shorter language with the approved editorial diagrams.",
+          "primary": {
+            "label": "Watch presentation",
+            "href": "editorial-architecture-video/index.html"
+          },
+          "preview": {
+            "kind": "video",
+            "source": "editorial-architecture-video/architecture-video.mp4",
+            "time": 52,
+            "caption": "Frame from the finished architecture video.",
+            "image": "previews/editorial-architecture-video.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagram Design",
+              "href": "https://github.com/cathrynlavery/diagram-design",
+              "role": "Diagram style"
+            },
+            {
+              "label": "Playwright",
+              "href": "https://github.com/microsoft/playwright-python",
+              "role": "Slide capture"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "MP4 video",
+              "href": "editorial-architecture-video/architecture-video.mp4"
+            },
+            {
+              "label": "Read script",
+              "href": "editorial-architecture-video/narration.md"
+            },
+            {
+              "label": "Captions",
+              "href": "editorial-architecture-video/architecture-video.srt"
+            },
+            {
+              "label": "Production notes",
+              "href": "editorial-architecture-video/README.md"
+            },
+            {
+              "label": "Presentation",
+              "href": "editorial-architecture-video/presentation.html"
+            },
+            {
+              "label": "Narration WAV",
+              "href": "editorial-architecture-video/narration.wav"
+            }
+          ],
+          "details": "",
+          "badge": "8:02 · Simplified English",
+          "imageCaption": "Frame from the finished architecture video."
+        },
+        {
+          "id": "architecture-video",
+          "title": "Dark 3b1b explanation",
+          "description": "Progressive diagrams, focus highlights, and narrated captions.",
+          "primary": {
+            "label": "Watch presentation",
+            "href": "architecture-video/architecture-video.html"
+          },
+          "preview": {
+            "kind": "video",
+            "source": "architecture-video/architecture-video.mp4",
+            "time": 52,
+            "caption": "Frame from the finished architecture video.",
+            "image": "previews/architecture-video.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Answer Me with HTML",
+              "href": "https://github.com/QingYunA/answer-me-with-html",
+              "role": "Explainer renderer"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "MP4 video",
+              "href": "architecture-video/architecture-video.mp4"
+            },
+            {
+              "label": "Read script",
+              "href": "architecture-video/narration.md"
+            },
+            {
+              "label": "Captions",
+              "href": "architecture-video/architecture-video.srt"
+            },
+            {
+              "label": "Production notes",
+              "href": "architecture-video/README.md"
+            }
+          ],
+          "details": "",
+          "badge": "9:08 · Dark presentation",
+          "imageCaption": "Frame from the finished architecture video."
+        }
+      ]
+    },
+    {
+      "id": "tutorial-videos",
+      "title": "Show parents and fencers what to do.",
+      "intro": "Real iPad recordings with fictional names, demo media, and highlighted controls.",
+      "cards": [
+        {
+          "id": "parent-fencer-tutorial-qwen",
+          "title": "Qwen instruction guide",
+          "description": "Aiden voice, measured word highlights, title pages, and pauses.",
+          "primary": {
+            "label": "Watch guide",
+            "href": "parent-fencer-tutorial-qwen/index.html"
+          },
+          "preview": {
+            "kind": "video",
+            "source": "parent-fencer-tutorial-qwen/parent-fencer-guide.mp4",
+            "time": 219,
+            "caption": "Frame from the finished iPad instruction video.",
+            "image": "previews/parent-fencer-tutorial-qwen.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagram Design",
+              "href": "https://github.com/cathrynlavery/diagram-design",
+              "role": "Diagram style"
+            },
+            {
+              "label": "MLX Audio",
+              "href": "https://github.com/Blaizzy/mlx-audio",
+              "role": "Local speech server"
+            },
+            {
+              "label": "Qwen3-TTS",
+              "href": "https://github.com/QwenLM/Qwen3-TTS",
+              "role": "Speech model"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "Full MP4",
+              "href": "parent-fencer-tutorial-qwen/parent-fencer-guide.mp4"
+            },
+            {
+              "label": "Read script",
+              "href": "parent-fencer-tutorial-qwen/narration.md"
+            },
+            {
+              "label": "Captions",
+              "href": "parent-fencer-tutorial-qwen/captions.srt"
+            },
+            {
+              "label": "Audio WAV",
+              "href": "parent-fencer-tutorial-qwen/narration.wav"
+            },
+            {
+              "label": "Production notes",
+              "href": "parent-fencer-tutorial-qwen/README.md"
+            }
+          ],
+          "details": "- [1. Add a fencer and a tournament](parent-fencer-tutorial-qwen/lesson-01.mp4)\n- [2. Add a schedule from Photos](parent-fencer-tutorial-qwen/lesson-02.mp4)\n- [3. Add a bout manually](parent-fencer-tutorial-qwen/lesson-03.mp4)\n- [4. Import videos into a bout](parent-fencer-tutorial-qwen/lesson-04.mp4)\n- [5. Create clips and use favorites](parent-fencer-tutorial-qwen/lesson-05.mp4)\n- [6. Delete review clips](parent-fencer-tutorial-qwen/lesson-06.mp4)\n- [7. Clear local copies](parent-fencer-tutorial-qwen/lesson-07.mp4)",
+          "badge": "6:56 · Qwen Aiden",
+          "imageCaption": "Frame from the finished iPad instruction video."
+        },
+        {
+          "id": "parent-fencer-tutorial-paced",
+          "title": "Paced instruction guide",
+          "description": "ElevenLabs voice with title pages, reading pauses, and tap holds.",
+          "primary": {
+            "label": "Watch guide",
+            "href": "parent-fencer-tutorial-paced/index.html"
+          },
+          "preview": {
+            "kind": "video",
+            "source": "parent-fencer-tutorial-paced/parent-fencer-guide.mp4",
+            "time": 249,
+            "caption": "Frame from the finished iPad instruction video.",
+            "image": "previews/parent-fencer-tutorial-paced.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagram Design",
+              "href": "https://github.com/cathrynlavery/diagram-design",
+              "role": "Diagram style"
+            },
+            {
+              "label": "Playwright",
+              "href": "https://github.com/microsoft/playwright-python",
+              "role": "Slide capture"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "Full MP4",
+              "href": "parent-fencer-tutorial-paced/parent-fencer-guide.mp4"
+            },
+            {
+              "label": "Read script",
+              "href": "parent-fencer-tutorial-paced/narration.md"
+            },
+            {
+              "label": "Captions",
+              "href": "parent-fencer-tutorial-paced/captions.srt"
+            },
+            {
+              "label": "Audio WAV",
+              "href": "parent-fencer-tutorial-paced/narration.wav"
+            },
+            {
+              "label": "Production notes",
+              "href": "parent-fencer-tutorial-paced/README.md"
+            }
+          ],
+          "details": "- [1. Add a fencer and a tournament](parent-fencer-tutorial-paced/lesson-01.mp4)\n- [2. Add a schedule from Photos](parent-fencer-tutorial-paced/lesson-02.mp4)\n- [3. Add a bout manually](parent-fencer-tutorial-paced/lesson-03.mp4)\n- [4. Import videos into a bout](parent-fencer-tutorial-paced/lesson-04.mp4)\n- [5. Create clips and use favorites](parent-fencer-tutorial-paced/lesson-05.mp4)\n- [6. Delete review clips](parent-fencer-tutorial-paced/lesson-06.mp4)\n- [7. Clear local copies](parent-fencer-tutorial-paced/lesson-07.mp4)",
+          "badge": "7:45 · ElevenLabs",
+          "imageCaption": "Frame from the finished iPad instruction video."
+        },
+        {
+          "id": "parent-fencer-tutorial",
+          "title": "First instruction guide",
+          "description": "The first recorded iPad walkthrough with seven lessons.",
+          "primary": {
+            "label": "Watch guide",
+            "href": "parent-fencer-tutorial/index.html"
+          },
+          "preview": {
+            "kind": "video",
+            "source": "parent-fencer-tutorial/parent-fencer-guide.mp4",
+            "time": 157,
+            "caption": "Frame from the finished iPad instruction video.",
+            "image": "previews/parent-fencer-tutorial.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagram Design",
+              "href": "https://github.com/cathrynlavery/diagram-design",
+              "role": "Diagram style"
+            },
+            {
+              "label": "Playwright",
+              "href": "https://github.com/microsoft/playwright-python",
+              "role": "Slide capture"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "Full MP4",
+              "href": "parent-fencer-tutorial/parent-fencer-guide.mp4"
+            },
+            {
+              "label": "Read script",
+              "href": "parent-fencer-tutorial/narration.md"
+            },
+            {
+              "label": "Captions",
+              "href": "parent-fencer-tutorial/captions.srt"
+            },
+            {
+              "label": "Audio WAV",
+              "href": "parent-fencer-tutorial/narration.wav"
+            },
+            {
+              "label": "Production notes",
+              "href": "parent-fencer-tutorial/README.md"
+            }
+          ],
+          "details": "- [1. Add a fencer and a tournament](parent-fencer-tutorial/lesson-01.mp4)\n- [2. Add a schedule from Photos](parent-fencer-tutorial/lesson-02.mp4)\n- [3. Add a bout manually](parent-fencer-tutorial/lesson-03.mp4)\n- [4. Import videos into a bout](parent-fencer-tutorial/lesson-04.mp4)\n- [5. Create clips and use favorites](parent-fencer-tutorial/lesson-05.mp4)\n- [6. Delete review clips](parent-fencer-tutorial/lesson-06.mp4)\n- [7. Clear local copies](parent-fencer-tutorial/lesson-07.mp4)",
+          "badge": "5:04 · First edition",
+          "imageCaption": "Frame from the finished iPad instruction video."
+        }
+      ]
+    },
+    {
+      "id": "html-guides",
+      "title": "Read the app, one pathway at a time.",
+      "intro": "Open a detailed architecture page and follow its diagrams and function references.",
+      "cards": [
+        {
+          "id": "diagram-design",
+          "title": "Editorial architecture atlas",
+          "description": "The approved paper-and-ink diagrams, with code references and storage boundaries.",
+          "primary": {
+            "label": "Open atlas",
+            "href": "diagram-design/architecture.html"
+          },
+          "preview": {
+            "kind": "page",
+            "source": "diagram-design/architecture.html",
+            "selector": "#overview",
+            "caption": "Screenshot of the atlas overview diagram.",
+            "image": "previews/diagram-design.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagram Design",
+              "href": "https://github.com/cathrynlavery/diagram-design",
+              "role": "Diagram style"
+            }
+          ],
+          "links": [
+            {
+              "label": "Style guide",
+              "href": "diagram-design/style-guide.md"
+            },
+            {
+              "label": "Source index",
+              "href": "diagram-design/source-index.json"
+            },
+            {
+              "label": "Production notes",
+              "href": "diagram-design/README.md"
+            }
+          ],
+          "details": "",
+          "badge": "Editorial · HTML",
+          "imageCaption": "Screenshot of the atlas overview diagram."
+        },
+        {
+          "id": "answer-me-with-html",
+          "title": "Detailed operations guide",
+          "description": "Follow user actions, triggered functions, data flow, and failure handling.",
+          "primary": {
+            "label": "Open guide",
+            "href": "answer-me-with-html/architecture.html"
+          },
+          "preview": {
+            "kind": "page",
+            "source": "answer-me-with-html/architecture.html",
+            "selector": "figure",
+            "caption": "Screenshot of a diagram in the detailed operations guide.",
+            "image": "previews/answer-me-with-html.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Answer Me with HTML",
+              "href": "https://github.com/QingYunA/answer-me-with-html",
+              "role": "Explainer renderer"
+            }
+          ],
+          "links": [
+            {
+              "label": "Authoring source",
+              "href": "answer-me-with-html/architecture.md"
+            },
+            {
+              "label": "Production notes",
+              "href": "answer-me-with-html/README.md"
+            }
+          ],
+          "details": "",
+          "badge": "Operations · HTML",
+          "imageCaption": "Screenshot of a diagram in the detailed operations guide."
+        },
+        {
+          "id": "visual-explainer",
+          "title": "Visual codebase review",
+          "description": "A source-traced review with architecture, pathways, and logic findings.",
+          "primary": {
+            "label": "Open review",
+            "href": "visual_explainer/codebase_review.html"
+          },
+          "preview": {
+            "kind": "page",
+            "source": "visual_explainer/codebase_review.html",
+            "selector": "figure",
+            "caption": "Screenshot of the visual codebase review.",
+            "image": "previews/visual-explainer.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Visual Explainer",
+              "href": "https://github.com/nicobailon/visual-explainer",
+              "role": "Explainer skill"
+            }
+          ],
+          "links": [
+            {
+              "label": "Analysis and findings",
+              "href": "reference/codebase-analysis.md"
+            }
+          ],
+          "details": "",
+          "badge": "Code review · HTML",
+          "imageCaption": "Screenshot of the visual codebase review."
+        }
+      ]
+    },
+    {
+      "id": "diagram-sets",
+      "title": "Find the diagram style you want.",
+      "intro": "Each collection includes architecture, entities, object calls, organization pathways, and media pathways.",
+      "cards": [
+        {
+          "id": "graphviz",
+          "title": "Original Graphviz",
+          "description": "The original layout, with editable DOT source and print exports.",
+          "primary": {
+            "label": "Open architecture",
+            "href": "graphviz/01_architecture.svg"
+          },
+          "preview": {
+            "kind": "image",
+            "source": "graphviz/01_architecture.svg",
+            "caption": "Screenshot of the architecture diagram in this collection.",
+            "image": "previews/graphviz.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Graphviz",
+              "href": "https://gitlab.com/graphviz/graphviz",
+              "role": "Diagram layout"
+            },
+            {
+              "label": "Python graphviz",
+              "href": "https://github.com/xflr6/graphviz",
+              "role": "Python interface"
+            }
+          ],
+          "links": [],
+          "details": "| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [SVG](graphviz/01_architecture.svg) · [PDF](graphviz/01_architecture.pdf) · [PNG](graphviz/01_architecture.png) · [GV](graphviz/01_architecture.gv) |\n| Entity relationships | [SVG](graphviz/02a_entities.svg) · [PDF](graphviz/02a_entities.pdf) · [PNG](graphviz/02a_entities.png) · [GV](graphviz/02a_entities.gv) |\n| Object calls | [SVG](graphviz/02b_object_calls.svg) · [PDF](graphviz/02b_object_calls.pdf) · [PNG](graphviz/02b_object_calls.png) · [GV](graphviz/02b_object_calls.gv) |\n| Launch, tournaments, and schedules | [SVG](graphviz/03a_organization_pathways.svg) · [PDF](graphviz/03a_organization_pathways.pdf) · [PNG](graphviz/03a_organization_pathways.png) · [GV](graphviz/03a_organization_pathways.gv) |\n| Recording, clips, playback, and cleanup | [SVG](graphviz/03b_media_pathways.svg) · [PDF](graphviz/03b_media_pathways.pdf) · [PNG](graphviz/03b_media_pathways.png) · [GV](graphviz/03b_media_pathways.gv) |",
+          "badge": "Five topics · Diagram set",
+          "imageCaption": "Screenshot of the architecture diagram in this collection."
+        },
+        {
+          "id": "diagrams_library",
+          "title": "Python Diagrams",
+          "description": "The same architecture rendered with the Diagrams package.",
+          "primary": {
+            "label": "Open architecture",
+            "href": "diagrams_library/01_architecture.svg"
+          },
+          "preview": {
+            "kind": "image",
+            "source": "diagrams_library/01_architecture.svg",
+            "caption": "Screenshot of the architecture diagram in this collection.",
+            "image": "previews/diagrams_library.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagrams",
+              "href": "https://github.com/mingrammer/diagrams",
+              "role": "Diagram package"
+            },
+            {
+              "label": "Graphviz",
+              "href": "https://gitlab.com/graphviz/graphviz",
+              "role": "Diagram layout"
+            }
+          ],
+          "links": [],
+          "details": "| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [SVG](diagrams_library/01_architecture.svg) · [PDF](diagrams_library/01_architecture.pdf) · [PNG](diagrams_library/01_architecture.png) |\n| Entity relationships | [SVG](diagrams_library/02a_entities.svg) · [PDF](diagrams_library/02a_entities.pdf) · [PNG](diagrams_library/02a_entities.png) |\n| Object calls | [SVG](diagrams_library/02b_object_calls.svg) · [PDF](diagrams_library/02b_object_calls.pdf) · [PNG](diagrams_library/02b_object_calls.png) |\n| Launch, tournaments, and schedules | [SVG](diagrams_library/03a_organization_pathways.svg) · [PDF](diagrams_library/03a_organization_pathways.pdf) · [PNG](diagrams_library/03a_organization_pathways.png) |\n| Recording, clips, playback, and cleanup | [SVG](diagrams_library/03b_media_pathways.svg) · [PDF](diagrams_library/03b_media_pathways.pdf) · [PNG](diagrams_library/03b_media_pathways.png) |",
+          "badge": "Five topics · Diagram set",
+          "imageCaption": "Screenshot of the architecture diagram in this collection."
+        },
+        {
+          "id": "plantuml",
+          "title": "PlantUML",
+          "description": "Dark diagrams with editable PlantUML source and print exports.",
+          "primary": {
+            "label": "Open architecture",
+            "href": "plantuml/01_architecture.svg"
+          },
+          "preview": {
+            "kind": "image",
+            "source": "plantuml/01_architecture.svg",
+            "caption": "Screenshot of the architecture diagram in this collection.",
+            "image": "previews/plantuml.jpg"
+          },
+          "repositories": [
+            {
+              "label": "PlantUML",
+              "href": "https://github.com/plantuml/plantuml",
+              "role": "Diagram renderer"
+            },
+            {
+              "label": "Diagram Creator",
+              "href": "https://github.com/ferdinandobons/diagram-creator-skill",
+              "role": "Diagram skill"
+            }
+          ],
+          "links": [],
+          "details": "| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [SVG](plantuml/01_architecture.svg) · [PDF](plantuml/01_architecture.pdf) · [PNG](plantuml/01_architecture.png) · [PUML](plantuml/01_architecture.puml) |\n| Entity relationships | [SVG](plantuml/02a_entities.svg) · [PDF](plantuml/02a_entities.pdf) · [PNG](plantuml/02a_entities.png) · [PUML](plantuml/02a_entities.puml) |\n| Object calls | [SVG](plantuml/02b_object_calls.svg) · [PDF](plantuml/02b_object_calls.pdf) · [PNG](plantuml/02b_object_calls.png) · [PUML](plantuml/02b_object_calls.puml) |\n| Launch, tournaments, and schedules | [SVG](plantuml/03a_organization_pathways.svg) · [PDF](plantuml/03a_organization_pathways.pdf) · [PNG](plantuml/03a_organization_pathways.png) · [PUML](plantuml/03a_organization_pathways.puml) |\n| Recording, clips, playback, and cleanup | [SVG](plantuml/03b_media_pathways.svg) · [PDF](plantuml/03b_media_pathways.pdf) · [PNG](plantuml/03b_media_pathways.png) · [PUML](plantuml/03b_media_pathways.puml) |",
+          "badge": "Five topics · Diagram set",
+          "imageCaption": "Screenshot of the architecture diagram in this collection."
+        },
+        {
+          "id": "cocoon_generator",
+          "title": "Cocoon architecture diagrams",
+          "description": "Dark HTML diagrams with standalone SVG, PDF, and PNG exports.",
+          "primary": {
+            "label": "Open architecture",
+            "href": "cocoon_generator/01_architecture.html"
+          },
+          "preview": {
+            "kind": "page",
+            "source": "cocoon_generator/01_architecture.html",
+            "selector": "svg",
+            "caption": "Screenshot of the architecture diagram in this collection.",
+            "image": "previews/cocoon_generator.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Cocoon diagram generator",
+              "href": "https://github.com/Cocoon-AI/architecture-diagram-generator",
+              "role": "Diagram skill"
+            }
+          ],
+          "links": [],
+          "details": "| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [HTML](cocoon_generator/01_architecture.html) · [SVG](cocoon_generator/01_architecture.svg) · [PDF](cocoon_generator/01_architecture.pdf) · [PNG](cocoon_generator/01_architecture.png) |\n| Entity relationships | [HTML](cocoon_generator/02a_entities.html) · [SVG](cocoon_generator/02a_entities.svg) · [PDF](cocoon_generator/02a_entities.pdf) · [PNG](cocoon_generator/02a_entities.png) |\n| Object calls | [HTML](cocoon_generator/02b_object_calls.html) · [SVG](cocoon_generator/02b_object_calls.svg) · [PDF](cocoon_generator/02b_object_calls.pdf) · [PNG](cocoon_generator/02b_object_calls.png) |\n| Launch, tournaments, and schedules | [HTML](cocoon_generator/03a_organization_pathways.html) · [SVG](cocoon_generator/03a_organization_pathways.svg) · [PDF](cocoon_generator/03a_organization_pathways.pdf) · [PNG](cocoon_generator/03a_organization_pathways.png) |\n| Recording, clips, playback, and cleanup | [HTML](cocoon_generator/03b_media_pathways.html) · [SVG](cocoon_generator/03b_media_pathways.svg) · [PDF](cocoon_generator/03b_media_pathways.pdf) · [PNG](cocoon_generator/03b_media_pathways.png) |",
+          "badge": "Five topics · Diagram set",
+          "imageCaption": "Screenshot of the architecture diagram in this collection."
+        },
+        {
+          "id": "interactive",
+          "title": "Interactive architecture diagrams",
+          "description": "Step through scenarios, move nodes, and inspect each handoff.",
+          "primary": {
+            "label": "Open architecture",
+            "href": "interactive/01_architecture.html"
+          },
+          "preview": {
+            "kind": "page",
+            "source": "interactive/01_architecture.html",
+            "selector": ".canvas",
+            "caption": "Screenshot of the architecture diagram in this collection.",
+            "image": "previews/interactive.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Architecture Diagram Skill",
+              "href": "https://github.com/konraddzbik/architecture-diagram-skill",
+              "role": "Interactive diagram skill"
+            }
+          ],
+          "links": [],
+          "details": "| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [HTML](interactive/01_architecture.html) · [Description](interactive/01_architecture.md) |\n| Entity relationships | [HTML](interactive/02a_entities.html) · [Description](interactive/02a_entities.md) |\n| Object calls | [HTML](interactive/02b_object_calls.html) · [Description](interactive/02b_object_calls.md) |\n| Launch, tournaments, and schedules | [HTML](interactive/03a_organization_pathways.html) · [Description](interactive/03a_organization_pathways.md) |\n| Recording, clips, playback, and cleanup | [HTML](interactive/03b_media_pathways.html) · [Description](interactive/03b_media_pathways.md) |",
+          "badge": "Five topics · Diagram set",
+          "imageCaption": "Screenshot of the architecture diagram in this collection."
+        },
+        {
+          "id": "diagram_creator",
+          "title": "Diagram Creator",
+          "description": "Separate diagram pages with pan, zoom, and fit controls.",
+          "primary": {
+            "label": "Open architecture",
+            "href": "diagram_creator/diagram-01_architecture.html"
+          },
+          "preview": {
+            "kind": "page",
+            "source": "diagram_creator/diagram-01_architecture.html",
+            "selector": ".artboard",
+            "caption": "Screenshot of the architecture diagram in this collection.",
+            "image": "previews/diagram_creator.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Diagram Creator",
+              "href": "https://github.com/ferdinandobons/diagram-creator-skill",
+              "role": "Diagram skill"
+            }
+          ],
+          "links": [],
+          "details": "| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [HTML](diagram_creator/diagram-01_architecture.html) |\n| Entity relationships | [HTML](diagram_creator/diagram-02a_entities.html) |\n| Object calls | [HTML](diagram_creator/diagram-02b_object_calls.html) |\n| Launch, tournaments, and schedules | [HTML](diagram_creator/diagram-03a_organization_pathways.html) |\n| Recording, clips, playback, and cleanup | [HTML](diagram_creator/diagram-03b_media_pathways.html) |",
+          "badge": "Five topics · Diagram set",
+          "imageCaption": "Screenshot of the architecture diagram in this collection."
+        },
+        {
+          "id": "obsidian_canvas",
+          "title": "Obsidian Canvas",
+          "description": "Editable JSON Canvas boards for an Obsidian vault.",
+          "primary": {
+            "label": "Open architecture",
+            "href": "obsidian_canvas/01_architecture.canvas"
+          },
+          "preview": {
+            "kind": "canvas",
+            "source": "obsidian_canvas/01_architecture.canvas",
+            "caption": "Browser rendering of the actual JSON Canvas source; not an Obsidian app capture.",
+            "image": "previews/obsidian_canvas.jpg"
+          },
+          "repositories": [
+            {
+              "label": "JSON Canvas",
+              "href": "https://github.com/obsidianmd/jsoncanvas",
+              "role": "Canvas format"
+            },
+            {
+              "label": "Graphviz",
+              "href": "https://gitlab.com/graphviz/graphviz",
+              "role": "Diagram layout"
+            }
+          ],
+          "links": [],
+          "details": "| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [CANVAS](obsidian_canvas/01_architecture.canvas) |\n| Entity relationships | [CANVAS](obsidian_canvas/02a_entities.canvas) |\n| Object calls | [CANVAS](obsidian_canvas/02b_object_calls.canvas) |\n| Launch, tournaments, and schedules | [CANVAS](obsidian_canvas/03a_organization_pathways.canvas) |\n| Recording, clips, playback, and cleanup | [CANVAS](obsidian_canvas/03b_media_pathways.canvas) |",
+          "badge": "Five topics · Canvas",
+          "imageCaption": "Browser rendering of the actual JSON Canvas source; not an Obsidian app capture."
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "title": "Listen to the narration experiments.",
+      "intro": "Compare the original voice with the more restrained instruction voice.",
+      "cards": [
+        {
+          "id": "audio-aiden",
+          "title": "Aiden instruction voice",
+          "description": "Sentence recordings at native speed, with explicit reading pauses.",
+          "primary": {
+            "label": "Play full narration",
+            "href": "local-qwen-narration/instructional/instructional-narration.mp3"
+          },
+          "preview": {
+            "kind": "audio",
+            "source": "local-qwen-narration/instructional/instructional-narration.wav",
+            "caption": "Waveform from the actual narration recording.",
+            "image": "previews/audio-aiden.jpg"
+          },
+          "repositories": [
+            {
+              "label": "MLX Audio",
+              "href": "https://github.com/Blaizzy/mlx-audio",
+              "role": "Local speech server"
+            },
+            {
+              "label": "Qwen3-TTS",
+              "href": "https://github.com/QwenLM/Qwen3-TTS",
+              "role": "Speech model"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "Lossless WAV",
+              "href": "local-qwen-narration/instructional/instructional-narration.wav"
+            },
+            {
+              "label": "Voice notes",
+              "href": "local-qwen-narration/instructional/README.md"
+            },
+            {
+              "label": "Generation report",
+              "href": "local-qwen-narration/instructional/generation-report.json"
+            }
+          ],
+          "details": "- [1. Add a fencer and a tournament](local-qwen-narration/instructional/lesson-01.wav)\n- [2. Add a schedule from Photos](local-qwen-narration/instructional/lesson-02.wav)\n- [3. Add a bout manually](local-qwen-narration/instructional/lesson-03.wav)\n- [4. Import videos into a bout](local-qwen-narration/instructional/lesson-04.wav)\n- [5. Create clips and use favorites](local-qwen-narration/instructional/lesson-05.wav)\n- [6. Delete review clips](local-qwen-narration/instructional/lesson-06.wav)\n- [7. Clear local copies](local-qwen-narration/instructional/lesson-07.wav)",
+          "badge": "Instruction voice · Local",
+          "imageCaption": "Waveform from the actual narration recording."
+        },
+        {
+          "id": "audio-ryan",
+          "title": "Ryan voice experiment",
+          "description": "The first full narration test and its hardware measurements.",
+          "primary": {
+            "label": "Play full narration",
+            "href": "local-qwen-narration/qwen-narration.mp3"
+          },
+          "preview": {
+            "kind": "audio",
+            "source": "local-qwen-narration/qwen-narration.wav",
+            "caption": "Waveform from the actual narration recording.",
+            "image": "previews/audio-ryan.jpg"
+          },
+          "repositories": [
+            {
+              "label": "MLX Audio",
+              "href": "https://github.com/Blaizzy/mlx-audio",
+              "role": "Local speech server"
+            },
+            {
+              "label": "Qwen3-TTS",
+              "href": "https://github.com/QwenLM/Qwen3-TTS",
+              "role": "Speech model"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "Lossless WAV",
+              "href": "local-qwen-narration/qwen-narration.wav"
+            },
+            {
+              "label": "Voice notes",
+              "href": "local-qwen-narration/README.md"
+            },
+            {
+              "label": "Generation report",
+              "href": "local-qwen-narration/generation-report.json"
+            }
+          ],
+          "details": "- [1. Add a fencer and a tournament](local-qwen-narration/lesson-01.wav)\n- [2. Add a schedule from Photos](local-qwen-narration/lesson-02.wav)\n- [3. Add a bout manually](local-qwen-narration/lesson-03.wav)\n- [4. Import videos into a bout](local-qwen-narration/lesson-04.wav)\n- [5. Create clips and use favorites](local-qwen-narration/lesson-05.wav)\n- [6. Delete review clips](local-qwen-narration/lesson-06.wav)\n- [7. Clear local copies](local-qwen-narration/lesson-07.wav)",
+          "badge": "Initial experiment · Local",
+          "imageCaption": "Waveform from the actual narration recording."
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "title": "Keep the sources and tools close.",
+      "intro": "Read the function index, inspect the analysis, or reuse the production tools.",
+      "cards": [
+        {
+          "id": "reference-index",
+          "title": "Function index and analysis",
+          "description": "Find function declarations, architecture findings, and diagram quality checks.",
+          "primary": {
+            "label": "Open function index",
+            "href": "CALL_INDEX.md"
+          },
+          "preview": {
+            "kind": "document",
+            "source": "CALL_INDEX.md",
+            "caption": "Rendered excerpt from the actual function declaration index.",
+            "image": "previews/reference-index.jpg"
+          },
+          "repositories": [],
+          "links": [
+            {
+              "label": "Codebase analysis",
+              "href": "reference/codebase-analysis.md"
+            },
+            {
+              "label": "Diagram quality report",
+              "href": "graphviz/quality_report.md"
+            }
+          ],
+          "details": "",
+          "badge": "Sources · Documentation",
+          "imageCaption": "Rendered excerpt from the actual function declaration index."
+        },
+        {
+          "id": "production-tools",
+          "title": "Production tools",
+          "description": "Reuse the scripts, dependencies, source assets, and verification checks.",
+          "primary": {
+            "label": "Open tools guide",
+            "href": "tools/README.md"
+          },
+          "preview": {
+            "kind": "document",
+            "source": "tools/README.md",
+            "caption": "Rendered excerpt from the production tools guide.",
+            "image": "previews/production-tools.jpg"
+          },
+          "repositories": [
+            {
+              "label": "Playwright",
+              "href": "https://github.com/microsoft/playwright-python",
+              "role": "Slide capture"
+            },
+            {
+              "label": "FFmpeg",
+              "href": "https://github.com/FFmpeg/FFmpeg",
+              "role": "Video and audio export"
+            }
+          ],
+          "links": [
+            {
+              "label": "Scripts folder",
+              "href": "tools/"
+            },
+            {
+              "label": "Organization manifest",
+              "href": "tools/organization-report.json"
+            },
+            {
+              "label": "Diagram requirements",
+              "href": "tools/diagrams/requirements.txt"
+            },
+            {
+              "label": "Qwen requirements",
+              "href": "tools/local-qwen-narration/requirements-lock.txt"
+            }
+          ],
+          "details": "",
+          "badge": "Reusable · Local scripts",
+          "imageCaption": "Rendered excerpt from the production tools guide."
+        }
+      ]
+    }
+  ],
+  "completeIndexMarkdown": "# Diagrams, presentations, video guides, and narration\n\nThis is the complete index of the finished results from the diagram and video experiments. Open HTML files in a browser; video players link to their downloadable MP4 files. Finished media is included in this repository. Raw production assets remain local. Skill and package repository links appear beside the collections that used them; local production scripts are in [tools/](tools/README.md).\n\nStart with the [editorial architecture atlas](diagram-design/architecture.html), the [original technical architecture video](editorial-architecture-original/index.html), or the [parent and fencer guide with Qwen narration](parent-fencer-tutorial-qwen/index.html).\n\n## Architecture videos\n\nSkills: the two editorial editions use [Diagram Design](https://github.com/cathrynlavery/diagram-design) for their diagrams and style; the dark 3b1b edition uses [Answer Me with HTML](https://github.com/QingYunA/answer-me-with-html) and its bundled video renderer. The editorial editions use our [local presentation scripts](tools/README.md#architecture-presentations), [Playwright for Python](https://github.com/microsoft/playwright-python) for slide capture, and [FFmpeg](https://github.com/FFmpeg/FFmpeg) for video assembly. Their original speech uses the [ElevenLabs API](https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps), including the recovered narration in the pre-STE rebuild.\n\n| Edition | Length | Watch | Video | Script | Captions |\n| --- | --- | --- | --- | --- | --- |\n| Original pre-ASD-STE100 narration, editorial diagrams | 10:14 | [Chapter player](editorial-architecture-original/index.html) · [Presentation](editorial-architecture-original/presentation.html) | [MP4](editorial-architecture-original/architecture-video.mp4) | [Narration](editorial-architecture-original/narration.md) · [Original script](editorial-architecture-original/original-script.md) | [SRT](editorial-architecture-original/architecture-video.srt) |\n| STE-inspired narration, editorial diagrams | 8:02 | [Chapter player](editorial-architecture-video/index.html) · [Presentation](editorial-architecture-video/presentation.html) | [MP4](editorial-architecture-video/architecture-video.mp4) | [Narration](editorial-architecture-video/narration.md) | [SRT](editorial-architecture-video/architecture-video.srt) |\n| STE-inspired narration, dark 3b1b presentation | 9:08 | [Narrated presentation](architecture-video/architecture-video.html) | [MP4](architecture-video/architecture-video.mp4) | [Narration](architecture-video/narration.md) · [Authoring source](architecture-video/architecture-video.md) | [SRT](architecture-video/architecture-video.srt) |\n\nThe original pre-STE dark video was previously overwritten. Its narration was recovered for the editorial edition above. These are historical explanations of the app at their recorded source revisions; current decisions are in `ARCHITECTURE.md` (original local source).\n\nProduction notes: [original editorial](editorial-architecture-original/README.md), [STE editorial](editorial-architecture-video/README.md), [dark presentation](architecture-video/README.md). Standalone narration: [original editorial WAV](editorial-architecture-original/narration.wav), [STE editorial WAV](editorial-architecture-video/narration.wav).\n\n## Parent and fencer instruction videos\n\nStyle comes from [Diagram Design](https://github.com/cathrynlavery/diagram-design). These walkthroughs use our [local tutorial scripts](tools/README.md#parent-and-fencer-videos), Xcode Simulator recordings, [Playwright for Python](https://github.com/microsoft/playwright-python) for slide capture, and [FFmpeg](https://github.com/FFmpeg/FFmpeg) for timing, magnification, highlights, transitions, and export. The Qwen edition uses [MLX Audio](https://github.com/Blaizzy/mlx-audio) with [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) speech and the [Qwen3 ForcedAligner model](https://huggingface.co/mlx-community/Qwen3-ForcedAligner-0.6B-8bit) for transcript timing. The first and paced editions use the [ElevenLabs API](https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps).\n\n| Edition | Length | Watch | Full video | Script | Captions |\n| --- | --- | --- | --- | --- | --- |\n| Qwen Aiden voice; measured word highlighting, title cards, transitions, and pauses | 6:56 | [Chapter player](parent-fencer-tutorial-qwen/index.html) | [MP4](parent-fencer-tutorial-qwen/parent-fencer-guide.mp4) | [Narration](parent-fencer-tutorial-qwen/narration.md) | [SRT](parent-fencer-tutorial-qwen/captions.srt) |\n| ElevenLabs voice; title cards, transitions, and slower pacing | 7:45 | [Chapter player](parent-fencer-tutorial-paced/index.html) | [MP4](parent-fencer-tutorial-paced/parent-fencer-guide.mp4) | [Narration](parent-fencer-tutorial-paced/narration.md) | [SRT](parent-fencer-tutorial-paced/captions.srt) |\n| First ElevenLabs edition | 5:04 | [Chapter player](parent-fencer-tutorial/index.html) | [MP4](parent-fencer-tutorial/parent-fencer-guide.mp4) | [Narration](parent-fencer-tutorial/narration.md) | [SRT](parent-fencer-tutorial/captions.srt) |\n\nEach edition also has seven standalone demonstrations. All use fictional names and demo media.\n\n| Demonstration | Qwen | Paced ElevenLabs | First edition |\n| --- | --- | --- | --- |\n| 1. Add a fencer and a tournament | [MP4](parent-fencer-tutorial-qwen/lesson-01.mp4) | [MP4](parent-fencer-tutorial-paced/lesson-01.mp4) | [MP4](parent-fencer-tutorial/lesson-01.mp4) |\n| 2. Add a schedule from a Photos screenshot | [MP4](parent-fencer-tutorial-qwen/lesson-02.mp4) | [MP4](parent-fencer-tutorial-paced/lesson-02.mp4) | [MP4](parent-fencer-tutorial/lesson-02.mp4) |\n| 3. Add a bout manually | [MP4](parent-fencer-tutorial-qwen/lesson-03.mp4) | [MP4](parent-fencer-tutorial-paced/lesson-03.mp4) | [MP4](parent-fencer-tutorial/lesson-03.mp4) |\n| 4. Import videos into a bout | [MP4](parent-fencer-tutorial-qwen/lesson-04.mp4) | [MP4](parent-fencer-tutorial-paced/lesson-04.mp4) | [MP4](parent-fencer-tutorial/lesson-04.mp4) |\n| 5. Create review clips and understand favorites | [MP4](parent-fencer-tutorial-qwen/lesson-05.mp4) | [MP4](parent-fencer-tutorial-paced/lesson-05.mp4) | [MP4](parent-fencer-tutorial/lesson-05.mp4) |\n| 6. Delete review clips | [MP4](parent-fencer-tutorial-qwen/lesson-06.mp4) | [MP4](parent-fencer-tutorial-paced/lesson-06.mp4) | [MP4](parent-fencer-tutorial/lesson-06.mp4) |\n| 7. Clear local copies from the fencer page | [MP4](parent-fencer-tutorial-qwen/lesson-07.mp4) | [MP4](parent-fencer-tutorial-paced/lesson-07.mp4) | [MP4](parent-fencer-tutorial/lesson-07.mp4) |\n\nProduction notes: [Qwen](parent-fencer-tutorial-qwen/README.md), [paced ElevenLabs](parent-fencer-tutorial-paced/README.md), [first edition](parent-fencer-tutorial/README.md), [capture notes](parent-fencer-tutorial/PRODUCTION_NOTES.md). Standalone narration: [Qwen WAV](parent-fencer-tutorial-qwen/narration.wav), [paced WAV](parent-fencer-tutorial-paced/narration.wav), [first edition WAV](parent-fencer-tutorial/narration.wav), [spoken titles WAV](parent-fencer-tutorial-paced/title-narration.wav).\n\n## Complete HTML architecture explanations\n\n| Collection | Finished result | Supporting material |\n| --- | --- | --- |\n| [Diagram Design](https://github.com/cathrynlavery/diagram-design): editorial atlas | [Architecture atlas](diagram-design/architecture.html) | [README](diagram-design/README.md) · [Style guide](diagram-design/style-guide.md) · [Source index](diagram-design/source-index.json) |\n| [Answer Me with HTML](https://github.com/QingYunA/answer-me-with-html): detailed operations and triggered functions | [Interactive guide](answer-me-with-html/architecture.html) | [Authoring source](answer-me-with-html/architecture.md) · [README](answer-me-with-html/README.md) |\n| [Visual Explainer](https://github.com/nicobailon/visual-explainer): codebase review | [Architecture and workflow review](visual_explainer/codebase_review.html) | [Original analysis and findings](reference/codebase-analysis.md) |\n\n## Five-topic diagram collections\n\nEach collection covers the same five topics. Landscape diagrams cover architecture, entities, and calls; portrait diagrams cover the two operation pathways.\n\n### Original Graphviz diagrams\n\nPackages: [Graphviz](https://gitlab.com/graphviz/graphviz) for layout and [Python graphviz](https://github.com/xflr6/graphviz) for DOT authoring. Reuse the [local generator](tools/diagrams/generate_diagrams.py); versions are recorded in [requirements.txt](tools/diagrams/requirements.txt).\n\n| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [SVG](graphviz/01_architecture.svg) · [PDF](graphviz/01_architecture.pdf) · [PNG](graphviz/01_architecture.png) · [GV](graphviz/01_architecture.gv) |\n| Entity relationships | [SVG](graphviz/02a_entities.svg) · [PDF](graphviz/02a_entities.pdf) · [PNG](graphviz/02a_entities.png) · [GV](graphviz/02a_entities.gv) |\n| Object calls | [SVG](graphviz/02b_object_calls.svg) · [PDF](graphviz/02b_object_calls.pdf) · [PNG](graphviz/02b_object_calls.png) · [GV](graphviz/02b_object_calls.gv) |\n| Launch, tournaments, and schedules | [SVG](graphviz/03a_organization_pathways.svg) · [PDF](graphviz/03a_organization_pathways.pdf) · [PNG](graphviz/03a_organization_pathways.png) · [GV](graphviz/03a_organization_pathways.gv) |\n| Recording, clips, playback, and cleanup | [SVG](graphviz/03b_media_pathways.svg) · [PDF](graphviz/03b_media_pathways.pdf) · [PNG](graphviz/03b_media_pathways.png) · [GV](graphviz/03b_media_pathways.gv) |\n\n### Python Diagrams\n\nPackage: [Diagrams](https://github.com/mingrammer/diagrams), using [Graphviz](https://gitlab.com/graphviz/graphviz) for rendering. Reuse the [alternative-renderer generator](tools/diagrams/generate_alternatives.py).\n\n| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [SVG](diagrams_library/01_architecture.svg) · [PDF](diagrams_library/01_architecture.pdf) · [PNG](diagrams_library/01_architecture.png) |\n| Entity relationships | [SVG](diagrams_library/02a_entities.svg) · [PDF](diagrams_library/02a_entities.pdf) · [PNG](diagrams_library/02a_entities.png) |\n| Object calls | [SVG](diagrams_library/02b_object_calls.svg) · [PDF](diagrams_library/02b_object_calls.pdf) · [PNG](diagrams_library/02b_object_calls.png) |\n| Launch, tournaments, and schedules | [SVG](diagrams_library/03a_organization_pathways.svg) · [PDF](diagrams_library/03a_organization_pathways.pdf) · [PNG](diagrams_library/03a_organization_pathways.png) |\n| Recording, clips, playback, and cleanup | [SVG](diagrams_library/03b_media_pathways.svg) · [PDF](diagrams_library/03b_media_pathways.pdf) · [PNG](diagrams_library/03b_media_pathways.png) |\n\n### PlantUML\n\nPackages: [PlantUML](https://github.com/plantuml/plantuml) and the [Python PlantUML helper](https://github.com/dougn/python-plantuml). The dark palette comes from [Diagram Creator](https://github.com/ferdinandobons/diagram-creator-skill). Reuse the [alternative-renderer generator](tools/diagrams/generate_alternatives.py).\n\n| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [SVG](plantuml/01_architecture.svg) · [PDF](plantuml/01_architecture.pdf) · [PNG](plantuml/01_architecture.png) · [PUML](plantuml/01_architecture.puml) |\n| Entity relationships | [SVG](plantuml/02a_entities.svg) · [PDF](plantuml/02a_entities.pdf) · [PNG](plantuml/02a_entities.png) · [PUML](plantuml/02a_entities.puml) |\n| Object calls | [SVG](plantuml/02b_object_calls.svg) · [PDF](plantuml/02b_object_calls.pdf) · [PNG](plantuml/02b_object_calls.png) · [PUML](plantuml/02b_object_calls.puml) |\n| Launch, tournaments, and schedules | [SVG](plantuml/03a_organization_pathways.svg) · [PDF](plantuml/03a_organization_pathways.pdf) · [PNG](plantuml/03a_organization_pathways.png) · [PUML](plantuml/03a_organization_pathways.puml) |\n| Recording, clips, playback, and cleanup | [SVG](plantuml/03b_media_pathways.svg) · [PDF](plantuml/03b_media_pathways.pdf) · [PNG](plantuml/03b_media_pathways.png) · [PUML](plantuml/03b_media_pathways.puml) |\n\n### Cocoon architecture diagrams\n\nSkill: [Cocoon AI Architecture Diagram Generator](https://github.com/Cocoon-AI/architecture-diagram-generator). Reuse the [local generator](tools/diagrams/generate_cocoon.py).\n\n| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [HTML](cocoon_generator/01_architecture.html) · [SVG](cocoon_generator/01_architecture.svg) · [PDF](cocoon_generator/01_architecture.pdf) · [PNG](cocoon_generator/01_architecture.png) |\n| Entity relationships | [HTML](cocoon_generator/02a_entities.html) · [SVG](cocoon_generator/02a_entities.svg) · [PDF](cocoon_generator/02a_entities.pdf) · [PNG](cocoon_generator/02a_entities.png) |\n| Object calls | [HTML](cocoon_generator/02b_object_calls.html) · [SVG](cocoon_generator/02b_object_calls.svg) · [PDF](cocoon_generator/02b_object_calls.pdf) · [PNG](cocoon_generator/02b_object_calls.png) |\n| Launch, tournaments, and schedules | [HTML](cocoon_generator/03a_organization_pathways.html) · [SVG](cocoon_generator/03a_organization_pathways.svg) · [PDF](cocoon_generator/03a_organization_pathways.pdf) · [PNG](cocoon_generator/03a_organization_pathways.png) |\n| Recording, clips, playback, and cleanup | [HTML](cocoon_generator/03b_media_pathways.html) · [SVG](cocoon_generator/03b_media_pathways.svg) · [PDF](cocoon_generator/03b_media_pathways.pdf) · [PNG](cocoon_generator/03b_media_pathways.png) |\n\n### Interactive architecture diagrams\n\nSkill: [Architecture Diagram Skill by Konrad Dzbik](https://github.com/konraddzbik/architecture-diagram-skill). Reuse the [local generator](tools/diagrams/generate_interactive.py); the [environment notes](reference/codebase-analysis.md#regeneration-and-verification) describe its template dependency.\n\n| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [HTML](interactive/01_architecture.html) · [Description](interactive/01_architecture.md) |\n| Entity relationships | [HTML](interactive/02a_entities.html) · [Description](interactive/02a_entities.md) |\n| Object calls | [HTML](interactive/02b_object_calls.html) · [Description](interactive/02b_object_calls.md) |\n| Launch, tournaments, and schedules | [HTML](interactive/03a_organization_pathways.html) · [Description](interactive/03a_organization_pathways.md) |\n| Recording, clips, playback, and cleanup | [HTML](interactive/03b_media_pathways.html) · [Description](interactive/03b_media_pathways.md) |\n\n### Diagram Creator\n\nSkill: [Diagram Creator](https://github.com/ferdinandobons/diagram-creator-skill). Reuse the [local generator](tools/diagrams/generate_diagram_creator.py).\n\n| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [HTML](diagram_creator/diagram-01_architecture.html) |\n| Entity relationships | [HTML](diagram_creator/diagram-02a_entities.html) |\n| Object calls | [HTML](diagram_creator/diagram-02b_object_calls.html) |\n| Launch, tournaments, and schedules | [HTML](diagram_creator/diagram-03a_organization_pathways.html) |\n| Recording, clips, playback, and cleanup | [HTML](diagram_creator/diagram-03b_media_pathways.html) |\n\n### Obsidian Canvas\n\nFormat repository: [JSON Canvas by Obsidian](https://github.com/obsidianmd/jsoncanvas). Our [local converter](tools/diagrams/generate_obsidian_canvas.py) writes the files directly, using [Graphviz](https://gitlab.com/graphviz/graphviz) layout and the [Diagram Creator](https://github.com/ferdinandobons/diagram-creator-skill) palette; no separate Obsidian plugin was used.\n\n| Topic | Results |\n| --- | --- |\n| Architecture and data flows | [CANVAS](obsidian_canvas/01_architecture.canvas) |\n| Entity relationships | [CANVAS](obsidian_canvas/02a_entities.canvas) |\n| Object calls | [CANVAS](obsidian_canvas/02b_object_calls.canvas) |\n| Launch, tournaments, and schedules | [CANVAS](obsidian_canvas/03a_organization_pathways.canvas) |\n| Recording, clips, playback, and cleanup | [CANVAS](obsidian_canvas/03b_media_pathways.canvas) |\n\n## Local Qwen narration experiments\n\nRepositories: [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) provides the speech model; [MLX Audio](https://github.com/Blaizzy/mlx-audio) provides the local speech server and generation tools on [Apple MLX](https://github.com/ml-explore/mlx). Both voice experiments use the [0.6B CustomVoice 8-bit MLX model](https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit). [FFmpeg](https://github.com/FFmpeg/FFmpeg) creates the MP3 exports. See the [local speech tools](tools/README.md#local-qwen-speech) and [locked package versions](tools/local-qwen-narration/requirements-lock.txt) to reuse this setup.\n\n| Voice edition | Full audio | Preview | Script and measurements |\n| --- | --- | --- | --- |\n| Aiden: instruction voice, native speed, explicit pauses | [MP3](local-qwen-narration/instructional/instructional-narration.mp3) · [WAV](local-qwen-narration/instructional/instructional-narration.wav) | [WAV](local-qwen-narration/instructional/preview.wav) | [README](local-qwen-narration/instructional/README.md) · [Timing report](local-qwen-narration/instructional/generation-report.json) |\n| Ryan: initial voice experiment | [MP3](local-qwen-narration/qwen-narration.mp3) · [WAV](local-qwen-narration/qwen-narration.wav) | [WAV](local-qwen-narration/sample-ryan.wav) | [Narration](local-qwen-narration/narration.md) · [README and hardware measurements](local-qwen-narration/README.md) |\n\n| Lesson audio | Aiden | Ryan |\n| --- | --- | --- |\n| 1. Add a fencer and a tournament | [WAV](local-qwen-narration/instructional/lesson-01.wav) | [WAV](local-qwen-narration/lesson-01.wav) |\n| 2. Add a schedule from a Photos screenshot | [WAV](local-qwen-narration/instructional/lesson-02.wav) | [WAV](local-qwen-narration/lesson-02.wav) |\n| 3. Add a bout manually | [WAV](local-qwen-narration/instructional/lesson-03.wav) | [WAV](local-qwen-narration/lesson-03.wav) |\n| 4. Import videos into a bout | [WAV](local-qwen-narration/instructional/lesson-04.wav) | [WAV](local-qwen-narration/lesson-04.wav) |\n| 5. Create review clips and understand favorites | [WAV](local-qwen-narration/instructional/lesson-05.wav) | [WAV](local-qwen-narration/lesson-05.wav) |\n| 6. Delete review clips | [WAV](local-qwen-narration/instructional/lesson-06.wav) | [WAV](local-qwen-narration/lesson-06.wav) |\n| 7. Clear local copies from the fencer page | [WAV](local-qwen-narration/instructional/lesson-07.wav) | [WAV](local-qwen-narration/lesson-07.wav) |\n\nThe 70 approved Aiden speech segments and their request metadata are preserved in `instructional/segments` (original local source). They are reusable audio inputs for exact transcript timing.\n\n## Reference and production files\n\n- [Production function declaration index](CALL_INDEX.md).\n- [Original codebase analysis and review findings](reference/codebase-analysis.md).\n- [Graphviz quality report](graphviz/quality_report.md).\n- [Generation and verification tools](tools/README.md).\n- [Organization manifest and preserved-file hashes](tools/organization-report.json).\n\nFinished results stay in the named folders above. Python, JavaScript, the simulator capture harness, and dependency lists now live in `figures/tools/`. Reusable simulator recordings, demo inputs, fonts, backgrounds, and title images live in `figures/tools/assets/`. Temporary renders and logs belong in `.runtime/figures/`. The downloaded Qwen models and their Python environment live in `.runtime/qwen-tts/`.\n\nThe October 2026 cleanup removed render caches, intermediate frames, rehearsal logs, copied build projects, Python bytecode, and Finder metadata. It preserved finished videos, narration, diagrams, source captures, and downloaded models. Validation reports describe the original production checks; frame-comparison checks require rendering fresh intermediate frames first.\n",
+  "requiredLinks": [
+    "CALL_INDEX.md",
+    "answer-me-with-html/README.md",
+    "answer-me-with-html/architecture.html",
+    "answer-me-with-html/architecture.md",
+    "architecture-video/README.md",
+    "architecture-video/architecture-video.html",
+    "architecture-video/architecture-video.md",
+    "architecture-video/architecture-video.mp4",
+    "architecture-video/architecture-video.srt",
+    "architecture-video/narration.md",
+    "cocoon_generator/01_architecture.html",
+    "cocoon_generator/01_architecture.pdf",
+    "cocoon_generator/01_architecture.png",
+    "cocoon_generator/01_architecture.svg",
+    "cocoon_generator/02a_entities.html",
+    "cocoon_generator/02a_entities.pdf",
+    "cocoon_generator/02a_entities.png",
+    "cocoon_generator/02a_entities.svg",
+    "cocoon_generator/02b_object_calls.html",
+    "cocoon_generator/02b_object_calls.pdf",
+    "cocoon_generator/02b_object_calls.png",
+    "cocoon_generator/02b_object_calls.svg",
+    "cocoon_generator/03a_organization_pathways.html",
+    "cocoon_generator/03a_organization_pathways.pdf",
+    "cocoon_generator/03a_organization_pathways.png",
+    "cocoon_generator/03a_organization_pathways.svg",
+    "cocoon_generator/03b_media_pathways.html",
+    "cocoon_generator/03b_media_pathways.pdf",
+    "cocoon_generator/03b_media_pathways.png",
+    "cocoon_generator/03b_media_pathways.svg",
+    "diagram-design/README.md",
+    "diagram-design/architecture.html",
+    "diagram-design/source-index.json",
+    "diagram-design/style-guide.md",
+    "diagram_creator/diagram-01_architecture.html",
+    "diagram_creator/diagram-02a_entities.html",
+    "diagram_creator/diagram-02b_object_calls.html",
+    "diagram_creator/diagram-03a_organization_pathways.html",
+    "diagram_creator/diagram-03b_media_pathways.html",
+    "diagrams_library/01_architecture.pdf",
+    "diagrams_library/01_architecture.png",
+    "diagrams_library/01_architecture.svg",
+    "diagrams_library/02a_entities.pdf",
+    "diagrams_library/02a_entities.png",
+    "diagrams_library/02a_entities.svg",
+    "diagrams_library/02b_object_calls.pdf",
+    "diagrams_library/02b_object_calls.png",
+    "diagrams_library/02b_object_calls.svg",
+    "diagrams_library/03a_organization_pathways.pdf",
+    "diagrams_library/03a_organization_pathways.png",
+    "diagrams_library/03a_organization_pathways.svg",
+    "diagrams_library/03b_media_pathways.pdf",
+    "diagrams_library/03b_media_pathways.png",
+    "diagrams_library/03b_media_pathways.svg",
+    "editorial-architecture-original/README.md",
+    "editorial-architecture-original/architecture-video.mp4",
+    "editorial-architecture-original/architecture-video.srt",
+    "editorial-architecture-original/index.html",
+    "editorial-architecture-original/narration.md",
+    "editorial-architecture-original/narration.wav",
+    "editorial-architecture-original/original-script.md",
+    "editorial-architecture-original/presentation.html",
+    "editorial-architecture-video/README.md",
+    "editorial-architecture-video/architecture-video.mp4",
+    "editorial-architecture-video/architecture-video.srt",
+    "editorial-architecture-video/index.html",
+    "editorial-architecture-video/narration.md",
+    "editorial-architecture-video/narration.wav",
+    "editorial-architecture-video/presentation.html",
+    "graphviz/01_architecture.gv",
+    "graphviz/01_architecture.pdf",
+    "graphviz/01_architecture.png",
+    "graphviz/01_architecture.svg",
+    "graphviz/02a_entities.gv",
+    "graphviz/02a_entities.pdf",
+    "graphviz/02a_entities.png",
+    "graphviz/02a_entities.svg",
+    "graphviz/02b_object_calls.gv",
+    "graphviz/02b_object_calls.pdf",
+    "graphviz/02b_object_calls.png",
+    "graphviz/02b_object_calls.svg",
+    "graphviz/03a_organization_pathways.gv",
+    "graphviz/03a_organization_pathways.pdf",
+    "graphviz/03a_organization_pathways.png",
+    "graphviz/03a_organization_pathways.svg",
+    "graphviz/03b_media_pathways.gv",
+    "graphviz/03b_media_pathways.pdf",
+    "graphviz/03b_media_pathways.png",
+    "graphviz/03b_media_pathways.svg",
+    "graphviz/quality_report.md",
+    "https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps",
+    "https://github.com/Blaizzy/mlx-audio",
+    "https://github.com/Cocoon-AI/architecture-diagram-generator",
+    "https://github.com/FFmpeg/FFmpeg",
+    "https://github.com/QingYunA/answer-me-with-html",
+    "https://github.com/QwenLM/Qwen3-TTS",
+    "https://github.com/cathrynlavery/diagram-design",
+    "https://github.com/dougn/python-plantuml",
+    "https://github.com/ferdinandobons/diagram-creator-skill",
+    "https://github.com/konraddzbik/architecture-diagram-skill",
+    "https://github.com/microsoft/playwright-python",
+    "https://github.com/mingrammer/diagrams",
+    "https://github.com/ml-explore/mlx",
+    "https://github.com/nicobailon/visual-explainer",
+    "https://github.com/obsidianmd/jsoncanvas",
+    "https://github.com/plantuml/plantuml",
+    "https://github.com/xflr6/graphviz",
+    "https://gitlab.com/graphviz/graphviz",
+    "https://huggingface.co/mlx-community/Qwen3-ForcedAligner-0.6B-8bit",
+    "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "interactive/01_architecture.html",
+    "interactive/01_architecture.md",
+    "interactive/02a_entities.html",
+    "interactive/02a_entities.md",
+    "interactive/02b_object_calls.html",
+    "interactive/02b_object_calls.md",
+    "interactive/03a_organization_pathways.html",
+    "interactive/03a_organization_pathways.md",
+    "interactive/03b_media_pathways.html",
+    "interactive/03b_media_pathways.md",
+    "local-qwen-narration/README.md",
+    "local-qwen-narration/instructional/README.md",
+    "local-qwen-narration/instructional/generation-report.json",
+    "local-qwen-narration/instructional/instructional-narration.mp3",
+    "local-qwen-narration/instructional/instructional-narration.wav",
+    "local-qwen-narration/instructional/lesson-01.wav",
+    "local-qwen-narration/instructional/lesson-02.wav",
+    "local-qwen-narration/instructional/lesson-03.wav",
+    "local-qwen-narration/instructional/lesson-04.wav",
+    "local-qwen-narration/instructional/lesson-05.wav",
+    "local-qwen-narration/instructional/lesson-06.wav",
+    "local-qwen-narration/instructional/lesson-07.wav",
+    "local-qwen-narration/instructional/preview.wav",
+    "local-qwen-narration/lesson-01.wav",
+    "local-qwen-narration/lesson-02.wav",
+    "local-qwen-narration/lesson-03.wav",
+    "local-qwen-narration/lesson-04.wav",
+    "local-qwen-narration/lesson-05.wav",
+    "local-qwen-narration/lesson-06.wav",
+    "local-qwen-narration/lesson-07.wav",
+    "local-qwen-narration/narration.md",
+    "local-qwen-narration/qwen-narration.mp3",
+    "local-qwen-narration/qwen-narration.wav",
+    "local-qwen-narration/sample-ryan.wav",
+    "obsidian_canvas/01_architecture.canvas",
+    "obsidian_canvas/02a_entities.canvas",
+    "obsidian_canvas/02b_object_calls.canvas",
+    "obsidian_canvas/03a_organization_pathways.canvas",
+    "obsidian_canvas/03b_media_pathways.canvas",
+    "parent-fencer-tutorial-paced/README.md",
+    "parent-fencer-tutorial-paced/captions.srt",
+    "parent-fencer-tutorial-paced/index.html",
+    "parent-fencer-tutorial-paced/lesson-01.mp4",
+    "parent-fencer-tutorial-paced/lesson-02.mp4",
+    "parent-fencer-tutorial-paced/lesson-03.mp4",
+    "parent-fencer-tutorial-paced/lesson-04.mp4",
+    "parent-fencer-tutorial-paced/lesson-05.mp4",
+    "parent-fencer-tutorial-paced/lesson-06.mp4",
+    "parent-fencer-tutorial-paced/lesson-07.mp4",
+    "parent-fencer-tutorial-paced/narration.md",
+    "parent-fencer-tutorial-paced/narration.wav",
+    "parent-fencer-tutorial-paced/parent-fencer-guide.mp4",
+    "parent-fencer-tutorial-paced/title-narration.wav",
+    "parent-fencer-tutorial-qwen/README.md",
+    "parent-fencer-tutorial-qwen/captions.srt",
+    "parent-fencer-tutorial-qwen/index.html",
+    "parent-fencer-tutorial-qwen/lesson-01.mp4",
+    "parent-fencer-tutorial-qwen/lesson-02.mp4",
+    "parent-fencer-tutorial-qwen/lesson-03.mp4",
+    "parent-fencer-tutorial-qwen/lesson-04.mp4",
+    "parent-fencer-tutorial-qwen/lesson-05.mp4",
+    "parent-fencer-tutorial-qwen/lesson-06.mp4",
+    "parent-fencer-tutorial-qwen/lesson-07.mp4",
+    "parent-fencer-tutorial-qwen/narration.md",
+    "parent-fencer-tutorial-qwen/narration.wav",
+    "parent-fencer-tutorial-qwen/parent-fencer-guide.mp4",
+    "parent-fencer-tutorial/PRODUCTION_NOTES.md",
+    "parent-fencer-tutorial/README.md",
+    "parent-fencer-tutorial/captions.srt",
+    "parent-fencer-tutorial/index.html",
+    "parent-fencer-tutorial/lesson-01.mp4",
+    "parent-fencer-tutorial/lesson-02.mp4",
+    "parent-fencer-tutorial/lesson-03.mp4",
+    "parent-fencer-tutorial/lesson-04.mp4",
+    "parent-fencer-tutorial/lesson-05.mp4",
+    "parent-fencer-tutorial/lesson-06.mp4",
+    "parent-fencer-tutorial/lesson-07.mp4",
+    "parent-fencer-tutorial/narration.md",
+    "parent-fencer-tutorial/narration.wav",
+    "parent-fencer-tutorial/parent-fencer-guide.mp4",
+    "plantuml/01_architecture.pdf",
+    "plantuml/01_architecture.png",
+    "plantuml/01_architecture.puml",
+    "plantuml/01_architecture.svg",
+    "plantuml/02a_entities.pdf",
+    "plantuml/02a_entities.png",
+    "plantuml/02a_entities.puml",
+    "plantuml/02a_entities.svg",
+    "plantuml/02b_object_calls.pdf",
+    "plantuml/02b_object_calls.png",
+    "plantuml/02b_object_calls.puml",
+    "plantuml/02b_object_calls.svg",
+    "plantuml/03a_organization_pathways.pdf",
+    "plantuml/03a_organization_pathways.png",
+    "plantuml/03a_organization_pathways.puml",
+    "plantuml/03a_organization_pathways.svg",
+    "plantuml/03b_media_pathways.pdf",
+    "plantuml/03b_media_pathways.png",
+    "plantuml/03b_media_pathways.puml",
+    "plantuml/03b_media_pathways.svg",
+    "reference/codebase-analysis.md",
+    "reference/codebase-analysis.md#regeneration-and-verification",
+    "tools/README.md",
+    "tools/README.md#architecture-presentations",
+    "tools/README.md#local-qwen-speech",
+    "tools/README.md#parent-and-fencer-videos",
+    "tools/diagrams/generate_alternatives.py",
+    "tools/diagrams/generate_cocoon.py",
+    "tools/diagrams/generate_diagram_creator.py",
+    "tools/diagrams/generate_diagrams.py",
+    "tools/diagrams/generate_interactive.py",
+    "tools/diagrams/generate_obsidian_canvas.py",
+    "tools/diagrams/requirements.txt",
+    "tools/local-qwen-narration/requirements-lock.txt",
+    "tools/organization-report.json",
+    "visual_explainer/codebase_review.html"
+  ],
+  "design": {
+    "style": "Editorial paper and ink",
+    "skill": "https://github.com/nicobailon/visual-explainer",
+    "reference": "diagram-design/style-guide.md"
+  }
+}

@@ -1,0 +1,3 @@
+# Ignore runtime files; publish finished HTML and media.
+.cache/
+frames/

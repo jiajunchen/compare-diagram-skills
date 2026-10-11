@@ -1,0 +1,1185 @@
+{
+  "date": "2026-10-11",
+  "preservedFiles": [
+    {
+      "path": "figures/graphviz/01_architecture.png",
+      "sha256": "38018ada777e280309b42587bc79bfeb9977cb1e548537ef3fc855b0114291a8"
+    },
+    {
+      "path": "figures/graphviz/03b_media_pathways.svg",
+      "sha256": "da4c2e6077c9178a51c82508c21606385c2d5cb80fd7ed425d597f92431b8984"
+    },
+    {
+      "path": "figures/graphviz/01_architecture.gv",
+      "sha256": "59581f05ea3bd0c7e1aa5a1c5ae53ed44cf6d0121e4db58a27ba37610b14a1f6"
+    },
+    {
+      "path": "figures/graphviz/01_architecture.pdf",
+      "sha256": "6595b786deb4ad971949b9f2e5a956d9fbb599e06d5560644ad883248eeca5c4"
+    },
+    {
+      "path": "figures/graphviz/03b_media_pathways.pdf",
+      "sha256": "bd457f6ced6527e4f5e873d7e93b0726e3cc081491b467eff6f825373cd9575a"
+    },
+    {
+      "path": "figures/graphviz/03b_media_pathways.png",
+      "sha256": "a7a6b9dc97e32103fdcaffb9f9d60e9dc5f823d98d1231c0eb1d0f39e5c85112"
+    },
+    {
+      "path": "figures/graphviz/01_architecture.svg",
+      "sha256": "517c65727ab7512c4cd7deaf0f8bf750e6a61f883569ed7707a7f1373827a6d3"
+    },
+    {
+      "path": "figures/graphviz/02a_entities.gv",
+      "sha256": "73c0dc875398a02a80202eed00a54d9085a5dfde77bdd8c210d27602a4a790e4"
+    },
+    {
+      "path": "figures/graphviz/02b_object_calls.gv",
+      "sha256": "1a8e5715fc21693bb4fc1e3d3259fe57d3e901010bcd326da7b3555c816b1fb4"
+    },
+    {
+      "path": "figures/graphviz/02a_entities.svg",
+      "sha256": "79f3c10a75907aa84ff4c9df1b8a8392b74454f9a38da533d0ed21d50476e4cd"
+    },
+    {
+      "path": "figures/graphviz/03b_media_pathways.gv",
+      "sha256": "a5d72917786632a0b5f1011b8be330b875dfdf7c9090c732d536592f374de64a"
+    },
+    {
+      "path": "figures/graphviz/03a_organization_pathways.svg",
+      "sha256": "a9ad5da7b9ba4b5011835fff12349e77baa3dcca164cb52dec4982eceaa30b1c"
+    },
+    {
+      "path": "figures/graphviz/02b_object_calls.svg",
+      "sha256": "8095fbf5c9cf69dec87215cf056b6c54643f2d1aaef5ff1533439b79a6751e17"
+    },
+    {
+      "path": "figures/graphviz/03a_organization_pathways.pdf",
+      "sha256": "2776ab89543719fbd0633120a85df63ef17b2d2dc0c3e9c8cea29a41af759384"
+    },
+    {
+      "path": "figures/graphviz/02b_object_calls.png",
+      "sha256": "648d8516244fed75a20c3f0ac5cff4bab68299703f1a4df2d83bce0c34d9d0d8"
+    },
+    {
+      "path": "figures/graphviz/02b_object_calls.pdf",
+      "sha256": "50f23dd63c0caf8d187b143240b9af16aed2cfef9f0c536fb045ca7c59c611d8"
+    },
+    {
+      "path": "figures/graphviz/03a_organization_pathways.png",
+      "sha256": "eeb489deaf0ee1f93918e40ece8ab327355210f0dbbcd6226d8410491d0eb8c4"
+    },
+    {
+      "path": "figures/graphviz/02a_entities.png",
+      "sha256": "69efa45e6b5a8b5f6c56c8c3b12b228b1ce11b7c4bd933428c690d001e63a4bf"
+    },
+    {
+      "path": "figures/graphviz/03a_organization_pathways.gv",
+      "sha256": "300203e0e7b2d279be0d26018e1510f35c0d0e64f488902b2a3cefe031e118bd"
+    },
+    {
+      "path": "figures/graphviz/02a_entities.pdf",
+      "sha256": "989ff8cd34a094caf88574818483e0c799cd3c175d379ca8bddb2549510c2f09"
+    },
+    {
+      "path": "figures/plantuml/02b_object_calls.puml",
+      "sha256": "4064953d989e80d82e28264681f93ed79d6a1d1bf9a3d0b008ee189f1225e894"
+    },
+    {
+      "path": "figures/plantuml/01_architecture.png",
+      "sha256": "d1e2ff18baf72911ff00ca88caf3c82282fde5544b8af5d4f450032e28e4d4ab"
+    },
+    {
+      "path": "figures/plantuml/03b_media_pathways.svg",
+      "sha256": "911f97767d5817dd809297fc024fffa3619b82a5e498ca0dee82095714798885"
+    },
+    {
+      "path": "figures/plantuml/01_architecture.pdf",
+      "sha256": "93827bc15a4d5e3f0720643090d149666c14609a377bdc43f51fba0d1b4c29bd"
+    },
+    {
+      "path": "figures/plantuml/03a_organization_pathways.puml",
+      "sha256": "a61b1952f41a8e40448e0dd4fe22500bc3df5acd3845b868cf782fdf0515dd32"
+    },
+    {
+      "path": "figures/plantuml/03b_media_pathways.pdf",
+      "sha256": "5384df88d370ef94b4d33fe8d0394135c4281df119f390e7ba9a3ed54b5ba648"
+    },
+    {
+      "path": "figures/plantuml/03b_media_pathways.puml",
+      "sha256": "c70f2d8807d0bc23d30cc2deaff346a3200668e2d2568a29c72cc8f1b625c59b"
+    },
+    {
+      "path": "figures/plantuml/03b_media_pathways.png",
+      "sha256": "4a4ac273f483d3b67d7e42cce58c89504c3e60db1354c79a936f6daa8a36e18e"
+    },
+    {
+      "path": "figures/plantuml/01_architecture.svg",
+      "sha256": "a43baa4d473670dfd360da07b0f06ea1e8278e8c0f054a527e0383fd704d9d80"
+    },
+    {
+      "path": "figures/plantuml/02a_entities.svg",
+      "sha256": "5f6a4b0a7a32c953162334b02d4a6675a5e5032be7c8ae5aaab5e3ab63bcb95e"
+    },
+    {
+      "path": "figures/plantuml/02a_entities.puml",
+      "sha256": "0dcac21519003d77a55f9db0dec3c4cff95faf36f0e5eb1e2e4dfd80a70b6bac"
+    },
+    {
+      "path": "figures/plantuml/03a_organization_pathways.svg",
+      "sha256": "a14904103dfc5e785b34109d97977576976032705529b5e7bf36372460adbca4"
+    },
+    {
+      "path": "figures/plantuml/01_architecture.puml",
+      "sha256": "7676055b1a8193914f1e806e43ac755cfa828b3543978e46ac343164ca01e1f7"
+    },
+    {
+      "path": "figures/plantuml/02b_object_calls.svg",
+      "sha256": "2a6109717594cc4f63b9db117566b32000b820927f109842a9f8e9329a2d3c60"
+    },
+    {
+      "path": "figures/plantuml/03a_organization_pathways.pdf",
+      "sha256": "e7f37877d7ab440f20b74b3fa9baba17876fec95516b217f5249ec4316a481ac"
+    },
+    {
+      "path": "figures/plantuml/02b_object_calls.png",
+      "sha256": "afab53f3c31fa08d6a44f20cab3f80b0381990d32d80e09558b41345767f2d39"
+    },
+    {
+      "path": "figures/plantuml/02b_object_calls.pdf",
+      "sha256": "9326f994f7211ac5e1d44236ac6c6142a8c7d00917c3be2c6241c5b1e0ae85b2"
+    },
+    {
+      "path": "figures/plantuml/03a_organization_pathways.png",
+      "sha256": "f0572f3c031af50f948ad6f09235de4f243c3ee680b776f5894c3d72f8972102"
+    },
+    {
+      "path": "figures/plantuml/02a_entities.png",
+      "sha256": "bd5e7b795d144967fda0fbc97001ffb58f3b72a02d73f0ab13f3d9b334dc1afa"
+    },
+    {
+      "path": "figures/plantuml/02a_entities.pdf",
+      "sha256": "a747252069682060988859c93b2fa067f4258922db649483aee2880fbff0bca1"
+    },
+    {
+      "path": "figures/editorial-architecture-video/architecture-video.mp4",
+      "sha256": "78bf10b1dc2a4c6a113377ea76200fd705c73c277306026f04a257389cec2506"
+    },
+    {
+      "path": "figures/editorial-architecture-video/poster.png",
+      "sha256": "1c95658b654ded06a3c9c1a97f17f4e8f655d21d14c817c1fb2c6984e2f7c821"
+    },
+    {
+      "path": "figures/editorial-architecture-video/narration.wav",
+      "sha256": "b0c7665f5b2a5210a0be3faf0eaf50e735645659a2c13574d2fc7d04c2f55d5f"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/parent-fencer-guide.mp4",
+      "sha256": "a9077929d9dfc2e740e399f16002e889f408d767c9506a17b3d30d734483831d"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/poster.png",
+      "sha256": "c2038d3b80451ddb594b7384e5b3eb8b172f826d12930561a7d8ea9dfa627c3f"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/lesson-02.mp4",
+      "sha256": "1eb6d2109441bdc5725fccd1e0729befd970557a8f7df0245bc5babba46ecca7"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/lesson-03.mp4",
+      "sha256": "b701e288d9a75d53d1f4c184395dad6e96cbc3eb50a8099cde2c663b7bbeacbe"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/lesson-01.mp4",
+      "sha256": "9f4b238b733771e5727ae0eb882d999fc6a941ad47a3a4815e3c34d71a62267b"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/lesson-04.mp4",
+      "sha256": "64919834a450f4afcf642ee6c7e8202e2ab7a262a74a1e462f1df51737879c20"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/lesson-05.mp4",
+      "sha256": "0cccad2998962b48d1cb626d1a628ef66814b26966204e8ab208b65ae2ffcd37"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/lesson-07.mp4",
+      "sha256": "27bcf01b59b91015eb3601050f0cdcbcb4710b5ef2dfc2eb83b0f4e935a9dbd6"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/lesson-06.mp4",
+      "sha256": "ec20bdad4fd107fb1004329fdd351b88fc6a81c710fe1b659f6247bbbcb672bb"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-qwen/narration.wav",
+      "sha256": "0966573d6249a1a376042f07833b7216977043e034dac1fd3bb40ace2d0f4ce1"
+    },
+    {
+      "path": "figures/cocoon_generator/01_architecture.png",
+      "sha256": "9d71723429e82643d1841f8c2c1f71d03a1a5cf318c62a692bd4d1c88ae7ff15"
+    },
+    {
+      "path": "figures/cocoon_generator/03b_media_pathways.svg",
+      "sha256": "6ed740a2d1fc7cc6288fa99c616a66704ce10884feab35d4e16e1a9911f62053"
+    },
+    {
+      "path": "figures/cocoon_generator/01_architecture.pdf",
+      "sha256": "08954746bf05ecec957c376b26f750377c2cb2868516a7fb7b4d55b99e74505a"
+    },
+    {
+      "path": "figures/cocoon_generator/03b_media_pathways.pdf",
+      "sha256": "f9c46417b5babb0580459b20260d82a0c5db6439b5f894085bfc836a3deef157"
+    },
+    {
+      "path": "figures/cocoon_generator/03b_media_pathways.png",
+      "sha256": "179ff4f8388ff4d31c9b9d90459f9fc044396568fd9d4f94ea7d001cad3692ba"
+    },
+    {
+      "path": "figures/cocoon_generator/01_architecture.svg",
+      "sha256": "1e0dda3f2e6ee331eca28e532fc1c2a68a2918c075d5225d4051369036c24a48"
+    },
+    {
+      "path": "figures/cocoon_generator/02a_entities.svg",
+      "sha256": "cd6e756443d2c51e2c80f310c1003f0945ca4814635cb124c38f75ddfecef2ef"
+    },
+    {
+      "path": "figures/cocoon_generator/03a_organization_pathways.svg",
+      "sha256": "d2df301eb1659d96788fe4d5f67de4f08aa9b06b084a5d8c41ad15f0d3eb51f8"
+    },
+    {
+      "path": "figures/cocoon_generator/02b_object_calls.svg",
+      "sha256": "62e68778370f9c78cc83c2d12b1550c62a6c0741b8f1396bf70c6fbfaa03cfde"
+    },
+    {
+      "path": "figures/cocoon_generator/03a_organization_pathways.pdf",
+      "sha256": "1eb36ec1ca8ac03761bcf00c44fae9d7044ebf8d22fc2c4f4273bfafe79e0f91"
+    },
+    {
+      "path": "figures/cocoon_generator/02b_object_calls.png",
+      "sha256": "eccef0f3be796ad443e2f7a829d6bb11cc96c83b0c5ac0fd1d63763b95e6523e"
+    },
+    {
+      "path": "figures/cocoon_generator/02b_object_calls.pdf",
+      "sha256": "f479bd4be481b4d162f41d54f8bf44d699415565a4cbebad9ac583dd050832bf"
+    },
+    {
+      "path": "figures/cocoon_generator/03a_organization_pathways.png",
+      "sha256": "a2b848a384f72e140f5b672c653cbeb278e4e986db7a04442ce311fa9bdc40b6"
+    },
+    {
+      "path": "figures/cocoon_generator/02a_entities.png",
+      "sha256": "0960f8c39e60d627d56d05f7f82c831201c59734f84899fd494ff7a0aad540e6"
+    },
+    {
+      "path": "figures/cocoon_generator/02a_entities.pdf",
+      "sha256": "1d73016905fe828e1eb5a01902a3be634c5b0a25f73ee4ecfaf6a41f9e0b49d0"
+    },
+    {
+      "path": "figures/editorial-architecture-original/architecture-video.mp4",
+      "sha256": "1ddf2834660d9834a0573b1eae511de5072d82c944c14baf41272ac5254dd890"
+    },
+    {
+      "path": "figures/editorial-architecture-original/poster.png",
+      "sha256": "4d1765bf8a9434e89c93e7251efcafe1f6cbac2e22c4e01624afcd903e29dd9a"
+    },
+    {
+      "path": "figures/editorial-architecture-original/narration.wav",
+      "sha256": "fe7fdadd37337fa28169848cf37bcfb3f6148dc154bb5fefb12efda75abdb6b2"
+    },
+    {
+      "path": "figures/obsidian_canvas/02b_object_calls.canvas",
+      "sha256": "54971c4079ea8487db61210512c71bd15f54fe8799463a83bb2fe0d6d07c8f51"
+    },
+    {
+      "path": "figures/obsidian_canvas/03b_media_pathways.canvas",
+      "sha256": "040914e99377bf0e1d2ee26ecd47e0f29e27d18a0dcd08e49401c97782d594d0"
+    },
+    {
+      "path": "figures/obsidian_canvas/03a_organization_pathways.canvas",
+      "sha256": "6770caac65852bd440afc3ec49cf0a9bd48622eedfe0c25faaa99068a258b8b1"
+    },
+    {
+      "path": "figures/obsidian_canvas/01_architecture.canvas",
+      "sha256": "65ba2b65f949bb99441944f95527339b80728495b8f556ed734d41b0c5eec933"
+    },
+    {
+      "path": "figures/obsidian_canvas/02a_entities.canvas",
+      "sha256": "b411323c5e4e814f74da338f9e5ffa0fc1e20d8918b54f854a870dfd163dabe2"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/parent-fencer-guide.mp4",
+      "sha256": "6da5470ce43a1d734f256c7b2e854838e35796e9a42d37467ffe0b2f4c41c494"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/poster.png",
+      "sha256": "72e9186a54dc890380a135e41aef241ec08400c7907acee4885d9f0005139c66"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/lesson-02.mp4",
+      "sha256": "648aa11030581a8706bec337012fa5ef9879b06698f7663cd94475295f078dbd"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/lesson-03.mp4",
+      "sha256": "551ac7d1619022e5c36ecddd416a8b4b858042cc5c338817f922ba4bbdfe8651"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/lesson-01.mp4",
+      "sha256": "4248a5e5fe602b2cd4d2384bde6f3e1b6e9e3175de90581a962cf3d141146b3b"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/lesson-04.mp4",
+      "sha256": "2a2f866c5c91e07d8eccd007eb7249ae035f6fd72a710465fc14ffa54aa0a8bf"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/lesson-05.mp4",
+      "sha256": "2916b13b9d1e7a7e9246aae5b1b2b28464312080cd3fac342cd4b2264eb9e002"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/lesson-07.mp4",
+      "sha256": "9e418a0b2fa4826fdaef14c35bbac9c59573bbafc7ecb9f392ada795cb2567d3"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/lesson-06.mp4",
+      "sha256": "a7831dc0797b6d98c92de902ec764998f215fc53d3ef80b208b75e16fa19c320"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial/narration.wav",
+      "sha256": "fcecb489a81347b9ee79597444f7db46f09827892ab4d6494c08d0b721f2b5ce"
+    },
+    {
+      "path": "figures/diagrams_library/01_architecture.png",
+      "sha256": "74b7445fe85c34ff66d2f529bb57e592e32b2b52857af803b65c6f467b98d2dd"
+    },
+    {
+      "path": "figures/diagrams_library/03b_media_pathways.svg",
+      "sha256": "d71a67005d8b82429f0cbe576617f5a267033b238205beed890b166f567f1258"
+    },
+    {
+      "path": "figures/diagrams_library/01_architecture.pdf",
+      "sha256": "ec91e26c21aff015f9e64b5f6f68173d3ec820307614c36fcf21e92e800de635"
+    },
+    {
+      "path": "figures/diagrams_library/03b_media_pathways.pdf",
+      "sha256": "ec29a4fb133278429ad009261e1277a07a7dbc1310324960e8ef3764578aec34"
+    },
+    {
+      "path": "figures/diagrams_library/03b_media_pathways.png",
+      "sha256": "7c44c470ca4a1ccd263c29820e26e19788128b8dc39ede3744f3e0b210f91c69"
+    },
+    {
+      "path": "figures/diagrams_library/01_architecture.svg",
+      "sha256": "85c5b089e51835518afd5ec42ea79ad7cf93d25c25aab0fbd0aadbb88ff08c79"
+    },
+    {
+      "path": "figures/diagrams_library/02a_entities.svg",
+      "sha256": "0c892635cced2c51b798d983aa193ef43ec2db677f94b6a19cc41ad183afb9ae"
+    },
+    {
+      "path": "figures/diagrams_library/03a_organization_pathways.svg",
+      "sha256": "c2fc4ad9ba14f4a40c529625b83d547351bf80e739d1252259542a8b3c7cd5e0"
+    },
+    {
+      "path": "figures/diagrams_library/02b_object_calls.svg",
+      "sha256": "611e70e5ac0f201325d425a207de0d065564ddaa995d85c9b35d9b5cfcb57022"
+    },
+    {
+      "path": "figures/diagrams_library/03a_organization_pathways.pdf",
+      "sha256": "b1af00a7a20e05e24a1bca976c4b554c9012bae25499be8500cc97a21722803c"
+    },
+    {
+      "path": "figures/diagrams_library/02b_object_calls.png",
+      "sha256": "273189bf00c95add06472c5c81de9fb2b6837062915d139ac770b06f08f7d357"
+    },
+    {
+      "path": "figures/diagrams_library/02b_object_calls.pdf",
+      "sha256": "91ff21b96f0f5b350851eaa22cb8e741de8bec2e476e89ee1fdb28a7d702f892"
+    },
+    {
+      "path": "figures/diagrams_library/03a_organization_pathways.png",
+      "sha256": "ac097ad5500dd02b0532b2ed7a52c1a5a12de480ed06622f9ce68b5964827d42"
+    },
+    {
+      "path": "figures/diagrams_library/02a_entities.png",
+      "sha256": "94e9be9047cd3b4d440270de71e0f0af635bdae0f23a50aa7fa7b8b13e959851"
+    },
+    {
+      "path": "figures/diagrams_library/02a_entities.pdf",
+      "sha256": "e7d50578adfcd44bfa2b6079deccad9a41adb0bc3c342b21e0968dd979f353dd"
+    },
+    {
+      "path": "figures/local-qwen-narration/lesson-03.wav",
+      "sha256": "e134601dce9d85e55b412c2b40da0cb94f77b40749ce3b9e288f3b2a3253f639"
+    },
+    {
+      "path": "figures/local-qwen-narration/lesson-02.wav",
+      "sha256": "6c86f6578e485e4ad25453162723ed149e3ac6722fdee7c3f67f18e313d3dade"
+    },
+    {
+      "path": "figures/local-qwen-narration/lesson-01.wav",
+      "sha256": "d8d948b7aeca668fbba3d92ffb0ec382b6f88088c70afb50be9cf15c0e5f420f"
+    },
+    {
+      "path": "figures/local-qwen-narration/lesson-05.wav",
+      "sha256": "ff43c66e66e9f5a655c309d843be780a505c2404b5b7948c35b386521f572ff9"
+    },
+    {
+      "path": "figures/local-qwen-narration/lesson-04.wav",
+      "sha256": "f9c9efb271fb32e8ad1faf9b41d73c7d95c06b5b16ee4d2bdf0623a6d9e5098e"
+    },
+    {
+      "path": "figures/local-qwen-narration/lesson-06.wav",
+      "sha256": "5b8f238cc30a01d5efe8d8f0a7f09280fce3dab84e83eb9eac6c0516f6c3d3e4"
+    },
+    {
+      "path": "figures/local-qwen-narration/lesson-07.wav",
+      "sha256": "60fdbfc85afed4079f841dee235709a2faf9c1333cbe12b614af3ddd5759d270"
+    },
+    {
+      "path": "figures/local-qwen-narration/qwen-narration.wav",
+      "sha256": "86932d6e20bd5ab508981dd998bd82f5e3c734ef12b10ad0c3885e8b40d8aa53"
+    },
+    {
+      "path": "figures/local-qwen-narration/sample-ryan.wav",
+      "sha256": "9ee5c4e66bc4dcc1b1f260946af085d967f5fa0aeffef6f514c0cee0ed8bc48c"
+    },
+    {
+      "path": "figures/local-qwen-narration/qwen-narration.mp3",
+      "sha256": "4113a602886ad09420a45c37bacaeb8fd127df263a981fc9291901c9b3053d1a"
+    },
+    {
+      "path": "figures/architecture-video/architecture-video.mp4",
+      "sha256": "b3dc0710cb8d3cfb5c6b8952cb634807884aff230f0dc28ef3a329d2d19a3dc3"
+    },
+    {
+      "path": "figures/architecture-video/poster.png",
+      "sha256": "cc2be322a38d77955833b393b4940acf8db22e6f7d976e01efc49c60982438c4"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/parent-fencer-guide.mp4",
+      "sha256": "918f6e7264848c6f1132faa188de467f2af96fb0b2177c06c86bec70d91c9bf3"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/poster.png",
+      "sha256": "66aca5e7d9a799ed9d6d3c18b8e47f1682a62faf28c1c7a0f209e45f5f5845e0"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/lesson-02.mp4",
+      "sha256": "87ba20f53292ad95c62b36c31f92c5a538c0ab4431d5c72313143382b12817c8"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/lesson-03.mp4",
+      "sha256": "afea769cf07c54d8f526584c013031ea015b3ba8b8aafdc42d756cc4b283950e"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/lesson-01.mp4",
+      "sha256": "70d6d4386e6d8a6f39a6fcc7d9318440c7163d00ac68fee1cb87506f155980da"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/lesson-04.mp4",
+      "sha256": "1c30c562f04fd7c5c7a726df48dc85f31b67cb530e120621f0abe1b4e29c356d"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/lesson-05.mp4",
+      "sha256": "19749e057a383bca2bc56a06a0982b3d3636ec14d15aa2095d21bfb111498818"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/lesson-07.mp4",
+      "sha256": "3003b6e225bb7adbf130402f7164edf9a6c07f5e422828f76cc52b0a16bcc00e"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/lesson-06.mp4",
+      "sha256": "da1f6d53d0a9f8b87c3ead75391d3f44debcac262cee6fb40c20c36e2fcf9093"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/narration.wav",
+      "sha256": "f9ab8d6c874567d57d1965363122855bd40fa9b557da1adcd20a9488a2c920db"
+    },
+    {
+      "path": "figures/parent-fencer-tutorial-paced/title-narration.wav",
+      "sha256": "4f70fa496d44d956e9958fe85e6f6b2dddba8436ee9e61dae89c7de36327bd2f"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/lesson-03.wav",
+      "sha256": "8456a3882b65d7ee5d6f48f22b5bb062fa8937e6ef50f25881875e593f724b61"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/lesson-02.wav",
+      "sha256": "e3cffd9a17710e7442dbdf88238c534179ee88dcd8eb17c87112384a3e242ff3"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/instructional-narration.mp3",
+      "sha256": "219c09d8d3323232452410f357f2e76dfd58f61d90d87f0ad78d4985487eb537"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/lesson-01.wav",
+      "sha256": "37f057a111f51282589e48dbd8ceb9b901067049ac20341e3395739817b7d83d"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/lesson-05.wav",
+      "sha256": "5db2942b0670186492e4752c42d44d33635a1f95016e3eaf62a9d6060343ebd1"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/lesson-04.wav",
+      "sha256": "89b7ac01500a1f7e5e5d4b6e573aff514bf1fee323764f52a51e8cf793db073a"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/lesson-06.wav",
+      "sha256": "72a209b55ec2517566e99e40998ecd09c86721640e4959d27f38b9980250b71d"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/lesson-07.wav",
+      "sha256": "b3f2ad4c937599a0b83b3d098441ccf0deb54d613ee1b90c73d7b4ab8dc54031"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/preview.wav",
+      "sha256": "37f057a111f51282589e48dbd8ceb9b901067049ac20341e3395739817b7d83d"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/instructional-narration.wav",
+      "sha256": "35b2e00b74549c81b1fd485dbcb6ae0ffa48b9e5dafc55061db25edfef3f65c8"
+    },
+    {
+      "path": "figures/tools/assets/parent-fencer-tutorial/recordings/capture.mov",
+      "sha256": "75531cd667bfa698fde8a39d1bd5e060ba9925748a0cb3709aab5f13bb5eaff5"
+    },
+    {
+      "path": "figures/tools/assets/parent-fencer-tutorial/recordings/take1.mov",
+      "sha256": "ab071b34548f54014b910fff8655644110701896540d18ad62b5a9e0c01d2542"
+    },
+    {
+      "path": "figures/tools/assets/parent-fencer-tutorial/recordings/resume-validation.mov",
+      "sha256": "16ca78347505e09bfebf18b702ed9f0ad918566b4e6e465b165bb8570af417c5"
+    },
+    {
+      "path": "figures/tools/assets/parent-fencer-tutorial/recordings/partial.mov",
+      "sha256": "47e36c427fbe3834c38b8075568fb414223ac90a50fd816844cf782f75e2551c"
+    },
+    {
+      "path": "figures/tools/assets/parent-fencer-tutorial/media/demo-schedule.png",
+      "sha256": "9f3fae7c75d772b30c125e880bb6c4e837d37c0d22f2093df33c71d40997e74b"
+    },
+    {
+      "path": "figures/tools/assets/parent-fencer-tutorial/media/Demo-Recording-1.mp4",
+      "sha256": "b957235f9ff4806218622d6d015b888c846089bfa3a352f82c4da17a95915a78"
+    },
+    {
+      "path": "figures/tools/assets/parent-fencer-tutorial/media/Demo-Recording-2.mp4",
+      "sha256": "6ccb916d75ec8a09004d3a1e116ee9d46f8ab81859bc689ed866846e6010162a"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-01.wav",
+      "sha256": "62ec973890e4341cec1a13dc2a4487b8968be1f95b207944cd969f98bc6ab28a"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-08.wav",
+      "sha256": "d95fae6468dcc881b9786b7a173d9521a272c63a52ff90889e3f6b3ecd1a6092"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-04.wav",
+      "sha256": "95e35656b681eb68b06435062375cbc78df224fa7f4386e9a3527501de0da884"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-05.wav",
+      "sha256": "e4b687aba97d4449f681af106d50b4c8a738f020b6fc67fe34ae550d12e623fd"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-09.wav",
+      "sha256": "91018006f874f8a2d24666dc5d6a9087f3233fc0dddf33e6524240ee6920edf6"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-00.wav",
+      "sha256": "a33e5ca3fd4c971237e89166561e501e138fc23eb7778a547896f391e83e266d"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-02.wav",
+      "sha256": "2dee71f031caf89c05050373cb89df85a1d56238c935bdf5f620972823535c56"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-07.wav",
+      "sha256": "2642845b12ee1d11a32d3a94e8df2d8798d444ea003acb3253313accccbe4596"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-06.wav",
+      "sha256": "8b1c4d2d0e0e66849f6eb57cdfdee041a1017bbb86d0a705039326255c00bc89"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-03.wav",
+      "sha256": "a4d8e75aa65eb3f7f97bd6cf120defa62aaf3884f902c0032d558ae60fc86ba8"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-07.wav",
+      "sha256": "d36293145a094a9542d065b1921e3f9c89796c5250b485e88bfa78f84ae630a2"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-02.wav",
+      "sha256": "3ba084a8d1a4807543302f3bbafb1b647d7d5ac87d906a1c5f365f89d346a8af"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-03.wav",
+      "sha256": "9f12b501c9d7eb9ead6f1c0f57ffa5b7fe116ddf6902cf173dfdcf847a160be1"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-06.wav",
+      "sha256": "3b8d18ffcaf4c39f455004b1ad709e6c65cdd352bd9b9ba0bd5291ca2fd6c007"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-10.wav",
+      "sha256": "45964440c836bd7b12153f7470930e7edc75e1541015cf7bcca5995faf7b18ce"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-04.wav",
+      "sha256": "fbeb6c3e6ea6b22a185b1e7ba8aa1366fc4642735413fc4dbc0ebc7f4d48eca1"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-01.wav",
+      "sha256": "38ec2f12fae30949b401088287c87db6efbad262cc8b8461ecc1ec779e2e0137"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-03-part-00.wav",
+      "sha256": "918a491d2b88ea13df0a0e19a8a459d4ed279427d8be72f143ed855b52d08f79"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-05.wav",
+      "sha256": "7461ed01ff341ef20da1c25be3ac818af91fcd4f2bc6b7299d608798901f3a96"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-05.wav",
+      "sha256": "32f627bf101ed69c5faf4d45fba9213e9bb4b3fbbf1de2d9e1367333ac87ea79"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-11.wav",
+      "sha256": "28e75b64d77c9189e55d8f148c5b5b8c17a050635a769303c0a135b55c2b0954"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-10.wav",
+      "sha256": "95351cfc02f570d903e266852c8d36007b2aee37fa6a23fcccb29e1dab921db4"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-04.wav",
+      "sha256": "1da7d281555e77c637ede620b9a9b8efb0285ff82045d5f18fb5a90826695f6f"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-12.wav",
+      "sha256": "e873695dda2635792697522bbb43d051c50e6beb6276be3414ecff59228f0ede"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-06.wav",
+      "sha256": "cb80f6a83aa33c7e4b7fc90f7f5b01820e5ac75afb7c3a8b9543179675db4efb"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-07.wav",
+      "sha256": "f9c8adf0f42e05a229a9141bce279046673f3a64bdd3b45cc0c428e3c244a230"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-13.wav",
+      "sha256": "116a488e08e54dcd8fed9074eab8b26291e3bbf4dd82b4977a941447027e0c61"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-03.wav",
+      "sha256": "c991c50647accb2bd0190259c4c374df44bfac5ae9694062511a428e67298000"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-02.wav",
+      "sha256": "3f454a5188c7deb1985b35e3a964f45d87ef63e4de51b0ec060f4fd5ee3e25c2"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-00.wav",
+      "sha256": "e6ede0ec71e9acf4baccf0c60789e3a9b35fb67f5e19fac7f94b786ea8f92d27"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-14.wav",
+      "sha256": "096c734f5ea65f1eb5c5dea300e6beb617d80d8895619af96b3e035aa790d783"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-15.wav",
+      "sha256": "25adb874a87a9d7f5c8442a75564187a68721db79f3c93b67157fbfe1ae44f32"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-01.wav",
+      "sha256": "e565cbfa2b01bdc25194106379c92954a0c39ef4f1da492743c8bf593a77c913"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-00.wav",
+      "sha256": "b48c58f488588d5ed5de668a12974e3c2f7ce65019bc11fb6a6438bab2db5f22"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-05.wav",
+      "sha256": "76316c717f0922cee17f8a50d64448b30c60e324919f8ab0abb92f7d1d4501e0"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-04.wav",
+      "sha256": "7dba4d024b8d33cb991ec03df5678b5a7f9fdb9ae431ec40c2c8737fd745da27"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-01.wav",
+      "sha256": "e3f7526bb5d3fa6b1ef14286c26809c9f2dc773d7edf31f21f2fbac36c0036a2"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-03.wav",
+      "sha256": "04338805727b610d500e09185345a78e039d0a4ad4d4a8d4f549fb133adf5315"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-06.wav",
+      "sha256": "5f6d66b0a2e7329358553389cc6db65d32fb177c61c25bda989c0a792169dc7b"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-07.wav",
+      "sha256": "b8daf64ab22bc0ece3f2b511061d7f7fbb1f18b7b6ced1d2a99e6dcd359bf968"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-02.wav",
+      "sha256": "4bf5f61e7e264aef22752c5f626b7a6fd1ffe4e5baca32bc7ae057b6b9b642e3"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-06.wav",
+      "sha256": "23dd6670c129a5371c9c721b93a985a18e706855dc5eaa3385aacd216d0df71f"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-03.wav",
+      "sha256": "e955d3bff94dfa6bd2a761b361cb3a38d13e5a69367697243d33b35dde499871"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-02.wav",
+      "sha256": "03d5466ab45da57411c56962ac68fa8b41d082d48e06d2c54932c5bddd413d61"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-07.wav",
+      "sha256": "e275ea803b0dd2f3bf8f5a296f1a4ab07e15a72aa17ff01681074b62b160c83d"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-09.wav",
+      "sha256": "295c31627f3ee696ae0edac276d1b8256666ba33204e6868b6087c607946b614"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-05.wav",
+      "sha256": "10aad5522201741f685a10ddcc5fa5e8461f43a3b41e6e9d830b5e0d9560f663"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-00.wav",
+      "sha256": "ee7bf8b0bab56ddaaf5ddbecfe9b6204e32a91911a40aaa6307535646c0745d2"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-07-part-01.wav",
+      "sha256": "6ec716b0c42f4ec5c5c4a6f8ecbe0653440ffee7f583c37904da79801994e6d2"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-02-part-04.wav",
+      "sha256": "ef6b430fd0e59a5396255263545b33e14d22dcdba324b5fe491f02db9abab35b"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-05-part-08.wav",
+      "sha256": "de7f31d2c58cdedf589f50cfdf933c5d30e4edd9fbd2afeabe5d5afd8a8ee8f4"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-08.wav",
+      "sha256": "08acd69e85a8250447d7b55ef47257401b596539c8cf83d97dee297620ebd9ec"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-04.wav",
+      "sha256": "af0dc093bb4a3e23fd18d42fe45cf997db6af1c3ad13e75f0bb4a2177b2580d3"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-01.wav",
+      "sha256": "3198d9bcf3d78462f1c1c9ec3e985ea05ef32849d6b7abd0359f4d2472340d42"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-00.wav",
+      "sha256": "73871d05ff3fc37f5c398b26a268ac3fccccb729b163ac3aaad146d016d2ead3"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-05.wav",
+      "sha256": "0134aa34dc5fd8884e38da3e4496de9f29379683b281b9d7358edfe3d53abe12"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-06-part-09.wav",
+      "sha256": "a1b2de8ff18b6df75281f856f530462a082e7b9f5709b46aeb41e0f292fcb1bd"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-07.wav",
+      "sha256": "c6f4a4b0c169d7a759d43890fe68d0b9a73945f03594fd3e35013962069cce1f"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-02.wav",
+      "sha256": "7c5099783aec6db74bb6ef9ebe5d4fd7914892d25fe9bb85e5b84cb5d182353d"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-03.wav",
+      "sha256": "cee347962f33e4aa84d1d13765257b65a3eb45dbb5fc447318a6e0ffa24ccc61"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-06.wav",
+      "sha256": "c66d62d077e774b4579fd0a9435110139f292841ad1ef909598332daec8f2684"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-02.wav",
+      "sha256": "e99f67da097921bb55e573d70af0dc3738400e144adcc45a406dedf2dec96a11"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-07.wav",
+      "sha256": "3e6b6e4f73ce06709723df7f27e0d8e623e0c67361b0bfdf09590a7c42c8c746"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-06.wav",
+      "sha256": "713d17f58f65575375c76542cf51ebb3210c2e3cb7af11e9a6698fda4c4d9d28"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-03.wav",
+      "sha256": "6211f8d47901183a42047f7dd5aa710cb1d45a514ad194e360ec66d9db427e62"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-01.wav",
+      "sha256": "dad0ad49f050c2221c381eb6d398e743d60c9db61ce04464ad57869fdd276114"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-04.wav",
+      "sha256": "1c68cfe6fae9a6476cdf17b58eb7b83182388c5a02c7ab6755a7be9512350276"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-10.wav",
+      "sha256": "bc7842ead03bf338da0a70938deb0637938a84bc650de2b9dbc1b5a7dbfb11f3"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-04-part-05.wav",
+      "sha256": "2809ed2e847dd0e907420b74c6c09afce5856be74b5649e835e52e18851f881a"
+    },
+    {
+      "path": "figures/local-qwen-narration/instructional/segments/lesson-01-part-00.wav",
+      "sha256": "7a1168a7e68a46569d26fbe5b4e7ddcf000a4da25e5f1abbe1cc8312ccd7cfb8"
+    }
+  ],
+  "movedFiles": {
+    "figures/01_architecture.png": "figures/graphviz/01_architecture.png",
+    "figures/03b_media_pathways.svg": "figures/graphviz/03b_media_pathways.svg",
+    "figures/01_architecture.gv": "figures/graphviz/01_architecture.gv",
+    "figures/01_architecture.pdf": "figures/graphviz/01_architecture.pdf",
+    "figures/03b_media_pathways.pdf": "figures/graphviz/03b_media_pathways.pdf",
+    "figures/03b_media_pathways.png": "figures/graphviz/03b_media_pathways.png",
+    "figures/01_architecture.svg": "figures/graphviz/01_architecture.svg",
+    "figures/02a_entities.gv": "figures/graphviz/02a_entities.gv",
+    "figures/02b_object_calls.gv": "figures/graphviz/02b_object_calls.gv",
+    "figures/02a_entities.svg": "figures/graphviz/02a_entities.svg",
+    "figures/03b_media_pathways.gv": "figures/graphviz/03b_media_pathways.gv",
+    "figures/03a_organization_pathways.svg": "figures/graphviz/03a_organization_pathways.svg",
+    "figures/02b_object_calls.svg": "figures/graphviz/02b_object_calls.svg",
+    "figures/03a_organization_pathways.pdf": "figures/graphviz/03a_organization_pathways.pdf",
+    "figures/02b_object_calls.png": "figures/graphviz/02b_object_calls.png",
+    "figures/02b_object_calls.pdf": "figures/graphviz/02b_object_calls.pdf",
+    "figures/03a_organization_pathways.png": "figures/graphviz/03a_organization_pathways.png",
+    "figures/02a_entities.png": "figures/graphviz/02a_entities.png",
+    "figures/03a_organization_pathways.gv": "figures/graphviz/03a_organization_pathways.gv",
+    "figures/02a_entities.pdf": "figures/graphviz/02a_entities.pdf",
+    "figures/quality_report.md": "figures/graphviz/quality_report.md",
+    "figures/README.md": "figures/reference/codebase-analysis.md",
+    "figures/parent-fencer-tutorial/recordings/capture.mov": "figures/tools/assets/parent-fencer-tutorial/recordings/capture.mov",
+    "figures/parent-fencer-tutorial/recordings/take1.mov": "figures/tools/assets/parent-fencer-tutorial/recordings/take1.mov",
+    "figures/parent-fencer-tutorial/recordings/resume-validation.mov": "figures/tools/assets/parent-fencer-tutorial/recordings/resume-validation.mov",
+    "figures/parent-fencer-tutorial/recordings/partial.mov": "figures/tools/assets/parent-fencer-tutorial/recordings/partial.mov",
+    "figures/parent-fencer-tutorial/media/demo-schedule.png": "figures/tools/assets/parent-fencer-tutorial/media/demo-schedule.png",
+    "figures/parent-fencer-tutorial/media/Demo-Recording-1.mp4": "figures/tools/assets/parent-fencer-tutorial/media/Demo-Recording-1.mp4",
+    "figures/parent-fencer-tutorial/media/Demo-Recording-2.mp4": "figures/tools/assets/parent-fencer-tutorial/media/Demo-Recording-2.mp4",
+    "figures/parent-fencer-tutorial/.cache/recording-clock.json": "figures/tools/assets/parent-fencer-tutorial/recording-clock.json",
+    "figures/parent-fencer-tutorial/.cache/fonts/Geist.ttf": "figures/tools/assets/parent-fencer-tutorial/fonts/Geist.ttf",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/002.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/002.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/016.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/016.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/017.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/017.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/003.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/003.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/029.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/029.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/015.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/015.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/001.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/001.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/000.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/000.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/014.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/014.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/028.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/028.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/010.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/010.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/004.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/004.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/038.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/038.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/039.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/039.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/005.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/005.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/011.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/011.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/007.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/007.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/013.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/013.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/012.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/012.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/006.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/006.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/049.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/049.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/061.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/061.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/060.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/060.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/048.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/048.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/062.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/062.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/058.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/058.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/059.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/059.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/040.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/040.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/054.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/054.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/055.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/055.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/041.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/041.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/057.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/057.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/043.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/043.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/042.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/042.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/056.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/056.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/052.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/052.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/046.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/046.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/047.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/047.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/053.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/053.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/045.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/045.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/051.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/051.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/050.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/050.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/044.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/044.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/023.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/023.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/037.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/037.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/036.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/036.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/022.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/022.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/008.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/008.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/034.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/034.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/020.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/020.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/021.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/021.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/035.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/035.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/009.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/009.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/031.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/031.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/025.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/025.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/019.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/019.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/018.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/018.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/024.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/024.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/030.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/030.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/026.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/026.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/032.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/032.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/033.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/033.png",
+    "figures/parent-fencer-tutorial/.cache/backgrounds/027.png": "figures/tools/assets/parent-fencer-tutorial/backgrounds/027.png",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-01.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-01.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-08.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-08.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-02.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-02.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-00.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-00.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-04.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-04.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-02.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-02.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-00.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-00.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-05.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-05.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-09.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-09.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-00.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-00.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-03.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-03.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-01.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-01.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-02.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-02.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-01.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-01.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-07.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-07.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-06.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-06.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-03.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-03.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-07.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-07.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-02.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-02.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-03.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-03.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-00.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-00.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-06.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-06.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-00.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-00.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-02.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-02.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-10.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-10.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-04.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-04.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-01.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-01.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-01.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-01.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-03.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-03.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-01.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-01.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-00.wav": "figures/local-qwen-narration/instructional/segments/lesson-03-part-00.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-03.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-03.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-05.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-05.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-05.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-05.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-11.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-11.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-05.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-05.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-07.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-07.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-07.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-07.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-08.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-08.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-10.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-10.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-04.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-04.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-12.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-12.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-06.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-06.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-10.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-10.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-04.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-04.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-06.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-06.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-04.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-04.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-06.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-06.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-07.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-07.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-13.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-13.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-03.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-03.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-07.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-07.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-05.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-05.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-07.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-07.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-05.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-05.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-11.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-11.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-02.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-02.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-00.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-00.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-14.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-14.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-10.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-10.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-09.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-09.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-06.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-06.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-06.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-06.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-15.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-15.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-01.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-01.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-04.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-04.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-00.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-00.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-05.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-05.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-04.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-04.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-08.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-08.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-05.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-05.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-01.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-01.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-05.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-05.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-07.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-07.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-03.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-03.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-06.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-06.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-04.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-04.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-06.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-06.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-07.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-07.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-04.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-04.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-06.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-06.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-10.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-10.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-09.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-09.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-02.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-02.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-12.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-12.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-06.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-06.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-13.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-13.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-08.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-08.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-07.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-07.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-05.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-05.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-07.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-07.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-03.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-03.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-05.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-05.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-02.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-02.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-07.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-07.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-09.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-09.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-06.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-06.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-05.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-05.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-04.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-04.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-04.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-04.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-00.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-00.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-09.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-09.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-01.wav": "figures/local-qwen-narration/instructional/segments/lesson-07-part-01.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-04.wav": "figures/local-qwen-narration/instructional/segments/lesson-02-part-04.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-08.wav": "figures/local-qwen-narration/instructional/segments/lesson-05-part-08.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-08.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-08.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-04.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-04.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-01.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-01.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-02.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-02.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-00.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-00.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-02.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-02.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-00.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-00.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-00.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-00.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-05.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-05.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-09.wav": "figures/local-qwen-narration/instructional/segments/lesson-06-part-09.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-14.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-14.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-07.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-07.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-02.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-02.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-03.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-03.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-06.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-06.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-03.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-03.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-03.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-03.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-01.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-01.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-07-part-00.json": "figures/local-qwen-narration/instructional/segments/lesson-07-part-00.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-03-part-02.json": "figures/local-qwen-narration/instructional/segments/lesson-03-part-02.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-02.json": "figures/local-qwen-narration/instructional/segments/lesson-04-part-02.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-02.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-02.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-07.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-07.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-06.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-06.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-03.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-03.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-15.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-15.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-01.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-01.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-04.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-04.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-06-part-01.json": "figures/local-qwen-narration/instructional/segments/lesson-06-part-01.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-10.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-10.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-02-part-03.json": "figures/local-qwen-narration/instructional/segments/lesson-02-part-03.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-01.json": "figures/local-qwen-narration/instructional/segments/lesson-01-part-01.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-05-part-03.json": "figures/local-qwen-narration/instructional/segments/lesson-05-part-03.json",
+    "figures/local-qwen-narration/instructional/.cache/lesson-04-part-05.wav": "figures/local-qwen-narration/instructional/segments/lesson-04-part-05.wav",
+    "figures/local-qwen-narration/instructional/.cache/lesson-01-part-00.wav": "figures/local-qwen-narration/instructional/segments/lesson-01-part-00.wav",
+    "figures/parent-fencer-tutorial-paced/.cache/title-06.png": "figures/tools/assets/parent-fencer-tutorial-paced/title-06.png",
+    "figures/parent-fencer-tutorial-paced/.cache/title-05.png": "figures/tools/assets/parent-fencer-tutorial-paced/title-05.png",
+    "figures/parent-fencer-tutorial-paced/.cache/title-04.png": "figures/tools/assets/parent-fencer-tutorial-paced/title-04.png",
+    "figures/parent-fencer-tutorial-paced/.cache/title-00.png": "figures/tools/assets/parent-fencer-tutorial-paced/title-00.png",
+    "figures/parent-fencer-tutorial-paced/.cache/title-01.png": "figures/tools/assets/parent-fencer-tutorial-paced/title-01.png",
+    "figures/parent-fencer-tutorial-paced/.cache/title-03.png": "figures/tools/assets/parent-fencer-tutorial-paced/title-03.png",
+    "figures/parent-fencer-tutorial-paced/.cache/title-02.png": "figures/tools/assets/parent-fencer-tutorial-paced/title-02.png",
+    "figures/verify_interactive.py": "figures/tools/diagrams/verify_interactive.py",
+    "figures/verify_alternatives.py": "figures/tools/diagrams/verify_alternatives.py",
+    "figures/patch_architecture_skill.py": "figures/tools/diagrams/patch_architecture_skill.py",
+    "figures/requirements.txt": "figures/tools/diagrams/requirements.txt",
+    "figures/generate_call_index.py": "figures/tools/diagrams/generate_call_index.py",
+    "figures/verify_cocoon.py": "figures/tools/diagrams/verify_cocoon.py",
+    "figures/verify_diagrams.py": "figures/tools/diagrams/verify_diagrams.py",
+    "figures/generate_interactive.py": "figures/tools/diagrams/generate_interactive.py",
+    "figures/verify_legend_labels.py": "figures/tools/diagrams/verify_legend_labels.py",
+    "figures/verify_diagram_creator.py": "figures/tools/diagrams/verify_diagram_creator.py",
+    "figures/verify_obsidian_canvas.py": "figures/tools/diagrams/verify_obsidian_canvas.py",
+    "figures/requirements-browser.txt": "figures/tools/diagrams/requirements-browser.txt",
+    "figures/generate_cocoon.py": "figures/tools/diagrams/generate_cocoon.py",
+    "figures/verify_cocoon_browser.py": "figures/tools/diagrams/verify_cocoon_browser.py",
+    "figures/generate_diagram_creator.py": "figures/tools/diagrams/generate_diagram_creator.py",
+    "figures/generate_diagrams.py": "figures/tools/diagrams/generate_diagrams.py",
+    "figures/generate_alternatives.py": "figures/tools/diagrams/generate_alternatives.py",
+    "figures/generate_obsidian_canvas.py": "figures/tools/diagrams/generate_obsidian_canvas.py",
+    "figures/verify_visual_explainer.py": "figures/tools/diagrams/verify_visual_explainer.py",
+    "figures/verify_interactive_browser.py": "figures/tools/diagrams/verify_interactive_browser.py",
+    "figures/editorial-architecture-video/encode.py": "figures/tools/editorial-architecture-video/encode.py",
+    "figures/editorial-architecture-video/render.py": "figures/tools/editorial-architecture-video/render.py",
+    "figures/editorial-architecture-video/synthesize.py": "figures/tools/editorial-architecture-video/synthesize.py",
+    "figures/editorial-architecture-video/verify_playback.py": "figures/tools/editorial-architecture-video/verify_playback.py",
+    "figures/editorial-architecture-video/verify.py": "figures/tools/editorial-architecture-video/verify.py",
+    "figures/parent-fencer-tutorial-qwen/align.py": "figures/tools/parent-fencer-tutorial-qwen/align.py",
+    "figures/parent-fencer-tutorial-qwen/compose.py": "figures/tools/parent-fencer-tutorial-qwen/compose.py",
+    "figures/parent-fencer-tutorial-qwen/check_holds.py": "figures/tools/parent-fencer-tutorial-qwen/check_holds.py",
+    "figures/parent-fencer-tutorial-qwen/export.py": "figures/tools/parent-fencer-tutorial-qwen/export.py",
+    "figures/parent-fencer-tutorial-qwen/caption_style.py": "figures/tools/parent-fencer-tutorial-qwen/caption_style.py",
+    "figures/parent-fencer-tutorial-qwen/validate.py": "figures/tools/parent-fencer-tutorial-qwen/validate.py",
+    "figures/parent-fencer-tutorial-qwen/transitions.py": "figures/tools/parent-fencer-tutorial-qwen/transitions.py",
+    "figures/parent-fencer-tutorial-qwen/check_timeline.py": "figures/tools/parent-fencer-tutorial-qwen/check_timeline.py",
+    "figures/parent-fencer-tutorial-qwen/prepare.py": "figures/tools/parent-fencer-tutorial-qwen/prepare.py",
+    "figures/editorial-architecture-original/package.py": "figures/tools/editorial-architecture-original/package.py",
+    "figures/editorial-architecture-original/encode.py": "figures/tools/editorial-architecture-original/encode.py",
+    "figures/editorial-architecture-original/render.py": "figures/tools/editorial-architecture-original/render.py",
+    "figures/editorial-architecture-original/check_diagrams.py": "figures/tools/editorial-architecture-original/check_diagrams.py",
+    "figures/editorial-architecture-original/verify_playback.py": "figures/tools/editorial-architecture-original/verify_playback.py",
+    "figures/editorial-architecture-original/verify.py": "figures/tools/editorial-architecture-original/verify.py",
+    "figures/editorial-architecture-original/prepare.py": "figures/tools/editorial-architecture-original/prepare.py",
+    "figures/editorial-architecture-original/recover.py": "figures/tools/editorial-architecture-original/recover.py",
+    "figures/parent-fencer-tutorial/prepare_slides.py": "figures/tools/parent-fencer-tutorial/prepare_slides.py",
+    "figures/parent-fencer-tutorial/compose.py": "figures/tools/parent-fencer-tutorial/compose.py",
+    "figures/parent-fencer-tutorial/CaptureTests.swift": "figures/tools/parent-fencer-tutorial/CaptureTests.swift",
+    "figures/parent-fencer-tutorial/prepare_media.py": "figures/tools/parent-fencer-tutorial/prepare_media.py",
+    "figures/parent-fencer-tutorial/export.py": "figures/tools/parent-fencer-tutorial/export.py",
+    "figures/parent-fencer-tutorial/synthesize.py": "figures/tools/parent-fencer-tutorial/synthesize.py",
+    "figures/parent-fencer-tutorial/validate.py": "figures/tools/parent-fencer-tutorial/validate.py",
+    "figures/parent-fencer-tutorial/capture.py": "figures/tools/parent-fencer-tutorial/capture.py",
+    "figures/answer-me-with-html/verify.py": "figures/tools/answer-me-with-html/verify.py",
+    "figures/local-qwen-narration/server_control.py": "figures/tools/local-qwen-narration/server_control.py",
+    "figures/local-qwen-narration/generate.py": "figures/tools/local-qwen-narration/generate.py",
+    "figures/local-qwen-narration/verify.py": "figures/tools/local-qwen-narration/verify.py",
+    "figures/local-qwen-narration/requirements-lock.txt": "figures/tools/local-qwen-narration/requirements-lock.txt",
+    "figures/diagram-design/build.py": "figures/tools/diagram-design/build.py",
+    "figures/diagram-design/verify.py": "figures/tools/diagram-design/verify.py",
+    "figures/architecture-video/render.mjs": "figures/tools/architecture-video/render.mjs",
+    "figures/architecture-video/check_language.py": "figures/tools/architecture-video/check_language.py",
+    "figures/architecture-video/finalize.py": "figures/tools/architecture-video/finalize.py",
+    "figures/architecture-video/verify.py": "figures/tools/architecture-video/verify.py",
+    "figures/parent-fencer-tutorial-paced/compose.py": "figures/tools/parent-fencer-tutorial-paced/compose.py",
+    "figures/parent-fencer-tutorial-paced/check_holds.py": "figures/tools/parent-fencer-tutorial-paced/check_holds.py",
+    "figures/parent-fencer-tutorial-paced/export.py": "figures/tools/parent-fencer-tutorial-paced/export.py",
+    "figures/parent-fencer-tutorial-paced/validate.py": "figures/tools/parent-fencer-tutorial-paced/validate.py",
+    "figures/parent-fencer-tutorial-paced/transitions.py": "figures/tools/parent-fencer-tutorial-paced/transitions.py",
+    "figures/parent-fencer-tutorial-paced/prepare.py": "figures/tools/parent-fencer-tutorial-paced/prepare.py",
+    "figures/parent-fencer-tutorial-paced/synthesize_titles.py": "figures/tools/parent-fencer-tutorial-paced/synthesize_titles.py",
+    "figures/local-qwen-narration/instructional/generate.py": "figures/tools/local-qwen-narration/instructional/generate.py",
+    "figures/local-qwen-narration/instructional/verify.py": "figures/tools/local-qwen-narration/instructional/verify.py"
+  },
+  "removedRuntimeFiles": 1389,
+  "removedRuntimeBytes": 190443897,
+  "modelAndEnvironment": "Moved intact to .runtime/qwen-tts; downloaded models retained",
+  "existingUserChange": "figures/plantuml/01_architecture.pdf preserved byte-for-byte",
+  "verification": {
+    "preservedFileHashes": 211,
+    "localLinks": 849,
+    "pythonSourcesParsed": 67,
+    "python312Compilation": "passed",
+    "javascriptSyntax": "passed",
+    "graphvizAndLegends": "passed",
+    "interactiveCocoonAndCanvas": "passed",
+    "htmlBrowserNavigation": "passed at 1440x1000, 1024x768, and 390x844",
+    "qwenInstructionalAssembly": "passed: 70 approved speech passages",
+    "qwenVideoTiming": "passed: 818 aligned words and exact speech samples",
+    "relocatedQwenEnvironment": "MLX and MLX Audio imports passed; all model links resolve; server remains stopped",
+    "appCode": "unchanged; simulator suites not required for artifact organization"
+  },
+  "toolsRelocation": {
+    "from": "tools/figures",
+    "to": "figures/tools",
+    "reason": "Keep figure production tools within the figures folder, as requested."
+  }
+}

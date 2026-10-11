@@ -1,0 +1,86 @@
+[
+  {
+    "file": "lesson-01.wav",
+    "text": "Number one. Add a fencer and add a tournament.\n\nThis guide follows seven tasks for a parent and fencer. We use fictional names and demo recordings.\n\nFirst, enter the fencer's name. Here, we use Alex Rivera.\n\nTap Continue to save the name. The app uses one fencer profile.\n\nTap the plus button to add a tournament.\n\nEnter a tournament name. You can also set its date, location, and time zone.\n\nTap Save to create the tournament.\n\nThe tournament is ready. Next, add its schedule or enter bouts yourself.",
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Ryan",
+    "generationSeconds": 29.498621999984607,
+    "audioSeconds": 49.44,
+    "realTimeFactor": 0.596654975727844,
+    "sampleRate": 24000,
+    "peakProcessRSSBytes": 428130304,
+    "hash": "9885c053b09ce3f40e533d4c5a453875594bd75c51280d82b729b93320a97e88"
+  },
+  {
+    "file": "lesson-02.wav",
+    "text": "Number two. Add a schedule from a screenshot.\n\nTo use a schedule screenshot, tap Import Schedule.\n\nTap Select schedule screenshots. The app opens the Photos picker.\n\nSelect the schedule screenshot. Make sure the names and table are clear.\n\nTap Add to read the selected screenshot.\n\nScroll to the proposed bouts. Check opponents and bout numbers. Correct any mistakes before saving.\n\nTap Confirm Schedule when the details are correct. The app saves the confirmed bouts.\n\nThe bout list now shows the imported schedule. The screenshot and proposed text stay on this device.",
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Ryan",
+    "generationSeconds": 22.794401958119124,
+    "audioSeconds": 43.84,
+    "realTimeFactor": 0.5199453001395785,
+    "sampleRate": 24000,
+    "peakProcessRSSBytes": 177864704,
+    "hash": "c7ee67fe600fca9865665ad99a312a65cf6be95a22681ee661ee862a0c190328"
+  },
+  {
+    "file": "lesson-03.wav",
+    "text": "Number three. Add a bout manually.\n\nYou can also add a bout without a screenshot. Open Import Schedule again.\n\nTap Manual Entry.\n\nTap Add proposed bout to create an empty row.\n\nEnter the opponent's name. We will use Casey Jordan.\n\nEnter the bout number from the full bout order. Use a positive number that does not conflict with another bout.\n\nCheck the new row, then tap Confirm Schedule.\n\nThe manual bout now appears beside the imported bouts.",
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Ryan",
+    "generationSeconds": 20.1783493750263,
+    "audioSeconds": 39.28,
+    "realTimeFactor": 0.5137054321544374,
+    "sampleRate": 24000,
+    "peakProcessRSSBytes": 177897472,
+    "hash": "3cae8a2e6720180bd77d5f018f29cc8ea0e06fa155f662b33f6e85ada9bafa80"
+  },
+  {
+    "file": "lesson-04.wav",
+    "text": "Number four. Import videos into a bout.\n\nBefore importing videos, open the correct bout. Every selected recording will go into this bout.\n\nTap Import Recordings to open the recording review screen.\n\nTap Select Recordings to open the Photos picker.\n\nSelect the first recording from this bout.\n\nSelect any other recordings from the same bout. Several recordings can belong to one bout.\n\nTap Add to load the selected recordings.\n\nIf your device asks, tap Allow Full Access so the app can read the selected recordings.\n\nCheck the import results. If one recording fails, you can still confirm the successful recordings.\n\nConfirm the import to attach these recordings to the bout. The original videos stay unchanged in Photos.\n\nThe recordings are now linked to this bout. The app orders them by recording time.",
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Ryan",
+    "generationSeconds": 33.59148883307353,
+    "audioSeconds": 59.12,
+    "realTimeFactor": 0.5681916243753979,
+    "sampleRate": 24000,
+    "peakProcessRSSBytes": 191938560,
+    "hash": "5a0aebd85db6a5cea1e61fc4535168e1c8465ef5703988294b2c231236fb5fc6"
+  },
+  {
+    "file": "lesson-05.wav",
+    "text": "Number five. Create review clips and mark favorites.\n\nTap Review and Trim Recordings to open the editor.\n\nTap Play to preview the selected original recording.\n\nPause near a moment that you want to keep.\n\nScroll to Trim a review clip. These controls set the section that you will save.\n\nMove the Start slider to the beginning of the useful action.\n\nMove the End slider to the end of that action. Check the selected duration.\n\nTap Save Clip. The app creates a separate edited movie and queues its upload.\n\nTo save another moment from the same recording, move Start to the next useful action.\n\nMove End to finish the second selection.\n\nTap Save Clip again. One original recording can produce several independent review clips.\n\nScroll to Review Clips. Wait for Available before clearing an uploaded clip's local copy.\n\nTap the star beside a clip to mark that clip as a favorite.\n\nA filled star means this clip is a favorite. Tap it again to remove the favorite mark.\n\nTap Done to return to the bout details.\n\nThe bout's star is an indicator. It fills when at least one clip in that bout is a favorite.",
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Ryan",
+    "generationSeconds": 47.80196529207751,
+    "audioSeconds": 84.24,
+    "realTimeFactor": 0.5674497304377673,
+    "sampleRate": 24000,
+    "peakProcessRSSBytes": 188645376,
+    "hash": "b0f97226c83407c702fb83cb7fbaa446d88d5ea4da4d9b1d12ca172f2d2ee669"
+  },
+  {
+    "file": "lesson-06.wav",
+    "text": "Number six. Delete review clips.\n\nTo delete a review clip, open Review and Trim Recordings again.\n\nScroll toward the review clip list.\n\nFind the edited clip that you want to remove. Check its start and end times.\n\nTap Delete beside that clip.\n\nRead the confirmation. Deleting removes the edited clip. It does not delete the original recording in Photos.\n\nTap Delete Clip to confirm. The app also removes the clip's cloud copy where applicable.\n\nThe other review clip remains. A cloud deletion that cannot finish immediately waits for recovery.\n\nTap Done to return to the bout.\n\nWe deleted the only favorite clip. The bout's star is now empty because no remaining clip is a favorite.\n\nClose the bout details to return to the tournament.",
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Ryan",
+    "generationSeconds": 30.422163332812488,
+    "audioSeconds": 54.8,
+    "realTimeFactor": 0.5551489659272352,
+    "sampleRate": 24000,
+    "peakProcessRSSBytes": 218300416,
+    "hash": "00837e451358f26c3c98e5d4926d8c9b83a7b30a341e40e0dbb2eb2bcc24bf30"
+  },
+  {
+    "file": "lesson-07.wav",
+    "text": "Number seven. Clear local clip copies.\n\nOpen Fencer to manage the profile and local clip storage.\n\nClip storage shows local exports and downloaded copies. These values describe device storage, not working memory.\n\nTap Clear Local Clip Copies to free storage on this device.\n\nThis clears uploaded local exports and downloaded copies across bouts. It keeps clips in iCloud and protects pending uploads.\n\nTap Clear Local Copies to confirm. The app reports how many files it removed.\n\nThe local storage counts decrease. Saved cloud clips can download again when you play them with an available connection.\n\nYour original recordings remain in Photos. You can now organize bouts, save useful clips, and review them together.",
+    "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+    "voice": "Ryan",
+    "generationSeconds": 36.34467237512581,
+    "audioSeconds": 66.0,
+    "realTimeFactor": 0.5506768541685729,
+    "sampleRate": 24000,
+    "peakProcessRSSBytes": 214417408,
+    "hash": "af4c758cd33227ab417ee8a76fc441dfc1c0f90d6c3acc185c1d233bd6486d36"
+  }
+]

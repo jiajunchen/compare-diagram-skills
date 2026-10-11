@@ -1,0 +1,67 @@
+digraph calls {
+	bgcolor=white compound=true fontcolor="#17324D" fontname=Helvetica fontsize=18 labeljust=l labelloc=t nodesep=0.43 pad=0.28 rankdir=TB ranksep=0.74 splines=polyline
+	node [color="#17324D" fillcolor="#DCEAF5" fontcolor="#17324D" fontname=Helvetica fontsize=11 margin="0.15,0.11" penwidth=1.1 shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 color="#526779" fontcolor="#17324D" fontname=Helvetica fontsize=9 penwidth=1.2]
+	label="02B  Object calls | production cross-component methods"
+	entry [label="FencingVideoAnalysisApp
+AppDependencies.make -> AppRootView" fillcolor="#EFF2F4" shape=box]
+	ui [label="SwiftUI views
+forms, schedule, bout, timeline, player, settings" fillcolor="#DCEAF5" shape=box]
+	vm [label="AppViewModel
+load / refreshCloud
+saveTournament / confirmSchedule / addBout*
+prepare/confirmRecordings / createClip
+playableURL / delete / offload" fillcolor="#ECE4F5" shape=box]
+	review [label="ScheduleReviewViewModel
+extract / addDraft / removeDraft / moveDraft" fillcolor="#DCEAF5" shape=box]
+	schedule [label="Schedule services
+recognize -> parse -> propose -> reconcile" fillcolor="#DDF0E5" shape=box]
+	bout [label="BoutImportCoordinator
+prepareSelections / confirm / linkPendingCloudPhotos
+sourceAsset / move / remove" fillcolor="#DDF0E5" shape=box]
+	clip [label="ClipWorkflow
+createClip / retry / delete / clips
+unloadUploadedClips / clearLocalClipCopies" fillcolor="#DDF0E5" shape=box]
+	queue [label="ClipUploadQueue
+resumePending / upload / retry / deleteCloudCopyIfNeeded" fillcolor="#DDF0E5" shape=box]
+	cloud [label="CloudMetadataService
+synchronize / synchronizeDeletions / queueDeletion
+mapper pendingRecords / apply" fillcolor="#DDF0E5" shape=box]
+	assets [label="CloudAssetService
+saveExportedClip / downloadClip / deleteClip" fillcolor="#DDF0E5" shape=box]
+	download [label="ClipDownloadCoordinator
+resolve / clearCache / removeCachedCopies" fillcolor="#DDF0E5" shape=box]
+	player [label="BoutPlaybackQueue + MediaPlayerModel
+next / previous / finish / play / seek / scrub" fillcolor="#DDF0E5" shape=box]
+	repo [label="LocalRepository
+insert / fetch / delete / saveChanges
+tournaments / bouts / sourceRecordings / reviewClips" fillcolor="#FFF0D6" shape=box]
+	photos [label="PhotoLibraryService
+importSelections / cloudIdentifiers / videoAsset" fillcolor="#EFF2F4" shape=box]
+	editor [label="VideoEditingService.export" fillcolor="#EFF2F4" shape=box]
+	ck [label="Private CloudKit + Photos
+framework boundaries" fillcolor="#EFF2F4" shape=box]
+	entry -> ui
+	ui -> vm [label=commands]
+	ui -> review [label=schedule]
+	ui -> player [label="playback controls"]
+	review -> schedule
+	review -> vm [label="confirmed drafts"]
+	vm -> bout
+	vm -> clip
+	vm -> queue
+	vm -> cloud
+	vm -> download
+	vm -> repo
+	bout -> photos
+	bout -> repo
+	clip -> editor
+	clip -> repo
+	queue -> cloud
+	queue -> assets
+	download -> assets
+	cloud -> repo
+	photos -> ck [label=Photos]
+	assets -> ck [label=CKAsset]
+	cloud -> ck [label=CKSyncEngine]
+}

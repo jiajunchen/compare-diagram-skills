@@ -1,0 +1,54 @@
+digraph organization {
+	bgcolor=white compound=true fontcolor="#17324D" fontname=Helvetica fontsize=18 labeljust=l labelloc=t nodesep=0.43 pad=0.28 rankdir=TB ranksep=0.74 splines=polyline
+	node [color="#17324D" fillcolor="#DCEAF5" fontcolor="#17324D" fontname=Helvetica fontsize=11 margin="0.15,0.11" penwidth=1.1 shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 color="#526779" fontcolor="#17324D" fontname=Helvetica fontsize=9 penwidth=1.2]
+	label="03A  User pathways | launch, tournament, and schedule"
+	launch [label="Open app" fillcolor="#EFF2F4" shape=oval]
+	boot [label="AppDependencies.make
+open SwiftData; wire live services" fillcolor="#DCEAF5" shape=box]
+	load [label="AppViewModel.load
+check iCloud; fetch local settings/tournaments" fillcolor="#DCEAF5" shape=box]
+	settings [label="Settings found?" fillcolor="#FFF0D6" shape=diamond]
+	first [label="FirstRunSetupView
+saveFencerName -> SwiftData" fillcolor="#DCEAF5" shape=box]
+	nav [label="TournamentNavigationView
+select / refreshCloud" fillcolor="#DCEAF5" shape=box]
+	new [label="New Tournament
+TournamentFormView.save" fillcolor="#DCEAF5" shape=box]
+	save [label="AppViewModel.saveTournament
+validate name; insert/update Tournament
+SwiftData save -> schedule CloudKit sync" fillcolor="#DDF0E5" shape=box]
+	detail [label="TournamentDetailView
+show bouts / open selected bout" fillcolor="#DCEAF5" shape=box]
+	import [label="Import Schedule
+screenshot(s) or Manual Entry" fillcolor="#DCEAF5" shape=box]
+	manual [label="Manual drafts
+add opponent + full-order bout number" fillcolor="#DDF0E5" shape=box]
+	ocr [label="Vision recognize each screenshot
+deterministic parse + optional on-device model
+validator reconciles source-backed proposal" fillcolor="#DDF0E5" shape=box]
+	review [label="Review/edit drafts
+confirm or discard" fillcolor="#DCEAF5" shape=box]
+	confirm [label="AppViewModel.confirmSchedule
+validate nonempty, opponent, positive/unique number
+insert new Bouts; mark tournament confirmed" fillcolor="#DDF0E5" shape=box]
+	bout [label="BoutDetailView
+edit/delete confirmed bout; import recordings" fillcolor="#DCEAF5" shape=box]
+	launch -> boot
+	boot -> load
+	load -> settings
+	settings -> first [label=no]
+	first -> nav
+	settings -> nav [label=yes]
+	nav -> new
+	new -> save
+	save -> detail
+	detail -> import
+	import -> manual [label=manual]
+	import -> ocr [label=screenshots]
+	manual -> review
+	ocr -> review
+	review -> confirm [label=confirm]
+	confirm -> bout
+	review -> detail [label=discard constraint=false style=dashed]
+}

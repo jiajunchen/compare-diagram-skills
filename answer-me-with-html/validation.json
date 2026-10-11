@@ -1,0 +1,42 @@
+{
+  "swiftFiles": 35,
+  "namedFunctionDeclarations": 276,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "chapters": 8,
+      "diagrams": 11,
+      "localLinksChecked": 40,
+      "horizontalOverflow": false,
+      "browserErrors": [],
+      "externalRequests": 0,
+      "navigation": "passed",
+      "themeAndModeControls": "passed"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "chapters": 8,
+      "diagrams": 11,
+      "localLinksChecked": 40,
+      "horizontalOverflow": false,
+      "browserErrors": [],
+      "externalRequests": 0,
+      "navigation": "passed",
+      "themeAndModeControls": "passed"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "chapters": 8,
+      "diagrams": 11,
+      "localLinksChecked": 40,
+      "horizontalOverflow": false,
+      "browserErrors": [],
+      "externalRequests": 0,
+      "navigation": "passed",
+      "themeAndModeControls": "passed"
+    }
+  ]
+}

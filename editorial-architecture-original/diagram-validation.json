@@ -1,0 +1,49 @@
+{
+  "skillSelfCheck": "passed",
+  "figures": [
+    {
+      "diagram": "clips",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "favorites-detail",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "overview",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "playback",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "recordings",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "records-detail",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "schedule",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "scrub-detail",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "startup",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "sync",
+      "geometry": "passed"
+    },
+    {
+      "diagram": "upload-detail",
+      "geometry": "passed"
+    }
+  ]
+}

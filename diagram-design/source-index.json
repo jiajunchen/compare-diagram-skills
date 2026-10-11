@@ -1,0 +1,182 @@
+[
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppDependencies.swift",
+    "symbol": "make",
+    "line": 48
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "load",
+    "line": 126
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "load",
+    "line": 126
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "refreshCloud",
+    "line": 161
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "saveFencerName",
+    "line": 184
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "saveTournament",
+    "line": 200
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/ClipWorkflow.swift",
+    "symbol": "removeAbandonedFiles",
+    "line": 225
+  },
+  {
+    "file": "FencingVideoAnalysis/Features/ScheduleImport/ScheduleReviewViewModel.swift",
+    "symbol": "extract",
+    "line": 76
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/DocumentRecognitionService.swift",
+    "symbol": "recognize",
+    "line": 86
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/ScheduleParsingService.swift",
+    "symbol": "parse",
+    "line": 63
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/ScheduleProposalValidator.swift",
+    "symbol": "reconcile",
+    "line": 26
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "confirmSchedule",
+    "line": 346
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "updateConfirmedBout",
+    "line": 285
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/BoutImportCoordinator.swift",
+    "symbol": "prepareSelections",
+    "line": 45
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/BoutImportCoordinator.swift",
+    "symbol": "confirm",
+    "line": 55
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/BoutImportCoordinator.swift",
+    "symbol": "discard",
+    "line": 85
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/BoutImportCoordinator.swift",
+    "symbol": "sourceAsset",
+    "line": 133
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/BoutImportCoordinator.swift",
+    "symbol": "move",
+    "line": 164
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "createClip",
+    "line": 484
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/ClipWorkflow.swift",
+    "symbol": "createClip",
+    "line": 55
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/ClipUploadQueue.swift",
+    "symbol": "upload",
+    "line": 28
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/ClipUploadQueue.swift",
+    "symbol": "resumePending",
+    "line": 21
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "retryClip",
+    "line": 493
+  },
+  {
+    "file": "FencingVideoAnalysis/Features/Bouts/BoutPlayerView.swift",
+    "symbol": "openCurrent",
+    "line": 165
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/ClipDownloadCoordinator.swift",
+    "symbol": "resolve",
+    "line": 142
+  },
+  {
+    "file": "FencingVideoAnalysis/Features/Bouts/BoutPlayerView.swift",
+    "symbol": "finishCurrentClip",
+    "line": 194
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/PlaybackState.swift",
+    "symbol": "setSpeed",
+    "line": 24
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/VisualScrubCoordinator.swift",
+    "symbol": "drag",
+    "line": 35
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/VisualScrubCoordinator.swift",
+    "symbol": "finish",
+    "line": 41
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/CloudMetadataService.swift",
+    "symbol": "scheduleSync",
+    "line": 539
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/CloudMetadataService.swift",
+    "symbol": "synchronize",
+    "line": 47
+  },
+  {
+    "file": "FencingVideoAnalysis/Services/CloudMetadataService.swift",
+    "symbol": "handleEvent",
+    "line": 573
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "deleteClip",
+    "line": 505
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "deleteTournament",
+    "line": 234
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "clearLocalClipCopies",
+    "line": 537
+  },
+  {
+    "file": "FencingVideoAnalysis/App/AppEntry/AppViewModel.swift",
+    "symbol": "toggleClipFavorite",
+    "line": 541
+  }
+]

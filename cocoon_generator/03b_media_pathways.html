@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media pathways</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" integrity="sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js" integrity="sha384-en/ztfPSRkGfME4KIm05joYXynqzUgbsG5nMrj/xEFAHXkeZfO3yMK8QQ+mP7p1/" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      margin-bottom: 2rem;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      background: #22d3ee;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      margin-left: 1.75rem;
+    }
+
+    .diagram-container {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 1rem;
+      border: 1px solid #1e293b;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      min-width: 540px; max-width: 650px; margin: 0 auto;
+      display: block;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0.75rem;
+      border: 1px solid #1e293b;
+      padding: 1.25rem;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.rose { background: #fb7185; }
+
+    .card h3 {
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .card ul {
+      list-style: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+    }
+
+    .card li {
+      margin-bottom: 0.375rem;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #475569;
+      font-size: 0.75rem;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 0.5rem;
+      margin-left: auto;
+      flex-shrink: 0;
+      align-items: center;
+    }
+    .toolbar-toggle {
+      background: transparent;
+      border: none;
+      color: #475569;
+      cursor: pointer;
+      font-size: 1.25rem;
+      line-height: 1;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.375rem;
+      transition: color 0.2s, background 0.2s;
+    }
+    .toolbar-toggle:hover { color: #94a3b8; background: rgba(30, 41, 59, 0.5); }
+    .toolbar-actions {
+      display: none;
+      gap: 0.5rem;
+    }
+    .toolbar.expanded .toolbar-actions { display: flex; }
+    .toolbar-actions button {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid #334155;
+      color: #94a3b8;
+      padding: 0.375rem 0.75rem;
+      border-radius: 0.375rem;
+      font-family: inherit;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .toolbar-actions button:hover {
+      background: rgba(51, 65, 85, 0.8);
+      color: white;
+      border-color: #475569;
+    }
+
+    @media print {
+      body { background: #020617; padding: 1rem; }
+      .toolbar { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="report-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>Media pathways</h1>
+        <div class="toolbar">
+          <div class="toolbar-actions">
+            <button onclick="copyAsImage(this)">📋 Copy</button>
+            <button onclick="downloadPNG(this)">🖼️ PNG</button>
+            <button onclick="downloadPDF(this)">📄 PDF</button>
+          </div>
+          <button class="toolbar-toggle" onclick="this.parentElement.classList.toggle('expanded')" title="Export options" aria-label="Export options">⋯</button>
+        </div>
+      </div>
+      <p class="subtitle">Recording import, clip export, playback, retry, and cleanup</p>
+    </div>
+
+    <!-- Main Diagram -->
+    <div class="diagram-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" font-family="JetBrains Mono, Menlo, monospace" aria-label="Media pathways">
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+</defs>
+<rect x="0" y="0" width="1080" height="1920" fill="#020617"/>
+<rect x="0" y="0" width="1080" height="1920" fill="url(#grid)"/>
+<text x="50.00" y="40.00" fill="white" font-size="25.00" font-weight="700" text-anchor="start">Media pathways</text>
+<path d="M 552.76 153.93 C 552.76 170.84 552.76 194.49 552.76 213.57" fill="none" data-edge="bout-&gt;pick" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 552.76 270.23 C 552.76 285.15 552.76 305.31 552.76 322.95" fill="none" data-edge="pick-&gt;prepare" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 552.76 393.62 C 552.76 412.10 552.76 436.27 552.76 456.43" fill="none" data-edge="prepare-&gt;confirm" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 552.76 527.20 C 552.76 543.27 552.76 563.20 552.76 579.68" fill="none" data-edge="confirm-&gt;timeline" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 552.76 636.34 C 552.76 651.55 552.76 671.99 552.76 689.00" fill="none" data-edge="timeline-&gt;asset" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 552.76 745.51 C 552.76 760.44 552.76 780.60 552.76 798.24" fill="none" data-edge="asset-&gt;trim" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 532.79 868.91 C 519.63 888.07 502.28 913.33 488.14 933.92" fill="none" data-edge="trim-&gt;upload" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 570.21 869.07 C 579.29 884.27 588.51 899.71 588.51 899.71 C 588.51 899.71 600.05 1033.02 600.05 1033.02 C 600.05 1033.02 600.05 1044.27 600.05 1044.27 C 600.05 1044.27 599.68 1053.69 599.24 1065.06" fill="none" data-edge="trim-&gt;fail" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 492.74 1002.22 C 512.83 1021.72 539.43 1047.54 560.83 1068.31" fill="none" data-edge="upload-&gt;fail" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 427.99 1002.22 C 401.82 1024.07 366.13 1053.87 340.13 1075.60" fill="none" data-edge="upload-&gt;play" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 548.74 1074.91 C 523.27 1059.71 497.40 1044.27 497.40 1044.27 C 497.40 1044.27 489.57 1028.18 481.36 1011.29" fill="none" data-edge="fail-&gt;upload" stroke="#64748b" stroke-width="1.61" stroke-dasharray="6,5" marker-end="url(#arrowhead)"/>
+<path d="M 305.95 1128.47 C 305.95 1144.96 305.95 1168.01 305.95 1187.96" fill="none" data-edge="play-&gt;local" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 320.08 1260.98 C 335.10 1291.90 356.70 1336.36 356.70 1336.36 C 356.70 1336.36 356.70 1382.31 356.70 1382.31 C 356.70 1382.31 338.94 1412.13 324.44 1436.49" fill="none" data-edge="local-&gt;player" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 283.16 1259.60 C 266.37 1280.04 243.56 1307.80 226.42 1328.65" fill="none" data-edge="local-&gt;download" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 223.65 1382.68 C 239.25 1398.76 260.48 1420.66 277.48 1438.19" fill="none" data-edge="download-&gt;player" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 305.95 1492.05 C 305.95 1509.54 305.95 1534.37 305.95 1555.13" fill="none" data-edge="player-&gt;offload" stroke="#64748b" stroke-width="1.61" marker-end="url(#arrowhead)"/>
+<path d="M 590.94 589.45 C 633.99 564.19 698.07 526.59 698.07 526.59 C 698.07 526.59 797.76 270.11 836.40 170.68" fill="none" data-edge="timeline-&gt;delete" stroke="#64748b" stroke-width="1.61" stroke-dasharray="6,5" marker-end="url(#arrowhead)"/>
+<g data-node="bout"><title>Open confirmed bout</title>
+<rect x="453.19" y="108.08" width="199.15" height="45.41" rx="7" fill="#0f172a"/>
+<rect x="453.19" y="108.08" width="199.15" height="45.41" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="552.76" y="136.72" fill="white" font-size="17.47" font-weight="600" text-anchor="middle" textLength="187.15" lengthAdjust="spacingAndGlyphs">Open confirmed bout</text>
+</g>
+<g data-node="pick"><title>Import Recordings
+PhotosPicker: up to 20 videos</title>
+<rect x="458.13" y="224.06" width="189.26" height="45.95" rx="7" fill="#0f172a"/>
+<rect x="458.13" y="224.06" width="189.26" height="45.95" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="552.76" y="244.31" fill="white" font-size="10.88" font-weight="600" text-anchor="middle">Import Recordings</text>
+<text x="552.76" y="257.15" fill="#cbd5e1" font-size="10.88" font-weight="400" text-anchor="middle" textLength="177.26" lengthAdjust="spacingAndGlyphs">PhotosPicker: up to 20 videos</text>
+</g>
+<g data-node="prepare"><title>BoutImportCoordinator.prepareSelections
+PhotoLibraryService reads metadata / Photos IDs
+show batch, failures, cancellation</title>
+<rect x="403.21" y="333.51" width="299.11" height="59.79" rx="7" fill="#0f172a"/>
+<rect x="403.21" y="333.51" width="299.11" height="59.79" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="552.76" y="354.49" fill="white" font-size="10.61" font-weight="600" text-anchor="middle">BoutImportCoordinator.prepareSelections</text>
+<text x="552.76" y="367.01" fill="#cbd5e1" font-size="10.61" font-weight="400" text-anchor="middle" textLength="287.11" lengthAdjust="spacingAndGlyphs">PhotoLibraryService reads metadata / Photos IDs</text>
+<text x="552.76" y="379.52" fill="#cbd5e1" font-size="10.61" font-weight="400" text-anchor="middle">show batch, failures, cancellation</text>
+</g>
+<g data-node="confirm"><title>Confirm batch
+insert SourceRecording links in SwiftData
+try linking iCloud Photos IDs</title>
+<rect x="425.70" y="466.81" width="254.13" height="59.79" rx="7" fill="#0f172a"/>
+<rect x="425.70" y="466.81" width="254.13" height="59.79" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="552.76" y="488.02" fill="white" font-size="10.33" font-weight="600" text-anchor="middle">Confirm batch</text>
+<text x="552.76" y="500.21" fill="#cbd5e1" font-size="10.33" font-weight="400" text-anchor="middle" textLength="242.13" lengthAdjust="spacingAndGlyphs">insert SourceRecording links in SwiftData</text>
+<text x="552.76" y="512.40" fill="#cbd5e1" font-size="10.33" font-weight="400" text-anchor="middle">try linking iCloud Photos IDs</text>
+</g>
+<g data-node="timeline"><title>Review and Trim Recordings
+load ordered sources + clips</title>
+<rect x="459.86" y="590.02" width="185.80" height="45.95" rx="7" fill="#0f172a"/>
+<rect x="459.86" y="590.02" width="185.80" height="45.95" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="552.76" y="610.23" fill="white" font-size="11.06" font-weight="600" text-anchor="middle" textLength="173.80" lengthAdjust="spacingAndGlyphs">Review and Trim Recordings</text>
+<text x="552.76" y="623.28" fill="#cbd5e1" font-size="11.06" font-weight="400" text-anchor="middle" textLength="173.80" lengthAdjust="spacingAndGlyphs">load ordered sources + clips</text>
+</g>
+<g data-node="asset"><title>Open source
+PhotoKit AVAsset; local fallback if needed</title>
+<rect x="426.13" y="699.40" width="253.27" height="45.95" rx="7" fill="#0f172a"/>
+<rect x="426.13" y="699.40" width="253.27" height="45.95" rx="7" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="2"/>
+<text x="552.76" y="719.87" fill="white" font-size="10.05" font-weight="600" text-anchor="middle">Open source</text>
+<text x="552.76" y="731.72" fill="#cbd5e1" font-size="10.05" font-weight="400" text-anchor="middle" textLength="241.27" lengthAdjust="spacingAndGlyphs">PhotoKit AVAsset; local fallback if needed</text>
+</g>
+<g data-node="trim"><title>Select trim range
+ClipWorkflow.createClip -&gt; AVFoundation export
+ReviewClip: exporting -&gt; pendingUpload</title>
+<rect x="406.67" y="808.78" width="292.19" height="59.79" rx="7" fill="#0f172a"/>
+<rect x="406.67" y="808.78" width="292.19" height="59.79" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="552.76" y="829.78" fill="white" font-size="10.59" font-weight="600" text-anchor="middle">Select trim range</text>
+<text x="552.76" y="842.28" fill="#cbd5e1" font-size="10.59" font-weight="400" text-anchor="middle" textLength="280.19" lengthAdjust="spacingAndGlyphs">ClipWorkflow.createClip -&gt; AVFoundation export</text>
+<text x="552.76" y="854.77" fill="#cbd5e1" font-size="10.59" font-weight="400" text-anchor="middle">ReviewClip: exporting -&gt; pendingUpload</text>
+</g>
+<g data-node="upload"><title>ClipUploadQueue.upload
+sync metadata -&gt; save CKAsset
+ReviewClip: uploading -&gt; available</title>
+<rect x="354.77" y="942.09" width="216.07" height="59.79" rx="7" fill="#0f172a"/>
+<rect x="354.77" y="942.09" width="216.07" height="59.79" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="462.80" y="963.09" fill="white" font-size="10.59" font-weight="600" text-anchor="middle">ClipUploadQueue.upload</text>
+<text x="462.80" y="975.59" fill="#cbd5e1" font-size="10.59" font-weight="400" text-anchor="middle">sync metadata -&gt; save CKAsset</text>
+<text x="462.80" y="988.09" fill="#cbd5e1" font-size="10.59" font-weight="400" text-anchor="middle" textLength="204.07" lengthAdjust="spacingAndGlyphs">ReviewClip: uploading -&gt; available</text>
+</g>
+<g data-node="fail"><title>Failure path
+exportFailed / pendingUpload / needsAttention
+retry export or upload</title>
+<rect x="457.27" y="1075.40" width="280.94" height="59.79" rx="7" fill="#0f172a"/>
+<rect x="457.27" y="1075.40" width="280.94" height="59.79" rx="7" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="2"/>
+<text x="597.74" y="1096.56" fill="white" font-size="10.41" font-weight="600" text-anchor="middle">Failure path</text>
+<text x="597.74" y="1108.84" fill="#cbd5e1" font-size="10.41" font-weight="400" text-anchor="middle" textLength="268.94" lengthAdjust="spacingAndGlyphs">exportFailed / pendingUpload / needsAttention</text>
+<text x="597.74" y="1121.11" fill="#cbd5e1" font-size="10.41" font-weight="400" text-anchor="middle">retry export or upload</text>
+</g>
+<g data-node="play"><title>Play clip / Play Bout
+ordered ReviewClips -&gt; playableURL</title>
+<rect x="190.13" y="1082.32" width="231.64" height="45.95" rx="7" fill="#0f172a"/>
+<rect x="190.13" y="1082.32" width="231.64" height="45.95" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="305.95" y="1102.46" fill="white" font-size="11.36" font-weight="600" text-anchor="middle">Play clip / Play Bout</text>
+<text x="305.95" y="1115.86" fill="#cbd5e1" font-size="11.36" font-weight="400" text-anchor="middle" textLength="219.64" lengthAdjust="spacingAndGlyphs">ordered ReviewClips -&gt; playableURL</text>
+</g>
+<g data-node="local"><title>Local export or managed cache?</title>
+<rect x="100.26" y="1198.62" width="411.39" height="64.22" rx="7" fill="#0f172a"/>
+<rect x="100.26" y="1198.62" width="411.39" height="64.22" rx="7" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="2"/>
+<text x="305.95" y="1236.85" fill="white" font-size="18.00" font-weight="600" text-anchor="middle">Local export or managed cache?</text>
+</g>
+<g data-node="download"><title>ClipDownloadCoordinator.resolve
+check iCloud -&gt; download CKAsset -&gt; cache</title>
+<rect x="65.58" y="1336.36" width="273.16" height="45.95" rx="7" fill="#0f172a"/>
+<rect x="65.58" y="1336.36" width="273.16" height="45.95" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="202.16" y="1356.56" fill="white" font-size="11.10" font-weight="600" text-anchor="middle">ClipDownloadCoordinator.resolve</text>
+<text x="202.16" y="1369.66" fill="#cbd5e1" font-size="11.10" font-weight="400" text-anchor="middle" textLength="261.16" lengthAdjust="spacingAndGlyphs">check iCloud -&gt; download CKAsset -&gt; cache</text>
+</g>
+<g data-node="player"><title>MediaPlayerModel + BoutPlaybackQueue
+seek, scrub, speed, next clip (continuous)</title>
+<rect x="178.03" y="1445.74" width="255.86" height="45.95" rx="7" fill="#0f172a"/>
+<rect x="178.03" y="1445.74" width="255.86" height="45.95" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="305.95" y="1466.18" fill="white" font-size="10.15" font-weight="600" text-anchor="middle">MediaPlayerModel + BoutPlaybackQueue</text>
+<text x="305.95" y="1478.16" fill="#cbd5e1" font-size="10.15" font-weight="400" text-anchor="middle" textLength="243.86" lengthAdjust="spacingAndGlyphs">seek, scrub, speed, next clip (continuous)</text>
+</g>
+<g data-node="offload"><title>Unload / Clear Local Copies
+only confirmed available exports; clear cache
+retain CloudKit records/assets</title>
+<rect x="170.24" y="1565.21" width="271.43" height="59.79" rx="7" fill="#0f172a"/>
+<rect x="170.24" y="1565.21" width="271.43" height="59.79" rx="7" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="2"/>
+<text x="305.95" y="1586.66" fill="white" font-size="10.05" font-weight="600" text-anchor="middle">Unload / Clear Local Copies</text>
+<text x="305.95" y="1598.52" fill="#cbd5e1" font-size="10.05" font-weight="400" text-anchor="middle" textLength="259.43" lengthAdjust="spacingAndGlyphs">only confirmed available exports; clear cache</text>
+<text x="305.95" y="1610.39" fill="#cbd5e1" font-size="10.05" font-weight="400" text-anchor="middle">retain CloudKit records/assets</text>
+</g>
+<g data-node="delete"><title>Delete clip/source/bout/tournament
+asset first, then local records, queue metadata deletion
+Photos original stays intact</title>
+<rect x="688.49" y="100.89" width="325.92" height="59.79" rx="7" fill="#0f172a"/>
+<rect x="688.49" y="100.89" width="325.92" height="59.79" rx="7" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="2"/>
+<text x="851.46" y="122.63" fill="white" font-size="9.70" font-weight="600" text-anchor="middle">Delete clip/source/bout/tournament</text>
+<text x="851.46" y="134.08" fill="#cbd5e1" font-size="9.70" font-weight="400" text-anchor="middle" textLength="313.92" lengthAdjust="spacingAndGlyphs">asset first, then local records, queue metadata deletion</text>
+<text x="851.46" y="145.52" fill="#cbd5e1" font-size="9.70" font-weight="400" text-anchor="middle">Photos original stays intact</text>
+</g>
+<rect x="540.45" y="420.06" width="79.10" height="15.00" rx="3" fill="#020617"/>
+<text x="580.00" y="430.06" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">Add to Bout</text>
+<rect x="496.81" y="895.34" width="97.40" height="15.00" rx="3" fill="#020617"/>
+<text x="545.51" y="905.34" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">export success</text>
+<rect x="579.22" y="961.99" width="97.40" height="15.00" rx="3" fill="#020617"/>
+<text x="627.92" y="971.99" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">export failure</text>
+<rect x="517.64" y="1028.64" width="91.30" height="15.00" rx="3" fill="#020617"/>
+<text x="563.29" y="1038.64" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">cloud failure</text>
+<rect x="377.25" y="1028.64" width="66.90" height="15.00" rx="3" fill="#020617"/>
+<text x="410.70" y="1038.64" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">available</text>
+<rect x="486.53" y="1028.64" width="42.50" height="15.00" rx="3" fill="#020617"/>
+<text x="507.78" y="1038.64" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">retry</text>
+<rect x="349.76" y="1349.34" width="30.30" height="15.00" rx="3" fill="#020617"/>
+<text x="364.91" y="1359.34" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">yes</text>
+<rect x="248.01" y="1289.60" width="24.20" height="15.00" rx="3" fill="#020617"/>
+<text x="260.11" y="1299.60" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">no</text>
+<rect x="294.58" y="1518.45" width="60.80" height="15.00" rx="3" fill="#020617"/>
+<text x="324.98" y="1528.45" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">optional</text>
+<rect x="760.69" y="353.40" width="60.80" height="15.00" rx="3" fill="#020617"/>
+<text x="791.09" y="363.40" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">optional</text>
+<line x1="42" y1="1680" x2="1038" y2="1680" stroke="#334155" stroke-width="2"/>
+<text x="52.00" y="1720.00" fill="white" font-size="23.00" font-weight="700" text-anchor="start">Color legend</text>
+<rect x="52.00" y="1745.00" width="30" height="27" rx="4" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="96.00" y="1766.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Person / Apple</text>
+<rect x="542.00" y="1745.00" width="30" height="27" rx="4" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="586.00" y="1766.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Frontend / UI</text>
+<rect x="52.00" y="1811.00" width="30" height="27" rx="4" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+<text x="96.00" y="1832.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Models / services</text>
+<rect x="542.00" y="1811.00" width="30" height="27" rx="4" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="586.00" y="1832.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Private cloud</text>
+<rect x="52.00" y="1877.00" width="30" height="27" rx="4" fill="rgba(136, 19, 55, 0.4)" stroke="#fb7185" stroke-width="1.5"/>
+<text x="96.00" y="1898.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Failure / deletion</text>
+<rect x="542.00" y="1877.00" width="30" height="27" rx="4" fill="rgba(76, 29, 149, 0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="586.00" y="1898.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Local state</text>
+</svg>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="cards">
+      <div class="card"><div class="card-header"><div class="card-dot cyan"></div><h3>Source originals</h3></div><ul><li>PhotoPicker selections create links; originals stay in Photos.</li></ul></div>
+      <div class="card"><div class="card-header"><div class="card-dot emerald"></div><h3>Edited clips</h3></div><ul><li>AVFoundation exports a local trim, then private CloudKit stores the edited asset.</li></ul></div>
+      <div class="card"><div class="card-header"><div class="card-dot violet"></div><h3>Recovery</h3></div><ul><li>Failures retain retry states; offload and deletion leave Photos originals untouched.</li></ul></div>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">
+      Fencing Video Analysis • source-traced MVP • Media pathways
+    </p>
+  </div>
+
+  <script>
+    async function copyAsImage(btn) {
+      const orig = btn.textContent;
+      try {
+        const el = document.getElementById('report-container');
+        const r = el.getBoundingClientRect();
+        const pad = 32;
+        const canvas = await html2canvas(document.body, { backgroundColor: '#020617', scale: 2, useCORS: true, ignoreElements: (e) => e.classList && e.classList.contains('toolbar'), x: r.left + window.scrollX - pad, y: r.top + window.scrollY - pad, width: r.width + pad * 2, height: r.height + pad * 2 });
+        const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
+        await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+        btn.textContent = '✓ Copied!';
+      } catch (e) {
+        btn.textContent = '✗ Failed';
+      }
+      setTimeout(() => btn.textContent = orig, 2000);
+    }
+
+    async function downloadPNG(btn) {
+      const orig = btn.textContent;
+      btn.textContent = '⏳ ...';
+      try {
+        const el = document.getElementById('report-container');
+        const r = el.getBoundingClientRect();
+        const pad = 32;
+        const canvas = await html2canvas(document.body, { backgroundColor: '#020617', scale: 2, useCORS: true, ignoreElements: (e) => e.classList && e.classList.contains('toolbar'), x: r.left + window.scrollX - pad, y: r.top + window.scrollY - pad, width: r.width + pad * 2, height: r.height + pad * 2 });
+        const link = document.createElement('a');
+        link.download = 'diagram.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        btn.textContent = '✓ Done!';
+      } catch (e) {
+        btn.textContent = '✗ Failed';
+      }
+      setTimeout(() => btn.textContent = orig, 2000);
+    }
+
+    async function downloadPDF(btn) {
+      const orig = btn.textContent;
+      btn.textContent = '⏳ ...';
+      try {
+        const el = document.getElementById('report-container');
+        const r = el.getBoundingClientRect();
+        const pad = 32;
+        const canvas = await html2canvas(document.body, { backgroundColor: '#020617', scale: 2, useCORS: true, ignoreElements: (e) => e.classList && e.classList.contains('toolbar'), x: r.left + window.scrollX - pad, y: r.top + window.scrollY - pad, width: r.width + pad * 2, height: r.height + pad * 2 });
+        const imgData = canvas.toDataURL('image/png');
+        const { jsPDF } = window.jspdf;
+        const orientation = canvas.width > canvas.height ? 'landscape' : 'portrait';
+        const pdf = new jsPDF({ orientation, unit: 'px', format: [canvas.width, canvas.height], hotfixes: ['px_scaling'] });
+        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+        pdf.save('diagram.pdf');
+        btn.textContent = '✓ Done!';
+      } catch (e) {
+        btn.textContent = '✗ Failed';
+      }
+      setTimeout(() => btn.textContent = orig, 2000);
+    }
+  </script>
+</body>
+</html>

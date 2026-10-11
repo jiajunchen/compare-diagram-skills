@@ -1,0 +1,1521 @@
+[
+  {
+    "lesson": 1,
+    "file": "lesson-01.wav",
+    "audioSeconds": 45.42,
+    "segments": [
+      {
+        "file": "segments/lesson-01-part-00.wav",
+        "hash": "83bc572fa832bc82c29bbc96688d94a546f2a7cb34dc310eb87adcaab5c05080",
+        "text": "Number one. Add a fencer and add a tournament.",
+        "audioSeconds": 4.16,
+        "generationSeconds": 2.4143575408961624,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Number one. Add a fencer and add a tournament.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 0.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-01-part-01.wav",
+        "hash": "925112b2ca8e06e58d0c7642d9b30454b358558ab490c03bd87e74797c104c0e",
+        "text": "This guide follows seven tasks for a parent and fencer. We use fictional names and demo recordings.",
+        "audioSeconds": 6.48,
+        "generationSeconds": 3.282945959130302,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "This guide follows seven tasks for a parent and fencer. We use fictional names and demo recordings.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 5.66,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-01-part-02.wav",
+        "hash": "2b92bd552105e8c566fb6ed4c93ea9262cf225657c0a3b73432b486168824a7d",
+        "text": "First, enter the fencer's name. Here, we use Alex Rivera.",
+        "audioSeconds": 5.52,
+        "generationSeconds": 2.881768375169486,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "First, enter the fencer's name. Here, we use Alex Rivera.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 12.94,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-01-part-03.wav",
+        "hash": "c36e80daaa327f64531f5fb5ae77f5a425430536257f4a18557ff1a37ac23d2d",
+        "text": "Tap Continue to save the name. The app uses one fencer profile.",
+        "audioSeconds": 5.04,
+        "generationSeconds": 2.657199083128944,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Continue to save the name. The app uses one fencer profile.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 19.26,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-01-part-04.wav",
+        "hash": "7d6f0ec1d41e8f10a0190b8ef2f29c2d9c7b8bfcc9c89ae666156bcacd8be8ff",
+        "text": "Tap the plus button to add a tournament.",
+        "audioSeconds": 2.32,
+        "generationSeconds": 1.2303409581072628,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap the plus button to add a tournament.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 25.1,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-01-part-05.wav",
+        "hash": "b9e62d11145fc09caebc8c2e393c294def40d54d93248fcee42fac49001f08b7",
+        "text": "Enter a tournament name. You can also set its date, location, and time zone.",
+        "audioSeconds": 5.84,
+        "generationSeconds": 2.9248230000957847,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Enter a tournament name. You can also set its date, location, and time zone.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 28.22,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-01-part-06.wav",
+        "hash": "811b64ea8281cf758cffc555abebea60852b36a292fa1a0965aac8058a9be49e",
+        "text": "Tap Save to create the tournament.",
+        "audioSeconds": 2.32,
+        "generationSeconds": 1.1743608328979462,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Save to create the tournament.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 34.86,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-01-part-07.wav",
+        "hash": "ac673bf4acf7bb8c61046e13bbcaf3b96224baa38dc1c5184005b500f54e984b",
+        "text": "The tournament is ready. Next, add its schedule or enter bouts yourself.",
+        "audioSeconds": 5.44,
+        "generationSeconds": 2.7321624169126153,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "The tournament is ready. Next, add its schedule or enter bouts yourself.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 37.98,
+        "addedPauseSeconds": 2.0
+      }
+    ]
+  },
+  {
+    "lesson": 2,
+    "file": "lesson-02.wav",
+    "audioSeconds": 48.78,
+    "segments": [
+      {
+        "file": "segments/lesson-02-part-00.wav",
+        "hash": "4cc82f50e6b6761f09ecdd5047ffa81f73369a9c450fae3a3fa6afbc79eb2cc7",
+        "text": "Number two. Add a schedule from a screenshot.",
+        "audioSeconds": 3.2,
+        "generationSeconds": 1.7230392917990685,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Number two. Add a schedule from a screenshot.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 0.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-02-part-01.wav",
+        "hash": "728ea2c41acdee2ccafeb3fff9d5747e370e2acc8feadaa8e2ebda118bc4555a",
+        "text": "To use a schedule screenshot, tap Import Schedule.",
+        "audioSeconds": 4.32,
+        "generationSeconds": 2.2166025841142982,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "To use a schedule screenshot, tap Import Schedule.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 4.7,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-02-part-02.wav",
+        "hash": "b245cbf4a0486dd06bc1bcae88f3ba79bda1cd06a1e6254caf3094a6472a3097",
+        "text": "Tap Select schedule screenshots. The app opens the Photos picker.",
+        "audioSeconds": 4.64,
+        "generationSeconds": 2.3853224581107497,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Select schedule screenshots. The app opens the Photos picker.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 9.82,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-02-part-03.wav",
+        "hash": "7a7c8554f8f30549d732100b06f6148ceb857b4e6d58fd3afa9fc4b28d781f6d",
+        "text": "Select the schedule screenshot. Make sure the names and table are clear.",
+        "audioSeconds": 4.32,
+        "generationSeconds": 2.2108909161761403,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Select the schedule screenshot. Make sure the names and table are clear.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 15.26,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-02-part-04.wav",
+        "hash": "c3fb94df87d38b72227723d27e4f4718abf311be1e42659b4fa8ac34548602ff",
+        "text": "Tap Add to read the selected screenshot.",
+        "audioSeconds": 3.6,
+        "generationSeconds": 1.8340991670265794,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Add to read the selected screenshot.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 20.38,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-02-part-05.wav",
+        "hash": "6fbb376ae5f7a681fefb256a330f8b0bd3c3cb4f696490db876d75a439532270",
+        "text": "Scroll to the proposed bouts. Check opponents and bout numbers. Correct any mistakes before saving.",
+        "audioSeconds": 6.8,
+        "generationSeconds": 3.417101667029783,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Scroll to the proposed bouts. Check opponents and bout numbers. Correct any mistakes before saving.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 24.78,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-02-part-06.wav",
+        "hash": "658128f73b9dac9a5a408689ea3ceca484513a57ecd3f53f30a1c2fe3f86f93b",
+        "text": "Tap Confirm Schedule when the details are correct. The app saves the confirmed bouts.",
+        "audioSeconds": 6.48,
+        "generationSeconds": 3.277331165969372,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Confirm Schedule when the details are correct. The app saves the confirmed bouts.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 32.78,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-02-part-07.wav",
+        "hash": "8aa60d95acb40f853f01548e08bd50d33a81d40c15b1f7aa5c5e3ab4f68a72ce",
+        "text": "The bout list now shows the imported schedule. The screenshot and proposed text stay on this device.",
+        "audioSeconds": 6.32,
+        "generationSeconds": 3.1859349170699716,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "The bout list now shows the imported schedule. The screenshot and proposed text stay on this device.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 40.46,
+        "addedPauseSeconds": 2.0
+      }
+    ]
+  },
+  {
+    "lesson": 3,
+    "file": "lesson-03.wav",
+    "audioSeconds": 41.58,
+    "segments": [
+      {
+        "file": "segments/lesson-03-part-00.wav",
+        "hash": "57fc265f1f9b0c3d3256a3f390251115ab32f1b4528feb242acbceb7c0b26e72",
+        "text": "Number three. Add a bout manually.",
+        "audioSeconds": 3.28,
+        "generationSeconds": 1.7206418341957033,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Number three. Add a bout manually.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 0.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-03-part-01.wav",
+        "hash": "faff5d436d0d46212d457a584c30f7e9c7ab3e7ff07e9d65ec16ec846ec1013c",
+        "text": "You can also add a bout without a screenshot. Open Import Schedule again.",
+        "audioSeconds": 5.04,
+        "generationSeconds": 2.5571808330714703,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "You can also add a bout without a screenshot. Open Import Schedule again.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 4.78,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-03-part-02.wav",
+        "hash": "3010c6c4249a67cb3df830b86f56591dd4bb8336da3b6726e06f9b1355eef3fe",
+        "text": "Tap Manual Entry.",
+        "audioSeconds": 1.68,
+        "generationSeconds": 0.8965443749912083,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Manual Entry.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 10.62,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-03-part-03.wav",
+        "hash": "9ee3908cb9eb1742dd8b5224f172c229feb9535e9e735b99eb3dd3341f969798",
+        "text": "Tap Add proposed bout to create an empty row.",
+        "audioSeconds": 4.32,
+        "generationSeconds": 2.1935659998562187,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Add proposed bout to create an empty row.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 13.1,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-03-part-04.wav",
+        "hash": "0ab825ca1398376527829526e5a053b0a1f7360a2c0469129f569ea52f334c77",
+        "text": "Enter the opponent's name. We will use Casey Jordan.",
+        "audioSeconds": 4.16,
+        "generationSeconds": 2.1441117089707404,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Enter the opponent's name. We will use Casey Jordan.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 18.22,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-03-part-05.wav",
+        "hash": "0962b35aca381f7d9fec75149fc1d672145b7edf2b2aff069104b1094d2ea625",
+        "text": "Enter the bout number from the full bout order. Use a positive number that does not conflict with another bout.",
+        "audioSeconds": 7.36,
+        "generationSeconds": 3.725572417024523,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Enter the bout number from the full bout order. Use a positive number that does not conflict with another bout.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 23.18,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-03-part-06.wav",
+        "hash": "88784822c44ba97ff51bca1d1de8bb86cdf2e7396bc484e6b8c93fc708f51df9",
+        "text": "Check the new row, then tap Confirm Schedule.",
+        "audioSeconds": 3.36,
+        "generationSeconds": 1.7068402499426156,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Check the new row, then tap Confirm Schedule.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 31.34,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-03-part-07.wav",
+        "hash": "57fc9b4ab9334e52d214a2685da314a1222abe42a01efbee4d48add2e4c92adc",
+        "text": "The manual bout now appears beside the imported bouts.",
+        "audioSeconds": 3.68,
+        "generationSeconds": 1.8886867498513311,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "The manual bout now appears beside the imported bouts.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 35.9,
+        "addedPauseSeconds": 2.0
+      }
+    ]
+  },
+  {
+    "lesson": 4,
+    "file": "lesson-04.wav",
+    "audioSeconds": 64.06,
+    "segments": [
+      {
+        "file": "segments/lesson-04-part-00.wav",
+        "hash": "af1982c6e8ec9e6f683ac575d244c9e353b1dab4532a64c0c4eeeb8eb6a707c4",
+        "text": "Number four. Import videos into a bout.",
+        "audioSeconds": 2.96,
+        "generationSeconds": 1.5476146249566227,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Number four. Import videos into a bout.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 0.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-04-part-01.wav",
+        "hash": "e18f1805dfe45516995df4924ad6efa0723fbfdbf267090773540f8cf34f089d",
+        "text": "Before importing videos, open the correct bout. Every selected recording will go into this bout.",
+        "audioSeconds": 5.92,
+        "generationSeconds": 2.9773155839648098,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Before importing videos, open the correct bout. Every selected recording will go into this bout.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 4.46,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-04-part-02.wav",
+        "hash": "8c48cf0c5d80ee61b633dbc97b9c6c6008421be8bb42b1bac5cfc790c7561c2f",
+        "text": "Tap Import Recordings to open the recording review screen.",
+        "audioSeconds": 4.32,
+        "generationSeconds": 2.1914911668282,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Import Recordings to open the recording review screen.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 11.18,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-04-part-03.wav",
+        "hash": "11b3a643023093fb62a533f9bbd5c355172c1b6d53c8cc114a801fe48b05769d",
+        "text": "Tap Select Recordings to open the Photos picker.",
+        "audioSeconds": 3.52,
+        "generationSeconds": 1.789248458109796,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Select Recordings to open the Photos picker.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 16.3,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-04-part-04.wav",
+        "hash": "6cd0c645122f358cbd7e42344dc05549943efc4f3437237dde505e1d1f2ddb40",
+        "text": "Select the first recording from this bout.",
+        "audioSeconds": 2.4,
+        "generationSeconds": 1.230958207976073,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Select the first recording from this bout.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 20.62,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-04-part-05.wav",
+        "hash": "05eb64bd2d7a3f93d948e5a2b0504765f9154b0fc1777522695cd6ddb19663f1",
+        "text": "Select any other recordings from the same bout. Several recordings can belong to one bout.",
+        "audioSeconds": 5.76,
+        "generationSeconds": 2.8980068750679493,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Select any other recordings from the same bout. Several recordings can belong to one bout.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 23.82,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-04-part-06.wav",
+        "hash": "ba228dd9310b1534b3a79990eed15d8f8f712b06fd512566c01fae30d6b9aa12",
+        "text": "Tap Add to load the selected recordings.",
+        "audioSeconds": 3.36,
+        "generationSeconds": 1.7239771659951657,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Add to load the selected recordings.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 30.38,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-04-part-07.wav",
+        "hash": "c35dcb721951eac33df058164d6f5825120d0b68af1a77917bccb0b53c158143",
+        "text": "If your device asks, tap Allow Full Access so the app can read the selected recordings.",
+        "audioSeconds": 6.0,
+        "generationSeconds": 3.0761557079385966,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "If your device asks, tap Allow Full Access so the app can read the selected recordings.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 34.54,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-04-part-08.wav",
+        "hash": "94263a1fafc06040c85b4f8ca30fed4c11309634afd81fe957c6476dab12e028",
+        "text": "Check the import results. If one recording fails, you can still confirm the successful recordings.",
+        "audioSeconds": 6.16,
+        "generationSeconds": 3.223421333124861,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Check the import results. If one recording fails, you can still confirm the successful recordings.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 41.34,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-04-part-09.wav",
+        "hash": "04f95c717e678f767b814850c4b45fd032b691acded75a2c65a7cbfbabe206e1",
+        "text": "Confirm the import to attach these recordings to the bout. The original videos stay unchanged in Photos.",
+        "audioSeconds": 6.8,
+        "generationSeconds": 3.443065875209868,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Confirm the import to attach these recordings to the bout. The original videos stay unchanged in Photos.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 48.7,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-04-part-10.wav",
+        "hash": "98442701b026ba3dc2b926b689b050574453ab75b7fb35ecb3f1c8fde5cf3777",
+        "text": "The recordings are now linked to this bout. The app orders them by recording time.",
+        "audioSeconds": 5.36,
+        "generationSeconds": 2.7479964999947697,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "The recordings are now linked to this bout. The app orders them by recording time.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 56.7,
+        "addedPauseSeconds": 2.0
+      }
+    ]
+  },
+  {
+    "lesson": 5,
+    "file": "lesson-05.wav",
+    "audioSeconds": 88.22,
+    "segments": [
+      {
+        "file": "segments/lesson-05-part-00.wav",
+        "hash": "57e092079fe1fca2c31e798db25c64f440213584b0e0cefec48dfdeff19de378",
+        "text": "Number five. Create review clips and mark favorites.",
+        "audioSeconds": 3.92,
+        "generationSeconds": 2.046237250091508,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Number five. Create review clips and mark favorites.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 0.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-05-part-01.wav",
+        "hash": "3b51e34f239047617d066668ead18fa24039b66239d33579a207d471ae73460f",
+        "text": "Tap Review and Trim Recordings to open the editor.",
+        "audioSeconds": 3.2,
+        "generationSeconds": 1.6486572921276093,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Review and Trim Recordings to open the editor.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 5.42,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-02.wav",
+        "hash": "b0f46a924def86fe9a9c829b34133d0554515d1e96dfa7adf895223bf57970b8",
+        "text": "Tap Play to preview the selected original recording.",
+        "audioSeconds": 3.84,
+        "generationSeconds": 1.9521970408968627,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Play to preview the selected original recording.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 9.42,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-03.wav",
+        "hash": "633c79bc2d9eac3427d1a9e0c4389e6c04e388f5303e33ea4cb4404de01160d8",
+        "text": "Pause near a moment that you want to keep.",
+        "audioSeconds": 2.4,
+        "generationSeconds": 1.2265801660250872,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Pause near a moment that you want to keep.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 14.06,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-04.wav",
+        "hash": "729d97608e6a043f390e3e3afe42f1279032bc6762e1a3932df24511e8a55fee",
+        "text": "Scroll to Trim a review clip. These controls set the section that you will save.",
+        "audioSeconds": 5.36,
+        "generationSeconds": 2.71094504208304,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Scroll to Trim a review clip. These controls set the section that you will save.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 17.26,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-05.wav",
+        "hash": "86afa9bab2fa8ad140b8890106bf54801d5a395d8913a8d0b0c1b90742239d7d",
+        "text": "Move the Start slider to the beginning of the useful action.",
+        "audioSeconds": 3.76,
+        "generationSeconds": 1.9540734589099884,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Move the Start slider to the beginning of the useful action.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 23.42,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-06.wav",
+        "hash": "d02f99a1bf1ecb370cdb94ce2125ce2b13e8d7ef1d18fdf49b1f0adcb4b12e1c",
+        "text": "Move the End slider to the end of that action. Check the selected duration.",
+        "audioSeconds": 5.04,
+        "generationSeconds": 2.5617632081266493,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Move the End slider to the end of that action. Check the selected duration.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 27.98,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-05-part-07.wav",
+        "hash": "0b31d191bfd17251cea86a3b75fb0cf537b989972624970dca24bade3cc85167",
+        "text": "Tap Save Clip. The app creates a separate edited movie and queues its upload.",
+        "audioSeconds": 5.44,
+        "generationSeconds": 2.7475223750807345,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Save Clip. The app creates a separate edited movie and queues its upload.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 34.22,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-08.wav",
+        "hash": "e92d0ea978b884ad9f7a2d727666d8f2a253b2274c109ee29d97ff3433384ecf",
+        "text": "To save another moment from the same recording, move Start to the next useful action.",
+        "audioSeconds": 6.32,
+        "generationSeconds": 3.202700417023152,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "To save another moment from the same recording, move Start to the next useful action.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 40.46,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-09.wav",
+        "hash": "5fa8c4d9c66c522acced36c0a797fe2f0f16625e0f12987beaa0f2a8e78ea67f",
+        "text": "Move End to finish the second selection.",
+        "audioSeconds": 2.48,
+        "generationSeconds": 1.2879000829998404,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Move End to finish the second selection.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 47.58,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-10.wav",
+        "hash": "db5ba68376fd916689bdb40a99842ff4ace8b9a5fe2da0142927efd2965ec56e",
+        "text": "Tap Save Clip again. One original recording can produce several independent review clips.",
+        "audioSeconds": 5.92,
+        "generationSeconds": 2.98287474992685,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Save Clip again. One original recording can produce several independent review clips.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 50.86,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-11.wav",
+        "hash": "7e2976352fe8041a98acb5d8c72703f8cb30409ba5aecf25753a9cbb60f2ccc8",
+        "text": "Scroll to Review Clips. Wait for Available before clearing an uploaded clip's local copy.",
+        "audioSeconds": 5.92,
+        "generationSeconds": 2.9742190840188414,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Scroll to Review Clips. Wait for Available before clearing an uploaded clip's local copy.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 57.58,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-12.wav",
+        "hash": "8b12fff993b8cec8a93aa8889bbe1e98f8d7b309b2413843812cd1fec3f297a2",
+        "text": "Tap the star beside a clip to mark that clip as a favorite.",
+        "audioSeconds": 3.6,
+        "generationSeconds": 1.8273342920001596,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap the star beside a clip to mark that clip as a favorite.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 64.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-05-part-13.wav",
+        "hash": "66556cad78e48ba95cd4f4b0c65c471b0a698766052b73ac945f5ce207252a6d",
+        "text": "A filled star means this clip is a favorite. Tap it again to remove the favorite mark.",
+        "audioSeconds": 5.76,
+        "generationSeconds": 2.901372459018603,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "A filled star means this clip is a favorite. Tap it again to remove the favorite mark.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 69.1,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-05-part-14.wav",
+        "hash": "378bd10f3be7ceff1b19981bceb94439ecf99e29459fbae2e577dc7f6bdd04b1",
+        "text": "Tap Done to return to the bout details.",
+        "audioSeconds": 2.96,
+        "generationSeconds": 1.5366771249100566,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Done to return to the bout details.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 76.06,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-05-part-15.wav",
+        "hash": "c45fb9df0f707f23e94ff6cc35a350115bd4ecee47cc096166c4463d68b8792a",
+        "text": "The bout's star is an indicator. It fills when at least one clip in that bout is a favorite.",
+        "audioSeconds": 6.4,
+        "generationSeconds": 3.223407165845856,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "The bout's star is an indicator. It fills when at least one clip in that bout is a favorite.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 79.82,
+        "addedPauseSeconds": 2.0
+      }
+    ]
+  },
+  {
+    "lesson": 6,
+    "file": "lesson-06.wav",
+    "audioSeconds": 63.82,
+    "segments": [
+      {
+        "file": "segments/lesson-06-part-00.wav",
+        "hash": "fb9c0cabd9dacb34dbc690210d0a79640d64a87bf43e1e5a09266c56aed1e470",
+        "text": "Number six. Delete review clips.",
+        "audioSeconds": 2.88,
+        "generationSeconds": 1.4893490839749575,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Number six. Delete review clips.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 0.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-01.wav",
+        "hash": "f23d49bd90bd4c5735008dd49ce6a8618f6eb0d0606f23223293d2d6d0dc2b7a",
+        "text": "To delete a review clip, open Review and Trim Recordings again.",
+        "audioSeconds": 4.72,
+        "generationSeconds": 2.3944222920108587,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "To delete a review clip, open Review and Trim Recordings again.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 4.38,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-02.wav",
+        "hash": "a94d723467b2d707ccf853ccefa9698f603064b1679f00b2c7cab4b930b439e2",
+        "text": "Scroll toward the review clip list.",
+        "audioSeconds": 2.88,
+        "generationSeconds": 1.4843410409521312,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Scroll toward the review clip list.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 10.3,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-06-part-03.wav",
+        "hash": "bc57d758f06ee6416500a1fe59d7c91e77396498e1a05157d04a116e9c3b9d6d",
+        "text": "Find the edited clip that you want to remove. Check its start and end times.",
+        "audioSeconds": 5.12,
+        "generationSeconds": 2.6204492091201246,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Find the edited clip that you want to remove. Check its start and end times.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 13.98,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-04.wav",
+        "hash": "3369b6f88eb292af5d21c0238380caea22bce8a992af379f66b2d33d56e6b64c",
+        "text": "Tap Delete beside that clip.",
+        "audioSeconds": 2.0,
+        "generationSeconds": 1.0232438340317458,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Delete beside that clip.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 20.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-05.wav",
+        "hash": "40f7d97efa9db9690d17e82f4485c9d7e6b4bcf8c12d1f5d1c8b0541bfff8165",
+        "text": "Read the confirmation. Deleting removes the edited clip. It does not delete the original recording in Photos.",
+        "audioSeconds": 7.52,
+        "generationSeconds": 3.810030916938558,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Read the confirmation. Deleting removes the edited clip. It does not delete the original recording in Photos.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 23.5,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-06.wav",
+        "hash": "26feb8927e9543b943ec61d5c88c5f2b2212ed55780ab319737ed00cb52bc02f",
+        "text": "Tap Delete Clip to confirm. The app also removes the clip's cloud copy where applicable.",
+        "audioSeconds": 6.72,
+        "generationSeconds": 3.42233929107897,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Delete Clip to confirm. The app also removes the clip's cloud copy where applicable.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 32.22,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-07.wav",
+        "hash": "c88165ffc70efb67453352a904a3c3c9677bc371fcc400fc1e6e02258a781132",
+        "text": "The other review clip remains. A cloud deletion that cannot finish immediately waits for recovery.",
+        "audioSeconds": 6.24,
+        "generationSeconds": 3.1816326668486,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "The other review clip remains. A cloud deletion that cannot finish immediately waits for recovery.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 40.14,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-08.wav",
+        "hash": "feddc525d66f9c6ff87a420d8d5659ec5888ecc7fe0a9c91770c46b18bccb3ff",
+        "text": "Tap Done to return to the bout.",
+        "audioSeconds": 2.32,
+        "generationSeconds": 1.183337832801044,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Done to return to the bout.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 47.58,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-06-part-09.wav",
+        "hash": "35319fbab8bb88e1c80e09b2ae73d48a46470362f602e546b9cfda4f1e353f37",
+        "text": "We deleted the only favorite clip. The bout's star is now empty because no remaining clip is a favorite.",
+        "audioSeconds": 6.96,
+        "generationSeconds": 3.5226679579354823,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "We deleted the only favorite clip. The bout's star is now empty because no remaining clip is a favorite.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 50.7,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-06-part-10.wav",
+        "hash": "31047a4a5b9f5583ac8ff9accd5027c4be366e7bbb9b82c6923eb8aebf0f3c79",
+        "text": "Close the bout details to return to the tournament.",
+        "audioSeconds": 2.96,
+        "generationSeconds": 1.522833292139694,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Close the bout details to return to the tournament.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 58.86,
+        "addedPauseSeconds": 2.0
+      }
+    ]
+  },
+  {
+    "lesson": 7,
+    "file": "lesson-07.wav",
+    "audioSeconds": 56.86,
+    "segments": [
+      {
+        "file": "segments/lesson-07-part-00.wav",
+        "hash": "2453f224b7d47b5c2bac1670a37491e27e92774a049fdc32522c6a9ae450686b",
+        "text": "Number seven. Clear local clip copies.",
+        "audioSeconds": 2.96,
+        "generationSeconds": 1.5565855419263244,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Number seven. Clear local clip copies.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 0.3,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-07-part-01.wav",
+        "hash": "8a8b1bb82af91f5dfa647410e27579d77ea0d57e2d12094453ed511902eac3cd",
+        "text": "Open Fencer to manage the profile and local clip storage.",
+        "audioSeconds": 4.16,
+        "generationSeconds": 2.126440124819055,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Open Fencer to manage the profile and local clip storage.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 4.46,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-07-part-02.wav",
+        "hash": "a2859244781970c1b67f7ba9d743ffd449e24e6220895cf290b2bbc2843892db",
+        "text": "Clip storage shows local exports and downloaded copies. These values describe device storage, not working memory.",
+        "audioSeconds": 7.52,
+        "generationSeconds": 3.8491908328142017,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Clip storage shows local exports and downloaded copies. These values describe device storage, not working memory.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 9.42,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-07-part-03.wav",
+        "hash": "6a281dd8d57443f88a13f9a74ec1544db353589a5e4d452b295ea672a3610c5a",
+        "text": "Tap Clear Local Clip Copies to free storage on this device.",
+        "audioSeconds": 4.16,
+        "generationSeconds": 2.141551374923438,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Clear Local Clip Copies to free storage on this device.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 17.74,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-07-part-04.wav",
+        "hash": "7fda0a04e81825684d7d96fa95f13c9d24e819dac1873b5f07ec60f063e2059a",
+        "text": "This clears uploaded local exports and downloaded copies across bouts. It keeps clips in iCloud and protects pending uploads.",
+        "audioSeconds": 8.08,
+        "generationSeconds": 4.135500959120691,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "This clears uploaded local exports and downloaded copies across bouts. It keeps clips in iCloud and protects pending uploads.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 22.7,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-07-part-05.wav",
+        "hash": "0044e9dbca6385eb3fe170bcabf54562200322eca9b80b3f3c71e21055f86c5d",
+        "text": "Tap Clear Local Copies to confirm. The app reports how many files it removed.",
+        "audioSeconds": 6.4,
+        "generationSeconds": 3.2500662910752,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Tap Clear Local Copies to confirm. The app reports how many files it removed.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 31.98,
+        "addedPauseSeconds": 1.2
+      },
+      {
+        "file": "segments/lesson-07-part-06.wav",
+        "hash": "2e17412530a97802c109f974b50d633ab2fdc53564d61cc00168d074595ba30a",
+        "text": "The local storage counts decrease. Saved cloud clips can download again when you play them with an available connection.",
+        "audioSeconds": 7.04,
+        "generationSeconds": 3.651856791926548,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "The local storage counts decrease. Saved cloud clips can download again when you play them with an available connection.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 39.58,
+        "addedPauseSeconds": 0.8
+      },
+      {
+        "file": "segments/lesson-07-part-07.wav",
+        "hash": "49c745d38e7872eecbe6cb1bc07dc8d7b15b7a053c54adfe3ec929102b72ced1",
+        "text": "Your original recordings remain in Photos. You can now organize bouts, save useful clips, and review them together.",
+        "audioSeconds": 7.44,
+        "generationSeconds": 3.8322065419051796,
+        "request": {
+          "model": "mlx-community/Qwen3-TTS-12Hz-0.6B-CustomVoice-8bit",
+          "input": "Your original recordings remain in Photos. You can now organize bouts, save useful clips, and review them together.",
+          "voice": "Aiden",
+          "lang_code": "English",
+          "response_format": "wav",
+          "speed": 1.0,
+          "temperature": 0.3,
+          "repetition_penalty": 1.05,
+          "max_tokens": 1024,
+          "verbose": false
+        },
+        "startSeconds": 47.42,
+        "addedPauseSeconds": 2.0
+      }
+    ]
+  }
+]

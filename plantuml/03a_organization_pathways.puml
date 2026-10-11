@@ -1,0 +1,114 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #0a0e1a
+skinparam shadowing false
+skinparam defaultFontName Helvetica
+skinparam defaultFontColor #c8d8f0
+skinparam ArrowColor #2d7aff
+skinparam ArrowFontColor #c8d8f0
+skinparam TitleFontColor #c8d8f0
+skinparam packageBackgroundColor #0f1528
+skinparam packageBorderColor #1e2d4a
+skinparam packageFontColor #c8d8f0
+skinparam rectangleBackgroundColor #0f1528
+skinparam rectangleFontColor #c8d8f0
+skinparam classBackgroundColor #0f1528
+skinparam classFontColor #c8d8f0
+skinparam RoundCorner 12
+skinparam linetype polyline
+hide stereotype
+hide circle
+title 03A  User pathways | launch, tournament, and schedule
+skinparam rectangle<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam class<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam class<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam class<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+skinparam class<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+rectangle "Open app" as launch <<theme_dim>>
+rectangle "AppDependencies.make\nopen SwiftData; wire live services" as boot <<theme_blue>>
+rectangle "AppViewModel.load\ncheck iCloud; fetch local settings/tournaments" as load <<theme_blue>>
+rectangle "Settings found?" as settings <<theme_orange>>
+rectangle "FirstRunSetupView\nsaveFencerName -> SwiftData" as first <<theme_blue>>
+rectangle "TournamentNavigationView\nselect / refreshCloud" as nav <<theme_blue>>
+rectangle "New Tournament\nTournamentFormView.save" as new <<theme_blue>>
+rectangle "AppViewModel.saveTournament\nvalidate name; insert/update Tournament\nSwiftData save -> schedule CloudKit sync" as save <<theme_green>>
+rectangle "TournamentDetailView\nshow bouts / open selected bout" as detail <<theme_blue>>
+rectangle "Import Schedule\nscreenshot(s) or Manual Entry" as import <<theme_blue>>
+rectangle "Manual drafts\nadd opponent + full-order bout number" as manual <<theme_green>>
+rectangle "Vision recognize each screenshot\ndeterministic parse + optional on-device model\nvalidator reconciles source-backed proposal" as ocr <<theme_green>>
+rectangle "Review/edit drafts\nconfirm or discard" as review <<theme_blue>>
+rectangle "AppViewModel.confirmSchedule\nvalidate nonempty, opponent, positive/unique number\ninsert new Bouts; mark tournament confirmed" as confirm <<theme_green>>
+rectangle "BoutDetailView\nedit/delete confirmed bout; import recordings" as bout <<theme_blue>>
+launch --> boot
+boot --> load
+load --> settings
+settings --> first : no
+first --> nav
+settings --> nav : yes
+nav --> new
+new --> save
+save --> detail
+detail --> import
+import --> manual : manual
+import --> ocr : screenshots
+manual --> review
+ocr --> review
+review --> confirm : confirm
+confirm --> bout
+review ..> detail : discard
+@enduml

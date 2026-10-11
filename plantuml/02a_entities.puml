@@ -1,0 +1,99 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #0a0e1a
+skinparam shadowing false
+skinparam defaultFontName Helvetica
+skinparam defaultFontColor #c8d8f0
+skinparam ArrowColor #2d7aff
+skinparam ArrowFontColor #c8d8f0
+skinparam TitleFontColor #c8d8f0
+skinparam packageBackgroundColor #0f1528
+skinparam packageBorderColor #1e2d4a
+skinparam packageFontColor #c8d8f0
+skinparam rectangleBackgroundColor #0f1528
+skinparam rectangleFontColor #c8d8f0
+skinparam classBackgroundColor #0f1528
+skinparam classFontColor #c8d8f0
+skinparam RoundCorner 12
+skinparam linetype polyline
+hide stereotype
+hide circle
+title 02A  Persisted entities | UUID references, not SwiftData @Relationship
+skinparam rectangle<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam class<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam class<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam class<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+skinparam class<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+class "AppSettings\nPK id (stable cloudID)\nfencerName, syncState" as settings <<theme_cyan>>
+class "Tournament\nPK id\nname, venue, startDate, timezone\nscheduleImportStatus, syncState" as tournament <<theme_blue>>
+class "Bout\nPK id | FK tournamentID\nphase, opponent, sequenceNumber\npool, strip, scheduledAt, syncState" as bout <<theme_blue>>
+class "SourceRecording\nPK id | FK tournamentID, boutID\nimportBatchID, Photos IDs\nrecordedAt, duration, localWorkingFilePath" as source <<theme_green>>
+class "ReviewClip\nPK id | FK boutID, sourceRecordingID\ntrim range, localExportPath\ncloudAssetRecordName, mediaSyncStatus\nisFavorite" as clip <<theme_green>>
+class "ScheduleExtractionRun\nPK id | FK tournamentID\nstatus, warnings, modelAssistanceUsed\n(schema only; no production inserts)" as run <<theme_orange>>
+class "PHAsset (Photos)\noriginal recording" as photo <<theme_dim>>
+class "CKRecord + CKAsset\nReviewClip-{UUID}" as asset <<theme_dim>>
+settings ..> tournament : one fencer name used by all tournaments
+tournament --> bout : 1 -> 0..*
+tournament ..> source : 1 -> 0..* direct ID
+bout --> source : 1 -> 0..*
+bout ..> clip : 1 -> 0..* direct ID
+source --> clip : 1 -> 0..*
+tournament ..> run : 1 -> 0..* schema
+source ..> photo : deviceLocalAssetID / cloudPhotoAssetID
+clip ..> asset : cloudAssetRecordName
+@enduml

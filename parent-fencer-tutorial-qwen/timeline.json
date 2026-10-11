@@ -1,0 +1,4999 @@
+{
+  "title": "Fencing Review \u2014 A guide for parents and fencers",
+  "duration": 416.1,
+  "chapters": [
+    {
+      "title": "Add a fencer and add a tournament",
+      "start": 0.0,
+      "beats": [
+        {
+          "label": "welcome",
+          "focus": null,
+          "text": "This guide follows seven tasks for a parent and fencer. We use fictional names and demo recordings.",
+          "start": 6.166666666666667,
+          "words": [
+            {
+              "word": "This",
+              "start": 6.326666666666667,
+              "end": 6.486666666666667
+            },
+            {
+              "word": "guide",
+              "start": 6.486666666666667,
+              "end": 6.806666666666667
+            },
+            {
+              "word": "follows",
+              "start": 6.806666666666667,
+              "end": 7.206666666666667
+            },
+            {
+              "word": "seven",
+              "start": 7.206666666666667,
+              "end": 7.606666666666667
+            },
+            {
+              "word": "tasks",
+              "start": 7.606666666666667,
+              "end": 8.086666666666666
+            },
+            {
+              "word": "for",
+              "start": 8.086666666666666,
+              "end": 8.246666666666666
+            },
+            {
+              "word": "a",
+              "start": 8.246666666666666,
+              "end": 8.326666666666668
+            },
+            {
+              "word": "parent",
+              "start": 8.326666666666668,
+              "end": 8.726666666666667
+            },
+            {
+              "word": "and",
+              "start": 8.726666666666667,
+              "end": 8.806666666666667
+            },
+            {
+              "word": "fencer.",
+              "start": 8.806666666666667,
+              "end": 9.366666666666667
+            },
+            {
+              "word": "We",
+              "start": 9.926666666666666,
+              "end": 10.006666666666668
+            },
+            {
+              "word": "use",
+              "start": 10.006666666666668,
+              "end": 10.246666666666666
+            },
+            {
+              "word": "fictional",
+              "start": 10.246666666666666,
+              "end": 10.726666666666667
+            },
+            {
+              "word": "names",
+              "start": 10.726666666666667,
+              "end": 11.206666666666667
+            },
+            {
+              "word": "and",
+              "start": 11.206666666666667,
+              "end": 11.366666666666667
+            },
+            {
+              "word": "demo",
+              "start": 11.366666666666667,
+              "end": 11.606666666666667
+            },
+            {
+              "word": "recordings.",
+              "start": 11.606666666666667,
+              "end": 12.406666666666666
+            }
+          ],
+          "end": 13.466666666666667,
+          "speechDuration": 6.48,
+          "freezeDuration": 0,
+          "readingPause": 0.8199999999999994
+        },
+        {
+          "label": "enter-fencer",
+          "focus": null,
+          "text": "First, enter the fencer's name. Here, we use Alex Rivera.",
+          "start": 13.466666666666667,
+          "words": [
+            {
+              "word": "First,",
+              "start": 13.626666666666667,
+              "end": 14.106666666666667
+            },
+            {
+              "word": "enter",
+              "start": 14.586666666666666,
+              "end": 14.746666666666666
+            },
+            {
+              "word": "the",
+              "start": 14.746666666666666,
+              "end": 14.906666666666666
+            },
+            {
+              "word": "fencer's",
+              "start": 14.906666666666666,
+              "end": 15.386666666666667
+            },
+            {
+              "word": "name.",
+              "start": 15.386666666666667,
+              "end": 15.786666666666667
+            },
+            {
+              "word": "Here,",
+              "start": 16.346666666666668,
+              "end": 16.746666666666666
+            },
+            {
+              "word": "we",
+              "start": 17.226666666666667,
+              "end": 17.386666666666667
+            },
+            {
+              "word": "use",
+              "start": 17.386666666666667,
+              "end": 17.706666666666667
+            },
+            {
+              "word": "Alex",
+              "start": 17.78666666666667,
+              "end": 18.186666666666667
+            },
+            {
+              "word": "Rivera.",
+              "start": 18.186666666666667,
+              "end": 18.746666666666666
+            }
+          ],
+          "end": 19.8,
+          "speechDuration": 5.52,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "continue-setup",
+          "focus": null,
+          "text": "Tap Continue to save the name. The app uses one fencer profile.",
+          "start": 19.8,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 19.96,
+              "end": 20.36
+            },
+            {
+              "word": "Continue",
+              "start": 20.68,
+              "end": 21.080000000000002
+            },
+            {
+              "word": "to",
+              "start": 21.080000000000002,
+              "end": 21.16
+            },
+            {
+              "word": "save",
+              "start": 21.16,
+              "end": 21.48
+            },
+            {
+              "word": "the",
+              "start": 21.48,
+              "end": 21.560000000000002
+            },
+            {
+              "word": "name.",
+              "start": 21.560000000000002,
+              "end": 21.96
+            },
+            {
+              "word": "The",
+              "start": 22.36,
+              "end": 22.52
+            },
+            {
+              "word": "app",
+              "start": 22.52,
+              "end": 22.76
+            },
+            {
+              "word": "uses",
+              "start": 22.76,
+              "end": 23.080000000000002
+            },
+            {
+              "word": "one",
+              "start": 23.080000000000002,
+              "end": 23.48
+            },
+            {
+              "word": "fencer",
+              "start": 23.48,
+              "end": 23.96
+            },
+            {
+              "word": "profile.",
+              "start": 23.96,
+              "end": 24.6
+            }
+          ],
+          "end": 25.666666666666668,
+          "speechDuration": 5.04,
+          "freezeDuration": 1,
+          "readingPause": 0.8266666666666662
+        },
+        {
+          "label": "new-tournament",
+          "focus": null,
+          "text": "Tap the plus button to add a tournament.",
+          "start": 25.666666666666668,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 25.826666666666668,
+              "end": 26.14666666666667
+            },
+            {
+              "word": "the",
+              "start": 26.14666666666667,
+              "end": 26.226666666666667
+            },
+            {
+              "word": "plus",
+              "start": 26.226666666666667,
+              "end": 26.546666666666667
+            },
+            {
+              "word": "button",
+              "start": 26.546666666666667,
+              "end": 26.866666666666667
+            },
+            {
+              "word": "to",
+              "start": 26.866666666666667,
+              "end": 27.026666666666667
+            },
+            {
+              "word": "add",
+              "start": 27.026666666666667,
+              "end": 27.26666666666667
+            },
+            {
+              "word": "a",
+              "start": 27.25,
+              "end": 27.283333333333335
+            },
+            {
+              "word": "tournament.",
+              "start": 27.26666666666667,
+              "end": 27.74666666666667
+            }
+          ],
+          "end": 28.8,
+          "speechDuration": 2.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "tournament-name",
+          "focus": null,
+          "text": "Enter a tournament name. You can also set its date, location, and time zone.",
+          "start": 28.8,
+          "words": [
+            {
+              "word": "Enter",
+              "start": 29.04,
+              "end": 29.28
+            },
+            {
+              "word": "a",
+              "start": 29.263333333333335,
+              "end": 29.296666666666667
+            },
+            {
+              "word": "tournament",
+              "start": 29.36,
+              "end": 29.84
+            },
+            {
+              "word": "name.",
+              "start": 29.84,
+              "end": 30.240000000000002
+            },
+            {
+              "word": "You",
+              "start": 30.64,
+              "end": 30.72
+            },
+            {
+              "word": "can",
+              "start": 30.72,
+              "end": 30.880000000000003
+            },
+            {
+              "word": "also",
+              "start": 30.880000000000003,
+              "end": 31.2
+            },
+            {
+              "word": "set",
+              "start": 31.2,
+              "end": 31.52
+            },
+            {
+              "word": "its",
+              "start": 31.52,
+              "end": 31.68
+            },
+            {
+              "word": "date,",
+              "start": 31.68,
+              "end": 32.08
+            },
+            {
+              "word": "location,",
+              "start": 32.4,
+              "end": 33.120000000000005
+            },
+            {
+              "word": "and",
+              "start": 33.44,
+              "end": 33.6
+            },
+            {
+              "word": "time",
+              "start": 33.6,
+              "end": 34.0
+            },
+            {
+              "word": "zone.",
+              "start": 34.0,
+              "end": 34.4
+            }
+          ],
+          "end": 35.46666666666667,
+          "speechDuration": 5.84,
+          "freezeDuration": 1,
+          "readingPause": 0.8266666666666671
+        },
+        {
+          "label": "save-tournament",
+          "focus": null,
+          "text": "Tap Save to create the tournament.",
+          "start": 35.46666666666667,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 35.626666666666665,
+              "end": 35.946666666666665
+            },
+            {
+              "word": "Save",
+              "start": 35.946666666666665,
+              "end": 36.42666666666667
+            },
+            {
+              "word": "to",
+              "start": 36.50666666666667,
+              "end": 36.586666666666666
+            },
+            {
+              "word": "create",
+              "start": 36.586666666666666,
+              "end": 36.98666666666667
+            },
+            {
+              "word": "the",
+              "start": 36.98666666666667,
+              "end": 37.06666666666667
+            },
+            {
+              "word": "tournament.",
+              "start": 37.06666666666667,
+              "end": 37.54666666666667
+            }
+          ],
+          "end": 38.6,
+          "speechDuration": 2.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "tournament-ready",
+          "focus": null,
+          "text": "The tournament is ready. Next, add its schedule or enter bouts yourself.",
+          "start": 38.6,
+          "words": [
+            {
+              "word": "The",
+              "start": 38.76,
+              "end": 38.84
+            },
+            {
+              "word": "tournament",
+              "start": 38.84,
+              "end": 39.4
+            },
+            {
+              "word": "is",
+              "start": 39.4,
+              "end": 39.56
+            },
+            {
+              "word": "ready.",
+              "start": 39.56,
+              "end": 39.96
+            },
+            {
+              "word": "Next,",
+              "start": 40.36,
+              "end": 40.84
+            },
+            {
+              "word": "add",
+              "start": 41.160000000000004,
+              "end": 41.4
+            },
+            {
+              "word": "its",
+              "start": 41.4,
+              "end": 41.480000000000004
+            },
+            {
+              "word": "schedule",
+              "start": 41.480000000000004,
+              "end": 42.04
+            },
+            {
+              "word": "or",
+              "start": 42.36,
+              "end": 42.52
+            },
+            {
+              "word": "enter",
+              "start": 42.6,
+              "end": 42.84
+            },
+            {
+              "word": "bouts",
+              "start": 42.84,
+              "end": 43.24
+            },
+            {
+              "word": "yourself.",
+              "start": 43.24,
+              "end": 43.72
+            }
+          ],
+          "end": 46.06666666666667,
+          "speechDuration": 5.44,
+          "freezeDuration": 0,
+          "readingPause": 2.0266666666666664
+        }
+      ],
+      "titleCard": {
+        "kind": "title",
+        "chapter": 0,
+        "start": 0.0,
+        "duration": 5.666666666666667,
+        "label": "title-1",
+        "text": "Number one. Add a fencer and add a tournament.",
+        "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-00.wav",
+        "speechOffset": 0.3,
+        "speechDuration": 4.16,
+        "words": [
+          {
+            "word": "Number",
+            "start": 0.45999999999999996,
+            "end": 0.78
+          },
+          {
+            "word": "one.",
+            "start": 0.78,
+            "end": 1.18
+          },
+          {
+            "word": "Add",
+            "start": 1.82,
+            "end": 1.98
+          },
+          {
+            "word": "a",
+            "start": 1.98,
+            "end": 2.06
+          },
+          {
+            "word": "fencer",
+            "start": 2.06,
+            "end": 2.6999999999999997
+          },
+          {
+            "word": "and",
+            "start": 3.0999999999999996,
+            "end": 3.26
+          },
+          {
+            "word": "add",
+            "start": 3.34,
+            "end": 3.5
+          },
+          {
+            "word": "a",
+            "start": 3.5,
+            "end": 3.5799999999999996
+          },
+          {
+            "word": "tournament.",
+            "start": 3.5799999999999996,
+            "end": 4.22
+          }
+        ]
+      },
+      "end": 46.06666666666667,
+      "duration": 46.06666666666667
+    },
+    {
+      "title": "Add a schedule from a screenshot",
+      "start": 46.06666666666667,
+      "beats": [
+        {
+          "label": "import-schedule",
+          "focus": null,
+          "text": "To use a schedule screenshot, tap Import Schedule.",
+          "start": 51.766666666666666,
+          "words": [
+            {
+              "word": "To",
+              "start": 52.00666666666667,
+              "end": 52.086666666666666
+            },
+            {
+              "word": "use",
+              "start": 52.086666666666666,
+              "end": 52.32666666666667
+            },
+            {
+              "word": "a",
+              "start": 52.32666666666667,
+              "end": 52.406666666666666
+            },
+            {
+              "word": "schedule",
+              "start": 52.406666666666666,
+              "end": 52.88666666666666
+            },
+            {
+              "word": "screenshot,",
+              "start": 52.88666666666666,
+              "end": 53.766666666666666
+            },
+            {
+              "word": "tap",
+              "start": 54.166666666666664,
+              "end": 54.56666666666666
+            },
+            {
+              "word": "Import",
+              "start": 54.64666666666667,
+              "end": 55.28666666666667
+            },
+            {
+              "word": "Schedule.",
+              "start": 55.28666666666667,
+              "end": 55.846666666666664
+            }
+          ],
+          "end": 56.9,
+          "speechDuration": 4.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "open-screenshot-photos",
+          "focus": null,
+          "text": "Tap Select schedule screenshots. The app opens the Photos picker.",
+          "start": 56.9,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 57.059999999999995,
+              "end": 57.379999999999995
+            },
+            {
+              "word": "Select",
+              "start": 57.379999999999995,
+              "end": 57.86
+            },
+            {
+              "word": "schedule",
+              "start": 57.86,
+              "end": 58.339999999999996
+            },
+            {
+              "word": "screenshots.",
+              "start": 58.339999999999996,
+              "end": 59.22
+            },
+            {
+              "word": "The",
+              "start": 59.46,
+              "end": 59.62
+            },
+            {
+              "word": "app",
+              "start": 59.62,
+              "end": 59.86
+            },
+            {
+              "word": "opens",
+              "start": 59.86,
+              "end": 60.339999999999996
+            },
+            {
+              "word": "the",
+              "start": 60.339999999999996,
+              "end": 60.42
+            },
+            {
+              "word": "Photos",
+              "start": 60.42,
+              "end": 60.82
+            },
+            {
+              "word": "picker.",
+              "start": 60.82,
+              "end": 61.22
+            }
+          ],
+          "end": 62.36666666666667,
+          "speechDuration": 4.64,
+          "freezeDuration": 1,
+          "readingPause": 0.8266666666666671
+        },
+        {
+          "label": "select-screenshot",
+          "focus": null,
+          "text": "Select the schedule screenshot. Make sure the names and table are clear.",
+          "start": 62.36666666666667,
+          "words": [
+            {
+              "word": "Select",
+              "start": 62.60666666666667,
+              "end": 62.92666666666667
+            },
+            {
+              "word": "the",
+              "start": 62.92666666666667,
+              "end": 63.00666666666667
+            },
+            {
+              "word": "schedule",
+              "start": 63.00666666666667,
+              "end": 63.486666666666665
+            },
+            {
+              "word": "screenshot.",
+              "start": 63.486666666666665,
+              "end": 64.12666666666667
+            },
+            {
+              "word": "Make",
+              "start": 64.60666666666667,
+              "end": 64.68666666666667
+            },
+            {
+              "word": "sure",
+              "start": 64.68666666666667,
+              "end": 64.92666666666666
+            },
+            {
+              "word": "the",
+              "start": 64.92666666666666,
+              "end": 65.00666666666666
+            },
+            {
+              "word": "names",
+              "start": 65.00666666666666,
+              "end": 65.40666666666667
+            },
+            {
+              "word": "and",
+              "start": 65.40666666666667,
+              "end": 65.56666666666666
+            },
+            {
+              "word": "table",
+              "start": 65.56666666666666,
+              "end": 65.88666666666667
+            },
+            {
+              "word": "are",
+              "start": 65.88666666666667,
+              "end": 65.96666666666667
+            },
+            {
+              "word": "clear.",
+              "start": 65.96666666666667,
+              "end": 66.44666666666667
+            }
+          ],
+          "end": 67.5,
+          "speechDuration": 4.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "add-screenshot",
+          "focus": null,
+          "text": "Tap Add to read the selected screenshot.",
+          "start": 67.5,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 67.66,
+              "end": 68.06
+            },
+            {
+              "word": "Add",
+              "start": 68.62,
+              "end": 69.1
+            },
+            {
+              "word": "to",
+              "start": 69.08333333333333,
+              "end": 69.11666666666666
+            },
+            {
+              "word": "read",
+              "start": 69.1,
+              "end": 69.42
+            },
+            {
+              "word": "the",
+              "start": 69.42,
+              "end": 69.58
+            },
+            {
+              "word": "selected",
+              "start": 69.58,
+              "end": 70.14
+            },
+            {
+              "word": "screenshot.",
+              "start": 70.14,
+              "end": 70.86
+            }
+          ],
+          "end": 71.9,
+          "speechDuration": 3.6,
+          "freezeDuration": 1,
+          "readingPause": 0.8000000000000003
+        },
+        {
+          "label": "review-schedule",
+          "focus": null,
+          "text": "Scroll to the proposed bouts. Check opponents and bout numbers. Correct any mistakes before saving.",
+          "start": 71.9,
+          "words": [
+            {
+              "word": "Scroll",
+              "start": 72.14,
+              "end": 72.54
+            },
+            {
+              "word": "to",
+              "start": 72.62,
+              "end": 72.7
+            },
+            {
+              "word": "the",
+              "start": 72.7,
+              "end": 72.78
+            },
+            {
+              "word": "proposed",
+              "start": 72.78,
+              "end": 73.42
+            },
+            {
+              "word": "bouts.",
+              "start": 73.42,
+              "end": 73.98
+            },
+            {
+              "word": "Check",
+              "start": 74.30000000000001,
+              "end": 74.54
+            },
+            {
+              "word": "opponents",
+              "start": 74.54,
+              "end": 75.10000000000001
+            },
+            {
+              "word": "and",
+              "start": 75.10000000000001,
+              "end": 75.26
+            },
+            {
+              "word": "bout",
+              "start": 75.26,
+              "end": 75.5
+            },
+            {
+              "word": "numbers.",
+              "start": 75.5,
+              "end": 75.98
+            },
+            {
+              "word": "Correct",
+              "start": 76.38000000000001,
+              "end": 76.78
+            },
+            {
+              "word": "any",
+              "start": 76.78,
+              "end": 76.94000000000001
+            },
+            {
+              "word": "mistakes",
+              "start": 76.94000000000001,
+              "end": 77.5
+            },
+            {
+              "word": "before",
+              "start": 77.5,
+              "end": 77.9
+            },
+            {
+              "word": "saving.",
+              "start": 77.9,
+              "end": 78.46000000000001
+            }
+          ],
+          "end": 79.9,
+          "speechDuration": 6.8,
+          "freezeDuration": 0,
+          "readingPause": 1.2000000000000002
+        },
+        {
+          "label": "confirm-schedule",
+          "focus": null,
+          "text": "Tap Confirm Schedule when the details are correct. The app saves the confirmed bouts.",
+          "start": 79.9,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 80.14,
+              "end": 80.38000000000001
+            },
+            {
+              "word": "Confirm",
+              "start": 80.38000000000001,
+              "end": 81.02000000000001
+            },
+            {
+              "word": "Schedule",
+              "start": 81.02000000000001,
+              "end": 81.58000000000001
+            },
+            {
+              "word": "when",
+              "start": 81.58000000000001,
+              "end": 81.74000000000001
+            },
+            {
+              "word": "the",
+              "start": 81.74000000000001,
+              "end": 81.82000000000001
+            },
+            {
+              "word": "details",
+              "start": 81.82000000000001,
+              "end": 82.54
+            },
+            {
+              "word": "are",
+              "start": 82.54,
+              "end": 82.78
+            },
+            {
+              "word": "correct.",
+              "start": 82.78,
+              "end": 83.34
+            },
+            {
+              "word": "The",
+              "start": 83.82000000000001,
+              "end": 83.98
+            },
+            {
+              "word": "app",
+              "start": 83.98,
+              "end": 84.22
+            },
+            {
+              "word": "saves",
+              "start": 84.22,
+              "end": 84.7
+            },
+            {
+              "word": "the",
+              "start": 84.7,
+              "end": 84.86
+            },
+            {
+              "word": "confirmed",
+              "start": 84.86,
+              "end": 85.5
+            },
+            {
+              "word": "bouts.",
+              "start": 85.5,
+              "end": 86.14
+            }
+          ],
+          "end": 87.60000000000001,
+          "speechDuration": 6.48,
+          "freezeDuration": 1,
+          "readingPause": 1.2199999999999998
+        },
+        {
+          "label": "schedule-ready",
+          "focus": null,
+          "text": "The bout list now shows the imported schedule. The screenshot and proposed text stay on this device.",
+          "start": 87.6,
+          "words": [
+            {
+              "word": "The",
+              "start": 87.75999999999999,
+              "end": 87.83999999999999
+            },
+            {
+              "word": "bout",
+              "start": 87.83999999999999,
+              "end": 88.16
+            },
+            {
+              "word": "list",
+              "start": 88.16,
+              "end": 88.39999999999999
+            },
+            {
+              "word": "now",
+              "start": 88.39999999999999,
+              "end": 88.72
+            },
+            {
+              "word": "shows",
+              "start": 88.72,
+              "end": 89.03999999999999
+            },
+            {
+              "word": "the",
+              "start": 89.03999999999999,
+              "end": 89.19999999999999
+            },
+            {
+              "word": "imported",
+              "start": 89.19999999999999,
+              "end": 89.67999999999999
+            },
+            {
+              "word": "schedule.",
+              "start": 89.67999999999999,
+              "end": 90.24
+            },
+            {
+              "word": "The",
+              "start": 90.39999999999999,
+              "end": 90.47999999999999
+            },
+            {
+              "word": "screenshot",
+              "start": 90.47999999999999,
+              "end": 91.28
+            },
+            {
+              "word": "and",
+              "start": 91.28,
+              "end": 91.44
+            },
+            {
+              "word": "proposed",
+              "start": 91.44,
+              "end": 91.91999999999999
+            },
+            {
+              "word": "text",
+              "start": 91.91999999999999,
+              "end": 92.39999999999999
+            },
+            {
+              "word": "stay",
+              "start": 92.39999999999999,
+              "end": 92.8
+            },
+            {
+              "word": "on",
+              "start": 92.8,
+              "end": 92.96
+            },
+            {
+              "word": "this",
+              "start": 92.96,
+              "end": 93.11999999999999
+            },
+            {
+              "word": "device.",
+              "start": 93.11999999999999,
+              "end": 93.67999999999999
+            }
+          ],
+          "end": 95.93333333333332,
+          "speechDuration": 6.32,
+          "freezeDuration": 0,
+          "readingPause": 2.0133333333333336
+        }
+      ],
+      "titleCard": {
+        "kind": "title",
+        "chapter": 1,
+        "start": 46.56666666666667,
+        "duration": 4.7,
+        "label": "title-2",
+        "text": "Number two. Add a schedule from a screenshot.",
+        "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-00.wav",
+        "speechOffset": 0.3,
+        "speechDuration": 3.2,
+        "words": [
+          {
+            "word": "Number",
+            "start": 47.026666666666664,
+            "end": 47.346666666666664
+          },
+          {
+            "word": "two.",
+            "start": 47.346666666666664,
+            "end": 47.82666666666667
+          },
+          {
+            "word": "Add",
+            "start": 48.306666666666665,
+            "end": 48.46666666666667
+          },
+          {
+            "word": "a",
+            "start": 48.45,
+            "end": 48.483333333333334
+          },
+          {
+            "word": "schedule",
+            "start": 48.46666666666667,
+            "end": 48.946666666666665
+          },
+          {
+            "word": "from",
+            "start": 48.946666666666665,
+            "end": 49.10666666666667
+          },
+          {
+            "word": "a",
+            "start": 49.10666666666667,
+            "end": 49.18666666666667
+          },
+          {
+            "word": "screenshot.",
+            "start": 49.18666666666667,
+            "end": 49.82666666666667
+          }
+        ]
+      },
+      "end": 95.93333333333334,
+      "duration": 49.86666666666667
+    },
+    {
+      "title": "Add a bout manually",
+      "start": 95.93333333333334,
+      "beats": [
+        {
+          "label": "manual-open",
+          "focus": null,
+          "text": "You can also add a bout without a screenshot. Open Import Schedule again.",
+          "start": 101.73333333333333,
+          "words": [
+            {
+              "word": "You",
+              "start": 101.89333333333333,
+              "end": 102.05333333333333
+            },
+            {
+              "word": "can",
+              "start": 102.05333333333333,
+              "end": 102.21333333333334
+            },
+            {
+              "word": "also",
+              "start": 102.21333333333334,
+              "end": 102.61333333333333
+            },
+            {
+              "word": "add",
+              "start": 102.61333333333333,
+              "end": 102.85333333333334
+            },
+            {
+              "word": "a",
+              "start": 102.83666666666667,
+              "end": 102.87
+            },
+            {
+              "word": "bout",
+              "start": 102.85333333333334,
+              "end": 103.33333333333333
+            },
+            {
+              "word": "without",
+              "start": 103.33333333333333,
+              "end": 103.65333333333334
+            },
+            {
+              "word": "a",
+              "start": 103.65333333333334,
+              "end": 103.73333333333333
+            },
+            {
+              "word": "screenshot.",
+              "start": 103.73333333333333,
+              "end": 104.45333333333333
+            },
+            {
+              "word": "Open",
+              "start": 104.85333333333334,
+              "end": 105.09333333333333
+            },
+            {
+              "word": "Import",
+              "start": 105.09333333333333,
+              "end": 105.65333333333334
+            },
+            {
+              "word": "Schedule",
+              "start": 105.65333333333334,
+              "end": 106.13333333333334
+            },
+            {
+              "word": "again.",
+              "start": 106.13333333333334,
+              "end": 106.53333333333333
+            }
+          ],
+          "end": 107.6,
+          "speechDuration": 5.04,
+          "freezeDuration": 1,
+          "readingPause": 0.8266666666666662
+        },
+        {
+          "label": "manual-entry",
+          "focus": null,
+          "text": "Tap Manual Entry.",
+          "start": 107.6,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 107.75999999999999,
+              "end": 108.0
+            },
+            {
+              "word": "Manual",
+              "start": 108.0,
+              "end": 108.47999999999999
+            },
+            {
+              "word": "Entry.",
+              "start": 108.47999999999999,
+              "end": 109.03999999999999
+            }
+          ],
+          "end": 110.1,
+          "speechDuration": 1.68,
+          "freezeDuration": 1,
+          "readingPause": 0.8200000000000001
+        },
+        {
+          "label": "add-manual-bout",
+          "focus": null,
+          "text": "Tap Add proposed bout to create an empty row.",
+          "start": 110.1,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 110.25999999999999,
+              "end": 110.58
+            },
+            {
+              "word": "Add",
+              "start": 110.74,
+              "end": 111.22
+            },
+            {
+              "word": "proposed",
+              "start": 111.22,
+              "end": 111.86
+            },
+            {
+              "word": "bout",
+              "start": 111.86,
+              "end": 112.33999999999999
+            },
+            {
+              "word": "to",
+              "start": 112.32333333333332,
+              "end": 112.35666666666665
+            },
+            {
+              "word": "create",
+              "start": 112.33999999999999,
+              "end": 112.82
+            },
+            {
+              "word": "an",
+              "start": 112.89999999999999,
+              "end": 113.05999999999999
+            },
+            {
+              "word": "empty",
+              "start": 113.22,
+              "end": 113.69999999999999
+            },
+            {
+              "word": "row.",
+              "start": 113.69999999999999,
+              "end": 114.17999999999999
+            }
+          ],
+          "end": 115.23333333333333,
+          "speechDuration": 4.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "manual-opponent",
+          "focus": null,
+          "text": "Enter the opponent's name. We will use Casey Jordan.",
+          "start": 115.23333333333333,
+          "words": [
+            {
+              "word": "Enter",
+              "start": 115.39333333333333,
+              "end": 115.71333333333334
+            },
+            {
+              "word": "the",
+              "start": 115.71333333333334,
+              "end": 115.87333333333333
+            },
+            {
+              "word": "opponent's",
+              "start": 115.87333333333333,
+              "end": 116.43333333333334
+            },
+            {
+              "word": "name.",
+              "start": 116.43333333333334,
+              "end": 116.91333333333334
+            },
+            {
+              "word": "We",
+              "start": 117.55333333333333,
+              "end": 117.63333333333334
+            },
+            {
+              "word": "will",
+              "start": 117.63333333333334,
+              "end": 117.79333333333334
+            },
+            {
+              "word": "use",
+              "start": 117.79333333333334,
+              "end": 118.19333333333333
+            },
+            {
+              "word": "Casey",
+              "start": 118.19333333333333,
+              "end": 118.59333333333333
+            },
+            {
+              "word": "Jordan.",
+              "start": 118.59333333333333,
+              "end": 119.15333333333334
+            }
+          ],
+          "end": 120.2,
+          "speechDuration": 4.16,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666666
+        },
+        {
+          "label": "manual-number",
+          "focus": null,
+          "text": "Enter the bout number from the full bout order. Use a positive number that does not conflict with another bout.",
+          "start": 120.2,
+          "words": [
+            {
+              "word": "Enter",
+              "start": 120.36,
+              "end": 120.68
+            },
+            {
+              "word": "the",
+              "start": 120.68,
+              "end": 120.84
+            },
+            {
+              "word": "bout",
+              "start": 120.84,
+              "end": 121.16
+            },
+            {
+              "word": "number",
+              "start": 121.16,
+              "end": 121.64
+            },
+            {
+              "word": "from",
+              "start": 121.64,
+              "end": 121.96000000000001
+            },
+            {
+              "word": "the",
+              "start": 121.94333333333334,
+              "end": 121.97666666666667
+            },
+            {
+              "word": "full",
+              "start": 121.96000000000001,
+              "end": 122.36
+            },
+            {
+              "word": "bout",
+              "start": 122.36,
+              "end": 122.76
+            },
+            {
+              "word": "order.",
+              "start": 122.76,
+              "end": 123.16
+            },
+            {
+              "word": "Use",
+              "start": 123.56,
+              "end": 123.8
+            },
+            {
+              "word": "a",
+              "start": 123.8,
+              "end": 123.88000000000001
+            },
+            {
+              "word": "positive",
+              "start": 123.88000000000001,
+              "end": 124.44
+            },
+            {
+              "word": "number",
+              "start": 124.44,
+              "end": 124.92
+            },
+            {
+              "word": "that",
+              "start": 125.0,
+              "end": 125.16
+            },
+            {
+              "word": "does",
+              "start": 125.16,
+              "end": 125.32000000000001
+            },
+            {
+              "word": "not",
+              "start": 125.32000000000001,
+              "end": 125.72
+            },
+            {
+              "word": "conflict",
+              "start": 125.72,
+              "end": 126.36
+            },
+            {
+              "word": "with",
+              "start": 126.36,
+              "end": 126.60000000000001
+            },
+            {
+              "word": "another",
+              "start": 126.60000000000001,
+              "end": 127.0
+            },
+            {
+              "word": "bout.",
+              "start": 127.0,
+              "end": 127.32000000000001
+            }
+          ],
+          "end": 128.36666666666667,
+          "speechDuration": 7.36,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666658
+        },
+        {
+          "label": "confirm-manual",
+          "focus": null,
+          "text": "Check the new row, then tap Confirm Schedule.",
+          "start": 128.36666666666667,
+          "words": [
+            {
+              "word": "Check",
+              "start": 128.52666666666667,
+              "end": 128.76666666666668
+            },
+            {
+              "word": "the",
+              "start": 128.76666666666668,
+              "end": 128.84666666666666
+            },
+            {
+              "word": "new",
+              "start": 128.84666666666666,
+              "end": 129.08666666666667
+            },
+            {
+              "word": "row,",
+              "start": 129.08666666666667,
+              "end": 129.48666666666668
+            },
+            {
+              "word": "then",
+              "start": 129.88666666666668,
+              "end": 130.12666666666667
+            },
+            {
+              "word": "tap",
+              "start": 130.12666666666667,
+              "end": 130.4466666666667
+            },
+            {
+              "word": "Confirm",
+              "start": 130.4466666666667,
+              "end": 130.92666666666668
+            },
+            {
+              "word": "Schedule.",
+              "start": 130.92666666666668,
+              "end": 131.48666666666668
+            }
+          ],
+          "end": 132.93333333333334,
+          "speechDuration": 3.36,
+          "freezeDuration": 1,
+          "readingPause": 1.2066666666666666
+        },
+        {
+          "label": "manual-ready",
+          "focus": null,
+          "text": "The manual bout now appears beside the imported bouts.",
+          "start": 132.93333333333334,
+          "words": [
+            {
+              "word": "The",
+              "start": 133.17333333333335,
+              "end": 133.25333333333333
+            },
+            {
+              "word": "manual",
+              "start": 133.25333333333333,
+              "end": 133.65333333333334
+            },
+            {
+              "word": "bout",
+              "start": 133.65333333333334,
+              "end": 133.97333333333333
+            },
+            {
+              "word": "now",
+              "start": 133.97333333333333,
+              "end": 134.21333333333334
+            },
+            {
+              "word": "appears",
+              "start": 134.21333333333334,
+              "end": 134.77333333333334
+            },
+            {
+              "word": "beside",
+              "start": 134.77333333333334,
+              "end": 135.25333333333333
+            },
+            {
+              "word": "the",
+              "start": 135.25333333333333,
+              "end": 135.33333333333334
+            },
+            {
+              "word": "imported",
+              "start": 135.33333333333334,
+              "end": 135.89333333333335
+            },
+            {
+              "word": "bouts.",
+              "start": 135.89333333333335,
+              "end": 136.37333333333333
+            }
+          ],
+          "end": 138.63333333333333,
+          "speechDuration": 3.68,
+          "freezeDuration": 0,
+          "readingPause": 2.02
+        }
+      ],
+      "titleCard": {
+        "kind": "title",
+        "chapter": 2,
+        "start": 96.43333333333334,
+        "duration": 4.8,
+        "label": "title-3",
+        "text": "Number three. Add a bout manually.",
+        "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-00.wav",
+        "speechOffset": 0.3,
+        "speechDuration": 3.28,
+        "words": [
+          {
+            "word": "Number",
+            "start": 96.89333333333333,
+            "end": 97.13333333333334
+          },
+          {
+            "word": "three.",
+            "start": 97.13333333333334,
+            "end": 97.61333333333333
+          },
+          {
+            "word": "Add",
+            "start": 98.65333333333334,
+            "end": 98.81333333333333
+          },
+          {
+            "word": "a",
+            "start": 98.79666666666667,
+            "end": 98.83
+          },
+          {
+            "word": "bout",
+            "start": 98.81333333333333,
+            "end": 99.13333333333334
+          },
+          {
+            "word": "manually.",
+            "start": 99.13333333333334,
+            "end": 99.77333333333334
+          }
+        ]
+      },
+      "end": 138.63333333333333,
+      "duration": 42.69999999999999
+    },
+    {
+      "title": "Import videos into a bout",
+      "start": 138.63333333333333,
+      "beats": [
+        {
+          "label": "choose-bout",
+          "focus": null,
+          "text": "Before importing videos, open the correct bout. Every selected recording will go into this bout.",
+          "start": 144.1,
+          "words": [
+            {
+              "word": "Before",
+              "start": 144.26,
+              "end": 144.57999999999998
+            },
+            {
+              "word": "importing",
+              "start": 144.57999999999998,
+              "end": 145.06
+            },
+            {
+              "word": "videos,",
+              "start": 145.06,
+              "end": 145.62
+            },
+            {
+              "word": "open",
+              "start": 145.85999999999999,
+              "end": 146.18
+            },
+            {
+              "word": "the",
+              "start": 146.18,
+              "end": 146.26
+            },
+            {
+              "word": "correct",
+              "start": 146.26,
+              "end": 146.66
+            },
+            {
+              "word": "bout.",
+              "start": 146.66,
+              "end": 146.98
+            },
+            {
+              "word": "Every",
+              "start": 147.46,
+              "end": 147.7
+            },
+            {
+              "word": "selected",
+              "start": 147.7,
+              "end": 148.18
+            },
+            {
+              "word": "recording",
+              "start": 148.18,
+              "end": 148.66
+            },
+            {
+              "word": "will",
+              "start": 148.66,
+              "end": 148.82
+            },
+            {
+              "word": "go",
+              "start": 148.82,
+              "end": 149.06
+            },
+            {
+              "word": "into",
+              "start": 149.06,
+              "end": 149.22
+            },
+            {
+              "word": "this",
+              "start": 149.22,
+              "end": 149.46
+            },
+            {
+              "word": "bout.",
+              "start": 149.46,
+              "end": 149.78
+            }
+          ],
+          "end": 150.83333333333331,
+          "speechDuration": 5.92,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "import-videos",
+          "focus": null,
+          "text": "Tap Import Recordings to open the recording review screen.",
+          "start": 150.83333333333334,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 150.99333333333334,
+              "end": 151.31333333333333
+            },
+            {
+              "word": "Import",
+              "start": 151.39333333333335,
+              "end": 151.95333333333335
+            },
+            {
+              "word": "Recordings",
+              "start": 151.95333333333335,
+              "end": 152.75333333333333
+            },
+            {
+              "word": "to",
+              "start": 152.75333333333333,
+              "end": 152.83333333333334
+            },
+            {
+              "word": "open",
+              "start": 152.83333333333334,
+              "end": 153.15333333333334
+            },
+            {
+              "word": "the",
+              "start": 153.15333333333334,
+              "end": 153.23333333333335
+            },
+            {
+              "word": "recording",
+              "start": 153.23333333333335,
+              "end": 153.87333333333333
+            },
+            {
+              "word": "review",
+              "start": 153.87333333333333,
+              "end": 154.27333333333334
+            },
+            {
+              "word": "screen.",
+              "start": 154.27333333333334,
+              "end": 154.91333333333336
+            }
+          ],
+          "end": 155.96666666666667,
+          "speechDuration": 4.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "select-recordings",
+          "focus": null,
+          "text": "Tap Select Recordings to open the Photos picker.",
+          "start": 155.96666666666667,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 156.12666666666667,
+              "end": 156.52666666666667
+            },
+            {
+              "word": "Select",
+              "start": 156.52666666666667,
+              "end": 157.00666666666666
+            },
+            {
+              "word": "Recordings",
+              "start": 157.00666666666666,
+              "end": 157.80666666666667
+            },
+            {
+              "word": "to",
+              "start": 157.80666666666667,
+              "end": 157.88666666666666
+            },
+            {
+              "word": "open",
+              "start": 157.96666666666667,
+              "end": 158.20666666666668
+            },
+            {
+              "word": "the",
+              "start": 158.20666666666668,
+              "end": 158.28666666666666
+            },
+            {
+              "word": "Photos",
+              "start": 158.28666666666666,
+              "end": 158.76666666666668
+            },
+            {
+              "word": "picker.",
+              "start": 158.76666666666668,
+              "end": 159.24666666666667
+            }
+          ],
+          "end": 160.3,
+          "speechDuration": 3.52,
+          "freezeDuration": 1,
+          "readingPause": 0.813333333333333
+        },
+        {
+          "label": "select-video-one",
+          "focus": null,
+          "text": "Select the first recording from this bout.",
+          "start": 160.3,
+          "words": [
+            {
+              "word": "Select",
+              "start": 160.46,
+              "end": 160.86
+            },
+            {
+              "word": "the",
+              "start": 160.86,
+              "end": 160.94
+            },
+            {
+              "word": "first",
+              "start": 160.94,
+              "end": 161.34
+            },
+            {
+              "word": "recording",
+              "start": 161.34,
+              "end": 161.74
+            },
+            {
+              "word": "from",
+              "start": 161.74,
+              "end": 161.98000000000002
+            },
+            {
+              "word": "this",
+              "start": 161.98000000000002,
+              "end": 162.14000000000001
+            },
+            {
+              "word": "bout.",
+              "start": 162.14000000000001,
+              "end": 162.46
+            }
+          ],
+          "end": 163.5,
+          "speechDuration": 2.4,
+          "freezeDuration": 1,
+          "readingPause": 0.8000000000000003
+        },
+        {
+          "label": "select-video-two",
+          "focus": null,
+          "text": "Select any other recordings from the same bout. Several recordings can belong to one bout.",
+          "start": 163.5,
+          "words": [
+            {
+              "word": "Select",
+              "start": 163.66,
+              "end": 164.06
+            },
+            {
+              "word": "any",
+              "start": 164.14,
+              "end": 164.38
+            },
+            {
+              "word": "other",
+              "start": 164.38,
+              "end": 164.62
+            },
+            {
+              "word": "recordings",
+              "start": 164.62,
+              "end": 165.26
+            },
+            {
+              "word": "from",
+              "start": 165.26,
+              "end": 165.5
+            },
+            {
+              "word": "the",
+              "start": 165.5,
+              "end": 165.58
+            },
+            {
+              "word": "same",
+              "start": 165.58,
+              "end": 165.9
+            },
+            {
+              "word": "bout.",
+              "start": 165.9,
+              "end": 166.22
+            },
+            {
+              "word": "Several",
+              "start": 166.7,
+              "end": 167.02
+            },
+            {
+              "word": "recordings",
+              "start": 167.02,
+              "end": 167.74
+            },
+            {
+              "word": "can",
+              "start": 167.74,
+              "end": 167.9
+            },
+            {
+              "word": "belong",
+              "start": 167.9,
+              "end": 168.3
+            },
+            {
+              "word": "to",
+              "start": 168.38,
+              "end": 168.46
+            },
+            {
+              "word": "one",
+              "start": 168.46,
+              "end": 168.78
+            },
+            {
+              "word": "bout.",
+              "start": 168.78,
+              "end": 169.02
+            }
+          ],
+          "end": 170.06666666666666,
+          "speechDuration": 5.76,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666666
+        },
+        {
+          "label": "add-selected-videos",
+          "focus": null,
+          "text": "Tap Add to load the selected recordings.",
+          "start": 170.06666666666666,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 170.22666666666666,
+              "end": 170.54666666666665
+            },
+            {
+              "word": "Add",
+              "start": 171.10666666666665,
+              "end": 171.34666666666666
+            },
+            {
+              "word": "to",
+              "start": 171.34666666666666,
+              "end": 171.42666666666668
+            },
+            {
+              "word": "load",
+              "start": 171.42666666666668,
+              "end": 171.74666666666667
+            },
+            {
+              "word": "the",
+              "start": 171.74666666666667,
+              "end": 171.82666666666665
+            },
+            {
+              "word": "selected",
+              "start": 171.82666666666665,
+              "end": 172.38666666666666
+            },
+            {
+              "word": "recordings.",
+              "start": 172.38666666666666,
+              "end": 173.18666666666667
+            }
+          ],
+          "end": 174.23333333333332,
+          "speechDuration": 3.36,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666671
+        },
+        {
+          "label": "allow-photos",
+          "focus": null,
+          "text": "If your device asks, tap Allow Full Access so the app can read the selected recordings.",
+          "start": 174.23333333333332,
+          "words": [
+            {
+              "word": "If",
+              "start": 174.39333333333332,
+              "end": 174.5533333333333
+            },
+            {
+              "word": "your",
+              "start": 174.5533333333333,
+              "end": 174.7133333333333
+            },
+            {
+              "word": "device",
+              "start": 174.7133333333333,
+              "end": 175.03333333333333
+            },
+            {
+              "word": "asks,",
+              "start": 175.03333333333333,
+              "end": 175.59333333333333
+            },
+            {
+              "word": "tap",
+              "start": 175.91333333333333,
+              "end": 176.1533333333333
+            },
+            {
+              "word": "Allow",
+              "start": 176.1533333333333,
+              "end": 176.31333333333333
+            },
+            {
+              "word": "Full",
+              "start": 176.47333333333333,
+              "end": 176.79333333333332
+            },
+            {
+              "word": "Access",
+              "start": 176.79333333333332,
+              "end": 177.4333333333333
+            },
+            {
+              "word": "so",
+              "start": 177.59333333333333,
+              "end": 177.75333333333333
+            },
+            {
+              "word": "the",
+              "start": 177.75333333333333,
+              "end": 177.91333333333333
+            },
+            {
+              "word": "app",
+              "start": 177.91333333333333,
+              "end": 178.1533333333333
+            },
+            {
+              "word": "can",
+              "start": 178.1533333333333,
+              "end": 178.31333333333333
+            },
+            {
+              "word": "read",
+              "start": 178.31333333333333,
+              "end": 178.63333333333333
+            },
+            {
+              "word": "the",
+              "start": 178.63333333333333,
+              "end": 178.7133333333333
+            },
+            {
+              "word": "selected",
+              "start": 178.7133333333333,
+              "end": 179.19333333333333
+            },
+            {
+              "word": "recordings.",
+              "start": 179.19333333333333,
+              "end": 179.9933333333333
+            }
+          ],
+          "end": 181.03333333333333,
+          "speechDuration": 6.0,
+          "freezeDuration": 1,
+          "readingPause": 0.7999999999999998
+        },
+        {
+          "label": "review-video-import",
+          "focus": null,
+          "text": "Check the import results. If one recording fails, you can still confirm the successful recordings.",
+          "start": 181.03333333333333,
+          "words": [
+            {
+              "word": "Check",
+              "start": 181.19333333333333,
+              "end": 181.43333333333334
+            },
+            {
+              "word": "the",
+              "start": 181.43333333333334,
+              "end": 181.59333333333333
+            },
+            {
+              "word": "import",
+              "start": 181.59333333333333,
+              "end": 181.91333333333333
+            },
+            {
+              "word": "results.",
+              "start": 181.91333333333333,
+              "end": 182.47333333333333
+            },
+            {
+              "word": "If",
+              "start": 182.79333333333332,
+              "end": 182.95333333333332
+            },
+            {
+              "word": "one",
+              "start": 182.95333333333332,
+              "end": 183.19333333333333
+            },
+            {
+              "word": "recording",
+              "start": 183.19333333333333,
+              "end": 183.67333333333332
+            },
+            {
+              "word": "fails,",
+              "start": 183.67333333333332,
+              "end": 184.23333333333332
+            },
+            {
+              "word": "you",
+              "start": 184.47333333333333,
+              "end": 184.55333333333334
+            },
+            {
+              "word": "can",
+              "start": 184.55333333333334,
+              "end": 184.79333333333332
+            },
+            {
+              "word": "still",
+              "start": 184.79333333333332,
+              "end": 185.19333333333333
+            },
+            {
+              "word": "confirm",
+              "start": 185.19333333333333,
+              "end": 185.59333333333333
+            },
+            {
+              "word": "the",
+              "start": 185.59333333333333,
+              "end": 185.67333333333332
+            },
+            {
+              "word": "successful",
+              "start": 185.67333333333332,
+              "end": 186.31333333333333
+            },
+            {
+              "word": "recordings.",
+              "start": 186.31333333333333,
+              "end": 186.95333333333332
+            }
+          ],
+          "end": 188.4,
+          "speechDuration": 6.16,
+          "freezeDuration": 0,
+          "readingPause": 1.206666666666666
+        },
+        {
+          "label": "confirm-video-import",
+          "focus": null,
+          "text": "Confirm the import to attach these recordings to the bout. The original videos stay unchanged in Photos.",
+          "start": 188.4,
+          "words": [
+            {
+              "word": "Confirm",
+              "start": 188.56,
+              "end": 189.04
+            },
+            {
+              "word": "the",
+              "start": 189.04,
+              "end": 189.20000000000002
+            },
+            {
+              "word": "import",
+              "start": 189.20000000000002,
+              "end": 189.76000000000002
+            },
+            {
+              "word": "to",
+              "start": 189.76000000000002,
+              "end": 189.84
+            },
+            {
+              "word": "attach",
+              "start": 189.84,
+              "end": 190.24
+            },
+            {
+              "word": "these",
+              "start": 190.24,
+              "end": 190.48000000000002
+            },
+            {
+              "word": "recordings",
+              "start": 190.48000000000002,
+              "end": 191.04
+            },
+            {
+              "word": "to",
+              "start": 191.04,
+              "end": 191.20000000000002
+            },
+            {
+              "word": "the",
+              "start": 191.20000000000002,
+              "end": 191.28
+            },
+            {
+              "word": "bout.",
+              "start": 191.28,
+              "end": 191.6
+            },
+            {
+              "word": "The",
+              "start": 192.08,
+              "end": 192.16
+            },
+            {
+              "word": "original",
+              "start": 192.16,
+              "end": 192.56
+            },
+            {
+              "word": "videos",
+              "start": 192.56,
+              "end": 193.12
+            },
+            {
+              "word": "stay",
+              "start": 193.12,
+              "end": 193.44
+            },
+            {
+              "word": "unchanged",
+              "start": 193.44,
+              "end": 194.24
+            },
+            {
+              "word": "in",
+              "start": 194.24,
+              "end": 194.32
+            },
+            {
+              "word": "Photos.",
+              "start": 194.32,
+              "end": 194.96
+            }
+          ],
+          "end": 196.4,
+          "speechDuration": 6.8,
+          "freezeDuration": 1,
+          "readingPause": 1.2000000000000002
+        },
+        {
+          "label": "recordings-ready",
+          "focus": null,
+          "text": "The recordings are now linked to this bout. The app orders them by recording time.",
+          "start": 196.4,
+          "words": [
+            {
+              "word": "The",
+              "start": 196.56,
+              "end": 196.64000000000001
+            },
+            {
+              "word": "recordings",
+              "start": 196.64000000000001,
+              "end": 197.28
+            },
+            {
+              "word": "are",
+              "start": 197.28,
+              "end": 197.36
+            },
+            {
+              "word": "now",
+              "start": 197.36,
+              "end": 197.6
+            },
+            {
+              "word": "linked",
+              "start": 197.6,
+              "end": 198.0
+            },
+            {
+              "word": "to",
+              "start": 198.08,
+              "end": 198.16
+            },
+            {
+              "word": "this",
+              "start": 198.16,
+              "end": 198.32
+            },
+            {
+              "word": "bout.",
+              "start": 198.32,
+              "end": 198.64000000000001
+            },
+            {
+              "word": "The",
+              "start": 199.44,
+              "end": 199.6
+            },
+            {
+              "word": "app",
+              "start": 199.6,
+              "end": 199.76000000000002
+            },
+            {
+              "word": "orders",
+              "start": 199.76000000000002,
+              "end": 200.08
+            },
+            {
+              "word": "them",
+              "start": 200.08,
+              "end": 200.4
+            },
+            {
+              "word": "by",
+              "start": 200.4,
+              "end": 200.56
+            },
+            {
+              "word": "recording",
+              "start": 200.56,
+              "end": 201.04
+            },
+            {
+              "word": "time.",
+              "start": 201.04,
+              "end": 201.52
+            }
+          ],
+          "end": 203.76666666666668,
+          "speechDuration": 5.36,
+          "freezeDuration": 0,
+          "readingPause": 2.006666666666666
+        }
+      ],
+      "titleCard": {
+        "kind": "title",
+        "chapter": 3,
+        "start": 139.13333333333333,
+        "duration": 4.466666666666667,
+        "label": "title-4",
+        "text": "Number four. Import videos into a bout.",
+        "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-00.wav",
+        "speechOffset": 0.3,
+        "speechDuration": 2.96,
+        "words": [
+          {
+            "word": "Number",
+            "start": 139.59333333333333,
+            "end": 139.91333333333333
+          },
+          {
+            "word": "four.",
+            "start": 139.91333333333333,
+            "end": 140.31333333333333
+          },
+          {
+            "word": "Import",
+            "start": 140.63333333333333,
+            "end": 141.03333333333333
+          },
+          {
+            "word": "videos",
+            "start": 141.03333333333333,
+            "end": 141.51333333333335
+          },
+          {
+            "word": "into",
+            "start": 141.51333333333335,
+            "end": 141.83333333333334
+          },
+          {
+            "word": "a",
+            "start": 141.81666666666666,
+            "end": 141.85
+          },
+          {
+            "word": "bout.",
+            "start": 141.91333333333333,
+            "end": 142.15333333333334
+          }
+        ]
+      },
+      "end": 203.76666666666668,
+      "duration": 65.13333333333335
+    },
+    {
+      "title": "Create review clips and mark favorites",
+      "start": 203.76666666666668,
+      "beats": [
+        {
+          "label": "open-editor",
+          "focus": null,
+          "text": "Tap Review and Trim Recordings to open the editor.",
+          "start": 210.2,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 210.35999999999999,
+              "end": 210.6
+            },
+            {
+              "word": "Review",
+              "start": 210.6,
+              "end": 211.07999999999998
+            },
+            {
+              "word": "and",
+              "start": 211.07999999999998,
+              "end": 211.32
+            },
+            {
+              "word": "Trim",
+              "start": 211.32,
+              "end": 211.56
+            },
+            {
+              "word": "Recordings",
+              "start": 211.56,
+              "end": 212.28
+            },
+            {
+              "word": "to",
+              "start": 212.28,
+              "end": 212.35999999999999
+            },
+            {
+              "word": "open",
+              "start": 212.44,
+              "end": 212.6
+            },
+            {
+              "word": "the",
+              "start": 212.6,
+              "end": 212.76
+            },
+            {
+              "word": "editor.",
+              "start": 212.76,
+              "end": 213.16
+            }
+          ],
+          "end": 214.2,
+          "speechDuration": 3.2,
+          "freezeDuration": 1,
+          "readingPause": 0.7999999999999998
+        },
+        {
+          "label": "preview-original",
+          "focus": null,
+          "text": "Tap Play to preview the selected original recording.",
+          "start": 214.2,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 214.35999999999999,
+              "end": 214.67999999999998
+            },
+            {
+              "word": "Play",
+              "start": 214.67999999999998,
+              "end": 215.16
+            },
+            {
+              "word": "to",
+              "start": 215.38333333333333,
+              "end": 215.41666666666666
+            },
+            {
+              "word": "preview",
+              "start": 215.39999999999998,
+              "end": 215.88
+            },
+            {
+              "word": "the",
+              "start": 215.88,
+              "end": 216.04
+            },
+            {
+              "word": "selected",
+              "start": 216.04,
+              "end": 216.67999999999998
+            },
+            {
+              "word": "original",
+              "start": 216.67999999999998,
+              "end": 217.16
+            },
+            {
+              "word": "recording.",
+              "start": 217.16,
+              "end": 217.79999999999998
+            }
+          ],
+          "end": 218.86666666666665,
+          "speechDuration": 3.84,
+          "freezeDuration": 1,
+          "readingPause": 0.8266666666666671
+        },
+        {
+          "label": "pause-original",
+          "focus": null,
+          "text": "Pause near a moment that you want to keep.",
+          "start": 218.86666666666667,
+          "words": [
+            {
+              "word": "Pause",
+              "start": 219.02666666666667,
+              "end": 219.42666666666668
+            },
+            {
+              "word": "near",
+              "start": 219.42666666666668,
+              "end": 219.66666666666669
+            },
+            {
+              "word": "a",
+              "start": 219.65,
+              "end": 219.68333333333334
+            },
+            {
+              "word": "moment",
+              "start": 219.66666666666669,
+              "end": 220.14666666666668
+            },
+            {
+              "word": "that",
+              "start": 220.14666666666668,
+              "end": 220.2266666666667
+            },
+            {
+              "word": "you",
+              "start": 220.2266666666667,
+              "end": 220.38666666666668
+            },
+            {
+              "word": "want",
+              "start": 220.38666666666668,
+              "end": 220.54666666666668
+            },
+            {
+              "word": "to",
+              "start": 220.54666666666668,
+              "end": 220.62666666666667
+            },
+            {
+              "word": "keep.",
+              "start": 220.62666666666667,
+              "end": 220.9466666666667
+            }
+          ],
+          "end": 222.06666666666666,
+          "speechDuration": 2.4,
+          "freezeDuration": 1,
+          "readingPause": 0.8000000000000003
+        },
+        {
+          "label": "show-trim-controls",
+          "focus": null,
+          "text": "Scroll to Trim a review clip. These controls set the section that you will save.",
+          "start": 222.06666666666666,
+          "words": [
+            {
+              "word": "Scroll",
+              "start": 222.22666666666666,
+              "end": 222.70666666666665
+            },
+            {
+              "word": "to",
+              "start": 222.78666666666666,
+              "end": 222.86666666666667
+            },
+            {
+              "word": "Trim",
+              "start": 222.86666666666667,
+              "end": 223.26666666666665
+            },
+            {
+              "word": "a",
+              "start": 223.25,
+              "end": 223.28333333333333
+            },
+            {
+              "word": "review",
+              "start": 223.26666666666665,
+              "end": 223.66666666666666
+            },
+            {
+              "word": "clip.",
+              "start": 223.66666666666666,
+              "end": 224.06666666666666
+            },
+            {
+              "word": "These",
+              "start": 224.54666666666665,
+              "end": 224.78666666666666
+            },
+            {
+              "word": "controls",
+              "start": 224.78666666666666,
+              "end": 225.34666666666666
+            },
+            {
+              "word": "set",
+              "start": 225.34666666666666,
+              "end": 225.58666666666667
+            },
+            {
+              "word": "the",
+              "start": 225.57,
+              "end": 225.60333333333332
+            },
+            {
+              "word": "section",
+              "start": 225.58666666666667,
+              "end": 226.14666666666668
+            },
+            {
+              "word": "that",
+              "start": 226.14666666666668,
+              "end": 226.22666666666666
+            },
+            {
+              "word": "you",
+              "start": 226.22666666666666,
+              "end": 226.46666666666667
+            },
+            {
+              "word": "will",
+              "start": 226.46666666666667,
+              "end": 226.62666666666667
+            },
+            {
+              "word": "save.",
+              "start": 226.62666666666667,
+              "end": 227.18666666666667
+            }
+          ],
+          "end": 228.23333333333332,
+          "speechDuration": 5.36,
+          "freezeDuration": 0,
+          "readingPause": 0.8066666666666666
+        },
+        {
+          "label": "first-clip-start",
+          "focus": null,
+          "text": "Move the Start slider to the beginning of the useful action.",
+          "start": 228.23333333333332,
+          "words": [
+            {
+              "word": "Move",
+              "start": 228.39333333333332,
+              "end": 228.79333333333332
+            },
+            {
+              "word": "the",
+              "start": 228.79333333333332,
+              "end": 228.8733333333333
+            },
+            {
+              "word": "Start",
+              "start": 228.8733333333333,
+              "end": 229.2733333333333
+            },
+            {
+              "word": "slider",
+              "start": 229.2733333333333,
+              "end": 229.75333333333333
+            },
+            {
+              "word": "to",
+              "start": 229.75333333333333,
+              "end": 229.91333333333333
+            },
+            {
+              "word": "the",
+              "start": 229.91333333333333,
+              "end": 229.9933333333333
+            },
+            {
+              "word": "beginning",
+              "start": 229.9933333333333,
+              "end": 230.47333333333333
+            },
+            {
+              "word": "of",
+              "start": 230.47333333333333,
+              "end": 230.5533333333333
+            },
+            {
+              "word": "the",
+              "start": 230.5533333333333,
+              "end": 230.63333333333333
+            },
+            {
+              "word": "useful",
+              "start": 230.63333333333333,
+              "end": 231.19333333333333
+            },
+            {
+              "word": "action.",
+              "start": 231.19333333333333,
+              "end": 231.75333333333333
+            }
+          ],
+          "end": 232.79999999999998,
+          "speechDuration": 3.76,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666666
+        },
+        {
+          "label": "first-clip-end",
+          "focus": null,
+          "text": "Move the End slider to the end of that action. Check the selected duration.",
+          "start": 232.8,
+          "words": [
+            {
+              "word": "Move",
+              "start": 232.96,
+              "end": 233.28
+            },
+            {
+              "word": "the",
+              "start": 233.28,
+              "end": 233.44
+            },
+            {
+              "word": "End",
+              "start": 233.44,
+              "end": 233.68
+            },
+            {
+              "word": "slider",
+              "start": 233.68,
+              "end": 234.16000000000003
+            },
+            {
+              "word": "to",
+              "start": 234.16000000000003,
+              "end": 234.32000000000002
+            },
+            {
+              "word": "the",
+              "start": 234.32000000000002,
+              "end": 234.48000000000002
+            },
+            {
+              "word": "end",
+              "start": 234.56,
+              "end": 234.8
+            },
+            {
+              "word": "of",
+              "start": 234.8,
+              "end": 234.88000000000002
+            },
+            {
+              "word": "that",
+              "start": 234.88000000000002,
+              "end": 235.04000000000002
+            },
+            {
+              "word": "action.",
+              "start": 235.04000000000002,
+              "end": 235.60000000000002
+            },
+            {
+              "word": "Check",
+              "start": 236.0,
+              "end": 236.24
+            },
+            {
+              "word": "the",
+              "start": 236.32000000000002,
+              "end": 236.4
+            },
+            {
+              "word": "selected",
+              "start": 236.4,
+              "end": 236.96
+            },
+            {
+              "word": "duration.",
+              "start": 236.96,
+              "end": 237.60000000000002
+            }
+          ],
+          "end": 239.0666666666667,
+          "speechDuration": 5.04,
+          "freezeDuration": 1,
+          "readingPause": 1.2266666666666666
+        },
+        {
+          "label": "save-first-clip",
+          "focus": null,
+          "text": "Tap Save Clip. The app creates a separate edited movie and queues its upload.",
+          "start": 239.06666666666666,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 239.22666666666666,
+              "end": 239.54666666666665
+            },
+            {
+              "word": "Save",
+              "start": 239.54666666666665,
+              "end": 239.94666666666666
+            },
+            {
+              "word": "Clip.",
+              "start": 239.94666666666666,
+              "end": 240.34666666666666
+            },
+            {
+              "word": "The",
+              "start": 240.82666666666665,
+              "end": 240.98666666666665
+            },
+            {
+              "word": "app",
+              "start": 240.98666666666665,
+              "end": 241.06666666666666
+            },
+            {
+              "word": "creates",
+              "start": 241.06666666666666,
+              "end": 241.46666666666667
+            },
+            {
+              "word": "a",
+              "start": 241.46666666666667,
+              "end": 241.54666666666665
+            },
+            {
+              "word": "separate",
+              "start": 241.54666666666665,
+              "end": 241.94666666666666
+            },
+            {
+              "word": "edited",
+              "start": 242.02666666666667,
+              "end": 242.42666666666668
+            },
+            {
+              "word": "movie",
+              "start": 242.42666666666668,
+              "end": 242.82666666666665
+            },
+            {
+              "word": "and",
+              "start": 243.06666666666666,
+              "end": 243.22666666666666
+            },
+            {
+              "word": "queues",
+              "start": 243.22666666666666,
+              "end": 243.54666666666665
+            },
+            {
+              "word": "its",
+              "start": 243.54666666666665,
+              "end": 243.70666666666665
+            },
+            {
+              "word": "upload.",
+              "start": 243.70666666666665,
+              "end": 244.18666666666667
+            }
+          ],
+          "end": 245.33333333333334,
+          "speechDuration": 5.44,
+          "freezeDuration": 1,
+          "readingPause": 0.8266666666666662
+        },
+        {
+          "label": "second-clip-start",
+          "focus": null,
+          "text": "To save another moment from the same recording, move Start to the next useful action.",
+          "start": 245.33333333333334,
+          "words": [
+            {
+              "word": "To",
+              "start": 245.57333333333335,
+              "end": 245.65333333333334
+            },
+            {
+              "word": "save",
+              "start": 245.65333333333334,
+              "end": 245.97333333333333
+            },
+            {
+              "word": "another",
+              "start": 245.97333333333333,
+              "end": 246.29333333333335
+            },
+            {
+              "word": "moment",
+              "start": 246.29333333333335,
+              "end": 246.69333333333336
+            },
+            {
+              "word": "from",
+              "start": 246.69333333333336,
+              "end": 246.93333333333334
+            },
+            {
+              "word": "the",
+              "start": 246.93333333333334,
+              "end": 247.01333333333335
+            },
+            {
+              "word": "same",
+              "start": 247.01333333333335,
+              "end": 247.49333333333334
+            },
+            {
+              "word": "recording,",
+              "start": 247.49333333333334,
+              "end": 248.21333333333334
+            },
+            {
+              "word": "move",
+              "start": 248.69333333333336,
+              "end": 249.09333333333333
+            },
+            {
+              "word": "Start",
+              "start": 249.09333333333333,
+              "end": 249.49333333333334
+            },
+            {
+              "word": "to",
+              "start": 249.57333333333335,
+              "end": 249.65333333333334
+            },
+            {
+              "word": "the",
+              "start": 249.65333333333334,
+              "end": 249.73333333333335
+            },
+            {
+              "word": "next",
+              "start": 249.73333333333335,
+              "end": 250.21333333333334
+            },
+            {
+              "word": "useful",
+              "start": 250.21333333333334,
+              "end": 250.77333333333334
+            },
+            {
+              "word": "action.",
+              "start": 250.85333333333335,
+              "end": 251.41333333333336
+            }
+          ],
+          "end": 252.46666666666667,
+          "speechDuration": 6.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "second-clip-end",
+          "focus": null,
+          "text": "Move End to finish the second selection.",
+          "start": 252.46666666666667,
+          "words": [
+            {
+              "word": "Move",
+              "start": 252.62666666666667,
+              "end": 252.94666666666666
+            },
+            {
+              "word": "End",
+              "start": 252.94666666666666,
+              "end": 253.10666666666665
+            },
+            {
+              "word": "to",
+              "start": 253.10666666666665,
+              "end": 253.18666666666667
+            },
+            {
+              "word": "finish",
+              "start": 253.18666666666667,
+              "end": 253.58666666666667
+            },
+            {
+              "word": "the",
+              "start": 253.57,
+              "end": 253.60333333333332
+            },
+            {
+              "word": "second",
+              "start": 253.58666666666667,
+              "end": 253.98666666666668
+            },
+            {
+              "word": "selection.",
+              "start": 253.98666666666668,
+              "end": 254.62666666666667
+            }
+          ],
+          "end": 255.76666666666668,
+          "speechDuration": 2.48,
+          "freezeDuration": 1,
+          "readingPause": 0.8199999999999998
+        },
+        {
+          "label": "save-second-clip",
+          "focus": null,
+          "text": "Tap Save Clip again. One original recording can produce several independent review clips.",
+          "start": 255.76666666666668,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 255.92666666666668,
+              "end": 256.24666666666667
+            },
+            {
+              "word": "Save",
+              "start": 256.24666666666667,
+              "end": 256.6466666666667
+            },
+            {
+              "word": "Clip",
+              "start": 256.6466666666667,
+              "end": 256.88666666666666
+            },
+            {
+              "word": "again.",
+              "start": 256.88666666666666,
+              "end": 257.3666666666667
+            },
+            {
+              "word": "One",
+              "start": 257.9266666666667,
+              "end": 258.0866666666667
+            },
+            {
+              "word": "original",
+              "start": 258.0866666666667,
+              "end": 258.4866666666667
+            },
+            {
+              "word": "recording",
+              "start": 258.4866666666667,
+              "end": 259.0466666666667
+            },
+            {
+              "word": "can",
+              "start": 259.0466666666667,
+              "end": 259.2066666666667
+            },
+            {
+              "word": "produce",
+              "start": 259.2066666666667,
+              "end": 259.5266666666667
+            },
+            {
+              "word": "several",
+              "start": 259.5266666666667,
+              "end": 260.00666666666666
+            },
+            {
+              "word": "independent",
+              "start": 260.00666666666666,
+              "end": 260.6466666666667
+            },
+            {
+              "word": "review",
+              "start": 260.6466666666667,
+              "end": 260.9666666666667
+            },
+            {
+              "word": "clips.",
+              "start": 260.9666666666667,
+              "end": 261.44666666666666
+            }
+          ],
+          "end": 262.5,
+          "speechDuration": 5.92,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "show-review-clips",
+          "focus": null,
+          "text": "Scroll to Review Clips. Wait for Available before clearing an uploaded clip's local copy.",
+          "start": 262.5,
+          "words": [
+            {
+              "word": "Scroll",
+              "start": 262.66,
+              "end": 263.14
+            },
+            {
+              "word": "to",
+              "start": 263.14,
+              "end": 263.22
+            },
+            {
+              "word": "Review",
+              "start": 263.22,
+              "end": 263.54
+            },
+            {
+              "word": "Clips.",
+              "start": 263.54,
+              "end": 264.1
+            },
+            {
+              "word": "Wait",
+              "start": 264.58,
+              "end": 264.74
+            },
+            {
+              "word": "for",
+              "start": 264.74,
+              "end": 264.9
+            },
+            {
+              "word": "Available",
+              "start": 264.9,
+              "end": 265.46
+            },
+            {
+              "word": "before",
+              "start": 265.46,
+              "end": 265.86
+            },
+            {
+              "word": "clearing",
+              "start": 265.86,
+              "end": 266.34
+            },
+            {
+              "word": "an",
+              "start": 266.34,
+              "end": 266.42
+            },
+            {
+              "word": "uploaded",
+              "start": 266.5,
+              "end": 266.98
+            },
+            {
+              "word": "clip's",
+              "start": 266.98,
+              "end": 267.38
+            },
+            {
+              "word": "local",
+              "start": 267.38,
+              "end": 267.7
+            },
+            {
+              "word": "copy.",
+              "start": 267.7,
+              "end": 268.18
+            }
+          ],
+          "end": 269.23333333333335,
+          "speechDuration": 5.92,
+          "freezeDuration": 0,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "favorite-first-clip",
+          "focus": null,
+          "text": "Tap the star beside a clip to mark that clip as a favorite.",
+          "start": 269.23333333333335,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 269.3933333333334,
+              "end": 269.6333333333333
+            },
+            {
+              "word": "the",
+              "start": 269.71333333333337,
+              "end": 269.79333333333335
+            },
+            {
+              "word": "star",
+              "start": 269.79333333333335,
+              "end": 270.27333333333337
+            },
+            {
+              "word": "beside",
+              "start": 270.27333333333337,
+              "end": 270.67333333333335
+            },
+            {
+              "word": "a",
+              "start": 270.6566666666667,
+              "end": 270.69
+            },
+            {
+              "word": "clip",
+              "start": 270.67333333333335,
+              "end": 270.99333333333334
+            },
+            {
+              "word": "to",
+              "start": 271.0733333333333,
+              "end": 271.15333333333336
+            },
+            {
+              "word": "mark",
+              "start": 271.15333333333336,
+              "end": 271.3933333333334
+            },
+            {
+              "word": "that",
+              "start": 271.47333333333336,
+              "end": 271.6333333333333
+            },
+            {
+              "word": "clip",
+              "start": 271.71333333333337,
+              "end": 272.03333333333336
+            },
+            {
+              "word": "as",
+              "start": 272.03333333333336,
+              "end": 272.11333333333334
+            },
+            {
+              "word": "a",
+              "start": 272.11333333333334,
+              "end": 272.1933333333333
+            },
+            {
+              "word": "favorite.",
+              "start": 272.1933333333333,
+              "end": 272.59333333333336
+            }
+          ],
+          "end": 274.03333333333336,
+          "speechDuration": 3.6,
+          "freezeDuration": 1,
+          "readingPause": 1.1999999999999997
+        },
+        {
+          "label": "clip-star-meaning",
+          "focus": null,
+          "text": "A filled star means this clip is a favorite. Tap it again to remove the favorite mark.",
+          "start": 274.03333333333336,
+          "words": [
+            {
+              "word": "A",
+              "start": 274.1933333333334,
+              "end": 274.27333333333337
+            },
+            {
+              "word": "filled",
+              "start": 274.27333333333337,
+              "end": 274.59333333333336
+            },
+            {
+              "word": "star",
+              "start": 274.59333333333336,
+              "end": 275.0733333333334
+            },
+            {
+              "word": "means",
+              "start": 275.0733333333334,
+              "end": 275.3933333333334
+            },
+            {
+              "word": "this",
+              "start": 275.3933333333334,
+              "end": 275.6333333333334
+            },
+            {
+              "word": "clip",
+              "start": 275.6333333333334,
+              "end": 275.9533333333334
+            },
+            {
+              "word": "is",
+              "start": 275.9533333333334,
+              "end": 276.11333333333334
+            },
+            {
+              "word": "a",
+              "start": 276.11333333333334,
+              "end": 276.1933333333334
+            },
+            {
+              "word": "favorite.",
+              "start": 276.1933333333334,
+              "end": 276.7533333333334
+            },
+            {
+              "word": "Tap",
+              "start": 277.15333333333336,
+              "end": 277.3933333333334
+            },
+            {
+              "word": "it",
+              "start": 277.3933333333334,
+              "end": 277.47333333333336
+            },
+            {
+              "word": "again",
+              "start": 277.47333333333336,
+              "end": 277.87333333333333
+            },
+            {
+              "word": "to",
+              "start": 277.9533333333334,
+              "end": 278.03333333333336
+            },
+            {
+              "word": "remove",
+              "start": 278.03333333333336,
+              "end": 278.5133333333334
+            },
+            {
+              "word": "the",
+              "start": 278.5133333333334,
+              "end": 278.67333333333335
+            },
+            {
+              "word": "favorite",
+              "start": 278.67333333333335,
+              "end": 279.15333333333336
+            },
+            {
+              "word": "mark.",
+              "start": 279.15333333333336,
+              "end": 279.55333333333334
+            }
+          ],
+          "end": 281.0,
+          "speechDuration": 5.76,
+          "freezeDuration": 0,
+          "readingPause": 1.206666666666667
+        },
+        {
+          "label": "close-editor",
+          "focus": null,
+          "text": "Tap Done to return to the bout details.",
+          "start": 281.0,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 281.16,
+              "end": 281.48
+            },
+            {
+              "word": "Done",
+              "start": 281.48,
+              "end": 281.8
+            },
+            {
+              "word": "to",
+              "start": 281.88,
+              "end": 281.96
+            },
+            {
+              "word": "return",
+              "start": 281.96,
+              "end": 282.44
+            },
+            {
+              "word": "to",
+              "start": 282.50333333333333,
+              "end": 282.5366666666667
+            },
+            {
+              "word": "the",
+              "start": 282.52,
+              "end": 282.68
+            },
+            {
+              "word": "bout",
+              "start": 282.68,
+              "end": 283.0
+            },
+            {
+              "word": "details.",
+              "start": 283.0,
+              "end": 283.72
+            }
+          ],
+          "end": 284.76666666666665,
+          "speechDuration": 2.96,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666666
+        },
+        {
+          "label": "bout-star-meaning",
+          "focus": null,
+          "text": "The bout's star is an indicator. It fills when at least one clip in that bout is a favorite.",
+          "start": 284.76666666666665,
+          "words": [
+            {
+              "word": "The",
+              "start": 285.00666666666666,
+              "end": 285.08666666666664
+            },
+            {
+              "word": "bout's",
+              "start": 285.08666666666664,
+              "end": 285.40666666666664
+            },
+            {
+              "word": "star",
+              "start": 285.40666666666664,
+              "end": 285.8066666666667
+            },
+            {
+              "word": "is",
+              "start": 285.88666666666666,
+              "end": 285.96666666666664
+            },
+            {
+              "word": "an",
+              "start": 285.96666666666664,
+              "end": 286.12666666666667
+            },
+            {
+              "word": "indicator.",
+              "start": 286.20666666666665,
+              "end": 286.84666666666664
+            },
+            {
+              "word": "It",
+              "start": 287.40666666666664,
+              "end": 287.56666666666666
+            },
+            {
+              "word": "fills",
+              "start": 287.64666666666665,
+              "end": 288.0466666666666
+            },
+            {
+              "word": "when",
+              "start": 288.0466666666666,
+              "end": 288.20666666666665
+            },
+            {
+              "word": "at",
+              "start": 288.20666666666665,
+              "end": 288.3666666666667
+            },
+            {
+              "word": "least",
+              "start": 288.3666666666667,
+              "end": 288.68666666666667
+            },
+            {
+              "word": "one",
+              "start": 288.68666666666667,
+              "end": 289.08666666666664
+            },
+            {
+              "word": "clip",
+              "start": 289.08666666666664,
+              "end": 289.40666666666664
+            },
+            {
+              "word": "in",
+              "start": 289.40666666666664,
+              "end": 289.56666666666666
+            },
+            {
+              "word": "that",
+              "start": 289.56666666666666,
+              "end": 289.72666666666663
+            },
+            {
+              "word": "bout",
+              "start": 289.72666666666663,
+              "end": 290.0466666666666
+            },
+            {
+              "word": "is",
+              "start": 290.12666666666667,
+              "end": 290.28666666666663
+            },
+            {
+              "word": "a",
+              "start": 290.28666666666663,
+              "end": 290.3666666666667
+            },
+            {
+              "word": "favorite.",
+              "start": 290.52666666666664,
+              "end": 290.9266666666667
+            }
+          ],
+          "end": 293.16666666666663,
+          "speechDuration": 6.4,
+          "freezeDuration": 0,
+          "readingPause": 2.0
+        }
+      ],
+      "titleCard": {
+        "kind": "title",
+        "chapter": 4,
+        "start": 204.26666666666668,
+        "duration": 5.433333333333334,
+        "label": "title-5",
+        "text": "Number five. Create review clips and mark favorites.",
+        "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-00.wav",
+        "speechOffset": 0.3,
+        "speechDuration": 3.92,
+        "words": [
+          {
+            "word": "Number",
+            "start": 204.7266666666667,
+            "end": 205.04666666666668
+          },
+          {
+            "word": "five.",
+            "start": 205.04666666666668,
+            "end": 205.4466666666667
+          },
+          {
+            "word": "Create",
+            "start": 206.0066666666667,
+            "end": 206.32666666666668
+          },
+          {
+            "word": "review",
+            "start": 206.32666666666668,
+            "end": 206.6466666666667
+          },
+          {
+            "word": "clips",
+            "start": 206.6466666666667,
+            "end": 207.1266666666667
+          },
+          {
+            "word": "and",
+            "start": 207.1266666666667,
+            "end": 207.2866666666667
+          },
+          {
+            "word": "mark",
+            "start": 207.2866666666667,
+            "end": 207.60666666666668
+          },
+          {
+            "word": "favorites.",
+            "start": 207.60666666666668,
+            "end": 208.2466666666667
+          }
+        ]
+      },
+      "end": 293.1666666666667,
+      "duration": 89.4
+    },
+    {
+      "title": "Delete review clips",
+      "start": 293.1666666666667,
+      "beats": [
+        {
+          "label": "open-clips-for-delete",
+          "focus": null,
+          "text": "To delete a review clip, open Review and Trim Recordings again.",
+          "start": 298.56666666666666,
+          "words": [
+            {
+              "word": "To",
+              "start": 298.8066666666667,
+              "end": 298.88666666666666
+            },
+            {
+              "word": "delete",
+              "start": 298.88666666666666,
+              "end": 299.2866666666667
+            },
+            {
+              "word": "a",
+              "start": 299.2866666666667,
+              "end": 299.3666666666667
+            },
+            {
+              "word": "review",
+              "start": 299.3666666666667,
+              "end": 299.76666666666665
+            },
+            {
+              "word": "clip,",
+              "start": 299.76666666666665,
+              "end": 300.1666666666667
+            },
+            {
+              "word": "open",
+              "start": 300.56666666666666,
+              "end": 300.88666666666666
+            },
+            {
+              "word": "Review",
+              "start": 300.88666666666666,
+              "end": 301.44666666666666
+            },
+            {
+              "word": "and",
+              "start": 301.44666666666666,
+              "end": 301.6066666666667
+            },
+            {
+              "word": "Trim",
+              "start": 301.6066666666667,
+              "end": 301.9266666666667
+            },
+            {
+              "word": "Recordings",
+              "start": 301.9266666666667,
+              "end": 302.56666666666666
+            },
+            {
+              "word": "again.",
+              "start": 302.56666666666666,
+              "end": 303.0466666666667
+            }
+          ],
+          "end": 304.5,
+          "speechDuration": 4.72,
+          "freezeDuration": 1,
+          "readingPause": 1.2133333333333338
+        },
+        {
+          "label": "find-clips-for-delete",
+          "focus": null,
+          "text": "Scroll toward the review clip list.",
+          "start": 304.5,
+          "words": [
+            {
+              "word": "Scroll",
+              "start": 304.66,
+              "end": 305.3
+            },
+            {
+              "word": "toward",
+              "start": 305.3,
+              "end": 305.7
+            },
+            {
+              "word": "the",
+              "start": 305.7,
+              "end": 305.78
+            },
+            {
+              "word": "review",
+              "start": 305.78,
+              "end": 306.26
+            },
+            {
+              "word": "clip",
+              "start": 306.26,
+              "end": 306.66
+            },
+            {
+              "word": "list.",
+              "start": 306.66,
+              "end": 307.14
+            }
+          ],
+          "end": 308.2,
+          "speechDuration": 2.88,
+          "freezeDuration": 0,
+          "readingPause": 0.8200000000000003
+        },
+        {
+          "label": "show-clips-for-delete",
+          "focus": null,
+          "text": "Find the edited clip that you want to remove. Check its start and end times.",
+          "start": 308.2,
+          "words": [
+            {
+              "word": "Find",
+              "start": 308.36,
+              "end": 308.68
+            },
+            {
+              "word": "the",
+              "start": 308.68,
+              "end": 308.76
+            },
+            {
+              "word": "edited",
+              "start": 308.76,
+              "end": 309.15999999999997
+            },
+            {
+              "word": "clip",
+              "start": 309.15999999999997,
+              "end": 309.47999999999996
+            },
+            {
+              "word": "that",
+              "start": 309.56,
+              "end": 309.64
+            },
+            {
+              "word": "you",
+              "start": 309.64,
+              "end": 309.8
+            },
+            {
+              "word": "want",
+              "start": 309.8,
+              "end": 310.03999999999996
+            },
+            {
+              "word": "to",
+              "start": 310.0233333333333,
+              "end": 310.0566666666667
+            },
+            {
+              "word": "remove.",
+              "start": 310.03999999999996,
+              "end": 310.59999999999997
+            },
+            {
+              "word": "Check",
+              "start": 311.08,
+              "end": 311.32
+            },
+            {
+              "word": "its",
+              "start": 311.32,
+              "end": 311.47999999999996
+            },
+            {
+              "word": "start",
+              "start": 311.47999999999996,
+              "end": 311.88
+            },
+            {
+              "word": "and",
+              "start": 311.96,
+              "end": 312.12
+            },
+            {
+              "word": "end",
+              "start": 312.2,
+              "end": 312.44
+            },
+            {
+              "word": "times.",
+              "start": 312.44,
+              "end": 313.08
+            }
+          ],
+          "end": 314.5333333333333,
+          "speechDuration": 5.12,
+          "freezeDuration": 0,
+          "readingPause": 1.213333333333333
+        },
+        {
+          "label": "delete-first-clip",
+          "focus": null,
+          "text": "Tap Delete beside that clip.",
+          "start": 314.53333333333336,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 314.6933333333334,
+              "end": 315.0133333333334
+            },
+            {
+              "word": "Delete",
+              "start": 315.0133333333334,
+              "end": 315.33333333333337
+            },
+            {
+              "word": "beside",
+              "start": 315.33333333333337,
+              "end": 315.81333333333333
+            },
+            {
+              "word": "that",
+              "start": 315.81333333333333,
+              "end": 315.97333333333336
+            },
+            {
+              "word": "clip.",
+              "start": 315.97333333333336,
+              "end": 316.29333333333335
+            }
+          ],
+          "end": 317.73333333333335,
+          "speechDuration": 2.0,
+          "freezeDuration": 1,
+          "readingPause": 1.2000000000000002
+        },
+        {
+          "label": "delete-warning",
+          "focus": null,
+          "text": "Read the confirmation. Deleting removes the edited clip. It does not delete the original recording in Photos.",
+          "start": 317.73333333333335,
+          "words": [
+            {
+              "word": "Read",
+              "start": 317.8933333333334,
+              "end": 318.1333333333333
+            },
+            {
+              "word": "the",
+              "start": 318.1333333333333,
+              "end": 318.21333333333337
+            },
+            {
+              "word": "confirmation.",
+              "start": 318.21333333333337,
+              "end": 319.0133333333333
+            },
+            {
+              "word": "Deleting",
+              "start": 319.65333333333336,
+              "end": 320.05333333333334
+            },
+            {
+              "word": "removes",
+              "start": 320.05333333333334,
+              "end": 320.53333333333336
+            },
+            {
+              "word": "the",
+              "start": 320.53333333333336,
+              "end": 320.61333333333334
+            },
+            {
+              "word": "edited",
+              "start": 320.6933333333333,
+              "end": 321.0133333333333
+            },
+            {
+              "word": "clip.",
+              "start": 321.0133333333333,
+              "end": 321.41333333333336
+            },
+            {
+              "word": "It",
+              "start": 322.05333333333334,
+              "end": 322.21333333333337
+            },
+            {
+              "word": "does",
+              "start": 322.21333333333337,
+              "end": 322.4533333333334
+            },
+            {
+              "word": "not",
+              "start": 322.4533333333334,
+              "end": 322.6933333333333
+            },
+            {
+              "word": "delete",
+              "start": 322.6933333333333,
+              "end": 323.09333333333336
+            },
+            {
+              "word": "the",
+              "start": 323.09333333333336,
+              "end": 323.25333333333333
+            },
+            {
+              "word": "original",
+              "start": 323.25333333333333,
+              "end": 323.73333333333335
+            },
+            {
+              "word": "recording",
+              "start": 323.73333333333335,
+              "end": 324.21333333333337
+            },
+            {
+              "word": "in",
+              "start": 324.21333333333337,
+              "end": 324.29333333333335
+            },
+            {
+              "word": "Photos.",
+              "start": 324.29333333333335,
+              "end": 324.93333333333334
+            }
+          ],
+          "end": 326.4666666666667,
+          "speechDuration": 7.52,
+          "freezeDuration": 0,
+          "readingPause": 1.213333333333333
+        },
+        {
+          "label": "confirm-clip-delete",
+          "focus": null,
+          "text": "Tap Delete Clip to confirm. The app also removes the clip's cloud copy where applicable.",
+          "start": 326.46666666666664,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 326.62666666666667,
+              "end": 327.02666666666664
+            },
+            {
+              "word": "Delete",
+              "start": 327.02666666666664,
+              "end": 327.50666666666666
+            },
+            {
+              "word": "Clip",
+              "start": 327.50666666666666,
+              "end": 327.7466666666666
+            },
+            {
+              "word": "to",
+              "start": 327.90666666666664,
+              "end": 327.9866666666666
+            },
+            {
+              "word": "confirm.",
+              "start": 327.9866666666666,
+              "end": 328.70666666666665
+            },
+            {
+              "word": "The",
+              "start": 329.26666666666665,
+              "end": 329.50666666666666
+            },
+            {
+              "word": "app",
+              "start": 329.50666666666666,
+              "end": 329.66666666666663
+            },
+            {
+              "word": "also",
+              "start": 329.82666666666665,
+              "end": 330.06666666666666
+            },
+            {
+              "word": "removes",
+              "start": 330.06666666666666,
+              "end": 330.62666666666667
+            },
+            {
+              "word": "the",
+              "start": 330.62666666666667,
+              "end": 330.70666666666665
+            },
+            {
+              "word": "clip's",
+              "start": 330.70666666666665,
+              "end": 331.1066666666666
+            },
+            {
+              "word": "cloud",
+              "start": 331.1066666666666,
+              "end": 331.50666666666666
+            },
+            {
+              "word": "copy",
+              "start": 331.50666666666666,
+              "end": 331.9866666666666
+            },
+            {
+              "word": "where",
+              "start": 331.9866666666666,
+              "end": 332.22666666666663
+            },
+            {
+              "word": "applicable.",
+              "start": 332.22666666666663,
+              "end": 332.94666666666666
+            }
+          ],
+          "end": 334.4,
+          "speechDuration": 6.72,
+          "freezeDuration": 1,
+          "readingPause": 1.2133333333333338
+        },
+        {
+          "label": "one-clip-remains",
+          "focus": null,
+          "text": "The other review clip remains. A cloud deletion that cannot finish immediately waits for recovery.",
+          "start": 334.4,
+          "words": [
+            {
+              "word": "The",
+              "start": 334.56,
+              "end": 334.71999999999997
+            },
+            {
+              "word": "other",
+              "start": 334.71999999999997,
+              "end": 334.88
+            },
+            {
+              "word": "review",
+              "start": 334.88,
+              "end": 335.28
+            },
+            {
+              "word": "clip",
+              "start": 335.28,
+              "end": 335.59999999999997
+            },
+            {
+              "word": "remains.",
+              "start": 335.59999999999997,
+              "end": 336.23999999999995
+            },
+            {
+              "word": "A",
+              "start": 336.56,
+              "end": 336.64
+            },
+            {
+              "word": "cloud",
+              "start": 336.64,
+              "end": 337.03999999999996
+            },
+            {
+              "word": "deletion",
+              "start": 337.03999999999996,
+              "end": 337.59999999999997
+            },
+            {
+              "word": "that",
+              "start": 337.59999999999997,
+              "end": 337.76
+            },
+            {
+              "word": "cannot",
+              "start": 337.76,
+              "end": 338.15999999999997
+            },
+            {
+              "word": "finish",
+              "start": 338.15999999999997,
+              "end": 338.47999999999996
+            },
+            {
+              "word": "immediately",
+              "start": 338.47999999999996,
+              "end": 339.2
+            },
+            {
+              "word": "waits",
+              "start": 339.2,
+              "end": 339.59999999999997
+            },
+            {
+              "word": "for",
+              "start": 339.59999999999997,
+              "end": 339.67999999999995
+            },
+            {
+              "word": "recovery.",
+              "start": 339.67999999999995,
+              "end": 340.4
+            }
+          ],
+          "end": 341.8666666666666,
+          "speechDuration": 6.24,
+          "freezeDuration": 0,
+          "readingPause": 1.2266666666666666
+        },
+        {
+          "label": "close-after-delete",
+          "focus": null,
+          "text": "Tap Done to return to the bout.",
+          "start": 341.8666666666667,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 342.0266666666667,
+              "end": 342.3466666666667
+            },
+            {
+              "word": "Done",
+              "start": 342.3466666666667,
+              "end": 342.74666666666667
+            },
+            {
+              "word": "to",
+              "start": 342.82666666666665,
+              "end": 342.9066666666667
+            },
+            {
+              "word": "return",
+              "start": 342.9066666666667,
+              "end": 343.38666666666666
+            },
+            {
+              "word": "to",
+              "start": 343.45,
+              "end": 343.48333333333335
+            },
+            {
+              "word": "the",
+              "start": 343.4666666666667,
+              "end": 343.62666666666667
+            },
+            {
+              "word": "bout.",
+              "start": 343.62666666666667,
+              "end": 343.94666666666666
+            }
+          ],
+          "end": 345.0,
+          "speechDuration": 2.32,
+          "freezeDuration": 1,
+          "readingPause": 0.8133333333333335
+        },
+        {
+          "label": "bout-no-favorite",
+          "focus": null,
+          "text": "We deleted the only favorite clip. The bout's star is now empty because no remaining clip is a favorite.",
+          "start": 345.0,
+          "words": [
+            {
+              "word": "We",
+              "start": 345.16,
+              "end": 345.32
+            },
+            {
+              "word": "deleted",
+              "start": 345.32,
+              "end": 345.72
+            },
+            {
+              "word": "the",
+              "start": 345.72,
+              "end": 345.88
+            },
+            {
+              "word": "only",
+              "start": 345.96,
+              "end": 346.28
+            },
+            {
+              "word": "favorite",
+              "start": 346.28,
+              "end": 346.76
+            },
+            {
+              "word": "clip.",
+              "start": 346.76,
+              "end": 347.16
+            },
+            {
+              "word": "The",
+              "start": 347.56,
+              "end": 347.64
+            },
+            {
+              "word": "bout's",
+              "start": 347.64,
+              "end": 347.88
+            },
+            {
+              "word": "star",
+              "start": 347.88,
+              "end": 348.36
+            },
+            {
+              "word": "is",
+              "start": 348.36,
+              "end": 348.52
+            },
+            {
+              "word": "now",
+              "start": 348.52,
+              "end": 348.76
+            },
+            {
+              "word": "empty",
+              "start": 348.76,
+              "end": 349.24
+            },
+            {
+              "word": "because",
+              "start": 349.56,
+              "end": 349.88
+            },
+            {
+              "word": "no",
+              "start": 349.88,
+              "end": 350.12
+            },
+            {
+              "word": "remaining",
+              "start": 350.12,
+              "end": 350.68
+            },
+            {
+              "word": "clip",
+              "start": 350.68,
+              "end": 351.0
+            },
+            {
+              "word": "is",
+              "start": 351.0,
+              "end": 351.08
+            },
+            {
+              "word": "a",
+              "start": 351.08,
+              "end": 351.16
+            },
+            {
+              "word": "favorite.",
+              "start": 351.16,
+              "end": 351.72
+            }
+          ],
+          "end": 353.1666666666667,
+          "speechDuration": 6.96,
+          "freezeDuration": 0,
+          "readingPause": 1.206666666666666
+        },
+        {
+          "label": "close-bout",
+          "focus": null,
+          "text": "Close the bout details to return to the tournament.",
+          "start": 353.1666666666667,
+          "words": [
+            {
+              "word": "Close",
+              "start": 353.3266666666667,
+              "end": 353.6466666666667
+            },
+            {
+              "word": "the",
+              "start": 353.6466666666667,
+              "end": 353.7266666666667
+            },
+            {
+              "word": "bout",
+              "start": 353.7266666666667,
+              "end": 354.0466666666667
+            },
+            {
+              "word": "details",
+              "start": 354.0466666666667,
+              "end": 354.6066666666667
+            },
+            {
+              "word": "to",
+              "start": 354.6066666666667,
+              "end": 354.7666666666667
+            },
+            {
+              "word": "return",
+              "start": 354.7666666666667,
+              "end": 355.1666666666667
+            },
+            {
+              "word": "to",
+              "start": 355.1666666666667,
+              "end": 355.24666666666667
+            },
+            {
+              "word": "the",
+              "start": 355.24666666666667,
+              "end": 355.3266666666667
+            },
+            {
+              "word": "tournament.",
+              "start": 355.3266666666667,
+              "end": 355.8866666666667
+            }
+          ],
+          "end": 358.1333333333333,
+          "speechDuration": 2.96,
+          "freezeDuration": 1,
+          "readingPause": 2.006666666666667
+        }
+      ],
+      "titleCard": {
+        "kind": "title",
+        "chapter": 5,
+        "start": 293.6666666666667,
+        "duration": 4.4,
+        "label": "title-6",
+        "text": "Number six. Delete review clips.",
+        "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-00.wav",
+        "speechOffset": 0.3,
+        "speechDuration": 2.88,
+        "words": [
+          {
+            "word": "Number",
+            "start": 294.1266666666667,
+            "end": 294.3666666666667
+          },
+          {
+            "word": "six.",
+            "start": 294.3666666666667,
+            "end": 294.9266666666667
+          },
+          {
+            "word": "Delete",
+            "start": 295.4866666666667,
+            "end": 295.8066666666667
+          },
+          {
+            "word": "review",
+            "start": 295.8066666666667,
+            "end": 296.1266666666667
+          },
+          {
+            "word": "clips.",
+            "start": 296.1266666666667,
+            "end": 296.6066666666667
+          }
+        ]
+      },
+      "end": 358.1333333333333,
+      "duration": 64.96666666666664
+    },
+    {
+      "title": "Clear local clip copies",
+      "start": 358.1333333333333,
+      "beats": [
+        {
+          "label": "open-fencer-settings",
+          "focus": null,
+          "text": "Open Fencer to manage the profile and local clip storage.",
+          "start": 363.6,
+          "words": [
+            {
+              "word": "Open",
+              "start": 363.76000000000005,
+              "end": 364.16
+            },
+            {
+              "word": "Fencer",
+              "start": 364.16,
+              "end": 364.56
+            },
+            {
+              "word": "to",
+              "start": 364.64000000000004,
+              "end": 364.72
+            },
+            {
+              "word": "manage",
+              "start": 364.72,
+              "end": 365.20000000000005
+            },
+            {
+              "word": "the",
+              "start": 365.20000000000005,
+              "end": 365.28000000000003
+            },
+            {
+              "word": "profile",
+              "start": 365.28000000000003,
+              "end": 366.0
+            },
+            {
+              "word": "and",
+              "start": 366.08000000000004,
+              "end": 366.24
+            },
+            {
+              "word": "local",
+              "start": 366.24,
+              "end": 366.64000000000004
+            },
+            {
+              "word": "clip",
+              "start": 366.64000000000004,
+              "end": 366.96000000000004
+            },
+            {
+              "word": "storage.",
+              "start": 366.96000000000004,
+              "end": 367.6
+            }
+          ],
+          "end": 368.56666666666666,
+          "speechDuration": 4.16,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666666
+        },
+        {
+          "label": "storage-counters",
+          "focus": null,
+          "text": "Clip storage shows local exports and downloaded copies. These values describe device storage, not working memory.",
+          "start": 368.56666666666666,
+          "words": [
+            {
+              "word": "Clip",
+              "start": 368.7266666666667,
+              "end": 368.96666666666664
+            },
+            {
+              "word": "storage",
+              "start": 368.96666666666664,
+              "end": 369.3666666666667
+            },
+            {
+              "word": "shows",
+              "start": 369.3666666666667,
+              "end": 369.68666666666667
+            },
+            {
+              "word": "local",
+              "start": 369.68666666666667,
+              "end": 370.08666666666664
+            },
+            {
+              "word": "exports",
+              "start": 370.08666666666664,
+              "end": 370.64666666666665
+            },
+            {
+              "word": "and",
+              "start": 370.64666666666665,
+              "end": 370.7266666666667
+            },
+            {
+              "word": "downloaded",
+              "start": 370.7266666666667,
+              "end": 371.2866666666667
+            },
+            {
+              "word": "copies.",
+              "start": 371.2866666666667,
+              "end": 371.9266666666667
+            },
+            {
+              "word": "These",
+              "start": 372.24666666666667,
+              "end": 372.4866666666667
+            },
+            {
+              "word": "values",
+              "start": 372.4866666666667,
+              "end": 372.88666666666666
+            },
+            {
+              "word": "describe",
+              "start": 372.88666666666666,
+              "end": 373.44666666666666
+            },
+            {
+              "word": "device",
+              "start": 373.44666666666666,
+              "end": 373.76666666666665
+            },
+            {
+              "word": "storage,",
+              "start": 373.76666666666665,
+              "end": 374.40666666666664
+            },
+            {
+              "word": "not",
+              "start": 374.7266666666667,
+              "end": 374.96666666666664
+            },
+            {
+              "word": "working",
+              "start": 374.96666666666664,
+              "end": 375.3666666666667
+            },
+            {
+              "word": "memory.",
+              "start": 375.3666666666667,
+              "end": 375.84666666666664
+            }
+          ],
+          "end": 376.9,
+          "speechDuration": 7.52,
+          "freezeDuration": 0,
+          "readingPause": 0.8133333333333344
+        },
+        {
+          "label": "clear-local-copies",
+          "focus": null,
+          "text": "Tap Clear Local Clip Copies to free storage on this device.",
+          "start": 376.9,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 377.06,
+              "end": 377.38
+            },
+            {
+              "word": "Clear",
+              "start": 377.46,
+              "end": 377.85999999999996
+            },
+            {
+              "word": "Local",
+              "start": 377.85999999999996,
+              "end": 378.26
+            },
+            {
+              "word": "Clip",
+              "start": 378.26,
+              "end": 378.5
+            },
+            {
+              "word": "Copies",
+              "start": 378.5,
+              "end": 379.14
+            },
+            {
+              "word": "to",
+              "start": 379.12333333333333,
+              "end": 379.15666666666664
+            },
+            {
+              "word": "free",
+              "start": 379.14,
+              "end": 379.46
+            },
+            {
+              "word": "storage",
+              "start": 379.46,
+              "end": 379.94
+            },
+            {
+              "word": "on",
+              "start": 379.94,
+              "end": 380.09999999999997
+            },
+            {
+              "word": "this",
+              "start": 380.09999999999997,
+              "end": 380.26
+            },
+            {
+              "word": "device.",
+              "start": 380.26,
+              "end": 380.9
+            }
+          ],
+          "end": 381.8666666666666,
+          "speechDuration": 4.16,
+          "freezeDuration": 1,
+          "readingPause": 0.8066666666666666
+        },
+        {
+          "label": "storage-warning",
+          "focus": null,
+          "text": "This clears uploaded local exports and downloaded copies across bouts. It keeps clips in iCloud and protects pending uploads.",
+          "start": 381.8666666666667,
+          "words": [
+            {
+              "word": "This",
+              "start": 382.0266666666667,
+              "end": 382.26666666666665
+            },
+            {
+              "word": "clears",
+              "start": 382.26666666666665,
+              "end": 382.6666666666667
+            },
+            {
+              "word": "uploaded",
+              "start": 382.6666666666667,
+              "end": 383.06666666666666
+            },
+            {
+              "word": "local",
+              "start": 383.06666666666666,
+              "end": 383.38666666666666
+            },
+            {
+              "word": "exports",
+              "start": 383.38666666666666,
+              "end": 383.94666666666666
+            },
+            {
+              "word": "and",
+              "start": 383.94666666666666,
+              "end": 384.1066666666667
+            },
+            {
+              "word": "downloaded",
+              "start": 384.1066666666667,
+              "end": 384.6666666666667
+            },
+            {
+              "word": "copies",
+              "start": 384.6666666666667,
+              "end": 385.14666666666665
+            },
+            {
+              "word": "across",
+              "start": 385.14666666666665,
+              "end": 385.5466666666667
+            },
+            {
+              "word": "bouts.",
+              "start": 385.5466666666667,
+              "end": 386.0266666666667
+            },
+            {
+              "word": "It",
+              "start": 386.3466666666667,
+              "end": 386.50666666666666
+            },
+            {
+              "word": "keeps",
+              "start": 386.50666666666666,
+              "end": 386.82666666666665
+            },
+            {
+              "word": "clips",
+              "start": 386.82666666666665,
+              "end": 387.14666666666665
+            },
+            {
+              "word": "in",
+              "start": 387.14666666666665,
+              "end": 387.3066666666667
+            },
+            {
+              "word": "iCloud",
+              "start": 387.3066666666667,
+              "end": 387.8666666666667
+            },
+            {
+              "word": "and",
+              "start": 388.09000000000003,
+              "end": 388.12333333333333
+            },
+            {
+              "word": "protects",
+              "start": 388.18666666666667,
+              "end": 388.5866666666667
+            },
+            {
+              "word": "pending",
+              "start": 388.5866666666667,
+              "end": 389.06666666666666
+            },
+            {
+              "word": "uploads.",
+              "start": 389.06666666666666,
+              "end": 389.70666666666665
+            }
+          ],
+          "end": 391.1666666666667,
+          "speechDuration": 8.08,
+          "freezeDuration": 0,
+          "readingPause": 1.2200000000000006
+        },
+        {
+          "label": "confirm-clear-copies",
+          "focus": null,
+          "text": "Tap Clear Local Copies to confirm. The app reports how many files it removed.",
+          "start": 391.1666666666667,
+          "words": [
+            {
+              "word": "Tap",
+              "start": 391.3266666666667,
+              "end": 391.7266666666667
+            },
+            {
+              "word": "Clear",
+              "start": 391.7266666666667,
+              "end": 392.2066666666667
+            },
+            {
+              "word": "Local",
+              "start": 392.2066666666667,
+              "end": 392.6066666666667
+            },
+            {
+              "word": "Copies",
+              "start": 392.6066666666667,
+              "end": 393.1666666666667
+            },
+            {
+              "word": "to",
+              "start": 393.1666666666667,
+              "end": 393.24666666666667
+            },
+            {
+              "word": "confirm.",
+              "start": 393.24666666666667,
+              "end": 393.8866666666667
+            },
+            {
+              "word": "The",
+              "start": 394.8466666666667,
+              "end": 395.00666666666666
+            },
+            {
+              "word": "app",
+              "start": 395.00666666666666,
+              "end": 395.1666666666667
+            },
+            {
+              "word": "reports",
+              "start": 395.1666666666667,
+              "end": 395.7266666666667
+            },
+            {
+              "word": "how",
+              "start": 395.7266666666667,
+              "end": 395.8866666666667
+            },
+            {
+              "word": "many",
+              "start": 395.8866666666667,
+              "end": 396.12666666666667
+            },
+            {
+              "word": "files",
+              "start": 396.12666666666667,
+              "end": 396.68666666666667
+            },
+            {
+              "word": "it",
+              "start": 396.68666666666667,
+              "end": 396.7666666666667
+            },
+            {
+              "word": "removed.",
+              "start": 396.7666666666667,
+              "end": 397.3266666666667
+            }
+          ],
+          "end": 398.7666666666667,
+          "speechDuration": 6.4,
+          "freezeDuration": 1,
+          "readingPause": 1.1999999999999993
+        },
+        {
+          "label": "storage-result",
+          "focus": null,
+          "text": "The local storage counts decrease. Saved cloud clips can download again when you play them with an available connection.",
+          "start": 398.76666666666665,
+          "words": [
+            {
+              "word": "The",
+              "start": 398.9266666666667,
+              "end": 399.00666666666666
+            },
+            {
+              "word": "local",
+              "start": 399.00666666666666,
+              "end": 399.32666666666665
+            },
+            {
+              "word": "storage",
+              "start": 399.32666666666665,
+              "end": 399.8066666666667
+            },
+            {
+              "word": "counts",
+              "start": 399.8066666666667,
+              "end": 400.20666666666665
+            },
+            {
+              "word": "decrease.",
+              "start": 400.20666666666665,
+              "end": 400.76666666666665
+            },
+            {
+              "word": "Saved",
+              "start": 401.16666666666663,
+              "end": 401.56666666666666
+            },
+            {
+              "word": "cloud",
+              "start": 401.56666666666666,
+              "end": 401.96666666666664
+            },
+            {
+              "word": "clips",
+              "start": 401.96666666666664,
+              "end": 402.28666666666663
+            },
+            {
+              "word": "can",
+              "start": 402.28666666666663,
+              "end": 402.52666666666664
+            },
+            {
+              "word": "download",
+              "start": 402.52666666666664,
+              "end": 402.9266666666667
+            },
+            {
+              "word": "again",
+              "start": 402.9266666666667,
+              "end": 403.40666666666664
+            },
+            {
+              "word": "when",
+              "start": 403.40666666666664,
+              "end": 403.56666666666666
+            },
+            {
+              "word": "you",
+              "start": 403.56666666666666,
+              "end": 403.64666666666665
+            },
+            {
+              "word": "play",
+              "start": 403.64666666666665,
+              "end": 403.88666666666666
+            },
+            {
+              "word": "them",
+              "start": 403.88666666666666,
+              "end": 404.20666666666665
+            },
+            {
+              "word": "with",
+              "start": 404.20666666666665,
+              "end": 404.28666666666663
+            },
+            {
+              "word": "an",
+              "start": 404.28666666666663,
+              "end": 404.3666666666667
+            },
+            {
+              "word": "available",
+              "start": 404.3666666666667,
+              "end": 404.9266666666667
+            },
+            {
+              "word": "connection.",
+              "start": 404.9266666666667,
+              "end": 405.56666666666666
+            }
+          ],
+          "end": 406.6333333333333,
+          "speechDuration": 7.04,
+          "freezeDuration": 0,
+          "readingPause": 0.8266666666666662
+        },
+        {
+          "label": "finish",
+          "focus": null,
+          "text": "Your original recordings remain in Photos. You can now organize bouts, save useful clips, and review them together.",
+          "start": 406.6333333333333,
+          "words": [
+            {
+              "word": "Your",
+              "start": 406.79333333333335,
+              "end": 407.0333333333333
+            },
+            {
+              "word": "original",
+              "start": 407.0333333333333,
+              "end": 407.43333333333334
+            },
+            {
+              "word": "recordings",
+              "start": 407.43333333333334,
+              "end": 407.99333333333334
+            },
+            {
+              "word": "remain",
+              "start": 407.99333333333334,
+              "end": 408.3933333333333
+            },
+            {
+              "word": "in",
+              "start": 408.3933333333333,
+              "end": 408.55333333333334
+            },
+            {
+              "word": "Photos.",
+              "start": 408.55333333333334,
+              "end": 409.1933333333333
+            },
+            {
+              "word": "You",
+              "start": 409.35333333333335,
+              "end": 409.43333333333334
+            },
+            {
+              "word": "can",
+              "start": 409.43333333333334,
+              "end": 409.5933333333333
+            },
+            {
+              "word": "now",
+              "start": 409.5933333333333,
+              "end": 409.8333333333333
+            },
+            {
+              "word": "organize",
+              "start": 409.8333333333333,
+              "end": 410.3933333333333
+            },
+            {
+              "word": "bouts,",
+              "start": 410.3933333333333,
+              "end": 410.9533333333333
+            },
+            {
+              "word": "save",
+              "start": 411.11333333333334,
+              "end": 411.43333333333334
+            },
+            {
+              "word": "useful",
+              "start": 411.43333333333334,
+              "end": 411.8333333333333
+            },
+            {
+              "word": "clips,",
+              "start": 411.8333333333333,
+              "end": 412.31333333333333
+            },
+            {
+              "word": "and",
+              "start": 412.55333333333334,
+              "end": 412.7133333333333
+            },
+            {
+              "word": "review",
+              "start": 412.7133333333333,
+              "end": 413.0333333333333
+            },
+            {
+              "word": "them",
+              "start": 413.0333333333333,
+              "end": 413.2733333333333
+            },
+            {
+              "word": "together.",
+              "start": 413.2733333333333,
+              "end": 413.8333333333333
+            }
+          ],
+          "end": 416.09999999999997,
+          "speechDuration": 7.44,
+          "freezeDuration": 0,
+          "readingPause": 2.0266666666666664
+        }
+      ],
+      "titleCard": {
+        "kind": "title",
+        "chapter": 6,
+        "start": 358.6333333333333,
+        "duration": 4.466666666666667,
+        "label": "title-7",
+        "text": "Number seven. Clear local clip copies.",
+        "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-00.wav",
+        "speechOffset": 0.3,
+        "speechDuration": 2.96,
+        "words": [
+          {
+            "word": "Number",
+            "start": 359.09333333333336,
+            "end": 359.41333333333336
+          },
+          {
+            "word": "seven.",
+            "start": 359.41333333333336,
+            "end": 359.8933333333333
+          },
+          {
+            "word": "Clear",
+            "start": 360.05333333333334,
+            "end": 360.37333333333333
+          },
+          {
+            "word": "local",
+            "start": 360.37333333333333,
+            "end": 360.7733333333333
+          },
+          {
+            "word": "clip",
+            "start": 360.7733333333333,
+            "end": 361.09333333333336
+          },
+          {
+            "word": "copies.",
+            "start": 361.09333333333336,
+            "end": 361.65333333333336
+          }
+        ]
+      },
+      "end": 416.1,
+      "duration": 57.9666666666667
+    }
+  ]
+}

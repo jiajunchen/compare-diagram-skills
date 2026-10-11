@@ -1,0 +1,401 @@
+{
+  "nodes": [
+    {
+      "id": "b8824ef65ffdddf8",
+      "type": "group",
+      "label": "03B  User pathways | recording, clip, playback, and cleanup",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "color": "#4a6080"
+    },
+    {
+      "id": "c2461c464fa16dde",
+      "type": "text",
+      "text": "# 03B  User pathways — recording, clip, playback, and cleanup",
+      "x": 44,
+      "y": 45,
+      "width": 992,
+      "height": 65,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "80a328f8bb793a02",
+      "type": "text",
+      "text": "**Open confirmed bout**",
+      "x": 453,
+      "y": 156,
+      "width": 197,
+      "height": 78,
+      "color": "#4a6080"
+    },
+    {
+      "id": "322c1ccda420358d",
+      "type": "text",
+      "text": "**Import Recordings**\nPhotosPicker: up to 20 videos",
+      "x": 458,
+      "y": 262,
+      "width": 188,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "0bb4acce7ae7902f",
+      "type": "text",
+      "text": "**BoutImportCoordinator.prepareSelections**\nPhotoLibraryService reads metadata / Photos IDs\nshow batch, failures, cancellation",
+      "x": 408,
+      "y": 367,
+      "width": 287,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "f064347f634e3fdd",
+      "type": "text",
+      "text": "**Confirm batch**\ninsert SourceRecording links in SwiftData\ntry linking iCloud Photos IDs",
+      "x": 428,
+      "y": 488,
+      "width": 246,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "acee2221b0728871",
+      "type": "text",
+      "text": "**Review and Trim Recordings**\nload ordered sources + clips",
+      "x": 459,
+      "y": 593,
+      "width": 184,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "8f4aa955c653300a",
+      "type": "text",
+      "text": "**Open source**\nPhotoKit AVAsset; local fallback if needed",
+      "x": 429,
+      "y": 693,
+      "width": 246,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "c435af208d180a56",
+      "type": "text",
+      "text": "**Select trim range**\nClipWorkflow.createClip -> AVFoundation export\nReviewClip: exporting -> pendingUpload",
+      "x": 411,
+      "y": 798,
+      "width": 281,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "0563c7fb9c862825",
+      "type": "text",
+      "text": "**ClipUploadQueue.upload**\nsync metadata -> save CKAsset\nReviewClip: uploading -> available",
+      "x": 364,
+      "y": 919,
+      "width": 212,
+      "height": 78,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "35dcd863403ba828",
+      "type": "text",
+      "text": "**Failure path**\nexportFailed / pendingUpload / needsAttention\nretry export or upload",
+      "x": 457,
+      "y": 1040,
+      "width": 271,
+      "height": 78,
+      "color": "#ff4d6a"
+    },
+    {
+      "id": "4e77166f3190719c",
+      "type": "text",
+      "text": "**Play clip / Play Bout**\nordered ReviewClips -> playableURL",
+      "x": 215,
+      "y": 1040,
+      "width": 226,
+      "height": 78,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "0ef94b5b143d6f31",
+      "type": "text",
+      "text": "**Local export or managed cache?**",
+      "x": 133,
+      "y": 1153,
+      "width": 389,
+      "height": 78,
+      "color": "#ff8c42"
+    },
+    {
+      "id": "615c48fc40fa741a",
+      "type": "text",
+      "text": "**ClipDownloadCoordinator.resolve**\ncheck iCloud -> download CKAsset -> cache",
+      "x": 102,
+      "y": 1270,
+      "width": 264,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "b354d855fb8f462b",
+      "type": "text",
+      "text": "**MediaPlayerModel + BoutPlaybackQueue**\nseek, scrub, speed, next clip (continuous)",
+      "x": 204,
+      "y": 1369,
+      "width": 248,
+      "height": 78,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "af60496352414412",
+      "type": "text",
+      "text": "**Unload / Clear Local Copies**\nonly confirmed available exports; clear cache\nretain CloudKit records/assets",
+      "x": 197,
+      "y": 1484,
+      "width": 262,
+      "height": 78,
+      "color": "#ff8c42"
+    },
+    {
+      "id": "2e5e5a0f2cf2a865",
+      "type": "text",
+      "text": "**Delete clip/source/bout/tournament**\nasset first, then local records, queue metadata deletion\nPhotos original stays intact",
+      "x": 667,
+      "y": 156,
+      "width": 312,
+      "height": 78,
+      "color": "#ff4d6a"
+    },
+    {
+      "id": "155e15c1054d59cc",
+      "type": "text",
+      "text": "**How to read**  Export or cloud failures retain retry states. Playback uses local export/cache or downloads an edited CKAsset. Cleanup leaves Photos originals intact.",
+      "x": 52,
+      "y": 1585,
+      "width": 976,
+      "height": 75,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "3ab6c467de8fff32",
+      "type": "text",
+      "text": "## Color legend",
+      "x": 52,
+      "y": 1670,
+      "width": 976,
+      "height": 45
+    },
+    {
+      "id": "59b6336bcd3214e0",
+      "type": "text",
+      "text": "User entry",
+      "x": 52,
+      "y": 1725,
+      "width": 468,
+      "height": 50,
+      "color": "#4a6080"
+    },
+    {
+      "id": "765b847a56989faf",
+      "type": "text",
+      "text": "UI action / screen",
+      "x": 540,
+      "y": 1725,
+      "width": 468,
+      "height": 50,
+      "color": "#2d7aff"
+    },
+    {
+      "id": "f1f0d88f81ed5b7d",
+      "type": "text",
+      "text": "On-device processing",
+      "x": 52,
+      "y": 1790,
+      "width": 468,
+      "height": 50,
+      "color": "#00e5a0"
+    },
+    {
+      "id": "e2ba42831b1ddb40",
+      "type": "text",
+      "text": "Cloud upload",
+      "x": 540,
+      "y": 1790,
+      "width": 468,
+      "height": 50,
+      "color": "#00d4ff"
+    },
+    {
+      "id": "c56c529a81373f41",
+      "type": "text",
+      "text": "Decision / local cleanup",
+      "x": 52,
+      "y": 1855,
+      "width": 468,
+      "height": 50,
+      "color": "#ff8c42"
+    },
+    {
+      "id": "bf62cd4a77e90c6e",
+      "type": "text",
+      "text": "Failure / deletion",
+      "x": 540,
+      "y": 1855,
+      "width": 468,
+      "height": 50,
+      "color": "#ff4d6a"
+    }
+  ],
+  "edges": [
+    {
+      "id": "f58c7dd8fea6709a",
+      "fromNode": "80a328f8bb793a02",
+      "fromSide": "bottom",
+      "toNode": "322c1ccda420358d",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "dbaa52655522f7ff",
+      "fromNode": "322c1ccda420358d",
+      "fromSide": "bottom",
+      "toNode": "0bb4acce7ae7902f",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "831dddd87d179236",
+      "fromNode": "0bb4acce7ae7902f",
+      "fromSide": "bottom",
+      "toNode": "f064347f634e3fdd",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "Add to Bout"
+    },
+    {
+      "id": "368ead652799578e",
+      "fromNode": "f064347f634e3fdd",
+      "fromSide": "bottom",
+      "toNode": "acee2221b0728871",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "ad97697480cdbe45",
+      "fromNode": "acee2221b0728871",
+      "fromSide": "bottom",
+      "toNode": "8f4aa955c653300a",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "1ec8b5b5c268439e",
+      "fromNode": "8f4aa955c653300a",
+      "fromSide": "bottom",
+      "toNode": "c435af208d180a56",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "02fa3884b850f232",
+      "fromNode": "c435af208d180a56",
+      "fromSide": "bottom",
+      "toNode": "0563c7fb9c862825",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "export success"
+    },
+    {
+      "id": "f1a2077f1eae79e2",
+      "fromNode": "c435af208d180a56",
+      "fromSide": "bottom",
+      "toNode": "35dcd863403ba828",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "export failure"
+    },
+    {
+      "id": "ae99ca414048b6f3",
+      "fromNode": "0563c7fb9c862825",
+      "fromSide": "bottom",
+      "toNode": "35dcd863403ba828",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "cloud failure"
+    },
+    {
+      "id": "c54e4338769294fb",
+      "fromNode": "0563c7fb9c862825",
+      "fromSide": "bottom",
+      "toNode": "4e77166f3190719c",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "available"
+    },
+    {
+      "id": "12db62731e4bc357",
+      "fromNode": "35dcd863403ba828",
+      "fromSide": "top",
+      "toNode": "0563c7fb9c862825",
+      "toSide": "bottom",
+      "color": "#2d7aff",
+      "label": "reference / optional: retry"
+    },
+    {
+      "id": "100352ec6bdafacd",
+      "fromNode": "4e77166f3190719c",
+      "fromSide": "bottom",
+      "toNode": "0ef94b5b143d6f31",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "16e9084840f9e3d9",
+      "fromNode": "0ef94b5b143d6f31",
+      "fromSide": "bottom",
+      "toNode": "b354d855fb8f462b",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "yes"
+    },
+    {
+      "id": "5b7469dd7c80f280",
+      "fromNode": "0ef94b5b143d6f31",
+      "fromSide": "bottom",
+      "toNode": "615c48fc40fa741a",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "no"
+    },
+    {
+      "id": "2ae62d83712aae6b",
+      "fromNode": "615c48fc40fa741a",
+      "fromSide": "bottom",
+      "toNode": "b354d855fb8f462b",
+      "toSide": "top",
+      "color": "#2d7aff"
+    },
+    {
+      "id": "cf81252a6e5ae7ed",
+      "fromNode": "b354d855fb8f462b",
+      "fromSide": "bottom",
+      "toNode": "af60496352414412",
+      "toSide": "top",
+      "color": "#2d7aff",
+      "label": "optional"
+    },
+    {
+      "id": "17088818344079a6",
+      "fromNode": "acee2221b0728871",
+      "fromSide": "top",
+      "toNode": "2e5e5a0f2cf2a865",
+      "toSide": "bottom",
+      "color": "#2d7aff",
+      "label": "reference / optional: optional"
+    }
+  ]
+}

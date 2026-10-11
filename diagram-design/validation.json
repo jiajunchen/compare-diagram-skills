@@ -1,0 +1,55 @@
+{
+  "skillSelfCheck": "passed",
+  "geometry": [
+    {
+      "figure": 1,
+      "result": "passed"
+    },
+    {
+      "figure": 2,
+      "result": "passed"
+    },
+    {
+      "figure": 3,
+      "result": "passed"
+    },
+    {
+      "figure": 4,
+      "result": "passed"
+    },
+    {
+      "figure": 5,
+      "result": "passed"
+    },
+    {
+      "figure": 6,
+      "result": "passed"
+    },
+    {
+      "figure": 7,
+      "result": "passed"
+    }
+  ],
+  "browserErrors": [],
+  "nodeTextOverflows": [],
+  "desktop": {
+    "pageOverflow": false
+  },
+  "mobile": {
+    "pageOverflow": false,
+    "localScrollers": 7
+  },
+  "fonts": {
+    "title": "\"Instrument Serif\", Georgia, serif",
+    "body": "Geist, Arial, sans-serif",
+    "loaded": [
+      "Geist",
+      "Geist",
+      "Geist",
+      "Geist Mono",
+      "Instrument Serif",
+      "Instrument Serif"
+    ]
+  },
+  "sourceReferences": 36
+}

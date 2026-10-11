@@ -1,0 +1,76 @@
+{
+  "encodedFramesMatch": [
+    {
+      "chapter": 1,
+      "sampleTime": 12.997,
+      "structuralSimilarity": 0.999632
+    },
+    {
+      "chapter": 2,
+      "sampleTime": 36.387,
+      "structuralSimilarity": 0.999571
+    },
+    {
+      "chapter": 3,
+      "sampleTime": 86.466,
+      "structuralSimilarity": 0.999523
+    },
+    {
+      "chapter": 4,
+      "sampleTime": 135.916,
+      "structuralSimilarity": 0.999506
+    },
+    {
+      "chapter": 5,
+      "sampleTime": 188.229,
+      "structuralSimilarity": 0.999534
+    },
+    {
+      "chapter": 6,
+      "sampleTime": 234.95,
+      "structuralSimilarity": 0.999488
+    },
+    {
+      "chapter": 7,
+      "sampleTime": 285.748,
+      "structuralSimilarity": 0.999558
+    },
+    {
+      "chapter": 8,
+      "sampleTime": 336.952,
+      "structuralSimilarity": 0.999386
+    },
+    {
+      "chapter": 9,
+      "sampleTime": 388.008,
+      "structuralSimilarity": 0.999535
+    },
+    {
+      "chapter": 10,
+      "sampleTime": 434.435,
+      "structuralSimilarity": 0.999523
+    },
+    {
+      "chapter": 11,
+      "sampleTime": 481.039,
+      "structuralSimilarity": 0.999438
+    },
+    {
+      "chapter": 12,
+      "sampleTime": 531.083,
+      "structuralSimilarity": 0.999558
+    },
+    {
+      "chapter": 13,
+      "sampleTime": 581.201,
+      "structuralSimilarity": 0.99954
+    }
+  ],
+  "browserPlayback": {
+    "playing": true,
+    "time": 0.268098,
+    "duration": 613.566667,
+    "width": 1920,
+    "height": 1080
+  }
+}

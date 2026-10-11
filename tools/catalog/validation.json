@@ -1,0 +1,43 @@
+{
+  "collections": 20,
+  "originalLinksPreserved": 228,
+  "embeddedFontsAndPreviews": true,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "offline": true,
+      "previews": 20,
+      "filters": "passed",
+      "search": "passed",
+      "previewDialogAndKeyboard": "passed",
+      "noHorizontalOverflow": true,
+      "browserErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "offline": true,
+      "previews": 20,
+      "filters": "passed",
+      "search": "passed",
+      "previewDialogAndKeyboard": "passed",
+      "noHorizontalOverflow": true,
+      "browserErrors": [],
+      "externalRequests": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "offline": true,
+      "previews": 20,
+      "filters": "passed",
+      "search": "passed",
+      "previewDialogAndKeyboard": "passed",
+      "noHorizontalOverflow": true,
+      "browserErrors": [],
+      "externalRequests": []
+    }
+  ]
+}

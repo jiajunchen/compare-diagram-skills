@@ -1,0 +1,1079 @@
+[
+  {
+    "kind": "title",
+    "chapter": 0,
+    "start": 0.0,
+    "duration": 5.666666666666667,
+    "label": "title-1",
+    "text": "Number one. Add a fencer and add a tournament.",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-00.wav",
+    "speechOffset": 0.3,
+    "speechDuration": 4.16,
+    "words": [
+      {
+        "word": "Number",
+        "start": 0.45999999999999996,
+        "end": 0.78
+      },
+      {
+        "word": "one.",
+        "start": 0.78,
+        "end": 1.18
+      },
+      {
+        "word": "Add",
+        "start": 1.82,
+        "end": 1.98
+      },
+      {
+        "word": "a",
+        "start": 1.98,
+        "end": 2.06
+      },
+      {
+        "word": "fencer",
+        "start": 2.06,
+        "end": 2.6999999999999997
+      },
+      {
+        "word": "and",
+        "start": 3.0999999999999996,
+        "end": 3.26
+      },
+      {
+        "word": "add",
+        "start": 3.34,
+        "end": 3.5
+      },
+      {
+        "word": "a",
+        "start": 3.5,
+        "end": 3.5799999999999996
+      },
+      {
+        "word": "tournament.",
+        "start": 3.5799999999999996,
+        "end": 4.22
+      }
+    ],
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-000.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 0,
+    "start": 5.666666666666667,
+    "duration": 0.5,
+    "label": "to-demo-1",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-001.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 6.166666666666667,
+    "duration": 7.3,
+    "index": 0,
+    "label": "welcome",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-01.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/000.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 13.466666666666667,
+    "duration": 6.333333333333333,
+    "index": 1,
+    "label": "enter-fencer",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-02.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/001.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 19.8,
+    "duration": 5.866666666666666,
+    "index": 2,
+    "label": "continue-setup",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-03.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/002.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 25.666666666666668,
+    "duration": 3.1333333333333333,
+    "index": 3,
+    "label": "new-tournament",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-04.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/003.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 28.8,
+    "duration": 6.666666666666667,
+    "index": 4,
+    "label": "tournament-name",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-05.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/004.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 35.46666666666667,
+    "duration": 3.1333333333333333,
+    "index": 5,
+    "label": "save-tournament",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-06.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/005.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 38.6,
+    "duration": 7.466666666666667,
+    "index": 6,
+    "label": "tournament-ready",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-01-part-07.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/006.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 1,
+    "start": 46.06666666666667,
+    "duration": 0.5,
+    "label": "to-title-2",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-009.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 1,
+    "start": 46.56666666666667,
+    "duration": 4.7,
+    "label": "title-2",
+    "text": "Number two. Add a schedule from a screenshot.",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-00.wav",
+    "speechOffset": 0.3,
+    "speechDuration": 3.2,
+    "words": [
+      {
+        "word": "Number",
+        "start": 47.026666666666664,
+        "end": 47.346666666666664
+      },
+      {
+        "word": "two.",
+        "start": 47.346666666666664,
+        "end": 47.82666666666667
+      },
+      {
+        "word": "Add",
+        "start": 48.306666666666665,
+        "end": 48.46666666666667
+      },
+      {
+        "word": "a",
+        "start": 48.45,
+        "end": 48.483333333333334
+      },
+      {
+        "word": "schedule",
+        "start": 48.46666666666667,
+        "end": 48.946666666666665
+      },
+      {
+        "word": "from",
+        "start": 48.946666666666665,
+        "end": 49.10666666666667
+      },
+      {
+        "word": "a",
+        "start": 49.10666666666667,
+        "end": 49.18666666666667
+      },
+      {
+        "word": "screenshot.",
+        "start": 49.18666666666667,
+        "end": 49.82666666666667
+      }
+    ],
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-010.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 1,
+    "start": 51.266666666666666,
+    "duration": 0.5,
+    "label": "to-demo-2",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-011.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 51.766666666666666,
+    "duration": 5.133333333333334,
+    "index": 7,
+    "label": "import-schedule",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-01.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/007.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 56.9,
+    "duration": 5.466666666666667,
+    "index": 8,
+    "label": "open-screenshot-photos",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-02.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/008.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 62.36666666666667,
+    "duration": 5.133333333333334,
+    "index": 9,
+    "label": "select-screenshot",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-03.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/009.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 67.5,
+    "duration": 4.4,
+    "index": 10,
+    "label": "add-screenshot",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-04.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/010.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 71.9,
+    "duration": 8.0,
+    "index": 11,
+    "label": "review-schedule",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-05.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/011.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 79.9,
+    "duration": 7.7,
+    "index": 12,
+    "label": "confirm-schedule",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-06.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/012.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 87.6,
+    "duration": 8.333333333333334,
+    "index": 13,
+    "label": "schedule-ready",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-02-part-07.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/013.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 2,
+    "start": 95.93333333333334,
+    "duration": 0.5,
+    "label": "to-title-3",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-019.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 2,
+    "start": 96.43333333333334,
+    "duration": 4.8,
+    "label": "title-3",
+    "text": "Number three. Add a bout manually.",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-00.wav",
+    "speechOffset": 0.3,
+    "speechDuration": 3.28,
+    "words": [
+      {
+        "word": "Number",
+        "start": 96.89333333333333,
+        "end": 97.13333333333334
+      },
+      {
+        "word": "three.",
+        "start": 97.13333333333334,
+        "end": 97.61333333333333
+      },
+      {
+        "word": "Add",
+        "start": 98.65333333333334,
+        "end": 98.81333333333333
+      },
+      {
+        "word": "a",
+        "start": 98.79666666666667,
+        "end": 98.83
+      },
+      {
+        "word": "bout",
+        "start": 98.81333333333333,
+        "end": 99.13333333333334
+      },
+      {
+        "word": "manually.",
+        "start": 99.13333333333334,
+        "end": 99.77333333333334
+      }
+    ],
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-020.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 2,
+    "start": 101.23333333333333,
+    "duration": 0.5,
+    "label": "to-demo-3",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-021.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 101.73333333333333,
+    "duration": 5.866666666666666,
+    "index": 14,
+    "label": "manual-open",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-01.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/014.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 107.6,
+    "duration": 2.5,
+    "index": 15,
+    "label": "manual-entry",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-02.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/015.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 110.1,
+    "duration": 5.133333333333334,
+    "index": 16,
+    "label": "add-manual-bout",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-03.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/016.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 115.23333333333333,
+    "duration": 4.966666666666667,
+    "index": 17,
+    "label": "manual-opponent",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-04.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/017.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 120.2,
+    "duration": 8.166666666666666,
+    "index": 18,
+    "label": "manual-number",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-05.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/018.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 128.36666666666667,
+    "duration": 4.566666666666666,
+    "index": 19,
+    "label": "confirm-manual",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-06.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/019.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 132.93333333333334,
+    "duration": 5.7,
+    "index": 20,
+    "label": "manual-ready",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-03-part-07.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/020.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 3,
+    "start": 138.63333333333333,
+    "duration": 0.5,
+    "label": "to-title-4",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-029.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 3,
+    "start": 139.13333333333333,
+    "duration": 4.466666666666667,
+    "label": "title-4",
+    "text": "Number four. Import videos into a bout.",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-00.wav",
+    "speechOffset": 0.3,
+    "speechDuration": 2.96,
+    "words": [
+      {
+        "word": "Number",
+        "start": 139.59333333333333,
+        "end": 139.91333333333333
+      },
+      {
+        "word": "four.",
+        "start": 139.91333333333333,
+        "end": 140.31333333333333
+      },
+      {
+        "word": "Import",
+        "start": 140.63333333333333,
+        "end": 141.03333333333333
+      },
+      {
+        "word": "videos",
+        "start": 141.03333333333333,
+        "end": 141.51333333333335
+      },
+      {
+        "word": "into",
+        "start": 141.51333333333335,
+        "end": 141.83333333333334
+      },
+      {
+        "word": "a",
+        "start": 141.81666666666666,
+        "end": 141.85
+      },
+      {
+        "word": "bout.",
+        "start": 141.91333333333333,
+        "end": 142.15333333333334
+      }
+    ],
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-030.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 3,
+    "start": 143.6,
+    "duration": 0.5,
+    "label": "to-demo-4",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-031.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 144.1,
+    "duration": 6.733333333333333,
+    "index": 21,
+    "label": "choose-bout",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-01.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/021.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 150.83333333333334,
+    "duration": 5.133333333333334,
+    "index": 22,
+    "label": "import-videos",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-02.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/022.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 155.96666666666667,
+    "duration": 4.333333333333333,
+    "index": 23,
+    "label": "select-recordings",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-03.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/023.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 160.3,
+    "duration": 3.2,
+    "index": 24,
+    "label": "select-video-one",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-04.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/024.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 163.5,
+    "duration": 6.566666666666666,
+    "index": 25,
+    "label": "select-video-two",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-05.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/025.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 170.06666666666666,
+    "duration": 4.166666666666667,
+    "index": 26,
+    "label": "add-selected-videos",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-06.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/026.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 174.23333333333332,
+    "duration": 6.8,
+    "index": 27,
+    "label": "allow-photos",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-07.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/027.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 181.03333333333333,
+    "duration": 7.366666666666666,
+    "index": 28,
+    "label": "review-video-import",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-08.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/028.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 188.4,
+    "duration": 8.0,
+    "index": 29,
+    "label": "confirm-video-import",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-09.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/029.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 196.4,
+    "duration": 7.366666666666666,
+    "index": 30,
+    "label": "recordings-ready",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-04-part-10.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/030.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 4,
+    "start": 203.76666666666668,
+    "duration": 0.5,
+    "label": "to-title-5",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-042.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 4,
+    "start": 204.26666666666668,
+    "duration": 5.433333333333334,
+    "label": "title-5",
+    "text": "Number five. Create review clips and mark favorites.",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-00.wav",
+    "speechOffset": 0.3,
+    "speechDuration": 3.92,
+    "words": [
+      {
+        "word": "Number",
+        "start": 204.7266666666667,
+        "end": 205.04666666666668
+      },
+      {
+        "word": "five.",
+        "start": 205.04666666666668,
+        "end": 205.4466666666667
+      },
+      {
+        "word": "Create",
+        "start": 206.0066666666667,
+        "end": 206.32666666666668
+      },
+      {
+        "word": "review",
+        "start": 206.32666666666668,
+        "end": 206.6466666666667
+      },
+      {
+        "word": "clips",
+        "start": 206.6466666666667,
+        "end": 207.1266666666667
+      },
+      {
+        "word": "and",
+        "start": 207.1266666666667,
+        "end": 207.2866666666667
+      },
+      {
+        "word": "mark",
+        "start": 207.2866666666667,
+        "end": 207.60666666666668
+      },
+      {
+        "word": "favorites.",
+        "start": 207.60666666666668,
+        "end": 208.2466666666667
+      }
+    ],
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-043.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 4,
+    "start": 209.7,
+    "duration": 0.5,
+    "label": "to-demo-5",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-044.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 210.2,
+    "duration": 4.0,
+    "index": 31,
+    "label": "open-editor",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-01.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/031.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 214.2,
+    "duration": 4.666666666666667,
+    "index": 32,
+    "label": "preview-original",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-02.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/032.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 218.86666666666667,
+    "duration": 3.2,
+    "index": 33,
+    "label": "pause-original",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-03.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/033.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 222.06666666666666,
+    "duration": 6.166666666666667,
+    "index": 34,
+    "label": "show-trim-controls",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-04.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/034.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 228.23333333333332,
+    "duration": 4.566666666666666,
+    "index": 35,
+    "label": "first-clip-start",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-05.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/035.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 232.8,
+    "duration": 6.266666666666667,
+    "index": 36,
+    "label": "first-clip-end",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-06.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/036.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 239.06666666666666,
+    "duration": 6.266666666666667,
+    "index": 37,
+    "label": "save-first-clip",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-07.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/037.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 245.33333333333334,
+    "duration": 7.133333333333334,
+    "index": 38,
+    "label": "second-clip-start",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-08.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/038.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 252.46666666666667,
+    "duration": 3.3,
+    "index": 39,
+    "label": "second-clip-end",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-09.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/039.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 255.76666666666668,
+    "duration": 6.733333333333333,
+    "index": 40,
+    "label": "save-second-clip",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-10.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/040.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 262.5,
+    "duration": 6.733333333333333,
+    "index": 41,
+    "label": "show-review-clips",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-11.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/041.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 269.23333333333335,
+    "duration": 4.8,
+    "index": 42,
+    "label": "favorite-first-clip",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-12.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/042.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 274.03333333333336,
+    "duration": 6.966666666666667,
+    "index": 43,
+    "label": "clip-star-meaning",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-13.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/043.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 281.0,
+    "duration": 3.7666666666666666,
+    "index": 44,
+    "label": "close-editor",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-14.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/044.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 284.76666666666665,
+    "duration": 8.4,
+    "index": 45,
+    "label": "bout-star-meaning",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-05-part-15.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/045.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 5,
+    "start": 293.1666666666667,
+    "duration": 0.5,
+    "label": "to-title-6",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-060.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 5,
+    "start": 293.6666666666667,
+    "duration": 4.4,
+    "label": "title-6",
+    "text": "Number six. Delete review clips.",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-00.wav",
+    "speechOffset": 0.3,
+    "speechDuration": 2.88,
+    "words": [
+      {
+        "word": "Number",
+        "start": 294.1266666666667,
+        "end": 294.3666666666667
+      },
+      {
+        "word": "six.",
+        "start": 294.3666666666667,
+        "end": 294.9266666666667
+      },
+      {
+        "word": "Delete",
+        "start": 295.4866666666667,
+        "end": 295.8066666666667
+      },
+      {
+        "word": "review",
+        "start": 295.8066666666667,
+        "end": 296.1266666666667
+      },
+      {
+        "word": "clips.",
+        "start": 296.1266666666667,
+        "end": 296.6066666666667
+      }
+    ],
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-061.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 5,
+    "start": 298.06666666666666,
+    "duration": 0.5,
+    "label": "to-demo-6",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-062.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 298.56666666666666,
+    "duration": 5.933333333333334,
+    "index": 46,
+    "label": "open-clips-for-delete",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-01.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/046.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 304.5,
+    "duration": 3.7,
+    "index": 47,
+    "label": "find-clips-for-delete",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-02.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/047.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 308.2,
+    "duration": 6.333333333333333,
+    "index": 48,
+    "label": "show-clips-for-delete",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-03.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/048.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 314.53333333333336,
+    "duration": 3.2,
+    "index": 49,
+    "label": "delete-first-clip",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-04.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/049.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 317.73333333333335,
+    "duration": 8.733333333333333,
+    "index": 50,
+    "label": "delete-warning",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-05.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/050.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 326.46666666666664,
+    "duration": 7.933333333333334,
+    "index": 51,
+    "label": "confirm-clip-delete",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-06.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/051.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 334.4,
+    "duration": 7.466666666666667,
+    "index": 52,
+    "label": "one-clip-remains",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-07.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/052.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 341.8666666666667,
+    "duration": 3.1333333333333333,
+    "index": 53,
+    "label": "close-after-delete",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-08.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/053.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 345.0,
+    "duration": 8.166666666666666,
+    "index": 54,
+    "label": "bout-no-favorite",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-09.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/054.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 353.1666666666667,
+    "duration": 4.966666666666667,
+    "index": 55,
+    "label": "close-bout",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-06-part-10.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/055.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 6,
+    "start": 358.1333333333333,
+    "duration": 0.5,
+    "label": "to-title-7",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-073.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 6,
+    "start": 358.6333333333333,
+    "duration": 4.466666666666667,
+    "label": "title-7",
+    "text": "Number seven. Clear local clip copies.",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-00.wav",
+    "speechOffset": 0.3,
+    "speechDuration": 2.96,
+    "words": [
+      {
+        "word": "Number",
+        "start": 359.09333333333336,
+        "end": 359.41333333333336
+      },
+      {
+        "word": "seven.",
+        "start": 359.41333333333336,
+        "end": 359.8933333333333
+      },
+      {
+        "word": "Clear",
+        "start": 360.05333333333334,
+        "end": 360.37333333333333
+      },
+      {
+        "word": "local",
+        "start": 360.37333333333333,
+        "end": 360.7733333333333
+      },
+      {
+        "word": "clip",
+        "start": 360.7733333333333,
+        "end": 361.09333333333336
+      },
+      {
+        "word": "copies.",
+        "start": 361.09333333333336,
+        "end": 361.65333333333336
+      }
+    ],
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-074.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 6,
+    "start": 363.1,
+    "duration": 0.5,
+    "label": "to-demo-7",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/part-075.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 363.6,
+    "duration": 4.966666666666667,
+    "index": 56,
+    "label": "open-fencer-settings",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-01.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/056.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 368.56666666666666,
+    "duration": 8.333333333333334,
+    "index": 57,
+    "label": "storage-counters",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-02.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/057.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 376.9,
+    "duration": 4.966666666666667,
+    "index": 58,
+    "label": "clear-local-copies",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-03.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/058.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 381.8666666666667,
+    "duration": 9.3,
+    "index": 59,
+    "label": "storage-warning",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-04.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/059.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 391.1666666666667,
+    "duration": 7.6,
+    "index": 60,
+    "label": "confirm-clear-copies",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-05.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/060.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 398.76666666666665,
+    "duration": 7.866666666666666,
+    "index": 61,
+    "label": "storage-result",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-06.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/061.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 406.6333333333333,
+    "duration": 9.466666666666667,
+    "index": 62,
+    "label": "finish",
+    "audioFile": "/Users/jiajunchen/Developer/sports-video-analysis/figures/local-qwen-narration/instructional/segments/lesson-07-part-07.wav",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-qwen/segments/062.mp4"
+  }
+]

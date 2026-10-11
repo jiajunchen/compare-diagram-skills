@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1"><rect x="0" y="0" width="1920" height="1080" fill="white" /><g transform="translate(601.131 42.000) scale(1.068063)" aria-label="02a_entities diagram"><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(20.16 744.2)">
+<title>entities</title>
+<polygon fill="white" stroke="none" points="-20.16,20.16 -20.16,-744.2 651.51,-744.2 651.51,20.16 -20.16,20.16" />
+<text xml:space="preserve" text-anchor="middle" x="288.5" y="-702.94" font-family="Helvetica,sans-Serif" font-size="18.00" fill="#17324d">02A  Persisted entities | UUID references, not SwiftData @Relationship</text>
+
+<g id="node1" class="node">
+<title>settings</title>
+<path fill="#ece4f5" stroke="#17324d" stroke-width="1.1" d="M375.35,-697.29C375.35,-697.29 265.25,-697.29 265.25,-697.29 259.25,-697.29 253.25,-691.29 253.25,-685.29 253.25,-685.29 253.25,-657.45 253.25,-657.45 253.25,-651.45 259.25,-645.45 265.25,-645.45 265.25,-645.45 375.35,-645.45 375.35,-645.45 381.35,-645.45 387.35,-651.45 387.35,-657.45 387.35,-657.45 387.35,-685.29 387.35,-685.29 387.35,-691.29 381.35,-697.29 375.35,-697.29" />
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-678.92" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AppSettings</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-666.92" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PK id (stable cloudID)</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-654.92" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">fencerName, syncState</text>
+</g>
+
+<g id="node2" class="node">
+<title>tournament</title>
+<path fill="#dceaf5" stroke="#17324d" stroke-width="1.1" d="M400.1,-571.95C400.1,-571.95 240.5,-571.95 240.5,-571.95 234.5,-571.95 228.5,-565.95 228.5,-559.95 228.5,-559.95 228.5,-520.11 228.5,-520.11 228.5,-514.11 234.5,-508.11 240.5,-508.11 240.5,-508.11 400.1,-508.11 400.1,-508.11 406.1,-508.11 412.1,-514.11 412.1,-520.11 412.1,-520.11 412.1,-559.95 412.1,-559.95 412.1,-565.95 406.1,-571.95 400.1,-571.95" />
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-553.58" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Tournament</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-541.58" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PK id</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-529.58" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">name, venue, startDate, timezone</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-517.58" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">scheduleImportStatus, syncState</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>settings-&gt;tournament</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="5,2" d="M320.3,-645.12C320.3,-624.25 320.3,-594.5 320.3,-572.15" />
+<text xml:space="preserve" text-anchor="middle" x="369.05" y="-609.9" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">one fencer name</text>
+<text xml:space="preserve" text-anchor="middle" x="369.05" y="-600.15" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">used by all tournaments</text>
+</g>
+
+<g id="node3" class="node">
+<title>bout</title>
+<path fill="#dceaf5" stroke="#17324d" stroke-width="1.1" d="M245.98,-444.36C245.98,-444.36 76.62,-444.36 76.62,-444.36 70.62,-444.36 64.63,-438.36 64.63,-432.36 64.63,-432.36 64.63,-392.52 64.63,-392.52 64.63,-386.52 70.63,-380.52 76.63,-380.52 76.63,-380.52 245.98,-380.52 245.98,-380.52 251.98,-380.52 257.98,-386.52 257.98,-392.52 257.98,-392.52 257.98,-432.36 257.98,-432.36 257.98,-438.36 251.98,-444.36 245.98,-444.36" />
+<text xml:space="preserve" text-anchor="middle" x="161.3" y="-425.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Bout</text>
+<text xml:space="preserve" text-anchor="middle" x="161.3" y="-413.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PK id | FK tournamentID</text>
+<text xml:space="preserve" text-anchor="middle" x="161.3" y="-401.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">phase, opponent, sequenceNumber</text>
+<text xml:space="preserve" text-anchor="middle" x="161.3" y="-389.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">pool, strip, scheduledAt, syncState</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>tournament-&gt;bout</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M280.59,-507.66C258.2,-489.98 230.14,-467.82 206.87,-449.43" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="206.87,-449.43 203.32,-442.62 203.8,-447.01 201.69,-445.34 201.69,-445.34 201.69,-445.34 203.8,-447.01 199.42,-447.56 206.87,-449.43" />
+<text xml:space="preserve" text-anchor="middle" x="261.32" y="-472.56" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">1 -&gt; 0..*</text>
+</g>
+
+<g id="node4" class="node">
+<title>source</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M421.85,-316.77C421.85,-316.77 218.75,-316.77 218.75,-316.77 212.75,-316.77 206.75,-310.77 206.75,-304.77 206.75,-304.77 206.75,-264.93 206.75,-264.93 206.75,-258.93 212.75,-252.93 218.75,-252.93 218.75,-252.93 421.85,-252.93 421.85,-252.93 427.85,-252.93 433.85,-258.93 433.85,-264.93 433.85,-264.93 433.85,-304.77 433.85,-304.77 433.85,-310.77 427.85,-316.77 421.85,-316.77" />
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-298.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">SourceRecording</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-286.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PK id | FK tournamentID, boutID</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-274.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">importBatchID, Photos IDs</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-262.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">recordedAt, duration, localWorkingFilePath</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>tournament-&gt;source</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="5,2" d="M320.3,-507.73C320.3,-461.8 320.3,-376.15 320.3,-325.76" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="322.75,-325.89 320.3,-318.89 317.85,-325.89 322.75,-325.89" />
+<text xml:space="preserve" text-anchor="middle" x="354.05" y="-408.77" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">1 -&gt; 0..* direct ID</text>
+</g>
+
+<g id="node6" class="node">
+<title>run</title>
+<path fill="#fff0d6" stroke="#17324d" stroke-width="1.1" d="M619.35,-444.36C619.35,-444.36 431.25,-444.36 431.25,-444.36 425.25,-444.36 419.25,-438.36 419.25,-432.36 419.25,-432.36 419.25,-392.52 419.25,-392.52 419.25,-386.52 425.25,-380.52 431.25,-380.52 431.25,-380.52 619.35,-380.52 619.35,-380.52 625.35,-380.52 631.35,-386.52 631.35,-392.52 631.35,-392.52 631.35,-432.36 631.35,-432.36 631.35,-438.36 625.35,-444.36 619.35,-444.36" />
+<text xml:space="preserve" text-anchor="middle" x="525.3" y="-425.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ScheduleExtractionRun</text>
+<text xml:space="preserve" text-anchor="middle" x="525.3" y="-413.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PK id | FK tournamentID</text>
+<text xml:space="preserve" text-anchor="middle" x="525.3" y="-401.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">status, warnings, modelAssistanceUsed</text>
+<text xml:space="preserve" text-anchor="middle" x="525.3" y="-389.99" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">(schema only; no production inserts)</text>
+</g>
+
+<g id="edge7" class="edge">
+<title>tournament-&gt;run</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="1,5" d="M371.5,-507.66C400.36,-489.98 436.54,-467.82 466.55,-449.43" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="467.8,-451.54 472.49,-445.79 465.24,-447.36 467.8,-451.54" />
+<text xml:space="preserve" text-anchor="middle" x="461.95" y="-472.56" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">1 -&gt; 0..* schema</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>bout-&gt;source</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M201.01,-380.07C223.4,-362.39 251.46,-340.23 274.73,-321.84" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="274.73,-321.84 282.18,-319.97 277.8,-319.42 279.91,-317.75 279.91,-317.75 279.91,-317.75 277.8,-319.42 278.28,-315.03 274.73,-321.84" />
+<text xml:space="preserve" text-anchor="middle" x="261.32" y="-344.97" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">1 -&gt; 0..*</text>
+</g>
+
+<g id="node5" class="node">
+<title>clip</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M216.6,-179.43C216.6,-179.43 12,-179.43 12,-179.43 6,-179.43 0,-173.43 0,-167.43 0,-167.43 0,-115.59 0,-115.59 0,-109.59 6,-103.59 12,-103.59 12,-103.59 216.6,-103.59 216.6,-103.59 222.6,-103.59 228.6,-109.59 228.6,-115.59 228.6,-115.59 228.6,-167.43 228.6,-167.43 228.6,-173.43 222.6,-179.43 216.6,-179.43" />
+<text xml:space="preserve" text-anchor="middle" x="114.3" y="-161.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ReviewClip</text>
+<text xml:space="preserve" text-anchor="middle" x="114.3" y="-149.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PK id | FK boutID, sourceRecordingID</text>
+<text xml:space="preserve" text-anchor="middle" x="114.3" y="-137.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">trim range, localExportPath</text>
+<text xml:space="preserve" text-anchor="middle" x="114.3" y="-125.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">cloudAssetRecordName, mediaSyncStatus</text>
+<text xml:space="preserve" text-anchor="middle" x="114.3" y="-113.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">isFavorite</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>bout-&gt;clip</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="5,2" d="M148.92,-380.18C137.99,-352.6 123.8,-316.77 123.8,-316.77 123.8,-316.77 119.63,-240.21 116.81,-188.58" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="119.26,-188.56 116.44,-181.71 114.37,-188.83 119.26,-188.56" />
+<text xml:space="preserve" text-anchor="middle" x="157.55" y="-281.18" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">1 -&gt; 0..* direct ID</text>
+</g>
+
+<g id="edge6" class="edge">
+<title>source-&gt;clip</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M274.58,-252.48C245.12,-232.27 206.5,-205.77 174.54,-183.84" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="174.76,-183.99 170.77,-177.44 171.55,-181.79 169.32,-180.26 169.32,-180.26 169.32,-180.26 171.55,-181.79 167.21,-182.63 174.76,-183.99" />
+<text xml:space="preserve" text-anchor="middle" x="251.5" y="-212.5" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">1 -&gt; 0..*</text>
+</g>
+
+<g id="node7" class="node">
+<title>photo</title>
+<path fill="#eff2f4" stroke="#17324d" stroke-width="1.1" d="M362.6,-161.43C362.6,-161.43 278,-161.43 278,-161.43 272,-161.43 266,-155.43 266,-149.43 266,-149.43 266,-133.59 266,-133.59 266,-127.59 272,-121.59 278,-121.59 278,-121.59 362.6,-121.59 362.6,-121.59 368.6,-121.59 374.6,-127.59 374.6,-133.59 374.6,-133.59 374.6,-149.43 374.6,-149.43 374.6,-155.43 368.6,-161.43 362.6,-161.43" />
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-143.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PHAsset (Photos)</text>
+<text xml:space="preserve" text-anchor="middle" x="320.3" y="-131.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">original recording</text>
+</g>
+
+<g id="edge8" class="edge">
+<title>source-&gt;photo</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="5,2" d="M320.3,-243.67C320.3,-220.24 320.3,-191.27 320.3,-170.35" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="317.85,-243.67 320.3,-250.67 322.75,-243.67 317.85,-243.67" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="322.75,-170.45 320.3,-163.45 317.85,-170.45 322.75,-170.45" />
+<text xml:space="preserve" text-anchor="middle" x="363.05" y="-217.38" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">deviceLocalAssetID /</text>
+<text xml:space="preserve" text-anchor="middle" x="363.05" y="-207.63" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">cloudPhotoAssetID</text>
+</g>
+
+<g id="node8" class="node">
+<title>asset</title>
+<path fill="#eff2f4" stroke="#17324d" stroke-width="1.1" d="M166.35,-39.84C166.35,-39.84 62.25,-39.84 62.25,-39.84 56.25,-39.84 50.25,-33.84 50.25,-27.84 50.25,-27.84 50.25,-12 50.25,-12 50.25,-6 56.25,0 62.25,0 62.25,0 166.35,0 166.35,0 172.35,0 178.35,-6 178.35,-12 178.35,-12 178.35,-27.84 178.35,-27.84 178.35,-33.84 172.35,-39.84 166.35,-39.84" />
+<text xml:space="preserve" text-anchor="middle" x="114.3" y="-21.47" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">CKRecord + CKAsset</text>
+<text xml:space="preserve" text-anchor="middle" x="114.3" y="-9.47" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ReviewClip-{UUID}</text>
+</g>
+
+<g id="edge9" class="edge">
+<title>clip-&gt;asset</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="5,2" d="M114.3,-94.57C114.3,-79.14 114.3,-62.41 114.3,-48.8" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="111.85,-94.51 114.3,-101.51 116.75,-94.51 111.85,-94.51" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="116.75,-49.17 114.3,-42.17 111.85,-49.17 116.75,-49.17" />
+<text xml:space="preserve" text-anchor="middle" x="164.18" y="-68.04" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">cloudAssetRecordName</text>
+</g>
+</g>
+</g><line x1="42" y1="900" x2="1878" y2="900" stroke="#8AA4B8" stroke-width="2" /><text x="52" y="935" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">Color legend</text><rect x="52.0" y="951" width="31" height="27" rx="5" fill="#ECE4F5" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="973" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">App settings</text><rect x="658.7" y="951" width="31" height="27" rx="5" fill="#DCEAF5" stroke="#17324D" stroke-width="1.5" /><text x="702.6666666666666" y="973" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Tournament / bout</text><rect x="1265.3" y="951" width="31" height="27" rx="5" fill="#DDF0E5" stroke="#17324D" stroke-width="1.5" /><text x="1309.3333333333333" y="973" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Media records</text><rect x="52.0" y="999" width="31" height="27" rx="5" fill="#FFF0D6" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="1021" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Schema-only run</text><rect x="658.7" y="999" width="31" height="27" rx="5" fill="#EFF2F4" stroke="#17324D" stroke-width="1.5" /><text x="702.6666666666666" y="1021" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Apple media assets</text></svg>

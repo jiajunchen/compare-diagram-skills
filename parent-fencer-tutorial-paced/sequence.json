@@ -1,0 +1,736 @@
+[
+  {
+    "kind": "title",
+    "chapter": 0,
+    "start": 0.0,
+    "duration": 4.9,
+    "label": "title-1",
+    "text": "Number one. Add a fencer and add a tournament.",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-000.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 0,
+    "start": 4.9,
+    "duration": 0.5,
+    "label": "to-demo-1",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-001.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 5.4,
+    "duration": 7.866666666666666,
+    "index": 0,
+    "label": "welcome",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/000.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 13.266666666666667,
+    "duration": 6.1,
+    "index": 1,
+    "label": "enter-fencer",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/001.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 19.366666666666667,
+    "duration": 6.6,
+    "index": 2,
+    "label": "continue-setup",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/002.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 25.966666666666665,
+    "duration": 4.233333333333333,
+    "index": 3,
+    "label": "new-tournament",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/003.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 30.2,
+    "duration": 7.533333333333333,
+    "index": 4,
+    "label": "tournament-name",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/004.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 37.733333333333334,
+    "duration": 4.033333333333333,
+    "index": 5,
+    "label": "save-tournament",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/005.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 0,
+    "start": 41.766666666666666,
+    "duration": 7.366666666666666,
+    "index": 6,
+    "label": "tournament-ready",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/006.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 1,
+    "start": 49.13333333333333,
+    "duration": 0.5,
+    "label": "to-title-2",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-009.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 1,
+    "start": 49.63333333333333,
+    "duration": 5.066666666666666,
+    "label": "title-2",
+    "text": "Number two. Add a schedule from a screenshot.",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-010.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 1,
+    "start": 54.7,
+    "duration": 0.5,
+    "label": "to-demo-2",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-011.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 55.2,
+    "duration": 5.7,
+    "index": 7,
+    "label": "import-schedule",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/007.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 60.9,
+    "duration": 6.833333333333333,
+    "index": 8,
+    "label": "open-screenshot-photos",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/008.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 67.73333333333333,
+    "duration": 6.733333333333333,
+    "index": 9,
+    "label": "select-screenshot",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/009.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 74.46666666666667,
+    "duration": 4.966666666666667,
+    "index": 10,
+    "label": "add-screenshot",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/010.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 79.43333333333334,
+    "duration": 9.633333333333333,
+    "index": 11,
+    "label": "review-schedule",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/011.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 89.06666666666666,
+    "duration": 8.0,
+    "index": 12,
+    "label": "confirm-schedule",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/012.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 1,
+    "start": 97.06666666666666,
+    "duration": 9.566666666666666,
+    "index": 13,
+    "label": "schedule-ready",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/013.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 2,
+    "start": 106.63333333333334,
+    "duration": 0.5,
+    "label": "to-title-3",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-019.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 2,
+    "start": 107.13333333333334,
+    "duration": 4.533333333333333,
+    "label": "title-3",
+    "text": "Number three. Add a bout manually.",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-020.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 2,
+    "start": 111.66666666666667,
+    "duration": 0.5,
+    "label": "to-demo-3",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-021.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 112.16666666666667,
+    "duration": 7.3,
+    "index": 14,
+    "label": "manual-open",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/014.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 119.46666666666667,
+    "duration": 3.8666666666666667,
+    "index": 15,
+    "label": "manual-entry",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/015.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 123.33333333333333,
+    "duration": 5.033333333333333,
+    "index": 16,
+    "label": "add-manual-bout",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/016.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 128.36666666666667,
+    "duration": 5.333333333333333,
+    "index": 17,
+    "label": "manual-opponent",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/017.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 133.7,
+    "duration": 8.266666666666667,
+    "index": 18,
+    "label": "manual-number",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/018.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 141.96666666666667,
+    "duration": 5.266666666666667,
+    "index": 19,
+    "label": "confirm-manual",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/019.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 2,
+    "start": 147.23333333333332,
+    "duration": 6.133333333333334,
+    "index": 20,
+    "label": "manual-ready",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/020.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 3,
+    "start": 153.36666666666667,
+    "duration": 0.5,
+    "label": "to-title-4",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-029.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 3,
+    "start": 153.86666666666667,
+    "duration": 4.766666666666667,
+    "label": "title-4",
+    "text": "Number four. Import videos into a bout.",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-030.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 3,
+    "start": 158.63333333333333,
+    "duration": 0.5,
+    "label": "to-demo-4",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-031.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 159.13333333333333,
+    "duration": 8.433333333333334,
+    "index": 21,
+    "label": "choose-bout",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/021.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 167.56666666666666,
+    "duration": 6.0,
+    "index": 22,
+    "label": "import-videos",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/022.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 173.56666666666666,
+    "duration": 5.066666666666666,
+    "index": 23,
+    "label": "select-recordings",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/023.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 178.63333333333333,
+    "duration": 4.733333333333333,
+    "index": 24,
+    "label": "select-video-one",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/024.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 183.36666666666667,
+    "duration": 8.133333333333333,
+    "index": 25,
+    "label": "select-video-two",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/025.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 191.5,
+    "duration": 4.9,
+    "index": 26,
+    "label": "add-selected-videos",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/026.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 196.4,
+    "duration": 8.066666666666666,
+    "index": 27,
+    "label": "allow-photos",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/027.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 204.46666666666667,
+    "duration": 8.133333333333333,
+    "index": 28,
+    "label": "review-video-import",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/028.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 212.6,
+    "duration": 8.966666666666667,
+    "index": 29,
+    "label": "confirm-video-import",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/029.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 3,
+    "start": 221.56666666666666,
+    "duration": 7.866666666666666,
+    "index": 30,
+    "label": "recordings-ready",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/030.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 4,
+    "start": 229.43333333333334,
+    "duration": 0.5,
+    "label": "to-title-5",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-042.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 4,
+    "start": 229.93333333333334,
+    "duration": 5.233333333333333,
+    "label": "title-5",
+    "text": "Number five. Create review clips and mark favorites.",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-043.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 4,
+    "start": 235.16666666666666,
+    "duration": 0.5,
+    "label": "to-demo-5",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-044.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 235.66666666666666,
+    "duration": 5.4,
+    "index": 31,
+    "label": "open-editor",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/031.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 241.06666666666666,
+    "duration": 5.8,
+    "index": 32,
+    "label": "preview-original",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/032.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 246.86666666666667,
+    "duration": 4.566666666666666,
+    "index": 33,
+    "label": "pause-original",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/033.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 251.43333333333334,
+    "duration": 6.466666666666667,
+    "index": 34,
+    "label": "show-trim-controls",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/034.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 257.9,
+    "duration": 5.6,
+    "index": 35,
+    "label": "first-clip-start",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/035.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 263.5,
+    "duration": 7.2,
+    "index": 36,
+    "label": "first-clip-end",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/036.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 270.7,
+    "duration": 7.433333333333334,
+    "index": 37,
+    "label": "save-first-clip",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/037.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 278.1333333333333,
+    "duration": 7.233333333333333,
+    "index": 38,
+    "label": "second-clip-start",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/038.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 285.3666666666667,
+    "duration": 4.766666666666667,
+    "index": 39,
+    "label": "second-clip-end",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/039.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 290.1333333333333,
+    "duration": 7.7,
+    "index": 40,
+    "label": "save-second-clip",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/040.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 297.8333333333333,
+    "duration": 6.666666666666667,
+    "index": 41,
+    "label": "show-review-clips",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/041.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 304.5,
+    "duration": 5.833333333333333,
+    "index": 42,
+    "label": "favorite-first-clip",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/042.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 310.3333333333333,
+    "duration": 7.866666666666666,
+    "index": 43,
+    "label": "clip-star-meaning",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/043.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 318.2,
+    "duration": 4.9,
+    "index": 44,
+    "label": "close-editor",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/044.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 4,
+    "start": 323.1,
+    "duration": 8.066666666666666,
+    "index": 45,
+    "label": "bout-star-meaning",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/045.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 5,
+    "start": 331.1666666666667,
+    "duration": 0.5,
+    "label": "to-title-6",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-060.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 5,
+    "start": 331.6666666666667,
+    "duration": 4.333333333333333,
+    "label": "title-6",
+    "text": "Number six. Delete review clips.",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-061.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 5,
+    "start": 336.0,
+    "duration": 0.5,
+    "label": "to-demo-6",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-062.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 336.5,
+    "duration": 6.3,
+    "index": 46,
+    "label": "open-clips-for-delete",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/046.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 342.8,
+    "duration": 3.433333333333333,
+    "index": 47,
+    "label": "find-clips-for-delete",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/047.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 346.23333333333335,
+    "duration": 5.8,
+    "index": 48,
+    "label": "show-clips-for-delete",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/048.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 352.03333333333336,
+    "duration": 3.9,
+    "index": 49,
+    "label": "delete-first-clip",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/049.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 355.93333333333334,
+    "duration": 9.2,
+    "index": 50,
+    "label": "delete-warning",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/050.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 365.1333333333333,
+    "duration": 8.3,
+    "index": 51,
+    "label": "confirm-clip-delete",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/051.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 373.43333333333334,
+    "duration": 8.4,
+    "index": 52,
+    "label": "one-clip-remains",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/052.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 381.8333333333333,
+    "duration": 4.066666666666666,
+    "index": 53,
+    "label": "close-after-delete",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/053.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 385.9,
+    "duration": 8.666666666666666,
+    "index": 54,
+    "label": "bout-no-favorite",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/054.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 5,
+    "start": 394.56666666666666,
+    "duration": 5.6,
+    "index": 55,
+    "label": "close-bout",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/055.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 6,
+    "start": 400.1666666666667,
+    "duration": 0.5,
+    "label": "to-title-7",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-073.mp4"
+  },
+  {
+    "kind": "title",
+    "chapter": 6,
+    "start": 400.6666666666667,
+    "duration": 4.633333333333334,
+    "label": "title-7",
+    "text": "Number seven. Clear local clip copies.",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-074.mp4"
+  },
+  {
+    "kind": "transition",
+    "chapter": 6,
+    "start": 405.3,
+    "duration": 0.5,
+    "label": "to-demo-7",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/part-075.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 405.8,
+    "duration": 5.933333333333334,
+    "index": 56,
+    "label": "open-fencer-settings",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/056.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 411.73333333333335,
+    "duration": 10.0,
+    "index": 57,
+    "label": "storage-counters",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/057.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 421.73333333333335,
+    "duration": 6.233333333333333,
+    "index": 58,
+    "label": "clear-local-copies",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/058.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 427.96666666666664,
+    "duration": 10.466666666666667,
+    "index": 59,
+    "label": "storage-warning",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/059.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 438.43333333333334,
+    "duration": 7.333333333333333,
+    "index": 60,
+    "label": "confirm-clear-copies",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/060.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 445.76666666666665,
+    "duration": 9.233333333333333,
+    "index": 61,
+    "label": "storage-result",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/061.mp4"
+  },
+  {
+    "kind": "step",
+    "chapter": 6,
+    "start": 455.0,
+    "duration": 10.366666666666667,
+    "index": 62,
+    "label": "finish",
+    "file": "/Users/jiajunchen/Developer/sports-video-analysis/.runtime/figures/parent-fencer-tutorial-paced/segments/062.mp4"
+  }
+]

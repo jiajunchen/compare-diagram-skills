@@ -1,0 +1,10 @@
+{
+  "passages": 70,
+  "alignedWords": 818,
+  "durationSeconds": 416.1,
+  "exactSpeechSamplesPreserved": true,
+  "continuousFrameClock": true,
+  "highlightClearsDuringPauses": true,
+  "alignmentResolutionSeconds": 0.08,
+  "zeroLengthFunctionWordDisplaySeconds": 0.03333333333333333
+}

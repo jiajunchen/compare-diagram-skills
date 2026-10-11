@@ -1,0 +1,20 @@
+{
+  "slides": 9,
+  "beats": 58,
+  "overflows": [],
+  "browserErrors": [],
+  "allDiagramIDs": [
+    "clips",
+    "overview",
+    "playback",
+    "recordings",
+    "schedule",
+    "startup",
+    "sync"
+  ],
+  "loadedFonts": [
+    "Geist",
+    "Geist Mono",
+    "Instrument Serif"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "durationSeconds": 481.723,
+  "width": 1920,
+  "height": 1080,
+  "frameRate": "30/1",
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "bytes": 17028694,
+  "chapters": 9,
+  "alignedNarrationBeats": 58,
+  "fullDecode": "passed",
+  "previousArtifactsUnchanged": {
+    "figures/architecture-video/architecture-video.mp4": true,
+    "figures/architecture-video/architecture-video.html": true,
+    "figures/architecture-video/architecture-video.md": true,
+    "figures/architecture-video/narration.md": true
+  },
+  "language": {
+    "profile": "STE-inspired practical 80% target, not formal conformity",
+    "chapters": 9,
+    "beats": 58,
+    "words": 1171,
+    "sentences": 134,
+    "averageWordsPerSentence": 8.7,
+    "maximumWordsPerSentence": 17
+  }
+}

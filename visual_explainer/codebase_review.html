@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Fencing Video Analysis · Codebase pathways</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark light;--bg:#0d1520;--surface:#132031;--border:#22324a;--border-bright:#596b87;--text:#e3ecf5;--text-dim:#aebfd0;--accent:#ffb547;--ok:#6fd3a0;--warn:#e8d36a;--risk:#ff7b6b;--info:#7cc0f0;--ui:#7cc0f0;--service:#6fd3a0;--store:#e8d36a;--external:#b8c7d8;--t-label:.75rem;--t-small:.875rem;--t-body:1rem;--t-lead:1.25rem;--t-h2:1.625rem;--t-h1:clamp(2.25rem,5.5vw,4rem);--s-1:.25rem;--s-2:.5rem;--s-3:.75rem;--s-4:1rem;--s-5:1.5rem;--s-6:2rem;--s-7:3rem;--s-8:4.5rem;--r-1:4px;--r-2:10px}
+    @media(prefers-color-scheme:light){:root{--bg:#f2f6fa;--surface:#fff;--border:#d6e0ea;--border-bright:#818f9e;--text:#0f1a26;--text-dim:#4d6074;--accent:#a34700;--ok:#1c7443;--warn:#776300;--risk:#b0341e;--info:#145f99}}
+    *{box-sizing:border-box}html{font-size:17px;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:400 var(--t-body)/1.55 'IBM Plex Sans',sans-serif;font-kerning:normal;font-synthesis:none}a{color:var(--info);text-underline-offset:.18em}a:hover,a:focus-visible{color:var(--accent)}:focus-visible{outline:2px solid var(--accent);outline-offset:3px}::selection{background:rgb(255 181 71 / .22)}
+    .page{max-width:68rem;margin:auto;padding:var(--s-6) var(--s-5) var(--s-8)}.kicker,.eyebrow,.meta,.legend-copy,.src,.chip{font-family:'IBM Plex Mono',monospace}.kicker{font-size:var(--t-label);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 var(--s-3)}h1{font-size:clamp(2.25rem,4vw,3rem);line-height:1.06;letter-spacing:-.035em;max-width:30ch;margin:0 0 var(--s-4);text-wrap:balance}h2{font-size:var(--t-h2);line-height:1.2;letter-spacing:-.01em;margin:0 0 var(--s-3);text-wrap:balance}h3{font-size:var(--t-lead);line-height:1.25;margin:var(--s-5) 0 var(--s-2)}p{max-width:68ch;margin:0 0 var(--s-4);text-wrap:pretty}.deck{font-size:var(--t-lead);max-width:55ch;color:var(--text-dim);line-height:1.45}.deck strong{color:var(--text)}.meta{color:var(--text-dim);font-size:var(--t-small);margin-top:var(--s-5)}
+    nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--border);margin:var(--s-5) calc(-1 * var(--s-5)) var(--s-5);padding:var(--s-2) var(--s-5);display:flex;gap:var(--s-4);overflow-x:auto;white-space:nowrap}nav a{font:500 var(--t-small) 'IBM Plex Mono',monospace;color:var(--text-dim);text-decoration:none;padding:var(--s-2);border-bottom:2px solid transparent}nav a:hover,nav a:focus-visible,nav a[aria-current=true]{color:var(--text);border-color:var(--accent)}section{scroll-margin-top:5rem;margin-top:var(--s-8)}section:first-of-type{margin-top:0}.section-head{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,8fr);gap:var(--s-5);align-items:baseline;border-top:1px solid var(--border);padding-top:var(--s-5)}.eyebrow{font-size:var(--t-label);letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);margin:0}.section-intro{margin-bottom:var(--s-5)}
+    figure{margin:0}.frame{overflow-x:auto;background-color:#0d1520;background-image:linear-gradient(rgb(89 107 135 / .11) 1px,transparent 1px),linear-gradient(90deg,rgb(89 107 135 / .11) 1px,transparent 1px);background-size:24px 24px;border:1px solid var(--border-bright);border-radius:var(--r-2);padding:var(--s-4);scrollbar-color:#596b87 #0d1520}.ve-svg{display:block;width:100%;height:auto;min-width:960px;margin:auto}.ve-svg.portrait{width:min(100%,540px);min-width:540px}.ve-svg text{fill:#e3ecf5;font:500 15px 'IBM Plex Sans',sans-serif}.ve-svg .sub{fill:#b8c7d8;font-size:12px;font-weight:400}.ve-svg .tag,.ve-svg .edge-label,.ve-svg .legend text{font:500 12px 'IBM Plex Mono',monospace}.ve-svg .tag{fill:#b8c7d8;letter-spacing:.06em}.ve-svg .edge-label{fill:#d5e3f0;paint-order:stroke;stroke:#0d1520;stroke-width:5px;stroke-linejoin:round}.ve-svg .edge{fill:none;stroke:#aebfd0;stroke-width:1.75;marker-end:url(#ve-arrow)}.ve-svg .edge.dashed{stroke-dasharray:6 5}.ve-svg .edge.hot{stroke:#ffb547;stroke-width:2.75}.ve-svg .boundary{fill:rgb(19 32 49 / .35);stroke:#596b87;stroke-width:1.5;stroke-dasharray:8 5}.ve-svg .node rect,.ve-svg .node path.shape{fill:#132031;stroke:#596b87;stroke-width:1.75;rx:6}.ve-svg .node.ui rect{stroke:#7cc0f0}.ve-svg .node.service rect{stroke:#6fd3a0}.ve-svg .node.store rect{stroke:#e8d36a}.ve-svg .node.external rect{stroke:#b8c7d8}.ve-svg .node.risk rect{stroke:#ff7b6b}.ve-svg .node.key rect{stroke:#ffb547;stroke-width:2.75}.ve-svg .divider{stroke:#596b87;stroke-width:1}.ve-svg .legend text{fill:#d5e3f0}.ve-svg .legend rect{fill:#132031;stroke-width:2}.ve-svg .legend .ui{stroke:#7cc0f0}.ve-svg .legend .service{stroke:#6fd3a0}.ve-svg .legend .store{stroke:#e8d36a}.ve-svg .legend .external{stroke:#b8c7d8}.ve-svg .legend .risk{stroke:#ff7b6b}.ve-svg .legend .key{stroke:#ffb547}.ve-svg [data-ref].is-emphasis rect{stroke-width:3.5;filter:drop-shadow(0 0 5px #ffb547)}
+    figcaption{color:var(--text-dim);margin:var(--s-3) 0 var(--s-6);max-width:70ch}.fig-no{font-family:'IBM Plex Mono',monospace;color:var(--text);font-size:var(--t-small)}.explain{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s-6);margin-bottom:var(--s-5)}.explain>*{min-width:0}.explain ol,.explain ul{margin:0 0 var(--s-4);padding-left:1.35rem}.explain li{margin-bottom:var(--s-3);max-width:60ch}.explain li::marker{color:var(--accent);font-family:'IBM Plex Mono',monospace}code{overflow-wrap:anywhere}.term{border:0;border-bottom:1px dashed var(--accent);background:none;color:inherit;font:inherit;cursor:help;padding:0}.term.is-emphasis{color:var(--accent)}.source-line{font-size:var(--t-small);color:var(--text-dim);margin-top:var(--s-4)}.source-line a{overflow-wrap:anywhere}.callout{background:var(--surface);border:1px solid var(--border-bright);border-radius:var(--r-2);padding:var(--s-4);margin:var(--s-5) 0}.callout p:last-child{margin-bottom:0}.chip{display:inline-block;border:1px solid currentColor;border-radius:var(--r-1);padding:var(--s-1) var(--s-2);font-size:var(--t-label);font-weight:600}.chip.warn{color:var(--warn)}.chip.info{color:var(--info)}.chip.risk{color:var(--risk)}details{border-top:1px solid var(--border);padding:var(--s-4) 0}summary{cursor:pointer;font-weight:600}summary:hover{color:var(--accent)}.sources{columns:2;column-gap:var(--s-6);padding-left:1.2rem}.sources li{break-inside:avoid;margin-bottom:var(--s-3)}.source-note{font-size:var(--t-small);color:var(--text-dim)}footer{border-top:1px solid var(--border);padding-top:var(--s-5);margin-top:var(--s-8);font-size:var(--t-small);color:var(--text-dim)}
+    @media(max-width:720px){.page{padding:var(--s-5) var(--s-4) var(--s-7)}nav{margin:var(--s-6) calc(-1 * var(--s-4)) var(--s-6);padding:var(--s-2) var(--s-4)}.section-head{display:block}.section-head .eyebrow{margin-bottom:var(--s-3)}.explain{grid-template-columns:minmax(0,1fr)}.sources{columns:1}.frame{padding:var(--s-3)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:#fff;color:#0f1a26}.page{max-width:none}nav{display:none}section{break-before:page}section:first-of-type{break-before:auto}figure,.callout{break-inside:avoid}.frame{background:#0d1520;overflow:visible}.ve-svg{max-width:100%;min-width:0}.ve-svg.portrait{width:540px;max-width:100%;min-width:0}}
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <p class="kicker">Private MVP · source-traced review</p>
+    <h1>One app. Two media stores.</h1>
+    <p class="deck">A parent organizes bouts on device. <strong>Original videos stay in Photos</strong>; confirmed metadata and edited clips move through private CloudKit.</p>
+    <p class="meta">Five diagrams · SwiftUI / SwiftData / Photos / CloudKit · branch mvp-codebase-analysis</p>
+  </header>
+  <nav aria-label="Diagram sections">
+    <a href="#architecture">Architecture</a><a href="#entities">Entities</a><a href="#calls">Object calls</a><a href="#organization">Organization flow</a><a href="#media">Media flow</a><a href="#review">Logic review</a>
+  </nav>
+
+  <section id="architecture">
+    <figure>
+      <div class="frame"><svg class="ve-svg" viewBox="0 0 960 540" role="img" aria-label="Architecture data flow from parent through SwiftUI, AppViewModel, on-device processing, SwiftData, Photos, and private CloudKit">
+        <defs><marker id="ve-arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#aebfd0"/></marker></defs>
+        <rect class="boundary" x="210" y="44" width="554" height="390" rx="8"/><text class="tag" x="226" y="66">IPHONE / IPAD · APP PROCESS</text>
+        <path class="edge hot" d="M176 155H245"/><text class="edge-label" x="188" y="144">taps</text>
+        <path class="edge hot" d="M425 155H500"/><text class="edge-label" x="441" y="144">commands</text>
+        <path class="edge" d="M335 184V265"/><text class="edge-label" x="344" y="232">reviews</text>
+        <path class="edge" d="M590 184V265"/><text class="edge-label" x="599" y="232">reads / writes</text>
+        <path class="edge" d="M500 155H466V364H425"/><text class="edge-label" x="430" y="350">delegates</text>
+        <path class="edge dashed" d="M680 155H780V174H802"/><text class="edge-label" x="779" y="140">syncs</text>
+        <path class="edge" d="M245 334H176"/><text class="edge-label" x="184" y="321">opens</text>
+        <path class="edge dashed" d="M425 390H780V235H802"/><text class="edge-label" x="642" y="378">uploads clips</text>
+        <g class="node external"><rect x="28" y="125" width="148" height="59"/><text x="44" y="151">Parent / fencer</text><text class="sub" x="44" y="169">selects, edits, plays</text></g>
+        <g class="node ui"><rect x="245" y="125" width="180" height="59"/><text x="261" y="151">SwiftUI screens</text><text class="sub" x="261" y="169">forms · timeline · player</text></g>
+        <g class="node key service" data-ref="viewmodel"><rect x="500" y="125" width="180" height="59"/><text x="516" y="151">AppViewModel</text><text class="sub" x="516" y="169">workflow commands</text></g>
+        <g class="node service" data-ref="schedule"><rect x="245" y="265" width="180" height="60"/><text x="261" y="291">Schedule pipeline</text><text class="sub" x="261" y="309">Vision · rules · model</text></g>
+        <g class="node store" data-ref="swiftdata"><rect x="500" y="265" width="180" height="60"/><text x="516" y="291">SwiftData</text><text class="sub" x="516" y="309">records · pending state</text></g>
+        <g class="node service" data-ref="media"><rect x="245" y="334" width="180" height="60"/><text x="261" y="360">Media services</text><text class="sub" x="261" y="378">import · trim · replay</text></g>
+        <g class="node external" data-ref="photos"><rect x="28" y="334" width="148" height="60"/><text x="44" y="360">Photos</text><text class="sub" x="44" y="378">source originals</text></g>
+        <g class="node external" data-ref="cloud"><rect x="802" y="174" width="136" height="80"/><text x="818" y="201">Private</text><text x="818" y="219">CloudKit</text><text class="sub" x="818" y="239">records + CKAsset</text></g>
+        <line class="divider" x1="28" y1="453" x2="932" y2="453"/>
+        <g class="legend"><rect class="ui" x="30" y="477" width="18" height="18" rx="3"/><text x="57" y="491">UI</text><rect class="service" x="226" y="477" width="18" height="18" rx="3"/><text x="253" y="491">service</text><rect class="store" x="474" y="477" width="18" height="18" rx="3"/><text x="501" y="491">local</text><rect class="external" x="679" y="477" width="18" height="18" rx="3"/><text x="706" y="491">Apple</text></g>
+      </svg></div>
+      <figcaption><span class="fig-no">Fig. 1</span> The app keeps recognition and source-video work local, while private CloudKit carries confirmed records and edited assets.</figcaption>
+    </figure>
+    <div class="section-head"><p class="eyebrow">System / 01</p><div><h2>SwiftUI directs local work; only confirmed data reaches CloudKit</h2><p class="section-intro">The “backend” is a set of on-device services plus Apple’s private CloudKit database. There is no app-owned server.</p></div></div>
+    <div class="explain"><div><h3>The normal path</h3><ol><li>A screen sends a command to <button class="term" data-ref="viewmodel" type="button">AppViewModel</button>, which coordinates repositories and services.</li><li>A schedule screenshot enters the <button class="term" data-ref="schedule" type="button">on-device recognition pipeline</button>. The draft stays temporary until the parent confirms it.</li><li><button class="term" data-ref="swiftdata" type="button">SwiftData</button> holds local records and pending sync state. Confirmed metadata reaches <button class="term" data-ref="cloud" type="button">private CloudKit</button>.</li></ol></div><div><h3>The media boundary</h3><p><button class="term" data-ref="photos" type="button">Photos</button> retains source originals. <button class="term" data-ref="media" type="button">Media services</button> open those originals on request, export trims with AVFoundation, and send only the edited clips as CloudKit assets.</p><p>On another device using the same Apple Account, metadata refresh can discover the saved clips. Playback downloads an edited asset when no local copy is available.</p><p class="source-line">Trace: <a href="../../FencingVideoAnalysis/App/AppEntry/AppDependencies.swift">AppDependencies</a> · <a href="../../FencingVideoAnalysis/App/AppEntry/AppViewModel.swift">AppViewModel</a> · <a href="../../FencingVideoAnalysis/Services/CloudMetadataService.swift">CloudMetadataService</a></p></div></div>
+  </section>
+
+  <section id="entities">
+    <div class="section-head"><p class="eyebrow">Data / 02A</p><div><h2>A bout groups many sources; a source produces many review clips</h2><p class="section-intro">The links are UUID fields on SwiftData models. They are not SwiftData <code>@Relationship</code> properties.</p></div></div>
+    <figure>
+      <div class="frame"><svg class="ve-svg" viewBox="0 0 960 540" role="img" aria-label="Entity relationship diagram connecting app settings, tournament, bout, source recording, review clip, Photos asset, CloudKit asset, and schema-only extraction run">
+        <path class="edge dashed" d="M205 124H270"/><text class="edge-label" x="210" y="111">one name</text>
+        <path class="edge hot" d="M450 124H510"/><text class="edge-label" x="463" y="111">1:n</text>
+        <path class="edge hot" d="M600 168V218"/><text class="edge-label" x="610" y="199">1 → many</text>
+        <path class="edge hot" d="M600 302V352"/><text class="edge-label" x="610" y="335">1 → many</text>
+        <path class="edge dashed" d="M690 260H758"/><text class="edge-label" x="710" y="248">IDs</text>
+        <path class="edge dashed" d="M690 392H758"/><text class="edge-label" x="701" y="380">CK ID</text>
+        <path class="edge dashed" d="M360 168V332"/><text class="edge-label" x="370" y="293">schema only</text>
+        <g class="node store"><rect x="25" y="80" width="180" height="88"/><text x="41" y="108">AppSettings</text><text class="sub" x="41" y="129">id · fencerName</text><text class="sub" x="41" y="146">syncState</text></g>
+        <g class="node ui"><rect x="270" y="80" width="180" height="88"/><text x="286" y="108">Tournament</text><text class="sub" x="286" y="129">id · date · venue</text><text class="sub" x="286" y="146">schedule status</text></g>
+        <g class="node ui" data-ref="bout"><rect x="510" y="80" width="180" height="88"/><text x="526" y="108">Bout</text><text class="sub" x="526" y="129">tournamentID</text><text class="sub" x="526" y="146">opponent · order</text></g>
+        <g class="node service" data-ref="source"><rect x="510" y="218" width="180" height="84"/><text x="526" y="246">SourceRecording</text><text class="sub" x="526" y="267">boutID · Photos IDs</text><text class="sub" x="526" y="284">capture time</text></g>
+        <g class="node service" data-ref="clip"><rect x="510" y="352" width="180" height="84"/><text x="526" y="380">ReviewClip</text><text class="sub" x="526" y="401">sourceRecordingID</text><text class="sub" x="526" y="418">trim · favorite · status</text></g>
+        <g class="node store"><rect x="270" y="332" width="180" height="104"/><text x="286" y="360">ExtractionRun</text><text class="sub" x="286" y="381">tournamentID</text><text class="sub" x="286" y="398">modeled, not inserted</text><text class="sub" x="286" y="415">by production flow</text></g>
+        <g class="node external" data-ref="photos"><rect x="758" y="218" width="177" height="84"/><text x="774" y="246">PHAsset</text><text class="sub" x="774" y="267">original video</text><text class="sub" x="774" y="284">outside app store</text></g>
+        <g class="node external" data-ref="cloud"><rect x="758" y="352" width="177" height="84"/><text x="774" y="380">CKRecord + CKAsset</text><text class="sub" x="774" y="401">edited review clip</text><text class="sub" x="774" y="418">private database</text></g>
+        <line class="divider" x1="25" y1="457" x2="935" y2="457"/>
+        <g class="legend"><rect class="ui" x="27" y="480" width="18" height="18" rx="3"/><text x="54" y="494">core</text><rect class="service" x="218" y="480" width="18" height="18" rx="3"/><text x="245" y="494">media</text><rect class="store" x="432" y="480" width="18" height="18" rx="3"/><text x="459" y="494">local</text><rect class="external" x="644" y="480" width="18" height="18" rx="3"/><text x="671" y="494">external</text></g>
+      </svg></div>
+      <figcaption><span class="fig-no">Fig. 2</span> The core chain has one-to-many links; the Photos and CloudKit assets are referenced outside SwiftData.</figcaption>
+    </figure>
+    <div class="explain"><div><h3>How to read the keys</h3><ol><li><button class="term" data-ref="bout" type="button">Bout</button> carries <code>tournamentID</code>. A tournament can have no bouts or many bouts.</li><li><button class="term" data-ref="source" type="button">SourceRecording</button> carries both <code>tournamentID</code> and <code>boutID</code>. Several camera files can belong to one bout.</li><li><button class="term" data-ref="clip" type="button">ReviewClip</button> carries <code>boutID</code> and <code>sourceRecordingID</code>. A single source can yield several independent trims.</li></ol></div><div><h3>What lives outside the model</h3><p>The source record holds device and cloud Photos identifiers so the app can resolve the <button class="term" data-ref="photos" type="button">original</button>. A clip record holds a CloudKit asset record name for the <button class="term" data-ref="cloud" type="button">edited export</button>.</p><p><code>ScheduleExtractionRun</code> exists in the schema, but this review found no production insertion path. It should not be read as an active audit trail.</p><p class="source-line">Trace: <a href="../../FencingVideoAnalysis/Models/DomainModels/DomainModels.swift">DomainModels</a> · <a href="../../FencingVideoAnalysis/Models/LocalModels/LocalRepository.swift">LocalRepository</a> · <a href="../../FencingVideoAnalysis/Services/CloudMetadataService.swift">Cloud metadata mapping</a></p></div></div>
+  </section>
+
+  <section id="calls">
+    <div class="section-head"><p class="eyebrow">Calls / 02B</p><div><h2>Views call coordinators; coordinators own persistence and framework work</h2><p class="section-intro">This map shows the principal cross-component calls. The full declaration index is linked below the figure.</p></div></div>
+    <figure>
+      <div class="frame"><svg class="ve-svg" viewBox="0 0 960 540" role="img" aria-label="Object call map showing SwiftUI screens, AppViewModel, schedule review model, schedule services, import coordinator, clip workflow, upload queue, repository, and CloudKit services">
+        <path class="edge hot" d="M215 124H300"/><text class="edge-label" x="227" y="111">commands</text>
+        <path class="edge" d="M105 165V237"/><text class="edge-label" x="114" y="204">review</text>
+        <path class="edge" d="M215 278H300"/><text class="edge-label" x="229" y="265">extract</text>
+        <path class="edge" d="M500 124H740"/><text class="edge-label" x="584" y="111">insert / fetch</text>
+        <path class="edge" d="M500 150H690V278H740"/><text class="edge-label" x="607" y="265">prepare / confirm</text>
+        <path class="edge" d="M300 155H260V413H215"/><text class="edge-label" x="224" y="397">createClip</text>
+        <path class="edge" d="M500 155H530V372"/><text class="edge-label" x="540" y="353">upload</text>
+        <path class="edge" d="M545 413H740"/><text class="edge-label" x="605" y="400">save asset</text>
+        <g class="node ui"><rect x="25" y="83" width="190" height="82"/><text x="41" y="111">SwiftUI screens</text><text class="sub" x="41" y="132">forms · bout · player</text><text class="sub" x="41" y="149">settings</text></g>
+        <g class="node key service" data-ref="viewmodel"><rect x="300" y="83" width="200" height="82"/><text x="316" y="111">AppViewModel</text><text class="sub" x="316" y="132">load · confirmSchedule</text><text class="sub" x="316" y="149">createClip · playableURL</text></g>
+        <g class="node store" data-ref="swiftdata"><rect x="740" y="83" width="195" height="82"/><text x="756" y="111">LocalRepository</text><text class="sub" x="756" y="132">SwiftData CRUD</text><text class="sub" x="756" y="149">ordered fetches</text></g>
+        <g class="node ui"><rect x="25" y="237" width="190" height="82"/><text x="41" y="265">ScheduleReviewVM</text><text class="sub" x="41" y="286">extract · edit drafts</text><text class="sub" x="41" y="303">confirm with app model</text></g>
+        <g class="node service" data-ref="schedule"><rect x="300" y="237" width="200" height="82"/><text x="316" y="265">Schedule services</text><text class="sub" x="316" y="286">recognize · parse</text><text class="sub" x="316" y="303">propose · reconcile</text></g>
+        <g class="node service" data-ref="photos"><rect x="740" y="237" width="195" height="82"/><text x="756" y="265">Import coordinator</text><text class="sub" x="756" y="286">Photos IDs · AVAsset</text><text class="sub" x="756" y="303">source links</text></g>
+        <g class="node service" data-ref="media"><rect x="25" y="372" width="190" height="82"/><text x="41" y="400">ClipWorkflow</text><text class="sub" x="41" y="421">trim · export · retry</text><text class="sub" x="41" y="438">AVFoundation</text></g>
+        <g class="node service"><rect x="345" y="372" width="200" height="82"/><text x="361" y="400">ClipUploadQueue</text><text class="sub" x="361" y="421">resume · upload · retry</text><text class="sub" x="361" y="438">status transition</text></g>
+        <g class="node external" data-ref="cloud"><rect x="740" y="372" width="195" height="82"/><text x="756" y="400">Private CloudKit</text><text class="sub" x="756" y="421">records · CKAsset</text><text class="sub" x="756" y="438">download · deletion</text></g>
+        <line class="divider" x1="25" y1="469" x2="935" y2="469"/>
+        <g class="legend"><rect class="ui" x="27" y="488" width="18" height="18" rx="3"/><text x="54" y="502">UI</text><rect class="service" x="213" y="488" width="18" height="18" rx="3"/><text x="240" y="502">service</text><rect class="store" x="460" y="488" width="18" height="18" rx="3"/><text x="487" y="502">local</text><rect class="external" x="670" y="488" width="18" height="18" rx="3"/><text x="697" y="502">Apple</text></g>
+      </svg></div>
+      <figcaption><span class="fig-no">Fig. 3</span> The view model is the main command hub; specialist services handle recognition, import, export, synchronization, and playback.</figcaption>
+    </figure>
+    <div class="explain"><div><h3>Who calls whom</h3><ol><li>The root view starts <code>AppViewModel.load</code>. Tournament and bout screens call save, confirm, import, trim, and playback commands.</li><li><code>ScheduleReviewViewModel.extract</code> calls recognition, parsing, optional on-device model assistance, and proposal validation. It passes only edited drafts to <code>confirmSchedule</code>.</li><li><code>AppViewModel</code> delegates media to <code>BoutImportCoordinator</code>, <code>ClipWorkflow</code>, <code>ClipUploadQueue</code>, and <code>ClipDownloadCoordinator</code>.</li></ol></div><div><h3>The playback branch</h3><p><code>BoutPlaybackQueue</code> orders saved clips. <code>AppViewModel.playableURL</code> checks a local export or managed cache and otherwise resolves a private CloudKit download. <code>MediaPlayerModel</code> controls AVPlayer, seek, scrub, and speed; it does not merge clip files.</p><p>The map is intentionally at component level. For every production Swift declaration, use the <a href="../CALL_INDEX.md">function declaration index</a>.</p><p class="source-line">Trace: <a href="../../FencingVideoAnalysis/App/AppEntry/AppViewModel.swift">AppViewModel</a> · <a href="../../FencingVideoAnalysis/Features/ScheduleImport/ScheduleReviewViewModel.swift">ScheduleReviewViewModel</a> · <a href="../../FencingVideoAnalysis/Services/ClipWorkflow.swift">ClipWorkflow</a></p></div></div>
+  </section>
+
+  <section id="organization">
+    <div class="section-head"><p class="eyebrow">Pathway / 03A</p><div><h2>Launch leads to a confirmed bout list only after review</h2><p class="section-intro">Manual entry and screenshot recognition both end in editable drafts. The parent decides what becomes a saved bout.</p></div></div>
+    <figure>
+      <div class="frame"><svg class="ve-svg portrait" viewBox="0 0 540 960" role="img" aria-label="Organization pathway from launch through first-run setup, tournament creation, manual or screenshot schedule entry, draft review, and confirmation">
+        <path class="edge hot" d="M270 113V152"/><text class="edge-label" x="281" y="139">opens</text>
+        <path class="edge" d="M270 230V263"/><text class="edge-label" x="281" y="253">loads</text>
+        <path class="edge" d="M200 322V359H140V372"/><text class="edge-label" x="90" y="346">no</text>
+        <path class="edge" d="M340 322V359H402V372"/><text class="edge-label" x="415" y="346">yes</text>
+        <path class="edge" d="M245 410H295"/><text class="edge-label" x="257" y="398">save</text>
+        <path class="edge hot" d="M402 447V465H270V482"/><text class="edge-label" x="308" y="463">new</text>
+        <path class="edge hot" d="M270 553V585"/><text class="edge-label" x="281" y="576">opens</text>
+        <path class="edge" d="M270 649V669H135V681"/><text class="edge-label" x="157" y="666">manual</text>
+        <path class="edge" d="M270 649V669H405V681"/><text class="edge-label" x="352" y="666">images</text>
+        <path class="edge hot" d="M135 743V769H270V787"/><path class="edge hot" d="M405 743V769H270V787"/>
+        <g class="node external"><rect x="140" y="51" width="260" height="62"/><text x="157" y="78">Open the app</text><text class="sub" x="157" y="97">parent on iPhone or iPad</text></g>
+        <g class="node ui"><rect x="140" y="152" width="260" height="78"/><text x="157" y="179">Dependencies + load</text><text class="sub" x="157" y="199">open SwiftData · check iCloud</text><text class="sub" x="157" y="215">fetch local settings</text></g>
+        <g class="node store"><rect x="140" y="263" width="260" height="59"/><text x="157" y="291">Settings found?</text><text class="sub" x="157" y="309">branch on local snapshot</text></g>
+        <g class="node ui"><rect x="35" y="372" width="210" height="75"/><text x="50" y="400">First-run setup</text><text class="sub" x="50" y="419">save fencer name</text><text class="sub" x="50" y="435">to SwiftData</text></g>
+        <g class="node ui"><rect x="295" y="372" width="210" height="75"/><text x="310" y="400">Tournament list</text><text class="sub" x="310" y="419">select · refresh</text><text class="sub" x="310" y="435">from CloudKit</text></g>
+        <g class="node key service"><rect x="140" y="482" width="260" height="71"/><text x="157" y="509">Create tournament</text><text class="sub" x="157" y="528">validate name · save record</text><text class="sub" x="157" y="544">queue metadata sync</text></g>
+        <g class="node ui"><rect x="140" y="585" width="260" height="64"/><text x="157" y="612">Import Schedule</text><text class="sub" x="157" y="632">choose one input path</text></g>
+        <g class="node service"><rect x="24" y="681" width="222" height="62"/><text x="39" y="708">Manual drafts</text><text class="sub" x="39" y="728">opponent · bout number</text></g>
+        <g class="node service" data-ref="schedule"><rect x="294" y="681" width="222" height="62"/><text x="309" y="708">Screenshot drafts</text><text class="sub" x="309" y="728">Vision · rules · model</text></g>
+        <g class="node key ui"><rect x="115" y="787" width="310" height="77"/><text x="132" y="814">Review, then confirm</text><text class="sub" x="132" y="834">validate unique positive order</text><text class="sub" x="132" y="851">insert bouts; or discard drafts</text></g>
+        <line class="divider" x1="25" y1="894" x2="515" y2="894"/>
+        <g class="legend"><rect class="ui" x="28" y="910" width="15" height="15" rx="3"/><text x="51" y="923">UI</text><rect class="service" x="259" y="910" width="15" height="15" rx="3"/><text x="282" y="923">service</text><rect class="store" x="28" y="937" width="15" height="15" rx="3"/><text x="51" y="950">local</text><rect class="external" x="259" y="937" width="15" height="15" rx="3"/><text x="282" y="950">person</text></g>
+      </svg></div>
+      <figcaption><span class="fig-no">Fig. 4</span> Both schedule input paths converge on a review step; only confirmation inserts bouts.</figcaption>
+    </figure>
+    <div class="explain"><div><h3>Launch and tournament</h3><ol><li><code>AppDependencies.make</code> opens the local model container and wires live services. <code>AppViewModel.load</code> checks the iCloud account and reads local settings and tournaments.</li><li>The root view shows setup when local settings are absent. Saving the one fencer name creates or updates <code>AppSettings</code>.</li><li>The tournament form calls <code>saveTournament</code>. That method trims and validates the name, inserts or updates the tournament, saves SwiftData, and selects the record.</li></ol></div><div><h3>Schedule and bout creation</h3><ol><li>Manual entry creates draft opponents and full-order bout numbers. Screenshot entry runs Vision, deterministic parsing, optional Foundation Models assistance, and proposal validation on device.</li><li>The parent edits, reorders, removes, or discards drafts. <code>confirmSchedule</code> rejects empty drafts, missing opponents, nonpositive or duplicate order numbers, then inserts new bouts and marks the schedule confirmed.</li><li>Confirmed bouts can be edited or deleted in <code>BoutDetailView</code>. There is no separate production “Add Bout” screen; manual creation is inside Import Schedule.</li></ol><p class="source-line">Trace: <a href="../../FencingVideoAnalysis/App/AppEntry/AppDependencies.swift">AppDependencies</a> · <a href="../../FencingVideoAnalysis/App/AppEntry/AppRootView.swift">AppRootView</a> · <a href="../../FencingVideoAnalysis/App/AppEntry/AppViewModel.swift">AppViewModel</a> · <a href="../../FencingVideoAnalysis/Features/ScheduleImport/ScheduleImportView.swift">ScheduleImportView</a></p></div></div>
+  </section>
+
+  <section id="media">
+    <div class="section-head"><p class="eyebrow">Pathway / 03B</p><div><h2>An imported original becomes an independent, replayable clip</h2><p class="section-intro">Import links to the Photos original. Export makes a new local clip, and private CloudKit stores the edited asset.</p></div></div>
+    <figure>
+      <div class="frame"><svg class="ve-svg portrait" viewBox="0 0 540 960" role="img" aria-label="Media pathway from PhotosPicker through source link, AVFoundation trim, CloudKit upload, retry, playback, offload, and deletion">
+        <path class="edge hot" d="M270 114V151"/><text class="edge-label" x="281" y="140">select</text>
+        <path class="edge" d="M270 229V266"/><text class="edge-label" x="281" y="255">confirm</text>
+        <path class="edge" d="M270 335V374"/><text class="edge-label" x="281" y="363">open source</text>
+        <path class="edge hot" d="M270 447V483"/><text class="edge-label" x="281" y="473">export</text>
+        <path class="edge hot" d="M320 558V585H392V602"/><text class="edge-label" x="325" y="577">sync + CKAsset</text>
+        <path class="edge dashed" d="M180 558V585H132V602"/><text class="edge-label" x="51" y="581">failure</text>
+        <path class="edge dashed" d="M270 640H242"/><text class="edge-label" x="242" y="627">fail</text>
+        <path class="edge hot" d="M392 672V693H270V713"/><text class="edge-label" x="282" y="697">play</text>
+        <path class="edge" d="M270 787V810H140V820"/><path class="edge dashed" d="M270 787V810H400V820"/>
+        <g class="node external" data-ref="photos"><rect x="140" y="51" width="260" height="63"/><text x="157" y="79">PhotosPicker</text><text class="sub" x="157" y="98">select source videos</text></g>
+        <g class="node service"><rect x="140" y="151" width="260" height="78"/><text x="157" y="179">Prepare batch</text><text class="sub" x="157" y="199">read Photos IDs + metadata</text><text class="sub" x="157" y="215">show failures or cancel</text></g>
+        <g class="node store" data-ref="source"><rect x="140" y="266" width="260" height="69"/><text x="157" y="294">SourceRecording link</text><text class="sub" x="157" y="314">save ID; original stays put</text></g>
+        <g class="node ui"><rect x="140" y="374" width="260" height="73"/><text x="157" y="402">Timeline and trim range</text><text class="sub" x="157" y="422">request PhotoKit AVAsset</text><text class="sub" x="157" y="438">choose start and end</text></g>
+        <g class="node key service" data-ref="media"><rect x="140" y="483" width="260" height="75"/><text x="157" y="511">AVFoundation export</text><text class="sub" x="157" y="531">ReviewClip: exporting</text><text class="sub" x="157" y="547">→ pendingUpload</text></g>
+        <g class="node external" data-ref="cloud"><rect x="270" y="602" width="245" height="70"/><text x="286" y="630">Private CloudKit</text><text class="sub" x="286" y="650">metadata + edited CKAsset</text></g>
+        <g class="node risk"><rect x="22" y="602" width="220" height="70"/><text x="38" y="630">Failure state</text><text class="sub" x="38" y="650">retry export or upload</text></g>
+        <g class="node ui"><rect x="140" y="713" width="260" height="74"/><text x="157" y="741">Play clip / bout</text><text class="sub" x="157" y="761">local → cache → download</text><text class="sub" x="157" y="777">seek · speed · next</text></g>
+        <g class="node store"><rect x="26" y="820" width="228" height="63"/><text x="42" y="847">Offload local copy</text><text class="sub" x="42" y="867">keep CloudKit asset</text></g>
+        <g class="node risk"><rect x="286" y="820" width="228" height="63"/><text x="302" y="847">Delete clip or bout</text><text class="sub" x="302" y="867">asset first; Photos safe</text></g>
+        <line class="divider" x1="25" y1="895" x2="515" y2="895"/>
+        <g class="legend"><rect class="ui" x="28" y="910" width="15" height="15" rx="3"/><text x="51" y="923">UI</text><rect class="service" x="259" y="910" width="15" height="15" rx="3"/><text x="282" y="923">service</text><rect class="store" x="28" y="937" width="15" height="15" rx="3"/><text x="51" y="950">local</text><rect class="risk" x="259" y="937" width="15" height="15" rx="3"/><text x="282" y="950">recovery</text></g>
+      </svg></div>
+      <figcaption><span class="fig-no">Fig. 5</span> Export and upload are separate transitions, so a failed upload can retry without changing the Photos original.</figcaption>
+    </figure>
+    <div class="explain"><div><h3>Import and create</h3><ol><li><code>BoutImportCoordinator.prepareSelections</code> asks <code>PhotoLibraryService</code> for selection metadata and identifiers. Confirmation inserts <code>SourceRecording</code> links; cancellation removes temporary working files.</li><li>Opening a source requests a PhotoKit AV asset. <code>ClipWorkflow.createClip</code> validates the trim range and inserts <code>ReviewClip</code> before AVFoundation export.</li><li>A successful export sets <code>pendingUpload</code>. <code>ClipUploadQueue</code> synchronizes metadata, saves the CKAsset, and marks the clip <code>available</code>. Temporary cloud errors return to <code>pendingUpload</code>; other failures need attention.</li></ol></div><div><h3>Replay and cleanup</h3><ol><li>Playback orders independent clips. <code>playableURL</code> uses an existing local export, a managed download, or a new CloudKit download. AVPlayer advances through clips without concatenating files.</li><li>Offloading removes only safe local exports and caches after CloudKit confirmation. The record and cloud asset remain, so later playback can download again.</li><li>Deleting a clip removes its cloud asset before local record cleanup and queued metadata deletion. Source-record removal is blocked while clips still reference it. Photos originals are not deleted.</li></ol><p class="source-line">Trace: <a href="../../FencingVideoAnalysis/Services/BoutImportCoordinator.swift">BoutImportCoordinator</a> · <a href="../../FencingVideoAnalysis/Services/ClipWorkflow.swift">ClipWorkflow</a> · <a href="../../FencingVideoAnalysis/Services/ClipUploadQueue.swift">ClipUploadQueue</a> · <a href="../../FencingVideoAnalysis/Services/ClipDownloadCoordinator.swift">ClipDownloadCoordinator</a></p></div></div>
+  </section>
+
+  <section id="review">
+    <div class="section-head"><p class="eyebrow">Review / 04</p><div><h2>Three boundaries deserve a focused test</h2><p class="section-intro">These are source-based review candidates. They are not device-reproduced failures.</p></div></div>
+    <div class="explain">
+      <div class="callout"><span class="chip risk">■ Status mismatch</span><h3>A cloud-only clip can look unedited</h3><p><code>BoutImportCoordinator.status</code> returns “Edited” only when some clip has a local export path. A clip reconstructed from CloudKit starts in <code>pendingDownload</code> with no local export path. The bout can therefore show “Ready to Edit” or “Not Imported” while a Play Bout action is still available.</p><p class="source-line"><a href="../../FencingVideoAnalysis/Services/BoutImportCoordinator.swift">Status logic</a> · <a href="../../FencingVideoAnalysis/Services/CloudMetadataService.swift">Cloud clip mapping</a></p></div>
+      <div class="callout"><span class="chip warn">▲ First-load timing</span><h3>Setup can appear before cloud settings arrive</h3><p><code>AppViewModel.load</code> marks local loading complete before it awaits a CloudKit refresh. <code>AppRootView</code> chooses setup when the current local settings are absent. A fresh second device may briefly show setup before the synced fencer name arrives.</p><p class="source-line"><a href="../../FencingVideoAnalysis/App/AppEntry/AppViewModel.swift">Load sequence</a> · <a href="../../FencingVideoAnalysis/App/AppEntry/AppRootView.swift">Root routing</a></p></div>
+    </div>
+    <div class="callout"><span class="chip info">◆ Scope check</span><h3>Two modeled paths do not have a production entry point</h3><p><code>AppViewModel.addBout</code> is present but production views use Import Schedule and <code>confirmSchedule</code> for manual bout creation. <code>ScheduleExtractionRun</code> is in the schema without a production insertion call. Treat it as a modeled record, not evidence of a persisted extraction history.</p></div>
+    <details><summary>What to verify on a device</summary><ol><li>Sync a saved clip to a second device and compare the bout’s media status with its clip count and Play Bout control.</li><li>Delay the first CloudKit settings refresh on a fresh second device and watch for setup appearing or racing with the synced name.</li><li>Review whether the schema-only extraction record is planned for a later release or should be removed in a future migration.</li></ol></details>
+  </section>
+
+  <section id="sources">
+    <div class="section-head"><p class="eyebrow">Trace / 05</p><div><h2>Follow the diagrams back to production code</h2><p class="section-intro">The earlier diagrams retain the complete reviewed node and edge sets. This page groups those details into readable mechanisms.</p></div></div>
+    <ul class="sources">
+      <li><a href="../../FencingVideoAnalysis/App/AppEntry/AppDependencies.swift">Dependency wiring</a> and <a href="../../FencingVideoAnalysis/App/AppEntry/AppRootView.swift">root routing</a></li>
+      <li><a href="../../FencingVideoAnalysis/App/AppEntry/AppViewModel.swift">AppViewModel orchestration</a></li>
+      <li><a href="../../FencingVideoAnalysis/Models/DomainModels/DomainModels.swift">Domain models</a> and <a href="../../FencingVideoAnalysis/Models/LocalModels/LocalRepository.swift">local repository</a></li>
+      <li><a href="../../FencingVideoAnalysis/Features/ScheduleImport/ScheduleReviewViewModel.swift">Schedule review state</a> and <a href="../../FencingVideoAnalysis/Services/ScheduleParsingService.swift">schedule parser</a></li>
+      <li><a href="../../FencingVideoAnalysis/Services/BoutImportCoordinator.swift">Recording import</a> and <a href="../../FencingVideoAnalysis/Services/PhotoLibraryService.swift">Photos boundary</a></li>
+      <li><a href="../../FencingVideoAnalysis/Services/ClipWorkflow.swift">Clip workflow</a>, <a href="../../FencingVideoAnalysis/Services/ClipUploadQueue.swift">upload queue</a>, and <a href="../../FencingVideoAnalysis/Services/ClipDownloadCoordinator.swift">download cache</a></li>
+      <li><a href="../../FencingVideoAnalysis/Services/CloudMetadataService.swift">Cloud metadata</a>, <a href="../../FencingVideoAnalysis/Services/CloudAssetService.swift">asset service</a>, and <a href="../../FencingVideoAnalysis/Services/BoutPlaybackQueue.swift">playback queue</a></li>
+      <li><a href="../CALL_INDEX.md">All production function declarations</a> and <a href="../reference/codebase-analysis.md">earlier SVG, PDF, PlantUML, Diagrams, and interactive versions</a></li>
+    </ul>
+    <p class="source-note">Dotted arrows mean optional, indirect, or synchronized links. The diagrams summarize production paths and omit simulator fakes. Color is paired with labels and line style.</p>
+  </section>
+
+  <footer>Fencing Video Analysis · visual-explainer rendering · source-traced private MVP</footer>
+</div>
+<script>
+  (() => {
+    const terms = document.querySelectorAll('[data-ref]');
+    const set = (ref, active) => document.querySelectorAll('[data-ref]').forEach(el => {
+      if (el.dataset.ref === ref) el.classList.toggle('is-emphasis', active);
+    });
+    terms.forEach(el => {
+      el.addEventListener('mouseenter', () => set(el.dataset.ref, true));
+      el.addEventListener('mouseleave', () => set(el.dataset.ref, false));
+      el.addEventListener('focus', () => set(el.dataset.ref, true));
+      el.addEventListener('blur', () => set(el.dataset.ref, false));
+    });
+    const links = [...document.querySelectorAll('nav a')];
+    const sections = links.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) if (entry.isIntersecting) {
+        links.forEach(link => link.setAttribute('aria-current', String(link.getAttribute('href') === '#' + entry.target.id)));
+      }
+    }, {rootMargin:'-15% 0px -70% 0px'});
+    sections.forEach(section => observer.observe(section));
+  })();
+</script>
+</body>
+</html>

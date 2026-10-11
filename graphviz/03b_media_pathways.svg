@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" version="1.1"><rect x="0" y="0" width="1080" height="1920" fill="white" /><g transform="translate(44.194 42.000) scale(1.149028)" aria-label="03b_media_pathways diagram"><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(20.16 1368.42)">
+<title>media</title>
+<polygon fill="white" stroke="none" points="-20.16,20.16 -20.16,-1368.42 842.88,-1368.42 842.88,20.16 -20.16,20.16" />
+<text xml:space="preserve" text-anchor="middle" x="243.88" y="-1327.16" font-family="Helvetica,sans-Serif" font-size="18.00" fill="#17324d">03B  User pathways | recording, clip, playback, and cleanup</text>
+
+<g id="node1" class="node">
+<title>bout</title>
+<ellipse fill="#eff2f4" stroke="#17324d" stroke-width="1.1" cx="422.43" cy="-1295.59" rx="86.34" ry="19.69" />
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-1291.14" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Open confirmed bout</text>
+</g>
+
+<g id="node2" class="node">
+<title>pick</title>
+<path fill="#dceaf5" stroke="#17324d" stroke-width="1.1" d="M492.48,-1214.67C492.48,-1214.67 352.38,-1214.67 352.38,-1214.67 346.38,-1214.67 340.38,-1208.67 340.38,-1202.67 340.38,-1202.67 340.38,-1186.83 340.38,-1186.83 340.38,-1180.83 346.38,-1174.83 352.38,-1174.83 352.38,-1174.83 492.48,-1174.83 492.48,-1174.83 498.48,-1174.83 504.48,-1180.83 504.48,-1186.83 504.48,-1186.83 504.48,-1202.67 504.48,-1202.67 504.48,-1208.67 498.48,-1214.67 492.48,-1214.67" />
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-1196.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Import Recordings</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-1184.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PhotosPicker: up to 20 videos</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>bout-&gt;pick</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M422.43,-1275.53C422.43,-1260.86 422.43,-1240.36 422.43,-1223.81" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="424.88,-1223.9 422.43,-1216.9 419.98,-1223.9 424.88,-1223.9" />
+</g>
+
+<g id="node3" class="node">
+<title>prepare</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M540.1,-1119.83C540.1,-1119.83 304.75,-1119.83 304.75,-1119.83 298.75,-1119.83 292.75,-1113.83 292.75,-1107.83 292.75,-1107.83 292.75,-1079.99 292.75,-1079.99 292.75,-1073.99 298.75,-1067.99 304.75,-1067.99 304.75,-1067.99 540.1,-1067.99 540.1,-1067.99 546.1,-1067.99 552.1,-1073.99 552.1,-1079.99 552.1,-1079.99 552.1,-1107.83 552.1,-1107.83 552.1,-1113.83 546.1,-1119.83 540.1,-1119.83" />
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-1101.46" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">BoutImportCoordinator.prepareSelections</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-1089.46" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PhotoLibraryService reads metadata / Photos IDs</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-1077.46" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">show batch, failures, cancellation</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>pick-&gt;prepare</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M422.43,-1174.69C422.43,-1161.75 422.43,-1144.27 422.43,-1128.97" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="424.88,-1129.08 422.43,-1122.08 419.98,-1129.08 424.88,-1129.08" />
+</g>
+
+<g id="node4" class="node">
+<title>confirm</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M520.6,-1004.24C520.6,-1004.24 324.25,-1004.24 324.25,-1004.24 318.25,-1004.24 312.25,-998.24 312.25,-992.24 312.25,-992.24 312.25,-964.4 312.25,-964.4 312.25,-958.4 318.25,-952.4 324.25,-952.4 324.25,-952.4 520.6,-952.4 520.6,-952.4 526.6,-952.4 532.6,-958.4 532.6,-964.4 532.6,-964.4 532.6,-992.24 532.6,-992.24 532.6,-998.24 526.6,-1004.24 520.6,-1004.24" />
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-985.87" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Confirm batch</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-973.87" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">insert SourceRecording links in SwiftData</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-961.87" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">try linking iCloud Photos IDs</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>prepare-&gt;confirm</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M422.43,-1067.7C422.43,-1051.67 422.43,-1030.72 422.43,-1013.24" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="424.88,-1013.28 422.43,-1006.28 419.98,-1013.28 424.88,-1013.28" />
+<text xml:space="preserve" text-anchor="middle" x="446.05" y="-1032.44" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">Add to Bout</text>
+</g>
+
+<g id="node5" class="node">
+<title>timeline</title>
+<path fill="#dceaf5" stroke="#17324d" stroke-width="1.1" d="M490.98,-897.4C490.98,-897.4 353.88,-897.4 353.88,-897.4 347.88,-897.4 341.88,-891.4 341.88,-885.4 341.88,-885.4 341.88,-869.56 341.88,-869.56 341.88,-863.56 347.88,-857.56 353.88,-857.56 353.88,-857.56 490.98,-857.56 490.98,-857.56 496.98,-857.56 502.98,-863.56 502.98,-869.56 502.98,-869.56 502.98,-885.4 502.98,-885.4 502.98,-891.4 496.98,-897.4 490.98,-897.4" />
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-879.03" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Review and Trim Recordings</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-867.03" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">load ordered sources + clips</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>confirm-&gt;timeline</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M422.43,-951.87C422.43,-937.94 422.43,-920.66 422.43,-906.37" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="424.88,-906.73 422.43,-899.73 419.98,-906.73 424.88,-906.73" />
+</g>
+
+<g id="node6" class="node">
+<title>asset</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M520.23,-802.56C520.23,-802.56 324.62,-802.56 324.62,-802.56 318.62,-802.56 312.62,-796.56 312.62,-790.56 312.62,-790.56 312.62,-774.72 312.62,-774.72 312.62,-768.72 318.62,-762.72 324.62,-762.72 324.62,-762.72 520.23,-762.72 520.23,-762.72 526.23,-762.72 532.23,-768.72 532.23,-774.72 532.23,-774.72 532.23,-790.56 532.23,-790.56 532.23,-796.56 526.23,-802.56 520.23,-802.56" />
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-784.19" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Open source</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-772.19" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">PhotoKit AVAsset; local fallback if needed</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>timeline-&gt;asset</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M422.43,-857.24C422.43,-844.05 422.43,-826.33 422.43,-811.58" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="424.88,-811.67 422.43,-804.67 419.98,-811.67 424.88,-811.67" />
+</g>
+
+<g id="node15" class="node">
+<title>delete</title>
+<path fill="#fbe4e1" stroke="#17324d" stroke-width="1.1" d="M810.72,-1321.51C810.72,-1321.51 552.12,-1321.51 552.12,-1321.51 546.12,-1321.51 540.12,-1315.51 540.12,-1309.51 540.12,-1309.51 540.12,-1281.67 540.12,-1281.67 540.12,-1275.67 546.12,-1269.67 552.12,-1269.67 552.12,-1269.67 810.72,-1269.67 810.72,-1269.67 816.72,-1269.67 822.72,-1275.67 822.72,-1281.67 822.72,-1281.67 822.72,-1309.51 822.72,-1309.51 822.72,-1315.51 816.72,-1321.51 810.72,-1321.51" />
+<text xml:space="preserve" text-anchor="middle" x="681.42" y="-1303.14" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Delete clip/source/bout/tournament</text>
+<text xml:space="preserve" text-anchor="middle" x="681.42" y="-1291.14" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">asset first, then local records, queue metadata deletion</text>
+<text xml:space="preserve" text-anchor="middle" x="681.42" y="-1279.14" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Photos original stays intact</text>
+</g>
+
+<g id="edge17" class="edge">
+<title>timeline-&gt;delete</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="5,2" d="M455.53,-897.9C492.86,-919.8 548.42,-952.4 548.42,-952.4 548.42,-952.4 634.86,-1174.79 668.37,-1261" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="666.06,-1261.82 670.88,-1267.46 670.63,-1260.04 666.06,-1261.82" />
+<text xml:space="preserve" text-anchor="middle" x="629.08" y="-1090.23" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">optional</text>
+</g>
+
+<g id="node7" class="node">
+<title>trim</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M537.1,-707.72C537.1,-707.72 307.75,-707.72 307.75,-707.72 301.75,-707.72 295.75,-701.72 295.75,-695.72 295.75,-695.72 295.75,-667.88 295.75,-667.88 295.75,-661.88 301.75,-655.88 307.75,-655.88 307.75,-655.88 537.1,-655.88 537.1,-655.88 543.1,-655.88 549.1,-661.88 549.1,-667.88 549.1,-667.88 549.1,-695.72 549.1,-695.72 549.1,-701.72 543.1,-707.72 537.1,-707.72" />
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-689.35" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Select trim range</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-677.35" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ClipWorkflow.createClip -&gt; AVFoundation export</text>
+<text xml:space="preserve" text-anchor="middle" x="422.43" y="-665.35" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ReviewClip: exporting -&gt; pendingUpload</text>
+</g>
+
+<g id="edge6" class="edge">
+<title>asset-&gt;trim</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M422.43,-762.58C422.43,-749.64 422.43,-732.16 422.43,-716.86" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="424.88,-716.97 422.43,-709.97 419.98,-716.97 424.88,-716.97" />
+</g>
+
+<g id="node8" class="node">
+<title>upload</title>
+<path fill="#ece4f5" stroke="#17324d" stroke-width="1.1" d="M426.1,-592.13C426.1,-592.13 262.75,-592.13 262.75,-592.13 256.75,-592.13 250.75,-586.13 250.75,-580.13 250.75,-580.13 250.75,-552.29 250.75,-552.29 250.75,-546.29 256.75,-540.29 262.75,-540.29 262.75,-540.29 426.1,-540.29 426.1,-540.29 432.1,-540.29 438.1,-546.29 438.1,-552.29 438.1,-552.29 438.1,-580.13 438.1,-580.13 438.1,-586.13 432.1,-592.13 426.1,-592.13" />
+<text xml:space="preserve" text-anchor="middle" x="344.43" y="-573.76" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ClipUploadQueue.upload</text>
+<text xml:space="preserve" text-anchor="middle" x="344.43" y="-561.76" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">sync metadata -&gt; save CKAsset</text>
+<text xml:space="preserve" text-anchor="middle" x="344.43" y="-549.76" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ReviewClip: uploading -&gt; available</text>
+</g>
+
+<g id="edge7" class="edge">
+<title>trim-&gt;upload</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M405.11,-655.59C393.7,-638.97 378.66,-617.07 366.4,-599.22" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="368.7,-598.23 362.72,-593.85 364.66,-601 368.7,-598.23" />
+<text xml:space="preserve" text-anchor="middle" x="416.14" y="-620.33" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">export success</text>
+</g>
+
+<g id="node9" class="node">
+<title>fail</title>
+<path fill="#fbe4e1" stroke="#17324d" stroke-width="1.1" d="M571.23,-476.54C571.23,-476.54 351.62,-476.54 351.62,-476.54 345.62,-476.54 339.62,-470.54 339.62,-464.54 339.62,-464.54 339.62,-436.7 339.62,-436.7 339.62,-430.7 345.62,-424.7 351.62,-424.7 351.62,-424.7 571.23,-424.7 571.23,-424.7 577.23,-424.7 583.23,-430.7 583.23,-436.7 583.23,-436.7 583.23,-464.54 583.23,-464.54 583.23,-470.54 577.23,-476.54 571.23,-476.54" />
+<text xml:space="preserve" text-anchor="middle" x="461.43" y="-458.17" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Failure path</text>
+<text xml:space="preserve" text-anchor="middle" x="461.43" y="-446.17" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">exportFailed / pendingUpload / needsAttention</text>
+<text xml:space="preserve" text-anchor="middle" x="461.43" y="-434.17" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">retry export or upload</text>
+</g>
+
+<g id="edge8" class="edge">
+<title>trim-&gt;fail</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M437.56,-655.45C445.43,-642.27 453.43,-628.88 453.43,-628.88 453.43,-628.88 463.43,-513.29 463.43,-513.29 463.43,-513.29 463.43,-503.54 463.43,-503.54 463.43,-503.54 463.11,-495.37 462.73,-485.51" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="465.19,-485.69 462.47,-478.79 460.29,-485.88 465.19,-485.69" />
+<text xml:space="preserve" text-anchor="middle" x="487.6" y="-562.54" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">export failure</text>
+</g>
+
+<g id="edge9" class="edge">
+<title>upload-&gt;fail</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M370.39,-540C387.81,-523.09 410.87,-500.7 429.43,-482.69" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="430.91,-484.66 434.23,-478.02 427.5,-481.14 430.91,-484.66" />
+<text xml:space="preserve" text-anchor="middle" x="431.56" y="-504.74" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">cloud failure</text>
+</g>
+
+<g id="node10" class="node">
+<title>play</title>
+<path fill="#dceaf5" stroke="#17324d" stroke-width="1.1" d="M296.85,-470.54C296.85,-470.54 120,-470.54 120,-470.54 114,-470.54 108,-464.54 108,-458.54 108,-458.54 108,-442.7 108,-442.7 108,-436.7 114,-430.7 120,-430.7 120,-430.7 296.85,-430.7 296.85,-430.7 302.85,-430.7 308.85,-436.7 308.85,-442.7 308.85,-442.7 308.85,-458.54 308.85,-458.54 308.85,-464.54 302.85,-470.54 296.85,-470.54" />
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-452.17" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Play clip / Play Bout</text>
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-440.17" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ordered ReviewClips -&gt; playableURL</text>
+</g>
+
+<g id="edge10" class="edge">
+<title>upload-&gt;play</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M314.24,-540C291.55,-521.05 260.61,-495.21 238.06,-476.37" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="239.68,-474.53 232.74,-471.92 236.54,-478.29 239.68,-474.53" />
+<text xml:space="preserve" text-anchor="middle" x="299.25" y="-504.74" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">available</text>
+</g>
+
+<g id="edge11" class="edge">
+<title>fail-&gt;upload</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" stroke-dasharray="5,2" d="M418.94,-476.97C396.86,-490.15 374.43,-503.54 374.43,-503.54 374.43,-503.54 367.64,-517.49 360.52,-532.13" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="358.45,-530.77 357.59,-538.14 362.86,-532.91 358.45,-530.77" />
+<text xml:space="preserve" text-anchor="middle" x="383.43" y="-504.74" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">retry</text>
+</g>
+
+<g id="node11" class="node">
+<title>local</title>
+<path fill="#fff0d6" stroke="#17324d" stroke-width="1.1" d="M196.57,-367.85C196.57,-367.85 41.93,-343.71 41.93,-343.71 36,-342.79 36,-340.93 41.93,-340.01 41.93,-340.01 196.57,-315.87 196.57,-315.87 202.5,-314.95 214.35,-314.95 220.28,-315.87 220.28,-315.87 374.92,-340.01 374.92,-340.01 380.85,-340.93 380.85,-342.79 374.92,-343.71 374.92,-343.71 220.28,-367.85 220.28,-367.85 214.35,-368.77 202.5,-368.77 196.57,-367.85" />
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-337.41" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Local export or managed cache?</text>
+</g>
+
+<g id="edge12" class="edge">
+<title>play-&gt;local</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M208.43,-430.53C208.43,-416.23 208.43,-396.24 208.43,-378.95" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="210.88,-379.02 208.43,-372.02 205.98,-379.02 210.88,-379.02" />
+</g>
+
+<g id="node12" class="node">
+<title>download</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M224.85,-250.27C224.85,-250.27 12,-250.27 12,-250.27 6,-250.27 0,-244.27 0,-238.27 0,-238.27 0,-222.43 0,-222.43 0,-216.43 6,-210.43 12,-210.43 12,-210.43 224.85,-210.43 224.85,-210.43 230.85,-210.43 236.85,-216.43 236.85,-222.43 236.85,-222.43 236.85,-238.27 236.85,-238.27 236.85,-244.27 230.85,-250.27 224.85,-250.27" />
+<text xml:space="preserve" text-anchor="middle" x="118.43" y="-231.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">ClipDownloadCoordinator.resolve</text>
+<text xml:space="preserve" text-anchor="middle" x="118.43" y="-219.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">check iCloud -&gt; download CKAsset -&gt; cache</text>
+</g>
+
+<g id="edge14" class="edge">
+<title>local-&gt;download</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M188.67,-316.83C174.11,-299.11 154.33,-275.04 139.47,-256.96" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="141.73,-255.85 135.39,-251.99 137.94,-258.96 141.73,-255.85" />
+<text xml:space="preserve" text-anchor="middle" x="168.68" y="-278.47" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">no</text>
+</g>
+
+<g id="node13" class="node">
+<title>player</title>
+<path fill="#ddf0e5" stroke="#17324d" stroke-width="1.1" d="M307.35,-155.43C307.35,-155.43 109.5,-155.43 109.5,-155.43 103.5,-155.43 97.5,-149.43 97.5,-143.43 97.5,-143.43 97.5,-127.59 97.5,-127.59 97.5,-121.59 103.5,-115.59 109.5,-115.59 109.5,-115.59 307.35,-115.59 307.35,-115.59 313.35,-115.59 319.35,-121.59 319.35,-127.59 319.35,-127.59 319.35,-143.43 319.35,-143.43 319.35,-149.43 313.35,-155.43 307.35,-155.43" />
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-137.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">MediaPlayerModel + BoutPlaybackQueue</text>
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-125.06" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">seek, scrub, speed, next clip (continuous)</text>
+</g>
+
+<g id="edge13" class="edge">
+<title>local-&gt;player</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M220.68,-315.63C233.7,-288.82 252.43,-250.27 252.43,-250.27 252.43,-250.27 252.43,-210.43 252.43,-210.43 252.43,-210.43 237.03,-184.57 224.46,-163.45" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="226.6,-162.25 220.91,-157.49 222.39,-164.76 226.6,-162.25" />
+<text xml:space="preserve" text-anchor="middle" x="259.55" y="-226.68" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">yes</text>
+</g>
+
+<g id="edge15" class="edge">
+<title>download-&gt;player</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M137.07,-210.11C150.59,-196.17 169,-177.18 183.74,-161.98" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="185.42,-163.76 188.54,-157.03 181.91,-160.35 185.42,-163.76" />
+</g>
+
+<g id="node14" class="node">
+<title>offload</title>
+<path fill="#fff0d6" stroke="#17324d" stroke-width="1.1" d="M314.1,-51.84C314.1,-51.84 102.75,-51.84 102.75,-51.84 96.75,-51.84 90.75,-45.84 90.75,-39.84 90.75,-39.84 90.75,-12 90.75,-12 90.75,-6 96.75,0 102.75,0 102.75,0 314.1,0 314.1,0 320.1,0 326.1,-6 326.1,-12 326.1,-12 326.1,-39.84 326.1,-39.84 326.1,-45.84 320.1,-51.84 314.1,-51.84" />
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-33.47" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Unload / Clear Local Copies</text>
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-21.47" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">only confirmed available exports; clear cache</text>
+<text xml:space="preserve" text-anchor="middle" x="208.43" y="-9.47" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">retain CloudKit records/assets</text>
+</g>
+
+<g id="edge16" class="edge">
+<title>player-&gt;offload</title>
+<path fill="none" stroke="#526779" stroke-width="1.2" d="M208.43,-115.28C208.43,-100.11 208.43,-78.58 208.43,-60.58" />
+<polygon fill="#526779" stroke="#526779" stroke-width="1.2" points="210.88,-60.88 208.43,-53.88 205.98,-60.88 210.88,-60.88" />
+<text xml:space="preserve" text-anchor="middle" x="224.93" y="-80.04" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#17324d">optional</text>
+</g>
+</g>
+</g><line x1="42" y1="1680" x2="1038" y2="1680" stroke="#8AA4B8" stroke-width="2" /><text x="52" y="1715" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">Color legend</text><rect x="52.0" y="1731" width="31" height="27" rx="5" fill="#EFF2F4" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="1753" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">User entry</text><rect x="542.0" y="1731" width="31" height="27" rx="5" fill="#DCEAF5" stroke="#17324D" stroke-width="1.5" /><text x="586.0" y="1753" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">UI action / screen</text><rect x="52.0" y="1788" width="31" height="27" rx="5" fill="#DDF0E5" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="1810" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">On-device processing</text><rect x="542.0" y="1788" width="31" height="27" rx="5" fill="#ECE4F5" stroke="#17324D" stroke-width="1.5" /><text x="586.0" y="1810" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Cloud upload</text><rect x="52.0" y="1845" width="31" height="27" rx="5" fill="#FFF0D6" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="1867" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Decision / local cleanup</text><rect x="542.0" y="1845" width="31" height="27" rx="5" fill="#FBE4E1" stroke="#17324D" stroke-width="1.5" /><text x="586.0" y="1867" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Failure / deletion</text></svg>

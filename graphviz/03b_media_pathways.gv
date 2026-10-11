@@ -1,0 +1,58 @@
+digraph media {
+	bgcolor=white compound=true fontcolor="#17324D" fontname=Helvetica fontsize=18 labeljust=l labelloc=t nodesep=0.43 pad=0.28 rankdir=TB ranksep=0.74 splines=polyline
+	node [color="#17324D" fillcolor="#DCEAF5" fontcolor="#17324D" fontname=Helvetica fontsize=11 margin="0.15,0.11" penwidth=1.1 shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 color="#526779" fontcolor="#17324D" fontname=Helvetica fontsize=9 penwidth=1.2]
+	label="03B  User pathways | recording, clip, playback, and cleanup"
+	bout [label="Open confirmed bout" fillcolor="#EFF2F4" shape=oval]
+	pick [label="Import Recordings
+PhotosPicker: up to 20 videos" fillcolor="#DCEAF5" shape=box]
+	prepare [label="BoutImportCoordinator.prepareSelections
+PhotoLibraryService reads metadata / Photos IDs
+show batch, failures, cancellation" fillcolor="#DDF0E5" shape=box]
+	confirm [label="Confirm batch
+insert SourceRecording links in SwiftData
+try linking iCloud Photos IDs" fillcolor="#DDF0E5" shape=box]
+	timeline [label="Review and Trim Recordings
+load ordered sources + clips" fillcolor="#DCEAF5" shape=box]
+	asset [label="Open source
+PhotoKit AVAsset; local fallback if needed" fillcolor="#DDF0E5" shape=box]
+	trim [label="Select trim range
+ClipWorkflow.createClip -> AVFoundation export
+ReviewClip: exporting -> pendingUpload" fillcolor="#DDF0E5" shape=box]
+	upload [label="ClipUploadQueue.upload
+sync metadata -> save CKAsset
+ReviewClip: uploading -> available" fillcolor="#ECE4F5" shape=box]
+	fail [label="Failure path
+exportFailed / pendingUpload / needsAttention
+retry export or upload" fillcolor="#FBE4E1" shape=box]
+	play [label="Play clip / Play Bout
+ordered ReviewClips -> playableURL" fillcolor="#DCEAF5" shape=box]
+	local [label="Local export or managed cache?" fillcolor="#FFF0D6" shape=diamond]
+	download [label="ClipDownloadCoordinator.resolve
+check iCloud -> download CKAsset -> cache" fillcolor="#DDF0E5" shape=box]
+	player [label="MediaPlayerModel + BoutPlaybackQueue
+seek, scrub, speed, next clip (continuous)" fillcolor="#DDF0E5" shape=box]
+	offload [label="Unload / Clear Local Copies
+only confirmed available exports; clear cache
+retain CloudKit records/assets" fillcolor="#FFF0D6" shape=box]
+	delete [label="Delete clip/source/bout/tournament
+asset first, then local records, queue metadata deletion
+Photos original stays intact" fillcolor="#FBE4E1" shape=box]
+	bout -> pick
+	pick -> prepare
+	prepare -> confirm [label="Add to Bout"]
+	confirm -> timeline
+	timeline -> asset
+	asset -> trim
+	trim -> upload [label="export success"]
+	trim -> fail [label="export failure"]
+	upload -> fail [label="cloud failure"]
+	upload -> play [label=available]
+	fail -> upload [label=retry style=dashed]
+	play -> local
+	local -> player [label=yes]
+	local -> download [label=no]
+	download -> player
+	player -> offload [label=optional]
+	timeline -> delete [label=optional constraint=false style=dashed]
+}

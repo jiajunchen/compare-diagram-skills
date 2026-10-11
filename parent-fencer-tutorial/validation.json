@@ -1,0 +1,64 @@
+{
+  "videos": [
+    {
+      "file": "parent-fencer-guide.mp4",
+      "duration": 303.5,
+      "size": 20116375,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-01.mp4",
+      "duration": 30.666667,
+      "size": 1564928,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-02.mp4",
+      "duration": 37.3,
+      "size": 2605412,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-03.mp4",
+      "duration": 27.066667,
+      "size": 1981817,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-04.mp4",
+      "duration": 50.166667,
+      "size": 3397882,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-05.mp4",
+      "duration": 67.266667,
+      "size": 4502559,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-06.mp4",
+      "duration": 45.566667,
+      "size": 3025272,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-07.mp4",
+      "duration": 45.466667,
+      "size": 3051931,
+      "decode": "passed"
+    }
+  ],
+  "instructionSegments": 63,
+  "markedActions": 43,
+  "magnifiedSegments": 49,
+  "priorVideosUnchanged": true,
+  "wordAlignment": "passed",
+  "capture": "seven lessons completed with UI assertions",
+  "playerNavigation": "passed",
+  "playerViewports": [
+    "1280x900",
+    "390x844"
+  ],
+  "visualReview": "Reviewed setup, schedule rows, manual entry, Photos permission, trim controls, favorite star, deletion confirmation, and storage confirmation."
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entity relationships</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" integrity="sha384-ZZ1pncU3bQe8y31yfZdMFdSpttDoPmOZg2wguVK9almUodir1PghgT0eY7Mrty8H" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js" integrity="sha384-en/ztfPSRkGfME4KIm05joYXynqzUgbsG5nMrj/xEFAHXkeZfO3yMK8QQ+mP7p1/" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #020617;
+      min-height: 100vh;
+      padding: 2rem;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      margin-bottom: 2rem;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pulse-dot {
+      width: 12px;
+      height: 12px;
+      background: #22d3ee;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      margin-left: 1.75rem;
+    }
+
+    .diagram-container {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 1rem;
+      border: 1px solid #1e293b;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      min-width: 900px;
+      display: block;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0.75rem;
+      border: 1px solid #1e293b;
+      padding: 1.25rem;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .card-dot.cyan { background: #22d3ee; }
+    .card-dot.emerald { background: #34d399; }
+    .card-dot.violet { background: #a78bfa; }
+    .card-dot.amber { background: #fbbf24; }
+    .card-dot.rose { background: #fb7185; }
+
+    .card h3 {
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .card ul {
+      list-style: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+    }
+
+    .card li {
+      margin-bottom: 0.375rem;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #475569;
+      font-size: 0.75rem;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 0.5rem;
+      margin-left: auto;
+      flex-shrink: 0;
+      align-items: center;
+    }
+    .toolbar-toggle {
+      background: transparent;
+      border: none;
+      color: #475569;
+      cursor: pointer;
+      font-size: 1.25rem;
+      line-height: 1;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.375rem;
+      transition: color 0.2s, background 0.2s;
+    }
+    .toolbar-toggle:hover { color: #94a3b8; background: rgba(30, 41, 59, 0.5); }
+    .toolbar-actions {
+      display: none;
+      gap: 0.5rem;
+    }
+    .toolbar.expanded .toolbar-actions { display: flex; }
+    .toolbar-actions button {
+      background: rgba(30, 41, 59, 0.8);
+      border: 1px solid #334155;
+      color: #94a3b8;
+      padding: 0.375rem 0.75rem;
+      border-radius: 0.375rem;
+      font-family: inherit;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .toolbar-actions button:hover {
+      background: rgba(51, 65, 85, 0.8);
+      color: white;
+      border-color: #475569;
+    }
+
+    @media print {
+      body { background: #020617; padding: 1rem; }
+      .toolbar { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="report-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-row">
+        <div class="pulse-dot"></div>
+        <h1>Entity relationships</h1>
+        <div class="toolbar">
+          <div class="toolbar-actions">
+            <button onclick="copyAsImage(this)">📋 Copy</button>
+            <button onclick="downloadPNG(this)">🖼️ PNG</button>
+            <button onclick="downloadPDF(this)">📄 PDF</button>
+          </div>
+          <button class="toolbar-toggle" onclick="this.parentElement.classList.toggle('expanded')" title="Export options" aria-label="Export options">⋯</button>
+        </div>
+      </div>
+      <p class="subtitle">Persisted UUID references and external media identifiers</p>
+    </div>
+
+    <!-- Main Diagram -->
+    <div class="diagram-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" font-family="JetBrains Mono, Menlo, monospace" aria-label="Entity relationships">
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/></pattern>
+</defs>
+<rect x="0" y="0" width="1920" height="1080" fill="#020617"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#grid)"/>
+<text x="50.00" y="40.00" fill="white" font-size="25.00" font-weight="700" text-anchor="start">Entity relationships</text>
+<path d="M 964.89 153.38 C 964.89 175.44 964.89 206.87 964.89 230.48" fill="none" data-edge="settings-&gt;tournament" stroke="#64748b" stroke-width="1.50" stroke-dasharray="6,5"/>
+<path d="M 922.93 298.62 C 899.27 317.30 869.63 340.71 845.04 360.15" fill="none" data-edge="tournament-&gt;bout" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 964.89 298.55 C 964.89 347.08 964.89 437.57 964.89 490.81" fill="none" data-edge="tournament-&gt;source" stroke="#64748b" stroke-width="1.50" stroke-dasharray="6,5" marker-end="url(#arrowhead)"/>
+<path d="M 838.85 433.43 C 862.50 452.11 892.15 475.52 916.74 494.95" fill="none" data-edge="bout-&gt;source" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 783.81 433.31 C 772.26 462.45 757.27 500.31 757.27 500.31 C 757.27 500.31 752.86 581.20 749.88 635.75" fill="none" data-edge="bout-&gt;clip" stroke="#64748b" stroke-width="1.50" stroke-dasharray="6,5" marker-end="url(#arrowhead)"/>
+<path d="M 916.58 568.24 C 885.45 589.59 844.65 617.59 810.88 640.76" fill="none" data-edge="source-&gt;clip" stroke="#64748b" stroke-width="1.50" marker-end="url(#arrowhead)"/>
+<path d="M 1018.98 298.62 C 1049.48 317.30 1087.70 340.71 1119.41 360.15" fill="none" data-edge="tournament-&gt;run" stroke="#64748b" stroke-width="1.50" stroke-dasharray="6,5" marker-end="url(#arrowhead)"/>
+<path d="M 964.89 577.55 C 964.89 602.30 964.89 632.91 964.89 655.01" fill="none" data-edge="source-&gt;photo" stroke="#64748b" stroke-width="1.50" stroke-dasharray="6,5" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+<path d="M 747.23 735.08 C 747.23 751.38 747.23 769.06 747.23 783.44" fill="none" data-edge="clip-&gt;asset" stroke="#64748b" stroke-width="1.50" stroke-dasharray="6,5" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+<g data-node="settings"><title>AppSettings
+PK id (stable cloudID)
+fencerName, syncState</title>
+<rect x="894.04" y="98.26" width="141.69" height="54.77" rx="7" fill="#0f172a"/>
+<rect x="894.04" y="98.26" width="141.69" height="54.77" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="964.89" y="116.63" fill="white" font-size="10.73" font-weight="600" text-anchor="middle">AppSettings</text>
+<text x="964.89" y="129.30" fill="#cbd5e1" font-size="10.73" font-weight="400" text-anchor="middle" textLength="129.69" lengthAdjust="spacingAndGlyphs">PK id (stable cloudID)</text>
+<text x="964.89" y="141.97" fill="#cbd5e1" font-size="10.73" font-weight="400" text-anchor="middle" textLength="129.69" lengthAdjust="spacingAndGlyphs">fencerName, syncState</text>
+</g>
+<g data-node="tournament"><title>Tournament
+PK id
+name, venue, startDate, timezone
+scheduleImportStatus, syncState</title>
+<rect x="867.89" y="230.69" width="193.99" height="67.45" rx="7" fill="#0f172a"/>
+<rect x="867.89" y="230.69" width="193.99" height="67.45" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="964.89" y="249.97" fill="white" font-size="10.10" font-weight="600" text-anchor="middle">Tournament</text>
+<text x="964.89" y="261.89" fill="#cbd5e1" font-size="10.10" font-weight="400" text-anchor="middle">PK id</text>
+<text x="964.89" y="273.82" fill="#cbd5e1" font-size="10.10" font-weight="400" text-anchor="middle" textLength="181.99" lengthAdjust="spacingAndGlyphs">name, venue, startDate, timezone</text>
+<text x="964.89" y="285.74" fill="#cbd5e1" font-size="10.10" font-weight="400" text-anchor="middle" textLength="181.99" lengthAdjust="spacingAndGlyphs">scheduleImportStatus, syncState</text>
+</g>
+<g data-node="bout"><title>Bout
+PK id | FK tournamentID
+phase, opponent, sequenceNumber
+pool, strip, scheduledAt, syncState</title>
+<rect x="694.75" y="365.50" width="204.29" height="67.45" rx="7" fill="#0f172a"/>
+<rect x="694.75" y="365.50" width="204.29" height="67.45" rx="7" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="2"/>
+<text x="796.89" y="385.32" fill="white" font-size="9.73" font-weight="600" text-anchor="middle">Bout</text>
+<text x="796.89" y="396.80" fill="#cbd5e1" font-size="9.73" font-weight="400" text-anchor="middle">PK id | FK tournamentID</text>
+<text x="796.89" y="408.27" fill="#cbd5e1" font-size="9.73" font-weight="400" text-anchor="middle">phase, opponent, sequenceNumber</text>
+<text x="796.89" y="419.75" fill="#cbd5e1" font-size="9.73" font-weight="400" text-anchor="middle" textLength="192.29" lengthAdjust="spacingAndGlyphs">pool, strip, scheduledAt, syncState</text>
+</g>
+<g data-node="source"><title>SourceRecording
+PK id | FK tournamentID, boutID
+importBatchID, Photos IDs
+recordedAt, duration, localWorkingFilePath</title>
+<rect x="844.91" y="500.31" width="239.95" height="67.45" rx="7" fill="#0f172a"/>
+<rect x="844.91" y="500.31" width="239.95" height="67.45" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="964.89" y="520.42" fill="white" font-size="9.52" font-weight="600" text-anchor="middle">SourceRecording</text>
+<text x="964.89" y="531.66" fill="#cbd5e1" font-size="9.52" font-weight="400" text-anchor="middle">PK id | FK tournamentID, boutID</text>
+<text x="964.89" y="542.89" fill="#cbd5e1" font-size="9.52" font-weight="400" text-anchor="middle">importBatchID, Photos IDs</text>
+<text x="964.89" y="554.13" fill="#cbd5e1" font-size="9.52" font-weight="400" text-anchor="middle" textLength="227.95" lengthAdjust="spacingAndGlyphs">recordedAt, duration, localWorkingFilePath</text>
+</g>
+<g data-node="clip"><title>ReviewClip
+PK id | FK boutID, sourceRecordingID
+trim range, localExportPath
+cloudAssetRecordName, mediaSyncStatus
+isFavorite</title>
+<rect x="626.47" y="645.42" width="241.53" height="80.13" rx="7" fill="#0f172a"/>
+<rect x="626.47" y="645.42" width="241.53" height="80.13" rx="7" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="2"/>
+<text x="747.23" y="663.51" fill="white" font-size="10.88" font-weight="600" text-anchor="middle">ReviewClip</text>
+<text x="747.23" y="676.35" fill="#cbd5e1" font-size="10.88" font-weight="400" text-anchor="middle" textLength="229.53" lengthAdjust="spacingAndGlyphs">PK id | FK boutID, sourceRecordingID</text>
+<text x="747.23" y="689.18" fill="#cbd5e1" font-size="10.88" font-weight="400" text-anchor="middle">trim range, localExportPath</text>
+<text x="747.23" y="702.02" fill="#cbd5e1" font-size="10.88" font-weight="400" text-anchor="middle" textLength="229.53" lengthAdjust="spacingAndGlyphs">cloudAssetRecordName, mediaSyncStatus</text>
+<text x="747.23" y="714.86" fill="#cbd5e1" font-size="10.88" font-weight="400" text-anchor="middle">isFavorite</text>
+</g>
+<g data-node="run"><title>ScheduleExtractionRun
+PK id | FK tournamentID
+status, warnings, modelAssistanceUsed
+(schema only; no production inserts)</title>
+<rect x="1069.44" y="365.50" width="224.10" height="67.45" rx="7" fill="#0f172a"/>
+<rect x="1069.44" y="365.50" width="224.10" height="67.45" rx="7" fill="rgba(251, 146, 60, 0.3)" stroke="#fb923c" stroke-width="2"/>
+<text x="1181.48" y="384.79" fill="white" font-size="10.09" font-weight="600" text-anchor="middle">ScheduleExtractionRun</text>
+<text x="1181.48" y="396.70" fill="#cbd5e1" font-size="10.09" font-weight="400" text-anchor="middle">PK id | FK tournamentID</text>
+<text x="1181.48" y="408.62" fill="#cbd5e1" font-size="10.09" font-weight="400" text-anchor="middle" textLength="212.10" lengthAdjust="spacingAndGlyphs">status, warnings, modelAssistanceUsed</text>
+<text x="1181.48" y="420.53" fill="#cbd5e1" font-size="10.09" font-weight="400" text-anchor="middle" textLength="212.10" lengthAdjust="spacingAndGlyphs">(schema only; no production inserts)</text>
+</g>
+<g data-node="photo"><title>PHAsset (Photos)
+original recording</title>
+<rect x="907.52" y="664.44" width="114.74" height="42.09" rx="7" fill="#0f172a"/>
+<rect x="907.52" y="664.44" width="114.74" height="42.09" rx="7" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="2"/>
+<text x="964.89" y="682.83" fill="white" font-size="10.62" font-weight="600" text-anchor="middle" textLength="102.74" lengthAdjust="spacingAndGlyphs">PHAsset (Photos)</text>
+<text x="964.89" y="695.37" fill="#cbd5e1" font-size="10.62" font-weight="400" text-anchor="middle" textLength="102.74" lengthAdjust="spacingAndGlyphs">original recording</text>
+</g>
+<g data-node="asset"><title>CKRecord + CKAsset
+ReviewClip-{UUID}</title>
+<rect x="679.56" y="792.91" width="135.35" height="42.09" rx="7" fill="#0f172a"/>
+<rect x="679.56" y="792.91" width="135.35" height="42.09" rx="7" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="2"/>
+<text x="747.23" y="810.82" fill="white" font-size="12.53" font-weight="600" text-anchor="middle" textLength="123.35" lengthAdjust="spacingAndGlyphs">CKRecord + CKAsset</text>
+<text x="747.23" y="825.61" fill="#cbd5e1" font-size="12.53" font-weight="400" text-anchor="middle" textLength="123.35" lengthAdjust="spacingAndGlyphs">ReviewClip-{UUID}</text>
+</g>
+<rect x="885.34" y="181.86" width="262.10" height="15.00" rx="3" fill="#020617"/>
+<text x="1016.39" y="191.86" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">one fencer name / used by all tournaments</text>
+<rect x="869.12" y="321.82" width="66.90" height="15.00" rx="3" fill="#020617"/>
+<text x="902.57" y="331.82" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">1 -&gt; 0..*</text>
+<rect x="936.60" y="389.23" width="127.90" height="15.00" rx="3" fill="#020617"/>
+<text x="1000.55" y="399.23" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">1 -&gt; 0..* direct ID</text>
+<rect x="869.12" y="456.63" width="66.90" height="15.00" rx="3" fill="#020617"/>
+<text x="902.57" y="466.63" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">1 -&gt; 0..*</text>
+<rect x="728.98" y="524.04" width="127.90" height="15.00" rx="3" fill="#020617"/>
+<text x="792.93" y="534.04" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">1 -&gt; 0..* direct ID</text>
+<rect x="858.74" y="596.59" width="66.90" height="15.00" rx="3" fill="#020617"/>
+<text x="892.19" y="606.59" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">1 -&gt; 0..*</text>
+<rect x="1059.75" y="321.82" width="109.60" height="15.00" rx="3" fill="#020617"/>
+<text x="1114.55" y="331.82" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">1 -&gt; 0..* schema</text>
+<rect x="882.06" y="596.59" width="256.00" height="15.00" rx="3" fill="#020617"/>
+<text x="1010.06" y="606.59" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">deviceLocalAssetID / / cloudPhotoAssetID</text>
+<rect x="732.93" y="749.23" width="134.00" height="15.00" rx="3" fill="#020617"/>
+<text x="799.93" y="759.23" fill="#cbd5e1" font-size="10.00" font-weight="400" text-anchor="middle">cloudAssetRecordName</text>
+<line x1="42" y1="890" x2="1878" y2="890" stroke="#334155" stroke-width="2"/>
+<text x="52.00" y="930.00" fill="white" font-size="23.00" font-weight="700" text-anchor="start">Color legend</text>
+<rect x="52.00" y="955.00" width="30" height="27" rx="4" fill="rgba(6, 78, 59, 0.4)" stroke="#34d399" stroke-width="1.5"/>
+<text x="96.00" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Models / services</text>
+<rect x="658.67" y="955.00" width="30" height="27" rx="4" fill="rgba(8, 51, 68, 0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="702.67" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Frontend / UI</text>
+<rect x="1265.33" y="955.00" width="30" height="27" rx="4" fill="rgba(251, 146, 60, 0.3)" stroke="#fb923c" stroke-width="1.5"/>
+<text x="1309.33" y="976.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Schema-only</text>
+<rect x="52.00" y="1009.00" width="30" height="27" rx="4" fill="rgba(30, 41, 59, 0.5)" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="96.00" y="1030.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Person / Apple</text>
+<rect x="658.67" y="1009.00" width="30" height="27" rx="4" fill="rgba(120, 53, 15, 0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="702.67" y="1030.00" fill="#cbd5e1" font-size="18.00" font-weight="400" text-anchor="start">Private cloud</text>
+</svg>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="cards">
+      <div class="card"><div class="card-header"><div class="card-dot cyan"></div><h3>UUID references</h3></div><ul><li>Entities link through identifier fields rather than SwiftData @Relationship properties.</li></ul></div>
+      <div class="card"><div class="card-header"><div class="card-dot emerald"></div><h3>External assets</h3></div><ul><li>SourceRecording references Photos; ReviewClip references a private CKAsset.</li></ul></div>
+      <div class="card"><div class="card-header"><div class="card-dot violet"></div><h3>Schema-only record</h3></div><ul><li>ScheduleExtractionRun is modeled but has no production insertion path.</li></ul></div>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">
+      Fencing Video Analysis • source-traced MVP • Entity relationships
+    </p>
+  </div>
+
+  <script>
+    async function copyAsImage(btn) {
+      const orig = btn.textContent;
+      try {
+        const el = document.getElementById('report-container');
+        const r = el.getBoundingClientRect();
+        const pad = 32;
+        const canvas = await html2canvas(document.body, { backgroundColor: '#020617', scale: 2, useCORS: true, ignoreElements: (e) => e.classList && e.classList.contains('toolbar'), x: r.left + window.scrollX - pad, y: r.top + window.scrollY - pad, width: r.width + pad * 2, height: r.height + pad * 2 });
+        const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
+        await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+        btn.textContent = '✓ Copied!';
+      } catch (e) {
+        btn.textContent = '✗ Failed';
+      }
+      setTimeout(() => btn.textContent = orig, 2000);
+    }
+
+    async function downloadPNG(btn) {
+      const orig = btn.textContent;
+      btn.textContent = '⏳ ...';
+      try {
+        const el = document.getElementById('report-container');
+        const r = el.getBoundingClientRect();
+        const pad = 32;
+        const canvas = await html2canvas(document.body, { backgroundColor: '#020617', scale: 2, useCORS: true, ignoreElements: (e) => e.classList && e.classList.contains('toolbar'), x: r.left + window.scrollX - pad, y: r.top + window.scrollY - pad, width: r.width + pad * 2, height: r.height + pad * 2 });
+        const link = document.createElement('a');
+        link.download = 'diagram.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        btn.textContent = '✓ Done!';
+      } catch (e) {
+        btn.textContent = '✗ Failed';
+      }
+      setTimeout(() => btn.textContent = orig, 2000);
+    }
+
+    async function downloadPDF(btn) {
+      const orig = btn.textContent;
+      btn.textContent = '⏳ ...';
+      try {
+        const el = document.getElementById('report-container');
+        const r = el.getBoundingClientRect();
+        const pad = 32;
+        const canvas = await html2canvas(document.body, { backgroundColor: '#020617', scale: 2, useCORS: true, ignoreElements: (e) => e.classList && e.classList.contains('toolbar'), x: r.left + window.scrollX - pad, y: r.top + window.scrollY - pad, width: r.width + pad * 2, height: r.height + pad * 2 });
+        const imgData = canvas.toDataURL('image/png');
+        const { jsPDF } = window.jspdf;
+        const orientation = canvas.width > canvas.height ? 'landscape' : 'portrait';
+        const pdf = new jsPDF({ orientation, unit: 'px', format: [canvas.width, canvas.height], hotfixes: ['px_scaling'] });
+        pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+        pdf.save('diagram.pdf');
+        btn.textContent = '✓ Done!';
+      } catch (e) {
+        btn.textContent = '✗ Failed';
+      }
+      setTimeout(() => btn.textContent = orig, 2000);
+    }
+  </script>
+</body>
+</html>

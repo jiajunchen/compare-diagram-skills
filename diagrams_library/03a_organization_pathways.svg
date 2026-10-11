@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" version="1.1"><rect x="0" y="0" width="1080" height="1920" fill="white" /><g transform="translate(161.723 42.000) scale(1.315746)" aria-label="03a_organization_pathways alternative diagram"><g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 1198.59)">
+<title>03A  User pathways | launch, tournament, and schedule</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-1198.59 560.31,-1198.59 560.31,14.4 -14.4,14.4" />
+<text xml:space="preserve" text-anchor="middle" x="272.95" y="-5.65" font-family="Helvetica,sans-Serif" font-size="18.00" fill="#17324d">03A  User pathways | launch, tournament, and schedule</text>
+
+<g id="node1" class="node">
+<title>launch</title>
+<ellipse fill="#eff2f4" stroke="#17324d" cx="426.7" cy="-1165.52" rx="47.67" ry="18.67" />
+<text xml:space="preserve" text-anchor="middle" x="426.7" y="-1161.07" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Open app</text>
+</g>
+
+<g id="node2" class="node">
+<title>boot</title>
+<path fill="#dceaf5" stroke="#17324d" d="M505.41,-1105.85C505.41,-1105.85 348,-1105.85 348,-1105.85 342,-1105.85 336,-1099.85 336,-1093.85 336,-1093.85 336,-1079.45 336,-1079.45 336,-1073.45 342,-1067.45 348,-1067.45 348,-1067.45 505.41,-1067.45 505.41,-1067.45 511.41,-1067.45 517.41,-1073.45 517.41,-1079.45 517.41,-1079.45 517.41,-1093.85 517.41,-1093.85 517.41,-1099.85 511.41,-1105.85 505.41,-1105.85" />
+<text xml:space="preserve" text-anchor="middle" x="426.7" y="-1088.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AppDependencies.make</text>
+<text xml:space="preserve" text-anchor="middle" x="426.7" y="-1076.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">open SwiftData; wire live services</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>launch-&gt;boot</title>
+<path fill="none" stroke="#526779" d="M426.7,-1146.69C426.7,-1138.05 426.7,-1127.44 426.7,-1117.61" />
+<polygon fill="#526779" stroke="#526779" points="430.21,-1117.7 426.71,-1107.7 423.21,-1117.7 430.21,-1117.7" />
+</g>
+
+<g id="node3" class="node">
+<title>load</title>
+<path fill="#dceaf5" stroke="#17324d" d="M533.91,-1026.45C533.91,-1026.45 319.5,-1026.45 319.5,-1026.45 313.5,-1026.45 307.5,-1020.45 307.5,-1014.45 307.5,-1014.45 307.5,-1000.05 307.5,-1000.05 307.5,-994.05 313.5,-988.05 319.5,-988.05 319.5,-988.05 533.91,-988.05 533.91,-988.05 539.91,-988.05 545.91,-994.05 545.91,-1000.05 545.91,-1000.05 545.91,-1014.45 545.91,-1014.45 545.91,-1020.45 539.91,-1026.45 533.91,-1026.45" />
+<text xml:space="preserve" text-anchor="middle" x="426.7" y="-1008.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AppViewModel.load</text>
+<text xml:space="preserve" text-anchor="middle" x="426.7" y="-996.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">check iCloud; fetch local settings/tournaments</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>boot-&gt;load</title>
+<path fill="none" stroke="#526779" d="M426.7,-1067.31C426.7,-1058.6 426.7,-1047.97 426.7,-1038.14" />
+<polygon fill="#526779" stroke="#526779" points="430.21,-1038.24 426.71,-1028.24 423.21,-1038.24 430.21,-1038.24" />
+</g>
+
+<g id="node4" class="node">
+<title>settings</title>
+<path fill="#fff0d6" stroke="#17324d" d="M415.14,-943.84C415.14,-943.84 343.11,-923.86 343.11,-923.86 337.33,-922.25 337.33,-919.05 343.11,-917.44 343.11,-917.44 415.14,-897.46 415.14,-897.46 420.92,-895.85 432.49,-895.85 438.27,-897.46 438.27,-897.46 510.3,-917.44 510.3,-917.44 516.08,-919.05 516.08,-922.25 510.3,-923.86 510.3,-923.86 438.27,-943.84 438.27,-943.84 432.49,-945.45 420.92,-945.45 415.14,-943.84" />
+<text xml:space="preserve" text-anchor="middle" x="426.7" y="-916.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Settings found?</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>load-&gt;settings</title>
+<path fill="none" stroke="#526779" d="M426.7,-987.89C426.7,-979.37 426.7,-968.91 426.7,-958.85" />
+<polygon fill="#526779" stroke="#526779" points="430.21,-958.87 426.71,-948.87 423.21,-958.87 430.21,-958.87" />
+</g>
+
+<g id="node5" class="node">
+<title>first</title>
+<path fill="#dceaf5" stroke="#17324d" d="M434.41,-840.75C434.41,-840.75 289,-840.75 289,-840.75 283,-840.75 277,-834.75 277,-828.75 277,-828.75 277,-814.35 277,-814.35 277,-808.35 283,-802.35 289,-802.35 289,-802.35 434.41,-802.35 434.41,-802.35 440.41,-802.35 446.41,-808.35 446.41,-814.35 446.41,-814.35 446.41,-828.75 446.41,-828.75 446.41,-834.75 440.41,-840.75 434.41,-840.75" />
+<text xml:space="preserve" text-anchor="middle" x="361.7" y="-823.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">FirstRunSetupView</text>
+<text xml:space="preserve" text-anchor="middle" x="361.7" y="-811.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">saveFencerName -&gt; SwiftData</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>settings-&gt;first</title>
+<path fill="none" stroke="#526779" d="M412.28,-898.1C402.89,-884.08 390.55,-865.64 380.41,-850.5" />
+<polygon fill="#526779" stroke="#526779" points="383.43,-848.72 374.96,-842.35 377.62,-852.61 383.43,-848.72" />
+<text xml:space="preserve" text-anchor="middle" x="403.65" y="-861.9" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">no</text>
+</g>
+
+<g id="node6" class="node">
+<title>nav</title>
+<path fill="#dceaf5" stroke="#17324d" d="M489.78,-761.35C489.78,-761.35 361.62,-761.35 361.62,-761.35 355.62,-761.35 349.62,-755.35 349.62,-749.35 349.62,-749.35 349.62,-734.95 349.62,-734.95 349.62,-728.95 355.62,-722.95 361.62,-722.95 361.62,-722.95 489.78,-722.95 489.78,-722.95 495.78,-722.95 501.78,-728.95 501.78,-734.95 501.78,-734.95 501.78,-749.35 501.78,-749.35 501.78,-755.35 495.78,-761.35 489.78,-761.35" />
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-743.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">TournamentNavigationView</text>
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-731.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">select / refreshCloud</text>
+</g>
+
+<g id="edge6" class="edge">
+<title>settings-&gt;nav</title>
+<path fill="none" stroke="#526779" d="M435.84,-896.4C444.98,-873.13 457.7,-840.75 457.7,-840.75 457.7,-840.75 457.7,-802.35 457.7,-802.35 457.7,-802.35 449.19,-786.59 440.94,-771.34" />
+<polygon fill="#526779" stroke="#526779" points="444.21,-770.02 436.37,-762.89 438.05,-773.35 444.21,-770.02" />
+<text xml:space="preserve" text-anchor="middle" x="468.2" y="-815.95" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">yes</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>first-&gt;nav</title>
+<path fill="none" stroke="#526779" d="M376.87,-802.21C384.71,-792.73 394.42,-780.98 403.12,-770.47" />
+<polygon fill="#526779" stroke="#526779" points="405.79,-772.73 409.46,-762.8 400.39,-768.27 405.79,-772.73" />
+</g>
+
+<g id="node7" class="node">
+<title>new</title>
+<path fill="#dceaf5" stroke="#17324d" d="M489.41,-681.95C489.41,-681.95 362,-681.95 362,-681.95 356,-681.95 350,-675.95 350,-669.95 350,-669.95 350,-655.55 350,-655.55 350,-649.55 356,-643.55 362,-643.55 362,-643.55 489.41,-643.55 489.41,-643.55 495.41,-643.55 501.41,-649.55 501.41,-655.55 501.41,-655.55 501.41,-669.95 501.41,-669.95 501.41,-675.95 495.41,-681.95 489.41,-681.95" />
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-664.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">New Tournament</text>
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-652.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">TournamentFormView.save</text>
+</g>
+
+<g id="edge7" class="edge">
+<title>nav-&gt;new</title>
+<path fill="none" stroke="#526779" d="M425.7,-722.81C425.7,-714.1 425.7,-703.47 425.7,-693.64" />
+<polygon fill="#526779" stroke="#526779" points="429.21,-693.74 425.71,-683.74 422.21,-693.74 429.21,-693.74" />
+</g>
+
+<g id="node8" class="node">
+<title>save</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M524.28,-602.55C524.28,-602.55 327.12,-602.55 327.12,-602.55 321.12,-602.55 315.12,-596.55 315.12,-590.55 315.12,-590.55 315.12,-564.15 315.12,-564.15 315.12,-558.15 321.12,-552.15 327.12,-552.15 327.12,-552.15 524.28,-552.15 524.28,-552.15 530.28,-552.15 536.28,-558.15 536.28,-564.15 536.28,-564.15 536.28,-590.55 536.28,-590.55 536.28,-596.55 530.28,-602.55 524.28,-602.55" />
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-584.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AppViewModel.saveTournament</text>
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-572.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">validate name; insert/update Tournament</text>
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-560.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">SwiftData save -&gt; schedule CloudKit sync</text>
+</g>
+
+<g id="edge8" class="edge">
+<title>new-&gt;save</title>
+<path fill="none" stroke="#526779" d="M425.7,-643.24C425.7,-634.69 425.7,-624.22 425.7,-614.22" />
+<polygon fill="#526779" stroke="#526779" points="429.21,-614.34 425.71,-604.34 422.21,-614.34 429.21,-614.34" />
+</g>
+
+<g id="node9" class="node">
+<title>detail</title>
+<path fill="#dceaf5" stroke="#17324d" d="M501.03,-511.15C501.03,-511.15 350.38,-511.15 350.38,-511.15 344.38,-511.15 338.38,-505.15 338.38,-499.15 338.38,-499.15 338.38,-484.75 338.38,-484.75 338.38,-478.75 344.38,-472.75 350.38,-472.75 350.38,-472.75 501.03,-472.75 501.03,-472.75 507.03,-472.75 513.03,-478.75 513.03,-484.75 513.03,-484.75 513.03,-499.15 513.03,-499.15 513.03,-505.15 507.03,-511.15 501.03,-511.15" />
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-493.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">TournamentDetailView</text>
+<text xml:space="preserve" text-anchor="middle" x="425.7" y="-481.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">show bouts / open selected bout</text>
+</g>
+
+<g id="edge9" class="edge">
+<title>save-&gt;detail</title>
+<path fill="none" stroke="#526779" d="M425.7,-551.78C425.7,-542.72 425.7,-532.37 425.7,-522.89" />
+<polygon fill="#526779" stroke="#526779" points="429.21,-523.04 425.71,-513.04 422.21,-523.04 429.21,-523.04" />
+</g>
+
+<g id="node10" class="node">
+<title>import</title>
+<path fill="#dceaf5" stroke="#17324d" d="M419.16,-431.75C419.16,-431.75 278.25,-431.75 278.25,-431.75 272.25,-431.75 266.25,-425.75 266.25,-419.75 266.25,-419.75 266.25,-405.35 266.25,-405.35 266.25,-399.35 272.25,-393.35 278.25,-393.35 278.25,-393.35 419.16,-393.35 419.16,-393.35 425.16,-393.35 431.16,-399.35 431.16,-405.35 431.16,-405.35 431.16,-419.75 431.16,-419.75 431.16,-425.75 425.16,-431.75 419.16,-431.75" />
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-414.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Import Schedule</text>
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-402.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">screenshot(s) or Manual Entry</text>
+</g>
+
+<g id="edge10" class="edge">
+<title>detail-&gt;import</title>
+<path fill="none" stroke="#526779" d="M407.46,-472.61C397.75,-462.85 385.63,-450.67 374.93,-439.91" />
+<polygon fill="#526779" stroke="#526779" points="377.69,-437.72 368.16,-433.1 372.73,-442.66 377.69,-437.72" />
+</g>
+
+<g id="node11" class="node">
+<title>manual</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M193.41,-333.85C193.41,-333.85 12,-333.85 12,-333.85 6,-333.85 0,-327.85 0,-321.85 0,-321.85 0,-307.45 0,-307.45 0,-301.45 6,-295.45 12,-295.45 12,-295.45 193.41,-295.45 193.41,-295.45 199.41,-295.45 205.41,-301.45 205.41,-307.45 205.41,-307.45 205.41,-321.85 205.41,-321.85 205.41,-327.85 199.41,-333.85 193.41,-333.85" />
+<text xml:space="preserve" text-anchor="middle" x="102.7" y="-316.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Manual drafts</text>
+<text xml:space="preserve" text-anchor="middle" x="102.7" y="-304.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">add opponent + full-order bout number</text>
+</g>
+
+<g id="edge11" class="edge">
+<title>import-&gt;manual</title>
+<path fill="none" stroke="#526779" d="M300.98,-392.95C260.92,-377.33 203.56,-354.97 160.82,-338.31" />
+<polygon fill="#526779" stroke="#526779" points="162.29,-335.12 151.71,-334.75 159.75,-341.65 162.29,-335.12" />
+<text xml:space="preserve" text-anchor="middle" x="269.49" y="-361" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">manual</text>
+</g>
+
+<g id="node12" class="node">
+<title>ocr</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M457.78,-339.85C457.78,-339.85 239.62,-339.85 239.62,-339.85 233.62,-339.85 227.62,-333.85 227.62,-327.85 227.62,-327.85 227.62,-301.45 227.62,-301.45 227.62,-295.45 233.62,-289.45 239.62,-289.45 239.62,-289.45 457.78,-289.45 457.78,-289.45 463.78,-289.45 469.78,-295.45 469.78,-301.45 469.78,-301.45 469.78,-327.85 469.78,-327.85 469.78,-333.85 463.78,-339.85 457.78,-339.85" />
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-322.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Vision recognize each screenshot</text>
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-310.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">deterministic parse + optional on-device model</text>
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-298.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">validator reconciles source-backed proposal</text>
+</g>
+
+<g id="edge12" class="edge">
+<title>import-&gt;ocr</title>
+<path fill="none" stroke="#526779" d="M348.7,-393.06C348.7,-381.32 348.7,-365.74 348.7,-351.64" />
+<polygon fill="#526779" stroke="#526779" points="352.21,-351.77 348.71,-341.77 345.21,-351.77 352.21,-351.77" />
+<text xml:space="preserve" text-anchor="middle" x="385.08" y="-361" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">screenshots</text>
+</g>
+
+<g id="node13" class="node">
+<title>review</title>
+<path fill="#dceaf5" stroke="#17324d" d="M389.91,-248.45C389.91,-248.45 307.5,-248.45 307.5,-248.45 301.5,-248.45 295.5,-242.45 295.5,-236.45 295.5,-236.45 295.5,-222.05 295.5,-222.05 295.5,-216.05 301.5,-210.05 307.5,-210.05 307.5,-210.05 389.91,-210.05 389.91,-210.05 395.91,-210.05 401.91,-216.05 401.91,-222.05 401.91,-222.05 401.91,-236.45 401.91,-236.45 401.91,-242.45 395.91,-248.45 389.91,-248.45" />
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-230.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">Review/edit drafts</text>
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-218.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">confirm or discard</text>
+</g>
+
+<g id="edge13" class="edge">
+<title>manual-&gt;review</title>
+<path fill="none" stroke="#526779" d="M157.61,-295.04C195.14,-282.31 245.03,-265.4 284.43,-252.04" />
+<polygon fill="#526779" stroke="#526779" points="285.46,-255.39 293.81,-248.86 283.21,-248.76 285.46,-255.39" />
+</g>
+
+<g id="edge14" class="edge">
+<title>ocr-&gt;review</title>
+<path fill="none" stroke="#526779" d="M348.7,-289.08C348.7,-280.02 348.7,-269.67 348.7,-260.19" />
+<polygon fill="#526779" stroke="#526779" points="352.21,-260.34 348.71,-250.34 345.21,-260.34 352.21,-260.34" />
+</g>
+
+<g id="edge17" class="edge">
+<title>review-&gt;detail</title>
+<path fill="none" stroke="#526779" stroke-dasharray="5,2" d="M390.11,-248.82C428.82,-266.18 480.7,-289.45 480.7,-289.45 480.7,-289.45 480.7,-339.85 480.7,-339.85 480.7,-339.85 452.3,-417.9 436.31,-461.81" />
+<polygon fill="#526779" stroke="#526779" points="433.1,-460.41 432.97,-471 439.68,-462.8 433.1,-460.41" />
+<text xml:space="preserve" text-anchor="middle" x="495.02" y="-361" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">discard</text>
+</g>
+
+<g id="node14" class="node">
+<title>confirm</title>
+<path fill="#ddf0e5" stroke="#17324d" d="M474.28,-156.55C474.28,-156.55 223.12,-156.55 223.12,-156.55 217.12,-156.55 211.12,-150.55 211.12,-144.55 211.12,-144.55 211.12,-118.15 211.12,-118.15 211.12,-112.15 217.12,-106.15 223.12,-106.15 223.12,-106.15 474.28,-106.15 474.28,-106.15 480.28,-106.15 486.28,-112.15 486.28,-118.15 486.28,-118.15 486.28,-144.55 486.28,-144.55 486.28,-150.55 480.28,-156.55 474.28,-156.55" />
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-138.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">AppViewModel.confirmSchedule</text>
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-126.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">validate nonempty, opponent, positive/unique number</text>
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-114.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">insert new Bouts; mark tournament confirmed</text>
+</g>
+
+<g id="edge15" class="edge">
+<title>review-&gt;confirm</title>
+<path fill="none" stroke="#526779" d="M348.7,-209.76C348.7,-198.02 348.7,-182.44 348.7,-168.34" />
+<polygon fill="#526779" stroke="#526779" points="352.21,-168.47 348.71,-158.47 345.21,-168.47 352.21,-168.47" />
+<text xml:space="preserve" text-anchor="middle" x="370.45" y="-177.7" font-family="Sans-Serif" font-size="13.00" fill="#2d3436">confirm</text>
+</g>
+
+<g id="node15" class="node">
+<title>bout</title>
+<path fill="#dceaf5" stroke="#17324d" d="M453.28,-65.15C453.28,-65.15 244.12,-65.15 244.12,-65.15 238.12,-65.15 232.12,-59.15 232.12,-53.15 232.12,-53.15 232.12,-38.75 232.12,-38.75 232.12,-32.75 238.12,-26.75 244.12,-26.75 244.12,-26.75 453.28,-26.75 453.28,-26.75 459.28,-26.75 465.28,-32.75 465.28,-38.75 465.28,-38.75 465.28,-53.15 465.28,-53.15 465.28,-59.15 459.28,-65.15 453.28,-65.15" />
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-47.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">BoutDetailView</text>
+<text xml:space="preserve" text-anchor="middle" x="348.7" y="-35.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#17324d">edit/delete confirmed bout; import recordings</text>
+</g>
+
+<g id="edge16" class="edge">
+<title>confirm-&gt;bout</title>
+<path fill="none" stroke="#526779" d="M348.7,-105.78C348.7,-96.72 348.7,-86.37 348.7,-76.89" />
+<polygon fill="#526779" stroke="#526779" points="352.21,-77.04 348.71,-67.04 345.21,-77.04 352.21,-77.04" />
+</g>
+</g>
+</g><line x1="42" y1="1680" x2="1038" y2="1680" stroke="#8AA4B8" stroke-width="2" /><text x="52" y="1715" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">Color legend</text><rect x="52.0" y="1731" width="31" height="27" rx="5" fill="#EFF2F4" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="1753" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">User entry</text><rect x="542.0" y="1731" width="31" height="27" rx="5" fill="#DCEAF5" stroke="#17324D" stroke-width="1.5" /><text x="586.0" y="1753" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">UI action / screen</text><rect x="52.0" y="1788" width="31" height="27" rx="5" fill="#DDF0E5" stroke="#17324D" stroke-width="1.5" /><text x="96.0" y="1810" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">On-device processing</text><rect x="542.0" y="1788" width="31" height="27" rx="5" fill="#FFF0D6" stroke="#17324D" stroke-width="1.5" /><text x="586.0" y="1810" fill="#17324D" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal">Decision</text></svg>

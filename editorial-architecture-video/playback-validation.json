@@ -1,0 +1,56 @@
+{
+  "encodedFramesMatch": [
+    {
+      "chapter": 1,
+      "sampleTime": 16.544,
+      "structuralSimilarity": 0.999645
+    },
+    {
+      "chapter": 2,
+      "sampleTime": 64.068,
+      "structuralSimilarity": 0.999458
+    },
+    {
+      "chapter": 3,
+      "sampleTime": 114.96,
+      "structuralSimilarity": 0.999388
+    },
+    {
+      "chapter": 4,
+      "sampleTime": 163.245,
+      "structuralSimilarity": 0.999421
+    },
+    {
+      "chapter": 5,
+      "sampleTime": 220.55,
+      "structuralSimilarity": 0.999435
+    },
+    {
+      "chapter": 6,
+      "sampleTime": 275.157,
+      "structuralSimilarity": 0.999432
+    },
+    {
+      "chapter": 7,
+      "sampleTime": 333.925,
+      "structuralSimilarity": 0.999454
+    },
+    {
+      "chapter": 8,
+      "sampleTime": 397.565,
+      "structuralSimilarity": 0.999431
+    },
+    {
+      "chapter": 9,
+      "sampleTime": 457.018,
+      "structuralSimilarity": 0.999421
+    }
+  ],
+  "browserPlayback": {
+    "playing": true,
+    "time": 0.092069,
+    "duration": 481.723,
+    "width": 1920,
+    "height": 1080
+  }
+}

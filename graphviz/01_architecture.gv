@@ -1,0 +1,70 @@
+digraph architecture {
+	bgcolor=white compound=true fontcolor="#17324D" fontname=Helvetica fontsize=18 labeljust=l labelloc=t nodesep=0.43 pad=0.28 rankdir=TB ranksep=0.74 splines=polyline
+	node [color="#17324D" fillcolor="#DCEAF5" fontcolor="#17324D" fontname=Helvetica fontsize=11 margin="0.15,0.11" penwidth=1.1 shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 color="#526779" fontcolor="#17324D" fontname=Helvetica fontsize=9 penwidth=1.2]
+	label="01  Overall codebase architecture | one native iPhone / iPad app"
+	user [label="Parent / fencer
+SwiftUI actions" fillcolor="#EFF2F4" shape=box]
+	subgraph cluster_ui {
+		color="#8AA4B8" fontcolor="#17324D" fontname="Helvetica-Bold" fontsize=13 label=Presentation margin=16 penwidth=1.4 style=rounded
+		root [label="AppRootView
+launch + scene activation" fillcolor="#DCEAF5" shape=box]
+		views [label="Tournament, schedule, bout,
+timeline, player, settings views" fillcolor="#DCEAF5" shape=box]
+		vm [label="AppViewModel
+UI state + workflow orchestration" fillcolor="#ECE4F5" shape=box]
+		review [label="ScheduleReviewViewModel
+editable, unconfirmed drafts" fillcolor="#ECE4F5" shape=box]
+	}
+	subgraph cluster_services {
+		color="#8AA4B8" fontcolor="#17324D" fontname="Helvetica-Bold" fontsize=13 label="On-device application services" margin=16 penwidth=1.4 style=rounded
+		schedule [label="Schedule source -> Vision recognition
+-> deterministic parser -> Foundation Model
+-> proposal validator" fillcolor="#DDF0E5" shape=box]
+		import [label="BoutImportCoordinator
+PhotoLibraryService" fillcolor="#DDF0E5" shape=box]
+		editing [label="ClipWorkflow -> VideoEditingService
+AVFoundation export" fillcolor="#DDF0E5" shape=box]
+		upload [label="ClipUploadQueue
+CloudMetadataService + CloudAssetService" fillcolor="#DDF0E5" shape=box]
+		play [label="BoutPlaybackQueue + MediaPlayerModel
+ClipDownloadCoordinator + cache" fillcolor="#DDF0E5" shape=box]
+	}
+	subgraph cluster_local {
+		color="#8AA4B8" fontcolor="#17324D" fontname="Helvetica-Bold" fontsize=13 label="Device-local state" margin=16 penwidth=1.4 style=rounded
+		repo [label="LocalRepository / SwiftData
+settings, tournaments, bouts, source links, clips" fillcolor="#FFF0D6" shape=box]
+		files [label="App support files
+pending exports + downloaded clips" fillcolor="#FFF0D6" shape=box]
+		drafts [label="Screenshot bytes + OCR/proposal
+in memory until confirmation" fillcolor="#FFF0D6" shape=box]
+	}
+	subgraph cluster_external {
+		color="#8AA4B8" fontcolor="#17324D" fontname="Helvetica-Bold" fontsize=13 label="Apple-managed services" margin=16 penwidth=1.4 style=rounded
+		photos [label="Photos / iCloud Photos
+original videos; read on explicit import/open" fillcolor="#EFF2F4" shape=box]
+		cloud [label="Private CloudKit
+confirmed metadata + edited CKAssets" fillcolor="#EFF2F4" shape=box]
+	}
+	user -> views [label="tap / select / edit"]
+	root -> vm [label="load, refresh"]
+	views -> vm [label="commands / observed state"]
+	views -> review [label="schedule review"]
+	review -> schedule [label=extract]
+	review -> drafts [label="temporary proposal"]
+	review -> vm [label="confirm drafts"]
+	vm -> repo [label=CRUD]
+	vm -> import [label="prepare / confirm / open"]
+	import -> photos [label="read video + IDs"]
+	import -> repo [label="source links"]
+	vm -> editing [label="trim / export"]
+	editing -> files [label="local clip"]
+	editing -> repo [label="clip status"]
+	vm -> upload [label="sync / retry"]
+	upload -> cloud [label="metadata + CKAsset" dir=both]
+	upload -> repo [label="sync state" dir=both]
+	views -> play [label="player controls"]
+	vm -> play [label="clip URL / unload"]
+	play -> cloud [label="download clip"]
+	play -> files [label="cache / replay" dir=both]
+}

@@ -1,0 +1,3028 @@
+[
+  {
+    "kind": "begin",
+    "label": "welcome",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 1,
+    "time": 1791590429.703246
+  },
+  {
+    "kind": "end",
+    "label": "welcome",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 1,
+    "time": 1791590431.735569
+  },
+  {
+    "kind": "begin",
+    "label": "enter-fencer",
+    "lesson": 1,
+    "rect": [
+      40,
+      193.5,
+      1100,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 2,
+    "time": 1791590432.81161
+  },
+  {
+    "kind": "tap",
+    "label": "enter-fencer",
+    "lesson": 1,
+    "rect": [
+      40,
+      193.5,
+      1100,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 2,
+    "time": 1791590433.561565
+  },
+  {
+    "kind": "end",
+    "label": "enter-fencer",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 2,
+    "time": 1791590435.6440969
+  },
+  {
+    "kind": "typing",
+    "label": "enter-fencer",
+    "lesson": 1,
+    "rect": [
+      40,
+      193.5,
+      1100,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 2,
+    "time": 1791590435.6844769
+  },
+  {
+    "kind": "typed",
+    "label": "enter-fencer",
+    "lesson": 1,
+    "rect": [
+      40,
+      193.5,
+      1100,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 2,
+    "time": 1791590436.89852
+  },
+  {
+    "kind": "begin",
+    "label": "continue-setup",
+    "lesson": 1,
+    "rect": [
+      20,
+      375.5,
+      1140,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 3,
+    "time": 1791590438.032596
+  },
+  {
+    "kind": "tap",
+    "label": "continue-setup",
+    "lesson": 1,
+    "rect": [
+      20,
+      375.5,
+      1140,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 3,
+    "time": 1791590438.7811189
+  },
+  {
+    "kind": "end",
+    "label": "continue-setup",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 3,
+    "time": 1791590440.6956291
+  },
+  {
+    "kind": "begin",
+    "label": "new-tournament",
+    "lesson": 1,
+    "rect": [
+      218.5,
+      36,
+      47,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 4,
+    "time": 1791590441.817717
+  },
+  {
+    "kind": "tap",
+    "label": "new-tournament",
+    "lesson": 1,
+    "rect": [
+      218.5,
+      36,
+      47,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 4,
+    "time": 1791590442.5921211
+  },
+  {
+    "kind": "end",
+    "label": "new-tournament",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 4,
+    "time": 1791590445.246035
+  },
+  {
+    "kind": "begin",
+    "label": "tournament-name",
+    "lesson": 1,
+    "rect": [
+      340,
+      211,
+      500,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 5,
+    "time": 1791590446.4213428
+  },
+  {
+    "kind": "tap",
+    "label": "tournament-name",
+    "lesson": 1,
+    "rect": [
+      340,
+      211,
+      500,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 5,
+    "time": 1791590447.219427
+  },
+  {
+    "kind": "end",
+    "label": "tournament-name",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 5,
+    "time": 1791590449.436357
+  },
+  {
+    "kind": "typing",
+    "label": "tournament-name",
+    "lesson": 1,
+    "rect": [
+      340,
+      173,
+      500,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 5,
+    "time": 1791590449.512466
+  },
+  {
+    "kind": "typed",
+    "label": "tournament-name",
+    "lesson": 1,
+    "rect": [
+      340,
+      173,
+      500,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 5,
+    "time": 1791590450.9580379
+  },
+  {
+    "kind": "begin",
+    "label": "save-tournament",
+    "lesson": 1,
+    "rect": [
+      803.5,
+      56,
+      62.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 6,
+    "time": 1791590452.174181
+  },
+  {
+    "kind": "tap",
+    "label": "save-tournament",
+    "lesson": 1,
+    "rect": [
+      803.5,
+      56,
+      62.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 6,
+    "time": 1791590452.989259
+  },
+  {
+    "kind": "end",
+    "label": "save-tournament",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 6,
+    "time": 1791590455.797319
+  },
+  {
+    "kind": "begin",
+    "label": "tournament-ready",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 7,
+    "time": 1791590455.8518229
+  },
+  {
+    "kind": "end",
+    "label": "tournament-ready",
+    "lesson": 1,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 7,
+    "time": 1791590457.911588
+  },
+  {
+    "kind": "begin",
+    "label": "import-schedule",
+    "lesson": 2,
+    "rect": [
+      1026.5,
+      36,
+      139.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 8,
+    "time": 1791590459.047765
+  },
+  {
+    "kind": "tap",
+    "label": "import-schedule",
+    "lesson": 2,
+    "rect": [
+      1026.5,
+      36,
+      139.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 8,
+    "time": 1791590459.845344
+  },
+  {
+    "kind": "end",
+    "label": "import-schedule",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 8,
+    "time": 1791590462.491057
+  },
+  {
+    "kind": "begin",
+    "label": "open-screenshot-photos",
+    "lesson": 2,
+    "rect": [
+      320,
+      236.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 9,
+    "time": 1791590463.6850991
+  },
+  {
+    "kind": "tap",
+    "label": "open-screenshot-photos",
+    "lesson": 2,
+    "rect": [
+      320,
+      236.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 9,
+    "time": 1791590464.5021338
+  },
+  {
+    "kind": "end",
+    "label": "open-screenshot-photos",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 9,
+    "time": 1791590467.159659
+  },
+  {
+    "kind": "begin",
+    "label": "select-screenshot",
+    "lesson": 2,
+    "rect": [
+      493.00000076293946,
+      358.5,
+      89.59999847412104,
+      89.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 10,
+    "time": 1791590473.3708339
+  },
+  {
+    "kind": "tap",
+    "label": "select-screenshot",
+    "lesson": 2,
+    "rect": [
+      493.00000076293946,
+      358.5,
+      89.59999847412104,
+      89.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 10,
+    "time": 1791590474.4774132
+  },
+  {
+    "kind": "end",
+    "label": "select-screenshot",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 10,
+    "time": 1791590477.123424
+  },
+  {
+    "kind": "begin",
+    "label": "add-screenshot",
+    "lesson": 2,
+    "rect": [
+      897,
+      138,
+      36,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 11,
+    "time": 1791590479.015418
+  },
+  {
+    "kind": "tap",
+    "label": "add-screenshot",
+    "lesson": 2,
+    "rect": [
+      897,
+      138,
+      36,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 11,
+    "time": 1791590480.1242461
+  },
+  {
+    "kind": "end",
+    "label": "add-screenshot",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 11,
+    "time": 1791590482.877552
+  },
+  {
+    "kind": "begin",
+    "label": "review-schedule",
+    "lesson": 2,
+    "rect": [
+      300,
+      80,
+      580,
+      650
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 12,
+    "time": 1791590486.102497
+  },
+  {
+    "kind": "end",
+    "label": "review-schedule",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 12,
+    "time": 1791590490.8946738
+  },
+  {
+    "kind": "begin",
+    "label": "confirm-schedule",
+    "lesson": 2,
+    "rect": [
+      300,
+      663.5,
+      580,
+      66.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 13,
+    "time": 1791590492.155909
+  },
+  {
+    "kind": "tap",
+    "label": "confirm-schedule",
+    "lesson": 2,
+    "rect": [
+      300,
+      663.5,
+      580,
+      66.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 13,
+    "time": 1791590492.9943218
+  },
+  {
+    "kind": "end",
+    "label": "confirm-schedule",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 13,
+    "time": 1791590495.372837
+  },
+  {
+    "kind": "begin",
+    "label": "schedule-ready",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 14,
+    "time": 1791590496.4831228
+  },
+  {
+    "kind": "end",
+    "label": "schedule-ready",
+    "lesson": 2,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 14,
+    "time": 1791590498.544355
+  },
+  {
+    "kind": "begin",
+    "label": "manual-open",
+    "lesson": 3,
+    "rect": [
+      1026.5,
+      36,
+      139.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 15,
+    "time": 1791590499.708606
+  },
+  {
+    "kind": "tap",
+    "label": "manual-open",
+    "lesson": 3,
+    "rect": [
+      1026.5,
+      36,
+      139.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 15,
+    "time": 1791590500.5090342
+  },
+  {
+    "kind": "end",
+    "label": "manual-open",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 15,
+    "time": 1791590503.162571
+  },
+  {
+    "kind": "begin",
+    "label": "manual-entry",
+    "lesson": 3,
+    "rect": [
+      737.5,
+      94,
+      128.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 16,
+    "time": 1791590504.363902
+  },
+  {
+    "kind": "tap",
+    "label": "manual-entry",
+    "lesson": 3,
+    "rect": [
+      737.5,
+      94,
+      128.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 16,
+    "time": 1791590505.182234
+  },
+  {
+    "kind": "end",
+    "label": "manual-entry",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 16,
+    "time": 1791590507.8651981
+  },
+  {
+    "kind": "begin",
+    "label": "add-manual-bout",
+    "lesson": 3,
+    "rect": [
+      320,
+      628.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 17,
+    "time": 1791590509.106173
+  },
+  {
+    "kind": "tap",
+    "label": "add-manual-bout",
+    "lesson": 3,
+    "rect": [
+      320,
+      628.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 17,
+    "time": 1791590509.90414
+  },
+  {
+    "kind": "end",
+    "label": "add-manual-bout",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 17,
+    "time": 1791590512.156398
+  },
+  {
+    "kind": "begin",
+    "label": "manual-opponent",
+    "lesson": 3,
+    "rect": [
+      360,
+      515.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 18,
+    "time": 1791590513.5012732
+  },
+  {
+    "kind": "tap",
+    "label": "manual-opponent",
+    "lesson": 3,
+    "rect": [
+      360,
+      515.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 18,
+    "time": 1791590514.3391352
+  },
+  {
+    "kind": "end",
+    "label": "manual-opponent",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 18,
+    "time": 1791590516.633178
+  },
+  {
+    "kind": "typing",
+    "label": "manual-opponent",
+    "lesson": 3,
+    "rect": [
+      360,
+      301.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 18,
+    "time": 1791590516.789535
+  },
+  {
+    "kind": "typed",
+    "label": "manual-opponent",
+    "lesson": 3,
+    "rect": [
+      360,
+      301.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 18,
+    "time": 1791590518.2670732
+  },
+  {
+    "kind": "begin",
+    "label": "manual-number",
+    "lesson": 3,
+    "rect": [
+      360,
+      353.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 19,
+    "time": 1791590519.686497
+  },
+  {
+    "kind": "tap",
+    "label": "manual-number",
+    "lesson": 3,
+    "rect": [
+      360,
+      353.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 19,
+    "time": 1791590520.579134
+  },
+  {
+    "kind": "end",
+    "label": "manual-number",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 19,
+    "time": 1791590522.747909
+  },
+  {
+    "kind": "typing",
+    "label": "manual-number",
+    "lesson": 3,
+    "rect": [
+      360,
+      203.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 19,
+    "time": 1791590522.8969688
+  },
+  {
+    "kind": "typed",
+    "label": "manual-number",
+    "lesson": 3,
+    "rect": [
+      360,
+      203.5,
+      448,
+      22
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 19,
+    "time": 1791590524.681896
+  },
+  {
+    "kind": "begin",
+    "label": "confirm-manual",
+    "lesson": 3,
+    "rect": [
+      300,
+      331.5,
+      580,
+      66.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 20,
+    "time": 1791590525.9562669
+  },
+  {
+    "kind": "tap",
+    "label": "confirm-manual",
+    "lesson": 3,
+    "rect": [
+      300,
+      331.5,
+      580,
+      66.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 20,
+    "time": 1791590526.803965
+  },
+  {
+    "kind": "end",
+    "label": "confirm-manual",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 20,
+    "time": 1791590529.20604
+  },
+  {
+    "kind": "begin",
+    "label": "manual-ready",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 21,
+    "time": 1791590530.274313
+  },
+  {
+    "kind": "end",
+    "label": "manual-ready",
+    "lesson": 3,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 21,
+    "time": 1791590532.337429
+  },
+  {
+    "kind": "begin",
+    "label": "choose-bout",
+    "lesson": 4,
+    "rect": [
+      370,
+      419,
+      718,
+      53.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 22,
+    "time": 1791590533.5180259
+  },
+  {
+    "kind": "tap",
+    "label": "choose-bout",
+    "lesson": 4,
+    "rect": [
+      370,
+      419,
+      718,
+      53.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 22,
+    "time": 1791590534.322782
+  },
+  {
+    "kind": "end",
+    "label": "choose-bout",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 22,
+    "time": 1791590537.0253239
+  },
+  {
+    "kind": "begin",
+    "label": "import-videos",
+    "lesson": 4,
+    "rect": [
+      320,
+      554.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 23,
+    "time": 1791590538.265061
+  },
+  {
+    "kind": "tap",
+    "label": "import-videos",
+    "lesson": 4,
+    "rect": [
+      320,
+      554.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 23,
+    "time": 1791590539.098813
+  },
+  {
+    "kind": "end",
+    "label": "import-videos",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 23,
+    "time": 1791590541.758061
+  },
+  {
+    "kind": "begin",
+    "label": "select-recordings",
+    "lesson": 4,
+    "rect": [
+      320,
+      258,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 24,
+    "time": 1791590543.040986
+  },
+  {
+    "kind": "tap",
+    "label": "select-recordings",
+    "lesson": 4,
+    "rect": [
+      320,
+      258,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 24,
+    "time": 1791590543.894166
+  },
+  {
+    "kind": "end",
+    "label": "select-recordings",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 24,
+    "time": 1791590546.435138
+  },
+  {
+    "kind": "begin",
+    "label": "select-video-one",
+    "lesson": 4,
+    "rect": [
+      493.00000076293946,
+      358.5,
+      89.59999847412104,
+      89.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 25,
+    "time": 1791590551.4908519
+  },
+  {
+    "kind": "tap",
+    "label": "select-video-one",
+    "lesson": 4,
+    "rect": [
+      493.00000076293946,
+      358.5,
+      89.59999847412104,
+      89.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 25,
+    "time": 1791590552.576
+  },
+  {
+    "kind": "end",
+    "label": "select-video-one",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 25,
+    "time": 1791590555.159155
+  },
+  {
+    "kind": "begin",
+    "label": "select-video-two",
+    "lesson": 4,
+    "rect": [
+      584.1000007629395,
+      358.5,
+      89.5999984741211,
+      89.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 26,
+    "time": 1791590556.945034
+  },
+  {
+    "kind": "tap",
+    "label": "select-video-two",
+    "lesson": 4,
+    "rect": [
+      584.1000007629395,
+      358.5,
+      89.5999984741211,
+      89.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 26,
+    "time": 1791590558.024261
+  },
+  {
+    "kind": "end",
+    "label": "select-video-two",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 26,
+    "time": 1791590560.612586
+  },
+  {
+    "kind": "begin",
+    "label": "add-selected-videos",
+    "lesson": 4,
+    "rect": [
+      897,
+      138,
+      36,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 27,
+    "time": 1791590562.574055
+  },
+  {
+    "kind": "tap",
+    "label": "add-selected-videos",
+    "lesson": 4,
+    "rect": [
+      897,
+      138,
+      36,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 27,
+    "time": 1791590563.706664
+  },
+  {
+    "kind": "end",
+    "label": "add-selected-videos",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 27,
+    "time": 1791590566.082788
+  },
+  {
+    "kind": "begin",
+    "label": "allow-photos",
+    "lesson": 4,
+    "rect": [
+      446,
+      618,
+      288,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 28,
+    "time": 1791590567.251638
+  },
+  {
+    "kind": "tap",
+    "label": "allow-photos",
+    "lesson": 4,
+    "rect": [
+      446,
+      618,
+      288,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 28,
+    "time": 1791590568.061399
+  },
+  {
+    "kind": "end",
+    "label": "allow-photos",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 28,
+    "time": 1791590570.2307239
+  },
+  {
+    "kind": "begin",
+    "label": "review-video-import",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 29,
+    "time": 1791590571.389482
+  },
+  {
+    "kind": "end",
+    "label": "review-video-import",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 29,
+    "time": 1791590573.4817991
+  },
+  {
+    "kind": "begin",
+    "label": "confirm-video-import",
+    "lesson": 4,
+    "rect": [
+      748,
+      104,
+      118,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 30,
+    "time": 1791590574.7787452
+  },
+  {
+    "kind": "tap",
+    "label": "confirm-video-import",
+    "lesson": 4,
+    "rect": [
+      748,
+      104,
+      118,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 30,
+    "time": 1791590575.637835
+  },
+  {
+    "kind": "end",
+    "label": "confirm-video-import",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 30,
+    "time": 1791590578.1128678
+  },
+  {
+    "kind": "begin",
+    "label": "recordings-ready",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 31,
+    "time": 1791590579.2562618
+  },
+  {
+    "kind": "end",
+    "label": "recordings-ready",
+    "lesson": 4,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 31,
+    "time": 1791590581.314585
+  },
+  {
+    "kind": "begin",
+    "label": "open-editor",
+    "lesson": 5,
+    "rect": [
+      320,
+      502.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 32,
+    "time": 1791590582.5634952
+  },
+  {
+    "kind": "tap",
+    "label": "open-editor",
+    "lesson": 5,
+    "rect": [
+      320,
+      502.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 32,
+    "time": 1791590583.402781
+  },
+  {
+    "kind": "end",
+    "label": "open-editor",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 32,
+    "time": 1791590586.079619
+  },
+  {
+    "kind": "begin",
+    "label": "preview-original",
+    "lesson": 5,
+    "rect": [
+      75,
+      572,
+      44,
+      44
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 33,
+    "time": 1791590588.5077891
+  },
+  {
+    "kind": "tap",
+    "label": "preview-original",
+    "lesson": 5,
+    "rect": [
+      75,
+      572,
+      44,
+      44
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 33,
+    "time": 1791590589.364286
+  },
+  {
+    "kind": "end",
+    "label": "preview-original",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 33,
+    "time": 1791590591.3562322
+  },
+  {
+    "kind": "begin",
+    "label": "pause-original",
+    "lesson": 5,
+    "rect": [
+      75,
+      572,
+      46.5,
+      44
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 34,
+    "time": 1791590594.667015
+  },
+  {
+    "kind": "tap",
+    "label": "pause-original",
+    "lesson": 5,
+    "rect": [
+      75,
+      572,
+      46.5,
+      44
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 34,
+    "time": 1791590595.495832
+  },
+  {
+    "kind": "end",
+    "label": "pause-original",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 34,
+    "time": 1791590597.526686
+  },
+  {
+    "kind": "begin",
+    "label": "show-trim-controls",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 35,
+    "time": 1791590597.576912
+  },
+  {
+    "kind": "end",
+    "label": "show-trim-controls",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 35,
+    "time": 1791590599.7628288
+  },
+  {
+    "kind": "begin",
+    "label": "first-clip-start",
+    "lesson": 5,
+    "rect": [
+      91,
+      410.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 36,
+    "time": 1791590600.99254
+  },
+  {
+    "kind": "drag",
+    "label": "first-clip-start",
+    "lesson": 5,
+    "rect": [
+      91,
+      410.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 36,
+    "time": 1791590601.848363
+  },
+  {
+    "kind": "end",
+    "label": "first-clip-start",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 36,
+    "time": 1791590604.759325
+  },
+  {
+    "kind": "begin",
+    "label": "first-clip-end",
+    "lesson": 5,
+    "rect": [
+      91,
+      479.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 37,
+    "time": 1791590605.997383
+  },
+  {
+    "kind": "drag",
+    "label": "first-clip-end",
+    "lesson": 5,
+    "rect": [
+      91,
+      479.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 37,
+    "time": 1791590606.859168
+  },
+  {
+    "kind": "end",
+    "label": "first-clip-end",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 37,
+    "time": 1791590610.653782
+  },
+  {
+    "kind": "begin",
+    "label": "save-first-clip",
+    "lesson": 5,
+    "rect": [
+      91,
+      536.5,
+      94.5,
+      34.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 38,
+    "time": 1791590611.931831
+  },
+  {
+    "kind": "tap",
+    "label": "save-first-clip",
+    "lesson": 5,
+    "rect": [
+      91,
+      536.5,
+      94.5,
+      34.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 38,
+    "time": 1791590612.792122
+  },
+  {
+    "kind": "end",
+    "label": "save-first-clip",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 38,
+    "time": 1791590614.818145
+  },
+  {
+    "kind": "begin",
+    "label": "second-clip-start",
+    "lesson": 5,
+    "rect": [
+      91,
+      410.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 39,
+    "time": 1791590617.1201649
+  },
+  {
+    "kind": "drag",
+    "label": "second-clip-start",
+    "lesson": 5,
+    "rect": [
+      91,
+      410.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 39,
+    "time": 1791590617.980267
+  },
+  {
+    "kind": "end",
+    "label": "second-clip-start",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 39,
+    "time": 1791590621.579592
+  },
+  {
+    "kind": "begin",
+    "label": "second-clip-end",
+    "lesson": 5,
+    "rect": [
+      91,
+      479.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 40,
+    "time": 1791590622.8157
+  },
+  {
+    "kind": "drag",
+    "label": "second-clip-end",
+    "lesson": 5,
+    "rect": [
+      91,
+      479.5,
+      998,
+      31
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 40,
+    "time": 1791590623.678642
+  },
+  {
+    "kind": "end",
+    "label": "second-clip-end",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 40,
+    "time": 1791590627.268989
+  },
+  {
+    "kind": "begin",
+    "label": "save-second-clip",
+    "lesson": 5,
+    "rect": [
+      91,
+      536.5,
+      94.5,
+      34.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 41,
+    "time": 1791590628.57232
+  },
+  {
+    "kind": "tap",
+    "label": "save-second-clip",
+    "lesson": 5,
+    "rect": [
+      91,
+      536.5,
+      94.5,
+      34.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 41,
+    "time": 1791590629.425221
+  },
+  {
+    "kind": "end",
+    "label": "save-second-clip",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 41,
+    "time": 1791590631.477741
+  },
+  {
+    "kind": "begin",
+    "label": "show-review-clips",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 42,
+    "time": 1791590633.571533
+  },
+  {
+    "kind": "end",
+    "label": "show-review-clips",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 42,
+    "time": 1791590635.484191
+  },
+  {
+    "kind": "begin",
+    "label": "favorite-first-clip",
+    "lesson": 5,
+    "rect": [
+      945,
+      637,
+      44,
+      44
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 43,
+    "time": 1791590636.854978
+  },
+  {
+    "kind": "tap",
+    "label": "favorite-first-clip",
+    "lesson": 5,
+    "rect": [
+      945,
+      637,
+      44,
+      44
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 43,
+    "time": 1791590637.712305
+  },
+  {
+    "kind": "end",
+    "label": "favorite-first-clip",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 43,
+    "time": 1791590639.741117
+  },
+  {
+    "kind": "begin",
+    "label": "clip-star-meaning",
+    "lesson": 5,
+    "rect": [
+      945,
+      637,
+      44,
+      44
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 44,
+    "time": 1791590639.918217
+  },
+  {
+    "kind": "end",
+    "label": "clip-star-meaning",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 44,
+    "time": 1791590642.008508
+  },
+  {
+    "kind": "begin",
+    "label": "close-editor",
+    "lesson": 5,
+    "rect": [
+      73.00000000000001,
+      84,
+      64.49999999999999,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 45,
+    "time": 1791590643.3246322
+  },
+  {
+    "kind": "tap",
+    "label": "close-editor",
+    "lesson": 5,
+    "rect": [
+      73.00000000000001,
+      84,
+      64.49999999999999,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 45,
+    "time": 1791590644.187998
+  },
+  {
+    "kind": "end",
+    "label": "close-editor",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 45,
+    "time": 1791590646.99819
+  },
+  {
+    "kind": "begin",
+    "label": "bout-star-meaning",
+    "lesson": 5,
+    "rect": [
+      340,
+      251,
+      24,
+      23
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 46,
+    "time": 1791590647.095477
+  },
+  {
+    "kind": "end",
+    "label": "bout-star-meaning",
+    "lesson": 5,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 46,
+    "time": 1791590649.173944
+  },
+  {
+    "kind": "begin",
+    "label": "open-clips-for-delete",
+    "lesson": 6,
+    "rect": [
+      320,
+      502.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 47,
+    "time": 1791590650.489946
+  },
+  {
+    "kind": "tap",
+    "label": "open-clips-for-delete",
+    "lesson": 6,
+    "rect": [
+      320,
+      502.5,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 47,
+    "time": 1791590651.329708
+  },
+  {
+    "kind": "end",
+    "label": "open-clips-for-delete",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 47,
+    "time": 1791590653.999593
+  },
+  {
+    "kind": "begin",
+    "label": "find-clips-for-delete",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 48,
+    "time": 1791590654.0871248
+  },
+  {
+    "kind": "end",
+    "label": "find-clips-for-delete",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 48,
+    "time": 1791590656.933955
+  },
+  {
+    "kind": "begin",
+    "label": "show-clips-for-delete",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 49,
+    "time": 1791590657.004696
+  },
+  {
+    "kind": "end",
+    "label": "show-clips-for-delete",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 49,
+    "time": 1791590658.928401
+  },
+  {
+    "kind": "begin",
+    "label": "delete-first-clip",
+    "lesson": 6,
+    "rect": [
+      1055.5,
+      649,
+      49.5,
+      20.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 50,
+    "time": 1791590660.230225
+  },
+  {
+    "kind": "tap",
+    "label": "delete-first-clip",
+    "lesson": 6,
+    "rect": [
+      1055.5,
+      649,
+      49.5,
+      20.5
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 50,
+    "time": 1791590661.095004
+  },
+  {
+    "kind": "end",
+    "label": "delete-first-clip",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 50,
+    "time": 1791590663.5162668
+  },
+  {
+    "kind": "begin",
+    "label": "delete-warning",
+    "lesson": 6,
+    "rect": [
+      462,
+      166.5,
+      256,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 51,
+    "time": 1791590663.66009
+  },
+  {
+    "kind": "end",
+    "label": "delete-warning",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 51,
+    "time": 1791590665.758136
+  },
+  {
+    "kind": "begin",
+    "label": "confirm-clip-delete",
+    "lesson": 6,
+    "rect": [
+      462,
+      166.5,
+      256,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 52,
+    "time": 1791590667.039072
+  },
+  {
+    "kind": "tap",
+    "label": "confirm-clip-delete",
+    "lesson": 6,
+    "rect": [
+      462,
+      166.5,
+      256,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 52,
+    "time": 1791590667.87305
+  },
+  {
+    "kind": "end",
+    "label": "confirm-clip-delete",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 52,
+    "time": 1791590670.2584162
+  },
+  {
+    "kind": "begin",
+    "label": "one-clip-remains",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 53,
+    "time": 1791590670.38264
+  },
+  {
+    "kind": "end",
+    "label": "one-clip-remains",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 53,
+    "time": 1791590672.475222
+  },
+  {
+    "kind": "begin",
+    "label": "close-after-delete",
+    "lesson": 6,
+    "rect": [
+      73.00000000000001,
+      84,
+      64.49999999999999,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 54,
+    "time": 1791590673.7904692
+  },
+  {
+    "kind": "tap",
+    "label": "close-after-delete",
+    "lesson": 6,
+    "rect": [
+      73.00000000000001,
+      84,
+      64.49999999999999,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 54,
+    "time": 1791590674.656736
+  },
+  {
+    "kind": "end",
+    "label": "close-after-delete",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 54,
+    "time": 1791590677.450066
+  },
+  {
+    "kind": "begin",
+    "label": "bout-no-favorite",
+    "lesson": 6,
+    "rect": [
+      340,
+      251,
+      24,
+      23
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 55,
+    "time": 1791590677.5496712
+  },
+  {
+    "kind": "end",
+    "label": "bout-no-favorite",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 55,
+    "time": 1791590679.631763
+  },
+  {
+    "kind": "begin",
+    "label": "close-bout",
+    "lesson": 6,
+    "rect": [
+      314,
+      94,
+      76.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 56,
+    "time": 1791590680.940072
+  },
+  {
+    "kind": "tap",
+    "label": "close-bout",
+    "lesson": 6,
+    "rect": [
+      314,
+      94,
+      76.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 56,
+    "time": 1791590681.780952
+  },
+  {
+    "kind": "end",
+    "label": "close-bout",
+    "lesson": 6,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 56,
+    "time": 1791590684.410574
+  },
+  {
+    "kind": "begin",
+    "label": "open-fencer-settings",
+    "lesson": 7,
+    "rect": [
+      14.000000000000004,
+      36,
+      76.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 57,
+    "time": 1791590685.59475
+  },
+  {
+    "kind": "tap",
+    "label": "open-fencer-settings",
+    "lesson": 7,
+    "rect": [
+      14.000000000000004,
+      36,
+      76.5,
+      36
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 57,
+    "time": 1791590686.397407
+  },
+  {
+    "kind": "end",
+    "label": "open-fencer-settings",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 57,
+    "time": 1791590689.087418
+  },
+  {
+    "kind": "begin",
+    "label": "storage-counters",
+    "lesson": 7,
+    "rect": [
+      320,
+      480,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 58,
+    "time": 1791590689.174505
+  },
+  {
+    "kind": "end",
+    "label": "storage-counters",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 58,
+    "time": 1791590691.250345
+  },
+  {
+    "kind": "begin",
+    "label": "clear-local-copies",
+    "lesson": 7,
+    "rect": [
+      320,
+      584,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 59,
+    "time": 1791590692.474148
+  },
+  {
+    "kind": "tap",
+    "label": "clear-local-copies",
+    "lesson": 7,
+    "rect": [
+      320,
+      584,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 59,
+    "time": 1791590693.270129
+  },
+  {
+    "kind": "end",
+    "label": "clear-local-copies",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 59,
+    "time": 1791590695.5989141
+  },
+  {
+    "kind": "begin",
+    "label": "storage-warning",
+    "lesson": 7,
+    "rect": [
+      889,
+      527.5,
+      256,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 60,
+    "time": 1791590695.673058
+  },
+  {
+    "kind": "end",
+    "label": "storage-warning",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 60,
+    "time": 1791590697.75189
+  },
+  {
+    "kind": "begin",
+    "label": "confirm-clear-copies",
+    "lesson": 7,
+    "rect": [
+      889,
+      527.5,
+      256,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 61,
+    "time": 1791590698.938806
+  },
+  {
+    "kind": "tap",
+    "label": "confirm-clear-copies",
+    "lesson": 7,
+    "rect": [
+      889,
+      527.5,
+      256,
+      48
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 61,
+    "time": 1791590699.751225
+  },
+  {
+    "kind": "end",
+    "label": "confirm-clear-copies",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 61,
+    "time": 1791590702.0655642
+  },
+  {
+    "kind": "begin",
+    "label": "storage-result",
+    "lesson": 7,
+    "rect": [
+      320,
+      480,
+      540,
+      52
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 62,
+    "time": 1791590702.1545758
+  },
+  {
+    "kind": "end",
+    "label": "storage-result",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 62,
+    "time": 1791590704.2315001
+  },
+  {
+    "kind": "begin",
+    "label": "finish",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 63,
+    "time": 1791590704.317352
+  },
+  {
+    "kind": "end",
+    "label": "finish",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 63,
+    "time": 1791590706.392211
+  },
+  {
+    "kind": "complete",
+    "label": "all-seven-lessons",
+    "lesson": 7,
+    "rect": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "screen": [
+      1180,
+      820
+    ],
+    "step": 63,
+    "time": 1791590706.431724
+  }
+]

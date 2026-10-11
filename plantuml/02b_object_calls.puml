@@ -1,0 +1,121 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #0a0e1a
+skinparam shadowing false
+skinparam defaultFontName Helvetica
+skinparam defaultFontColor #c8d8f0
+skinparam ArrowColor #2d7aff
+skinparam ArrowFontColor #c8d8f0
+skinparam TitleFontColor #c8d8f0
+skinparam packageBackgroundColor #0f1528
+skinparam packageBorderColor #1e2d4a
+skinparam packageFontColor #c8d8f0
+skinparam rectangleBackgroundColor #0f1528
+skinparam rectangleFontColor #c8d8f0
+skinparam classBackgroundColor #0f1528
+skinparam classFontColor #c8d8f0
+skinparam RoundCorner 12
+skinparam linetype polyline
+hide stereotype
+hide circle
+title 02B  Object calls | production cross-component methods
+skinparam rectangle<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_blue>> {
+  BackgroundColor #0f1528
+  BorderColor #2d7aff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam class<<theme_cyan>> {
+  BackgroundColor #0f1528
+  BorderColor #00d4ff
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam class<<theme_green>> {
+  BackgroundColor #0f1528
+  BorderColor #00e5a0
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam class<<theme_orange>> {
+  BackgroundColor #0f1528
+  BorderColor #ff8c42
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam class<<theme_red>> {
+  BackgroundColor #0f1528
+  BorderColor #ff4d6a
+  FontColor #c8d8f0
+}
+skinparam rectangle<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+skinparam class<<theme_dim>> {
+  BackgroundColor #0f1528
+  BorderColor #4a6080
+  FontColor #c8d8f0
+}
+rectangle "FencingVideoAnalysisApp\nAppDependencies.make -> AppRootView" as entry <<theme_dim>>
+rectangle "SwiftUI views\nforms, schedule, bout, timeline, player, settings" as ui <<theme_blue>>
+rectangle "AppViewModel\nload / refreshCloud\nsaveTournament / confirmSchedule / addBout*\nprepare/confirmRecordings / createClip\nplayableURL / delete / offload" as vm <<theme_cyan>>
+rectangle "ScheduleReviewViewModel\nextract / addDraft / removeDraft / moveDraft" as review <<theme_blue>>
+rectangle "Schedule services\nrecognize -> parse -> propose -> reconcile" as schedule <<theme_green>>
+rectangle "BoutImportCoordinator\nprepareSelections / confirm / linkPendingCloudPhotos\nsourceAsset / move / remove" as bout <<theme_green>>
+rectangle "ClipWorkflow\ncreateClip / retry / delete / clips\nunloadUploadedClips / clearLocalClipCopies" as clip <<theme_green>>
+rectangle "ClipUploadQueue\nresumePending / upload / retry / deleteCloudCopyIfNeeded" as queue <<theme_green>>
+rectangle "CloudMetadataService\nsynchronize / synchronizeDeletions / queueDeletion\nmapper pendingRecords / apply" as cloud <<theme_green>>
+rectangle "CloudAssetService\nsaveExportedClip / downloadClip / deleteClip" as assets <<theme_green>>
+rectangle "ClipDownloadCoordinator\nresolve / clearCache / removeCachedCopies" as download <<theme_green>>
+rectangle "BoutPlaybackQueue + MediaPlayerModel\nnext / previous / finish / play / seek / scrub" as player <<theme_green>>
+rectangle "LocalRepository\ninsert / fetch / delete / saveChanges\ntournaments / bouts / sourceRecordings / reviewClips" as repo <<theme_orange>>
+rectangle "PhotoLibraryService\nimportSelections / cloudIdentifiers / videoAsset" as photos <<theme_dim>>
+rectangle "VideoEditingService.export" as editor <<theme_dim>>
+rectangle "Private CloudKit + Photos\nframework boundaries" as ck <<theme_dim>>
+entry --> ui
+ui --> vm : commands
+ui --> review : schedule
+ui --> player : playback controls
+review --> schedule
+review --> vm : confirmed drafts
+vm --> bout
+vm --> clip
+vm --> queue
+vm --> cloud
+vm --> download
+vm --> repo
+bout --> photos
+bout --> repo
+clip --> editor
+clip --> repo
+queue --> cloud
+queue --> assets
+download --> assets
+cloud --> repo
+photos --> ck : Photos
+assets --> ck : CKAsset
+cloud --> ck : CKSyncEngine
+@enduml

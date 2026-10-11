@@ -1,0 +1,67 @@
+[
+  {
+    "title": "From Fencing Footage to Review",
+    "startSeconds": 0,
+    "endSeconds": 17.519
+  },
+  {
+    "title": "One bout, many recordings",
+    "startSeconds": 17.519,
+    "endSeconds": 59.8
+  },
+  {
+    "title": "Screens, state, and services",
+    "startSeconds": 59.8,
+    "endSeconds": 113.247
+  },
+  {
+    "title": "Launch and ordinary edits",
+    "startSeconds": 113.247,
+    "endSeconds": 162.812
+  },
+  {
+    "title": "Read the schedule on-device",
+    "startSeconds": 162.812,
+    "endSeconds": 213.665
+  },
+  {
+    "title": "Human confirmation is the boundary",
+    "startSeconds": 213.665,
+    "endSeconds": 259.732
+  },
+  {
+    "title": "Import links, not original uploads",
+    "startSeconds": 259.732,
+    "endSeconds": 313.791
+  },
+  {
+    "title": "Turn a time range into a clip",
+    "startSeconds": 313.791,
+    "endSeconds": 363.009
+  },
+  {
+    "title": "Metadata first, video second",
+    "startSeconds": 363.009,
+    "endSeconds": 411.939
+  },
+  {
+    "title": "Resolve once, play in order",
+    "startSeconds": 411.939,
+    "endSeconds": 459.251
+  },
+  {
+    "title": "Scrubbing follows the newest intent",
+    "startSeconds": 459.251,
+    "endSeconds": 504.779
+  },
+  {
+    "title": "Cloud recovery and safe deletion",
+    "startSeconds": 504.779,
+    "endSeconds": 556.245
+  },
+  {
+    "title": "Keep meaning, release local bytes",
+    "startSeconds": 556.245,
+    "endSeconds": 612.064
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "lessons": [
+    {
+      "lesson": 1,
+      "segments": 8,
+      "seconds": 45.42,
+      "speechSamplesUnchanged": true,
+      "pausesVerified": true
+    },
+    {
+      "lesson": 2,
+      "segments": 8,
+      "seconds": 48.78,
+      "speechSamplesUnchanged": true,
+      "pausesVerified": true
+    },
+    {
+      "lesson": 3,
+      "segments": 8,
+      "seconds": 41.58,
+      "speechSamplesUnchanged": true,
+      "pausesVerified": true
+    },
+    {
+      "lesson": 4,
+      "segments": 11,
+      "seconds": 64.06,
+      "speechSamplesUnchanged": true,
+      "pausesVerified": true
+    },
+    {
+      "lesson": 5,
+      "segments": 16,
+      "seconds": 88.22,
+      "speechSamplesUnchanged": true,
+      "pausesVerified": true
+    },
+    {
+      "lesson": 6,
+      "segments": 11,
+      "seconds": 63.82,
+      "speechSamplesUnchanged": true,
+      "pausesVerified": true
+    },
+    {
+      "lesson": 7,
+      "segments": 8,
+      "seconds": 56.86,
+      "speechSamplesUnchanged": true,
+      "pausesVerified": true
+    }
+  ],
+  "originalAudioAndVideosUnchanged": true,
+  "timeStretching": false,
+  "pitchShifting": false,
+  "note": "Checks establish assembly correctness, not subjective voice suitability."
+}

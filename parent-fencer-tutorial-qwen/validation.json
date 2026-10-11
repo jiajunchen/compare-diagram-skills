@@ -1,0 +1,53 @@
+{
+  "videos": [
+    {
+      "file": "parent-fencer-guide.mp4",
+      "seconds": 416.1,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-01.mp4",
+      "seconds": 46.066667,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-02.mp4",
+      "seconds": 49.366667,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-03.mp4",
+      "seconds": 42.2,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-04.mp4",
+      "seconds": 64.633333,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-05.mp4",
+      "seconds": 88.9,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-06.mp4",
+      "seconds": 64.466667,
+      "decode": "passed"
+    },
+    {
+      "file": "lesson-07.mp4",
+      "seconds": 57.466667,
+      "decode": "passed"
+    }
+  ],
+  "titlePages": 7,
+  "slideTransitions": 13,
+  "verifiedOneSecondActionHolds": 43,
+  "measuredWordTimings": 818,
+  "transcriptSourcesMatchNewAlignment": true,
+  "chapterPlayer": "passed",
+  "previousAudioAndVideosUnchanged": true,
+  "visualReview": "Active word, pause, tap hold, post-action screen, title card and slide transition inspected.",
+  "timingLimit": "Automatic word alignment has 80 ms timestamp resolution; zero-length function words display for one frame."
+}

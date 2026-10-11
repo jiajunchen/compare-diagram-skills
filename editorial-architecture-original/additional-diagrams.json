@@ -1,0 +1,276 @@
+[
+  {
+    "id": "records-detail",
+    "title": "One bout, many recordings",
+    "intro": "Stable identifiers connect tournaments, bouts, original recordings and independently exported review clips.",
+    "nodes": [
+      [
+        "Tournament",
+        "Tournament.id",
+        "The parent event",
+        "store"
+      ],
+      [
+        "Bout",
+        "tournamentID",
+        "Opponent + full-order bout number",
+        "focus"
+      ],
+      [
+        "Original recording link",
+        "SourceRecording.boutID",
+        "A reference to the original in Photos",
+        "store"
+      ],
+      [
+        "One fencer profile",
+        "AppSettings.fencerName",
+        "Global setting; not a media parent",
+        "store"
+      ],
+      [
+        "Independent review clip",
+        "sourceRecordingID + boutID",
+        "One time range from one source",
+        "store"
+      ],
+      [
+        "Ordered playback",
+        "reviewClips()",
+        "Capture time, clip start, identifier",
+        "service"
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "OWNS"
+      ],
+      [
+        1,
+        2,
+        "CONTAINS"
+      ],
+      [
+        2,
+        4,
+        "TIME RANGE"
+      ],
+      [
+        4,
+        5,
+        "SORT"
+      ]
+    ]
+  },
+  {
+    "id": "upload-detail",
+    "title": "Metadata first, video second",
+    "intro": "A durable local export is queued before metadata synchronization and a separate CloudKit asset upload.",
+    "nodes": [
+      [
+        "Durable pending queue",
+        "pendingUpload / resumePending()",
+        "Local export survives interruption",
+        "store"
+      ],
+      [
+        "Upload coordinator",
+        "upload() + in-flight set",
+        "Temporary failure returns to queue",
+        "focus"
+      ],
+      [
+        "Metadata record",
+        "synchronize()",
+        "Create destination before asset",
+        "store"
+      ],
+      [
+        "Needs attention",
+        "needsAttention / Retry Upload",
+        "Other failures require explicit retry",
+        "optional"
+      ],
+      [
+        "Available clip",
+        "available",
+        "Deletion waits for active upload",
+        "store"
+      ],
+      [
+        "Edited movie asset",
+        "saveExportedClip()",
+        "Direct CloudKit database save",
+        "external"
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "RESUME"
+      ],
+      [
+        1,
+        2,
+        "METADATA",
+        true
+      ],
+      [
+        2,
+        5,
+        "ATTACH FILE",
+        true
+      ],
+      [
+        5,
+        4,
+        "SUCCESS",
+        true
+      ],
+      [
+        1,
+        3,
+        "OTHER FAILURE",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "scrub-detail",
+    "title": "Scrubbing follows the newest intent",
+    "intro": "A single in-flight seek and a replaceable pending target keep the picture aligned with the newest drag intent.",
+    "nodes": [
+      [
+        "Timeline slider",
+        "scrub(to:) / finishScrub()",
+        "Drag to preview; release to finalize",
+        "input"
+      ],
+      [
+        "Player model",
+        "Clamp time; pause playhead updates",
+        "Retains half, normal or double speed",
+        "service"
+      ],
+      [
+        "Scrub coordinator",
+        "drag(to:)",
+        "At most one seek in flight",
+        "focus"
+      ],
+      [
+        "Lifetime checks",
+        "Generation + cancellation",
+        "Ignore old completions after switching",
+        "service"
+      ],
+      [
+        "AVPlayer seek",
+        "Preview 0.15s / final zero",
+        "Exact final target on release",
+        "external"
+      ],
+      [
+        "Newest pending target",
+        "Replace obsolete positions",
+        "No backlog of old drag requests",
+        "store"
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "DRAG / RELEASE"
+      ],
+      [
+        1,
+        2,
+        "CLAMP"
+      ],
+      [
+        2,
+        5,
+        "REPLACE"
+      ],
+      [
+        5,
+        4,
+        "SEEK"
+      ],
+      [
+        4,
+        3,
+        "COMPLETION"
+      ]
+    ]
+  },
+  {
+    "id": "favorites-detail",
+    "title": "Keep meaning, release local bytes",
+    "intro": "Favorite metadata stays separate from media exports, while safe cleanup removes local copies and retains cloud assets.",
+    "nodes": [
+      [
+        "Clip star",
+        "toggleClipFavorite()",
+        "No second movie export",
+        "input"
+      ],
+      [
+        "Favorite metadata",
+        "ReviewClip.isFavorite",
+        "Save and synchronize the flag",
+        "focus"
+      ],
+      [
+        "Bout star",
+        "Derived from favorite clips",
+        "Indicator; not a separate toggle",
+        "store"
+      ],
+      [
+        "Cloud clip remains",
+        "Download again on demand",
+        "Photos originals remain unchanged",
+        "external"
+      ],
+      [
+        "Offload checks",
+        "Available cloud asset required",
+        "Protect pending uploads and paths",
+        "service"
+      ],
+      [
+        "Local media copies",
+        "Uploaded exports + downloads",
+        "Global cleanup or bout unloading",
+        "store"
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "TOGGLE"
+      ],
+      [
+        1,
+        2,
+        "DERIVE"
+      ],
+      [
+        5,
+        4,
+        "CHECK"
+      ],
+      [
+        4,
+        3,
+        "RETAIN"
+      ]
+    ]
+  }
+]
